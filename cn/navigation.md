@@ -1,6 +1,6 @@
 ![innfo](img/innfoslogo.png)
 
-[Main Page](index.md)
+[主页](index.md)
 
 [Getting Started](gimmicks.md)
 
@@ -8,11 +8,11 @@
 
 [Release notes](gimmicks2.md)
 
-[About INNFOS](gimmicks3.md)
+[关于INNFOS](gimmicks3.md)
 
 [About Contact](gimmicks4.md)
 
-[Products]()
+[产品]()
 
   * [QDD Pro](tutorials.md)
   * [QDD](tutorials/github.md)
@@ -21,7 +21,7 @@
   * [ECB & HUB](tutorials/iis/iis.md)
 
 [FAQ](examples.md)
-[English](../en/index.md)
+[English](https://innfos.github.io/wiki/en/#!index.md)
 
 [gimmick:theme (inverse: false)](flatly)
 
