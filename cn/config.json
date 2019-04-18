@@ -1,7 +1,7 @@
 {
-  "additionalFooterText": "All content and images &copy; by Your Name Goes Here&nbsp;",
-  "anchorCharacter": "#",
-  "lineBreaks": "gfm",
-  "title": "Your wiki name",
-  "useSideMenu": true
+    "useSideMenu": true,
+    "lineBreaks": "gfm",
+    "additionalFooterText": "",
+    "anchorCharacter": "&#x2693;",
+    "title": "INNFOS"
 }
