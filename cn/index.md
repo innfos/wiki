@@ -80,7 +80,7 @@
 ----------------------
 
 
-  * If there is any problem with the products that we stopped to provide,please contact us.
+  * 如果我们停止提供的产品有任何问题，请与我们联系。
 
 | 版本        | 	日期   |  	修改内容  |
 | --------   | -----:  | :----:  |
