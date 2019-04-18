@@ -1,7 +1,7 @@
 {
-  "additionalFooterText": "All content and images &copy; by Your Name Goes Here&nbsp;",
-  "anchorCharacter": "#",
-  "lineBreaks": "gfm",
-  "title": "Your wiki name",
-  "useSideMenu": true
+    "useSideMenu": true,
+    "lineBreaks": "gfm",
+    "additionalFooterText": "Copyright © 2018 Innfos.cn. All rights reserved.",
+    "anchorCharacter": "&#x2693;",
+    "title": "INNFOS"
 }
