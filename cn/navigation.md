@@ -2,15 +2,15 @@
 
 [主页](index.md)
 
-[Getting Started](gimmicks.md)
+[入门](gimmicks.md)
 
-[Learning](gimmicks1.md)
+[学习](gimmicks1.md)
 
 [Release notes](gimmicks2.md)
 
 [关于INNFOS](gimmicks3.md)
 
-[About Contact](gimmicks4.md)
+[联系](gimmicks4.md)
 
 [产品]()
 
@@ -20,7 +20,7 @@
   * [XR-Robot](tutorials/dropbox.md)
   * [ECB & HUB](tutorials/iis/iis.md)
 
-[FAQ](examples.md)
+[常见问题](examples.md)
 [English](https://innfos.github.io/wiki/en/#!index.md)
 
 [gimmick:theme (inverse: false)](flatly)
