@@ -21,7 +21,7 @@
   * [ECB & HUB](tutorials/iis/iis.md)
 
 [FAQ](examples.md)
-[中文](../cn/index.md)
+[中文](https://innfos.github.io/wiki/cn/#!index.md)
 
 [gimmick:theme (inverse: false)](flatly)
 
