@@ -1,18 +1,18 @@
-Main Page
+主页
 =====
 
 
-Getting Started
+入门
 --------
-The following instructions are meant to get you up and running quickly if you are new to INNFOS actuators. 
-If there's any questions,please contact us at support@innfos.com.
+如果您不熟悉INNFOS执行器，以下说明旨在帮助您快速启动和运行。
+如果有任何疑问，请通过support@innfos.com与我们联系。
 
   * [Introduction](https://www.mdeditor.com/)
   * [ECB-Based Communication](https://www.mdeditor.com/)
 
 
 
-Software & Development
+软件开发
 ------------
 
   * [CAN Communication Protocol][ipChanged]
@@ -25,7 +25,7 @@ Software & Development
  
   [ipChanged]: <https://github.com/innfos/ipChangeTool/blob/master/README.md>
 
-Products
+产品
 -----------------
 ![markdown](http://wiki.innfos.com:81/wiki/images/a/a7/%E5%87%8F%E9%80%9F%E6%AF%94.png "markdown")
 
@@ -76,17 +76,17 @@ Website is under maintenance. Stay tuned for future updates!
 
 - - - -
 
-Version Information
+版本信息
 ----------------------
 
 
   * If there is any problem with the products that we stopped to provide,please contact us.
 
-| version        | 	date   |  	Modify content  |
+| 版本        | 	日期   |  	修改内容  |
 | --------   | -----:  | :----:  |
-| V1.0.3      | 	2019-4-15   |   Modify the schematic picture    |
-| V1.0.2       |  2019-4-9  |   	Add model: <br>DD-2305   |
-| V1.0.1       |   2019-4-4    |  Delete model:<br>QDD-6010-8<br>QDD-6010-64 <br>QDD-8108-8 <br>QDD-8108-64<br>Add model:<br>QDD-6010-6 <br>QDD-6010-36 <br>QDD-8108-6 <br>QDD-8108-36  |
-| V1.0.0       |   2018-11-12  |  The first version |
+| V1.0.3      | 	2019-4-15   |   	修改原理图图片    |
+| V1.0.2       |  2019-4-9  |   	添加型号: <br>DD-2305   |
+| V1.0.1       |   2019-4-4    |  删除型号:<br>QDD-6010-8<br>QDD-6010-64 <br>QDD-8108-8 <br>QDD-8108-64<br>添加型号:<br>QDD-6010-6 <br>QDD-6010-36 <br>QDD-8108-6 <br>QDD-8108-36  |
+| V1.0.0       |   2018-11-12  |  第一个版本 |
 
 
