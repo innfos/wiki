@@ -27,7 +27,7 @@
 
 产品
 -----------------
-![markdown](http://wiki.innfos.com:81/wiki/images/a/a7/%E5%87%8F%E9%80%9F%E6%AF%94.png "markdown")
+![markdown](http://wiki.innfos.com:81/wiki/index.php/File:%E6%9C%AA%E6%A0%87.png "markdown")
 
 
 ## QDD Pro
