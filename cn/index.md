@@ -7,20 +7,20 @@
 如果您不熟悉INNFOS执行器，以下说明旨在帮助您快速启动和运行。
 如果有任何疑问，请通过support@innfos.com与我们联系。
 
-  * [Introduction](https://www.mdeditor.com/)
-  * [ECB-Based Communication](https://www.mdeditor.com/)
+  * [基本介绍](https://www.mdeditor.com/)
+  * [基于ECB的通信方式](https://www.mdeditor.com/)
 
 
 
 软件开发
 ------------
 
-  * [CAN Communication Protocol][ipChanged]
-  * [Ethernet Configuration](ipChange.md)
-  * [Ethernet Communication Protocol](https://www.mdeditor.com/)
-  * [Ethernet Communication SDK](https://www.mdeditor.com/)
-  * [INNFOS Actuator Studio(IAS) instruction](https://www.mdeditor.com/)
-  * [Appendix](https://www.mdeditor.com/)
+  * [INNFOS CAN通信协议][ipChanged]
+  * [以太网配置](ipChange.md)
+  * [以太网通信协议](https://www.mdeditor.com/)
+  * [以太网通信SDK](https://www.mdeditor.com/)
+  * [INNFOS Actuator Studio(IAS) 说明](https://www.mdeditor.com/)
+  * [附录](https://www.mdeditor.com/)
   
  
   [ipChanged]: <https://github.com/innfos/ipChangeTool/blob/master/README.md>
