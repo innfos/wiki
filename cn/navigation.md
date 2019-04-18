@@ -1,4 +1,4 @@
-![innfo](innfoslogo.png)
+![innfo](img/innfoslogo.png)
 
 [Main Page](index.md)
 
