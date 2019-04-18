@@ -15,7 +15,6 @@
 [Products]()
 
   * [QDD Pro](tutorials.md)
-  - - - -
   * [QDD](tutorials/github.md)
   * [DD](tutorials/drive.md)
   * [XR-Robot](tutorials/dropbox.md)
