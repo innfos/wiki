@@ -1,65 +1,45 @@
-<!--
-  -- Name of your wiki
-  -- Do NOT remove the leading `#` character.
-  -->
+![innfo](innfoslogo.png)
 
-# Your wiki name
+[Main Page](index.md)
 
+[Getting Started](gimmicks.md)
 
-<!--
-  -- Default theme
-  -- (Read: http://dynalon.github.io/mdwiki/#!customizing.md#Theme_chooser)
-  -->
+[Learning](gimmicks1.md)
 
-[gimmick:theme](spacelab)
+[Release notes](gimmicks2.md)
 
+[About INNFOS](gimmicks3.md)
 
-<!--
-  -- Navigation
-  -- (Read: http://dynalon.github.io/mdwiki/#!quickstart.md#Adding_a_navigation)
-  -->
+[About Contact](gimmicks4.md)
 
-[About](pages/about.md)
-[Download](pages/download.md)
+[Products]()
 
-<!-- A more complex navigation example: ----------------------------------------
-
-[Menu Item 1]()
-
-  * # SubMenu Heading 1
-  * [SubMenu Item 1](pages/subitem1.md)
-  * [SubMenu Item 2](pages/subitem2.md)
+  * [QDD Pro](tutorials.md)
   - - - -
-  * # SubMenu Heading 2
-  * [SubMenu Item 3](pages/subitem3.md)
-  - - - -
-  * # SubMenu Heading 3
-  * [SubMenu Item 3](pages/subitem3.md)
+  * [QDD](tutorials/github.md)
+  * [DD](tutorials/drive.md)
+  * [XR-Robot](tutorials/dropbox.md)
+  * [ECB & HUB](tutorials/iis/iis.md)
 
-[Menu Item 2](pages/item2.md)
+[FAQ](examples.md)
 
-[Menu Item 3](pages/item3.md)
+[gimmick:theme (inverse: false)](flatly)
 
----------------------------------------------------------------------------- -->
+[gimmick:ThemeChooser](Change theme)
 
-<!--
-  -- Change the Language
-  -- Could be useful when there's more than one language wiki.
-  -->
+<!-- counter pixel for counting visitors -->
+<!-- <img src="http://stats.markdown.io/mdwiki_info.gif" style="display:none;"/> -->
 
-<!--
-[Change the Language]()
+<script type="text/javascript">
 
-  * [English (United States)](/en_US/)
-  * [English (United Kingdom)](/en_GB/)
-  * [Italian](/it/)
--->
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-44627253-1']);
+  _gaq.push(['_trackPageview']);
 
-<!--
-  -- Let the user choose a theme
-  -- (Read: http://dynalon.github.io/mdwiki/#!quickstart.md#Adding_a_navigation)
-  -->
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
 
-<!--
-[gimmick:themechooser](Choose theme)
--->
+</script>
