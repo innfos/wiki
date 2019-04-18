@@ -1,4 +1,4 @@
-![](undefined)# 欢迎使用 Markdown在线编辑器 MdEditor
+# 欢迎使用 Markdown在线编辑器 MdEditor
 
 # 标题H1
 
