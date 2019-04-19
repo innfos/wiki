@@ -8,7 +8,7 @@
 如果有任何疑问，请通过support@innfos.com与我们联系。
 
   * [基本介绍](pages/introduction.md)
-  * [基于ECB的通信方式](pages/ECB-Based Communication.md)
+  * [基于ECB的通信方式](pages/ECB-Based-Communication.md)
 
 
 
@@ -16,7 +16,7 @@
 ------------
 
   * [INNFOS CAN通信协议][ipChanged]
-  * [以太网配置](pages/Ethernet Configuration.md)
+  * [以太网配置](pages/Ethernet-Configuration.md)
   * [以太网通信协议](pages/Ethernet Communication Protocol.md)
   * [以太网通信SDK](https://www.mdeditor.com/)
   * [INNFOS Actuator Studio(IAS) 说明](https://www.mdeditor.com/)
