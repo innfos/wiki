@@ -34,8 +34,83 @@
 下表简单描述了版本变更记录
 
 | 版本        | 	日期   |  	修改内容  |
-| --------   | -----:  | :----:  |
+| :--------:  | :-----:  | :----:  |
 | V1.0.3      | 	2019-4-15   |   	修改原理图图片    |
 | V1.0.2       |  2019-4-9  |   	添加型号: <br>DD-2305   |
 | V1.0.1       |   2019-4-4    |  删除型号:<br>QDD-6010-8<br>QDD-6010-64 <br>QDD-8108-8 <br>QDD-8108-64<br>添加型号:<br>QDD-6010-6 <br>QDD-6010-36 <br>QDD-8108-6 <br>QDD-8108-36  |
 | V1.0.0       |   2018-11-12  |  第一个版本 |
+
+
+<table>
+  <p>style=&quot;background: PaleTurquoise; color: black;width:75px&quot;</p>
+  
+  <thead>
+        <td width=100px; bgcolor="#afeeee">版本号</td> 
+        <td width=100px; bgcolor="#AFEEEE">更新时间</td> 
+        <td width=100px; bgcolor="#AFEEEE">更改类型</td>
+        <td width=150px; bgcolor="#AFEEEE">更改类型</td>
+        <td bgcolor="#AFEEEE">内容</td>
+   </thead>
+  <tbody>
+    <tr>
+        <td>V1.0.4</td>  
+        <td>18.12.14</td> 
+        <td>增加</td> 
+        <td>附录E</td>
+        <td>指令发送与IQ值换算方法</td>
+    </tr>
+    <tr>
+        <td rowspan="4">V1.0.3</td> 
+        <td rowspan="4">18.03.19</td> 
+        <td>增加</td>
+        <td>第三章通信协议</td>
+        <td>较上一版本多加了更多的执行器参数信息指令，执行器的温度信息指令。<br/>查询上次关机状态指令，Homing指令。</td> 
+    </tr>
+      <tr> 
+        <td>增加</td>
+        <td>第三章通信协议</td>
+        <td>增加了储存参数指令</td>   
+    </tr>
+      <tr> 
+        <td>修改</td>
+        <td>第三章通信协议</td>
+        <td>修改了第三章全章的排版</td>   
+    </tr> 
+        <tr> 
+        <td>增加</td>
+        <td>第三章通信协议</td>
+        <td>增加了储存参数指令</td>   
+    </tr>
+  <tr>
+        <td rowspan="2">V1.0.2</td> 
+        <td rowspan="2">18.01.20</td> 
+        <td>修改</td>
+        <td>全文</td>
+        <td>微伺服更名为INNFOS执行器</td> 
+    </tr>
+    <tr>
+        <td>增加</td>
+        <td>第三章通信协议</td>
+        <td>较上一版本多加了报警指令</td> 
+    </tr>
+  <tr> 
+    <td>V1.0.1
+    <td>17.12.29
+    <td>修改	
+    <td>第三章通讯协议	
+    <td>更新了通信协议的数据长度，数据长度较之前加1
+  </tr> 
+  <tr>
+        <td rowspan="2">V1.0.0</td> 
+        <td rowspan="2">17.11.29</td> 
+        <td>修改</td>
+        <td>第二章通配线</td>
+        <td>更新了CAN接口定义</td> 
+    </tr>
+    <tr>
+        <td>增加</td>
+        <td>第三章通信协议</td>
+        <td>增加了开关机指令</td> 
+    </tr>    
+</tbody>
+</table>    
