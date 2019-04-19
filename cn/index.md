@@ -7,7 +7,7 @@
 如果您不熟悉INNFOS执行器，以下说明旨在帮助您快速启动和运行。
 如果有任何疑问，请通过support@innfos.com与我们联系。
 
-  * [基本介绍](https://www.mdeditor.com/)
+  * [基本介绍](pages/jieshao.md)
   * [基于ECB的通信方式](https://www.mdeditor.com/)
 
 
