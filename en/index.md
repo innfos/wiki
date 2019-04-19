@@ -7,7 +7,7 @@ Getting Started
 The following instructions are meant to get you up and running quickly if you are new to INNFOS actuators. 
 If there's any questions,please contact us at support@innfos.com.
 
-  * [Introduction](https://www.mdeditor.com/)
+  * [Introduction](pages/introduction.md)
   * [ECB-Based Communication](https://www.mdeditor.com/)
 
 
