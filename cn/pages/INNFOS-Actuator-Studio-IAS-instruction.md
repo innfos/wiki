@@ -6,8 +6,9 @@
 
 1.双击安装软件“Setup V0.2.exe”（V0.2为当前软件版本）
 
-[![](https://github.com/innfos/wiki/blob/master/cn/img/install01.jpg)]
-(https://github.com/innfos/wiki/blob/master/cn/img/install02.jpg)
+[![](https://github.com/innfos/wiki/blob/master/cn/img/install01.jpg)](https://github.com/innfos/wiki/blob/master/cn/img/install01.jpg)
+
+> 软件安装.
 
 
 2.进入安装界面后，点击“Next”
