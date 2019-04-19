@@ -14,7 +14,7 @@
 
 [产品]()
 
-  * [QDD Pro](cn/pages/QDD Pro-3510-30.md)
+  * [QDD Pro](tutorials.md)
   * [QDD](tutorials/github.md)
   * [DD](tutorials/drive.md)
   * [XR-Robot](tutorials/dropbox.md)
