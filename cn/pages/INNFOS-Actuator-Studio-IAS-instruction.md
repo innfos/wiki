@@ -6,7 +6,7 @@
 
 1.双击安装软件“Setup V0.2.exe”（V0.2为当前软件版本）
 
-![软件的安装01.jpg](软件的安装01.jpg "fig:软件的安装01.jpg")
+[![](https://github.com/innfos/wiki/blob/master/cn/img/shouyesca2.jpeg)](https://github.com/innfos/wiki/blob/master/cn/img/shouyesca1.jpeg)
 
 2.进入安装界面后，点击“Next”
 
