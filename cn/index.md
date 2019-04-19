@@ -52,7 +52,7 @@
 
 
 ## QDD
-  * [QDD-2305-36](https://www.mdeditor.com/)
+  * [QDD-2305-36](pages/3510-70.md)
   * [QDD-3510-6](https://www.mdeditor.com/)
   * [QDD-3510-36](https://www.mdeditor.com/)
   * [QDD-6010-6](https://www.mdeditor.com/)
