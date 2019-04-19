@@ -45,7 +45,7 @@
   <p>style=&quot;background: PaleTurquoise; color: black;width:75px&quot;</p>
   
   <thead>
-        <td width=100px; style="backgroud-color:red">版本号</td> 
+        <td width=100px; style="backgroud:red">版本号</td> 
         <td width=100px; bgcolor="#AFEEEE">更新时间</td> 
         <td width=100px; bgcolor="#AFEEEE">更改类型</td>
         <td width=150px; bgcolor="#AFEEEE">更改类型</td>
