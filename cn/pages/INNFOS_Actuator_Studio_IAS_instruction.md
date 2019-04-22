@@ -276,7 +276,7 @@ INNFOS执行器系统的逻辑框图：
 
 <span style="color: red">注：不用的通道偏置设置为0，放大设置为1（右图中channel2和channel4），或者直接点击OFF关闭其显示</span>
 
-[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig4-9.png)](https://github.com/innfos/wiki/blob/master/cn/img/4-9.png)
+[![](https://github.com/innfos/wiki/blob/master/cn/img/4-9.png)](https://github.com/innfos/wiki/blob/master/cn/img/4-9.png)
 
 ## **位置环模式**
 
