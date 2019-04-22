@@ -75,28 +75,12 @@
 
 #### 协议示例
 
-示例1.读命令2
+示例1.读命令4
 
 <table>
-	<tr>
-		<th colspan="6">读取执行器ID为0x01的当前速度值</th>
-	</tr>
-	<tr>
-		<td >帧头</td>
-		<td >设备地址</td>
-		<td >指令符</td>
-		<td >数据长度（2字节）</td>
-		<td >参数内容</td>
-		<td >帧尾</td>
-	</tr>
-	<tr>
-		<td >0xEE</td>
-		<td >0x01</td>
-		<td >0x5</td>
-		<td >0x00 0x00</td>
-		<td >无</td>
-		<td >0xED</td>
-	</tr>
+	<tr><th colspan="6">读取执行器ID为0x01的当前速度值</th></tr>
+	<tr><td >帧头</td><td >设备地址</td><td >指令符</td><td >数据长度（2字节）</td><td >参数内容</td><td >帧尾</td></tr>
+	<tr><td >0xEE</td><td >0x01</td><td >0x5</td><td >0x00 0x00</td><td >无</td><td >0xED</td></tr>
 </table>
 
 帧头 ：0xEE = 协议头
