@@ -15,7 +15,7 @@
 软件开发
 ------------
 
-  * [INNFOS CAN通信协议][ipChanged]
+  * [INNFOS CAN通信协议](pages/CAN_Communication_Protocol.md)
   * [以太网配置](pages/Ethernet_Configuration.md)
   * [以太网通信协议](pages/Ethernet_Communication_Protocol.md)
   * [以太网通信SDK](pages/Ethernet_Communication_SDK.md)
