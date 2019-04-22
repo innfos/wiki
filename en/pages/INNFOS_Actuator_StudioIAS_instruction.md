@@ -45,61 +45,90 @@ IAS is a visual debug control software for INNFOS actuator, the main functions o
 
 3.click “I Agree” 
 
-[![](https://github.com/innfos/wiki/blob/master/cn/img/1-2.png)](https://github.com/innfos/wiki/blob/master/cn/img/1-2.png)
+[![](https://github.com/innfos/wiki/blob/master/cn/img/1-3.png)](https://github.com/innfos/wiki/blob/master/cn/img/1-3.png)
 
 ![1-3](1-3.png "fig:1-3")
 
 4.Select the installation location and click &quot;Install&quot;
 
-[![](https://github.com/innfos/wiki/blob/master/cn/img/1-3.png)](https://github.com/innfos/wiki/blob/master/cn/img/1-3.png)
+[![](https://github.com/innfos/wiki/blob/master/cn/img/1-4.png)](https://github.com/innfos/wiki/blob/master/cn/img/1-4.png)
 
 ![1-3](1-4.png "fig:1-3")
 
 5.Wait for the completion of the installation;
 
-[![](https://github.com/innfos/wiki/blob/master/cn/img/1-4.png)](https://github.com/innfos/wiki/blob/master/cn/img/1-4.png)
+[![](https://github.com/innfos/wiki/blob/master/cn/img/1-5.png)](https://github.com/innfos/wiki/blob/master/cn/img/1-5.png)
 
 ![1-4](1-5.png "fig:1-4")
 
 6.If encounter an alarm from anti-virus software, please select &quot;Allow this operation&quot;
 
-[![](https://github.com/innfos/wiki/blob/master/cn/img/1-5.png)](https://github.com/innfos/wiki/blob/master/cn/img/1-5.png)
+[![](https://github.com/innfos/wiki/blob/master/cn/img/1-6.png)](https://github.com/innfos/wiki/blob/master/cn/img/1-7.png)
 
 . ![1-5](1-6.png "fig:1-5")
 
 7.Click &quot;Finish&quot; to complete the software installation.
 
-
+[![](https://github.com/innfos/wiki/blob/master/cn/img/1-7.png)](https://github.com/innfos/wiki/blob/master/cn/img/1-7.png)
 
 ![1-6](1-7.png "fig:1-6")
 
 ## IAS boot
 
-1、Double-click to run the software and enter the user interface. ![2-1](软件的安装02.jpg "fig:2-1")
+1、Double-click to run the software and enter the user interface. 
 
-2.Click &quot;confirm that you've read the document&quot;, then click &quot;next&quot; to enter the next interface. </br>(Note:Please click“show the document!” to read the software instructions when use the product for the first time.) ![2-2](2-2.png "fig:2-2")
+[![](https://github.com/innfos/wiki/blob/master/cn/img/install02.jpg)](https://github.com/innfos/wiki/blob/master/cn/img/install02.jpg)
+
+![2-1](软件的安装02.jpg "fig:2-1")
+
+2.Click &quot;confirm that you've read the document&quot;, then click &quot;next&quot; to enter the next interface. </br>(Note:Please click“show the document!” to read the software instructions when use the product for the first time.) 
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/2-2.png)](https://github.com/innfos/wiki/blob/master/cn/img/2-2.png)
+
+![2-2](2-2.png "fig:2-2")
 
 3.Select the actuator communication mode (The default setting is Ethernet communication), then click &quot;next&quot;
 
-(Note: Please confirm that the static IP is correctly configured(See Appendix B for details) before start using Ethernet communication.) ![2-3](2-3.png "fig:2-3")
+[![](https://github.com/innfos/wiki/blob/master/cn/img/2-3.png)](https://github.com/innfos/wiki/blob/master/cn/img/2-3.png)
+
+
+(Note: Please confirm that the static IP is correctly configured(See Appendix B for details) before start using Ethernet communication.) 
+
+![2-3](2-3.png "fig:2-3")
 
 *   When the USB to CAN is not connected or connected abnormally, an error message will appear.
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/2-4.png)](https://github.com/innfos/wiki/blob/master/cn/img/2-4.png)
+
 
 ![2-4](2-4.png "fig:2-4")
 
 *   When the external actuator is not connected or connected abnormally, an error message will appear.
 
+[![](https://github.com/innfos/wiki/blob/master/cn/img/2-5.png)](https://github.com/innfos/wiki/blob/master/cn/img/2-5.png)
+
+
+
 ![2-5](2-5.png "fig:2-5")
 
 *   When the external system is connected correctly, it enters running interface of the actuator. The red area is OFF. As shown in figure 2-6, OFF at mark 1 is a single actuator switch, ON at mark 2 is a main switch, when the actuators are connected at the same time, click on mark 2 to control all actuators.
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/2-6.png)](https://github.com/innfos/wiki/blob/master/cn/img/2-6.png)
+
 
 ![2-6](2-6.png "fig:2-6")
 
 *   After clicking OFF, the messages in the red area showed in figure 2-7 will pop up.
 
+[![](https://github.com/innfos/wiki/blob/master/cn/img/2-7.png)](https://github.com/innfos/wiki/blob/master/cn/img/2-7.png)
+
+
 ![2-7](2-7.png "fig:2-7")
 
 *   In about three seconds, as shown in figure 2-8, mark 1 for the actuator ID number, mark 2 is the error clear key, mark 3 for the enter operation interface key, and mark 4 for the actuator's information display area.
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/2-8.png)](https://github.com/innfos/wiki/blob/master/cn/img/2-8.png)
+
 <div class="figure">
 ![2-8](2-8.png "2-8")
 
@@ -109,6 +138,9 @@ IAS is a visual debug control software for INNFOS actuator, the main functions o
 
 4.Click on message box or click “Detail” to enter the current loop mode.
 
+[![](https://github.com/innfos/wiki/blob/master/cn/img/2-9.png)](https://github.com/innfos/wiki/blob/master/cn/img/2-9.png)
+
+
 ![2-9](2-9.png "fig:2-9")
 
 * * *
@@ -116,6 +148,10 @@ IAS is a visual debug control software for INNFOS actuator, the main functions o
 ## Current loop mode
 
 Logic block diagram of the INNFOS actuator system:
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/current.jpg)](https://github.com/innfos/wiki/blob/master/cn/img/current.jpg)
+
+
 
 ![Logic block diagram of the INNFOS actuator system](微伺服软件界面最终00-44 3-1.png "fig:Logic block diagram of the INNFOS actuator system")
 
@@ -141,6 +177,9 @@ Description: after the mixed practice of the current setting value and current f
 
 （9）Oscilloscope switch
 
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig3-2.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig3-2.png)
+
 <div class="figure">
 ![Fig3-2](3-2.png "Fig3-2")
 
@@ -164,11 +203,19 @@ Fig3-2
 
 <span style="color: red">[Note: In current loop mode, the Id axial force is generally set to 0.
 
-For&quot;Minimal&quot;set a fixed value of -0.82, for&quot;Maximal&quot;set a fixed value of 0.82.]</span> ![Fig3-3](3-3.png "fig:Fig3-3")
+For&quot;Minimal&quot;set a fixed value of -0.82, for&quot;Maximal&quot;set a fixed value of 0.82.]</span> 
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig3-3.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig3-3.png)
+
+![Fig3-3](3-3.png "fig:Fig3-3")
 
 ### Current loop usage
 
-1.Click on“Active Current Mode”to activate the current current loop mode. ![Fig3-4](3-4.png "fig:Fig3-4")
+1.Click on“Active Current Mode”to activate the current current loop mode.
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig3-4.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig3-4.png)
+
+![Fig3-4](3-4.png "fig:Fig3-4")
 
 2.Parameter setting: application mode
 
@@ -180,6 +227,10 @@ For&quot;Minimal&quot;set a fixed value of -0.82, for&quot;Maximal&quot;set a fi
 *   After rotating, you can see the current status in the INNFOS actuator parameter values.(Mark 3)
 *   Press the “Halt” to stop the rotation of the INNFOS actuator.(Mark 2)
 *   The maximum current value can be set in the Limit parameter.
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig3-5.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig3-5.png)
+
+
 <div class="figure">
 ![Fig3-5](3-5.png "Fig3-5")
 
@@ -187,7 +238,11 @@ Fig3-5
 
 </div>
 
-3.Click on &quot;View Graph&quot; to open the oscilloscope ![Fig3-6](3-6.png "fig:Fig3-6")
+3.Click on &quot;View Graph&quot; to open the oscilloscope
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig3-6.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig3-6.png)
+
+![Fig3-6](3-6.png "fig:Fig3-6")
 
 4.Oscilloscope Function Description
 
@@ -201,6 +256,9 @@ Fig3-5
 *   channel3 is the offset and magnification of the INNFOS actuator speed (Mark 6);
 *   channel4 is the offset and magnification of the INNFOS actuator position (Mark 7).
 *   Appendix C is for detailed instructions of oscilloscope.
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/3-7.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig3-7.png)
+
 <div class="figure">
 [Fig3-7](3-7.png "Fig3-7")
 
@@ -216,6 +274,10 @@ Fig3-7
 *   Click “IqTrigger” to set the axial force to q axis or d axis(Mark5).
 *   Select “Start”(Mark 4), and the square wave generator will press the set time ( Interval value), continuously validate Value1 and Value2 to the specified position (Iq Setting or Id Setting) until the button is closed.
 *   [Note: When adjusting the PI value of the current loop mode, the axial force of the square wave generator needs to be changed to IdTrigger. At this point there is a waveform in the oscilloscope and the actuator should be at rest, otherwise it will need to be recalibrated. ]
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig3-8.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig3-8.png)
+
+
 <div class="figure">
 ![Fig3-8](3-8.png "Fig3-8")
 
@@ -223,17 +285,33 @@ Fig3-8
 
 </div>
 
-6.Click “View Graph” to open the oscilloscope window, you can view the given (channel1 current square wave generator), current(channel2), speed(channel3), position(channel4) four-channel parameter waveform, as shown on the right. ![Fig3-9](3-9.png "fig:Fig3-9")
+6.Click “View Graph” to open the oscilloscope window, you can view the given (channel1 current square wave generator), current(channel2), speed(channel3), position(channel4) four-channel parameter waveform, as shown on the right. 
 
-7.Adjust the values of Proportional and Integral (PI) to observe the debugging effect through oscilloscope. ![Fig3-10](3-10.png "fig:Fig3-10")
+[![](https://github.com/innfos/wiki/blob/master/cn/img/3-9.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig3-9.png)
 
-8.Click the “Stop” button to stop the square wave generator. ![Fig3-11](3-11.png "fig:Fig3-11")
+
+![Fig3-9](3-9.png "fig:Fig3-9")
+
+7.Adjust the values of Proportional and Integral (PI) to observe the debugging effect through oscilloscope. 
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig3-10.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig3-10.png)
+
+![Fig3-10](3-10.png "fig:Fig3-10")
+
+8.Click the “Stop” button to stop the square wave generator.
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig3-11.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig3-11.png)
+
+![Fig3-11](3-11.png "fig:Fig3-11")
 
 * * *
 
 ## Speed loop mode
 
 Logic block diagram of the INNFOS actuator system:
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/velocity.jpg)](https://github.com/innfos/wiki/blob/master/cn/img/velocity.jpg)
+
 
 ![• Logic diagram of INNFOS actuation system](微伺服软件界面最终00-43 4-1.png "fig:• Logic diagram of INNFOS actuation system")
 
@@ -242,6 +320,9 @@ Description: After the speed value setting and the speed feedback value are adde
 * * *
 
 ### Click on &quot;Velocity Regulation&quot; to enter speed loop mode
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig4-2.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig4-2.png)
+
 
 <div class="figure">
 ![Fig 4-2](4-2.png "Fig 4-2")
@@ -266,11 +347,19 @@ Fig 4-2
 
 (7)INNFOS actuator connection status
 
-(8)Oscilloscope switch ![Fig 4-3](4-3.png "fig:Fig 4-3")
+(8)Oscilloscope switch
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig4-3.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig4-3.png)
+
+![Fig 4-3](4-3.png "fig:Fig 4-3")
 
 ### Speed loop usage
 
-1.Click on &quot;Active Velocity Mode&quot; to activate the current speed loop mode. ![Fig 4-4](4-4.png "fig:Fig 4-4")
+1.Click on &quot;Active Velocity Mode&quot; to activate the current speed loop mode.
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig4-4.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig4-4.png)
+
+![Fig 4-4](4-4.png "fig:Fig 4-4")
 
 2.Speed loop basic parameter settings:
 
@@ -281,6 +370,9 @@ Fig 4-2
 
     for example, current up to 33A（Model 6010 is 33A and Model 3510 is 16.5A. See Appendix D of the CAN Bus Communication Protocol for details.）, input value is 0.5；When the INNFOS actuator current is increased to 33*0.5, the current value will be limited without increasing.
 *   Press the “Halt” button to stop the rotation of the INNFOS actuator
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig4-5.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig4-5.png)
+
 <div class="figure">
 ![Fig 4-5](4-5.png "Fig 4-5")
 
@@ -288,7 +380,11 @@ Fig 4-5
 
 </div>
 
-3.Click on &quot;View Graph&quot; to open the oscilloscope ![Fig 4-6](4-6.png "fig:Fig 4-6")
+3.Click on &quot;View Graph&quot; to open the oscilloscope
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig4-6.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig4-6.png)
+
+![Fig 4-6](4-6.png "fig:Fig 4-6")
 
 4.Introduction to Speed Loop Oscilloscope
 
@@ -299,6 +395,10 @@ Fig 4-5
 *   channel2 is the offset and amplification of the INNFOS actuator current (Mark 5),
 *   channel3 is the offset and magnification of the INNFOS actuator speed (Mark 6)
 *   channel4 is the offset and magnification of the INNFOS actuator position (Mark 7)
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig4-6.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig4-6.png)
+
+
 <div class="figure">
 ![Fig 4-7](4-7.png "Fig 4-7")
 
@@ -312,6 +412,10 @@ Fig 4-7
 *   Enter the reverse number in Value2. (Unit: RPM)
 *   Enter the unit time (in ms) in Interval to set the parameters of the INNFOS actuator square wave generator.
 *   Select “Start” to turn the INNFOS actuator on.
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig4-8.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig4-8.png)
+
+
 <div class="figure">
 ![Fig 4-8](4-8.png "Fig 4-8")
 
@@ -321,13 +425,25 @@ Fig 4-8
 
 6.Set the parameters in the &quot;View Graph&quot; view to better check the current INNFOS SCA different parameter waveforms, adjusting the value of Proportional and Integral (PI), so that the performance will be reflected in the form of waveform in the oscilloscope.
 
-<span style="color: red">Note: The unused channel offset is set to 0 and the amplification is set to 1 (channel2 and channel4 in the figure) or click the OFF to shut it down.</span> ![Fig 4-9](4-9.png "fig:Fig 4-9")
+<span style="color: red">Note: The unused channel offset is set to 0 and the amplification is set to 1 (channel2 and channel4 in the figure) or click the OFF to shut it down.</span> 
 
-7.Click “Stop” to stop the square-wave generator. ![Fig 4-10](4-10.png "fig:Fig 4-10")
+[![](https://github.com/innfos/wiki/blob/master/cn/img/4-9.png)](https://github.com/innfos/wiki/blob/master/cn/img/4-9.png)
+
+![Fig 4-9](4-9.png "fig:Fig 4-9")
+
+7.Click “Stop” to stop the square-wave generator. 
+
+
+
+
+![Fig 4-10](4-10.png "fig:Fig 4-10")
 
 ## Position Loop Mode
 
 Logic block diagram of the INNFOS actuator system：
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/position.jpg)](https://github.com/innfos/wiki/blob/master/cn/img/position.jpg)
+
 
 ![Logic block diagram of the INNFOS actuator system:](微伺服软件界面最终00-44 5-1.png "fig:Logic block diagram of the INNFOS actuator system:")
 
@@ -336,6 +452,10 @@ Introduction of the block diagram:
 In the case of ensuring the accuracy of the current loop and the speed loop, the set position value and the feedback value, through addition and subtraction, passed through the PI module and then output the speed value through the optional filter. After that, the speed loop drives the motor through the current loop, and the motor feeds back the position parameters to the system via the encoder. All this form a closed loop.
 
 ### Click “position” to enter the position loop mode
+
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-2.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-2.png)
+
 
 <div class="figure">
 ![Fig 5-2](5-2.png "Fig 5-2")
@@ -360,11 +480,20 @@ Fig 5-2
 
 (7) INNFOS actuator connection status
 
-(8) Oscilloscope switch ![Fig 5-3](5-3.png "fig:Fig 5-3")
+(8) Oscilloscope switch 
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-3.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-3.png)
+
+![Fig 5-3](5-3.png "fig:Fig 5-3")
 
 ### Position Loop Usage
 
-1.Click on “Active Position Mode” to activate the current position loop mode. ![Fig 5-4](5-4.png "fig:Fig 5-4")
+1.Click on “Active Position Mode” to activate the current position loop mode.
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-4.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-4.png)
+
+
+![Fig 5-4](5-4.png "fig:Fig 5-4")
 
 2.Position loop basic parameter settings:
 
@@ -374,6 +503,10 @@ Fig 5-2
 *   After rotating, the status value column (Mark. 5) can see the current parameter values.
 *   Adjust the Proportional box to change the scale value (Mark. 2).
 *   The Mininal box and Maximum box (Mark. 3)are the speed limit of the speed loop for the position loop, for example, speed is up to 6000RPM, input value is 0.5, then the maximum speed of the INNFOS actuator rise to 6000*0.5=3000R/min, the speed value will be limited and will not increase.
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-5.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-5.png)
+
+
 <div class="figure">
 ![Fig 5-5](5-5.png "Fig 5-5")
 
@@ -381,7 +514,12 @@ Fig 5-5
 
 </div>
 
-3.Click on &quot;View Graph&quot; to open the oscilloscope ![Fig 5-6](5-6.png "fig:Fig 5-6")
+3.Click on &quot;View Graph&quot; to open the oscilloscope
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-6.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-6.png)
+
+
+![Fig 5-6](5-6.png "fig:Fig 5-6")
 
 4.Oscilloscope Function Description
 
@@ -392,6 +530,11 @@ Fig 5-5
 *   Channel2 sets the offset and amplification of the INNFOS actuator current (Mark 5);
 *   Channel3 is the offset and magnification of the INNFOS actuator speed (Mark 6);
 *   Channel4 is the offset and magnification of the INNFOS actuator position (Mark 7).
+
+
+
+
+
 <div class="figure">
 ![Fig 5-7](5-7.png "Fig 5-7")
 
@@ -405,6 +548,11 @@ Fig 5-7
 *   Enter positional value 2 in Value2 (unit: R)
 *   Enter the time (unit: ms) in “Interval”, the input parameter is of the rotating for one time (for example, Value1 is 2, Value2 is -2, and Interval is 1000. After startup, INNFOS Actuator first goes to position 2, 1000mS and then goes to position-2.Go to position 2 again after 1000ms, and then run it repeatedly until the user clicks &quot;Stop&quot;).
 *   Click the &quot;Start&quot; button to turn on the INNFOS actuator.
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-8.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-8.png)
+
+
+
 <div class="figure">
 ![Fig 5-8](5-8.png "Fig 5-8")
 
@@ -412,15 +560,28 @@ Fig 5-8
 
 </div>
 
-6. Click &quot;View Graph&quot; to open the oscilloscope window, you can view the given (this the time is the square wave generator), current, speed, position four-channel parameter waveform. <span style="color: red">Note: No the channel offset used is set to and the zoom is set to 1 (as in channel 2 and in the image to the right) Channel3）</span> ![Fig 5-9](5-9-1.png "fig:Fig 5-9")
+6. Click &quot;View Graph&quot; to open the oscilloscope window, you can view the given (this the time is the square wave generator), current, speed, position four-channel parameter waveform. <span style="color: red">Note: No the channel offset used is set to and the zoom is set to 1 (as in channel 2 and in the image to the right) Channel3）</span>
 
-7.Click the “Stop” to stop the square wave generator. ![Fig 5-10](5-10.png "fig:Fig 5-10")
 
-8.Click the “Stop” button to stop the square wave generator. ![Fig 5-11](5-11.png "fig:Fig 5-11")
+
+7.Click the “Stop” to stop the square wave generator.
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-10.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-10.png)
+
+![Fig 5-10](5-10.png "fig:Fig 5-10")
+
+8.Click the “Stop” button to stop the square wave generator. 
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-11.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-11.png)
+
+![Fig 5-11](5-11.png "fig:Fig 5-11")
 
 ## Position loop S-curve mode
 
 ### Click on &quot;Profile Velocity Mode&quot; to enter position loop S-curve mode
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig6-1.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig6-1.png)
+
 
 <div class="figure">
 ![Fig 6-1](6-1.png "Fig 6-1")
@@ -441,11 +602,20 @@ Fig 6-1
 
 (5) Error warning
 
-(6) INNFOS actuator current connection status ![Fig 6-2](6-2.png "fig:Fig 6-2")
+(6) INNFOS actuator current connection status 
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig6-2.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig6-2.png)
+
+
+![Fig 6-2](6-2.png "fig:Fig 6-2")
 
 ### position loop S-curve mode
 
-1.Click on “Active Profile Velocity Mode” to activate position loop S-curve mode ![Fig 6-3](6-3.png "fig:Fig 6-3")
+1.Click on “Active Profile Velocity Mode” to activate position loop S-curve mode
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig6-3.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig6-3.png)
+
+![Fig 6-3](6-3.png "fig:Fig 6-3")
 
 2.Basic parameters of position loop S-curve mode:
 
@@ -454,6 +624,10 @@ Fig 6-1
 *   Accelerate box and Decelerate box, at the right picture 2, are the rise and fall of speed in the S curve mode. For example, the larger the Accelerate value is, the shorter time the INNFOS actuator reaches the maximum speed needs; and the smaller the Accelerate value is , the longer time that INNFOS actuator reaches the maximum speed is needed. The larger the Decelerate value, the shorter the time that the INNFOS actuator will decrease from maximum speed to zero. The smaller the Decelerate value, the longer the INNFOS actuator will decrease from maximum speed to zero.
 *   “Max” limits the maximum speed of the INNFOS actuator and increases as the value increases. As shown in the three figures on the right, the current maximum speed is 1000 RPM.
 *   关于位置环S曲线模式的原理分析参见附录D。
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig6-4.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig6-4.png)
+
+
 <div class="figure">
 ![Fig 6-4](6-4.png "Fig 6-4")
 
@@ -467,12 +641,7 @@ Fig 6-4
 
 ### Click on &quot;Profile Velocity Mode&quot; to enter the velocity loop S-curve mode
 
-<div class="figure">
-![Fig 7-1](7-1.png "Fig 7-1")
-
-Fig 7-1
-
-</div>
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig7-1.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig7-1.png)
 
 ### Velocity loop curve mode functional descriptions
 
@@ -486,17 +655,32 @@ Fig 7-1
 
 (5) Error warning
 
-(6) INNFOS actuator current connection status ![Fig 7-2](7-2.png "fig:Fig 7-2")
+(6) INNFOS actuator current connection status 
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig7-2.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig7-2.png)
+
+
+![Fig 7-2](7-2.png "fig:Fig 7-2")
 
 ### Velocity loop S-curve mode
 
-1.Click on “Active Profile Velocity Mode” to activate the Velocity loop S-mode ![Fig 7-3](7-3.png "fig:Fig 7-3")
+1.Click on “Active Profile Velocity Mode” to activate the Velocity loop S-mode 
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig7-3.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig7-3.png)
+
+
+![Fig 7-3](7-3.png "fig:Fig 7-3")
 
 2.Basic parameters of Velocity loop S-mode:
 
 *   Enter the speed value of the INNFOS actuator (unit: RPM) in the &quot;Target&quot; box and the INNFOS actuator will start to rotate until the input value is reached.
 *   After the INNFOS actuator rotating, the values of the current INNFOS actuator can be seen in the status value column, (right in Figure 3).
 *   The &quot;Accelerate&quot;, &quot;Decelerate&quot; and &quot;Max&quot; items at 2 in the right figure are the rectified parameters of the S curve.
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig7-4.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig7-4.png)
+
+
+
 <div class="figure">
 ![Fig 7-4](7-4.png "Fig 7-4")
 
@@ -508,6 +692,11 @@ Fig 7-4
 
 ### Click on &quot;Homing Mode&quot; to enter the homing mode
 
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig8-1.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig8-1.png)
+
+
+
+
 <div class="figure">
 ![Figure：8-1](8-1.png "Figure：8-1")
 
@@ -517,13 +706,21 @@ Figure：8-1
 
 ### Usage of homing mode
 
-Click on “Active Homing Mode” to activate the current homing mode. ![Figure：8-2](8-2.png "fig:Figure：8-2")
+Click on “Active Homing Mode” to activate the current homing mode. 
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig8-2.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig8-2.png)
+
+![Figure：8-2](8-2.png "fig:Figure：8-2")
 
 ### Velocity loop curve mode functional descriptions
 
 1.Automatic calibration of left and right limits
 
 *   Click the Clear and Homing buttons one after the other, and repeat the current left and right limits twice, until the data in Figure 8-1 shows the following large value (the upper and lower limits of the software limit). Then adjust the right picture of Figure 8-1 to the following large value (this is the current limit, such as the need for a larger current when the load increased, the current limit needs to be released). After that, click on the Auto button and the INNFOS actuator will automatically turn clockwise until it touches the mechanical left limit (here defines the mechanical limit for clockwise touch to the left limit and counterclockwise for the right limit), then automatically counterclockwise until touch the mechanical right limit to stop.
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig8-3.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig8-3.png)
+
+
 <div class="figure">
 ![Figure：8-3](8-3.png "Figure：8-3")
 
@@ -532,6 +729,10 @@ Figure：8-3
 </div>
 
 *   At this point, the value of the left and right limits is returned to 1 in Figure 8-1. Then manually control to rotate the INNFOS actuator to the desired zero point (for example, 2 in the left figure in Figure 8-2), and finally click the Homing button, then the current position becomes zero (as shown in Figure 3-2 on the right side of Figure 03) 2)) The left and right limits of the 1st position on the right side of Figure 8-2 will be offset according to the position before clicking Homing (compare the two sides in Figure 8-2). This ensures the consistency of software limits and mechanical limits.
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig8-4.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig8-4.png)
+
+
 <div class="figure">
 ![Figure：8-4](8-4.png "Figure：8-4")
 
@@ -543,19 +744,54 @@ Figure：8-4
 
 ### Manual calibration of left and right limits
 
-1.Click on the red box position &quot;Active Homing Mode&quot; on the right to enter the homing mode. ![Fig 9-1](手动校准01.png "fig:Fig 9-1")
+1.Click on the red box position &quot;Active Homing Mode&quot; on the right to enter the homing mode. 
 
-2.Click the Clear and Homing buttons one after the other, and to clear the current left and right limits using this operation twice. Until the data in the red box 1 on the right is changed to the large value (this is the upper and lower limits of the software limit). Then adjust the right picture 2 to the following large value (this is the current limit, such as the need for a larger current when the load is increased, and the current limit needs to be released). ![Fig 9-2](手动校准02.png "fig:Fig 9-2")
 
-3.Manually adjust the joint to the left mechanical limit and click on &quot;Max_Set&quot;, at which point the value at the &quot;Max Pos&quot; will change. ![Fig 9-3](手动校准03.png "fig:Fig 9-3")
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig9-1.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig9-1.png)
 
-4.Manually adjust the joint to the right mechanical limit and click on &quot;Min_Set&quot;. The value of the &quot;Min Pos&quot; column will change. ![Fig 9-4](手动校准05.png "fig:Fig 9-4")
 
-5.Manually adjust the joint to zero point, click 2, and then 1 will become 0. ![Fig 9-5](手动校准06.png "fig:Fig 9-5")
+![Fig 9-1](手动校准01.png "fig:Fig 9-1")
 
-6.Set the left and right limit offset ![Fig 9-6](手动校准07.png "fig:Fig 9-6")
+2.Click the Clear and Homing buttons one after the other, and to clear the current left and right limits using this operation twice. Until the data in the red box 1 on the right is changed to the large value (this is the upper and lower limits of the software limit). Then adjust the right picture 2 to the following large value (this is the current limit, such as the need for a larger current when the load is increased, and the current limit needs to be released). 
 
-7.Click the &quot;Download&quot; button to save the current parameters. ![Fig 9-7](手动校准08.png "fig:Fig 9-7")
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig9-2.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig9-2.png)
+
+
+![Fig 9-2](手动校准02.png "fig:Fig 9-2")
+
+3.Manually adjust the joint to the left mechanical limit and click on &quot;Max_Set&quot;, at which point the value at the &quot;Max Pos&quot; will change.
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig9-3.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig9-3.png)
+
+![Fig 9-3](手动校准03.png "fig:Fig 9-3")
+
+4.Manually adjust the joint to the right mechanical limit and click on &quot;Min_Set&quot;. The value of the &quot;Min Pos&quot; column will change.
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig9-4.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig9-4.png)
+
+
+![Fig 9-4](手动校准05.png "fig:Fig 9-4")
+
+5.Manually adjust the joint to zero point, click 2, and then 1 will become 0. 
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig9-5.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig9-5.png)
+
+
+![Fig 9-5](手动校准06.png "fig:Fig 9-5")
+
+6.Set the left and right limit offset 
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig9-6.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig9-6.png)
+
+
+![Fig 9-6](手动校准07.png "fig:Fig 9-6")
+
+7.Click the &quot;Download&quot; button to save the current parameters. 
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig9-7.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig9-7.png)
+
+
+![Fig 9-7](手动校准08.png "fig:Fig 9-7")
 
 ## Error warning
 
@@ -563,11 +799,22 @@ Figure：8-4
 
 As shown in the figure, an error message is displayed.
 
-<span style="color: red">（Note: If you use the latest version of the host computer software, the alarm will be detailed.）</span> ![9-1.png](9-1.png "fig:9-1.png")
+<span style="color: red">（Note: If you use the latest version of the host computer software, the alarm will be detailed.）</span> 
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/File9-1.png)](https://github.com/innfos/wiki/blob/master/cn/img/File9-1.png)
+
+
+
+![9-1.png](9-1.png "fig:9-1.png")
 
 ### Error handling
 
-Click &quot;OK&quot; and &quot;Clear Errors&quot; to solve the problem. After clearing, the INNFOS actuator enters current loop mode. ![9-2.png](9-2.png "fig:9-2.png")
+Click &quot;OK&quot; and &quot;Clear Errors&quot; to solve the problem. After clearing, the INNFOS actuator enters current loop mode. 
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/File9-2.png)](https://github.com/innfos/wiki/blob/master/cn/img/File9-2.png)
+
+
+![9-2.png](9-2.png "fig:9-2.png")
 
 # Version Change Record
 
