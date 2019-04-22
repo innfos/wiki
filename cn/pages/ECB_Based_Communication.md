@@ -5,7 +5,7 @@
 ## 硬件需求与连接
 
 **硬件需求**</br> 
-![all.jpg](../img/all.jpg) {: width="100px" height="100px"}
+![all.jpg](../img/all.jpg)
 
 </br>从前到后、从左到右依次为：ECB、HUB、终端电阻2个、回馈制动电容、ECB连接线、INNFOS执行器、执行器连接线，急停开关+电源。</br>
 
