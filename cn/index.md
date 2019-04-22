@@ -31,7 +31,7 @@
 
 
 ## QDD Pro
-  * [QDD Pro-3510-30](https://www.mdeditor.com/)
+  * [QDD Pro-3510-30](pages/QDDPro-3510-30.md)
   * [QDD Pro-3510-50](https://www.mdeditor.com/)
   * [QDD Pro-3510-80](https://www.mdeditor.com/)
   * [QDD Pro-3510-100](https://www.mdeditor.com/)
