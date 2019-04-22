@@ -110,7 +110,7 @@ INNFOS执行器系统的逻辑框图：
 
 （9）示波器开关
 
-![3-2.png](../img/3-2.png)
+![Fig3-2.png](../img/Fig3-2.png)
 
 ### 基本参数的描述
 
@@ -482,7 +482,7 @@ INNFOS执行器系统的逻辑框图：
 
 点击“OK”，再点击“Clear Errors”可清除错误，清除错误后，INNFOS执行器进入电流环模式。
 
-![File9-2.png](../img/Fig9-2.png)
+![File9-2.png](../img/File9-2.png)
 
 
 # 版本信息
