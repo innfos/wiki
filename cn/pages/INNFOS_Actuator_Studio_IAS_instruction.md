@@ -9,14 +9,14 @@
 
 ![install01.jpg](../img/install01.jpg )
 
-![](https://github.com/innfos/wiki/blob/master/cn/img/install01.jpg)(https://github.com/innfos/wiki/blob/master/cn/img/install01.jpg)
+![](https://github.com/innfos/wiki/blob/master/cn/img/install01.jpg)
 
 > 软件安装.
 
 
 2.进入安装界面后，点击“Next”
 
-![](https://github.com/innfos/wiki/blob/master/cn/img/1-2.png)(https://github.com/innfos/wiki/blob/master/cn/img/1-2.png)
+![](https://github.com/innfos/wiki/blob/master/cn/img/1-2.png)
 
 3.点击“I Agree”
 
