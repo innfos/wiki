@@ -62,7 +62,7 @@
 
 **配置IP地址**
 
-*   配置步骤请参考[以太网通信配置](http://wiki.innfos.com:81/wiki/index.php/Ethernet_Configuration)
+*   配置步骤请参考[以太网通信配置](Ethernet_Configuration.md)
 
 **安装IAS**
 
