@@ -13,11 +13,11 @@
 
 2.进入安装界面后，点击“Next”
 
-[![](https://github.com/innfos/wiki/blob/master/cn/img/1-2.png=400px)](https://github.com/innfos/wiki/blob/master/cn/img/1-2.png)
+[![](https://github.com/innfos/wiki/blob/master/cn/img/1-2.png)](https://github.com/innfos/wiki/blob/master/cn/img/1-2.png)
 
 3.点击“I Agree”
 
-[![](https://github.com/innfos/wiki/blob/master/cn/img/1-3.png=400px)](https://github.com/innfos/wiki/blob/master/cn/img/1-3.png)
+[![](https://github.com/innfos/wiki/blob/master/cn/img/1-3.png)](https://github.com/innfos/wiki/blob/master/cn/img/1-3.png)
 
 4.选择安装位置，然后点击“Install”
 
@@ -29,7 +29,7 @@
 
 6.如遇到有杀毒软件提示报警时，请选择“允许本次操作”，
 
-[![](https://github.com/innfos/wiki/blob/master/cn/img/1-6.png=400px)](https://github.com/innfos/wiki/blob/master/cn/img/1-6.png)
+[![](https://github.com/innfos/wiki/blob/master/cn/img/1-6.png)](https://github.com/innfos/wiki/blob/master/cn/img/1-6.png)
 
 
 7.点击“Finish”，完成软件的安装
@@ -47,41 +47,41 @@
 
 2.点击“confirm that you’ve read the document”，然后点击“next”，进入下一界面，（如果是初次对本产品使用者，请点击show the document！ ,阅读软件使用说明）
 
-[![](https://github.com/innfos/wiki/blob/master/cn/img/2-2.png){height="300"width="300"}](https://github.com/innfos/wiki/blob/master/cn/img/2-2.png)
+[![](https://github.com/innfos/wiki/blob/master/cn/img/2-2.png)](https://github.com/innfos/wiki/blob/master/cn/img/2-2.png)
 
 
 3.选择执行器通信方式（默认为以太网通信），然后继续点击“next”（注：如果是初次使用以太网通信，应配置静态IP,具体配置见附录B）
 
-[![](https://github.com/innfos/wiki/blob/master/cn/img/2-3.png=450px)](https://github.com/innfos/wiki/blob/master/cn/img/2-3.png)
+[![](https://github.com/innfos/wiki/blob/master/cn/img/2-3.png)](https://github.com/innfos/wiki/blob/master/cn/img/2-3.png)
 
 
 *   当USB转CAN未连接或连接不正常时，会出现如图错误提示。
 
-[![](https://github.com/innfos/wiki/blob/master/cn/img/2-4.png=450px)](https://github.com/innfos/wiki/blob/master/cn/img/2-4.png)
+[![](https://github.com/innfos/wiki/blob/master/cn/img/2-4.png)](https://github.com/innfos/wiki/blob/master/cn/img/2-4.png)
 
 
 *   当外部执行器没有连接或连接不正常时，会出现如图错误提示
 
-[![](https://github.com/innfos/wiki/blob/master/cn/img/2-5.png=450px)](https://github.com/innfos/wiki/blob/master/cn/img/2-5.png)
+[![](https://github.com/innfos/wiki/blob/master/cn/img/2-5.png)](https://github.com/innfos/wiki/blob/master/cn/img/2-5.png)
 
 *   当外部系统连接正确，系统进入执行器运行界面，单机红色区域OFF，如图，标记1处OFF为单个执行器开关，2处ON为总开关，比如多个执行器同时连接时，点击总开关即可控制所有执行器开关机。
 
-[![](https://github.com/innfos/wiki/blob/master/cn/img/2-6.png=450px)](https://github.com/innfos/wiki/blob/master/cn/img/2-6.png)
+[![](https://github.com/innfos/wiki/blob/master/cn/img/2-6.png)](https://github.com/innfos/wiki/blob/master/cn/img/2-6.png)
 
 
 *   点击OFF开机后，弹出右图中红色区域提示信息
 
-[![](https://github.com/innfos/wiki/blob/master/cn/img/2-7.png=450px)](https://github.com/innfos/wiki/blob/master/cn/img/2-7.png)
+[![](https://github.com/innfos/wiki/blob/master/cn/img/2-7.png)](https://github.com/innfos/wiki/blob/master/cn/img/2-7.png)
 
 
 *   等待三秒后，如图，标记一处为该执行器ID号，标记2处为错误清除键，标记3处为Detail键可进入执行器操作界面，标记4处为该执行器的信息显示区域。
 
-[![](https://github.com/innfos/wiki/blob/master/cn/img/2-8.png=450px)](https://github.com/innfos/wiki/blob/master/cn/img/2-8.png)
+[![](https://github.com/innfos/wiki/blob/master/cn/img/2-8.png)](https://github.com/innfos/wiki/blob/master/cn/img/2-8.png)
 
 
 4.双击执行器信息框或者点击“Detail”键，进入电流环模式。
 
-[![](https://github.com/innfos/wiki/blob/master/cn/img/2-9.png=450px)](https://github.com/innfos/wiki/blob/master/cn/img/2-9.png)
+[![](https://github.com/innfos/wiki/blob/master/cn/img/2-9.png)](https://github.com/innfos/wiki/blob/master/cn/img/2-9.png)
 
 
 ## **电流环模式**
