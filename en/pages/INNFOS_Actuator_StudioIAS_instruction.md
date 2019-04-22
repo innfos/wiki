@@ -537,14 +537,14 @@ As shown in the figure, an error message is displayed.
 
 <span style="color: red">（Note: If you use the latest version of the host computer software, the alarm will be detailed.）</span> 
 
-![File9-1.jpg](../img/File9-1.jpg)
+![File9-1.png](../img/File9-1.png)
 
 
 ### Error handling
 
 Click &quot;OK&quot; and &quot;Clear Errors&quot; to solve the problem. After clearing, the INNFOS actuator enters current loop mode. 
 
-![File9-2.jpg](../img/File9-2.jpg)
+![File9-2.png](../img/File9-2.png)
 
 # Version Change Record
 
