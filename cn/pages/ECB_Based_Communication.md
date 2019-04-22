@@ -3,7 +3,7 @@
 # 硬件需求与连接
 
 **硬件需求**</br> 
-![all.jpg](../img/all.jpg) 
+![all.jpg](../img/all.jpg =500x) 
 
 </br>从前到后、从左到右依次为：ECB、HUB、终端电阻2个、回馈制动电容、ECB连接线、INNFOS执行器、执行器连接线，急停开关+电源。</br>
 
@@ -47,7 +47,9 @@
 
 *   上电以后，执行器LED状态灯会变成黄色闪烁，启动执行器后，LED会变成绿色闪烁，这时就可以与执行器进行通信了。如果执行器内部出现错误，LED灯会变为红色闪烁，请检查执行器错误代码。</br>
 
-![poweron2.jpg](../img/poweron2.jpg "fig:poweron2.jpg")</br> ![connect2.png](../img/connect2.png "fig:connect2.png") </br>
+![poweron2.jpg](../img/poweron2.jpg "fig:poweron2.jpg")</br> 
+
+![connect2.png](../img/connect2.png "fig:connect2.png") </br>
 
 # 软件安装与使用
 
@@ -65,12 +67,22 @@
 
 **使用**</br> ![2-2.png](../img/2-2.png "fig:2-2.png")</br>
 
-安装成功后，启动IAS,单击“确认”按钮启用“下一步”按钮，然后单击“下一步”直到出现如下界面:</br> ![2-6.png](2-6.png "fig:2-6.png") </br></br> 单击“1”或“2”按钮启动执行器，按钮“1”变为绿色表示您已成功启动执行器。单击消息框或单击“详细信息”按钮（位于按钮“1”下方） 进入执行器调试界面。</br> ![2-9.png](../img/2-9.png "fig:2-9.png") </br> **位置控制**
+安装成功后，启动IAS,单击“确认”按钮启用“下一步”按钮，然后单击“下一步”直到出现如下界面:</br> 
+
+![2-6.png](../img/2-6.png "fig:2-6.png") 
+
+</br></br> 单击“1”或“2”按钮启动执行器，按钮“1”变为绿色表示您已成功启动执行器。单击消息框或单击“详细信息”按钮（位于按钮“1”下方） 进入执行器调试界面。</br> 
+
+![2-9.png](../img/2-9.png "fig:2-9.png") 
+
+</br> **位置控制**
 
 *   单击左侧栏上的“Profile Position Mode”按钮，然后单击右侧的“Activate Profile Position Mode”。之后，您可以在“设置”中输入位置值，单位是R(范围是-127R~127R)。</br>
 
-<embed src="6-1.png " title="fig: 450px" /> <embed src="6-3.png " title="fig: 450px" />
-![6-1.png](../img/6-1.png )
+![6-1.png](../img/Fig6-1.png )</br>
+
+![6-3.png](../img/Fig6-3.png )
+
 ## 其他
 
 想了解更多关于IAS的信息 , 请访问[INNFOS Actuator Studio(IAS) instruction](INNFOS_Actuator_Studio(IAS)_instruction "wikilink").
