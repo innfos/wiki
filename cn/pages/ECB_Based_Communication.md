@@ -4,12 +4,13 @@
 
 ## 硬件需求与连接
 
-**硬件需求**</br> 
+**硬件需求**
+
 ![all.jpg](../img/all.jpg)
-</br>
+
 ![markdown](http://wiki.innfos.com:81/wiki/images/8/8f/%E6%9C%AA%E6%A0%87.png "markdown")
 
-</br>从前到后、从左到右依次为：ECB、HUB、终端电阻2个、回馈制动电容、ECB连接线、INNFOS执行器、执行器连接线，急停开关+电源。</br>
+从前到后、从左到右依次为：ECB、HUB、终端电阻2个、回馈制动电容、ECB连接线、INNFOS执行器、执行器连接线，急停开关+电源。</br>
 
 **连接电源**</br>
 
