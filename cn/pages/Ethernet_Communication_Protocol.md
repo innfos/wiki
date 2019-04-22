@@ -78,7 +78,7 @@
 **示例1.读命令**
 <table cellspacing=0 border=1>
 	<tr>
-		<td colspan="6"style=background:PaleTurquoise>读取执行器ID为0x01的当前速度值</td>
+		<th colspan="6"style=background:PaleTurquoise>读取执行器ID为0x01的当前速度值</th>
 	</tr>
 	<tr>
 		<td style=min-width:50px>帧头</td>
@@ -183,11 +183,11 @@
 
 应 答 内 容 ：0x0E 0x01
 
-## 发送流程*
+## 发送流程
 
 ### 通信配置
 
-以太网通信方式采用udp通信，[ECB固定了ip地址](ECB_&amp;_HUB "wikilink")，为192.168.1.30(默认)，可以通过相关协议修改该ip地址。PC端需修改网络配置，ip地址修改为192.168.1.xxx，xxx为需大于100，以避免和[ECB地址冲突](ECB_&amp;_HUB "wikilink")，子网掩码255.255.255.0，默认网关192.168.1.1，配置成功并且连接成功通电以后，可以ping到[ECB的ip地址](ECB_&amp;_HUB "wikilink")，这样就表示连接成功，通信端口为2000，可以通过该端口与执行器通信。
+以太网通信方式采用udp通信，ECB固定了ip地址，为192.168.1.30(默认)，可以通过相关协议修改该ip地址。PC端需修改网络配置，ip地址修改为192.168.1.xxx，xxx为需大于100，以避免和ECB地址冲突，子网掩码255.255.255.0，默认网关192.168.1.1，配置成功并且连接成功通电以后，可以ping到ECB的ip地址，这样就表示连接成功，通信端口为2000，可以通过该端口与执行器通信。
 
 ### 与ECB握手
 
