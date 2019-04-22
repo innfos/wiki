@@ -66,7 +66,7 @@
 
 **安装IAS**
 
-*   安装IAS请参考[IAS安装](http://wiki.innfos.com:81/wiki/index.php/INNFOS_Actuator_Studio(IAS)_instruction#IAS_installation)。</br>
+*   安装IAS请参考[IAS安装](INNFOS_Actuator_Studio_IAS_instruction.md)</br>
 
 **使用**</br> ![2-2.png](2-2.png "fig:2-2.png")</br>
 
