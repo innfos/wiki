@@ -78,7 +78,7 @@
 **示例1.读命令**
 <table cellspacing=0 border=1>
 	<tr>
-		<th colspan="6"style=background:PaleTurquoise>读取执行器ID为0x01的当前速度值</th>
+		<th colspan="6">读取执行器ID为0x01的当前速度值</th>
 	</tr>
 	<tr>
 		<td style=min-width:50px>帧头</td>
