@@ -233,11 +233,17 @@ INNFOS执行器系统的逻辑框图：
 
 （7）INNFOS执行器连接状态
 
-（8）示波器开关 ![4-3.png](4-3.png "fig:4-3.png")
+（8）示波器开关 
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig4-3.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig4-3.png)
+
 
 ### 速度环使用方式
 
-1.点击“Active Velocity Mode”，激活当前速度环模式。 ![4-4.png](4-4.png "fig:4-4.png")
+1.点击“Active Velocity Mode”，激活当前速度环模式。
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig4-4.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig4-4.png)
+
 
 2.速度环基本参数设置：
 
@@ -246,14 +252,14 @@ INNFOS执行器系统的逻辑框图：
 *   调节Proportional框和Integral框可调节PI值，右图2处。
 *   右图3处的Mininal框和Maximum框为速度环输出限幅（后接电流环的输入），例如：电流最大值为33A（6010型为33A，3510型为16.5A，具体参见《CAN总线通信协议》附录D），输入值为0.5，那么INNFOS执行器电流增加到33*0.5的时候，电流值将受限，不再增加。
 *   按“Halt”键可停止INNFOS执行器的转动。
-<div class="figure">
-![4-5.png](4-5.png "4-5.png")
 
-4-5.png
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig4-5.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig4-5.png)
 
-</div>
 
-3.点击“View Graph”可打开示波器,参数界面介绍同上。 ![4-6.png](4-6.png "fig:4-6.png")
+3.点击“View Graph”可打开示波器,参数界面介绍同上。
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig4-6.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig4-6.png)
+
 
 4.方波发生器参数值设定
 
@@ -261,16 +267,15 @@ INNFOS执行器系统的逻辑框图：
 *   在Value2中输入转速2。(单位:RPM)
 *   在Interval内输入单位时间（单位：ms），可设置INNFOS执行器方波发生器的参数。
 *   选择点击“Start”键，开启INNFOS执行器转动。
-<div class="figure">
-![4-8.png](4-8.png "4-8.png")
 
-4-8.png
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig4-8.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig4-8.png)
 
-</div>
 
 5.设置“View Graph”视图里的参数，可以更好的查看当前INNFOS执行器 各项参数波形，调节INNFOS执行器Proportional和Integral（PI） 的数值，其性能会在示波器中以波形方式反应出来。
 
-<span style="color: red">注：不用的通道偏置设置为0，放大设置为1（右图中channel2和channel4），或者直接点击OFF关闭其显示</span> ![4-9.png](4-9.png "fig:4-9.png")
+<span style="color: red">注：不用的通道偏置设置为0，放大设置为1（右图中channel2和channel4），或者直接点击OFF关闭其显示</span>
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig4-9.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig4-9.png)
 
 ## **位置环模式**
 
