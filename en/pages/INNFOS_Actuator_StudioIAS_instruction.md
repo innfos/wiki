@@ -37,17 +37,41 @@ IAS is a visual debug control software for INNFOS actuator, the main functions o
 
 
 
-2.After entering the installation interface, click &quot;Next&quot; ![1-2](1-2.png "fig:1-2")
+2.After entering the installation interface, click &quot;Next&quot;
 
-3.click “I Agree” ![1-3](1-3.png "fig:1-3")
+[![](https://github.com/innfos/wiki/blob/master/cn/img/1-2.png)](https://github.com/innfos/wiki/blob/master/cn/img/1-2.png)
 
-4.Select the installation location and click &quot;Install&quot; ![1-3](1-4.png "fig:1-3")
+![1-2](1-2.png "fig:1-2")
 
-5.Wait for the completion of the installation ![1-4](1-5.png "fig:1-4")
+3.click “I Agree” 
 
-6.If encounter an alarm from anti-virus software, please select &quot;Allow this operation&quot;. ![1-5](1-6.png "fig:1-5")
+[![](https://github.com/innfos/wiki/blob/master/cn/img/1-2.png)](https://github.com/innfos/wiki/blob/master/cn/img/1-2.png)
 
-7.Click &quot;Finish&quot; to complete the software installation. ![1-6](1-7.png "fig:1-6")
+![1-3](1-3.png "fig:1-3")
+
+4.Select the installation location and click &quot;Install&quot;
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/1-3.png)](https://github.com/innfos/wiki/blob/master/cn/img/1-3.png)
+
+![1-3](1-4.png "fig:1-3")
+
+5.Wait for the completion of the installation;
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/1-4.png)](https://github.com/innfos/wiki/blob/master/cn/img/1-4.png)
+
+![1-4](1-5.png "fig:1-4")
+
+6.If encounter an alarm from anti-virus software, please select &quot;Allow this operation&quot;
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/1-5.png)](https://github.com/innfos/wiki/blob/master/cn/img/1-5.png)
+
+. ![1-5](1-6.png "fig:1-5")
+
+7.Click &quot;Finish&quot; to complete the software installation.
+
+
+
+![1-6](1-7.png "fig:1-6")
 
 ## IAS boot
 
