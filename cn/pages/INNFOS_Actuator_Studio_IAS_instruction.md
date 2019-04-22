@@ -283,7 +283,6 @@ INNFOS执行器系统的逻辑框图：
 
 [![](https://github.com/innfos/wiki/blob/master/cn/img/position.jpg)](https://github.com/innfos/wiki/blob/master/cn/img/position.jpg)
 
-![INNFOS执行器系统的逻辑框图](微伺服软件界面最终00-44 5-1.png "fig:INNFOS执行器系统的逻辑框图")
 
 框图的介绍： 在确保电流环和速度环准确的情况下，位置设置值与位置反馈值做加减运算后经过PI模块后经可选的滤波器再经限幅模块输出速度值，然后速度值经速度环再经电流环驱动电机，电机经编码器把位置参数反馈给系统，使之形成闭环。
 
@@ -292,12 +291,6 @@ INNFOS执行器系统的逻辑框图：
 
 [![](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-2.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-2.png)
 
-<div class="figure">
-![5-2.png](5-2.png "5-2.png")
-
-5-2.png
-
-</div>
 
 ### 位置环模式各项功能描述
 
@@ -322,7 +315,6 @@ INNFOS执行器系统的逻辑框图：
 
 [![](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-3.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-3.png)
 
-![5-3.png](5-3.png "fig:5-3.png")
 
 ### 位置环使用方式
 
@@ -331,7 +323,6 @@ INNFOS执行器系统的逻辑框图：
 
 [![](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-4.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-4.png)
 
-![5-4.png](5-4.png "fig:5-4.png")
 
 2.位置环基本参数设置：
 
@@ -339,24 +330,14 @@ INNFOS执行器系统的逻辑框图：
 *   INNFOS执行器开始转动后，右图5处状态值栏可以看到当前INNFOS执行器的各项参数值。
 *   调节Proportional框可调节比例值，如右图2处。
 *   右图的3处的Mininal框和Maximum框为位置环输出给速度环的速度限制。执行器速度最大为6000RPM，例如输入值为0.5，那么INNFOS执行器最大速度增加到6000*0.5=3000R/分钟的时候，速度值将受限，不再增加。
-<div class="figure">
-
 
 [![](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-5.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-5.png)
-
-![5-5.png](5-5.png "5-5.png")
-
-5-5.png
-
-</div>
 
 3.点击“View Graph”可打开示波器，参数界面介绍同上 
 
 
 [![](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-6.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-6.png)
 
-
-![5-6.png](5-6.png "fig:5-6.png")
 
 4.方波发生器参数值设定
 
@@ -365,15 +346,7 @@ INNFOS执行器系统的逻辑框图：
 *   在Interval内输入时间（单位：ms），输入参数为转动一次的时间。（例：Value1为2，Value2为-2，Interval为1000，启动后，INNFOS执行器先转到位置2，1000mS后转到位置-2，在过1000ms再次转到位置2，如此反复运行直至用户点击“Stop”)。
 *   点击“Start”键，开启INNFOS执行器转动。
 
-
 [![](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-8.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-8.png)
-
-<div class="figure">
-![5-8.png](5-8.png "5-8.png")
-
-5-8.png
-
-</div>
 
 5.点击“View Graph”按钮打开示波器窗口，可以查看给定（此 时为方波发生器）、电流、速度、位置四通道参数波形。
 
@@ -382,18 +355,20 @@ INNFOS执行器系统的逻辑框图：
 
 [![](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-10.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-10.png)
 
-![5-10.png](5-10.png "fig:5-10.png")
 
 7.点击“Stop”键，可停止方波发生器的运行。
 
 
 [![](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-11.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-11.png)
 
-![5-11.png](5-11.png "fig:5-11.png")
 
 ## **位置环S曲线模式**
 
 ### 点击“Profile Position Mode”进入位置环S曲线模式
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig6-1.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig6-1.png)
+
+
 
 <div class="figure">
 ![6-1.png](6-1.png "6-1.png")
@@ -416,11 +391,17 @@ INNFOS执行器系统的逻辑框图：
 
 （5）错误警告
 
-（6）INNFOS执行器当前连接状态 ![6-2.png](6-2.png "fig:6-2.png")
+（6）INNFOS执行器当前连接状态 
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig6-2.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig6-2.png)
+
 
 ### 位置环S曲线模式使用方式
 
-1.点击“Active Profile Position Mode” 激活当前位置环S曲线模式 ![6-3.png](6-3.png "fig:6-3.png")
+1.点击“Active Profile Position Mode” 激活当前位置环S曲线模式 
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig6-3.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig6-3.png)
+
 
 2.位置环S曲线模式基本参数设置：
 
@@ -429,6 +410,9 @@ INNFOS执行器系统的逻辑框图：
 *   右图2处的Accelerate框和Decelerate框为S曲线模式下的速度上升和下降的平缓度，例如：Accelerate值越大，INNFOS执行器达到最大速度的时间越短，Accelerate值越小，INNFOS执行器达到最大转速的时间越长。Decelerate值越大，INNFOS执行器从最大速度降低到零的时间越短，Decelerate值越小，INNFOS执行器从最大速度降低到零的时间越长。
 *   “Max”限制了INNFOS执行器的最大转速，随数值增加而增加，如右图的3处，当前最大转速为1000RPM。
 *   关于位置环S曲线模式的原理分析参见附录D。
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig6-4.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig6-4.png)
+
+
 <div class="figure">
 ![6-4.png](6-4.png "6-4.png")
 
@@ -439,6 +423,9 @@ INNFOS执行器系统的逻辑框图：
 ## **速度环S曲线模式**
 
 ### 点击“Profile Velocity Mode”进入速度环S曲线模式
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig7-1.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig7-1.png)
+
 
 <div class="figure">
 ![7-1.png](7-1.png "7-1.png")
@@ -461,17 +448,30 @@ INNFOS执行器系统的逻辑框图：
 
 （5）错误警告
 
-（6）INNFOS执行器当前连接状态 ![7-2.png](7-2.png "fig:7-2.png")
+（6）INNFOS执行器当前连接状态 
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig7-2.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig7-2.png)
+
+
+![7-2.png](7-2.png "fig:7-2.png")
 
 ### 速度环S曲线模式使用方式
 
-1.点击“Active Profile Velocity Mode”，激活当前速度环S曲线模式。 ![7-3.png](7-3.png "fig:7-3.png")
+1.点击“Active Profile Velocity Mode”，激活当前速度环S曲线模式。 
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig7-3.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig7-3.png)
+
+
 
 2.速度环S曲线模式基本参数设置：
 
 *   在“Target”框中输入INNFOS执行器的速度值（单位：RPM），INNFOS执行器开始转动，直至达到输入值。
 *   INNFOS执行器开始转动后，在状态值栏可以看到当前INNFOS执行器的各项参数值，右图3处。
 *   右图中2处的Accelerate、Decelerate和Max项为S曲线的调整参数。
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig7-4.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig7-4.png)
+
+
 <div class="figure">
 ![7-4.png](7-4.png "7-4.png")
 
@@ -483,6 +483,10 @@ INNFOS执行器系统的逻辑框图：
 
 ### 点击“Homing Mode”进入归位模式
 
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig8-1.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig8-1.png)
+
+
+
 <div class="figure">
 ![8-1.png](8-1.png "8-1.png")
 
@@ -492,13 +496,21 @@ INNFOS执行器系统的逻辑框图：
 
 ### 归位模式使用方式
 
-点击“Active Homing Mode”，激活当前归位模式。 ![8-2.png](8-2.png "fig:8-2.png")
+点击“Active Homing Mode”，激活当前归位模式。
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig8-2.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig8-2.png)
+
+![8-2.png](8-2.png "fig:8-2.png")
 
 ### 速度环S曲线模式各项功能描述
 
 1.自动校准左右极限
 
 *   先后点击Clear和Homing按键，重复两次清除当前左右极限，直到右图8-1图1处数据变为如下大数值（这是软件限位的上下限）。然后将右图8-1图2处调为如下大数值（这是限流，比如加大负载时需要较大电流，需要放开电流限制）。然后点击Auto按钮，INNFOS执行器就会自动顺时针转动，直到触碰机械左极限（这里定义顺时针碰的机械限位为左极限，逆时针的为右极限），然后自动逆时针转动直到触碰机械右极限停止。
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig8-3.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig8-3.png)
+
+
 <div class="figure">
 ![图：8-1](8-3.png "图：8-1")
 
@@ -507,6 +519,11 @@ INNFOS执行器系统的逻辑框图：
 </div>
 
 *   此时会返回左右极限的值到图8-1的1处。然后手动控制转动INNFOS执行器到想要的零点（例如图8-2中左侧图的2处），最后点击Homing按键，则当前位置变为零点（如图8-2中右侧图03的2处），图8-2中右侧图的1处的左右极限会根据点击Homing前的位置进行偏移（对比图8-2中两侧图）。这样就保证了软件限位和机械限位的一致性。
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig8-4.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig8-4.png)
+
+
+
 <div class="figure">
 ![图：8-2](8-4.png "图：8-2")
 
@@ -515,6 +532,11 @@ INNFOS执行器系统的逻辑框图：
 </div>
 
 *   然后，设置到左右极限的余量偏置（图8-2中右侧图的3处），则实际运动范围为左右极限减去偏置，(图8-2中右侧图：左软件限位为33.774918-1.4=32.374918；右软件限位为-32.4932+1.4=-31.0932。)最后，确认软件限位开启如如图8-2中右侧图的4处后，点击Download按钮即可保存当前参数。
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-11.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-11.png)
+
+
+
 <div class="figure">
 ![图：8-2](8-4.png "图：8-2")
 
@@ -524,21 +546,44 @@ INNFOS执行器系统的逻辑框图：
 
 ### 手动校准左右极限
 
-1.点击右图红框位置&quot;Active Homing Mode&quot;进入归位模式。 ![手动校准01.png](手动校准01.png "fig:手动校准01.png")
+1.点击右图红框位置&quot;Active Homing Mode&quot;进入归位模式。
 
-2.先后点击&quot;Clear&quot;和&quot;Homing&quot;按键，重复两次可清除当前左右极限，并使当前位置变为零位。直到右图红框1处数据变为如图大数值（这是软件限位的上下限）。然后将右图2处调为如下大数值（这是限流，比如加大负载时需要较大电流，需要放开电流限制）。 ![手动校准02.png](手动校准02.png "fig:手动校准02.png")
 
-3.手动将关节或执行器调节到左机械极限，点击&quot;Max_Set&quot;，此时&quot;Max Pos&quot;栏处的数值会改变，左机械极限设定完毕。（此处也可以手动输入极限数值，单位：R） ![手动校准03.png](手动校准03.png "fig:手动校准03.png")
+![手动校准01.png](手动校准01.png "fig:手动校准01.png")
+
+2.先后点击&quot;Clear&quot;和&quot;Homing&quot;按键，重复两次可清除当前左右极限，并使当前位置变为零位。直到右图红框1处数据变为如图大数值（这是软件限位的上下限）。然后将右图2处调为如下大数值（这是限流，比如加大负载时需要较大电流，需要放开电流限制）。
+
+
+
+![手动校准02.png](手动校准02.png "fig:手动校准02.png")
+
+3.手动将关节或执行器调节到左机械极限，点击&quot;Max_Set&quot;，此时&quot;Max Pos&quot;栏处的数值会改变，左机械极限设定完毕。（此处也可以手动输入极限数值，单位：R）
+
+
+![手动校准03.png](手动校准03.png "fig:手动校准03.png")
 
 4.手动将关节或执行器调节到右机械极限，点击&quot;Min_Set&quot;，此时&quot;Min Pos&quot;栏处的数值会改变，右机械极限设定完毕。（此处也可以手动输入极限数值，单位：R）
 
-注意：位置模式使用时，应注意当前限位范围，如果当前位置在限位范围外，发位置指令时，位置则会回到限位范围内。 ![手动校准05.png](手动校准05.png "fig:手动校准05.png")
+注意：位置模式使用时，应注意当前限位范围，如果当前位置在限位范围外，发位置指令时，位置则会回到限位范围内。
 
-5.若只设定零点，则手动将关节或执行器调节至想要的零点，点击2处的Homing按键，1处的当前位置值会变为0。 ![手动校准06.png](手动校准06.png "fig:手动校准06.png")
 
-6.设置左右极限偏置 ![手动校准07.png](手动校准07.png "fig:手动校准07.png")
 
-7.点击&quot;Download&quot;按钮即可保存当前参数 ![手动校准08.png](手动校准08.png "fig:手动校准08.png")
+![手动校准05.png](手动校准05.png "fig:手动校准05.png")
+
+5.若只设定零点，则手动将关节或执行器调节至想要的零点，点击2处的Homing按键，1处的当前位置值会变为0。
+
+
+![手动校准06.png](手动校准06.png "fig:手动校准06.png")
+
+6.设置左右极限偏置 
+
+
+![手动校准07.png](手动校准07.png "fig:手动校准07.png")
+
+7.点击&quot;Download&quot;按钮即可保存当前参数 
+
+
+![手动校准08.png](手动校准08.png "fig:手动校准08.png")
 
 ## **错误提示**
 
@@ -546,11 +591,18 @@ INNFOS执行器系统的逻辑框图：
 
 如图，弹出错误提示信息。
 
-<span style="color: red">（注：如用最新版上位机软件会报警详细错误提示）</span> ![9-1.png](9-1.png "fig:9-1.png")
+<span style="color: red">（注：如用最新版上位机软件会报警详细错误提示）</span>
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig9-1.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig9-1.png)
+
+
 
 ### 错误处理方式
 
-点击“OK”，再点击“Clear Errors”可清除错误，清除错误后，INNFOS执行器进入电流环模式。 ![9-2.png](9-2.png "fig:9-2.png")
+点击“OK”，再点击“Clear Errors”可清除错误，清除错误后，INNFOS执行器进入电流环模式。
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-11.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig9-2.png)
+
 
 # 版本信息
 <table class="tableizer-table">
