@@ -10,20 +10,11 @@
 **连接电源**</br>
 
 *   连接电源与HUB.</br>
-<div class="figure">
-![power.jpg](../img/power.jpg "power.jpg")
 
-</div>
-<table>
-<tbody>
-<tr class="odd">
-<td align="left">
+![power.jpg](../img/power.jpg )
 
-**必须先断电然后再插拔部件.** 否则可能损坏部件.
-</td>
-</tr>
-</tbody>
-</table>
+</br>**必须先断电然后再插拔部件.** 否则可能损坏部件.
+
 
 **连接ECB**</br>
 
