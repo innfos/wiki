@@ -1,6 +1,7 @@
 [TOC]
 
 # 硬件需求与连接
+------------
 
 **硬件需求**</br> 
 ![all.jpg](../img/all.jpg ) 
@@ -52,6 +53,7 @@
 ![connect2.png](../img/connect2.png "fig:connect2.png") </br>
 
 # 软件安装与使用
+------------
 
 **下载IAS**
 
@@ -88,6 +90,7 @@
 想了解更多关于IAS的信息 , 请访问[INNFOS Actuator Studio(IAS) instruction](INNFOS_Actuator_Studio(IAS)_instruction "wikilink").
 
 # 版本变更记录
+------------
 
 版本号| 更新时间 | 更新内容
 ---|---|---
