@@ -88,9 +88,11 @@
 
 INNFOS执行器系统的逻辑框图：
 
+[![](https://github.com/innfos/wiki/blob/master/cn/img/current.jpg)](https://github.com/innfos/wiki/blob/master/cn/img/current.jpg)
 
 
 ![INNFOS执行器系统的逻辑框图](微伺服软件界面最终00-44 3-1.png "fig:INNFOS执行器系统的逻辑框图")
+
 
 框图的介绍：电流设置值与电流反馈值做加减运算后经过PI模块后经可选的滤波器再经限幅模块以驱动电机，电机经反馈把电流参数反馈给系统，使之形成闭环。
 
@@ -116,7 +118,8 @@ INNFOS执行器系统的逻辑框图：
 
 （9）示波器开关
 
-![3-2.png](3-2.png "fig:3-2.png")
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig3-2.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig3-2.png)
 
 ### 基本参数的描述
 
@@ -134,11 +137,17 @@ INNFOS执行器系统的逻辑框图：
 
 （6）限幅最大值设置
 
-<span style="color: red">[注:电流环模式中，Id轴向力一般设置为0，Minimal设置固定值-0.82，Maximum设置固定值0.82。]</span> ![3-3.png](3-3.png "fig:3-3.png")
+<span style="color: red">[注:电流环模式中，Id轴向力一般设置为0，Minimal设置固定值-0.82，Maximum设置固定值0.82。]</span> 
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig3-3.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig3-3.png)
+
 
 ### 电流环使用方式
 
-1.点击“Active Current Mode”激活当前电流环模式。 ![3-4.png](3-4.png "fig:3-4.png")
+1.点击“Active Current Mode”激活当前电流环模式。
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig3-4.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig3-4.png)
+
 
 2.参数设置：应用方式
 
@@ -146,14 +155,12 @@ INNFOS执行器系统的逻辑框图：
 *   INNFOS执行器开始转动后，在状态值栏可以看到当前INNFOS执行器的各项参数值。(如右图中3处)
 *   按“Halt”键可停止INNFOS执行器的转动。（右图中2处）
 *   Limit参数栏中可以设置最大电流值。
-<div class="figure">
-![3-5.png](3-5.png "3-5.png")
 
-3-5.png
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig3-5.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig3-5.png)
 
-</div>
+3.点击“View Graph”可打开示波器
 
-3.点击“View Graph”可打开示波器 ![3-6.png](3-6.png "fig:3-6.png")
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig3-6.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig3-6.png)
 
 4.示波器各项功能描述
 
@@ -164,7 +171,10 @@ INNFOS执行器系统的逻辑框图：
 *   channel4为INNFOS执行器位置波形的偏置和放大倍数（图7处）。
 *   示波器的详细使用说明请见附录C。
 
-<span style="color: red">[注：不用的通道偏置设置为0，放大设置为1，或者直接点击OFF关闭其显示]</span> ![3-7.png](3-7.png "fig:3-7.png")
+<span style="color: red">[注：不用的通道偏置设置为0，放大设置为1，或者直接点击OFF关闭其显示]</span> !
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig3-7.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig3-7.png)
+
 
 5.方波发生器参数值设定
 
@@ -174,13 +184,22 @@ INNFOS执行器系统的逻辑框图：
 *   点击“IqTrigger”按钮，可设置轴向力为q轴还是d轴（右图5处）
 *   选择点击“Start”键（右图4处），方波发生器会按设定的时间（Interval值），连续生效Value1和Value2到指定的位置（Iq Setting或者Id Setting），直到关闭此按钮。
 
-<span style="color: red">[注:在调节电流环模式的PI值时，需要将方波发生器的轴向力更改为IdTrigger。此时示波器中有波形，执行器应处于静止状态，否则需要重新校准。]</span> ![3-8.png](3-8.png "fig:3-8.png")
+<span style="color: red">[注:在调节电流环模式的PI值时，需要将方波发生器的轴向力更改为IdTrigger。此时示波器中有波形，执行器应处于静止状态，否则需要重新校准。]</span> 
 
-6.点击“View Graph”按钮打开示波器窗口，可以查看给定（channel 1，此时为方波发生器）、电流（channel 2）、速度（channel 3）、位置（channel 4）四通道参数波形，如右图 ![3-9.png](3-9.png "fig:3-9.png")
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig3-8.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig3-8.png)
 
-7.利用方波发生器来调节Proportional和Integral（PI）的数值，可通过示波器观测调试效果。 ![3-10.png](3-10.png "fig:3-10.png")
 
-8.点击“Stop”键，可停止方波发生器的运行。 ![3-11.png](3-11.png "fig:3-11.png")
+6.点击“View Graph”按钮打开示波器窗口，可以查看给定（channel 1，此时为方波发生器）、电流（channel 2）、速度（channel 3）、位置（channel 4）四通道参数波形，如右图 
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig3-9.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig3-9.png)
+
+7.利用方波发生器来调节Proportional和Integral（PI）的数值，可通过示波器观测调试效果。
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig3-10.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig3-10.png)
+
+8.点击“Stop”键，可停止方波发生器的运行。
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig3-11.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig3-11.png)
 
 ## **速度环模式**
 
