@@ -4,19 +4,25 @@
 
 *   需要安装ubuntu16.04 LTS 及以上的系统
 *   cmake 安装：打开终端输入命令
-<div class="sourceCode">
 
-    $ <span class="kw">sudo</span> apt-get install cmake`</pre></div>
+```sh
+    $ sudo apt-get install cmake
+```
 
 *   ip 地址配置：打开终端输入
-    <div class="sourceCode"><pre class="sourceCode bash">`$ <span class="kw">ifconfig</span>`</pre></div>
+
+```sh
+    $ ifconfig</span>
+```
 
     查看网络配置 [none|thumb|400px](file:020.png "wikilink") [none|thumb|400px](file:021.png "wikilink")
 
     示例中有线网卡的名字是enp0s25,输入命令
 
-    <div class="sourceCode"><pre class="sourceCode bash">`$ <span class="kw">sudo</span> ifconfig enp0s25 static 192.168.1.111
-</div>
+```sh
+    $ sudo ifconfig enp0s25 static 192.168.1.111
+```
+
 
 配置完成后输入ifconfig，可看到配置成功后的ip地址
 
@@ -63,8 +69,7 @@ ip地址配置，
 **更新时间**
 </td>
 <td align="left">
-
-style=&quot;background: PaleTurquoise; color: black;width:266px| **更新内容**
+ **更新内容**
 </td>
 </tr>
 <tr class="even">
