@@ -28,7 +28,9 @@
 
 *   HUB安插回馈制动电容与终端电阻
 
-![ECB-C3.jpg](../img/ECB-C3.jpg "fig:ECB-C3.jpg") ![ECB-C4.jpg](../img/ECB-C4.jpg) **连接执行器**
+![ECB-C3.jpg](../img/ECB-C3.jpg "fig:ECB-C3.jpg") ![ECB-C4.jpg](../img/ECB-C4.jpg) 
+
+**连接执行器**
 
 *   用执行器连接线连接HUB与执行器
 
@@ -43,7 +45,9 @@
 
 *   用网线连接ECB与电脑
 
-![pc-c.jpg](../img/pc-c.jpg "fig:pc-c.jpg") **开启电源**
+![pc-c.jpg](../img/pc-c.jpg "fig:pc-c.jpg") 
+
+**开启电源**
 
 *   开启电源. 执行器的供电电压范围为直流24V-45V.
 
