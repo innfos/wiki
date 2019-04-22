@@ -201,7 +201,6 @@
 ## **以太网通信协议命令参考**
 
 ### 读取命令
-
 <table class="tableizer-table">
 <thead><tr class="tableizer-firstrow"></tr></thead><tbody>
  <tr><td  colspan="3" style=background:PaleTurquoise>2.3.1.1 发送数据0字节， 返回数据1字节</td></tr>
