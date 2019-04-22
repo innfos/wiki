@@ -18,7 +18,7 @@
   * [INNFOS CAN通信协议][ipChanged]
   * [以太网配置](pages/Ethernet_Configuration.md)
   * [以太网通信协议](pages/Ethernet_Communication_Protocol.md)
-  * [以太网通信SDK](https://www.mdeditor.com/)
+  * [以太网通信SDK](pages/Ethernet_Communication_SDK.md)
   * [INNFOS Actuator Studio(IAS) 说明](https://www.mdeditor.com/)
   * [附录](https://www.mdeditor.com/)
   
