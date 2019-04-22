@@ -1,72 +1,70 @@
-[中文](以太网配置 "wikilink")
+[English](Ethernet_Configuration "wikilink")
 
-# Linux platform environment configuration
+# linux平台环境配置
 
-*   available for ubuntu16.04 LTS and above
-*   cmake installation: open terminal &amp; input command
+*   需要安装ubuntu16.04 LTS 及以上的系统
+*   cmake 安装：打开终端输入命令
 <div class="sourceCode">
 
     $ <span class="kw">sudo</span> apt-get install cmake`</pre></div>
 
-*   ip address configuration: open terminal and input
+*   ip 地址配置：打开终端输入
     <div class="sourceCode"><pre class="sourceCode bash">`$ <span class="kw">ifconfig</span>`</pre></div>
 
-    Check network configuration [none|thumb|400px](file:020.png "wikilink") [none|thumb|400px](file:021.png "wikilink")
+    查看网络配置 [none|thumb|400px](file:020.png "wikilink") [none|thumb|400px](file:021.png "wikilink")
 
-    In the example, the name of the wired network card is enp0s25, enter the command
+    示例中有线网卡的名字是enp0s25,输入命令
 
     <div class="sourceCode"><pre class="sourceCode bash">`$ <span class="kw">sudo</span> ifconfig enp0s25 static 192.168.1.111
 </div>
 
-After the configuration, enter ifconfig to see the ip address.
+配置完成后输入ifconfig，可看到配置成功后的ip地址
 
-# Windows platform environment configuration
+# windows平台环境配置
 
-*   requires 64-bit Windows operating system above win7 sp1
-*   If the computer firewall turned on, open the Control Panel, select System and Security, open the Windows Defender Firewall, click Advanced Settings on the left, and click Inbound Rules.
+*   需要win7 sp1以上的64位windows操作系统
+*   如果电脑防火墙已开启，打开控制面板，选择系统和安全，打开Windows Defender 防火墙，点击左侧高级设置，点击入站规则
 
 [none|thumb|400px](file:001.png "wikilink")
 
-New rule [none|thumb|400px](file:002.png "wikilink")
+新建规则 [none|thumb|400px](file:002.png "wikilink")
 
-Select the port and click Next
+选择端口，然后点击下一步 [none|thumb|400px](file:003.png "wikilink")
 
-[none|thumb|400px](file:003.png "wikilink")
+选择udp，并选择所有本地端口，点击下一步 [none|thumb|400px](file:004.png "wikilink")
 
-Select udp ，select all local ports, and click Next [none|thumb|400px](file:004.png "wikilink")
+允许连接，点击下一步， [none|thumb|400px](file:005.png "wikilink")
 
-Allow connection, click next, [none|thumb|400px](file:005.png "wikilink")
+默认勾选所有设置，点击下一步 [none|thumb|400px](file:006.png "wikilink")
 
-By default, all settings are checked and click Next. [none](file:006.png "wikilink")
+填写自定义名字，完成即可 [none|thumb|400px](file:007.png "wikilink")
 
-Fill in the name and click “complete” [none](file:007.png "wikilink")
+ip地址配置，
 
-Ip address configuration,
+打开控制面板，选择网络和Internet,再选择网络和共享中心，再选择更改适配器设置，右键单击以太网，选择属性 [none|thumb|400px](file:008.png "wikilink")
 
-Open the Control Panel, select Network and Internet, then choose Network and Sharing Center, then select Change Adapter Settings, right click on Ethernet, select Property [008.png](008.png "wikilink")
+选择TCP/IPv4,然后选择属性， 配置如图：
 
-Select TCP/IPv4, then select Property, and configuration is shown as:
+其中ip地址中的192.168.1.119中的119可以替换成100~200之间的任意整数，配置完成点击确定 [none|thumb|400px](file:009.png "wikilink")
 
-119 of 192.168.1.119 in the ip address can be replaced with any integer between 100 and 200, and then click Enter after configuration. [009.png](009.png "wikilink")
+# 版本变更记录
 
-# Version Change Records
-
-The following table briefly describes the version change records.
+下表简单描述了版本变更记录
 
 <table>
 <tbody>
 <tr class="odd">
 <td align="left">
 
-**version**
+**版本号**
 </td>
 <td align="left">
 
-**update time**
+**更新时间**
 </td>
 <td align="left">
 
-**update content**
+style=&quot;background: PaleTurquoise; color: black;width:266px| **更新内容**
 </td>
 </tr>
 <tr class="even">
@@ -80,7 +78,7 @@ V1.0.0
 </td>
 <td align="left">
 
-full text
+全文
 </td>
 </tr>
 </tbody>
