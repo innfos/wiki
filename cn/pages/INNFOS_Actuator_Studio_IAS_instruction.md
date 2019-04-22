@@ -9,33 +9,45 @@
 
 ![install01.jpg](../img/install01.jpg )
 
-![软件安装](https://github.com/innfos/wiki/blob/master/cn/img/install01.jpg)
+![](https://github.com/innfos/wiki/blob/master/cn/img/install01.jpg)
 
 > 软件安装.
 
 
 2.进入安装界面后，点击“Next”
 
-![next](https://github.com/innfos/wiki/blob/master/cn/img/1-2.png)
+![1-2.png](../img/1-2.png )
+
+![](https://github.com/innfos/wiki/blob/master/cn/img/1-2.png)
 
 3.点击“I Agree”
+
+![1-3.png](../img/1-3.png )
 
 [![](https://github.com/innfos/wiki/blob/master/cn/img/1-3.png)](https://github.com/innfos/wiki/blob/master/cn/img/1-3.png)
 
 4.选择安装位置，然后点击“Install”
 
+![1-4.png](../img/1-4.png )
+
 [![](https://github.com/innfos/wiki/blob/master/cn/img/1-4.png)](https://github.com/innfos/wiki/blob/master/cn/img/1-4.png)
 
 5.等待安装完成
+
+![1-5.png](../img/1-5.png )
 
 [![](https://github.com/innfos/wiki/blob/master/cn/img/1-5.png)](https://github.com/innfos/wiki/blob/master/cn/img/1-5.png)
 
 6.如遇到有杀毒软件提示报警时，请选择“允许本次操作”，
 
+![1-6.png](../img/1-6.png )
+
 [![](https://github.com/innfos/wiki/blob/master/cn/img/1-6.png)](https://github.com/innfos/wiki/blob/master/cn/img/1-6.png)
 
 
 7.点击“Finish”，完成软件的安装
+
+![1-7.png](../img/1-7.png )
 
 [![](https://github.com/innfos/wiki/blob/master/cn/img/1-7.png)](https://github.com/innfos/wiki/blob/master/cn/img/1-7.png)
 
