@@ -76,25 +76,25 @@
 #### **协议示例**
 
 **示例1.读命令**
-<table cellspacing=0 border=1>
+<table>
 	<tr>
 		<th colspan="6">读取执行器ID为0x01的当前速度值</th>
 	</tr>
 	<tr>
-		<td style=min-width:50px>帧头</td>
-		<td style=min-width:50px>设备地址</td>
-		<td style=min-width:50px>指令符</td>
-		<td style=min-width:50px>数据长度（2字节）</td>
-		<td style=min-width:50px>参数内容</td>
-		<td style=min-width:50px>帧尾</td>
+		<td >帧头</td>
+		<td >设备地址</td>
+		<td >指令符</td>
+		<td >数据长度（2字节）</td>
+		<td >参数内容</td>
+		<td >帧尾</td>
 	</tr>
 	<tr>
-		<td style=min-width:50px>0xEE</td>
-		<td style=min-width:50px>0x01</td>
-		<td style=min-width:50px>0x5</td>
-		<td style=min-width:50px>0x00 0x00</td>
-		<td style=min-width:50px>无</td>
-		<td style=min-width:50px>0xED</td>
+		<td >0xEE</td>
+		<td >0x01</td>
+		<td >0x5</td>
+		<td >0x00 0x00</td>
+		<td >无</td>
+		<td >0xED</td>
 	</tr>
 </table>
 
