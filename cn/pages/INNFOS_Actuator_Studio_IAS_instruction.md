@@ -4,7 +4,7 @@
 
 ## **软件的安装**
 
-1.双击安装软件“Setup V0.2.exe”（V0.2为当前软件版本）
+1.双击安装软件“Setup V3.2.2exe”（V3.2.2为当前软件版本）
 
 [![](https://github.com/innfos/wiki/blob/master/cn/img/install01.jpg)](https://github.com/innfos/wiki/blob/master/cn/img/install01.jpg)
 
@@ -475,42 +475,33 @@ INNFOS执行器系统的逻辑框图：
 
 1.点击右图红框位置&quot;Active Homing Mode&quot;进入归位模式。
 
-
-![手动校准01.png](手动校准01.png "fig:手动校准01.png")
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig9-1.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig9-1.png)
 
 2.先后点击&quot;Clear&quot;和&quot;Homing&quot;按键，重复两次可清除当前左右极限，并使当前位置变为零位。直到右图红框1处数据变为如图大数值（这是软件限位的上下限）。然后将右图2处调为如下大数值（这是限流，比如加大负载时需要较大电流，需要放开电流限制）。
 
-
-
-![手动校准02.png](手动校准02.png "fig:手动校准02.png")
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig9-2.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig9-2.png)
 
 3.手动将关节或执行器调节到左机械极限，点击&quot;Max_Set&quot;，此时&quot;Max Pos&quot;栏处的数值会改变，左机械极限设定完毕。（此处也可以手动输入极限数值，单位：R）
 
-
-![手动校准03.png](手动校准03.png "fig:手动校准03.png")
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig9-3.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig9-3.png)
 
 4.手动将关节或执行器调节到右机械极限，点击&quot;Min_Set&quot;，此时&quot;Min Pos&quot;栏处的数值会改变，右机械极限设定完毕。（此处也可以手动输入极限数值，单位：R）
 
 注意：位置模式使用时，应注意当前限位范围，如果当前位置在限位范围外，发位置指令时，位置则会回到限位范围内。
 
-
-
-![手动校准05.png](手动校准05.png "fig:手动校准05.png")
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fi9-4.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig9-4.png)
 
 5.若只设定零点，则手动将关节或执行器调节至想要的零点，点击2处的Homing按键，1处的当前位置值会变为0。
 
-
-![手动校准06.png](手动校准06.png "fig:手动校准06.png")
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig9-5.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig9-5.png)
 
 6.设置左右极限偏置 
 
-
-![手动校准07.png](手动校准07.png "fig:手动校准07.png")
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig9-6.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig9-6.png)
 
 7.点击&quot;Download&quot;按钮即可保存当前参数 
 
-
-![手动校准08.png](手动校准08.png "fig:手动校准08.png")
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig9-7.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig9-7.png)
 
 ## **错误提示**
 
