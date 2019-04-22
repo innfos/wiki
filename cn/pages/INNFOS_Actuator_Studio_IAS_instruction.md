@@ -190,7 +190,7 @@ INNFOS执行器系统的逻辑框图：
 
 6.点击“View Graph”按钮打开示波器窗口，可以查看给定（channel 1，此时为方波发生器）、电流（channel 2）、速度（channel 3）、位置（channel 4）四通道参数波形，如右图 
 
-[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig3-9.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig3-9.png)
+[![](https://github.com/innfos/wiki/blob/master/cn/img/3-9.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig3-9.png)
 
 7.利用方波发生器来调节Proportional和Integral（PI）的数值，可通过示波器观测调试效果。
 
