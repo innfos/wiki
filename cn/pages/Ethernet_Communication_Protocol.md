@@ -219,7 +219,7 @@ EE 06 02 00 04 01 64 5A DF 3B 3F ED
  <tr><td>数据内容</td><td colspan="2">无</td></tr>
  <tr><td>指令符（返回值）</td><td colspan="2"><a href="#read1">见读取指令1</a></td></tr>
  <tr><td>数据长度 (返回值)</td><td colspan="2">1</td></tr>
- <tr><td rowspan="2">下位机返回数据</td><td>0x01：成功/使能/开机/正常</td><td rowspan="2">模式查询返回数据见<a href="https://github.com/innfos/wiki/edit/master/cn/pages/Ethernet_Communication_Protocol.md#模式表">模式表</a></td></tr>
+ <tr><td rowspan="2">下位机返回数据</td><td>0x01：成功/使能/开机/正常</td><td rowspan="2">模式查询返回数据见<a href="https://innfos.github.io/wiki/cn/#!pages/Ethernet_Communication_Protocol.md#模式表">模式表</a></td></tr>
  <tr><td>0x00：失败/失能/关机/异常</td></tr>
 </tbody></table>
 
