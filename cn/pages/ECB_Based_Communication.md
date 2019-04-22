@@ -1,12 +1,8 @@
-主页
+以太网通信
 =====
 
 
-入门
---------
-
-
-# 硬件需求与连接
+## 硬件需求与连接
 
 **硬件需求**</br> 
 ![all.jpg](../img/all.jpg) {: width="100px" height="100px"}
@@ -57,7 +53,7 @@
 
 ![connect2.png](../img/connect2.png "fig:connect2.png") </br>
 
-# 软件安装与使用
+## 软件安装与使用
 
 
 **下载IAS**
@@ -90,7 +86,7 @@
 
 ![6-3.png](../img/Fig6-3.png )
 
-## 其他
+### 其他
 
 想了解更多关于IAS的信息 , 请访问[INNFOS Actuator Studio(IAS) instruction](INNFOS_Actuator_Studio(IAS)_instruction "wikilink").
 
