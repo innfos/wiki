@@ -27,7 +27,7 @@
 
 产品系列
 -----------------
-![markdown](http://wiki.innfos.com:81/wiki/images/8/8f/%E6%9C%AA%E6%A0%87.png "markdown"){:height="20" width="20"}
+![markdown](http://wiki.innfos.com:81/wiki/images/8/8f/%E6%9C%AA%E6%A0%87.png "markdown")
 
 
 ## QDD Pro
