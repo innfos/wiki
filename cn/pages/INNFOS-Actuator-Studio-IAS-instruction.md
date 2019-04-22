@@ -205,7 +205,7 @@ INNFOS执行器系统的逻辑框图：
 
 INNFOS执行器系统的逻辑框图：
 
-![INNFOS执行器系统的逻辑框图](微伺服软件界面最终00-43 4-1.png "fig:INNFOS执行器系统的逻辑框图")
+[![](https://github.com/innfos/wiki/blob/master/cn/img/velocity.jpg)](https://github.com/innfos/wiki/blob/master/cn/img/velocity.jpg)
 
 框图的介绍： 速度值设置与速度反馈值做加减后经PI模块后经可选的滤波器再经模块输出电流给电流环，在确保电流环模式运行正确的情况下，通过电流环驱动电机，经编码器把速度参数反馈给系统，使之形成闭环。
 
@@ -213,12 +213,7 @@ INNFOS执行器系统的逻辑框图：
 
 ### 点击“Velocity Regulation”进入速度环模式
 
-<div class="figure">
-![4-2.png](4-2.png "4-2.png")
-
-4-2.png
-
-</div>
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig4-2.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig4-2.png)
 
 ### 速度环模式各项功能描述
 
