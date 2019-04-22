@@ -487,7 +487,7 @@ INNFOS执行器系统的逻辑框图：
 
 4.手动将关节或执行器调节到右机械极限，点击&quot;Min_Set&quot;，此时&quot;Min Pos&quot;栏处的数值会改变，右机械极限设定完毕。（此处也可以手动输入极限数值，单位：R）
 
-[![](https://github.com/innfos/wiki/blob/master/cn/img/Fi9-4.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig9-4.png)
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fi9-4.png)](https://github.com/innfos/wiki/blob/master/cn/img/9-4.png)
 
 注意：位置模式使用时，应注意当前限位范围，如果当前位置在限位范围外，发位置指令时，位置则会回到限位范围内。
 
