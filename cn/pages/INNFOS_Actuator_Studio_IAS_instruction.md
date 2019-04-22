@@ -7,8 +7,7 @@
 1.双击安装软件“Setup V3.2.2exe”（V3.2.2为当前软件版本）
 
 
-[![](https://github.com/innfos/wiki/blob/master/cn/img/install01.jpg)]
-(https://github.com/innfos/wiki/blob/master/cn/img/install01.jpg)
+[![](https://github.com/innfos/wiki/blob/master/cn/img/install01.jpg)](https://github.com/innfos/wiki/blob/master/cn/img/install01.jpg)
 
 > 软件安装.
 
