@@ -1,4 +1,5 @@
-[English](INNFOS_Actuator_Studio(IAS)_instruction "wikilink")
+[English](en/pages/INNFOS_Actuator_StudioIAS_instruction.md)
+
 
 # 软件的使用
 
