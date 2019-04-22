@@ -1,9 +1,15 @@
+主页
+=====
+
+
+入门
+--------
+
 
 # 硬件需求与连接
-------------
 
 **硬件需求**</br> 
-![all.jpg](../img/all.jpg ) 
+![all.jpg](../img/all.jpg) { width="100px" height="100px"}
 
 </br>从前到后、从左到右依次为：ECB、HUB、终端电阻2个、回馈制动电容、ECB连接线、INNFOS执行器、执行器连接线，急停开关+电源。</br>
 
@@ -52,7 +58,7 @@
 ![connect2.png](../img/connect2.png "fig:connect2.png") </br>
 
 # 软件安装与使用
-------------
+
 
 **下载IAS**
 
@@ -89,7 +95,7 @@
 想了解更多关于IAS的信息 , 请访问[INNFOS Actuator Studio(IAS) instruction](INNFOS_Actuator_Studio(IAS)_instruction "wikilink").
 
 # 版本变更记录
-------------
+
 
 版本号| 更新时间 | 更新内容
 ---|---|---
