@@ -15,11 +15,11 @@
 
 2.进入安装界面后，点击“Next”
 
-![next](https://github.com/innfos/wiki/cn/img/1-2.png)
+![1-2.png](../img/1-2.png)
 
 3.点击“I Agree”
 
-![next](https://github.com/innfos/wiki/cn/img/1-3.png)
+![1-3.png](../img/1-3.png)
 
 4.选择安装位置，然后点击“Install”
 
