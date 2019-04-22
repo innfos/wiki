@@ -601,7 +601,7 @@ INNFOS执行器系统的逻辑框图：
 
 点击“OK”，再点击“Clear Errors”可清除错误，清除错误后，INNFOS执行器进入电流环模式。
 
-[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-11.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig9-2.png)
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig9-2.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig9-2.png)
 
 
 # 版本信息
