@@ -41,7 +41,7 @@
 
 > Innfos SCA.
 
-## **软件的开机**
+## 软件的开机
 
 1、双击运行软件 启动用户界面
 
@@ -87,7 +87,7 @@
 [![](https://github.com/innfos/wiki/blob/master/cn/img/2-9.png)](https://github.com/innfos/wiki/blob/master/cn/img/2-9.png)
 
 
-## **电流环模式**
+## 电流环模式
 
 INNFOS执行器系统的逻辑框图：
 
@@ -203,7 +203,7 @@ INNFOS执行器系统的逻辑框图：
 
 [![](https://github.com/innfos/wiki/blob/master/cn/img/Fig3-11.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig3-11.png)
 
-## **速度环模式**
+## 速度环模式
 
 INNFOS执行器系统的逻辑框图：
 
@@ -279,7 +279,7 @@ INNFOS执行器系统的逻辑框图：
 
 [![](https://github.com/innfos/wiki/blob/master/cn/img/4-9.png)](https://github.com/innfos/wiki/blob/master/cn/img/4-9.png)
 
-## **位置环模式**
+## 位置环模式
 
 INNFOS执行器系统的逻辑框图：
 
@@ -364,7 +364,7 @@ INNFOS执行器系统的逻辑框图：
 [![](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-11.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-11.png)
 
 
-## **位置环S曲线模式**
+## 位置环S曲线模式
 
 ### 点击“Profile Position Mode”进入位置环S曲线模式
 
@@ -407,7 +407,7 @@ INNFOS执行器系统的逻辑框图：
 
 [![](https://github.com/innfos/wiki/blob/master/cn/img/Fig6-4.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig6-4.png)
 
-## **速度环S曲线模式**
+## 速度环S曲线模式
 
 ### 点击“Profile Velocity Mode”进入速度环S曲线模式
 
@@ -447,7 +447,7 @@ INNFOS执行器系统的逻辑框图：
 
 [![](https://github.com/innfos/wiki/blob/master/cn/img/Fig7-4.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig7-4.png)
 
-## **归位模式**
+## 归位模式
 
 ### 点击“Homing Mode”进入归位模式
 
@@ -506,7 +506,7 @@ INNFOS执行器系统的逻辑框图：
 
 [![](https://github.com/innfos/wiki/blob/master/cn/img/Fig9-7.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig9-7.png)
 
-## **错误提示**
+## 错误提示
 
 ### 当有错误出现时，错误框内会提示错误内容
 
