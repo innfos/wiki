@@ -171,7 +171,9 @@ INNFOS执行器系统的逻辑框图：
 *   channel4为INNFOS执行器位置波形的偏置和放大倍数（图7处）。
 *   示波器的详细使用说明请见附录C。
 
-[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig3-7.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig3-7.png)
+[![](https://github.com/innfos/wiki/blob/master/cn/img/3-7.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig3-7.png)
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/3-7.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig3-7.png)
 
 <span style="color: red">[注：不用的通道偏置设置为0，放大设置为1，或者直接点击OFF关闭其显示]</span> !
 
