@@ -20,11 +20,11 @@
 
 3.点击“I Agree”
 
-[![](https://github.com/innfos/wiki/blob/master/cn/img/1-3.png)](https://github.com/innfos/wiki/blob/master/cn/img/1-3.png)
+![next](https://github.com/innfos/wiki/cn/img/1-3.png)
 
 4.选择安装位置，然后点击“Install”
 
-[![](https://github.com/innfos/wiki/blob/master/cn/img/1-4.png)](https://github.com/innfos/wiki/blob/master/cn/img/1-4.png)
+[![](https://github.com/innfos/wiki/blob/master/cn/img/1-4.png)
 
 5.等待安装完成
 
