@@ -82,8 +82,8 @@
 
 # 版本变更记录
 
-Version No.| Update time | update contents
+版本号| 更新时间 | 更新内容
 ---|---|---
-V1.0.0 | 2019.04| The first version
+V1.0.0 | 2019.04| 第一版
 
 
