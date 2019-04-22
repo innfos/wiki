@@ -205,7 +205,7 @@ INNFOS执行器系统的逻辑框图：
 
 INNFOS执行器系统的逻辑框图：
 
-![INNFOS执行器系统的逻辑框图](微伺服软件界面最终00-43 4-1.png "fig:INNFOS执行器系统的逻辑框图")
+[![](https://github.com/innfos/wiki/blob/master/cn/img/velocity.jpg)](https://github.com/innfos/wiki/blob/master/cn/img/velocity.jpg)
 
 框图的介绍： 速度值设置与速度反馈值做加减后经PI模块后经可选的滤波器再经模块输出电流给电流环，在确保电流环模式运行正确的情况下，通过电流环驱动电机，经编码器把速度参数反馈给系统，使之形成闭环。
 
@@ -213,12 +213,7 @@ INNFOS执行器系统的逻辑框图：
 
 ### 点击“Velocity Regulation”进入速度环模式
 
-<div class="figure">
-![4-2.png](4-2.png "4-2.png")
-
-4-2.png
-
-</div>
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig4-2.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig4-2.png)
 
 ### 速度环模式各项功能描述
 
@@ -238,11 +233,17 @@ INNFOS执行器系统的逻辑框图：
 
 （7）INNFOS执行器连接状态
 
-（8）示波器开关 ![4-3.png](4-3.png "fig:4-3.png")
+（8）示波器开关 
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig4-3.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig4-3.png)
+
 
 ### 速度环使用方式
 
-1.点击“Active Velocity Mode”，激活当前速度环模式。 ![4-4.png](4-4.png "fig:4-4.png")
+1.点击“Active Velocity Mode”，激活当前速度环模式。
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig4-4.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig4-4.png)
+
 
 2.速度环基本参数设置：
 
@@ -251,14 +252,14 @@ INNFOS执行器系统的逻辑框图：
 *   调节Proportional框和Integral框可调节PI值，右图2处。
 *   右图3处的Mininal框和Maximum框为速度环输出限幅（后接电流环的输入），例如：电流最大值为33A（6010型为33A，3510型为16.5A，具体参见《CAN总线通信协议》附录D），输入值为0.5，那么INNFOS执行器电流增加到33*0.5的时候，电流值将受限，不再增加。
 *   按“Halt”键可停止INNFOS执行器的转动。
-<div class="figure">
-![4-5.png](4-5.png "4-5.png")
 
-4-5.png
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig4-5.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig4-5.png)
 
-</div>
 
-3.点击“View Graph”可打开示波器,参数界面介绍同上。 ![4-6.png](4-6.png "fig:4-6.png")
+3.点击“View Graph”可打开示波器,参数界面介绍同上。
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig4-6.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig4-6.png)
+
 
 4.方波发生器参数值设定
 
@@ -266,26 +267,30 @@ INNFOS执行器系统的逻辑框图：
 *   在Value2中输入转速2。(单位:RPM)
 *   在Interval内输入单位时间（单位：ms），可设置INNFOS执行器方波发生器的参数。
 *   选择点击“Start”键，开启INNFOS执行器转动。
-<div class="figure">
-![4-8.png](4-8.png "4-8.png")
 
-4-8.png
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig4-8.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig4-8.png)
 
-</div>
 
 5.设置“View Graph”视图里的参数，可以更好的查看当前INNFOS执行器 各项参数波形，调节INNFOS执行器Proportional和Integral（PI） 的数值，其性能会在示波器中以波形方式反应出来。
 
-<span style="color: red">注：不用的通道偏置设置为0，放大设置为1（右图中channel2和channel4），或者直接点击OFF关闭其显示</span> ![4-9.png](4-9.png "fig:4-9.png")
+<span style="color: red">注：不用的通道偏置设置为0，放大设置为1（右图中channel2和channel4），或者直接点击OFF关闭其显示</span>
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig4-9.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig4-9.png)
 
 ## **位置环模式**
 
 INNFOS执行器系统的逻辑框图：
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/position.jpg)](https://github.com/innfos/wiki/blob/master/cn/img/position.jpg)
 
 ![INNFOS执行器系统的逻辑框图](微伺服软件界面最终00-44 5-1.png "fig:INNFOS执行器系统的逻辑框图")
 
 框图的介绍： 在确保电流环和速度环准确的情况下，位置设置值与位置反馈值做加减运算后经过PI模块后经可选的滤波器再经限幅模块输出速度值，然后速度值经速度环再经电流环驱动电机，电机经编码器把位置参数反馈给系统，使之形成闭环。
 
 ### 点击“Position Regulation”进入位置环模式
+
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-2.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-2.png)
 
 <div class="figure">
 ![5-2.png](5-2.png "5-2.png")
@@ -312,11 +317,21 @@ INNFOS执行器系统的逻辑框图：
 
 （7）INNFOS执行器连接状态
 
-（8）示波器开关 ![5-3.png](5-3.png "fig:5-3.png")
+（8）示波器开关 
+
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-3.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-3.png)
+
+![5-3.png](5-3.png "fig:5-3.png")
 
 ### 位置环使用方式
 
-1.点击“Active Position Mode”，激活当前位置环模式。 ![5-4.png](5-4.png "fig:5-4.png")
+1.点击“Active Position Mode”，激活当前位置环模式。 
+
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-4.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-4.png)
+
+![5-4.png](5-4.png "fig:5-4.png")
 
 2.位置环基本参数设置：
 
@@ -325,13 +340,23 @@ INNFOS执行器系统的逻辑框图：
 *   调节Proportional框可调节比例值，如右图2处。
 *   右图的3处的Mininal框和Maximum框为位置环输出给速度环的速度限制。执行器速度最大为6000RPM，例如输入值为0.5，那么INNFOS执行器最大速度增加到6000*0.5=3000R/分钟的时候，速度值将受限，不再增加。
 <div class="figure">
+
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-5.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-5.png)
+
 ![5-5.png](5-5.png "5-5.png")
 
 5-5.png
 
 </div>
 
-3.点击“View Graph”可打开示波器，参数界面介绍同上 ![5-6.png](5-6.png "fig:5-6.png")
+3.点击“View Graph”可打开示波器，参数界面介绍同上 
+
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-6.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-6.png)
+
+
+![5-6.png](5-6.png "fig:5-6.png")
 
 4.方波发生器参数值设定
 
@@ -339,6 +364,10 @@ INNFOS执行器系统的逻辑框图：
 *   在Value2中输入位置值2(单位:R)
 *   在Interval内输入时间（单位：ms），输入参数为转动一次的时间。（例：Value1为2，Value2为-2，Interval为1000，启动后，INNFOS执行器先转到位置2，1000mS后转到位置-2，在过1000ms再次转到位置2，如此反复运行直至用户点击“Stop”)。
 *   点击“Start”键，开启INNFOS执行器转动。
+
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-8.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-8.png)
+
 <div class="figure">
 ![5-8.png](5-8.png "5-8.png")
 
@@ -348,9 +377,19 @@ INNFOS执行器系统的逻辑框图：
 
 5.点击“View Graph”按钮打开示波器窗口，可以查看给定（此 时为方波发生器）、电流、速度、位置四通道参数波形。
 
-6.调节“Proportional”，其性能会在示波器中以波形方式反应出来。 ![5-10.png](5-10.png "fig:5-10.png")
+6.调节“Proportional”，其性能会在示波器中以波形方式反应出来。
 
-7.点击“Stop”键，可停止方波发生器的运行。 ![5-11.png](5-11.png "fig:5-11.png")
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-10.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-10.png)
+
+![5-10.png](5-10.png "fig:5-10.png")
+
+7.点击“Stop”键，可停止方波发生器的运行。
+
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-11.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-11.png)
+
+![5-11.png](5-11.png "fig:5-11.png")
 
 ## **位置环S曲线模式**
 
