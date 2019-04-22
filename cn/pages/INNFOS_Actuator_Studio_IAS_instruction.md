@@ -593,7 +593,7 @@ INNFOS执行器系统的逻辑框图：
 
 <span style="color: red">（注：如用最新版上位机软件会报警详细错误提示）</span>
 
-[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig9-1.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig9-1.png)
+[![](https://github.com/innfos/wiki/blob/master/cn/img/File9-1.png)](https://github.com/innfos/wiki/blob/master/cn/img/File9-1.png)
 
 
 
@@ -601,7 +601,7 @@ INNFOS执行器系统的逻辑框图：
 
 点击“OK”，再点击“Clear Errors”可清除错误，清除错误后，INNFOS执行器进入电流环模式。
 
-[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig9-2.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig9-2.png)
+[![](https://github.com/innfos/wiki/blob/master/cn/img/File9-2.png)](https://github.com/innfos/wiki/blob/master/cn/img/File9-2.png)
 
 
 # 版本信息
