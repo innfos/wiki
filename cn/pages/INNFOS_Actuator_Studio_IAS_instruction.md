@@ -262,6 +262,8 @@ INNFOS执行器系统的逻辑框图：
 
 4.方波发生器参数值设定
 
+[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig4-6.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig4-6.png)
+
 *   在Value1中输入转速1。(单位:RPM)
 *   在Value2中输入转速2。(单位:RPM)
 *   在Interval内输入单位时间（单位：ms），可设置INNFOS执行器方波发生器的参数。
