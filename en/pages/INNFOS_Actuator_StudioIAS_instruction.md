@@ -31,7 +31,11 @@ IAS is a visual debug control software for INNFOS actuator, the main functions o
 
 ### Windows plantform
 
-1.Double-click the installation software &quot;Setup.exe&quot; ![1-1](软件的安装01.jpg "fig:1-1")
+1.Double-click the installation software &quot;Setup.exe&quot; 
+
+[![](https://github.com/innfos/wiki/blob/master/cn/img/install01.jpg)](https://github.com/innfos/wiki/blob/master/cn/img/install01.jpg)
+
+
 
 2.After entering the installation interface, click &quot;Next&quot; ![1-2](1-2.png "fig:1-2")
 
