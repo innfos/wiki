@@ -368,15 +368,6 @@ INNFOS执行器系统的逻辑框图：
 
 [![](https://github.com/innfos/wiki/blob/master/cn/img/Fig6-1.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig6-1.png)
 
-
-
-<div class="figure">
-![6-1.png](6-1.png "6-1.png")
-
-6-1.png
-
-</div>
-
 ### 位置环S曲线模式各项功能描述
 
 *   文字序号与图中序号对应
@@ -410,29 +401,15 @@ INNFOS执行器系统的逻辑框图：
 *   右图2处的Accelerate框和Decelerate框为S曲线模式下的速度上升和下降的平缓度，例如：Accelerate值越大，INNFOS执行器达到最大速度的时间越短，Accelerate值越小，INNFOS执行器达到最大转速的时间越长。Decelerate值越大，INNFOS执行器从最大速度降低到零的时间越短，Decelerate值越小，INNFOS执行器从最大速度降低到零的时间越长。
 *   “Max”限制了INNFOS执行器的最大转速，随数值增加而增加，如右图的3处，当前最大转速为1000RPM。
 *   关于位置环S曲线模式的原理分析参见附录D。
+
+
 [![](https://github.com/innfos/wiki/blob/master/cn/img/Fig6-4.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig6-4.png)
-
-
-<div class="figure">
-![6-4.png](6-4.png "6-4.png")
-
-6-4.png
-
-</div>
 
 ## **速度环S曲线模式**
 
 ### 点击“Profile Velocity Mode”进入速度环S曲线模式
 
 [![](https://github.com/innfos/wiki/blob/master/cn/img/Fig7-1.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig7-1.png)
-
-
-<div class="figure">
-![7-1.png](7-1.png "7-1.png")
-
-7-1.png
-
-</div>
 
 ### 速度环S曲线模式各项功能描述
 
@@ -453,14 +430,11 @@ INNFOS执行器系统的逻辑框图：
 [![](https://github.com/innfos/wiki/blob/master/cn/img/Fig7-2.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig7-2.png)
 
 
-![7-2.png](7-2.png "fig:7-2.png")
-
 ### 速度环S曲线模式使用方式
 
 1.点击“Active Profile Velocity Mode”，激活当前速度环S曲线模式。 
 
 [![](https://github.com/innfos/wiki/blob/master/cn/img/Fig7-3.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig7-3.png)
-
 
 
 2.速度环S曲线模式基本参数设置：
@@ -471,36 +445,17 @@ INNFOS执行器系统的逻辑框图：
 
 [![](https://github.com/innfos/wiki/blob/master/cn/img/Fig7-4.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig7-4.png)
 
-
-<div class="figure">
-![7-4.png](7-4.png "7-4.png")
-
-7-4.png
-
-</div>
-
 ## **归位模式**
 
 ### 点击“Homing Mode”进入归位模式
 
 [![](https://github.com/innfos/wiki/blob/master/cn/img/Fig8-1.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig8-1.png)
 
-
-
-<div class="figure">
-![8-1.png](8-1.png "8-1.png")
-
-8-1.png
-
-</div>
-
 ### 归位模式使用方式
 
 点击“Active Homing Mode”，激活当前归位模式。
 
 [![](https://github.com/innfos/wiki/blob/master/cn/img/Fig8-2.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig8-2.png)
-
-![8-2.png](8-2.png "fig:8-2.png")
 
 ### 速度环S曲线模式各项功能描述
 
@@ -510,39 +465,11 @@ INNFOS执行器系统的逻辑框图：
 
 [![](https://github.com/innfos/wiki/blob/master/cn/img/Fig8-3.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig8-3.png)
 
-
-<div class="figure">
-![图：8-1](8-3.png "图：8-1")
-
-图：8-1
-
-</div>
-
 *   此时会返回左右极限的值到图8-1的1处。然后手动控制转动INNFOS执行器到想要的零点（例如图8-2中左侧图的2处），最后点击Homing按键，则当前位置变为零点（如图8-2中右侧图03的2处），图8-2中右侧图的1处的左右极限会根据点击Homing前的位置进行偏移（对比图8-2中两侧图）。这样就保证了软件限位和机械限位的一致性。
 
 [![](https://github.com/innfos/wiki/blob/master/cn/img/Fig8-4.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig8-4.png)
 
-
-
-<div class="figure">
-![图：8-2](8-4.png "图：8-2")
-
-图：8-2
-
-</div>
-
 *   然后，设置到左右极限的余量偏置（图8-2中右侧图的3处），则实际运动范围为左右极限减去偏置，(图8-2中右侧图：左软件限位为33.774918-1.4=32.374918；右软件限位为-32.4932+1.4=-31.0932。)最后，确认软件限位开启如如图8-2中右侧图的4处后，点击Download按钮即可保存当前参数。
-
-[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-11.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig5-11.png)
-
-
-
-<div class="figure">
-![图：8-2](8-4.png "图：8-2")
-
-图：8-2
-
-</div>
 
 ### 手动校准左右极限
 
