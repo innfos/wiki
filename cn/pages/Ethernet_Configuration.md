@@ -12,7 +12,7 @@
 *   ip 地址配置：打开终端输入
 
 ```sh
-    $ ifconfig</span>
+    $ ifconfig
 ```
 
     查看网络配置 [none|thumb|400px](file:020.png "wikilink") [none|thumb|400px](file:021.png "wikilink")
@@ -67,9 +67,12 @@ ip地址配置，
 <td align="left">
 
 **更新时间**
+
 </td>
 <td align="left">
+    
  **更新内容**
+ 
 </td>
 </tr>
 <tr class="even">
