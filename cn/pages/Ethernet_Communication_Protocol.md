@@ -203,7 +203,7 @@ EE 06 02 00 04 01 64 5A DF 3B 3F ED
 
 发送激活梯形位置模式指令:
 EE 06 07 00 01 06 3F 42 ED
-数据06为梯形位置模式（参见[模式表2]("#!pages/Ethernet_Communication_Protocol.md#附录B :模式表" "wikilink")），3F 42为[CRC校验码](#!pages/Ethernet_Communication_Protocol.md#CRC校验码计算方法 "wikilink")，激活成功后会收到返回：
+数据06为梯形位置模式（参见[模式表3](#!pages/Ethernet_Communication_Protocol.md#附录B:模式表 "wikilink")），3F 42为[CRC校验码](#!pages/Ethernet_Communication_Protocol.md#CRC校验码计算方法 "wikilink")，激活成功后会收到返回：
 EE 06 07 00 01 01 ED
 这时可以发送速度指令：
 EE 06 0A 00 04 00 01 00 00 01 D8 ED
@@ -597,7 +597,7 @@ EE 06 2A 00 01 01 7E 80 ED
  <tr><td>0x0D</td><td>存储参数</td><td>存储参数到EEPROM</td></tr>
 </tbody></table>
 
-## 附录B :模式表
+## 附录B:模式表
 
 <table class="tableizer-table">
 <thead><tr class="tableizer-firstrow"><th style=background:PaleTurquoise>指令符</th><th style=background:PaleTurquoise>指令符</th></tr></thead><tbody>
@@ -611,7 +611,7 @@ EE 06 2A 00 01 01 7E 80 ED
  <tr><td>08</td><td>homing模式</td></tr>
 </tbody></table>
 
-## 附录C：报警指令表
+## 附录C:报警指令表
 
 <table class="tableizer-table">
 <thead><tr class="tableizer-firstrow"><th style=background:PaleTurquoise>指令符</th><th style=background:PaleTurquoise>指令符</th></tr></thead><tbody>
@@ -630,7 +630,7 @@ EE 06 2A 00 01 01 7E 80 ED
  <tr><td>注释</td><td>可同时报警多个错误，如返回数据为0005，则错误为0001过压异常与0004堵转异常</td></tr>
 </tbody></table>
 
-## 附录D：<span id="型号表"></span>型号表
+## 附录D:型号表
 
 <table class="tableizer-table">
 <thead><tr class="tableizer-firstrow"><th style=background:PaleTurquoise>执行器型号</th><th style=background:PaleTurquoise>电流满量程</th><th style=background:PaleTurquoise>电机端速度满量程</th><th style=background:PaleTurquoise>输出端速度满量程</th></tr></thead><tbody>
