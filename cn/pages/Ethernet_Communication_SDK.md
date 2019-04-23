@@ -1,13 +1,16 @@
-﻿[中文](以太网通信协议SDK "wikilink")
+以太网通信SDK
+=========
 
-# 介绍
+ [English](以太网通信协议SDK "wikilink")
+
+## 介绍
 
 *   API提供了友好的用户接口，包括了与多个INNFOS执行器进行串口或者以太网通信（推荐）功能，可同时对多个执行器发送指令或者获取执行器状态和参数信息
 *   建议初次接触API的用户优先阅读SDK中的examples。
 
-# SDK下载及目录说明
+## SDK下载及目录说明
 
-# 下载
+#### 下载
 
 *   访问该链接[download link](https://github.com/innfos/ActuatorController_SDK.git)下载SDK相关文件或者直接执行以下命令
 
@@ -15,11 +18,11 @@
     $ git clone https://github.com/innfos/ActuatorController_SDK.git
 ```
     
-# API相关文档
+## API相关文档
 
 *   注意事项以及相关说明文档请访问[document link](http://innfos.com/doc/index.html)
 
-# 执行器连接
+## 执行器连接
 
 ![串口版连接图](执行器连接图  横向.png "fig:串口版连接图")
 
@@ -35,11 +38,11 @@
 
 警告：所有线缆拔插严禁带电操作，否则容易损坏设备。
 
-# 环境配置和示例代码编译运行
+## 环境配置和示例代码编译运行
 
-## linux平台
+### linux平台
 
-### 环境配置
+#### 环境配置
 
 * cmake 安装：打开终端输入命令
     <pre>$ sudo apt-get install cmake</pre>
@@ -54,7 +57,7 @@ sudo ifconfig enp0s25 static 192.168.1.111
 ```
 配置完成后输入ifconfig，可看到配置成功后的ip地址
 
-### 示例代码编译
+#### 示例代码编译
 
 * 打开终端进入…\example目录，该目录下有CMakeLists.txt，
 
@@ -64,11 +67,11 @@ sudo ifconfig enp0s25 static 192.168.1.111
 *   输入命令执行完成后，在该目录下会生成一个bin文件夹，该目录存放了生成的示例程序。
 *   确认执行器正确连接并供电以后，执行器会有黄色指示灯闪烁，此时可以测试示例代码。
 
-### 示例程序测试
+#### 示例程序测试
 
 *   确认执行器正确连接并供电以后，执行器会有黄色指示灯闪烁，此时可以测试示例代码
 
-#### 查找已连接的执行器
+##### 查找已连接的执行器
 
 *   打开终端并进入bin目录，输入命令
 
@@ -152,7 +155,7 @@ sudo ifconfig enp0s25 static 192.168.1.111
 
 ```
 
-#### 监测执行器状态
+##### 监测执行器状态
 
 *   打开终端，进入example/bin目录，输入命令
 
@@ -165,7 +168,7 @@ sudo ifconfig enp0s25 static 192.168.1.111
 
     [none|thumb|400px](file:023.png "wikilink")
 
-    **代码说明**
+**代码说明**
 
 *   自动识别成功后自动开启所有执行器，每个执行器开启成功后都会触发Actuator::Launch_Finished信号，当所有执行器都开启以后，开始自动刷新，读取执行器数据。
 
@@ -239,7 +242,7 @@ sudo ifconfig enp0s25 static 192.168.1.111
 
     执行器会转动到5圈的位置；输入a 7可以激活profile velocity模式，再输入v 500， 执行器将以500RPM的速度转动，停止转动输入v 0,；输入a 1可以激活电流模式，再输入 c 0.6，执行器将以恒定0.6A的电流转动（如果执行器不动，可用手轻轻转动一下执行器）， 可以ctrl+c以后再ctrl+d结束程序（因为有多线程等待键盘输入） [none|thumb|400px](file:026.png "wikilink")
 
-    **代码说明**
+**代码说明**
 
 *   成功启动执行器后，可对执行器进行操作。getActuatorIdArray可获取所有执行器的短id，用户可以指定其中任意id并进行操作，执行器有速度、电流、位置等多种模式（Actuator::ActuatorMode），必须先激活对应的模式才能进行相应操作。
 
@@ -442,9 +445,9 @@ ActuatorController * pController = ActuatorController::getInstance();
     }
 ```
 
-## windows平台
+### windows平台
 
-### 环境配置
+#### 环境配置
 
 *   SDK需要win7 sp1以上的64位windows操作系统
 *   运行安装tools文件夹中的vcredist_x64.exe，安装vs2015运行时库
@@ -491,7 +494,7 @@ ActuatorController * pController = ActuatorController::getInstance();
 
 [none|thumb|400px](file:009.png "wikilink")
 
-### 示例代码编译
+#### 示例代码编译
 
 *   运行cmake-gui 出现如右界面：
 *   其中源码路径就是目录结构中的…\example所在的路径，该目录下包含了CMakeLists.txt文件；构建路径可自行定义，用于生成工程文件两个路径配置完成后点击Generate按钮弹出如下界面
@@ -502,9 +505,9 @@ ActuatorController * pController = ActuatorController::getInstance();
 
 [none|thumb|400px](file:012.png "wikilink")
 
-### 示例程序测试
+#### 示例程序测试
 
-#### 查找已连接的执行器
+##### 查找已连接的执行器
 
 *   确认执行器正确连接并供电以后，执行器会有黄色指示灯闪烁，此时可以测试示例代码。
 
@@ -512,13 +515,13 @@ ActuatorController * pController = ActuatorController::getInstance();
 
 [none|thumb|400px](file:014.png "wikilink")
 
-#### 监测执行器状态
+##### 监测执行器状态
 
 *   打开命令行窗口并进入bin目录，输入命令./monitorActuator.exe -e
 
 [none|thumb|400px](file:015.png "wikilink")
 
-#### 控制执行器
+##### 控制执行器
 
 *   打开命令行窗口并进入bin目录，输入命令
 
@@ -533,7 +536,7 @@ ActuatorController * pController = ActuatorController::getInstance();
 
 [none|thumbb|400px](file:017.png "wikilink")
 
-#### 执行器器参数调整
+##### 执行器器参数调整
 
 *   打开命令行窗口并进入bin目录，输入命令
 
@@ -545,7 +548,7 @@ ActuatorController * pController = ActuatorController::getInstance();
 
 [none|thumb|400px](file:018.png "wikilink")
 
-#### 执行器归零
+##### 执行器归零
 
 *   打开命令行窗口并进入bin目录，输入命令
 
@@ -559,7 +562,7 @@ position 模式下，输入此范围之外的位置，执行器不会转动，�
 
 [none|thumb|400px](file:LongId_w.png "wikilink")
 
-#### 执行器长短id
+##### 执行器长短id
 
 *   打开命令行窗口并进入bin目录，输入命令
 
@@ -571,7 +574,7 @@ position 模式下，输入此范围之外的位置，执行器不会转动，�
 
 [none|thumb|400px](file:Feedback_w.png "wikilink")
 
-#### 同步响应
+##### 同步响应
 
 *   打开命令行窗口并进入bin目录，输入命令
 
@@ -581,13 +584,13 @@ position 模式下，输入此范围之外的位置，执行器不会转动，�
 
 *   运行feedback_sync.exe，关联对应信号，在回调中进行操作属于异步响应，不会阻塞当前程序。同步响应，会阻塞当前程序，直到sdk返回结果，相比较而言，同步响应用法简单但是效率偏低，因为需要等待执行器响应（而且执行器部分操作没有同步响应，比如设置位置、速度、电流等）,如果对效率要求比较高，推荐使用异步响应。
 
-# SDK使用说明
+## SDK使用说明
 
-## 概述
+### 概述
 
 *   本SDK提供了与执行器通信的接口,可通过串口或者以太网对已经连接好的执行器进行查找、状态查询、属性调整和自定义控制。如果想快速了解sdk基本内容和使用方法,请查看example/src中的相关代码
 
-## 项目中使用sdk
+### 项目中使用sdk
 
 *   本 sdk 遵循 c++11 标准，所以在构建项目之前请确认编译选项支持 c++11（比如 gcc 中使用 -std=c++11） ;
 *   将 sdk 集成到项目中的基本步骤（最好先参考 example 中的 CMakeLists.txt） :
@@ -595,7 +598,7 @@ position 模式下，输入此范围之外的位置，执行器不会转动，�
 *   将库文件目录 sdk/lib/linux_x86_64（windows 目录为 sdk/lib/debug 和 sdk/lib/release），以便可执行文件能链接到共享库，并保证运行时能够关联到共享库；
 *   将必要的元素加入到构建过程中（比如 CMake 中的 target_link_libraries）
 
-## 命名空间
+### 命名空间
 
 * 在../sdk/include/actuatordefine.h定义了命名空间Actuator,并且枚举了sdk中所有用到的类型和类型值：
 
@@ -776,7 +779,7 @@ position 模式下，输入此范围之外的位置，执行器不会转动，�
  <tr><td>Data_invalid</td><td>非法属性值</td></tr>
 </tbody></table>
 
-# 版本信息
+## 版本信息
 
 <table class="tableizer-table">
 <thead><tr class="tableizer-firstrow"><th>版本</th><th>日期</th><th>修改内容</th></tr></thead><tbody>
