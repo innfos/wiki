@@ -36,18 +36,8 @@
 
 #### 环境配置
 
-* cmake 安装：打开终端输入命令
-    <pre>$ sudo apt-get install cmake</pre>
+请参考<a href="!#pages/Ethernet_Configuration.md#linux平台环境配置">linux平台环境配置</a>
 
-* ip 地址配置：打开终端输入 ifconfig，查看网络配置
-
-[none|thumb|400px](file:020.png "wikilink") [none|thumb|400px](file:021.png "wikilink")
-
-* 示例中有线网卡的名字是enp0s25,输入命令
-```sh
-sudo ifconfig enp0s25 static 192.168.1.111
-```
-配置完成后输入ifconfig，可看到配置成功后的ip地址
 
 #### 示例代码编译
 
@@ -74,7 +64,7 @@ sudo ifconfig enp0s25 static 192.168.1.111
 
     * * *
 
-    [none|thumb|400px](file:022.png "wikilink")
+    ![count.png](../img/022.png "wikilink")
 
 **代码说明**
 
@@ -158,7 +148,7 @@ sudo ifconfig enp0s25 static 192.168.1.111
 *   其中Actuator ID为执行器id,attribute ID为监测的执行器属性Id，attribute value为对
     应的属性值，可以ctrl+c结束程序
 
-    [none|thumb|400px](file:023.png "wikilink")
+    ![count.png](../img/023.png "wikilink")
 
 **代码说明**
 
@@ -224,15 +214,19 @@ sudo ifconfig enp0s25 static 192.168.1.111
 
     
 	
-[none|thumb|400px](file:024.png "wikilink")
+![count.png](../img/024.png "wikilink")
+
 
 *   表示执行器已经找到，输入命令l 0，该命令会启动所有已连接的执行器，如果启动成功，执行器会有绿色指示灯闪烁，表示已经启动成功，终端窗如下显示
 
-    [none|thumb|400px](file:025.png "wikilink")
+![count.png](../img/025.png "wikilink")
 
 *   此时可激活执行器对应模式，比如输入 a 6可以激活profile position模式，再输入p 5，
 
-    执行器会转动到5圈的位置；输入a 7可以激活profile velocity模式，再输入v 500， 执行器将以500RPM的速度转动，停止转动输入v 0,；输入a 1可以激活电流模式，再输入 c 0.6，执行器将以恒定0.6A的电流转动（如果执行器不动，可用手轻轻转动一下执行器）， 可以ctrl+c以后再ctrl+d结束程序（因为有多线程等待键盘输入） [none|thumb|400px](file:026.png "wikilink")
+    执行器会转动到5圈的位置；输入a 7可以激活profile velocity模式，再输入v 500， 执行器将以500RPM的速度转动，停止转动输入v 0,；输入a 1可以激活电流模式，再输入 c 0.6，执行器将以恒定0.6A的电流转动（如果执行器不动，可用手轻轻转动一下执行器）， 可以ctrl+c以后再ctrl+d结束程序（因为有多线程等待键盘输入）
+    
+     ![count.png](../img/026.png "wikilink")
+     
 
 **代码说明**
 
@@ -300,7 +294,12 @@ sudo ifconfig enp0s25 static 192.168.1.111
 
 *   此示例程序自动启动执行器并将位置环输出设置为3000RPM,速度环的电流最大输出为16.5A,
 
-    如果使用profile position模式转动执行器，执行器的最大速度不会超过3000RPM;如果 使用profile velocity模式转动执行器，执行器最大电流不会超过16.5A，可以ctrl+c结束程序 [none|thumb|400px](file:027.png "wikilink") **代码说明**
+    如果使用profile position模式转动执行器，执行器的最大速度不会超过3000RPM;如果 使用profile velocity模式转动执行器，执行器最大电流不会超过16.5A，可以ctrl+c结束程序 
+    
+    ![count.png](../img/027.png "wikilink") 
+    
+    **代码说明**
+    
 
 *   此示例程序自动启动执行器，启动成功后可调整执行器属性，速度环电流输出可调整速度环下的执行器扭矩，位置环速度输出可调整位置环下速度的大小。详见SCA快速使用说明。
     //执行器属性调整,调整成功，会触发执行器属性变化信号
@@ -334,7 +333,9 @@ $./homingActuator -e
 ```
 
 
-*   表示已经将执行器当前位置设置为零位，范围是-9.5R到9.5R，并且开启了位置限制，如果profile position模式下，输入此范围之外的位置，执行器不会转动，可以ctrl+c结束程序 [none|thumb|400px](file:028.png "wikilink")
+*   表示已经将执行器当前位置设置为零位，范围是-9.5R到9.5R，并且开启了位置限制，如果profile position模式下，输入此范围之外的位置，执行器不会转动，可以ctrl+c结束程序 
+
+![count.png](../img/028.png "wikilink")
 
 **代码说明**
 
@@ -441,61 +442,23 @@ ActuatorController * pController = ActuatorController::getInstance();
 
 #### 环境配置
 
-*   SDK需要win7 sp1以上的64位windows操作系统
-*   运行安装tools文件夹中的vcredist_x64.exe，安装vs2015运行时库
-*   安装cmake：在Cmake官网https://cmake.org/download/下载最新版本Cmake安装
-*   如果电脑防火墙已开启，打开控制面板，选择系统和安全，打开Windows Defender 防火墙，点击左侧高级设置，点击入站规则
 
-[none|thumb|400px](file:001.png "wikilink")
+请参考<a href="!#pages/Ethernet_Configuration.md# windows平台环境配置"> windows平台环境配置</a>
 
-*   新建规则
-
-[none|thumb|400px](file:002.png "wikilink")
-
-*   选择端口，然后点击下一步
-
-[none|thumb|400px](file:003.png "wikilink")
-
-*   选择udp，并选择所有本地端口，点击下一步
-
-[none|thumb|400px](file:004.png "wikilink")
-
-*   允许连接，点击下一步，
-
-[none|thumb|400px](file:005.png "wikilink")
-
-*   默认勾选所有设置，点击下一步
-
-[none|thumb|400px](file:006.png "wikilink")
-
-*   填写自定义名字，完成即可
-
-[none|thumb|400px](file:007.png "wikilink")
-
-*   ip地址配置，
-
-*   打开控制面板，选择网络和Internet,再选择网络和共享中心，再选择更改适配器设置，右键单击以太网，选择属性
-
-[none|thumb|400px](file:008.png "wikilink")
-
-*   选择TCP/IPv4,然后选择属性，
-
-配置如图：
-
-*   其中ip地址中的192.168.1.119中的119可以替换成100~200之间的任意整数，配置完成点击确定
-
-[none|thumb|400px](file:009.png "wikilink")
 
 #### 示例代码编译
 
 *   运行cmake-gui 出现如右界面：
 *   其中源码路径就是目录结构中的…\example所在的路径，该目录下包含了CMakeLists.txt文件；构建路径可自行定义，用于生成工程文件两个路径配置完成后点击Generate按钮弹出如下界面
 
-[none|thumb|400px](file:011.png "wikilink")
+
+![count.png](../img/011.png "wikilink")
+
 
 *   如果红色框内不是64位生成器，点击下拉三角，选择64位生成器，然后点击Finish按钮，生成成功后就生成了Visual Studio的工程文件，可用Visual Studio打开编译。编译完整个工程，在工程目录下会生成一个bin目录，里面有Debug或者Release文件夹（对应于编译的版本），将目录结构中的…\sdk\lib\windows_x64\debug或…\sdk\lib\windows_x64\release中的文件复制到对应版本的bin下面的Debug或者Release目录中，双击该目录中的exe就可正常运行示例程序了。
 
-[none|thumb|400px](file:012.png "wikilink")
+![count.png](../img/012.png "wikilink")
+
 
 #### 示例程序测试
 
@@ -503,30 +466,52 @@ ActuatorController * pController = ActuatorController::getInstance();
 
 *   确认执行器正确连接并供电以后，执行器会有黄色指示灯闪烁，此时可以测试示例代码。
 
-打开命令行窗口并进入bin目录，输入命令./lookupActuators.exe -e [none|thumb|400px](file:013.png "wikilink")
+打开命令行窗口并进入bin目录，输入命令
 
-[none|thumb|400px](file:014.png "wikilink")
+```sh
+./lookupActuators.exe -e 
+```
+
+
+![count.png](../img/013.png "wikilink")
+
+
+
 
 ##### 监测执行器状态
 
-*   打开命令行窗口并进入bin目录，输入命令./monitorActuator.exe -e
+*   打开命令行窗口并进入bin目录，输入命令
 
-[none|thumb|400px](file:015.png "wikilink")
+```sh
+./monitorActuator.exe -e
+```
+
+
+![count.png](../img/014.png "wikilink")
+
 
 ##### 控制执行器
 
 *   打开命令行窗口并进入bin目录，输入命令
 
+
 ```sh
 ./operateActuator.exe -e
 ```
+
+![count.png](../img/015.png "wikilink")
+
+
 表示执行器已经找到，输入命令l 0，该命令会启动所有已连接的执行器，如果启动成功，执行器会有绿色指示灯闪烁，表示已经启动成功，cmd窗口如下显示
+
+![count.png](../img/016.png "wikilink")
+
 
 *   此时可激活执行器对应模式，比如输入 a 6可以激活profile position模式，再输入p 10，执行器会转动到10圈的位置；输入a 7可以激活profile velocity模式，再输入v 500，执行器将以500RPM的速度转动，停止转动输入v 0,；输入a 1可以激活电流模式，再输入c 0.6，执行器将以恒定0.6A的电流转动（如果执行器不动，可用手轻轻转动一下执行器），可以ctrl+c结束程序
 
-[none|thumb|400px](file:016.png "wikilink")
 
-[none|thumbb|400px](file:017.png "wikilink")
+![count.png](../img/017.png "wikilink")
+
 
 ##### 执行器器参数调整
 
@@ -538,7 +523,7 @@ ActuatorController * pController = ActuatorController::getInstance();
 
 *   此示例程序自动启动执行器并将位置环输出设置为3000RPM,速度环的电流最大输出为16.5A,如果使用profile position模式转动执行器，执行器的最大速度不会超过3000RPM;如果使用profile velocity模式转动执行器，执行器最大电流不会超过16.5A，可以ctrl+c结束程序
 
-[none|thumb|400px](file:018.png "wikilink")
+[![count.png](../img/018.png "wikilink")
 
 ##### 执行器归零
 
@@ -552,7 +537,9 @@ ActuatorController * pController = ActuatorController::getInstance();
 
 position 模式下，输入此范围之外的位置，执行器不会转动，可以 ctrl+c 结束程序
 
-[none|thumb|400px](file:LongId_w.png "wikilink")
+
+![count.png](../img/LongId_w.png "wikilink")
+
 
 ##### 执行器长短id
 
@@ -564,7 +551,7 @@ position 模式下，输入此范围之外的位置，执行器不会转动，�
 
 可以进行长短id的获取以及相互转换，并且可以通过长id获取通信ip地址。
 
-[none|thumb|400px](file:Feedback_w.png "wikilink")
+![count.png](../img/Feedback_w.png "wikilink")
 
 ##### 同步响应
 
