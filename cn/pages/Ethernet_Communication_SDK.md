@@ -24,7 +24,7 @@
 
 ## 执行器连接
 
-![以太网版连接图](../img/2222222(1).gif "fig:以太网版连接图")
+![以太网版连接图](../img/connect2.png "以太网版连接图")
 
 如上动图为INNFOS执行器以太网通信的连接方式。
 
@@ -443,7 +443,7 @@ ActuatorController * pController = ActuatorController::getInstance();
 #### 环境配置
 
 
-请参考<a href="#!pages/Ethernet_Configuration.md# windows平台环境配置"> windows平台环境配置</a>
+请参考<a href="#!pages/Ethernet_Configuration.md#windows平台环境配置"> windows平台环境配置</a>
 
 
 #### 示例代码编译
