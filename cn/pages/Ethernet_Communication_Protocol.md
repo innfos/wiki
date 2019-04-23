@@ -65,7 +65,7 @@
 
 **CRC校验码**
 
-* 两个字节标识对通讯中数据内容的 CRC16 校验结果，若命令中无数据，则无 CRC校验位,CRC计算方法请参考[CRC校验码计算方法](#CRC校验码计算方法 "wikilink")
+* 两个字节标识对通讯中数据内容的 CRC16 校验结果，若命令中无数据，则无 CRC校验位,CRC计算方法请参考[CRC校验码计算方法](#!pages/Ethernet_Communication_Protocol.md#CRC校验码计算方法 "wikilink")
 
 **帧尾**
 
@@ -258,7 +258,7 @@ EE 06 02 00 04 01 64 5A DF 3B 3F ED
  <tr><td>说明</td><td colspan="2">此命令类发送数据长度为2，返回数据长度为2，发送数据后一个字节表示要写入参数内容。(注：上电后先发送开机指令才能使用，断电前必须先发送关机指令，否则零位可能丢失)</td></tr>
  <tr><td>指令符</td><td colspan="2"><a href="#write1">见写入指令1</a></td></tr>
  <tr><td>数据长度</td><td colspan="2">1</td></tr>
- <tr><td rowspan="2">数据内容</td><td>0x01：使能/开机</td><td rowspan="2">模式设置见<a href="模式表">模式表</a></td></tr>
+ <tr><td rowspan="2">数据内容</td><td>0x01：使能/开机</td><td rowspan="2">模式设置见<a href="#!pages/Ethernet_Communication_Protocol.md#模式表">模式表</a></td></tr>
  <tr><td>0x00：失能/关机</td></tr>
  <tr><td>指令 (返回值)</td><td colspan="2"><a href="#write1">见写入指令1</a></td></tr>
  <tr><td>数据长度(返回值)</td><td colspan="2">1</td></tr>
