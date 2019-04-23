@@ -130,6 +130,7 @@
  <tr><td>帧头</td><td>设备地址</td><td>指令符</td><td>数据长度</td><td>参数内容</td><td>CRC校验</td><td>帧尾</td></tr>
  <tr><td>0xEE</td><td>0x01</td><td>0x0E</td><td>0x4</td><td>0x05 0x00 0x00 0x00</td><td>2字节数据</td><td>0xED</td></tr>
 </tbody></table>
+
 帧头 ：0xEE = 协议头
 
 设备地址：0x01 = 设置对象ID
@@ -194,17 +195,23 @@ EE 06 02 00 04 01 64 5A DF 3B 3F ED
 
 ### 与执行器通信
 
-成功查询到执行器后，即可根据执行器ID与执行器进行通信，例如启动ID为6的执行器的指令为：</br> EE 06 2A 00 01 01 7E 80 ED</br> 其中06为执行器ID,2A为启动或关闭执行器的指令，00 01是数据长度，01即为开机（00是关机），7E 80 为[CRC校验码](#CRC校验码计算方法 "wikilink")。
+成功查询到执行器后，即可根据执行器ID与执行器进行通信，例如启动ID为6的执行器的指令为：</br> EE 06 2A 00 01 01 7E 80 ED</br> 其中06为执行器ID,2A为启动或关闭执行器的指令，00 01是数据长度，01即为开机（00是关机），7E 80 为[CRC校验码](#!pages/Ethernet_Communication_Protocol.md#CRC校验码计算方法 "wikilink")。
 
 ### 控制执行器
 
 ##### 位置控制
 
-发送激活梯形位置模式指令:</br> EE 06 07 00 01 06 3F 42 ED</br> 数据06为梯形位置模式（参见[模式表](#模式表 "wikilink")），3F 42为[CRC校验码](#CRC校验码计算方法 "wikilink")，激活成功后会收到返回：</br> EE 06 07 00 01 01 ED</br> 这时可以发送速度指令：</br> EE 06 0A 00 04 00 01 00 00 01 D8 ED</br> 其中0A位设置速度值的指令，00 01 00 00位设置的位置值，该值是设置目标位置1R,通过公式：目标位置/128*（2^24）计算取整获得的IQ24值，关于IQ24的介绍请参考[ IQmath简介](#IQmath简介 "wikilink")。
+发送激活梯形位置模式指令:
+EE 06 07 00 01 06 3F 42 ED
+数据06为梯形位置模式（参见[模式表](#!pages/Ethernet_Communication_Protocol.md#模式表 "wikilink")），3F 42为[CRC校验码]((#!pages/Ethernet_Communication_Protocol.md#CRC校验码计算方法 "wikilink")，激活成功后会收到返回：
+EE 06 07 00 01 01 ED
+这时可以发送速度指令：
+EE 06 0A 00 04 00 01 00 00 01 D8 ED
+其中0A位设置速度值的指令，00 01 00 00位设置的位置值，该值是设置目标位置1R,通过公式：目标位置/128*（2^24）计算取整获得的IQ24值，关于IQ24的介绍请参考[ IQmath简介](#!pages/Ethernet_Communication_Protocol.md#IQmath简介 "wikilink")。
 
 ### 其他
 
-注意，设置速度电流位置值的命令均无返回，其他指令都有返回，更多与执行器通信指令请参考[以太网通信协议命令参考](#以太网通信协议命令参考 "wikilink")。
+注意，设置速度电流位置值的命令均无返回，其他指令都有返回，更多与执行器通信指令请参考[以太网通信协议命令参考](#!pages/Ethernet_Communication_Protocol.md#以太网通信协议命令参考 "wikilink")。
 
 ## 以太网通信协议命令参考
 
@@ -214,12 +221,12 @@ EE 06 02 00 04 01 64 5A DF 3B 3F ED
  <tr><td  colspan="3" style=background:PaleTurquoise>2.3.1.1 发送数据0字节， 返回数据1字节</td></tr>
  <tr><td>命令名称</td><td colspan="2">读取命令</td></tr>
  <tr><td>说明</td><td colspan="2">此命令类发送数据长度为1，返回数据长度为2</td></tr>
- <tr><td>指令符</td><td colspan="2"><a href="#read1">见读取指令1</a></td></tr>
+ <tr><td>指令符</td><td colspan="2"><a href="#!pages/Ethernet_Communication_Protocol.md#读取指令1">见读取指令1</a></td></tr>
  <tr><td>数据长度</td><td colspan="2">0</td></tr>
  <tr><td>数据内容</td><td colspan="2">无</td></tr>
- <tr><td>指令符（返回值）</td><td colspan="2"><a href="#!pages/Ethernet_Communication_Protocol.md#read1">见读取指令1</a></td></tr>
+ <tr><td>指令符（返回值）</td><td colspan="2"><a href="#!pages/Ethernet_Communication_Protocol.md#读取指令1">见读取指令1</a></td></tr>
  <tr><td>数据长度 (返回值)</td><td colspan="2">1</td></tr>
- <tr><td rowspan="2">下位机返回数据</td><td>0x01：成功/使能/开机/正常</td><td rowspan="2">模式查询返回数据见<a href="https://innfos.github.io/wiki/cn/#!pages/Ethernet_Communication_Protocol.md#模式表">模式表</a></td></tr>
+ <tr><td rowspan="2">下位机返回数据</td><td>0x01：成功/使能/开机/正常</td><td rowspan="2">模式查询返回数据见<a href="#!pages/Ethernet_Communication_Protocol.md#附录B :模式表">模式表</a></td></tr>
  <tr><td>0x00：失败/失能/关机/异常</td></tr>
 </tbody></table>
 
@@ -228,12 +235,12 @@ EE 06 02 00 04 01 64 5A DF 3B 3F ED
  <tr><td colspan="3" style=background:PaleTurquoise>2.3.1.2 发送数据0字节，返回数据2字节</td></tr>
  <tr><td >命令名称</td><td colspan="2">读取命令</td></tr>
  <tr><td>说明</td><td  colspan="2">此命令类发送数据长度为1，返回数据长度为3，读取执行器参数值，高位在前。数值为真实值的2^8倍。（一条特殊指令指令表内已特殊标注）</td></tr>
- <tr><td>指令符</td><td  colspan="2"><a href="#read2">见读取指令2</a></td></tr>
+ <tr><td>指令符</td><td  colspan="2"><a href="#!pages/Ethernet_Communication_Protocol.md#读取指令2">见读取指令2</a></td></tr>
  <tr><td>数据长度</td><td  colspan="2">0</td></tr>
  <tr><td>数据内容</td><td  colspan="2">无</td></tr>
- <tr><td>指令符（返回值）</td><td  colspan="2"><a href="#read2">见读取指令2</a></td></tr>
+ <tr><td>指令符（返回值）</td><td  colspan="2"><a href="#!pages/Ethernet_Communication_Protocol.md#读取指令2">见读取指令2</a></td></tr>
  <tr><td>数据长度 (返回值)</td><td  colspan="2">2</td></tr>
- <tr><td>下位机返回数据</td><td>数据为IQ8格式</td><td>或见<a href="#报警指令表">报警指令表</a></td></tr>
+ <tr><td>下位机返回数据</td><td>数据为IQ8格式</td><td>或见<a href="#!pages/Ethernet_Communication_Protocol.md#附录C：报警指令表">报警指令表</a></td></tr>
 </tbody></table>
 
 <table class="tableizer-table">
@@ -241,10 +248,10 @@ EE 06 02 00 04 01 64 5A DF 3B 3F ED
  <tr><td  colspan="2" style=background:PaleTurquoise>2.3.1.3 发送数据0字节，返回数据4字节</td></tr>
  <tr><td>命令名称</td><td>读取命令</td></tr>
  <tr><td>说明</td><td>此命令类发送数据长度为1，返回数据长度为5，读取执行器参数值，高位在前。数值为真实值的2^24倍。（一条特殊指令指令表内已特殊标注）</td></tr>
- <tr><td>指令符</td><td><a href="#read3">见读取指令3</a></td></tr>
+ <tr><td>指令符</td><td><a href="#!pages/Ethernet_Communication_Protocol.md#读取指令3">见读取指令3</a></td></tr>
  <tr><td>数据长度</td><td>0</td></tr>
  <tr><td>数据内容</td><td>无</td></tr>
- <tr><td>指令符（返回值）</td><td><a href="#read3">见读取指令3</a></td></tr>
+ <tr><td>指令符（返回值）</td><td><a href="#!pages/Ethernet_Communication_Protocol.md#读取指令3">见读取指令3</a></td></tr>
  <tr><td>数据长度 (返回值)</td><td>4</td></tr>
  <tr><td>下位机返回数据</td><td>数据为IQ24格式。(一条特殊指令指令表内已特殊标注)）</td></tr>
 </tbody></table>
@@ -256,11 +263,11 @@ EE 06 02 00 04 01 64 5A DF 3B 3F ED
  <tr><td colspan="3"style=background:PaleTurquoise>2.3.2.1发送数据1字节，返回数据1字节</td></tr>
  <tr><td>命令名称</td><td colspan="2">写入命令</td></tr>
  <tr><td>说明</td><td colspan="2">此命令类发送数据长度为2，返回数据长度为2，发送数据后一个字节表示要写入参数内容。(注：上电后先发送开机指令才能使用，断电前必须先发送关机指令，否则零位可能丢失)</td></tr>
- <tr><td>指令符</td><td colspan="2"><a href="#write1">见写入指令1</a></td></tr>
+ <tr><td>指令符</td><td colspan="2"><a href="#!pages/Ethernet_Communication_Protocol.md#写入指令1">见写入指令1</a></td></tr>
  <tr><td>数据长度</td><td colspan="2">1</td></tr>
  <tr><td rowspan="2">数据内容</td><td>0x01：使能/开机</td><td rowspan="2">模式设置见<a href="#!pages/Ethernet_Communication_Protocol.md#模式表">模式表</a></td></tr>
  <tr><td>0x00：失能/关机</td></tr>
- <tr><td>指令 (返回值)</td><td colspan="2"><a href="#write1">见写入指令1</a></td></tr>
+ <tr><td>指令 (返回值)</td><td colspan="2"><a href="#!pages/Ethernet_Communication_Protocol.md#写入指令1">见写入指令1</a></td></tr>
  <tr><td>数据长度(返回值)</td><td colspan="2">1</td></tr>
  <tr><td rowspan="2">下位机返回数据</td><td colspan="2">0x01：成功</td></tr>
  <tr><td colspan="2">0x00：失败</td></tr>
@@ -271,11 +278,11 @@ EE 06 02 00 04 01 64 5A DF 3B 3F ED
  <tr><td colspan="2"style=background:PaleTurquoise>2.3.2.2发送数据2字节，返回数据1字节</td></tr>
  <tr><td>命令名称</td><td>写入命令</td></tr>
  <tr><td>说明</td><td>此命令类发送数据长度为3字节，返回数据长度为2字节，发送数据后2个字节表示要写入参数内容，高位在前。数值为真实值的2^8倍。</td></tr>
- <tr><td>指令符</td><td><a href="#write2">见写入指令2</a></td></tr>
+ <tr><td>指令符</td><td><a href="#!pages/Ethernet_Communication_Protocol.md#写入指令2">见写入指令2</a></td></tr>
  <tr><td>数据长度</td><td>2</td></tr>
  <tr><td rowspan="2">数据内容</td><td>数值为IQ8格式</td></tr>
  <tr><td>0x00：失能/关机</td></tr>
- <tr><td>指令 (返回值)</td><td><a href="#write2">见写入指令2</a></td></tr>
+ <tr><td>指令 (返回值)</td><td><a href="#!pages/Ethernet_Communication_Protocol.md#写入指令2">见写入指令2</a></td></tr>
  <tr><td>数据长度(返回值)</td><td>1</td></tr>
  <tr><td rowspan="2">下位机返回数据</td><td>0x01：成功</td></tr>
  <tr><td>0x00：失败</td></tr>
@@ -285,10 +292,10 @@ EE 06 02 00 04 01 64 5A DF 3B 3F ED
 <thead><tr class="tableizer-firstrow"><th  colspan="3"style=background:PaleTurquoise>2.3.2.3发送数据4字节，返回数据1字节或更少</th></tr></thead><tbody>
  <tr><td>命令名称</td><td colspan="2">写入命令</td></tr>
  <tr><td>说明</td><td  colspan="2">此命令类发送数据长度为5，返回数据长度为2，发送数据后4个字节表示要写入的参数内容，数值为真实值的2^24倍。(一条特殊指令指令表内已特殊标注)</td></tr>
- <tr><td>指令符</td><td  colspan="2"><a href="#write3">见写入指令3</a></td></tr>
+ <tr><td>指令符</td><td  colspan="2"><a href="#!pages/Ethernet_Communication_Protocol.md#写入指令3">见写入指令3</a></td></tr>
  <tr><td>数据长度</td><td  colspan="2">4</td></tr>
  <tr><td>数据内容</td><td  colspan="2">数据为IQ24格式。(一条特殊指令指令表内已特殊标注)</td></tr>
- <tr><td>指令 (返回值)</td><td  colspan="2"><a href="#write3">见写入指令3</a></td></tr>
+ <tr><td>指令 (返回值)</td><td  colspan="2"><a href="#!pages/Ethernet_Communication_Protocol.md#写入指令3">见写入指令3</a></td></tr>
  <tr><td>数据长度(返回值)</td><td  colspan="2">1或0</td></tr>
  <tr><td  rowspan="2">下位机返回数据</td><td>0x01：成功</td><td  rowspan="2">(三条特殊指令无返回数据，指令表内已标注)。</td></tr>
  <tr><td  colspan="1">0x00：失败</td></tr>
@@ -298,10 +305,10 @@ EE 06 02 00 04 01 64 5A DF 3B 3F ED
 <thead><tr class="tableizer-firstrow"><th colspan="2"style=background:PaleTurquoise>2.3.2.4发送数据0字节，返回数据1字节</th></tr></thead><tbody>
  <tr><td>命令名称</td><td>写入命令</td></tr>
  <tr><td>说明</td><td>此命令类发送数据长度为1，返回数据长度为2</td></tr>
- <tr><td>指令符</td><td><a href="#write4">见写入指令4</a></td></tr>
+ <tr><td>指令符</td><td><a href="#!pages/Ethernet_Communication_Protocol.md#写入指令4">见写入指令4</a></td></tr>
  <tr><td>数据长度</td><td>0</td></tr>
  <tr><td>数据内容</td><td>无</td></tr>
- <tr><td>指令 (返回值)</td><td><a href="#write4">见写入指令4</a></td></tr>
+ <tr><td>指令 (返回值)</td><td><a href="#!pages/Ethernet_Communication_Protocol.md#写入指令4">见写入指令4</a></td></tr>
  <tr><td>数据长度(返回值)</td><td>1</td></tr>
  <tr><td rowspan="2">下位机返回数据</td><td>0x01：成功</td></tr>
  <tr><td>0x00：失败</td></tr>
@@ -457,7 +464,9 @@ EE 06 2A 00 01 01 7E 80 ED
 其中EE为帧头，06是执行器ID，2A为开机指令符，00 01 为数据长度，01为数据内容，ED为帧尾，其中数据内容01通过上述方法计算出的校验码即为7E 80。
 
 ### **A.1读取指令编码定义表**
-<div id="read1"></div>
+
+
+#### 读取指令1
 <table class="tableizer-table">
 <thead><tr class="tableizer-firstrow"></tr></thead><tbody>
  <tr><td colspan="3"style=background:PaleTurquoise>A.1.1 读取指令1</td></tr>
@@ -471,7 +480,7 @@ EE 06 2A 00 01 01 7E 80 ED
  <tr><td>0x2B</td><td>电流环滤波器状态</td><td>读取指定ID执行器开机/停机状态。</td></tr>
 </tbody></table>
 
-<div id="read2"></div>
+#### 读取指令2
 <table class="tableizer-table">
 <thead><tr class="tableizer-firstrow"></tr></thead><tbody>
  <tr><td  colspan="3"style=background:PaleTurquoise>A.1.2 读取指令2</td></tr>
@@ -486,7 +495,7 @@ EE 06 2A 00 01 01 7E 80 ED
  <tr><td>0xFF</td><td>报警指令(特殊指令)</td><td>下位机的报警信息</td></tr>
 </tbody></table>
 
-<div id="read3"></div>
+#### 读取指令3
 <table class="tableizer-table">
 <thead><tr class="tableizer-firstrow"></tr></thead><tbody>
  <tr><td  colspan="3"style=background:PaleTurquoise>A.1.3 读取指令3</td></tr>
@@ -523,7 +532,7 @@ EE 06 2A 00 01 01 7E 80 ED
 
 ### **A.2 写入命令编码值定义表**
 
-<div id="write1"></div>
+#### 写入指令1
 <table class="tableizer-table">
 <thead><tr class="tableizer-firstrow"><th colspan="3"style=background:PaleTurquoise>A.2.1写入指令1</th></tr></thead><tbody>
  <tr><td>指令符</td><td>定义</td><td>说明</td></tr>
@@ -534,7 +543,7 @@ EE 06 2A 00 01 01 7E 80 ED
  <tr><td>0x2A：</td><td>执行器的开关机状态</td><td>设置指定ID执行器开机/关机</td></tr>
 </tbody></table>
 
-<div id="write2"></div>
+#### 写入指令2
 <table class="tableizer-table">
 <thead><tr class="tableizer-firstrow"><th colspan="3"style=background:PaleTurquoise>A.2.2写入指令2</th></tr></thead><tbody>
  <tr><td>指令符</td><td>定义</td><td>说明</td></tr>
@@ -545,7 +554,7 @@ EE 06 2A 00 01 01 7E 80 ED
  <tr><td>0x63：</td><td>执行器的恢复温度</td><td>设置指定ID执行器的恢复温度℃</td></tr>
 </tbody></table>
 
-<div id="write3"></div>
+#### 写入指令3
 <table class="tableizer-table">
 <thead><tr class="tableizer-firstrow"><th colspan="3"style=background:PaleTurquoise>A.2.3写入指令3</th></tr></thead><tbody>
  <tr><td>指令符</td><td>定义</td><td>说明</td></tr>
@@ -579,7 +588,7 @@ EE 06 2A 00 01 01 7E 80 ED
  <tr><td>0x7E：</td><td>堵转能量</td><td>设置指定ID执行器的堵转能量。 (数值为真实值的75.225倍)堵转后发热能量，单位为J</td></tr>
 </tbody></table>
 
-<div id="write4"></div>
+#### 写入指令4
 <table class="tableizer-table">
 <thead><tr class="tableizer-firstrow"><th   colspan="3"style=background:PaleTurquoise>A.2.4写入指令4</th></tr></thead><tbody>
  <tr><td>指令符</td><td>定义</td><td>说明</td></tr>
@@ -588,7 +597,7 @@ EE 06 2A 00 01 01 7E 80 ED
  <tr><td>0x0D</td><td>存储参数</td><td>存储参数到EEPROM</td></tr>
 </tbody></table>
 
-## <span id="模式表"></span>附录B :模式表
+## 附录B :模式表
 
 <table class="tableizer-table">
 <thead><tr class="tableizer-firstrow"><th style=background:PaleTurquoise>指令符</th><th style=background:PaleTurquoise>指令符</th></tr></thead><tbody>
@@ -602,7 +611,7 @@ EE 06 2A 00 01 01 7E 80 ED
  <tr><td>08</td><td>homing模式</td></tr>
 </tbody></table>
 
-## 附录C：<span id="报警指令表"></span>报警指令表
+## 附录C：报警指令表
 
 <table class="tableizer-table">
 <thead><tr class="tableizer-firstrow"><th style=background:PaleTurquoise>指令符</th><th style=background:PaleTurquoise>指令符</th></tr></thead><tbody>
