@@ -62,10 +62,10 @@
   * [QDD-8108-36](pages/QDD-8108-36.md)
 
 ## DD
-  * [DD-2305](https://www.mdeditor.com/)
-  * [DD-3510](https://www.mdeditor.com/)
-  * [DD-6010](https://www.mdeditor.com/)
-  * [DD-8108](https://www.mdeditor.com/)
+  * [DD-2305](pages/DD-2305.md)
+  * [DD-3510](pages/DD-3510.md)
+  * [DD-6010](pages/DD-6010.md)
+  * [DD-8108](pages/DD-8108.md)
 
 ## XR-Robot
  [XR-1 ](https://www.mdeditor.com/)

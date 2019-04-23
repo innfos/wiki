@@ -36,7 +36,7 @@
 
 #### 环境配置
 
-请参考<a href="!#pages/Ethernet_Configuration.md#linux平台环境配置">linux平台环境配置</a>
+请参考<a href="#!pages/Ethernet_Configuration.md#linux平台环境配置">linux平台环境配置</a>
 
 
 #### 示例代码编译
@@ -443,7 +443,7 @@ ActuatorController * pController = ActuatorController::getInstance();
 #### 环境配置
 
 
-请参考<a href="!#pages/Ethernet_Configuration.md# windows平台环境配置"> windows平台环境配置</a>
+请参考<a href="#!pages/Ethernet_Configuration.md# windows平台环境配置"> windows平台环境配置</a>
 
 
 #### 示例代码编译
