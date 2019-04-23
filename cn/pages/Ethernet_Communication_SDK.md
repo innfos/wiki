@@ -43,8 +43,10 @@
 
 * 打开终端进入…\example目录，该目录下有CMakeLists.txt，
 
-		$ cmake CMakeLists.txt
-		$ make
+```sh
+$ cmake CMakeLists.txt
+$ make
+```
 
 *   输入命令执行完成后，在该目录下会生成一个bin文件夹，该目录存放了生成的示例程序。
 *   确认执行器正确连接并供电以后，执行器会有黄色指示灯闪烁，此时可以测试示例代码。
@@ -62,9 +64,7 @@
 ```
 *   此窗口会显示当前已连接的执行器数量，可以ctrl+c结束程序
 
-    * * *
-
-    ![count.png](../img/022.png "wikilink")
+![count.png](../img/022.png "wikilink")
 
 **代码说明**
 
@@ -148,7 +148,7 @@
 *   其中Actuator ID为执行器id,attribute ID为监测的执行器属性Id，attribute value为对
     应的属性值，可以ctrl+c结束程序
 
-    ![count.png](../img/023.png "wikilink")
+![count.png](../img/023.png "wikilink")
 
 **代码说明**
 
@@ -212,8 +212,6 @@
    	 $./operateActuator -e
 ```
 
-    
-	
 ![count.png](../img/024.png "wikilink")
 
 
@@ -225,7 +223,7 @@
 
     执行器会转动到5圈的位置；输入a 7可以激活profile velocity模式，再输入v 500， 执行器将以500RPM的速度转动，停止转动输入v 0,；输入a 1可以激活电流模式，再输入 c 0.6，执行器将以恒定0.6A的电流转动（如果执行器不动，可用手轻轻转动一下执行器）， 可以ctrl+c以后再ctrl+d结束程序（因为有多线程等待键盘输入）
     
-     ![count.png](../img/026.png "wikilink")
+![count.png](../img/026.png "wikilink")
      
 
 **代码说明**
@@ -296,9 +294,9 @@
 
     如果使用profile position模式转动执行器，执行器的最大速度不会超过3000RPM;如果 使用profile velocity模式转动执行器，执行器最大电流不会超过16.5A，可以ctrl+c结束程序 
     
-    ![count.png](../img/027.png "wikilink") 
+![count.png](../img/027.png "wikilink") 
     
-    **代码说明**
+**代码说明
     
 
 *   此示例程序自动启动执行器，启动成功后可调整执行器属性，速度环电流输出可调整速度环下的执行器扭矩，位置环速度输出可调整位置环下速度的大小。详见SCA快速使用说明。
@@ -337,7 +335,7 @@ $./homingActuator -e
 
 ![count.png](../img/028.png "wikilink")
 
-**代码说明**
+**代码说明
 
 *   执行器自动启动完成后，setHomingPosition会将当前位置getActuatorAttribute(id,Actuator::ACTUAL_POSITION)设置成0位，</br>setMaxPosLimit和setMinPosLimit会设置最大和最小的位置限制，setActuatorAttribute(id,Actuator::POS_OFFSET,0.5)设置极限偏移。
     //执行器0位和限位调整
