@@ -238,8 +238,6 @@ EE 06 0A 00 04 00 01 00 00 01 D8 ED
 
 [IQ-MATH Library文档](../img/C28x_IQmath_Library.pdf "详见 IQ-MATH Library文档") 
 
-<embed src="../img/C28x_IQmath_Library.pdf" title="fig:C28x IQmath Library.pdf" />
-
 *   定点数=浮点数×2^Q
 
 *   例如，浮点数-2.0转换到Q为24的定点数时，结果为：定点数=-2×2^24=-33554432
