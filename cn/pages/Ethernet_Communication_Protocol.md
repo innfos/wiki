@@ -235,6 +235,9 @@ EE 06 0A 00 04 00 01 00 00 01 D8 ED
 
 ![详见 IQ-MATH Library文档](../img/3-1通信协议.png "详见 IQ-MATH Library文档") 
 
+
+![详见 IQ-MATH Library文档](../img/C28x_IQmath_Library.pdf "详见 IQ-MATH Library文档") 
+
 <embed src="../img/C28x_IQmath_Library.pdf" title="fig:C28x IQmath Library.pdf" />
 
 *   定点数=浮点数×2^Q
