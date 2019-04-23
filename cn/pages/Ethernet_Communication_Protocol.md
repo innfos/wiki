@@ -203,7 +203,7 @@ EE 06 02 00 04 01 64 5A DF 3B 3F ED
 
 发送激活梯形位置模式指令:
 EE 06 07 00 01 06 3F 42 ED
-数据06为梯形位置模式（参见[模式表](#!pages/Ethernet_Communication_Protocol.md#附录B :模式表 "wikilink")），3F 42为[CRC校验码]((#!pages/Ethernet_Communication_Protocol.md#CRC校验码计算方法 "wikilink")，激活成功后会收到返回：
+数据06为梯形位置模式（参见[模式表2]("#!pages/Ethernet_Communication_Protocol.md#附录B :模式表" "wikilink")），3F 42为[CRC校验码](#!pages/Ethernet_Communication_Protocol.md#CRC校验码计算方法 "wikilink")，激活成功后会收到返回：
 EE 06 07 00 01 01 ED
 这时可以发送速度指令：
 EE 06 0A 00 04 00 01 00 00 01 D8 ED
