@@ -233,7 +233,9 @@ EE 06 0A 00 04 00 01 00 00 01 D8 ED
 
 *   既然是定点处理器，那么其对定点数，或者说字面意义上的“整数”进行处理的效率就会比它处理浮点类型的运算要高的多。所以在定点处理器上，我们使用定点的整数来代表一个浮点数，并规定整数位数和小数位数，从而方便地对定点数和浮点数进行转换。以一个32位的定点数为例，假设转换因子为Q，即32位中小数的位数为Q，整数位数则为31-Q(有符号数的情况)，则定点数与浮点数的换算关系为：
 
-![详见 IQ-MATH Library文档](3-1通信协议.png "fig:详见 IQ-MATH Library文档") <embed src="C28x IQmath Library.pdf" title="fig:C28x IQmath Library.pdf" />
+![详见 IQ-MATH Library文档](../img/3-1通信协议.png "详见 IQ-MATH Library文档") 
+
+<embed src="../img/C28x IQmath Library.pdf" title="fig:C28x IQmath Library.pdf" />
 
 *   定点数=浮点数×2^Q
 
