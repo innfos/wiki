@@ -203,7 +203,7 @@ EE 06 02 00 04 01 64 5A DF 3B 3F ED
 
 发送激活梯形位置模式指令:
 EE 06 07 00 01 06 3F 42 ED
-数据06为梯形位置模式（参见[模式表3](#!pages/Ethernet_Communication_Protocol.md#附录B:模式表 "wikilink")），3F 42为[CRC校验码](#!pages/Ethernet_Communication_Protocol.md#CRC校验码计算方法 "wikilink")，激活成功后会收到返回：
+数据06为梯形位置模式（参见[模式表](#!pages/Ethernet_Communication_Protocol.md#附录B:模式表 "wikilink")），3F 42为[CRC校验码](#!pages/Ethernet_Communication_Protocol.md#CRC校验码计算方法 "wikilink")，激活成功后会收到返回：
 EE 06 07 00 01 01 ED
 这时可以发送速度指令：
 EE 06 0A 00 04 00 01 00 00 01 D8 ED
@@ -226,7 +226,7 @@ EE 06 0A 00 04 00 01 00 00 01 D8 ED
  <tr><td>数据内容</td><td colspan="2">无</td></tr>
  <tr><td>指令符（返回值）</td><td colspan="2"><a href="#!pages/Ethernet_Communication_Protocol.md#读取指令1">见读取指令1</a></td></tr>
  <tr><td>数据长度 (返回值)</td><td colspan="2">1</td></tr>
- <tr><td rowspan="2">下位机返回数据</td><td>0x01：成功/使能/开机/正常</td><td rowspan="2">模式查询返回数据见<a href="#!pages/Ethernet_Communication_Protocol.md#附录B :模式表">模式表</a></td></tr>
+ <tr><td rowspan="2">下位机返回数据</td><td>0x01：成功/使能/开机/正常</td><td rowspan="2">模式查询返回数据见<a href="#!pages/Ethernet_Communication_Protocol.md#附录B:模式表">模式表</a></td></tr>
  <tr><td>0x00：失败/失能/关机/异常</td></tr>
 </tbody></table>
 
@@ -240,7 +240,7 @@ EE 06 0A 00 04 00 01 00 00 01 D8 ED
  <tr><td>数据内容</td><td  colspan="2">无</td></tr>
  <tr><td>指令符（返回值）</td><td  colspan="2"><a href="#!pages/Ethernet_Communication_Protocol.md#读取指令2">见读取指令2</a></td></tr>
  <tr><td>数据长度 (返回值)</td><td  colspan="2">2</td></tr>
- <tr><td>下位机返回数据</td><td>数据为IQ8格式</td><td>或见<a href="#!pages/Ethernet_Communication_Protocol.md#附录C：报警指令表">报警指令表</a></td></tr>
+ <tr><td>下位机返回数据</td><td>数据为IQ8格式</td><td>或见<a href="#!pages/Ethernet_Communication_Protocol.md#附录C:报警指令表">报警指令表</a></td></tr>
 </tbody></table>
 
 <table class="tableizer-table">
@@ -265,7 +265,7 @@ EE 06 0A 00 04 00 01 00 00 01 D8 ED
  <tr><td>说明</td><td colspan="2">此命令类发送数据长度为2，返回数据长度为2，发送数据后一个字节表示要写入参数内容。(注：上电后先发送开机指令才能使用，断电前必须先发送关机指令，否则零位可能丢失)</td></tr>
  <tr><td>指令符</td><td colspan="2"><a href="#!pages/Ethernet_Communication_Protocol.md#写入指令1">见写入指令1</a></td></tr>
  <tr><td>数据长度</td><td colspan="2">1</td></tr>
- <tr><td rowspan="2">数据内容</td><td>0x01：使能/开机</td><td rowspan="2">模式设置见<a href="#!pages/Ethernet_Communication_Protocol.md#模式表">模式表</a></td></tr>
+ <tr><td rowspan="2">数据内容</td><td>0x01：使能/开机</td><td rowspan="2">模式设置见<a href="#!pages/Ethernet_Communication_Protocol.md#附录B:模式表">模式表</a></td></tr>
  <tr><td>0x00：失能/关机</td></tr>
  <tr><td>指令 (返回值)</td><td colspan="2"><a href="#!pages/Ethernet_Communication_Protocol.md#写入指令1">见写入指令1</a></td></tr>
  <tr><td>数据长度(返回值)</td><td colspan="2">1</td></tr>
