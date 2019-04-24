@@ -1,15 +1,23 @@
-# About Page
+# INNFOS
 
 
-## Section 1
-
-Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-
-Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-
-Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam quis risus eget urna mollis ornare vel eu leo. Donec sed odio dui.
+## 一家真正拥有关键执行器技术的机器人公司
 
 
-## Section 2
+INNFOS研发团队多年来一直专注于高性能机器人的新型执行器研发。我们集结了世界优秀工程师，从最底层的电机设计、电机驱动、高精度编码器、柔性关节等方面进行基础技术研发。将上述各部件高度集成一个空间里，在同等性能下体积达到传统伺服电机系统的十分之一。同时大大降低了传统机器人关节的制造成本。
 
-Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+INNFOS自主研发的SCA智能柔性执行器系列，核心技术已经达到国际卓越水平，其高度集成、柔性控制、总线结构、大扭矩输出、易使用性和低成本等特点，完全符合机器人发展趋势，是大多数机器人最核心的运动关节执行器。
+
+<img src="../img/About 1.png" style="width:400px">
+<img src="../img/About 2.png" style="width:400px">
+<img src="../img/About 3.png" style="width:400px">
+
+
+## 联系方式
+
+<table class="tableizer-table">
+<thead><tr class="tableizer-firstrow"><tbody>
+ <tr><td>电话</td><td>+86-010-5397-6638/+86-010-5397-6640</td></tr>
+ <tr><td>地址</td><td>中国北京市房山区窦店弘安路85号中关村新兴产业前沿技术研究院3号楼2层</td></tr>
+ <tr><td>电子邮件</td><td>sales@innfos.com</td></tr>
+</tbody></table>
