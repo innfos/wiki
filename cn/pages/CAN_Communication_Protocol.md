@@ -409,14 +409,6 @@ CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰�
 
 ## A.2 写入命令编码值定义表
 
-**A.2.1写入指令1**
-
-**A.2.2写入指令2**
-
-**A.2.3写入指令3**
-
-**A.2.4写入指令4**
-
 <table>
 <thead><tr><th colspan="3" style=background:PaleTurquoise>A.2.1写入指令1</th></tr></thead><tbody>
  <tr><td>指令符</td><td>定义</td><td>说明</td></tr>
@@ -427,7 +419,6 @@ CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰�
  <tr><td>0x2A：</td><td>执行器的开关机状态</td><td>设置指定ID执行器开机/关机</td></tr>
 </tbody></table>
 
-
 <table>
 <thead><tr><th colspan="3" style=background:PaleTurquoise>A.2.2写入指令2</th></tr></thead><tbody>
  <tr><td>指令符</td><td>定义</td><td>说明</td></tr>
@@ -437,7 +428,6 @@ CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰�
  <tr><td>0x61：</td><td>执行器的保护温度</td><td>设置指定ID执行器的保护温度℃</td></tr>
  <tr><td>0x63：</td><td>执行器的恢复温度</td><td>设置指定ID执行器的恢复温度℃</td></tr>
 </tbody></table>
-
 
 <table>
 <thead><tr><th colspan="3" style=background:PaleTurquoise>A.2.3写入指令3</th></tr></thead><tbody>
@@ -472,7 +462,6 @@ CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰�
  <tr><td>0x7E：</td><td>堵转能量</td><td>设置指定ID执行器的堵转能量。 (数值为真实值的75.225倍)堵转后发热能量，单位为J</td></tr>
 </tbody></table>
 
-
 <table>
 <thead><tr><th colspan="3" style=background:PaleTurquoise>A.2.4写入指令4</th></tr></thead><tbody>
  <tr><td>指令符</td><td>定义</td><td>说明</td></tr>
@@ -480,9 +469,6 @@ CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰�
  <tr><td>0x88</td><td>清除Homing数据</td><td>清除Homing数据</td></tr>
  <tr><td>0x0D</td><td>存储参数</td><td>存储参数到EEPROM</td></tr>
 </tbody></table>
-
-
-
 
 # 附录B :模式表
 
