@@ -74,7 +74,7 @@
 
 #### 协议示例
 
-**示例1.读命令
+**示例1.读命令**
 
 <table><tr><th colspan="6">读取执行器ID为0x01的当前速度值</th></tr><tr><td >帧头</td><td >设备地址</td><td >指令符</td><td >数据长度（2字节）</td><td >参数内容</td><td >帧尾</td></tr><tr><td >0xEE</td><td >0x01</td><td >0x5</td><td >0x00 0x00</td><td >无</td><td >0xED</td></tr></table>
 
@@ -116,7 +116,7 @@
 
 6000RPM。若data=_IQ(0.5)。则为0.5*6000=3000RPM。
 
-**示例2.写命令
+**示例2.写命令**
 
 <table class="tableizer-table">
 <thead ><tr class="tableizer-firstrow"><th  colspan="7" style=background:PaleTurquoise>设置执行器ID为0x01的电流环的比例P（设置值为5）</th></tr></thead><tbody><tr><td>帧头</td><td>设备地址</td><td>指令符</td><td>数据长度</td><td>参数内容</td><td>CRC校验</td><td>帧尾</td></tr> <tr><td>0xEE</td><td>0x01</td><td>0x0E</td><td>0x4</td><td>0x05 0x00 0x00 0x00</td><td>2字节数据</td><td>0xED</td></tr></tbody></table>
