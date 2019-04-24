@@ -76,39 +76,7 @@ CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰�
 
 ### IQmath简介
 
-<table><thead><tr><th rowspan="2" style=background:PaleTurquoise>Data Type</th><th colspan="2" style=background:PaleTurquoise>Range</th><th rowspan="2"style=background:PaleTurquoise>Resolution/Precision</th>
-</tr><tr> <td>Min</td> <td>Max</td> </tr></thead><tbody>
-<tr><td>_iq30</td><td>-2</td><td>1.999 999 999</td><td>0.000 000 001</td></tr>
- <tr><td>_iq29</td><td>-4</td><td>3.999 999 998</td><td>0.000 000 002</td></tr>
- <tr><td>_iq28</td><td>-8</td><td>7.999 999 996</td><td>0.000 000 004</td></tr>
- <tr><td>_iq27</td><td>-16</td><td>15.999 999 993</td><td>0.000 000 007</td></tr>
- <tr><td>_iq26</td><td>-32</td><td>31.999 999 985</td><td>0.000 000 015</td></tr>
- <tr><td>_iq25</td><td>-64</td><td>63.999 999 970</td><td>0.000 000 030</td></tr>
- <tr><td>_iq24(INNFOS主要应用)</td><td>-128</td><td>127.999 999 940</td><td>0.000 000 060</td></tr>
- <tr><td>_iq23</td><td>-256</td><td>255.999 999 981</td><td>0.000 000 119</td></tr>
- <tr><td>_iq22</td><td>-512</td><td>511.999 999 762</td><td>0.000 000 238</td></tr>
- <tr><td>_iq21</td><td>-1024</td><td>1023.999 999 523</td><td>0.000 000 477</td></tr>
- <tr><td>_iq20</td><td>-2048</td><td>2047.999 999 046</td><td>0.000 000 954</td></tr>
- <tr><td>_iq19</td><td>-4096</td><td>4095.999 998 093</td><td>0.000 001 907</td></tr>
- <tr><td>_iq18</td><td>-8192</td><td>8191.999 996 185</td><td>0.000 003 815</td></tr>
- <tr><td>_iq17</td><td>-16384</td><td>16383.999 992 371</td><td>0.000 007 629</td></tr>
- <tr><td>_iq16</td><td>-32768</td><td>32767.999 984 741</td><td>0.000 015 259</td></tr>
- <tr><td>_iq15</td><td>-65536</td><td>65535.999 969 482</td><td>0.000 030 518</td></tr>
- <tr><td>_iq14</td><td>-131072</td><td>131071.999 938 965</td><td>0.000 061 035</td></tr>
- <tr><td>_iq13</td><td>-262144</td><td>262143.999 877 930</td><td>0.000 122 070</td></tr>
- <tr><td>_iq12</td><td>-524288</td><td>524287.999 755 859</td><td>0.000 244 141</td></tr>
- <tr><td>_iq11</td><td>-1048576</td><td>1048575.999 511 719</td><td>0.000 488 281</td></tr>
- <tr><td>_iq10</td><td>-2097152</td><td>2097151.999 023 437</td><td>0.000 976 563</td></tr>
- <tr><td>_iq9</td><td>-4194304</td><td>4194303.998 046 875</td><td>0.001 953 125</td></tr>
- <tr><td>_iq8</td><td>-8388608</td><td>8388607.996 093 750</td><td>0.003 906 250</td></tr>
- <tr><td>_iq7</td><td>-16777216</td><td>16777215.992 187 500</td><td>0.007 812 500</td></tr>
- <tr><td>_iq6</td><td>-33554432</td><td>33554431.984 375 000</td><td>0.015 625 000</td></tr>
- <tr><td>_iq5</td><td>-67108864</td><td>67108863.968 750 000</td><td>0.031 250 000</td></tr>
- <tr><td>_iq4</td><td>-134217728</td><td>134217727.937 500 000</td><td>0.062 500 000</td></tr>
- <tr><td>_iq3</td><td>-268435456</td><td>268435455.875 000 000</td><td>0.125 000 000</td></tr>
- <tr><td>_iq2</td><td>-536870912</td><td>536870911.750 000 000</td><td>0.250 000 000</td></tr>
- <tr><td>_iq1</td><td>-1073741824</td><td>1 073741823.500 000 000</td><td>0.500 000 000</td></tr>
-</tbody></table>
+<table><thead><tr><th rowspan="2" style=background:PaleTurquoise>Data Type</th><th colspan="2" style=background:PaleTurquoise>Range</th><th rowspan="2"style=background:PaleTurquoise>Resolution/Precision</th></tr><tr> <td>Min</td> <td>Max</td> </tr></thead><tbody><tr><td>_iq30</td><td>-2</td><td>1.999 999 999</td><td>0.000 000 001</td></tr><tr><td>_iq29</td><td>-4</td><td>3.999 999 998</td><td>0.000 000 002</td></tr><tr><td>_iq28</td><td>-8</td><td>7.999 999 996</td><td>0.000 000 004</td></tr><tr><td>_iq27</td><td>-16</td><td>15.999 999 993</td><td>0.000 000 007</td></tr><tr><td>_iq26</td><td>-32</td><td>31.999 999 985</td><td>0.000 000 015</td></tr><tr><td>_iq25</td><td>-64</td><td>63.999 999 970</td><td>0.000 000 030</td></tr><tr><td>_iq24(INNFOS主要应用)</td><td>-128</td><td>127.999 999 940</td><td>0.000 000 060</td></tr><tr><td>_iq23</td><td>-256</td><td>255.999 999 981</td><td>0.000 000 119</td></tr><tr><td>_iq22</td><td>-512</td><td>511.999 999 762</td><td>0.000 000 238</td></tr><tr><td>_iq21</td><td>-1024</td><td>1023.999 999 523</td><td>0.000 000 477</td></tr><tr><td>_iq20</td><td>-2048</td><td>2047.999 999 046</td><td>0.000 000 954</td></tr><tr><td>_iq19</td><td>-4096</td><td>4095.999 998 093</td><td>0.000 001 907</td></tr><tr><td>_iq18</td><td>-8192</td><td>8191.999 996 185</td><td>0.000 003 815</td></tr><tr><td>_iq17</td><td>-16384</td><td>16383.999 992 371</td><td>0.000 007 629</td></tr><tr><td>_iq16</td><td>-32768</td><td>32767.999 984 741</td><td>0.000 015 259</td></tr><tr><td>_iq15</td><td>-65536</td><td>65535.999 969 482</td><td>0.000 030 518</td></tr><tr><td>_iq14</td><td>-131072</td><td>131071.999 938 965</td><td>0.000 061 035</td></tr><tr><td>_iq13</td><td>-262144</td><td>262143.999 877 930</td><td>0.000 122 070</td></tr><tr><td>_iq12</td><td>-524288</td><td>524287.999 755 859</td><td>0.000 244 141</td></tr><tr><td>_iq11</td><td>-1048576</td><td>1048575.999 511 719</td><td>0.000 488 281</td></tr><tr><td>_iq10</td><td>-2097152</td><td>2097151.999 023 437</td><td>0.000 976 563</td></tr><tr><td>_iq9</td><td>-4194304</td><td>4194303.998 046 875</td><td>0.001 953 125</td></tr><tr><td>_iq8</td><td>-8388608</td><td>8388607.996 093 750</td><td>0.003 906 250</td></tr><tr><td>_iq7</td><td>-16777216</td><td>16777215.992 187 500</td><td>0.007 812 500</td></tr><tr><td>_iq6</td><td>-33554432</td><td>33554431.984 375 000</td><td>0.015 625 000</td></tr><tr><td>_iq5</td><td>-67108864</td><td>67108863.968 750 000</td><td>0.031 250 000</td></tr><tr><td>_iq4</td><td>-134217728</td><td>134217727.937 500 000</td><td>0.062 500 000</td></tr><tr><td>_iq3</td><td>-268435456</td><td>268435455.875 000 000</td><td>0.125 000 000</td></tr><tr><td>_iq2</td><td>-536870912</td><td>536870911.750 000 000</td><td>0.250 000 000</td></tr><tr><td>_iq1</td><td>-1073741824</td><td>1 073741823.500 000 000</td><td>0.500 000 000</td></tr></tbody></table>
 
 *   我们使用的处理器一般情况下，要么直接支持硬件的浮点运算，比如某些带有FPU的器件，要么就只支持定点运算，此时对浮点数的处理需要通过编译器来完成。在支持硬件浮点处理的器件上，对浮点运算的编程最快捷的方法就是直接使用浮点类型，比如单精度的float来完成。但是在很多情况下，限于成本、物料等因素，可供我们使用的只有一个定点处理器时，直接使用float类型进行浮点类型的运算会使得编译器产生大量的代码来完成一段看起来十分简单的浮点数学运算，造成的后果是程序的执行时间显著加长，且其占用的资源量也会成倍地增加，这就涉及到了如何在定点处理器上对浮点运算进行高效处理的问题。
 
@@ -126,12 +94,7 @@ CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰�
 
 **示例1.读命令**
 
-<table >
-<thead><tr><th colspan="4"style=background:PaleTurquoise>读取执行器电机ID为0x01的当前速度值</th></tr></thead>
-<tbody>
-<tr><td>设备地址</td><td>数据长度</td><td>指令符</td><td>参数内容</td></tr>
-<tr><td>0x01</td><td>0x1</td><td>0x05</td><td>无</td></tr>
-</tbody></table>
+<table ><thead><tr><th colspan="4"style=background:PaleTurquoise>读取执行器电机ID为0x01的当前速度值</th></tr></thead><tbody><tr><td>设备地址</td><td>数据长度</td><td>指令符</td><td>参数内容</td></tr><tr><td>0x01</td><td>0x1</td><td>0x05</td><td>无</td></tr></tbody></table>
 
 设备地址： 0x01 = 读取的对象ID
 
@@ -143,11 +106,7 @@ CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰�
 
 发送内容： 0x05
 
-<table>
-<thead><tr><th colspan="4"style=background:PaleTurquoise>应答命令</th></tr></thead><tbody>
- <tr><td>设备地址</td><td>数据长度</td><td>指令符</td><td>参数内容</td></tr>
- <tr><td>0x01</td><td>0x5</td><td>0x05</td><td>data[3~0]</td></tr>
-</tbody></table>
+<table><thead><tr><th colspan="4"style=background:PaleTurquoise>应答命令</th></tr></thead><tbody><tr><td>设备地址</td><td>数据长度</td><td>指令符</td><td>参数内容</td></tr><tr><td>0x01</td><td>0x5</td><td>0x05</td><td>data[3~0]</td></tr></tbody></table>
 
 
 返回设备地址：0x01 = 应答对象ID
@@ -164,11 +123,7 @@ CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰�
 
 **示例2.写命令**
 
-<table>
-<thead><tr><th colspan="4"style=background:PaleTurquoise>设置执行器电机ID为0x01的当前位置值 </th></tr></thead><tbody>
-<tr><td>设备地址</td><td>数据长度</td><td>指令符</td><td>参数内容</td></tr>
-<tr><td>0x01</td><td>0x5</td><td>0x0A</td><td>0x05 0x00 0x00 0x00</td></tr>
-</tbody></table>
+<table><thead><tr><th colspan="4"style=background:PaleTurquoise>设置执行器电机ID为0x01的当前位置值 </th></tr></thead><tbody><tr><td>设备地址</td><td>数据长度</td><td>指令符</td><td>参数内容</td></tr><tr><td>0x01</td><td>0x5</td><td>0x0A</td><td>0x05 0x00 0x00 0x00</td></tr></tbody></table>
 
 设备地址： 0x01 = 设置对象ID
 
@@ -182,12 +137,7 @@ CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰�
 
 说明：参数内容data[3-0]高位在前，低位在后。为_IQ24格式。_IQ(-128.0)-_IQ(127.999999940)代表反向位置值满量程和正向位置值满量程。若data=_IQ(5.0),则设置当前位置为5。
 
-<table>
-<thead><tr><th colspan="4"style=background:PaleTurquoise>应答命令</th></tr></thead>
-<tbody>
-<tr><td>设 备 地 址</td><td>数据长度</td><td>指令符</td><td>参数内容</td></tr>
-<tr><td>0x01</td><td>0x00</td><td>无</td><td>无</td></tr>
-</tbody></table>
+<table><thead><tr><th colspan="4"style=background:PaleTurquoise>应答命令</th></tr></thead><tbody><tr><td>设 备 地 址</td><td>数据长度</td><td>指令符</td><td>参数内容</td></tr><tr><td>0x01</td><td>0x00</td><td>无</td><td>无</td></tr></tbody></table>
 
 返回设备地址：0x01 = 应答对象ID
 
@@ -225,110 +175,21 @@ CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰�
 
 ### 读取命令
 
-<table><thead><tr><th colspan="3"style=background:PaleTurquoise>3.3.1.1 发送数据1字节， 返回数据2字节</th></tr><tr><td>命令名称</td><td colspan="2">读取命令</td></tr></thead><tbody>
-<tr><td>说明</td><td colspan="2">此命令类发送数据长度为1，返回数据长度为2</td></tr>
- <tr><td>指令符</td><td colspan="2">见读取指令1</td></tr>
- <tr><td>数据长度</td><td colspan="2">1</td></tr>
- <tr><td>数据内容</td><td colspan="2">无</td></tr>
- <tr><td>指令符（返回值）</td><td colspan="2">见读取指令1</td></tr>
- <tr><td>数据长度 (返回值)</td><td colspan="2">2</td></tr>
-<tr><td rowspan="2">下位机返回数据</td><td>0x01：成功/使能/开机/正常</td>
-<td rowspan="2">模式查询返回数据见模式表</td>
-<tr><td>0x00：失败/失能/关机/异常</td>
-</tr>
-</tbody></table>
+<table><thead><tr><th colspan="3"style=background:PaleTurquoise>3.3.1.1 发送数据1字节， 返回数据2字节</th></tr><tr><td>命令名称</td><td colspan="2">读取命令</td></tr></thead><tbody><tr><td>说明</td><td colspan="2">此命令类发送数据长度为1，返回数据长度为2</td></tr><tr><td>指令符</td><td colspan="2">见读取指令1</td></tr><tr><td>数据长度</td><td colspan="2">1</td></tr><tr><td>数据内容</td><td colspan="2">无</td></tr><tr><td>指令符（返回值）</td><td colspan="2">见读取指令1</td></tr><tr><td>数据长度 (返回值)</td><td colspan="2">2</td></tr><tr><td rowspan="2">下位机返回数据</td><td>0x01：成功/使能/开机/正常</td><td rowspan="2">模式查询返回数据见模式表</td><tr><td>0x00：失败/失能/关机/异常</td></tr></tbody></table>
 
+<table><thead><tr><th colspan="3"style=background:PaleTurquoise>3.3.1.2 发送数据1字节，返回数据3字节</th></tr></thead><tbody><tr><td>命令名称</td><td colspan="2">读取命令</td></tr><tr><td>说明</td><td colspan="2">此命令类发送数据长度为1，返回数据长度为3，读取执行器参数值，高位在前。数值为真实值的2^8倍。（一条特殊指令指令表内已特殊标注）</td></tr><tr><td>指令符</td><td colspan="2">见读取指令2</td></tr><tr><td>数据长度</td><td colspan="2">1</td></tr><tr><td>数据内容</td><td colspan="2">无</td></tr><tr><td>指令符（返回值）</td><td colspan="2">见读取指令2</td></tr><tr><td>数据长度 (返回值)</td><td colspan="2">3</td></tr><tr><td>下位机返回数据</td><td>数据为IQ8格式</td><td>或见报警指令表</td></tr></tbody></table>
 
-
-
-<table>
-<thead><tr><th colspan="3"style=background:PaleTurquoise>3.3.1.2 发送数据1字节，返回数据3字节</th></tr></thead>
-<tbody>
-<tr><td>命令名称</td><td colspan="2">读取命令</td></tr>
-<tr><td>说明</td><td colspan="2">此命令类发送数据长度为1，返回数据长度为3，读取执行器参数值，高位在前。数值为真实值的2^8倍。（一条特殊指令指令表内已特殊标注）</td></tr>
-<tr><td>指令符</td><td colspan="2">见读取指令2</td></tr>
-<tr><td>数据长度</td><td colspan="2">1</td></tr>
-<tr><td>数据内容</td><td colspan="2">无</td></tr>
-<tr><td>指令符（返回值）</td><td colspan="2">见读取指令2</td></tr>
-<tr><td>数据长度 (返回值)</td><td colspan="2">3</td></tr>
-<tr><td>下位机返回数据</td><td>数据为IQ8格式</td><td>或见报警指令表</td></tr>
-</tbody></table>
-
-
-
-<table>
-<thead><tr><th colspan="3"style=background:PaleTurquoise>3.3.1.3 发送数据1字节，返回数据5字节</th></tr></thead><tbody>
- <tr><td>命令名称</td><td>读取命令</td></tr>
- <tr><td>说明</td><td>此命令类发送数据长度为1，返回数据长度为5，读取执行器参数值，高位在前。</td></tr>
- <tr><td>数值为真实值的2^24倍。（一条特殊指令指令表内已特殊标注）</td></tr>
- <tr><td>指令符</td><td>见读取指令3</td></tr>
- <tr><td>数据长度</td><td>1</td></tr>
- <tr><td>数据内容</td><td>无</td></tr>
- <tr><td>指令符（返回值）</td><td>见读取指令3</td></tr>
- <tr><td>数据长度 (返回值)</td><td>5</td></tr>
- <tr><td>下位机返回数据</td><td>数据为IQ24格式。(一条特殊指令指令表内已特殊标注)）</td></tr>
-</tbody></table>
+<table><thead><tr><th colspan="3"style=background:PaleTurquoise>3.3.1.3 发送数据1字节，返回数据5字节</th></tr></thead><tbody><tr><td>命令名称</td><td>读取命令</td></tr><tr><td>说明</td><td>此命令类发送数据长度为1，返回数据长度为5，读取执行器参数值，高位在前。</td></tr><tr><td>数值为真实值的2^24倍。（一条特殊指令指令表内已特殊标注）</td></tr><tr><td>指令符</td><td>见读取指令3</td></tr><tr><td>数据长度</td><td>1</td></tr><tr><td>数据内容</td><td>无</td></tr><tr><td>指令符（返回值）</td><td>见读取指令3</td></tr><tr><td>数据长度 (返回值)</td><td>5</td></tr><tr><td>下位机返回数据</td><td>数据为IQ24格式。(一条特殊指令指令表内已特殊标注)）</td></tr></tbody></table>
 
 ### 写入命令
 
-<table>
-<thead><tr><th colspan="3"style=background:PaleTurquoise>3.3.2.1发送数据2字节，返回数据2字节</th></tr></thead>
-<tbody>
- <tr><td>命令名称</td><td colspan="2">写入命令</td></tr>
- <tr><td>说明</td><td colspan="2">此命令类发送数据长度为2，返回数据长度为2，发送数据后一个字节表示要写入参数内容。<br>(注：上电后先发送开机指令才能使用，断电前必须先发送关机指令，否则零位可能丢失)</td></tr>
- <tr><td>指令符</td><td colspan="2">见写入指令1</td></tr>
- <tr><td>数据长度</td><td colspan="2">2</td></tr>
- <tr><td rowspan="2">数据内容</td><td>0x01：使能/开机</td><td rowspan="2">模式设置见模式表</td></tr> <tr><td>0x00：失能/关机</td></tr>
+<table><thead><tr><th colspan="3"style=background:PaleTurquoise>3.3.2.1发送数据2字节，返回数据2字节</th></tr></thead><tbody><tr><td>命令名称</td><td colspan="2">写入命令</td></tr><tr><td>说明</td><td colspan="2">此命令类发送数据长度为2，返回数据长度为2，发送数据后一个字节表示要写入参数内容。<br>(注：上电后先发送开机指令才能使用，断电前必须先发送关机指令，否则零位可能丢失)</td></tr><tr><td>指令符</td><td colspan="2">见写入指令1</td></tr><tr><td>数据长度</td><td colspan="2">2</td></tr><tr><td rowspan="2">数据内容</td><td>0x01：使能/开机</td><td rowspan="2">模式设置见模式表</td></tr> <tr><td>0x00：失能/关机</td></tr><tr><td>指令 (返回值)</td><td colspan="2">见写入指令1</td></tr><tr><td>数据长度(返回值)</td><td colspan="2">2</td></tr><tr><td rowspan="2">下位机返回数据</td><td colspan="2">0x01：成功</td></tr><tr><td colspan="2">0x00：失败</td></tr></tbody></table>
 
-<tr><td>指令 (返回值)</td><td colspan="2">见写入指令1</td></tr>
-<tr><td>数据长度(返回值)</td><td colspan="2">2</td></tr>
-<tr><td rowspan="2">下位机返回数据</td><td colspan="2">0x01：成功</td></tr>
-<tr><td colspan="2">0x00：失败</td></tr>
-</tbody></table>
+<table><thead><tr><th colspan="3"style=background:PaleTurquoise>3.3.2.2发送数据3字节，返回数据2字节</th></tr></thead><tbody><tr><td>命令名称</td><td colspan="2">写入命令</td></tr><tr><td>说明</td><td>此命令类发送数据长度为3字节，返回数据长度为2字节，发送数据后2个字节表示要写入参数内容，高位在前。数值为真实值的2^8倍。</td></tr><tr><td>指令符</td><td>见写入指令2</td></tr><tr><td>数据长度</td><td colspan="2">3</td></tr><tr><td rowspan="2">数据内容</td><td>数值为IQ8格式</td></tr><tr><td>0x00：失能/关机</td></tr><tr><td>指令 (返回值)</td><td>见写入指令2</td></tr><tr><td>数据长度(返回值)</td><td>2</td></tr><tr><td rowspan="2">下位机返回数据</td><td>0x01：成功</td></tr><tr><td>0x00：失败</td></tr></tbody></table>
 
+<table><thead><tr><th colspan="3"style=background:PaleTurquoise >3.3.2.3发送数据5字节，返回数据2字节或更少</th></tr></thead><tbody><tr><td>命令名称</td><td colspan="2">写入命令</td></tr><tr><td>说明</td><td colspan="2">此命令类发送数据长度为5，返回数据长度为2，发送数据后4个字节表示要写入的参数内容，数值为真实值的2^24倍。(一条特殊指令指令表内已特殊标注)</td></tr><tr><td>指令符</td><td colspan="2">见写入指令3</td></tr><tr><td>数据长度</td><td colspan="2">5</td></tr><tr><td>数据内容</td><td colspan="2">数据为IQ24格式。(一条特殊指令指令表内已特殊标注)</td></tr><tr><td>指令 (返回值)</td><td colspan="2">见写入指令3</td></tr><tr><td>数据长度(返回值)</td><td colspan="2">2或0</td></tr><tr><td rowspan="2">下位机返回数据</td><td>0x01：成功</td><td rowspan="2">(三条特殊指令无返回数据，指令表内已标注)。</td></tr><tr><td>0x00：失败</td></tr></tbody></table>
 
-<table>
-<thead><tr><th colspan="3"style=background:PaleTurquoise>3.3.2.2发送数据3字节，返回数据2字节</th></tr></thead><tbody>
- <tr><td>命令名称</td><td colspan="2">写入命令</td></tr>
- <tr><td>说明</td><td>此命令类发送数据长度为3字节，返回数据长度为2字节，发送数据后2个字节表示要写入参数内容，高位在前。数值为真实值的2^8倍。</td></tr>
- <tr><td>指令符</td><td>见写入指令2</td></tr>
- <tr><td>数据长度</td><td colspan="2">3</td></tr>
- <tr><td rowspan="2">数据内容</td><td>数值为IQ8格式</td></tr>
- <tr><td>0x00：失能/关机</td></tr>
- <tr><td>指令 (返回值)</td><td>见写入指令2</td></tr>
- <tr><td>数据长度(返回值)</td><td>2</td></tr>
- <tr><td rowspan="2">下位机返回数据</td><td>0x01：成功</td></tr>
- <tr><td>0x00：失败</td></tr>
-</tbody></table>
-
-
-<table>
-<thead><tr><th colspan="3"style=background:PaleTurquoise >3.3.2.3发送数据5字节，返回数据2字节或更少</th></tr></thead><tbody>
- <tr><td>命令名称</td><td colspan="2">写入命令</td></tr>
- <tr><td>说明</td><td colspan="2">此命令类发送数据长度为5，返回数据长度为2，发送数据后4个字节表示要写入的参数内容，数值为真实值的2^24倍。(一条特殊指令指令表内已特殊标注)</td></tr>
- <tr><td>指令符</td><td colspan="2">见写入指令3</td></tr>
- <tr><td>数据长度</td><td colspan="2">5</td></tr>
- <tr><td>数据内容</td><td colspan="2">数据为IQ24格式。(一条特殊指令指令表内已特殊标注)</td></tr>
- <tr><td>指令 (返回值)</td><td colspan="2">见写入指令3</td></tr>
- <tr><td>数据长度(返回值)</td><td colspan="2">2或0</td></tr>
- <tr><td rowspan="2">下位机返回数据</td><td>0x01：成功</td><td rowspan="2">(三条特殊指令无返回数据，指令表内已标注)。</td></tr>
- <tr><td>0x00：失败</td></tr>
-</tbody></table>
-
-
-<table>
-<thead><tr><th colspan="2" style=background:PaleTurquoise>3.3.2.4发送数据1字节，返回数据2字节</th></tr></thead><tbody>
- <tr><td>命令名称</td><td>写入命令</td></tr>
- <tr><td>说明</td><td>此命令类发送数据长度为1，返回数据长度为2</td></tr>
- <tr><td>指令符</td><td>见写入指令4</td></tr>
- <tr><td>数据长度</td><td>1</td></tr>
- <tr><td>数据内容</td><td>无</td></tr>
- <tr><td>指令 (返回值)</td><td>见写入指令4</td></tr>
- <tr><td>数据长度(返回值)</td><td>2</td></tr>
- <tr><td rowspan="2">下位机返回数据</td><td>0x01：成功</td></tr>
- <tr><td>0x00：失败</td></tr>
-</tbody></table>
-
+<table><thead><tr><th colspan="2" style=background:PaleTurquoise>3.3.2.4发送数据1字节，返回数据2字节</th></tr></thead><tbody><tr><td>命令名称</td><td>写入命令</td></tr><tr><td>说明</td><td>此命令类发送数据长度为1，返回数据长度为2</td></tr><tr><td>指令符</td><td>见写入指令4</td></tr><tr><td>数据长度</td><td>1</td></tr><tr><td>数据内容</td><td>无</td></tr><tr><td>指令 (返回值)</td><td>见写入指令4</td></tr><tr><td>数据长度(返回值)</td><td>2</td></tr><tr><td rowspan="2">下位机返回数据</td><td>0x01：成功</td></tr><tr><td>0x00：失败</td></tr></tbody></table>
 
 
 # 附录A
@@ -336,174 +197,33 @@ CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰�
 ## A.1读取指令编码定义表
 
 
-<table>
-<thead><tr><th colspan="3" style=background:PaleTurquoise>A.1.1 读取指令1</th></tr></thead><tbody>
- <tr><td>指令符</td><td>定义</td><td>说明</td></tr>
- <tr><td>0x00 ：</td><td>握手</td><td>上位机发送本指令，下位机响应返回，说明下位机已经准备好与上位机通信，也可作为心跳协议，实时查询从机的状态。</td></tr>
- <tr><td>0x55：</td><td>查询执行器当前模式</td><td>读取下位机所管理的执行器的当前的模式。</td></tr>
- <tr><td>0xB0</td><td>查询执行器上次关机状态</td><td>读取执行器的上次关机状态，正常/异常</td></tr>
- <tr><td>0x71：</td><td>电流环滤波器状态</td><td>读取指定ID执行器的电流环滤波器使能/失能</td></tr>
- <tr><td>0x75：</td><td>速度环滤波器状态</td><td>读取指定ID执行器的电流环滤波器使能/失能</td></tr>
- <tr><td>0x79：</td><td>位置环滤波器状态</td><td>读取指定ID执行器的电流环滤波器使能/失能</td></tr>
- <tr><td>0x2B</td><td>电流环滤波器状态</td><td>读取指定ID执行器开机/停机状态。</td></tr>
-</tbody></table>
+<table><thead><tr><th colspan="3" style=background:PaleTurquoise>A.1.1 读取指令1</th></tr></thead><tbody><tr><td>指令符</td><td>定义</td><td>说明</td></tr><tr><td>0x00 ：</td><td>握手</td><td>上位机发送本指令，下位机响应返回，说明下位机已经准备好与上位机通信，也可作为心跳协议，实时查询从机的状态。</td></tr> <tr><td>0x55：</td><td>查询执行器当前模式</td><td>读取下位机所管理的执行器的当前的模式。</td></tr><tr><td>0xB0</td><td>查询执行器上次关机状态</td><td>读取执行器的上次关机状态，正常/异常</td></tr><tr><td>0x71：</td><td>电流环滤波器状态</td><td>读取指定ID执行器的电流环滤波器使能/失能</td></tr><tr><td>0x75：</td><td>速度环滤波器状态</td><td>读取指定ID执行器的电流环滤波器使能/失能</td></tr><tr><td>0x79：</td><td>位置环滤波器状态</td><td>读取指定ID执行器的电流环滤波器使能/失能</td></tr><tr><td>0x2B</td><td>电流环滤波器状态</td><td>读取指定ID执行器开机/停机状态。</td></tr></tbody></table>
 
+<table><thead><tr><th colspan="3" style=background:PaleTurquoise>A.1.2 读取指令2</th></tr></thead><tbody><tr><td>指令符</td><td>定义</td><td>说明</td></tr><tr><td>0x73：</td><td>电流环滤波器的带宽</td><td>读取指定ID执行器电流环滤波器的带宽(Hz)</td></tr><tr><td>0x77：</td><td>速度环滤波器的带宽</td><td>读取指定ID执行器速度环滤波器的带宽(Hz)</td></tr><tr><td>0x7B：</td><td>位置环滤波器的带宽</td><td>读取指定ID执行器速度环滤波器的带宽(Hz)</td></tr><tr><td>0x5F</td><td>读取执行器电机的温度</td><td>读取指定ID执行器电机温度℃</td></tr><tr><td>0x60</td><td>读取逆变器温度</td><td>读取指定ID执行器的逆变器温度℃</td></tr><tr><td>0x62</td><td>读取执行器保护温度</td><td>读取指定ID执行器的保护温度℃</td></tr><tr><td>0x64</td><td>读取执行器恢复温度</td><td>读取指定ID执行器的恢复温度℃</td></tr><tr><td>0xFF</td><td>报警指令(特殊指令)</td><td>下位机的报警信息</td></tr></tbody></table>
 
-<table>
-<thead><tr><th colspan="3" style=background:PaleTurquoise>A.1.2 读取指令2</th></tr></thead><tbody>
- <tr><td>指令符</td><td>定义</td><td>说明</td></tr>
- <tr><td>0x73：</td><td>电流环滤波器的带宽</td><td>读取指定ID执行器电流环滤波器的带宽(Hz)</td></tr>
- <tr><td>0x77：</td><td>速度环滤波器的带宽</td><td>读取指定ID执行器速度环滤波器的带宽(Hz)</td></tr>
- <tr><td>0x7B：</td><td>位置环滤波器的带宽</td><td>读取指定ID执行器速度环滤波器的带宽(Hz)</td></tr>
- <tr><td>0x5F</td><td>读取执行器电机的温度</td><td>读取指定ID执行器电机温度℃</td></tr>
- <tr><td>0x60</td><td>读取逆变器温度</td><td>读取指定ID执行器的逆变器温度℃</td></tr>
- <tr><td>0x62</td><td>读取执行器保护温度</td><td>读取指定ID执行器的保护温度℃</td></tr>
- <tr><td>0x64</td><td>读取执行器恢复温度</td><td>读取指定ID执行器的恢复温度℃</td></tr>
- <tr><td>0xFF</td><td>报警指令(特殊指令)</td><td>下位机的报警信息</td></tr>
-</tbody></table>
-
-
-
-<table>
-<thead><tr><th colspan="3" style=background:PaleTurquoise>A.1.3 读取指令3</th></tr></thead><tbody>
- <tr><td>指令符</td><td>定义</td><td>说明</td></tr>
- <tr><td>0x04：</td><td>当前电流值</td><td>读取指定ID执行器的当前电流值，电流真实值需要乘以电流满量程（见附录D），单位为A</td></tr>
- <tr><td>0x05：</td><td>当前速度值</td><td>读取指定ID执行器的当前速度值，速度真实值需要乘以速度满量程（见附录D），单位为RPM</td></tr>
- <tr><td>0x06：</td><td>当前位置值</td><td>读取指定ID执行器的当前位置值，单位为R</td></tr>
- <tr><td>0x15：</td><td>电流环的P</td><td>读取指定ID执行器的当前电流环的P</td></tr>
- <tr><td>0x16：</td><td>电流环的I</td><td>读取指定ID执行器的当前电流环的I</td></tr>
- <tr><td>0x17：</td><td>速度环的P</td><td>读取指定ID执行器的当前速度环的P</td></tr>
- <tr><td>0x18：</td><td>速度环的I</td><td>读取指定ID执行器的当前速度环的I</td></tr>
- <tr><td>0x19：</td><td>位置环的P</td><td>读取指定ID执行器的当前位置环的P</td></tr>
- <tr><td>0x1A：</td><td>位置环的I</td><td>读取指定ID执行器的当前位置环的I</td></tr>
- <tr><td>0x1C：</td><td>位置梯形曲线的最大速度</td><td>读取指定ID执行器的当前位置梯形曲线的最大速度</td></tr>
- <tr><td>0x1D：</td><td>位置梯形曲线的加速度</td><td>读取指定ID执行器的当前位置梯形曲线的最大加速度</td></tr>
- <tr><td>0x1E：</td><td>位置梯形曲线的减速度</td><td>读取指定ID执行器的当前位置梯形曲线的最大减速度</td></tr>
- <tr><td>0x22：</td><td>速度梯形曲线的最大速度</td><td>读取指定ID执行器的当前速度梯形曲线的最大速度</td></tr>
- <tr><td>0x23：</td><td>速度梯形曲线的加速度</td><td>读取指定ID执行器的当前速度梯形曲线的最大加速度</td></tr>
- <tr><td>0x24：</td><td>速度梯形曲线的减速度</td><td>读取指定ID执行器的当前速度梯形曲线的最大减速度</td></tr>
- <tr><td>0x34：</td><td>电流环输出的下限</td><td>读取指定ID执行器的当前电流环输出的下限</td></tr>
- <tr><td>0x35：</td><td>电流环输出的上限</td><td>读取指定ID执行器的当前电流环输出的上限</td></tr>
- <tr><td>0x36：</td><td>速度环输出的下限</td><td>读取指定ID执行器的当前速度环输出的下限</td></tr>
- <tr><td>0x37：</td><td>速度环输出的上限</td><td>读取指定ID执行器的当前速度环输出的上限</td></tr>
- <tr><td>0x38：</td><td>位置环输出的下限</td><td>读取指定ID执行器的当前位置环输出的下限</td></tr>
- <tr><td>0x39：</td><td>位置环输出的上限</td><td>读取指定ID执行器的当前位置环输出的上限</td></tr>
- <tr><td>0x7D：</td><td>惯量</td><td>读取指定ID执行器的惯量</td></tr>
- <tr><td>0x85：</td><td>执行器位置的上限</td><td>读取指定ID执行器的位置上限值</td></tr>
- <tr><td>0x86：</td><td>执行器位置的下限</td><td>读取执行ID执行器的位置下限值</td></tr>
- <tr><td>0x8A：</td><td>执行器位置偏置位置</td><td>读取指定ID执行器的位置偏置值</td></tr>
- <tr><td>0x92：</td><td>执行器自动归零时电流的下限</td><td>读取指定ID执行器自动归零时电流的下限</td></tr>
- <tr><td>0x93：</td><td>执行器自动归零时电流的上限</td><td>读取指定ID执行器自动归零是电流的上限</td></tr>
- <tr><td>0x7F：</td><td>堵转能量</td><td>读取指定ID执行器的堵转能量。 （数值为真实值的75.225倍）堵转后发热能量，单位为J。</td></tr>
-</tbody></table>
+<table><thead><tr><th colspan="3" style=background:PaleTurquoise>A.1.3 读取指令3</th></tr></thead><tbody><tr><td>指令符</td><td>定义</td><td>说明</td></tr><tr><td>0x04：</td><td>当前电流值</td><td>读取指定ID执行器的当前电流值，电流真实值需要乘以电流满量程（见附录D），单位为A</td></tr><tr><td>0x05：</td><td>当前速度值</td><td>读取指定ID执行器的当前速度值，速度真实值需要乘以速度满量程（见附录D），单位为RPM</td></tr><tr><td>0x06：</td><td>当前位置值</td><td>读取指定ID执行器的当前位置值，单位为R</td></tr><tr><td>0x15：</td><td>电流环的P</td><td>读取指定ID执行器的当前电流环的P</td></tr><tr><td>0x16：</td><td>电流环的I</td><td>读取指定ID执行器的当前电流环的I</td></tr><tr><td>0x17：</td><td>速度环的P</td><td>读取指定ID执行器的当前速度环的P</td></tr><tr><td>0x18：</td><td>速度环的I</td><td>读取指定ID执行器的当前速度环的I</td></tr><tr><td>0x19：</td><td>位置环的P</td><td>读取指定ID执行器的当前位置环的P</td></tr><tr><td>0x1A：</td><td>位置环的I</td><td>读取指定ID执行器的当前位置环的I</td></tr><tr><td>0x1C：</td><td>位置梯形曲线的最大速度</td><td>读取指定ID执行器的当前位置梯形曲线的最大速度</td></tr><tr><td>0x1D：</td><td>位置梯形曲线的加速度</td><td>读取指定ID执行器的当前位置梯形曲线的最大加速度</td></tr><tr><td>0x1E：</td><td>位置梯形曲线的减速度</td><td>读取指定ID执行器的当前位置梯形曲线的最大减速度</td></tr><tr><td>0x22：</td><td>速度梯形曲线的最大速度</td><td>读取指定ID执行器的当前速度梯形曲线的最大速度</td></tr><tr><td>0x23：</td><td>速度梯形曲线的加速度</td><td>读取指定ID执行器的当前速度梯形曲线的最大加速度</td></tr><tr><td>0x24：</td><td>速度梯形曲线的减速度</td><td>读取指定ID执行器的当前速度梯形曲线的最大减速度</td></tr><tr><td>0x34：</td><td>电流环输出的下限</td><td>读取指定ID执行器的当前电流环输出的下限</td></tr><tr><td>0x35：</td><td>电流环输出的上限</td><td>读取指定ID执行器的当前电流环输出的上限</td></tr><tr><td>0x36：</td><td>速度环输出的下限</td><td>读取指定ID执行器的当前速度环输出的下限</td></tr><tr><td>0x37：</td><td>速度环输出的上限</td><td>读取指定ID执行器的当前速度环输出的上限</td></tr><tr><td>0x38：</td><td>位置环输出的下限</td><td>读取指定ID执行器的当前位置环输出的下限</td></tr><tr><td>0x39：</td><td>位置环输出的上限</td><td>读取指定ID执行器的当前位置环输出的上限</td></tr><tr><td>0x7D：</td><td>惯量</td><td>读取指定ID执行器的惯量</td></tr><tr><td>0x85：</td><td>执行器位置的上限</td><td>读取指定ID执行器的位置上限值</td></tr><tr><td>0x86：</td><td>执行器位置的下限</td><td>读取执行ID执行器的位置下限值</td></tr><tr><td>0x8A：</td><td>执行器位置偏置位置</td><td>读取指定ID执行器的位置偏置值</td></tr><tr><td>0x92：</td><td>执行器自动归零时电流的下限</td><td>读取指定ID执行器自动归零时电流的下限</td></tr><tr><td>0x93：</td><td>执行器自动归零时电流的上限</td><td>读取指定ID执行器自动归零是电流的上限</td></tr><tr><td>0x7F：</td><td>堵转能量</td><td>读取指定ID执行器的堵转能量。 （数值为真实值的75.225倍）堵转后发热能量，单位为J。</td></tr></tbody></table>
 
 ## A.2 写入命令编码值定义表
 
-<table>
-<thead><tr><th colspan="3" style=background:PaleTurquoise>A.2.1写入指令1</th></tr></thead><tbody>
- <tr><td>指令符</td><td>定义</td><td>说明</td></tr>
- <tr><td>0x07：</td><td>设置指定ID执行器的模式</td><td>设置指定ID执行器的当前的模式。</td></tr>
- <tr><td>0x70：</td><td>电流环滤波器状态</td><td>设置指定ID执行器的电流环滤波器使能/失能</td></tr>
- <tr><td>0x74：</td><td>速度环滤波器状态</td><td>设置指定ID执行器的速度环滤波器使能/失能</td></tr>
- <tr><td>0x78：</td><td>位置环滤波器状态</td><td>设置指定ID执行器的位置环滤波器使能/失能</td></tr>
- <tr><td>0x2A：</td><td>执行器的开关机状态</td><td>设置指定ID执行器开机/关机</td></tr>
-</tbody></table>
+<table><thead><tr><th colspan="3" style=background:PaleTurquoise>A.2.1写入指令1</th></tr></thead><tbody><tr><td>指令符</td><td>定义</td><td>说明</td></tr><tr><td>0x07：</td><td>设置指定ID执行器的模式</td><td>设置指定ID执行器的当前的模式。</td></tr><tr><td>0x70：</td><td>电流环滤波器状态</td><td>设置指定ID执行器的电流环滤波器使能/失能</td></tr><tr><td>0x74：</td><td>速度环滤波器状态</td><td>设置指定ID执行器的速度环滤波器使能/失能</td></tr><tr><td>0x78：</td><td>位置环滤波器状态</td><td>设置指定ID执行器的位置环滤波器使能/失能</td></tr><tr><td>0x2A：</td><td>执行器的开关机状态</td><td>设置指定ID执行器开机/关机</td></tr></tbody></table>
 
-<table>
-<thead><tr><th colspan="3" style=background:PaleTurquoise>A.2.2写入指令2</th></tr></thead><tbody>
- <tr><td>指令符</td><td>定义</td><td>说明</td></tr>
- <tr><td>0x72：</td><td>电流环滤波器的带宽</td><td>设置指定ID执行器电流环滤波器的带宽(Hz)</td></tr>
- <tr><td>0x76：</td><td>速度环滤波器的带宽</td><td>设置指定ID执行器速度环滤波器的带宽(Hz)</td></tr>
- <tr><td>0x7A：</td><td>位置环滤波器的带宽</td><td>设置指定ID执行器位置环滤波器的带宽(Hz)</td></tr>
- <tr><td>0x61：</td><td>执行器的保护温度</td><td>设置指定ID执行器的保护温度℃</td></tr>
- <tr><td>0x63：</td><td>执行器的恢复温度</td><td>设置指定ID执行器的恢复温度℃</td></tr>
-</tbody></table>
+<table><thead><tr><th colspan="3" style=background:PaleTurquoise>A.2.2写入指令2</th></tr></thead><tbody><tr><td>指令符</td><td>定义</td><td>说明</td></tr><tr><td>0x72：</td><td>电流环滤波器的带宽</td><td>设置指定ID执行器电流环滤波器的带宽(Hz)</td></tr><tr><td>0x76：</td><td>速度环滤波器的带宽</td><td>设置指定ID执行器速度环滤波器的带宽(Hz)</td></tr><tr><td>0x7A：</td><td>位置环滤波器的带宽</td><td>设置指定ID执行器位置环滤波器的带宽(Hz)</td></tr><tr><td>0x61：</td><td>执行器的保护温度</td><td>设置指定ID执行器的保护温度℃</td></tr><tr><td>0x63：</td><td>执行器的恢复温度</td><td>设置指定ID执行器的恢复温度℃</td></tr></tbody></table>
 
-<table>
-<thead><tr><th colspan="3" style=background:PaleTurquoise>A.2.3写入指令3</th></tr></thead><tbody>
- <tr><td>指令符</td><td>定义</td><td>说明</td></tr>
- <tr><td>0x08：</td><td>当前电流值</td><td>设置指定ID执行器的当前电流值。 (注：无返回数据)</td></tr>
- <tr><td>0x09：</td><td>当前速度值</td><td>设置指定ID执行器的当前速度值。 (注：无返回数据)</td></tr>
- <tr><td>0x0A：</td><td>当前位置值</td><td>设置指定ID执行器的当前位置值。 (注：无返回数据)</td></tr>
- <tr><td>0x0E：</td><td>电流环的P</td><td>更改指定ID执行器电流环的P值</td></tr>
- <tr><td>0x0F：</td><td>电流环的I</td><td>设置指定ID执行器电流环的I值</td></tr>
- <tr><td>0x10：</td><td>速度环的P</td><td>设置指定ID执行器速度环的P值</td></tr>
- <tr><td>0x11：</td><td>速度环的I</td><td>设置指定ID执行器速度环的I值</td></tr>
- <tr><td>0x12：</td><td>位置环的P</td><td>设置指定ID执行器位置环的P值</td></tr>
- <tr><td>0x13：</td><td>位置环的I</td><td>设置指定ID执行器位置环的I值</td></tr>
- <tr><td>0x1F：</td><td>位置梯形曲线的最大速度</td><td>更改指定ID执行器位置梯形曲线的最大速度</td></tr>
- <tr><td>0x20：</td><td>位置梯形曲线的加速度</td><td>更改指定ID执行器位置梯形曲线的最大加速度</td></tr>
- <tr><td>0x21：</td><td>位置梯形曲线的减速速度</td><td>更改指定ID执行器位置梯形曲线的最大减速度</td></tr>
- <tr><td>0x25：</td><td>速度梯形曲线的最大速度</td><td>更改指定ID执行器速度梯形曲线的最大速度</td></tr>
- <tr><td>0x26：</td><td>速度梯形曲线的加速度</td><td>更改指定ID执行器速度梯形曲线的加速度</td></tr>
- <tr><td>0x27：</td><td>速度梯形曲线的减速度</td><td>更改指定ID执行器速度梯形曲线的减速度</td></tr>
- <tr><td>0x2E：</td><td>电流环输出的下限</td><td>更改指定ID执行器电流环输出的下限</td></tr>
- <tr><td>0x2F：</td><td>电流环输出的上限</td><td>更改指定ID执行器电流环输出的上限</td></tr>
- <tr><td>0x30：</td><td>速度环输出的下限</td><td>更改指定ID执行器速度环输出的下限</td></tr>
- <tr><td>0x31：</td><td>速度环输出的上限</td><td>更改指定ID执行器速度环输出的上限</td></tr>
- <tr><td>0x32：</td><td>位置环输出的下限</td><td>更改指定ID执行器位置环输出的下限</td></tr>
- <tr><td>0x33：</td><td>位置环输出的上限</td><td>更改指定ID执行器位置环输出的上限</td></tr>
- <tr><td>0x83：</td><td>执行器位置的上限</td><td>更改指定ID执行器的位置上限值</td></tr>
- <tr><td>0x84：</td><td>执行器位置的下限</td><td>更改指定ID执行器的位置下限值</td></tr>
- <tr><td>0x87：</td><td>执行器的Home值</td><td>设置指定ID执行器的Home值</td></tr>
- <tr><td>0x89：</td><td>执行器的位置偏置</td><td>设置指定ID执行器的位置偏置值</td></tr>
- <tr><td>0x90：</td><td>执行器自动归零时电流的下</td><td>设置指定ID执行器自动归零时电流的下限</td></tr>
- <tr><td>0x91：</td><td>执行器自动归零时电流的上</td><td>设置指定ID执行器自动归零时电流的上限</td></tr>
- <tr><td>0x7E：</td><td>堵转能量</td><td>设置指定ID执行器的堵转能量。 (数值为真实值的75.225倍)堵转后发热能量，单位为J</td></tr>
-</tbody></table>
+<table><thead><tr><th colspan="3" style=background:PaleTurquoise>A.2.3写入指令3</th></tr></thead><tbody><tr><td>指令符</td><td>定义</td><td>说明</td></tr><tr><td>0x08：</td><td>当前电流值</td><td>设置指定ID执行器的当前电流值。 (注：无返回数据)</td></tr><tr><td>0x09：</td><td>当前速度值</td><td>设置指定ID执行器的当前速度值。 (注：无返回数据)</td></tr><tr><td>0x0A：</td><td>当前位置值</td><td>设置指定ID执行器的当前位置值。 (注：无返回数据)</td></tr><tr><td>0x0E：</td><td>电流环的P</td><td>更改指定ID执行器电流环的P值</td></tr><tr><td>0x0F：</td><td>电流环的I</td><td>设置指定ID执行器电流环的I值</td></tr><tr><td>0x10：</td><td>速度环的P</td><td>设置指定ID执行器速度环的P值</td></tr><tr><td>0x11：</td><td>速度环的I</td><td>设置指定ID执行器速度环的I值</td></tr><tr><td>0x12：</td><td>位置环的P</td><td>设置指定ID执行器位置环的P值</td></tr><tr><td>0x13：</td><td>位置环的I</td><td>设置指定ID执行器位置环的I值</td></tr><tr><td>0x1F：</td><td>位置梯形曲线的最大速度</td><td>更改指定ID执行器位置梯形曲线的最大速度</td></tr><tr><td>0x20：</td><td>位置梯形曲线的加速度</td><td>更改指定ID执行器位置梯形曲线的最大加速度</td></tr><tr><td>0x21：</td><td>位置梯形曲线的减速速度</td><td>更改指定ID执行器位置梯形曲线的最大减速度</td></tr><tr><td>0x25：</td><td>速度梯形曲线的最大速度</td><td>更改指定ID执行器速度梯形曲线的最大速度</td></tr><tr><td>0x26：</td><td>速度梯形曲线的加速度</td><td>更改指定ID执行器速度梯形曲线的加速度</td></tr><tr><td>0x27：</td><td>速度梯形曲线的减速度</td><td>更改指定ID执行器速度梯形曲线的减速度</td></tr><tr><td>0x2E：</td><td>电流环输出的下限</td><td>更改指定ID执行器电流环输出的下限</td></tr><tr><td>0x2F：</td><td>电流环输出的上限</td><td>更改指定ID执行器电流环输出的上限</td></tr><tr><td>0x30：</td><td>速度环输出的下限</td><td>更改指定ID执行器速度环输出的下限</td></tr><tr><td>0x31：</td><td>速度环输出的上限</td><td>更改指定ID执行器速度环输出的上限</td></tr><tr><td>0x32：</td><td>位置环输出的下限</td><td>更改指定ID执行器位置环输出的下限</td></tr><tr><td>0x33：</td><td>位置环输出的上限</td><td>更改指定ID执行器位置环输出的上限</td></tr><tr><td>0x83：</td><td>执行器位置的上限</td><td>更改指定ID执行器的位置上限值</td></tr><tr><td>0x84：</td><td>执行器位置的下限</td><td>更改指定ID执行器的位置下限值</td></tr><tr><td>0x87：</td><td>执行器的Home值</td><td>设置指定ID执行器的Home值</td></tr><tr><td>0x89：</td><td>执行器的位置偏置</td><td>设置指定ID执行器的位置偏置值</td></tr><tr><td>0x90：</td><td>执行器自动归零时电流的下</td><td>设置指定ID执行器自动归零时电流的下限</td></tr><tr><td>0x91：</td><td>执行器自动归零时电流的上</td><td>设置指定ID执行器自动归零时电流的上限</td></tr><tr><td>0x7E：</td><td>堵转能量</td><td>设置指定ID执行器的堵转能量。 (数值为真实值的75.225倍)堵转后发热能量，单位为J</td></tr></tbody></table>
 
-<table>
-<thead><tr><th colspan="3" style=background:PaleTurquoise>A.2.4写入指令4</th></tr></thead><tbody>
- <tr><td>指令符</td><td>定义</td><td>说明</td></tr>
- <tr><td>0xFE：</td><td>消除下位机的报警</td><td>消除下位机的报警动作，接收到命令后，下位机停止报警，否则下位机不可操作</td></tr>
- <tr><td>0x88</td><td>清除Homing数据</td><td>清除Homing数据</td></tr>
- <tr><td>0x0D</td><td>存储参数</td><td>存储参数到EEPROM</td></tr>
-</tbody></table>
+<table><thead><tr><th colspan="3" style=background:PaleTurquoise>A.2.4写入指令4</th></tr></thead><tbody><tr><td>指令符</td><td>定义</td><td>说明</td></tr><tr><td>0xFE：</td><td>消除下位机的报警</td><td>消除下位机的报警动作，接收到命令后，下位机停止报警，否则下位机不可操作</td></tr><tr><td>0x88</td><td>清除Homing数据</td><td>清除Homing数据</td></tr><tr><td>0x0D</td><td>存储参数</td><td>存储参数到EEPROM</td></tr></tbody></table>
 
 # 附录B :模式表
 
-<table>
-<thead><tr style=background:PaleTurquoise><th>指令符</th><th>指令符</th></tr></thead><tbody>
- <tr><td>0x01</td><td>电流模式</td></tr>
- <tr><td>0x02</td><td>速度模式</td></tr>
- <tr><td>0x03</td><td>位置模式</td></tr>
- <tr><td>0x06</td><td>位置梯形模式（S曲线）</td></tr>
- <tr><td>0x07</td><td>速度梯形模式（S曲线）</td></tr>
- <tr><td>0x08</td><td>homing模式</td></tr>
-</tbody></table>
+<table><thead><tr style=background:PaleTurquoise><th>指令符</th><th>指令符</th></tr></thead><tbody><tr><td>0x01</td><td>电流模式</td></tr><tr><td>0x02</td><td>速度模式</td></tr><tr><td>0x03</td><td>位置模式</td></tr><tr><td>0x06</td><td>位置梯形模式（S曲线）</td></tr><tr><td>0x07</td><td>速度梯形模式（S曲线）</td></tr><tr><td>0x08</td><td>homing模式</td></tr></tbody></table>
 
 # 附录C：报警指令表
 
-<table>
-<thead><tr style=background:PaleTurquoise><th>指令符</th><th>指令符</th></tr></thead><tbody>
- <tr><td>0x0001</td><td>过压异常</td></tr>
- <tr><td>0x0002</td><td>欠压异常</td></tr>
- <tr><td>0x0004</td><td>堵转异常</td></tr>
- <tr><td>0x0008</td><td>过热异常</td></tr>
- <tr><td>0x0010</td><td>读写参数异常</td></tr>
- <tr><td>0x0020</td><td>多圈计数异常</td></tr>
- <tr><td>0x0040</td><td>逆变器温度传感器异常</td></tr>
- <tr><td>0x0080</td><td>CAN通信异常</td></tr>
- <tr><td>0x0100</td><td>电机温度传感器异常</td></tr>
- <tr><td>0x0200</td><td>位置模式阶跃大于1</td></tr>
- <tr><td>0x0400</td><td>DRV保护</td></tr>
- <tr><td>其他</td><td>设备异常</td></tr>
- <tr><td>注释</td><td>可同时报警多个错误，如返回数据为0005，<br>则错误为0001过压异常与0004堵转异常</td></tr>
-</tbody></table>
+<table><thead><tr style=background:PaleTurquoise><th>指令符</th><th>指令符</th></tr></thead><tbody><tr><td>0x0001</td><td>过压异常</td></tr><tr><td>0x0002</td><td>欠压异常</td></tr><tr><td>0x0004</td><td>堵转异常</td></tr><tr><td>0x0008</td><td>过热异常</td></tr><tr><td>0x0010</td><td>读写参数异常</td></tr><tr><td>0x0020</td><td>多圈计数异常</td></tr><tr><td>0x0040</td><td>逆变器温度传感器异常</td></tr><tr><td>0x0080</td><td>CAN通信异常</td></tr><tr><td>0x0100</td><td>电机温度传感器异常</td></tr><tr><td>0x0200</td><td>位置模式阶跃大于1</td></tr><tr><td>0x0400</td><td>DRV保护</td></tr><tr><td>其他</td><td>设备异常</td></tr><tr><td>注释</td><td>可同时报警多个错误，如返回数据为0005，<br>则错误为0001过压异常与0004堵转异常</td></tr></tbody></table>
 
 # 附录D：型号表
 
-<table>
-<thead><tr style=background:PaleTurquoise><th>执行器型号</th><th>电流满量程</th><th>电机端速度满量程</th><th>输出端速度满量程</th></tr></thead><tbody>
- <tr><td>QDD Pro-6010-50</td><td>33A</td><td>6000RPM</td><td>120RPM</td></tr>
- <tr><td>QDD-6010-6</td><td>33A</td><td>6000RPM</td><td>1000RPM</td></tr>
- <tr><td>QDD-6010-36</td><td>33A</td><td>6000RPM</td><td>166.7RPM</td></tr>
- <tr><td>DD-6010</td><td>33A</td><td>6000RPM</td><td>6000RPM</td></tr>
- <tr><td>QDD Pro-3510-50</td><td>16.5A</td><td>6000RPM</td><td>120RPM</td></tr>
- <tr><td>QDD-3510-6</td><td>16.5A</td><td>6000RPM</td><td>1000RPM</td></tr>
- <tr><td>QDD-3510-36</td><td>16.5A</td><td>6000RPM</td><td>166.7RPM</td></tr>
- <tr><td>DD-3510</td><td>16.5A</td><td>6000RPM</td><td>6000RPM</td></tr>
-</tbody></table>
+<table><thead><tr style=background:PaleTurquoise><th>执行器型号</th><th>电流满量程</th><th>电机端速度满量程</th><th>输出端速度满量程</th></tr></thead><tbody><tr><td>QDD Pro-6010-50</td><td>33A</td><td>6000RPM</td><td>120RPM</td></tr><tr><td>QDD-6010-6</td><td>33A</td><td>6000RPM</td><td>1000RPM</td></tr><tr><td>QDD-6010-36</td><td>33A</td><td>6000RPM</td><td>166.7RPM</td></tr><tr><td>DD-6010</td><td>33A</td><td>6000RPM</td><td>6000RPM</td></tr><tr><td>QDD Pro-3510-50</td><td>16.5A</td><td>6000RPM</td><td>120RPM</td></tr><tr><td>QDD-3510-6</td><td>16.5A</td><td>6000RPM</td><td>1000RPM</td></tr><tr><td>QDD-3510-36</td><td>16.5A</td><td>6000RPM</td><td>166.7RPM</td></tr><tr><td>DD-3510</td><td>16.5A</td><td>6000RPM</td><td>6000RPM</td></tr></tbody></table>
 
 *   输出端速度不同是因为个别型号执行器内置减速器，使输出的最大转速降低，提高扭矩。IQ换算时按照电机端速度满量程的值计算。
 
@@ -514,19 +234,7 @@ CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰�
 
 # 附录F:版本变更记录
 
-<table>
-<thead><tr style=background:PaleTurquoise><th>版本号</th><th>更新时间</th><th>更改类型</th><th>位置</th><th>更新内容</th></tr></thead><tbody>
- <tr><td>V1.0.4</td><td>18.12.14</td><td>增加</td><td>附录E</td><td>指令发送与IQ值换算方法</td></tr>
- <tr><td rowspan="4">V1.0.3</td><td rowspan="4">18.03.19</td><td>增加</td><td>第三章通信协议</td><td>较上一版本多加了更多的执行器参数信息指令，执行器的温度信息指令，查询上次关机状态指令，Homing指令。</td></tr>
- <tr><td>增加</td><td>第三章通信协议</td><td>增加了储存参数指令</td></tr>
- <tr><td>修改</td><td>第三章通信协议</td><td>修改了第三章全章的排版</td></tr>
- <tr><td>增加</td><td>第三章通信协议</td><td>增加了储存参数指令</td></tr>
- <tr><td rowspan="2">V1.0.2</td><td rowspan="2">18.01.30</td><td>修改</td><td>全文</td><td>微伺服更名为INNFOS执行器</td></tr>
- <tr><td>增加</td><td>第三章通信协议</td><td>较上一版本多加了报警指令</td></tr>
- <tr><td>V1.0.1</td><td>17.12.29</td><td>修改</td><td>第三章通讯协议</td><td>更新了通信协议的数据长度，数据长度较之前加1</td></tr>
- <tr><td rowspan="2">V1.0.0</td><td rowspan="2">17.12.15</td><td>修改</td><td>第二章通配线</td><td>更新了CAN接口定义</td></tr>
- <tr><td>增加</td><td>第三章通信协议</td><td>增加了开关机指令</td></tr>
-</tbody></table>
+<table><thead><tr style=background:PaleTurquoise><th>版本号</th><th>更新时间</th><th>更改类型</th><th>位置</th><th>更新内容</th></tr></thead><tbody><tr><td>V1.0.4</td><td>18.12.14</td><td>增加</td><td>附录E</td><td>指令发送与IQ值换算方法</td></tr><tr><td rowspan="4">V1.0.3</td><td rowspan="4">18.03.19</td><td>增加</td><td>第三章通信协议</td><td>较上一版本多加了更多的执行器参数信息指令，执行器的温度信息指令，查询上次关机状态指令，Homing指令。</td></tr><tr><td>增加</td><td>第三章通信协议</td><td>增加了储存参数指令</td></tr><tr><td>修改</td><td>第三章通信协议</td><td>修改了第三章全章的排版</td></tr><tr><td>增加</td><td>第三章通信协议</td><td>增加了储存参数指令</td></tr><tr><td rowspan="2">V1.0.2</td><td rowspan="2">18.01.30</td><td>修改</td><td>全文</td><td>微伺服更名为INNFOS执行器</td></tr><tr><td>增加</td><td>第三章通信协议</td><td>较上一版本多加了报警指令</td></tr><tr><td>V1.0.1</td><td>17.12.29</td><td>修改</td><td>第三章通讯协议</td><td>更新了通信协议的数据长度，数据长度较之前加1</td></tr><tr><td rowspan="2">V1.0.0</td><td rowspan="2">17.12.15</td><td>修改</td><td>第二章通配线</td><td>更新了CAN接口定义</td></tr><tr><td>增加</td><td>第三章通信协议</td><td>增加了开关机指令</td></tr></tbody></table>
 
 
 **下表简单描述了版本变更记录**
