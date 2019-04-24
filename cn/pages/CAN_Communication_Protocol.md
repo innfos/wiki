@@ -6,7 +6,8 @@
 
 * CAN 是Controller Area Network 的缩写（以下称为CAN），是ISO国际标准化的串行通信协议。
 
-<table class="tableizer-table">
+
+<table class="tableizer-table"><th  colspan="2" style=background:PaleTurquoise>
 <thead><tr class="tableizer-firstrow"><th></th></tr></thead><tbody>
  <tr><td>表1-1综合性能参数说明</td></tr>
  <tr><td>项目</td><td>说明</td></tr>
