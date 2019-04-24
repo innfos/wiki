@@ -20,7 +20,7 @@
   * [XR-Robot](tutorials/dropbox.md)
   * [ECB & HUB](tutorials/iis/iis.md)
 
-[常见问题](examples.md)
+[常见问题](#!pages/.md)
 [English](https://innfos.github.io/wiki/en/#!index.md)
 
 [gimmick:theme (inverse: false)](flatly)
