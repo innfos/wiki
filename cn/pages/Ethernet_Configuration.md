@@ -1,7 +1,6 @@
 环境配置
 =======
 
-[English](Ethernet_Configuration "wikilink")
 
 ## linux平台环境配置
 
