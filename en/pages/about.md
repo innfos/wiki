@@ -1,15 +1,24 @@
-# About Page
+# About INNFOS
 
 
-## Section 1
+## A robot company with key actuator technology
 
-Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+The INNFOS R&D team has been focusing on the development of new actuators in high performance robots for many years. We have assembled outstanding engineers around the world to develop basic technologies，including motor design, motor drive, high precision encoders, flexible joints and so forth.
 
-Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+INNFOS SCA (Smart Compliant Actuator) is totally self-developed by INNFOS and its core techniques have reached the international advanced level, with its high integration, bus control, high torque output, easy usage and low cost. It is fully in line with robot growing trend and has become the core component of the robots.
 
-Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam quis risus eget urna mollis ornare vel eu leo. Donec sed odio dui.
+<img src="../img/About 1.png" style="width:400px">
+<img src="../img/About 2.png" style="width:400px">
+<img src="../img/About 2.png" style="width:400px">
 
 
-## Section 2
+## Contact
 
-Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+<table class="tableizer-table">
+<thead><tr class="tableizer-firstrow"><th></th></tr></thead><tbody>
+ <tr><td>Tell</td><td>+86-010-5397-6638/+86-010-5397-6640</td></tr>
+ <tr><td>Address</td><td>2nd Floor, Building 3, Zhongguancun Emerging Industry Frontier Technology</td></tr>
+ <tr><td>Research Institute, No. 85 Hongan Road, Doudian, Fangshan District, Beijing, China</td></tr>
+ <tr><td>&nbsp;</td></tr>
+ <tr><td>E-Mail</td><td>sales@innfos.com</td></tr>
+</tbody></table>
