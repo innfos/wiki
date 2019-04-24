@@ -237,6 +237,7 @@ CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰�
 
 <table>
 <thead><tr><th colspan="3"style=background:PaleTurquoise>3.3.1.1 发送数据1字节，返回数据2字节</th></tr></thead>
+<tr><td>命令名称</td><td colspan="2">读取命令</td></tr>
 <tr><td>说明</td><td colspan="2">此命令类发送数据长度为1，返回数据长度为2</td></tr>
 <tr><td>指令符</td><td colspan="2">见读取指令1</td></tr>
 <tr><td>数据长度</td><td colspan="2">1</td></tr>
