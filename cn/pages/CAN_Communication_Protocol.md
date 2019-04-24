@@ -54,7 +54,7 @@ CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰�
 
 # 通信协议
 
-## **CAN通信协议格式**
+## CAN通信协议格式
 
 如图3-1：设备地址对应标识符位，CAN总线标准数据帧标识符位为11位，本协议只用了其中8位，占一个字节，数据长度对应DLC,占半字节，指令符参数内容同在数据域，指令符在前参数内容在后，高字节在前，低字节在后。数据长度等于指令符加上参数内容。
 
@@ -191,9 +191,9 @@ CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰�
 <table><thead><tr><th colspan="2" style=background:PaleTurquoise>3.3.2.4发送数据1字节，返回数据2字节</th></tr></thead><tbody><tr><td>命令名称</td><td>写入命令</td></tr><tr><td>说明</td><td>此命令类发送数据长度为1，返回数据长度为2</td></tr><tr><td>指令符</td><td>见写入指令4</td></tr><tr><td>数据长度</td><td>1</td></tr><tr><td>数据内容</td><td>无</td></tr><tr><td>指令 (返回值)</td><td>见写入指令4</td></tr><tr><td>数据长度(返回值)</td><td>2</td></tr><tr><td rowspan="2">下位机返回数据</td><td>0x01：成功</td></tr><tr><td>0x00：失败</td></tr></tbody></table>
 
 
-# 附录A
+## 附录A
 
-## A.1读取指令编码定义表
+### A.1读取指令编码定义表
 
 
 <table><thead><tr><th colspan="3" style=background:PaleTurquoise>A.1.1 读取指令1</th></tr></thead><tbody><tr><td>指令符</td><td>定义</td><td>说明</td></tr><tr><td>0x00 ：</td><td>握手</td><td>上位机发送本指令，下位机响应返回，说明下位机已经准备好与上位机通信，也可作为心跳协议，实时查询从机的状态。</td></tr> <tr><td>0x55：</td><td>查询执行器当前模式</td><td>读取下位机所管理的执行器的当前的模式。</td></tr><tr><td>0xB0</td><td>查询执行器上次关机状态</td><td>读取执行器的上次关机状态，正常/异常</td></tr><tr><td>0x71：</td><td>电流环滤波器状态</td><td>读取指定ID执行器的电流环滤波器使能/失能</td></tr><tr><td>0x75：</td><td>速度环滤波器状态</td><td>读取指定ID执行器的电流环滤波器使能/失能</td></tr><tr><td>0x79：</td><td>位置环滤波器状态</td><td>读取指定ID执行器的电流环滤波器使能/失能</td></tr><tr><td>0x2B</td><td>电流环滤波器状态</td><td>读取指定ID执行器开机/停机状态。</td></tr></tbody></table>
@@ -202,7 +202,7 @@ CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰�
 
 <table><thead><tr><th colspan="3" style=background:PaleTurquoise>A.1.3 读取指令3</th></tr></thead><tbody><tr><td>指令符</td><td>定义</td><td>说明</td></tr><tr><td>0x04：</td><td>当前电流值</td><td>读取指定ID执行器的当前电流值，电流真实值需要乘以电流满量程（见附录D），单位为A</td></tr><tr><td>0x05：</td><td>当前速度值</td><td>读取指定ID执行器的当前速度值，速度真实值需要乘以速度满量程（见附录D），单位为RPM</td></tr><tr><td>0x06：</td><td>当前位置值</td><td>读取指定ID执行器的当前位置值，单位为R</td></tr><tr><td>0x15：</td><td>电流环的P</td><td>读取指定ID执行器的当前电流环的P</td></tr><tr><td>0x16：</td><td>电流环的I</td><td>读取指定ID执行器的当前电流环的I</td></tr><tr><td>0x17：</td><td>速度环的P</td><td>读取指定ID执行器的当前速度环的P</td></tr><tr><td>0x18：</td><td>速度环的I</td><td>读取指定ID执行器的当前速度环的I</td></tr><tr><td>0x19：</td><td>位置环的P</td><td>读取指定ID执行器的当前位置环的P</td></tr><tr><td>0x1A：</td><td>位置环的I</td><td>读取指定ID执行器的当前位置环的I</td></tr><tr><td>0x1C：</td><td>位置梯形曲线的最大速度</td><td>读取指定ID执行器的当前位置梯形曲线的最大速度</td></tr><tr><td>0x1D：</td><td>位置梯形曲线的加速度</td><td>读取指定ID执行器的当前位置梯形曲线的最大加速度</td></tr><tr><td>0x1E：</td><td>位置梯形曲线的减速度</td><td>读取指定ID执行器的当前位置梯形曲线的最大减速度</td></tr><tr><td>0x22：</td><td>速度梯形曲线的最大速度</td><td>读取指定ID执行器的当前速度梯形曲线的最大速度</td></tr><tr><td>0x23：</td><td>速度梯形曲线的加速度</td><td>读取指定ID执行器的当前速度梯形曲线的最大加速度</td></tr><tr><td>0x24：</td><td>速度梯形曲线的减速度</td><td>读取指定ID执行器的当前速度梯形曲线的最大减速度</td></tr><tr><td>0x34：</td><td>电流环输出的下限</td><td>读取指定ID执行器的当前电流环输出的下限</td></tr><tr><td>0x35：</td><td>电流环输出的上限</td><td>读取指定ID执行器的当前电流环输出的上限</td></tr><tr><td>0x36：</td><td>速度环输出的下限</td><td>读取指定ID执行器的当前速度环输出的下限</td></tr><tr><td>0x37：</td><td>速度环输出的上限</td><td>读取指定ID执行器的当前速度环输出的上限</td></tr><tr><td>0x38：</td><td>位置环输出的下限</td><td>读取指定ID执行器的当前位置环输出的下限</td></tr><tr><td>0x39：</td><td>位置环输出的上限</td><td>读取指定ID执行器的当前位置环输出的上限</td></tr><tr><td>0x7D：</td><td>惯量</td><td>读取指定ID执行器的惯量</td></tr><tr><td>0x85：</td><td>执行器位置的上限</td><td>读取指定ID执行器的位置上限值</td></tr><tr><td>0x86：</td><td>执行器位置的下限</td><td>读取执行ID执行器的位置下限值</td></tr><tr><td>0x8A：</td><td>执行器位置偏置位置</td><td>读取指定ID执行器的位置偏置值</td></tr><tr><td>0x92：</td><td>执行器自动归零时电流的下限</td><td>读取指定ID执行器自动归零时电流的下限</td></tr><tr><td>0x93：</td><td>执行器自动归零时电流的上限</td><td>读取指定ID执行器自动归零是电流的上限</td></tr><tr><td>0x7F：</td><td>堵转能量</td><td>读取指定ID执行器的堵转能量。 （数值为真实值的75.225倍）堵转后发热能量，单位为J。</td></tr></tbody></table>
 
-## A.2 写入命令编码值定义表
+### A.2 写入命令编码值定义表
 
 <table><thead><tr><th colspan="3" style=background:PaleTurquoise>A.2.1写入指令1</th></tr></thead><tbody><tr><td>指令符</td><td>定义</td><td>说明</td></tr><tr><td>0x07：</td><td>设置指定ID执行器的模式</td><td>设置指定ID执行器的当前的模式。</td></tr><tr><td>0x70：</td><td>电流环滤波器状态</td><td>设置指定ID执行器的电流环滤波器使能/失能</td></tr><tr><td>0x74：</td><td>速度环滤波器状态</td><td>设置指定ID执行器的速度环滤波器使能/失能</td></tr><tr><td>0x78：</td><td>位置环滤波器状态</td><td>设置指定ID执行器的位置环滤波器使能/失能</td></tr><tr><td>0x2A：</td><td>执行器的开关机状态</td><td>设置指定ID执行器开机/关机</td></tr></tbody></table>
 
@@ -212,26 +212,26 @@ CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰�
 
 <table><thead><tr><th colspan="3" style=background:PaleTurquoise>A.2.4写入指令4</th></tr></thead><tbody><tr><td>指令符</td><td>定义</td><td>说明</td></tr><tr><td>0xFE：</td><td>消除下位机的报警</td><td>消除下位机的报警动作，接收到命令后，下位机停止报警，否则下位机不可操作</td></tr><tr><td>0x88</td><td>清除Homing数据</td><td>清除Homing数据</td></tr><tr><td>0x0D</td><td>存储参数</td><td>存储参数到EEPROM</td></tr></tbody></table>
 
-# 附录B :模式表
+## 附录B :模式表
 
 <table><thead><tr style=background:PaleTurquoise><th>指令符</th><th>指令符</th></tr></thead><tbody><tr><td>0x01</td><td>电流模式</td></tr><tr><td>0x02</td><td>速度模式</td></tr><tr><td>0x03</td><td>位置模式</td></tr><tr><td>0x06</td><td>位置梯形模式（S曲线）</td></tr><tr><td>0x07</td><td>速度梯形模式（S曲线）</td></tr><tr><td>0x08</td><td>homing模式</td></tr></tbody></table>
 
-# 附录C：报警指令表
+## 附录C：报警指令表
 
 <table><thead><tr style=background:PaleTurquoise><th>指令符</th><th>指令符</th></tr></thead><tbody><tr><td>0x0001</td><td>过压异常</td></tr><tr><td>0x0002</td><td>欠压异常</td></tr><tr><td>0x0004</td><td>堵转异常</td></tr><tr><td>0x0008</td><td>过热异常</td></tr><tr><td>0x0010</td><td>读写参数异常</td></tr><tr><td>0x0020</td><td>多圈计数异常</td></tr><tr><td>0x0040</td><td>逆变器温度传感器异常</td></tr><tr><td>0x0080</td><td>CAN通信异常</td></tr><tr><td>0x0100</td><td>电机温度传感器异常</td></tr><tr><td>0x0200</td><td>位置模式阶跃大于1</td></tr><tr><td>0x0400</td><td>DRV保护</td></tr><tr><td>其他</td><td>设备异常</td></tr><tr><td>注释</td><td>可同时报警多个错误，如返回数据为0005，<br>则错误为0001过压异常与0004堵转异常</td></tr></tbody></table>
 
-# 附录D：型号表
+## 附录D：型号表
 
 <table><thead><tr style=background:PaleTurquoise><th>执行器型号</th><th>电流满量程</th><th>电机端速度满量程</th><th>输出端速度满量程</th></tr></thead><tbody><tr><td>QDD Pro-6010-50</td><td>33A</td><td>6000RPM</td><td>120RPM</td></tr><tr><td>QDD-6010-6</td><td>33A</td><td>6000RPM</td><td>1000RPM</td></tr><tr><td>QDD-6010-36</td><td>33A</td><td>6000RPM</td><td>166.7RPM</td></tr><tr><td>DD-6010</td><td>33A</td><td>6000RPM</td><td>6000RPM</td></tr><tr><td>QDD Pro-3510-50</td><td>16.5A</td><td>6000RPM</td><td>120RPM</td></tr><tr><td>QDD-3510-6</td><td>16.5A</td><td>6000RPM</td><td>1000RPM</td></tr><tr><td>QDD-3510-36</td><td>16.5A</td><td>6000RPM</td><td>166.7RPM</td></tr><tr><td>DD-3510</td><td>16.5A</td><td>6000RPM</td><td>6000RPM</td></tr></tbody></table>
 
 *   输出端速度不同是因为个别型号执行器内置减速器，使输出的最大转速降低，提高扭矩。IQ换算时按照电机端速度满量程的值计算。
 
-# 附录E:指令发送与IQ值换算方法
+## 附录E:指令发送与IQ值换算方法
 *   说明书的注释部分表明：在位置模式中，IQ值即为实际值，即实际值的范围为-128~127. 999999940。这时只需要将对应的位置值转换成IQ值即可输入到参数内容中。在速度和电流模式中，转换IQ值之前需要将对应的参数值进行换算，如设定当前速度值为100RPM，则需要将设定的当前值除以最大值，即100/6000=0.01666666，然后再将0.016666666进行IQ换算，得到的值即为参数值。
 *   例如我们要设定当前的位置为60R（注意位置模式中阶跃响应的限制，若设定位置与当前位置差值超过1R则不响应），先寻找对应的指令。附录中A中第三类写入命令（写入命令3）表明，设定当前位置值的指令为0x0A。找到指令后寻找指令的对应发送格式，在“CAN通信协议命令参考”中3.3.2.3小节对应第三类写入指令，发送数据长度为5，即一个字节的指令+4个字节的参数内容。数据内容应用IQ24格式，则直接对60进行IQ换算，即60*2^24= 1006632960，再统一转换为16进制（根据测试软件需要），3C 00 00 00。根据CAN总线的数据帧格式说明，指令参数要在最高位，参数内容在后，则我们发送的指令内容 为0x 0A 3C 00 00 00，这也对应了说明中的数据长度为5（字节）。到此指令发送完毕。
 *   相应地，若要发送电流或者速度模式的设定值，需要先将参数值进行换算（各自除以对应的最大值），得到一个-1~1范围内的数，再进行IQ换算即可。发送命令的步骤与方法与位置模式相同，需要注意的是每个指令使用的数据格式，若为IQ8格式，则将公式中2^24改为2^8后再进行换算即可。
 
-# 附录F:版本变更记录
+## 附录F:版本变更记录
 
 <table><thead><tr style=background:PaleTurquoise><th>版本号</th><th>更新时间</th><th>更改类型</th><th>位置</th><th>更新内容</th></tr></thead><tbody><tr><td>V1.0.4</td><td>18.12.14</td><td>增加</td><td>附录E</td><td>指令发送与IQ值换算方法</td></tr><tr><td rowspan="4">V1.0.3</td><td rowspan="4">18.03.19</td><td>增加</td><td>第三章通信协议</td><td>较上一版本多加了更多的执行器参数信息指令，执行器的温度信息指令，查询上次关机状态指令，Homing指令。</td></tr><tr><td>增加</td><td>第三章通信协议</td><td>增加了储存参数指令</td></tr><tr><td>修改</td><td>第三章通信协议</td><td>修改了第三章全章的排版</td></tr><tr><td>增加</td><td>第三章通信协议</td><td>增加了储存参数指令</td></tr><tr><td rowspan="2">V1.0.2</td><td rowspan="2">18.01.30</td><td>修改</td><td>全文</td><td>微伺服更名为INNFOS执行器</td></tr><tr><td>增加</td><td>第三章通信协议</td><td>较上一版本多加了报警指令</td></tr><tr><td>V1.0.1</td><td>17.12.29</td><td>修改</td><td>第三章通讯协议</td><td>更新了通信协议的数据长度，数据长度较之前加1</td></tr><tr><td rowspan="2">V1.0.0</td><td rowspan="2">17.12.15</td><td>修改</td><td>第二章通配线</td><td>更新了CAN接口定义</td></tr><tr><td>增加</td><td>第三章通信协议</td><td>增加了开关机指令</td></tr></tbody></table>
 
