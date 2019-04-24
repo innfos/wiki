@@ -9,7 +9,7 @@ INNFOS SCA (Smart Compliant Actuator) is totally self-developed by INNFOS and it
 
 <img src="../img/About 1.png" style="width:400px">
 <img src="../img/About 2.png" style="width:400px">
-<img src="../img/About 2.png" style="width:400px">
+<img src="../img/About 3.png" style="width:400px">
 
 
 ## Contact
