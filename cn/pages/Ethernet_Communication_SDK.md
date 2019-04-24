@@ -15,7 +15,7 @@
 *   访问该链接[download link](https://github.com/innfos/ActuatorController_SDK.git)下载SDK相关文件或者直接执行以下命令
 
 ```sh
-    $ git clone https://github.com/innfos/ActuatorController_SDK.git
+$ git clone https://github.com/innfos/ActuatorController_SDK.git
 ```
     
 ## API相关文档
@@ -60,7 +60,7 @@ $ make
 *   打开终端并进入bin目录，输入命令
 
 ```sh
-	$./lookupActuators -e
+$./lookupActuators -e
 ```
 *   此窗口会显示当前已连接的执行器数量，可以ctrl+c结束程序
 
