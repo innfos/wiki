@@ -15,7 +15,7 @@ INNFOS SCA (Smart Compliant Actuator) is totally self-developed by INNFOS and it
 ## Contact
 
 <table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th></th></tr></thead><tbody>
+<thead><tr class="tableizer-firstrow"><tbody>
  <tr><td>Tell</td><td>+86-010-5397-6638/+86-010-5397-6640</td></tr>
  <tr><td>Address</td><td>2nd Floor, Building 3, Zhongguancun Emerging Industry Frontier Technology Research Institute, No. 85 Hongan Road, Doudian, Fangshan District, Beijing, China</td></tr>
  <tr><td>&nbsp;</td></tr>
