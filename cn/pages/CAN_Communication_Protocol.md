@@ -6,10 +6,8 @@
 
 * CAN 是Controller Area Network 的缩写（以下称为CAN），是ISO国际标准化的串行通信协议。
 
-
-<table class="tableizer-table"><th  colspan="2" style=background:PaleTurquoise>
-<thead><tr class="tableizer-firstrow"><th></th></tr></thead><tbody>
- <tr><td>表1-1综合性能参数说明</td></tr>
+<table>
+<thead><tr><th colspan="2"style=background:PaleTurquoise>表1-1综合性能参数说明</th></tr></thead><tbody>
  <tr><td>项目</td><td>说明</td></tr>
  <tr><td>链路层协议</td><td>CAN总线</td></tr>
  <tr><td>CAN-ID类型</td><td>11bit-CAN2.0A</td></tr>
@@ -26,6 +24,12 @@
 
 
 **表1-1综合性能参数说明**
+
+
+<table >
+<thead><tr><th colspan="2" style=background:PaleTurquoise>连接状态，用于执行器和CAN的连接状态判断[ConnectStatus]</th></tr></thead><tbody>
+ <tr><td>指令符</td><td>说明</td></tr> <tr><td>NO_CONNECT,</td><td>无连接</td></tr> <tr><td>CAN_CONNECTED=0x02,</td><td>CAN通信连接成功</td></tr> <tr><td>ACTUATOR_CONNECTED=0x04,</td><td>执行器连接成功</td></tr></tbody></table>
+
 
 本通信协议波特率为1Mbit/s，对于CAN通信，不同线的线缆对传输距离影响不大，但是要求线径尽量粗，最大节点数为64，本公司产品采用0.205mm²线径，最大传输距离为25m。
 
@@ -128,9 +132,11 @@ CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰�
 
 *   IQ值换算的具体方法参见附录E。
 
-<table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th>Data Type</th><th>Range</th><th>Resolution/Precision</th></tr></thead><tbody>
- <tr><td>Min</td><td>Max</td></tr>
+
+<table><thead><tr><th rowspan="2" style=background:PaleTurquoise>Data Type</th><th colspan="2" style=background:PaleTurquoise>Range</th>
+<th rowspan="2" style=background:PaleTurquoise>Resolution/Precision</th></tr>
+<tr> <td>Min</td> <td>Max</td> </tr>
+</thead><tbody>
  <tr><td>_iq30</td><td>-2</td><td>1.999 999 999</td><td>0.000 000 001</td></tr>
  <tr><td>_iq29</td><td>-4</td><td>3.999 999 998</td><td>0.000 000 002</td></tr>
  <tr><td>_iq28</td><td>-8</td><td>7.999 999 996</td><td>0.000 000 004</td></tr>
@@ -163,43 +169,48 @@ CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰�
  <tr><td>_iq1</td><td>-1073741824</td><td>1 073741823.500 000 000</td><td>0.500 000 000</td></tr>
 </tbody></table>
 
-
 ## CAN通信协议命令应用举例
 
 **示例1.读命令**
 
-<table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th></th></tr></thead><tbody>
- <tr><td>读取执行器电机ID为0x01的当前速度值</td></tr>
- <tr><td>设备地址</td><td>数据长度</td><td>指令符</td><td>参数内容</td></tr>
- <tr><td>0x01</td><td>0x1</td><td>0x05</td><td>无</td></tr>
+
+<table >
+<thead><tr><th colspan="4"style=background:PaleTurquoise>读取执行器电机ID为0x01的当前速度值</th></tr></thead>
+<tbody>
+<tr><td>设备地址</td><td>数据长度</td><td>指令符</td><td>参数内容</td></tr>
+<tr><td>0x01</td><td>0x1</td><td>0x05</td><td>无</td></tr>
 </tbody></table>
 
 说明：参数内容data[3~0]高位在前，低位在后。为_IQ24格式。_IQ(-1.0)~_IQ(1.0)代表反转速度满量程和正转速度满量程。满量程为6000RPM。若data=_IQ(0.5)。则为0.5*6000=3000RPM。
 
-<table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th>应答命令</th></tr></thead><tbody>
+<table>
+<thead><tr><th colspan="4"style=background:PaleTurquoise>应答命令</th></tr></thead><tbody>
  <tr><td>设备地址</td><td>数据长度</td><td>指令符</td><td>参数内容</td></tr>
  <tr><td>0x01</td><td>0x5</td><td>0x05</td><td>data[3~0]</td></tr>
 </tbody></table>
 
+
 **示例2.写命令**
-
-<table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th></th></tr></thead><tbody>
- <tr><td>设置执行器电机ID为0x01的当前位置值</td></tr>
- <tr><td>设备地址</td><td>数据长度</td><td>指令符</td><td>参数内容</td></tr>
- <tr><td>0x01</td><td>0x5</td><td>0x0A</td><td>0x05 0x00 0x00 0x00</td></tr>
+<table>
+<thead><tr><th colspan="4"style=background:PaleTurquoise>设置执行器电机ID为0x01的当前位置值 </th></tr></thead><tbody>
+<tr><td>设备地址</td><td>数据长度</td><td>指令符</td><td>参数内容</td></tr>
+<tr><td>0x01</td><td>0x5</td><td>0x0A</td><td>0x05 0x00 0x00 0x00</td></tr>
 </tbody></table>
-
 
 说明：参数内容data[3~0]高位在前，低位在后。为_IQ24格式。_IQ(-128.0)~_IQ(127.999999940)代表反向位置值满量程和正向位置值满量程。若data=_IQ(5.0),则设置当前位置为5。
 
-<table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th>应答命令</th></tr></thead><tbody>
- <tr><td>设 备 地 址</td><td>数据长度</td><td>指令符</td><td>参数内容</td></tr>
- <tr><td>0x01</td><td>0x00</td><td>无</td><td>无</td></tr>
+<table>
+<thead><tr><th colspan="4"style=background:PaleTurquoise>应答命令</th></tr></thead>
+<tbody>
+<tr><td>设 备 地 址</td><td>数据长度</td><td>指令符</td><td>参数内容</td></tr>
+<tr><td>0x01</td><td>0x00</td><td>无</td><td>无</td></tr>
 </tbody></table>
+
+<table>
+<thead>
+<tr><th colspan="3"style=background:PaleTurquoise>3.3.1.1 发送数据1字节， 返回数据2字节</th></tr>
+<tr><td>命令名称</td><td colspan="2">读取命令</td></tr>
+</thead>
 
 * * *
 
@@ -231,69 +242,73 @@ CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰�
 
 ### 读取命令
 
-<table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th>3.3.1.1 发送数据1字节， 返回数据2字节</th></tr></thead><tbody>
+<table>
+<thead><tr><th colspan="2"style=background:PaleTurquoise>3.3.1.3 发送数据1字节，返回数据5字节</th></tr></thead><tbody>
  <tr><td>命令名称</td><td>读取命令</td></tr>
- <tr><td>说明</td><td>此命令类发送数据长度为1，返回数据长度为2</td></tr>
- <tr><td>指令符</td><td>见读取指令1</td></tr>
- <tr><td>数据长度</td><td>1</td></tr>
- <tr><td>数据内容</td><td>无</td></tr>
- <tr><td>指令符（返回值）</td><td>见读取指令1</td></tr>
- <tr><td>数据长度 (返回值)</td><td>2</td></tr>
- <tr><td>下位机返回数据</td><td>0x01：成功/使能/开机/正常</td><td>模式查询返回数据见模式表</td></tr>
- <tr><td>0x00：失败/失能/关机/异常</td></tr>
+ <tr><td>说明</td><td>此命令类发送数据长度为1，返回数据长度为5，读取执行器参数值，高位在前。数值为真实值的2^24倍。（一条特殊指令指令表内已特殊标注）</td></tr>
+<tr><td>指令符</td><td>见读取指令3</td></tr>
+<tr><td>数据长度</td><td>1</td></tr>
+<tr><td>数据内容</td><td>无</td></tr>
+<tr><td>指令符（返回值）</td><td>见读取指令3</td></tr>
+<tr><td>数据长度 (返回值)</td><td>5</td></tr>
+<tr><td>下位机返回数据</td><td>数据为IQ24格式。(一条特殊指令指令表内已特殊标注)）</td></tr>
 </tbody></table>
+
 
 
 **3.3.2.1发送数据2字节，返回数据2字节**
 
-<table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th>3.3.1.2 发送数据1字节，返回数据3字节</th></tr></thead><tbody>
- <tr><td>命令名称</td><td>读取命令</td></tr>
- <tr><td>说明</td><td>此命令类发送数据长度为1，返回数据长度为3，读取执行器参数值，高位在前。</td></tr>
- <tr><td>数值为真实值的2^8倍。（一条特殊指令指令表内已特殊标注）</td></tr>
- <tr><td>指令符</td><td>见读取指令2</td></tr>
- <tr><td>数据长度</td><td>1</td></tr>
- <tr><td>数据内容</td><td>无</td></tr>
- <tr><td>指令符（返回值）</td><td>见读取指令2</td></tr>
- <tr><td>数据长度 (返回值)</td><td>3</td></tr>
- <tr><td>下位机返回数据</td><td>数据为IQ8格式</td><td>或见报警指令表</td></tr>
+<table>
+<thead><tr><th colspan="3"style=background:PaleTurquoise>3.3.1.2 发送数据1字节，返回数据3字节</th></tr></thead>
+<tbody>
+<tr><td>命令名称</td><td colspan="2">读取命令</td></tr>
+<tr><td>说明</td><td colspan="2">此命令类发送数据长度为1，返回数据长度为3，读取执行器参数值，高位在前。数值为真实值的2^8倍。（一条特殊指令指令表内已特殊标注）</td></tr>
+<tr><td>指令符</td><td colspan="2">见读取指令2</td></tr>
+<tr><td>数据长度</td><td colspan="2">1</td></tr>
+<tr><td>数据内容</td><td colspan="2">无</td></tr>
+<tr><td>指令符（返回值）</td><td colspan="2">见读取指令2</td></tr>
+<tr><td>数据长度 (返回值)</td><td colspan="2">3</td></tr>
+<tr><td>下位机返回数据</td><td>数据为IQ8格式</td><td>或见报警指令表</td></tr>
 </tbody></table>
-
 
 **3.3.2.2发送数据3字节，返回数据2字节**
 
-<table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th>3.3.1.3 发送数据1字节，返回数据5字节</th></tr></thead><tbody>
- <tr><td>命令名称</td><td>读取命令</td></tr>
- <tr><td>说明</td><td>此命令类发送数据长度为1，返回数据长度为5，读取执行器参数值，高位在前。</td></tr>
- <tr><td>数值为真实值的2^24倍。（一条特殊指令指令表内已特殊标注）</td></tr>
- <tr><td>指令符</td><td>见读取指令3</td></tr>
- <tr><td>数据长度</td><td>1</td></tr>
- <tr><td>数据内容</td><td>无</td></tr>
- <tr><td>指令符（返回值）</td><td>见读取指令3</td></tr>
- <tr><td>数据长度 (返回值)</td><td>5</td></tr>
- <tr><td>下位机返回数据</td><td>数据为IQ24格式。(一条特殊指令指令表内已特殊标注)）</td></tr>
+
+<table>
+<thead><tr><th colspan="3"style=background:PaleTurquoise>3.3.2.1发送数据2字节，返回数据2字节</th></tr></thead>
+<tbody>
+tr><td>命令名称</td><td colspan="2">写入命令</td></tr>
+<tr><td>说明</td><td colspan="2">此命令类发送数据长度为2，返回数据长度为2，发送数据后一个字节表示要写入参数内容。<br>(注：上电后先发送开机指令才能使用，断电前必须先发送关机指令，否则零位可能丢失)</td></tr>
+ <tr><td>指令符</td><td colspan="2">见写入指令1</td></tr>
+ <tr><td>数据长度</td><td colspan="2">2</td></tr>
+ <tr><td rowspan="2">数据内容</td><td>0x01：使能/开机</td><td rowspan="2">模式设置见模式表</td></tr> <tr><td>0x00：失能/关机</td></tr>
+<tr><td>指令 (返回值)</td><td colspan="2">见写入指令1</td></tr>
+<tr><td>数据长度(返回值)</td><td colspan="2">2</td></tr>
+<tr><td rowspan="2">下位机返回数据</td><td colspan="2">0x01：成功</td></tr>
+<tr><td colspan="2">0x00：失败</td></tr>
 </tbody></table>
+
+
+<table>
+<thead><tr><th colspan="3"style=background:PaleTurquoise>3.3.2.2发送数据3字节，返回数据2字节</th></tr></thead><tbody>
+ <tr><td>命令名称</td><td>写入命令</td></tr>
+ <tr><td>说明</td><td>此命令类发送数据长度为3字节，返回数据长度为2字节，发送数据后2个字节表示要写入参数内容，高位在前。数值为真实值的2^8倍。</td></tr>
+ <tr><td>指令符</td><td>见写入指令2</td></tr>
+ <tr><td>数据长度</td><td>3</td></tr>
+ <tr><td rowspan="2">数据内容</td><td>数值为IQ8格式</td></tr>
+ <tr><td>0x00：失能/关机</td></tr>
+ <tr><td>指令 (返回值)</td><td>见写入指令2</td></tr>
+ <tr><td>数据长度(返回值)</td><td>2</td></tr>
+ <tr><td rowspan="2">下位机返回数据</td><td>0x01：成功</td></tr>
+ <tr><td>0x00：失败</td></tr>
+</tbody></table>
+
+
+
+
 
 
 **3.3.2.3发送数据5字节，返回数据2字节或更少**
-
-<table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th>3.3.2.1发送数据2字节，返回数据2字节</th></tr></thead><tbody>
- <tr><td>命令名称</td><td>写入命令</td></tr>
- <tr><td>说明</td><td>此命令类发送数据长度为2，返回数据长度为2，发送数据后一个字节表示要</td></tr>
- <tr><td>写入参数内容。(注：上电后先发送开机指令才能使用，断电前必须先发送关机指</td></tr>
- <tr><td>令，否则零位可能丢失)</td></tr>
- <tr><td>指令符</td><td>见写入指令1</td></tr>
- <tr><td>数据长度</td><td>2</td></tr>
- <tr><td>数据内容</td><td>0x01：使能/开机</td><td>模式设置见模式表</td></tr>
- <tr><td>0x00：失能/关机</td></tr>
- <tr><td>指令 (返回值)</td><td>见写入指令1</td></tr>
- <tr><td>数据长度(返回值)</td><td>2</td></tr>
- <tr><td>下位机返回数据</td><td>0x01：成功</td></tr>
- <tr><td>0x00：失败</td></tr>
-</tbody></table>
 
 
 **3.3.2.4发送数据1字节，返回数据2字节**
@@ -313,23 +328,22 @@ CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰�
  <tr><td>0x00：失败</td></tr>
 </tbody></table>
 
-<table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th>3.3.2.3发送数据5字节，返回数据2字节或更少</th></tr></thead><tbody>
- <tr><td>命令名称</td><td>写入命令</td></tr>
- <tr><td>说明</td><td>此命令类发送数据长度为5，返回数据长度为2，发送数据后4个字节表示要写入的</td></tr>
- <tr><td>参数内容，数值为真实值的2^24倍。(一条特殊指令指令表内已特殊标注)</td></tr>
- <tr><td>指令符</td><td>见写入指令3</td></tr>
- <tr><td>数据长度</td><td>5</td></tr>
- <tr><td>数据内容</td><td>数据为IQ24格式。(一条特殊指令指令表内已特殊标注)</td></tr>
- <tr><td>指令 (返回值)</td><td>见写入指令3</td></tr>
- <tr><td>数据长度(返回值)</td><td>2或0</td></tr>
- <tr><td>下位机返回数据</td><td>0x01：成功</td><td>(三条特殊指令无返回数据，指令表内已标注)。</td></tr>
+<table>
+<thead><tr><th colspan="3"style=background:PaleTurquoise>3.3.2.3发送数据5字节，返回数据2字节或更少</th></tr></thead>
+<tbody>
+<tr><td>命令名称</td> <td colspan="2">写入命令</td></tr>
+<tr><td>说明</td><td colspan="2">此命令类发送数据长度为5，返回数据长度为2，发送数据后4个字节表示要写入的参数内容，数值为真实值的2^24倍。(一条特殊指令指令表内已特殊标注)</td></tr>
+<tr><td>指令符</td><td colspan="2">见写入指令3</td></tr>
+<tr><td>数据长度</td><td colspan="2">5</td></tr>
+<tr><td>数据内容</td><td colspan="2">数据为IQ24格式。(一条特殊指令指令表内已特殊标注)</td></tr>
+ <tr><td>指令 (返回值)</td><td colspan="2">见写入指令3</td></tr>
+ <tr><td>数据长度(返回值)</td><td colspan="2">2或0</td></tr>
+ <tr><td rowspan="2">下位机返回数据</td><td colspan="2">0x01：成功</td><td rowspan="2">(三条特殊指令无返回数据，指令表内已标注)。</td></tr>
  <tr><td>0x00：失败</td></tr>
 </tbody></table>
 
-
-<table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th>3.3.2.4发送数据1字节，返回数据2字节</th></tr></thead><tbody>
+<table>
+<thead><tr><th colspan="3"style=background:PaleTurquoise>3.3.2.4发送数据1字节，返回数据2字节</th></tr></thead><tbody>
  <tr><td>命令名称</td><td>写入命令</td></tr>
  <tr><td>说明</td><td>此命令类发送数据长度为1，返回数据长度为2</td></tr>
  <tr><td>指令符</td><td>见写入指令4</td></tr>
@@ -337,20 +351,18 @@ CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰�
  <tr><td>数据内容</td><td>无</td></tr>
  <tr><td>指令 (返回值)</td><td>见写入指令4</td></tr>
  <tr><td>数据长度(返回值)</td><td>2</td></tr>
- <tr><td>下位机返回数据</td><td>0x01：成功</td></tr>
+ <tr><td rowspan="2">下位机返回数据</td><td>0x01：成功</td></tr>
  <tr><td>0x00：失败</td></tr>
 </tbody></table>
-
 
 # 附录A
 
 ## A.1读取指令编码定义表
 
-<table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th>A.1.1 读取指令1</th></tr></thead><tbody>
+<table>
+<thead><tr><th colspan="3"style=background:PaleTurquoise>A.1.1 读取指令1</th></tr></thead><tbody>
  <tr><td>指令符</td><td>定义</td><td>说明</td></tr>
- <tr><td>0x00 ：</td><td>握手</td><td>上位机发送本指令，下位机响应返回，说明下位机已经准备好与上位机通信，</td></tr>
- <tr><td>也可作为心跳协议，实时查询从机的状态。</td></tr>
+ <tr><td>0x00 ：</td><td>握手</td><td>上位机发送本指令，下位机响应返回，说明下位机已经准备好与上位机通信，也可作为心跳协议，实时查询从机的状态。</td></tr>
  <tr><td>0x55：</td><td>查询执行器当前模式</td><td>读取下位机所管理的执行器的当前的模式。</td></tr>
  <tr><td>0xB0</td><td>查询执行器上次关机状态</td><td>读取执行器的上次关机状态，正常/异常</td></tr>
  <tr><td>0x71：</td><td>电流环滤波器状态</td><td>读取指定ID执行器的电流环滤波器使能/失能</td></tr>
@@ -361,9 +373,8 @@ CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰�
 
 **<span id="A.1.1 读取指令1"></span>A.1.1 读取指令1**
 
-
-<table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th>A.1.2 读取指令2</th></tr></thead><tbody>
+<table>
+<thead><tr><th colspan="3"style=background:PaleTurquoise>A.1.2 读取指令2</th></tr></thead><tbody>
  <tr><td>指令符</td><td>定义</td><td>说明</td></tr>
  <tr><td>0x73：</td><td>电流环滤波器的带宽</td><td>读取指定ID执行器电流环滤波器的带宽(Hz)</td></tr>
  <tr><td>0x77：</td><td>速度环滤波器的带宽</td><td>读取指定ID执行器速度环滤波器的带宽(Hz)</td></tr>
@@ -375,16 +386,13 @@ CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰�
  <tr><td>0xFF</td><td>报警指令(特殊指令)</td><td>下位机的报警信息</td></tr>
 </tbody></table>
 
-
 **<span id="A.1.1 读取指令2"></span>A.1.2 读取指令2**
 
-<table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th>A.1.3 读取指令3</th></tr></thead><tbody>
+<table>
+<thead><tr><th colspan="3" style=background:PaleTurquoise>A.1.3 读取指令3</th></tr></thead><tbody>
  <tr><td>指令符</td><td>定义</td><td>说明</td></tr>
- <tr><td>0x04：</td><td>当前电流值</td><td>读取指定ID执行器的当前电流值，电流真实值需要乘以电流满量程（见附录D</td></tr>
- <tr><td>），单位为A</td></tr>
- <tr><td>0x05：</td><td>当前速度值</td><td>读取指定ID执行器的当前速度值，速度真实值需要乘以速度满量程（见附录D</td></tr>
- <tr><td>），单位为RPM</td></tr>
+ <tr><td>0x04：</td><td>当前电流值</td><td>读取指定ID执行器的当前电流值，电流真实值需要乘以电流满量程（见附录D），单位为A</td></tr>
+ <tr><td>0x05：</td><td>当前速度值</td><td>读取指定ID执行器的当前速度值，速度真实值需要乘以速度满量程（见附录D），单位为RPM</td></tr>
  <tr><td>0x06：</td><td>当前位置值</td><td>读取指定ID执行器的当前位置值，单位为R</td></tr>
  <tr><td>0x15：</td><td>电流环的P</td><td>读取指定ID执行器的当前电流环的P</td></tr>
  <tr><td>0x16：</td><td>电流环的I</td><td>读取指定ID执行器的当前电流环的I</td></tr>
@@ -410,17 +418,20 @@ CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰�
  <tr><td>0x8A：</td><td>执行器位置偏置位置</td><td>读取指定ID执行器的位置偏置值</td></tr>
  <tr><td>0x92：</td><td>执行器自动归零时电流的下限</td><td>读取指定ID执行器自动归零时电流的下限</td></tr>
  <tr><td>0x93：</td><td>执行器自动归零时电流的上限</td><td>读取指定ID执行器自动归零是电流的上限</td></tr>
- <tr><td>0x7F：</td><td>堵转能量</td><td>读取指定ID执行器的堵转能量。 （数值为真实值的75.225倍）堵转后发热能量，</td></tr>
- <tr><td>单位为J。</td></tr>
+ <tr><td>0x7F：</td><td>堵转能量</td><td>读取指定ID执行器的堵转能量。 （数值为真实值的75.225倍）堵转后发热能量，单位为J。</td></tr>
 </tbody></table>
+
+
+
+
 
 **<span id="A.1.3 读取指令3"></span>A.1.3 读取指令3**
 
 
 ## **A.2 写入命令编码值定义表**
 
-<table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th>A.2.1写入指令1</th></tr></thead><tbody>
+<table>
+<thead><tr><th colspan="3" style=background:PaleTurquoise>A.2.1写入指令1</th></tr></thead><tbody>
  <tr><td>指令符</td><td>定义</td><td>说明</td></tr>
  <tr><td>0x07：</td><td>设置指定ID执行器的模式</td><td>设置指定ID执行器的当前的模式。</td></tr>
  <tr><td>0x70：</td><td>电流环滤波器状态</td><td>设置指定ID执行器的电流环滤波器使能/失能</td></tr>
@@ -429,11 +440,10 @@ CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰�
  <tr><td>0x2A：</td><td>执行器的开关机状态</td><td>设置指定ID执行器开机/关机</td></tr>
 </tbody></table>
 
-
 **A.2.1写入指令1**
 
-<table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th>A.2.2写入指令2</th></tr></thead><tbody>
+<table>
+<thead><tr><th colspan="3" style=background:PaleTurquoise>A.2.2写入指令2</th></tr></thead><tbody>
  <tr><td>指令符</td><td>定义</td><td>说明</td></tr>
  <tr><td>0x72：</td><td>电流环滤波器的带宽</td><td>设置指定ID执行器电流环滤波器的带宽(Hz)</td></tr>
  <tr><td>0x76：</td><td>速度环滤波器的带宽</td><td>设置指定ID执行器速度环滤波器的带宽(Hz)</td></tr>
@@ -442,11 +452,10 @@ CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰�
  <tr><td>0x63：</td><td>执行器的恢复温度</td><td>设置指定ID执行器的恢复温度℃</td></tr>
 </tbody></table>
 
-
 **A.2.2写入指令2**
 
-<table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th>A.2.3写入指令3</th></tr></thead><tbody>
+<table>
+<thead><tr><th colspan="3" style=background:PaleTurquoise>A.2.3写入指令3</th></tr></thead><tbody>
  <tr><td>指令符</td><td>定义</td><td>说明</td></tr>
  <tr><td>0x08：</td><td>当前电流值</td><td>设置指定ID执行器的当前电流值。 (注：无返回数据)</td></tr>
  <tr><td>0x09：</td><td>当前速度值</td><td>设置指定ID执行器的当前速度值。 (注：无返回数据)</td></tr>
@@ -478,10 +487,12 @@ CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰�
  <tr><td>0x7E：</td><td>堵转能量</td><td>设置指定ID执行器的堵转能量。 (数值为真实值的75.225倍)堵转后发热能量，单位为J</td></tr>
 </tbody></table>
 
+
+
 **A.2.3写入指令3**
 
-<table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th>A.2.4写入指令4</th></tr></thead><tbody>
+<table>
+<thead><tr><th colspan="3" style=background:PaleTurquoise>A.2.4写入指令4</th></tr></thead><tbody>
  <tr><td>指令符</td><td>定义</td><td>说明</td></tr>
  <tr><td>0xFE：</td><td>消除下位机的报警</td><td>消除下位机的报警动作，接收到命令后，下位机停止报警，否则下位机不可操作</td></tr>
  <tr><td>0x88</td><td>清除Homing数据</td><td>清除Homing数据</td></tr>
@@ -492,8 +503,8 @@ CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰�
 
 # 附录B :模式表
 
-<table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th>指令符</th><th>指令符</th></tr></thead><tbody>
+<table>
+<thead><tr  style=background:PaleTurquoise><th>指令符</th><th>指令符</th></tr></thead><tbody>
  <tr><td>0x01</td><td>电流模式</td></tr>
  <tr><td>0x02</td><td>速度模式</td></tr>
  <tr><td>0x03</td><td>位置模式</td></tr>
@@ -502,11 +513,10 @@ CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰�
  <tr><td>0x08</td><td>homing模式</td></tr>
 </tbody></table>
 
-
 # 附录C：报警指令表
 
-<table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th>指令符</th><th>指令符</th></tr></thead><tbody>
+<table>
+<thead><tr style=background:PaleTurquoise><th>指令符</th><th>指令符</th></tr></thead><tbody>
  <tr><td>0x0001</td><td>过压异常</td></tr>
  <tr><td>0x0002</td><td>欠压异常</td></tr>
  <tr><td>0x0004</td><td>堵转异常</td></tr>
@@ -519,22 +529,18 @@ CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰�
  <tr><td>0x0200</td><td>位置模式阶跃大于1</td></tr>
  <tr><td>0x0400</td><td>DRV保护</td></tr>
  <tr><td>其他</td><td>设备异常</td></tr>
- <tr><td>注释</td><td>可同时报警多个错误，如返回数据为0005，</td></tr>
- <tr><td>则错误为0001过压异常与0004堵转异常</td></tr>
+ <tr><td>注释</td><td>可同时报警多个错误，如返回数据为0005，<br>则错误为0001过压异常与0004堵转异常</td></tr>
 </tbody></table>
 
-
 **指令符**
-
-
 
 **指令符**
 
 # 附录D：型号表
 
-
-<table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th>执行器型号</th><th>电流满量程</th><th>电机端速度满量程</th><th>输出端速度满量程</th></tr></thead><tbody>
+<table>
+<thead><tr>
+<thead><tr style=background:PaleTurquoise><th>执行器型号</th><th>电流满量程</th><th>电机端速度满量程</th><th>输出端速度满量程</th></tr></thead><tbody>
  <tr><td>QDD Pro-6010-50</td><td>33A</td><td>6000RPM</td><td>120RPM</td></tr>
  <tr><td>QDD-6010-6</td><td>33A</td><td>6000RPM</td><td>1000RPM</td></tr>
  <tr><td>QDD-6010-36</td><td>33A</td><td>6000RPM</td><td>166.7RPM</td></tr>
@@ -543,7 +549,7 @@ CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰�
  <tr><td>QDD-3510-6</td><td>16.5A</td><td>6000RPM</td><td>1000RPM</td></tr>
  <tr><td>QDD-3510-36</td><td>16.5A</td><td>6000RPM</td><td>166.7RPM</td></tr>
  <tr><td>DD-3510</td><td>16.5A</td><td>6000RPM</td><td>6000RPM</td></tr>
-</tbody></table>
+ </tbody></table>
 
 *   输出端速度不同是因为个别型号执行器内置减速器，使输出的最大转速降低，提高扭矩。IQ换算时按照电机端速度满量程的值计算。
 
@@ -557,23 +563,19 @@ CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰�
 
 **下表简单描述了版本变更记录**
 
-<table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th>版本号</th><th>更新时间</th><th>更改类型</th><th>位置</th><th>更新内容</th></tr></thead><tbody>
+<table>
+<thead><tr style=background:PaleTurquoise ><th>版本号</th><th>更新时间</th><th>更改类型</th><th>位置</th><th>更新内容</th></tr></thead><tbody>
  <tr><td>V1.0.4</td><td>18.12.14</td><td>增加</td><td>附录E</td><td>指令发送与IQ值换算方法</td></tr>
- <tr><td>V1.0.3</td><td>18.03.19</td><td>增加</td><td>第三章通信协议</td><td>较上一版本多加了更多的执行器参数信息指令，执行器的温度信息指令，</td></tr>
- <tr><td>&nbsp;</td></tr>
- <tr><td>查询上次关机状态指令，Homing指令。</td></tr>
- <tr><td>&nbsp;</td></tr>
+ <tr><td rowspan="4">V1.0.3</td><td rowspan="4">18.03.19</td><td>增加</td><td>第三章通信协议</td><td>较上一版本多加了更多的执行器参数信息指令，执行器的温度信息指令，查询上次关机状态指令，Homing指令。</td></tr>
+
  <tr><td>增加</td><td>第三章通信协议</td><td>增加了储存参数指令</td></tr>
  <tr><td>修改</td><td>第三章通信协议</td><td>修改了第三章全章的排版</td></tr>
  <tr><td>增加</td><td>第三章通信协议</td><td>增加了储存参数指令</td></tr>
- <tr><td>V1.0.2</td><td>18.01.30</td><td>修改</td><td>全文</td><td>微伺服更名为INNFOS执行器</td></tr>
+ <tr><td rowspan="2">V1.0.2</td><td rowspan="2">18.01.30</td><td>修改</td><td>全文</td><td>微伺服更名为INNFOS执行器</td></tr>
  <tr><td>增加</td><td>第三章通信协议</td><td>较上一版本多加了报警指令</td></tr>
  <tr><td>V1.0.1</td><td>17.12.29</td><td>修改</td><td>第三章通讯协议</td><td>更新了通信协议的数据长度，数据长度较之前加1</td></tr>
- <tr><td>V1.0.0</td><td>17.12.15</td><td>修改</td><td>第二章通配线</td><td>更新了CAN接口定义</td></tr>
+ <tr><td rowspan="2">V1.0.0</td><td rowspan="2">17.12.15</td><td>修改</td><td>第二章通配线</td><td>更新了CAN接口定义</td></tr>
  <tr><td>增加</td><td>第三章通信协议</td><td>增加了开关机指令</td></tr>
 </tbody></table>
-
-
 
 **版本号**
