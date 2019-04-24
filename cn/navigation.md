@@ -8,7 +8,7 @@
 
 [Release notes](gimmicks2.md)
 
-[关于INNFOS](gimmicks3.md)
+[关于INNFOS](#!pages/about.md)
 
 [联系](gimmicks4.md)
 
