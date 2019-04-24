@@ -8,13 +8,13 @@ INNFOS研发团队多年来一直专注于高性能机器人的新型执行器�
 
 INNFOS自主研发的SCA智能柔性执行器系列，核心技术已经达到国际卓越水平，其高度集成、柔性控制、总线结构、大扭矩输出、易使用性和低成本等特点，完全符合机器人发展趋势，是大多数机器人最核心的运动关节执行器。
 
-<img src="../img/About 1.png" style="width:400px">
+<img src="../img/About 1.png" >
 
 
-<img src="../img/About 02.png" style="width:400px">
+<img src="../img/About 02.png">
 
 
-<img src="../img/About 03.png" style="width:400px">
+<img src="../img/About 03.png">
 
 
 ## 联系方式
