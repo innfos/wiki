@@ -6,7 +6,6 @@
 
 ![shouyesca1.png](../img/shouyesca1.png)
 
-> Innfos SCA.
 
 
 ## INNFOS SCA
