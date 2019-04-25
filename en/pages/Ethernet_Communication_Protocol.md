@@ -76,173 +76,183 @@ The user layer defines the command interface for the slave to communicate with t
 
 **Example 1. Read command**
 
-<table><tr><th colspan="6">读取执行器ID为0x01的当前速度值</th></tr><tr><td >帧头</td><td >设备地址</td><td >指令符</td><td >数据长度（2字节）</td><td >参数内容</td><td >帧尾</td></tr><tr><td >0xEE</td><td >0x01</td><td >0x5</td><td >0x00 0x00</td><td >无</td><td >0xED</td></tr></table>
+<table><tr><th colspan="6">Read the current speed value with actuator ID 0x01</th></tr><tr><td >Frame header</td><td >Device address</td><td >command byte</td><td >Data length (2 bytes）</td><td >Parameter </td><td >End of frame</td></tr><tr><td >0xEE</td><td >0x01</td><td >0x5</td><td >0x00 0x00</td><td >none</td><td >0xED</td></tr></table>
 
-帧头 ：0xEE = 协议头
+Frame header: 0xEE = Protocol header
 
-设备地址：0x01 = 读取的对象ID
+Device address: 0x01 = Read ID 
 
-指 令 符：0x05 = 读取的当前速度指令
+Command character: 0x05 = Read current speed command 
 
-数据长度：0x0 = 数据长度
+Data length: 0x0 = Data length 
 
-参数内容：无 = 发送的参数内容
+Parameter content: None = Sent parameter
 
-帧尾 ：0xED = 协议尾
+End of frame: 0xED = Protocol Tail 
 
-发送内容：0x05
+Send content: 0x05
 
-
-<table class="tableizer-table">
-<tbody><tr><td  colspan="7"style=background:PaleTurquoise>应答命令</td></tr><tr><td>帧头</td><td>设备地址</td><td>指令符</td><td>数据长度（2字节）</td><td>参数内容</td><td>CRC校验</td><td>帧尾</td></tr><tr><td>0xEE</td><td>0x01</td><td>0x5</td><td>0x00 0x04</td><td>4字节数据</td><td>2字节数据</td><td>0xED</td></tr></tbody></table>
-
-帧头 ：0xEE = 协议头
-
-设备地址：0x01 = 读取的对象ID
-
-指 令 符：0x05 = 读取的当前速度指令
-
-数据长度：0x04 = 数据长度
-
-参数内容：四字节速度数据 = 发送的参数内容
-
-校验位 ：两字节数据 = 校验位
-
-帧尾 ：0xED = 协议尾
-
-应 答 内 容 ：0x05 0xXX 0xXX 0xXX 0xXX
-
-说明：参数内容data\[0\~3\]高位在前，低位在后。为_IQ24格式。_IQ(-1.0)\~_IQ(1.0)代表反转速度满量程和正转速度满量程。满量程为
-
-6000RPM。若data=_IQ(0.5)。则为0.5*6000=3000RPM。
-
-**示例2.写命令**
 
 <table class="tableizer-table">
-<thead ><tr class="tableizer-firstrow"><th  colspan="7" style=background:PaleTurquoise>设置执行器ID为0x01的电流环的比例P（设置值为5）</th></tr></thead><tbody><tr><td>帧头</td><td>设备地址</td><td>指令符</td><td>数据长度</td><td>参数内容</td><td>CRC校验</td><td>帧尾</td></tr> <tr><td>0xEE</td><td>0x01</td><td>0x0E</td><td>0x4</td><td>0x05 0x00 0x00 0x00</td><td>2字节数据</td><td>0xED</td></tr></tbody></table>
+<tbody><tr><td  colspan="7"style=background:PaleTurquoise>Answer command</td></tr><tr><td>Frame header</td><td>Device address</td><td>command byte</td><td>Data length (2 bytes)</td><td>Parameter</td><td>CRC codecheck</td><td>End of frame</td></tr><tr><td>0xEE</td><td>0x01</td><td>0x5</td><td>0x00 0x04</td><td>Data length (4 bytes)</td><td>Data length (2 bytes)</td><td>0xED</td></tr></tbody></table>
 
-帧头 ：0xEE = 协议头
+Frame header: 0xEE = Protocol header 
 
-设备地址：0x01 = 设置对象ID
+Device address: 0x01 = Read object ID 
 
-数据长度：0x4 = 数据长度
+Command character: 0x05 = Current speed command read
 
-指 令 符：0x0E = 设置的位置
+Data length: 0x04 = Data length 
 
-参数内容：0x05 0x00 0x00 0x00 = 发送的参数内容
+Parameter content: Four-byte speed data = Transmitted parameter 
 
-校验位 ：两字节数据 = 校验位
+Check Bit: Two bytes of data = check digit 
 
-帧尾 ：0xED = 协议尾
+End of frame: 0xED = Protocol tail
 
-发送内容：0x0E 0x05 0x00 0x00 0x00
+Response content: 0x05 0xXX 0xXX 0xXX 0xXX 
 
-说明：参数内容data\[0\~3\]高位在前，低位在后。为_IQ24格式。_IQ(-128.0)\~_IQ(127.999999940)代表反向位置值满量程和正向位置值满量程。若data=_IQ(5.0),则比例为5。
+Description: The high parameter data [0~3] is put in front followed by lower data in _IQ24 format. _IQ(-1.0)~_IQ(1.0) represents the reverse speed full scale and forward speed full scale. The full scale is 6000RPM. If data = _IQ (0.5),then it is 0.5*6000=3000RPM.
+
+**Example 2. Write command**
 
 <table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th colspan="7" style=background:PaleTurquoise>应答命令</th></tr></thead><tbody><tr><td>帧头</td><td>设备地址</td><td>指令符</td><td>数据长度</td><td>参数内容</td><td>帧尾</td></tr><tr><td>0xEE</td><td>0x01</td><td>0x0E</td><td>0x1</td><td>0x01</td><td>0xED</td></tr></tbody></table>
+<thead ><tr class="tableizer-firstrow"><th  colspan="7" style=background:PaleTurquoise>Set the ratio P of the current loop with actuator ID 0x01 (set value is 5）</th></tr></thead><tbody><tr><th>Frame header</th><th>Device address</th><th>command byte</th><th>Data length</th><th>parameter</th><th>CRC codecheck</th><th>End of frame</th></tr><tr><td>0xEE</td><td>0x01</td><td>0x0E</td><td>0x4</td><td>0x05 0x00 0x00 0x00</td><td>2 bytes</td><td>0xED</td></tr></tbody></table>
 
-帧头 ：0xEE = 协议头
+Frame header: 0xEE = Protocol header 
 
-返回设备地址：0x01 = 应答对象ID
+Device address: 0x01 = Set object ID 
 
-数 据 长 度 ：0x1 = 应答的数据长度
+Data length: 0x4 = Data length
 
-指 令 符 ：0x0E = 应答设置当前位置指令（与发送对应）
+Command character: 0x0E = Position set 
 
-参 数 内 容 ：0x01 = 应答的参数内容（0x01表示写入成功）
+Parameter content: 0x05 0x00 0x00 0x00 = Sent parameter 
 
-帧尾 ：0xED = 协议尾
+Check bit: Two bytes of data = Check digit
 
-应 答 内 容 ：0x0E 0x01
+End of frame: 0xED = End of protocol
 
-## 发送流程
+Send content: 0x0E 0x05 0x00 0x00 0x00 
 
-### 通信配置
+Description: The high parameter data [0~3] is put in front followed by lower data in _IQ24 format. For the _IQ24 format. _IQ(-128.0)~_IQ(127.999999940) represents the reverse position value full scale and forward position value full scale. If data=_IQ(5.0), the ratio is 5.
 
-以太网通信方式采用udp通信，ECB固定了ip地址，为192.168.1.30(默认)，可以通过相关协议修改该ip地址。PC端需修改网络配置，ip地址修改为192.168.1.xxx，xxx为需大于100，以避免和ECB地址冲突，子网掩码255.255.255.0，默认网关192.168.1.1，配置成功并且连接成功通电以后，可以ping到ECB的ip地址，这样就表示连接成功，通信端口为2000，可以通过该端口与执行器通信。
+<table class="tableizer-table">
+<thead><tr class="tableizer-firstrow"><th colspan="7" style=background:PaleTurquoise>Answer command</th></tr></thead><tbody><tr><th>Frame header</th><th>Device address</th><th>command byte</th><th>Data length</th><th>parameter</th><th>End of frame</th></tr><tr><td>0xEE</td><td>0x01</td><td>0x0E</td><td>0x1</td><td>0x01</td><td>0xED</td></tr></tbody></table>
 
-### 与ECB握手
+Frame header: 0xEE = Protocol header 
 
-使用以太网通信需要先与ECB握手，待ECB成功回复后，发送查询执行器地址指令，成功返回执行器地址指令，才能开始发送指令控制和调节执行器。
+Return device address: 0x01 = Response object ID 
 
-发送指令：
-EE 00 44 00 00 ED
-通信成功会收到返回指令:
-EE 00 44 00 01 01 ED
-如果不知道ECB的ip地址，可通过广播方式发送该协议(即向192.168.1.255发送该协议)，确认ECB的ip地址后，即可通过该ip地址发送其他指令。
+Data length: 0x1 = Data length of the response 
 
-### 查询执行器
+Command character: 0x0E = Acknowledgement setting 
 
-发送指令:
-EE 00 02 00 00 ED
-通信成功会返回所有执行器的ID和mac地址信息，由于要轮询查找执行器，本条指令大约需要0.5s左右才能返回执行器id，如果长时间收不到执行器地址信息，可认为没有执行器成功连接。返回指令实例: 
-EE 06 02 00 04 01 64 5A DF 3B 3F ED
-其中06即为执行器的ID，01 64 5A DF为执行器mac地址。(当有多个执行器成功连接后，会多次返回该指令)
+Current position instruction (corresponding to transmission) 
 
-### 与执行器通信
+Parameter content: 0x01 = Parameter response (0x01 indicates successful write) 
 
-成功查询到执行器后，即可根据执行器ID与执行器进行通信，例如启动ID为6的执行器的指令为：</br> EE 06 2A 00 01 01 7E 80 ED</br> 其中06为执行器ID,2A为启动或关闭执行器的指令，00 01是数据长度，01即为开机（00是关机），7E 80 为[CRC校验码](#!pages/Ethernet_Communication_Protocol.md#CRC校验码计算方法 "wikilink")。
+End of frame: 0xED = end of protocol
 
-### 控制执行器
+Response content: 0x0E 0x01
 
-##### 位置控制
+## Transmission process
 
-发送激活梯形位置模式指令:
+### Communication Configuration
+
+The Ethernet communication uses udp, and the ECB fixes the ip address to 192.168.1.30 (default), which can be modified by the relevant protocol. The PC needs to modify the network configuration. The IP address is changed to 192.168.1.xxx, and the xxx is greater than 100 to avoid conflict with the ECB address. The subnet mask is 255.255.255.0, and the default gateway is 192.168.1.1. After configuration set successfully and the connection is successfully powered, the ECB's ip address can be pinged, which means successful connection. The communication port is 2000 to communicate with the actuator through this port.
+
+### Handshake with ECB
+
+First handshake with the ECB to use Ethernet communication, after the ECB successfully responds, send the query actuator address instruction and return to the actuator address command to start sending command control and adjust the actuator.
+
+Send command: 
+
+EE 00 44 00 00 ED to ECB
+
+A return command will be received after successful communication: 
+
+EE 00 44 00 01 01 ED 
+
+Send the protocol by broadcast (ie send the protocol to 192.168.1.255) to get ECB IP address and send other commands through the ip address.
+
+### Query actuator
+
+Send command: 
+EE 00 02 00 00 ED 
+The ID and mac address information will be sent after successful communication. Since it is necessary to poll and find the actuator, this instruction takes about 0.5s to return the actuator id. If it is not received actuator address information for a long time, it can be considered that no actuator is successfully connected. Return instruction example: 
+EE 06 02 00 04 01 64 5A DF 3B 3F ED 
+06 is actually the actuator ID, 01 64 5A DF is the actuator mac address. (When multiple actuators are successfully connected, this command will be returned multiple for many times)
+
+
+### Communicating with the actuator
+
+
+After successfully querying the actuator, the actuator can communicate with the actuator according to the actuator ID, for example, the command to start the actuator with ID 6 is: EE 06 2A 00 01 01 7E 80 ED 
+06 is the actuator ID and 2A is the command to turn on or turn off the actuator, 00 01 is the data length, 01 is the boot (00 is the shutdown), 7E 80 is the CRC check code.
+(#!pages/Ethernet_Communication_Protocol.md#CRC校验码计算方法 "wikilink")。
+
+### control actuator
+
+##### Position control
+
+Send command to activate Ladder Position Mode:
 EE 06 07 00 01 06 3F 42 ED
-数据06为梯形位置模式,参见[模式表](#!pages/Ethernet_Communication_Protocol.md#附录B:模式表 "wikilink")，3F 42为[CRC校验码](#!pages/Ethernet_Communication_Protocol.md#CRC校验码计算方法 "wikilink")，激活成功后会收到返回：
+Data 06 is in trapezoidal position mode [see mode table](#!pages/Ethernet_Communication_Protocol.md#附录B:模式表 "wikilink")，3F 42为[CRC Check code](#!pages/Ethernet_Communication_Protocol.md#CRC校验码计算方法 "wikilink")that will receive a return after successful activation:
 EE 06 07 00 01 01 ED
-这时可以发送速度指令：
+At this point a speed command can be sent:
 EE 06 0A 00 04 00 01 00 00 01 D8 ED
-其中0A位设置速度值的指令，00 01 00 00位设置的位置值，该值是设置目标位置1R,通过公式：目标位置/128*（2^24）计算取整获得的IQ24值，关于IQ24的介绍请参考[ IQmath简介](#!pages/Ethernet_Communication_Protocol.md#IQmath简介 "wikilink")。
+The 0A bit sets the speed value command and the 00 01 00 00 bit sets the position value. The value is the set target position 1R. Calculate the IQ24 value obtained by the formula: target position /128*(2^24), IQ24 Please refer to the introduction of[ IQmath for an introduction](#!pages/Ethernet_Communication_Protocol.md#IQmath简介 "wikilink")。
 
-### 其他
+### other
 
-注意，设置速度电流位置值的命令均无返回，其他指令都有返回，更多与执行器通信指令请参考[以太网通信协议命令参考](#!pages/Ethernet_Communication_Protocol.md#以太网通信协议命令参考 "wikilink")。
+Note: the commands for setting the speed current position value are not returned, and other commands are returned. For more communication instructions, please refer to[Ethernet communication protocol command reference](#!pages/Ethernet_Communication_Protocol.md#以太网通信协议命令参考 "wikilink")。
 
-## 以太网通信协议命令参考
+## Ethernet Communication Protocol Command Reference
 
-### 读取命令
-<table class="tableizer-table"><thead><tr class="tableizer-firstrow"></tr></thead><tbody><tr><td  colspan="3" style=background:PaleTurquoise>2.3.1.1 发送数据0字节， 返回数据1字节</td></tr><tr><td>命令名称</td><td colspan="2">读取命令</td></tr><tr><td>说明</td><td colspan="2">此命令类发送数据长度为1，返回数据长度为2</td></tr><tr><td>指令符</td><td colspan="2"><a href="#!pages/Ethernet_Communication_Protocol.md#读取指令1">见读取指令1</a></td></tr><tr><td>数据长度</td><td colspan="2">0</td></tr><tr><td>数据内容</td><td colspan="2">无</td></tr><tr><td>指令符（返回值）</td><td colspan="2"><a href="#!pages/Ethernet_Communication_Protocol.md#读取指令1">见读取指令1</a></td></tr><tr><td>数据长度 (返回值)</td><td colspan="2">1</td></tr><tr><td rowspan="2">下位机返回数据</td><td>0x01：成功/使能/开机/正常</td><td rowspan="2">模式查询返回数据见<a href="#!pages/Ethernet_Communication_Protocol.md#附录B:模式表">模式表</a></td></tr><tr><td>0x00：失败/失能/关机/异常</td></tr></tbody></table>
-
-<table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"></tr></thead><tbody><tr><td colspan="3" style=background:PaleTurquoise>2.3.1.2 发送数据0字节，返回数据2字节</td></tr><tr><td >命令名称</td><td colspan="2">读取命令</td></tr><tr><td>说明</td><td  colspan="2">此命令类发送数据长度为1，返回数据长度为3，读取执行器参数值，高位在前。数值为真实值的2^8倍。（一条特殊指令指令表内已特殊标注）</td></tr><tr><td>指令符</td><td  colspan="2"><a href="#!pages/Ethernet_Communication_Protocol.md#读取指令2">见读取指令2</a></td></tr><tr><td>数据长度</td><td  colspan="2">0</td></tr> <tr><td>数据内容</td><td  colspan="2">无</td></tr><tr><td>指令符（返回值）</td><td  colspan="2"><a href="#!pages/Ethernet_Communication_Protocol.md#读取指令2">见读取指令2</a></td></tr><tr><td>数据长度 (返回值)</td><td  colspan="2">2</td></tr><tr><td>下位机返回数据</td><td>数据为IQ8格式</td><td>或见<a href="#!pages/Ethernet_Communication_Protocol.md#附录C:报警指令表">报警指令表</a></td></tr></tbody></table>
+### read command
+<table class="tableizer-table"><thead><tr class="tableizer-firstrow"></tr></thead><tbody><tr><td  colspan="3" style=background:PaleTurquoise>2.3.1.1 Send data 0 byte, return data 1 byte</td></tr><tr><td>Command Name</td><td colspan="2">Read Command</td></tr><tr><td>description</td><td colspan="2">This command sends a data length of 1, and its return data with the length of 2</td></tr><tr><td>Command byte</td><td colspan="2"><a href="#!pages/Ethernet_Communication_Protocol.md#Read instruction 1">See read instruction 1</a></td></tr><tr><td>Data length</td><td colspan="2">0</td></tr><tr><td>Data content/td><td colspan="2">无</td></tr><tr><td>Command byte（return value）</td><td colspan="2"><a href="#!pages/Ethernet_Communication_Protocol.md#Read instruction 1">See read instruction 1</a></td></tr><tr><td>Data length （return value）</td><td colspan="2">1</td></tr><tr><td rowspan="2">Lower machine returns data</td><td>0x01：Success / enable / boot / normal</td><td rowspan="2">Pattern query return data see <a href="#!pages/Ethernet_Communication_Protocol.md#Appendix B:mode table">mode table</a></td></tr><tr><td>0x00：Failed / disabled / shut down / abnormal</td></tr></tbody></table>
 
 <table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"></tr></thead><tbody><tr><td  colspan="2" style=background:PaleTurquoise>2.3.1.3 发送数据0字节，返回数据4字节</td></tr><tr><td>命令名称</td><td>读取命令</td></tr><tr><td>说明</td><td>此命令类发送数据长度为1，返回数据长度为5，读取执行器参数值，高位在前。数值为真实值的2^24倍。（一条特殊指令指令表内已特殊标注）</td></tr><tr><td>指令符</td><td><a href="#!pages/Ethernet_Communication_Protocol.md#读取指令3">见读取指令3</a></td></tr><tr><td>数据长度</td><td>0</td></tr><tr><td>数据内容</td><td>无</td></tr><tr><td>指令符（返回值）</td><td><a href="#!pages/Ethernet_Communication_Protocol.md#读取指令3">见读取指令3</a></td></tr><tr><td>数据长度 (返回值)</td><td>4</td></tr> <tr><td>下位机返回数据</td><td>数据为IQ24格式。(一条特殊指令指令表内已特殊标注)）</td></tr></tbody></table>
-
-### 写入命令
+<thead><tr class="tableizer-firstrow"></tr></thead><tbody><tr><td colspan="3" style=background:PaleTurquoise>2.3.1.2 Send data 0 byte, return data 2 bytes</td></tr><tr><td >Command name</td><td colspan="2">Read command</td></tr><tr><td>Description</td><td  colspan="2">This command sends a data length of 1, and its return data with the length of 3. the parameter in high position shows first. The value is 2^8 times the true value（special instructions are specified in the instruction list）</td></tr><tr><td>Command character</td><td  colspan="2"><a href="#!pages/Ethernet_Communication_Protocol.md#Read instruction 2">See read instruction 2</a></td></tr><tr><td>Data length</td><td  colspan="2">0</td></tr> <tr><td>Data content</td><td  colspan="2">None</td></tr><tr><td>Command character (return value)</td><td  colspan="2"><a href="#!pages/Ethernet_Communication_Protocol.md#Read instruction 2">read instruction 2</a></td></tr><tr><td>Data length (return value)</td><td  colspan="2">2</td></tr><tr><td>Lower machine returns data</td><td>The data is in iq8 format</td><td>Or see<a href="#!pages/Ethernet_Communication_Protocol.md#Appendix C:the error warning instruction list">the error warning instruction list</a></td></tr></tbody></table>
 
 <table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"></tr></thead><tbody><tr><td colspan="3"style=background:PaleTurquoise>2.3.2.1发送数据1字节，返回数据1字节</td></tr><tr><td>命令名称</td><td colspan="2">写入命令</td></tr><tr><td>说明</td><td colspan="2">此命令类发送数据长度为2，返回数据长度为2，发送数据后一个字节表示要写入参数内容。(注：上电后先发送开机指令才能使用，断电前必须先发送关机指令，否则零位可能丢失)</td></tr><tr><td>指令符</td><td colspan="2"><a href="#!pages/Ethernet_Communication_Protocol.md#写入指令1">见写入指令1</a></td></tr><tr><td>数据长度</td><td colspan="2">1</td></tr><tr><td rowspan="2">数据内容</td><td>0x01：使能/开机</td><td rowspan="2">模式设置见<a href="#!pages/Ethernet_Communication_Protocol.md#附录B:模式表">模式表</a></td></tr><tr><td>0x00：失能/关机</td></tr><tr><td>指令 (返回值)</td><td colspan="2"><a href="#!pages/Ethernet_Communication_Protocol.md#写入指令1">见写入指令1</a></td></tr><tr><td>数据长度(返回值)</td><td colspan="2">1</td></tr><tr><td rowspan="2">下位机返回数据</td><td colspan="2">0x01：成功</td></tr><tr><td colspan="2">0x00：失败</td></tr></tbody></table>
+<thead><tr class="tableizer-firstrow"></tr></thead><tbody><tr><td  colspan="2" style=background:PaleTurquoise>2.3.1.3 Send data 0 byte, return data 4 bytes</td></tr><tr><td>Command name</td><td>Read command</td></tr><tr><td>Description</td><td>This command sends a data length of 1, and its return data with the length of 5. the parameter in high position shows first. The value is 2^24 times the true value（special instructions are specified in the instruction list）</td></tr><tr><td>Command character</td><td><a href="#!pages/Ethernet_Communication_Protocol.md# Read instruction 3">See read instruction 3</a></td></tr><tr><td>data length</td><td>0</td></tr><tr><td>Data content</td><td>none</td></tr><tr><td>Command character (return value)</td><td><a href="#!pages/Ethernet_Communication_Protocol.md#Read instruction 3">See read instruction 3</a></td></tr><tr><td>Data length (return value)</td><td>4</td></tr> <tr><td>Lower machine returns data</td><td>Data is formed as iq24(special instructions are specified in the instruction list）</td></tr></tbody></table>
+
+### write command
 
 <table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"></tr></thead><tbody><tr><td colspan="2"style=background:PaleTurquoise>2.3.2.2发送数据2字节，返回数据1字节</td></tr><tr><td>命令名称</td><td>写入命令</td></tr><tr><td>说明</td><td>此命令类发送数据长度为3字节，返回数据长度为2字节，发送数据后2个字节表示要写入参数内容，高位在前。数值为真实值的2^8倍。</td></tr><tr><td>指令符</td><td><a href="#!pages/Ethernet_Communication_Protocol.md#写入指令2">见写入指令2</a></td></tr><tr><td>数据长度</td><td>2</td></tr><tr><td rowspan="2">数据内容</td><td>数值为IQ8格式</td></tr><tr><td>0x00：失能/关机</td></tr><tr><td>指令 (返回值)</td><td><a href="#!pages/Ethernet_Communication_Protocol.md#写入指令2">见写入指令2</a></td></tr><tr><td>数据长度(返回值)</td><td>1</td></tr><tr><td rowspan="2">下位机返回数据</td><td>0x01：成功</td></tr><tr><td>0x00：失败</td></tr></tbody></table>
+<thead><tr class="tableizer-firstrow"></tr></thead><tbody><tr><td colspan="3"style=background:PaleTurquoise>2.3.2.1Send data 1 byte, return data 1 byte</td></tr><tr><td>Command name</td><td colspan="2">Write command</td></tr><tr><td>Description</td><td colspan="2">This command class sends a data length of 2, a return data length is 2, and a byte after the data is sent indicates that the parameter content is to be written. (note: a power-on command should be sent to use and a power-off command should be sent before powering off, otherwise the zero position may be lost.)</td></tr><tr><td>Command character</td><td colspan="2"><a href="#!pages/Ethernet_Communication_Protocol.md#Write instruction 1">See write instruction 1</a></td></tr><tr><td>Data length</td><td colspan="2">1</td></tr><tr><td rowspan="2">Data content</td><td>0x01：enable/ power on</td><td rowspan="2">The mode setting is<a href="#!pages/Ethernet_Communication_Protocol.md#Appendix B:mode table">mode table</a></td></tr><tr><td>0x00：disable/power off</td></tr><tr><td>Data length (return value)</td><td colspan="2"><a href="#!pages/Ethernet_Communication_Protocol.md#Write instruction 1">See write instruction 1</a></td></tr><tr><td>Data length (return value)</td><td colspan="2">1</td></tr><tr><td rowspan="2">Lower machine returns data</td><td colspan="2">0x01：Success</td></tr><tr><td colspan="2">0x00：Failed</td></tr></tbody></table>
 
 <table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th  colspan="3"style=background:PaleTurquoise>2.3.2.3发送数据4字节，返回数据1字节或更少</th></tr></thead><tbody> <tr><td>命令名称</td><td colspan="2">写入命令</td></tr><tr><td>说明</td><td  colspan="2">此命令类发送数据长度为5，返回数据长度为2，发送数据后4个字节表示要写入的参数内容，数值为真实值的2^24倍。(一条特殊指令指令表内已特殊标注)</td></tr><tr><td>指令符</td><td  colspan="2"><a href="#!pages/Ethernet_Communication_Protocol.md#写入指令3">见写入指令3</a></td></tr><tr><td>数据长度</td><td  colspan="2">4</td></tr><tr><td>数据内容</td><td  colspan="2">数据为IQ24格式。(一条特殊指令指令表内已特殊标注)</td></tr><tr><td>指令 (返回值)</td><td  colspan="2"><a href="#!pages/Ethernet_Communication_Protocol.md#写入指令3">见写入指令3</a></td></tr><tr><td>数据长度(返回值)</td><td  colspan="2">1或0</td></tr><tr><td  rowspan="2">下位机返回数据</td><td>0x01：成功</td><td  rowspan="2">(三条特殊指令无返回数据，指令表内已标注)。</td></tr><tr><td  colspan="1">0x00：失败</td></tr></tbody></table>
+<thead><tr class="tableizer-firstrow"></tr></thead><tbody><tr><td colspan="2"style=background:PaleTurquoise>Send data 2 byte, return data 1 byte</td></tr><tr><td>Command name</td><td>Write command</td></tr><tr><td>Description</td><td>The data length of this command is 3 bytes, the return data length is 2 bytes, and the sent data 2 bytes at last indicate that the parameter content is to be written, and the high parameter shows in front. The value is 2^8 times the true value.</td></tr><tr><td>Command character</td><td><a href="#!pages/Ethernet_Communication_Protocol.md#Instruction 2">See instruction 2</a></td></tr><tr><td>Data length</td><td>2</td></tr><tr><td rowspan="2">Data content</td><td>The value is formed IQ8</td></tr><tr><td>0x00：Disable/power off</td></tr><tr><td>Instruction (return value)</td><td><a href="#!pages/Ethernet_Communication_Protocol.md#Write command 2">See write command 2</a></td></tr><tr><td>Data length (return value)</td><td>1</td></tr><tr><td rowspan="2">IAS return data</td><td>0x01：Success</td></tr><tr><td>0x00：Fail</td></tr></tbody></table>
 
 <table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th colspan="2"style=background:PaleTurquoise>2.3.2.4发送数据0字节，返回数据1字节</th></tr></thead><tbody><tr><td>命令名称</td><td>写入命令</td></tr><tr><td>说明</td><td>此命令类发送数据长度为1，返回数据长度为2</td></tr><tr><td>指令符</td><td><a href="#!pages/Ethernet_Communication_Protocol.md#写入指令4">见写入指令4</a></td></tr><tr><td>数据长度</td><td>0</td></tr><tr><td>数据内容</td><td>无</td></tr><tr><td>指令 (返回值)</td><td><a href="#!pages/Ethernet_Communication_Protocol.md#写入指令4">见写入指令4</a></td></tr><tr><td>数据长度(返回值)</td><td>1</td></tr><tr><td rowspan="2">下位机返回数据</td><td>0x01：成功</td></tr><tr><td>0x00：失败</td></tr></tbody></table>
+<thead><tr class="tableizer-firstrow"><th  colspan="3"style=background:PaleTurquoise>2.3.2.3Send data 4 byte, return data is 1 byte or less</th></tr></thead><tbody> <tr><td>Command name</td><td colspan="2">Write command</td></tr><tr><td>Description</td><td  colspan="2">The data length of this command is 5 bytes, the return data length is 2 2 bytes, and the sent data 4 bytes at last indicate that the parameter content is to be written. The value is 2^24 times the true value. (Special instructions are specified in the instruction list)</td></tr><tr><td>Command byte</td><td  colspan="2"><a href="#!pages/Ethernet_Communication_Protocol.md#Write command 3">See write command 3</a></td></tr><tr><td>Data content</td><td  colspan="2">4</td></tr><tr><td>数据内容</td><td  colspan="2">The value is formed IQ24 (Special instructions are specified in the instruction list)</td></tr><tr><td>Instruction (return value)</td><td  colspan="2"><a href="#!pages/Ethernet_Communication_Protocol.md#Write command 3">See write command 3</a></td></tr><tr><td>Data length (return value)</td><td  colspan="2">1Or0</td></tr><tr><td  rowspan="2">Lower machine returns data</td><td>0x01：Success</td><td  rowspan="2">(There are no return data for the three special instructions, which are marked in the instruction list)</td></tr><tr><td  colspan="1">0x00：Fail</td></tr></tbody></table>
 
-## 附录A
+<table class="tableizer-table">
+<thead><tr class="tableizer-firstrow"><th colspan="2"style=background:PaleTurquoise>2.3.2.4Send data 0 byte, return data is 1 byte</th></tr></thead><tbody><tr><td>Command name</td><td>Write command</td></tr><tr><td>Description</td><td>This command class sends a data length of 1, and returns a data length of 2</td></tr><tr><td>Command byte</td><td><a href="#!pages/Ethernet_Communication_Protocol.md#Write command 4">See write command 4</a></td></tr><tr><td>Data length</td><td>0</td></tr><tr><td>Data content</td><td>None</td></tr><tr><td>Command (return value)</td><td><a href="#!pages/Ethernet_Communication_Protocol.md#Write command 4">See write command 4</a></td></tr><tr><td>Data length(return value)</td><td>1</td></tr><tr><td rowspan="2">Lower machine returns data</td><td>0x01：success</td></tr><tr><td>0x00：fail</td></tr></tbody></table>
 
-#### <span id="IQmath简介"></span>IQmath简介
+## Appendix A
 
-*   我们使用的处理器一般情况下，要么直接支持硬件的浮点运算，比如某些带有FPU的器件，要么就只支持定点运算，此时对浮点数的处理需要通过编译器来完成。在支持硬件浮点处理的器件上，对浮点运算的编程最快捷的方法就是直接使用浮点类型，比如单精度的float来完成。但是在很多情况下，限于成本、物料等因素，可供我们使用的只有一个定点处理器时，直接使用float类型进行浮点类型的运算会使得编译器产生大量的代码来完成一段看起来十分简单的浮点数学运算，造成的后果是程序的执行时间显著加长，且其占用的资源量也会成倍地增加，这就涉及到了如何在定点处理器上对浮点运算进行高效处理的问题。
+#### </span>IQmath Introduction
 
-*   既然是定点处理器，那么其对定点数，或者说字面意义上的“整数”进行处理的效率就会比它处理浮点类型的运算要高的多。所以在定点处理器上，我们使用定点的整数来代表一个浮点数，并规定整数位数和小数位数，从而方便地对定点数和浮点数进行转换。以一个32位的定点数为例，假设转换因子为Q，即32位中小数的位数为Q，整数位数则为31-Q(有符号数的情况)，则定点数与浮点数的换算关系为：
+*   The processor we use generally supports hardware floating-point operations directly, such as some devices with FPU, or only supports fixed-point operations. In this case, the processing of floating-point numbers needs to be done by the compiler. On devices that support hardware floating-point processing, the quickest way to program floating-point operations is to use floating-point types directly, such as single-precision floats. However, in many cases we can only use one fixed-point processor because the limitation of cost, material and other factors. That directly using the float type for floating-point operations will make the compiler generate a lot of code to complete the operation that looks very simple, which causes longer execution time, and occupies multiplied resources. This involves the problem of how to efficiently handle floating-point operations on fixed-point processors.
 
-![详见 IQ-MATH Library文档](../img/3-1通信协议.png "详见 IQ-MATH Library文档") 
+
+*   •	Since it is a fixed-point processor, its efficiency in processing fixed-point numbers, or literally "integers", is much higher than it is in dealing with floating-point types. On fixed-point processors, we use fixed-point integers to represent a floating-point number, and specify integer digits and scales to easily convert fixed-point and floating-point numbers. Taking a 32-bit fixed-point number as an example, suppose the conversion factor is Q, that is, the number of decimal places in 32 bits is Q, and the number of integer digits is 31-Q (in the case of signed numbers), then fixed-point numbers and floating-point numbers Conversion relationship is
+
+
+![see IQ-MATH Library file](../img/3-1通信协议.png "详见 IQ-MATH Library文档") 
 
 
 [IQ-MATH Library文档](../img/C28x_IQmath_Library.pdf "详见 IQ-MATH Library文档") 
 
-*   定点数=浮点数×2^Q
+*    Fixed point number = floating point number × 2^Q
 
-*   例如，浮点数-2.0转换到Q为24的定点数时，结果为：定点数=-2×2^24=-33554432
+*   For example, when floating point number -2.0 is converted to a fixed point with Q of 24, the result is: fixed point number = -2 × 2^24 = -33554432
 
-*   32位有符号数的表示范围是：-2147483648到2147483647。如果我们把有符号定点数的最大值2147483647转换为Q为24对应的浮点数，则结果为：浮点数2147483647/2^24=127.999999940
+*   The range of 32-bit signed numbers is: -2147483648 to 2147483647. If we convert the maximum value of signed fixed-point numbers 2147483647 to a floating-point number of Q24, the result is: floating point number 2147483647/2^24=127.999999940
 
 <table class="tableizer-table">
 <thead><tr class="tableizer-firstrow"></tr></thead><tbody>
@@ -251,21 +261,23 @@ EE 06 0A 00 04 00 01 00 00 01 D8 ED
 
 ![3-2通信协议-1.png](../img/3-2通信协议-1.png "3-2通信协议-1.png")
 
-*   注释：
-*   上位机所设置的上限幅值（Maximum）最高为_IQ(1.0)，下限幅值（Minimal）最低为_IQ(-1.0)，起到限幅作用（原理图如图3-2）。例：（如图:3-2用位置环的输出经过限幅模块为速度环的输入，假设_IQ（0.5），_IQ（-0.5）则位置环输出最大速度应为±0.5x6000=±3000RPM）
-*   比例积分设置值上限为_IQ(128.0)，设定值下限为_IQ(-128.0)，但设置值根据实际操作情况调节（原理图: 3-2）
-*   电流环设置电流值范围为_IQ(-1.0)~_IQ(1.0)之间，电流实际值为IQ值乘以满量程，例：（QDD-6010 型号执行器满量程电流值为33A ，_IQ(0.5) 实际电流值则为0.5x33A=16.5A，见附录D:型号表）
-*   速度环设置速度值范围为_IQ(-1.0)~_IQ(1.0)之间，速度实际值为IQ值乘以满量程（见 ）。例：（_IQ(0.5)则实际速度为0.5*6000=3000RPM）
-*   位置环因为是_IQ24格式，所以正向满量程为_IQ(127.999999940)，反向满量程为_IQ(-128.0)，IQ值即实际值，例：<span style="color: red">（_IQ（60.0）则实际位置为60R，即零位置正向转60转的位置。）</span>
-*   速度环曲线模式和位置环曲线模式，可以通过设置加速度，减速度的大小，相对平滑的达到自己预设的速度值和位置，可以避免操作时瞬间电流过大，触发执行器过流保护或者供电电源过流保护。
+*   Notes:
+*   The maximum amplitude (Maximum) set by PC is _IQ (1.0), and the minimum amplitude (Minimal) is _IQ (-1.0), which acts as a limiting function (the schematic diagram is shown in Figure 3-2). Example: (Figure: 3-2 uses the output of position loop through the limiter module as the input of the speed loop. Assuming _IQ(0.5), _IQ(-0.5), the maximum speed of the position loop output should be ±0.5x6000=±3000RPM )
 
-### CRC校验码计算方法
+*   The upper limit of the proportional integral setting is _IQ (128.0), and the lower limit is _IQ (-128.0), but the set value is adjusted according to the actual operation (schematic diagram: 3-2)
+*   The current loop sets the current value range from _IQ(-1.0)~_IQ(1.0). The actual current value is the IQ value multiplied by the full scale. Example: (QDD-6010 model actuator full-scale current value is 33A, _IQ (0.5) The actual current value is 0.5x33a=16.5A, see Appendix D: Model Table)
+*   The speed loop sets the speed value range from _IQ(-1.0)~_IQ(1.0), and the actual speed value is the IQ value multiplied by the full scale (see ). Example: (_IQ (0.5) the actual speed is 0.5 * 6000 = 3000RPM)
+*   Since the position loop is in _IQ24 format, the forward full scale is _IQ (127.999999940), the reverse full scale is _IQ (-128.0), and the IQ value is the actual value. For example: (_IQ(60.0) is the actual position. 60R, that is, the position where the zero position is rotated forward by 60 turns.)
+*   Acceleration, deceleration can be set in the speed loop curve mode and position loop curve mode and relatively smoothly reach the preset speed value and position, which can avoid trigger actuator over-current protection or power supply overcurrent protection while meeting the excessive current during operation.
 
-CRC校验只计算数据内容，即数据位数之后到crc校验之前的所有内容，计算方法采用查表法。
+### CRC check code calculation method
 
-CRC校验码计算方法（c++）:
+The CRC check only calculates the data content, all the contents between the data byte and CRC check. The calculation method is as following.
 
-    const uint8_t chCRCHTalbe[] =                                 // CRC 高位字节值表
+CRC check code calculation method (c++):
+
+
+    const uint8_t chCRCHTalbe[] =                                 // CRC High byte value table
     {
         0x00, 0xC1, 0x81, 0x40, 0x01, 0xC0, 0x80, 0x41, 0x01, 0xC0, 0x80, 0x41,
         0x00, 0xC1, 0x81, 0x40, 0x01, 0xC0, 0x80, 0x41, 0x00, 0xC1, 0x81, 0x40,
@@ -290,7 +302,7 @@ CRC校验码计算方法（c++）:
         0x00, 0xC1, 0x81, 0x40, 0x01, 0xC0, 0x80, 0x41, 0x01, 0xC0, 0x80, 0x41,
         0x00, 0xC1, 0x81, 0x40
     };
-    const uint8_t chCRCLTalbe[] =                                 // CRC 低位字节值表
+    const uint8_t chCRCLTalbe[] =                                 // CRC low byte value table
     {
         0x00, 0xC0, 0xC1, 0x01, 0xC3, 0x03, 0x02, 0xC2, 0xC6, 0x06, 0x07, 0xC7,
         0x05, 0xC5, 0xC4, 0x04, 0xCC, 0x0C, 0x0D, 0xCD, 0x0F, 0xCF, 0xCE, 0x0E,
@@ -331,67 +343,78 @@ CRC校验码计算方法（c++）:
         return ((chCRCHi << 8) | chCRCLo);
     }
 
-CRC16_1方法中，pchMsg指向要校验内容的地址，wDataLen为要校验内容的字节长度，该方法会返回两字节的crc校验码，将校验码加入到发送的指令中的对应位置即可。收到返回带crc校验码的指令，也可以通过该方法计算出校验码并与返回指令中的校验码比对，验证数据的有效性。
+In the CRC16_1 method, pchmsg points to the address and wdatalen is the byte length of the content to be verified. This method returns a two-byte crc check code to add to the corresponding position in the sent command. After receiving the instruction with the crc check code, the check code can also be calculated by the method and compared with the check code in the return command to verify the validity of the data.
 
-**示例**
+**Example**
 
-执行器开机指令:
+•	Actuator boot command:
 
 EE 06 2A 00 01 01 7E 80 ED
 
-其中EE为帧头，06是执行器ID，2A为开机指令符，00 01 为数据长度，01为数据内容，ED为帧尾，其中数据内容01通过上述方法计算出的校验码即为7E 80。
+EE is the frame header, 06 is the actuator ID, 2A is the power-on command character, 00 01 is the data length, 01 is the data content, and ED is the frame tail. The data content 01 calculated by the above method is 7E 80.
 
-### **A.1读取指令编码定义表**
+### **A.1Read instruction code definition table**
 
 
-#### 读取指令1
+#### Read command 1
 <table class="tableizer-table">
 <thead><tr class="tableizer-firstrow"></tr></thead><tbody>
- <tr><td colspan="3"style=background:PaleTurquoise>A.1.1 读取指令1</td></tr> <tr><td>指令符</td><td>定义</td><td>说明</td></tr> <tr><td>0x00 ：</td><td>握手</td><td>上位机发送本指令，下位机响应返回，说明下位机已经准备好与上位机通信也可作为心跳协议，实时查询从机的状态。</td></tr> <tr><td>0x55：</td><td>查询执行器当前模式</td><td>读取下位机所管理的执行器的当前的模式。</td></tr> <tr><td>0xB0</td><td>查询执行器上次关机状态</td><td>读取执行器的上次关机状态，正常/异常</td></tr> <tr><td>0x71：</td><td>电流环滤波器状态</td><td>读取指定ID执行器的电流环滤波器使能/失能</td></tr> <tr><td>0x75：</td><td>速度环滤波器状态</td><td>读取指定ID执行器的电流环滤波器使能/失能</td></tr> <tr><td>0x79：</td><td>位置环滤波器状态</td><td>读取指定ID执行器的电流环滤波器使能/失能</td></tr> <tr><td>0x2B</td><td>电流环滤波器状态</td><td>读取指定ID执行器开机/停机状态。</td></tr></tbody></table>
+ <tr><td colspan="3"style=background:PaleTurquoise>A.1.1 Read command 1</td></tr> <tr><td>Command byt</td><td>Definition</td><td>Description</td></tr> <tr><td>0x00 ：</td><td>Handshake</td><td>The upper computer sends this command, and the lower computer responds with a return, indicating that the lower computer is ready to communicate with the upper computer. It can also be used as a heartbeat protocol to query the status.</td></tr> <tr><td>0x55：</td><td>Query actuator current mode</td><td>Read the current mode of the actuator managed by the lower computer.</td></tr> <tr><td>0xB0</td><td>Query the last shutdown state of the actuator</td><td>Read the last shutdown state of the actuator, normal / abnormal</td></tr> <tr><td>0x71：</td><td>Current loop filter status</td><td>Read current loop filter enable/disable for the specified ID actuator</td></tr> <tr><td>0x75：</td><td>Speed loop filter status</td><td>Read current loop filter enable/disable for the specified ID actuator</td></tr> <tr><td>0x79：</td><td>Position loop filter status</td><td>Read current loop filter enable/disable for the specified ID actuator</td></tr> <tr><td>0x2B</td><td>Current loop filter status</td><td>Reads the specified ID actuator power on/off status.</td></tr></tbody></table>
 
-#### 读取指令2
+#### Read command 2
 <table class="tableizer-table">
 <thead><tr class="tableizer-firstrow"></tr></thead><tbody>
- <tr><td  colspan="3"style=background:PaleTurquoise>A.1.2 读取指令2</td></tr> <tr><td>指令符</td><td>定义</td><td>说明</td></tr> <tr><td>0x73：</td><td>电流环滤波器的带宽</td><td>读取指定ID执行器电流环滤波器的带宽(Hz)</td></tr> <tr><td>0x77：</td><td>速度环滤波器的带宽</td><td>读取指定ID执行器速度环滤波器的带宽(Hz)</td></tr> <tr><td>0x7B：</td><td>位置环滤波器的带宽</td><td>读取指定ID执行器速度环滤波器的带宽(Hz)</td></tr> <tr><td>0x5F</td><td>读取执行器电机的温度</td><td>读取指定ID执行器电机温度℃</td></tr> <tr><td>0x60</td><td>读取逆变器温度</td><td>读取指定ID执行器的逆变器温度℃</td></tr> <tr><td>0x62</td><td>读取执行器保护温度</td><td>读取指定ID执行器的保护温度℃</td></tr> <tr><td>0x64</td><td>读取执行器恢复温度</td><td>读取指定ID执行器的恢复温度℃</td></tr> <tr><td>0xFF</td><td>报警指令(特殊指令)</td><td>下位机的报警信息</td></tr></tbody></table>
+ <tr><td  colspan="3"style=background:PaleTurquoise>A.1.2 Read command 2</td></tr> <tr><td>Command byte</td><td>Definition</td><td>description</td></tr> <tr><td>0x73：</td><td>Current loop filter bandwidth</td><td>Read current loop filter bandwidth(Hz) of specified ID actuator</td></tr> <tr><td>0x77：</td><td>Speed loop filter bandwidth</td><td>Read Position speed filter bandwidth (Hz) of specified ID actuator</td></tr> <tr><td>0x7B：</td><td>Position loop filter bandwidth</td><td>Read Position loop filter bandwidth of specified ID actuator</td></tr> <tr><td>0x5F</td><td>Read the temperature of specified ID actuator</td><td>Read the temperature℃ of specified ID actuator</td></tr> <tr><td>0x60</td><td>Read inverter temperature</td><td>Read inverter temperature ℃</td></tr> <tr><td>0x62</td><td>Read actuator protection temperature</td><td>Read actuator protection temperature℃ of specified ID actuator</td></tr> <tr><td>0x64</td><td>Read actuator recovery temperature</td><td>Read actuator recovery temperature ℃ of specified ID actuator</td></tr> <tr><td>0xFF</td><td>Alarm command (special command)</td><td>Lower machine alarm information</td></tr></tbody></table>
 
-#### 读取指令3
+#### Read command 3
 <table class="tableizer-table">
 <thead><tr class="tableizer-firstrow"></tr></thead><tbody>
- <tr><td  colspan="3"style=background:PaleTurquoise>A.1.3 读取指令3</td></tr> <tr><td>指令符</td><td>定义</td><td>说明</td></tr> <tr><td>0x04：</td><td>当前电流值</td><td>读取指定ID执行器的当前电流值，电流真实值需要乘以电流满量程（见附录D），单位为A</td></tr> <tr><td>0x05：</td><td>当前速度值</td><td>读取指定ID执行器的当前速度值，速度真实值需要乘以速度满量程（见附录D），单位为RPM</td></tr> <tr><td>0x06：</td><td>当前位置值</td><td>读取指定ID执行器的当前位置值，单位为R</td></tr> <tr><td>0x15：</td><td>电流环的P</td><td>读取指定ID执行器的当前电流环的P</td></tr> <tr><td>0x16：</td><td>电流环的I</td><td>读取指定ID执行器的当前电流环的I</td></tr> <tr><td>0x17：</td><td>速度环的P</td><td>读取指定ID执行器的当前速度环的P</td></tr> <tr><td>0x18：</td><td>速度环的I</td><td>读取指定ID执行器的当前速度环的I</td></tr> <tr><td>0x19：</td><td>位置环的P</td><td>读取指定ID执行器的当前位置环的P</td></tr> <tr><td>0x1A：</td><td>位置环的I</td><td>读取指定ID执行器的当前位置环的I</td></tr> <tr><td>0x1C：</td><td>位置梯形曲线的最大速度</td><td>读取指定ID执行器的当前位置梯形曲线的最大速度</td></tr> <tr><td>0x1D：</td><td>位置梯形曲线的加速度</td><td>读取指定ID执行器的当前位置梯形曲线的最大加速度</td></tr> <tr><td>0x1E：</td><td>位置梯形曲线的减速度</td><td>读取指定ID执行器的当前位置梯形曲线的最大减速度</td></tr> <tr><td>0x22：</td><td>速度梯形曲线的最大速度</td><td>读取指定ID执行器的当前速度梯形曲线的最大速度</td></tr> <tr><td>0x23：</td><td>速度梯形曲线的加速度</td><td>读取指定ID执行器的当前速度梯形曲线的最大加速度</td></tr> <tr><td>0x24：</td><td>速度梯形曲线的减速度</td><td>读取指定ID执行器的当前速度梯形曲线的最大减速度</td></tr> <tr><td>0x34：</td><td>电流环输出的下限</td><td>读取指定ID执行器的当前电流环输出的下限</td></tr> <tr><td>0x35：</td><td>电流环输出的上限</td><td>读取指定ID执行器的当前电流环输出的上限</td></tr> <tr><td>0x36：</td><td>速度环输出的下限</td><td>读取指定ID执行器的当前速度环输出的下限</td></tr> <tr><td>0x37：</td><td>速度环输出的上限</td><td>读取指定ID执行器的当前速度环输出的上限</td></tr> <tr><td>0x38：</td><td>位置环输出的下限</td><td>读取指定ID执行器的当前位置环输出的下限</td></tr> <tr><td>0x39：</td><td>位置环输出的上限</td><td>读取指定ID执行器的当前位置环输出的上限</td></tr> <tr><td>0x7D：</td><td>惯量</td><td>读取指定ID执行器的惯量</td></tr> <tr><td>0x85：</td><td>执行器位置的上限</td><td>读取指定ID执行器的位置上限值</td></tr> <tr><td>0x86：</td><td>执行器位置的下限</td><td>读取执行ID执行器的位置下限值</td></tr> <tr><td>0x8A：</td><td>执行器位置偏置位置</td><td>读取指定ID执行器的位置偏置值</td></tr> <tr><td>0x92：</td><td>执行器自动归零时电流的下限</td><td>读取指定ID执行器自动归零时电流的下限</td></tr> <tr><td>0x93：</td><td>执行器自动归零时电流的上限</td><td>读取指定ID执行器自动归零是电流的上限</td></tr> <tr><td>0x7F：</td><td>堵转能量</td><td>读取指定ID执行器的堵转能量。 （数值为真实值的75.225倍）堵转后发热能量，单位为J。</td></tr></tbody></table>
+ <tr><td  colspan="3"style=background:PaleTurquoise>A.1.3 Read command 3</td></tr> <tr><td>Command byte</td><td>Definition 
+</td><td>Description</td></tr> <tr><td>0x04：</td><td>Current current value</td><td>Read the current value of the specified ID actuator. The current value needs to be multiplied by the current full scale (see Appendix D) with A as the unit.</td></tr> <tr><td>0x05：</td><td>Current speed value</td><td>Read the current speed value of the specified ID actuator. The true speed value needs to be multiplied by the speed full scale (see Appendix D) in RPM.</td></tr> <tr><td>0x06：</td><td>Current position value</td><td>Read the current position value of the specified ID executor in R</td></tr> <tr><td>0x15：</td><td>Current loop P</td><td>Read Current loop P of the specified ID actuator</td></tr> <tr><td>0x16：</td><td> Current loop I</td><td>Read Current loop I of the specified ID actuator</td></tr> <tr><td>0x17：</td><td>Speed loop P</td><td>Read Speed loop P of the specified ID actuator</td></tr> <tr><td>0x18：</td><td>Speed loop I</td><td>Read Speed loop I of the specified ID actuator</td></tr> <tr><td>0x19：</td><td>Position loop P</td><td>Read Speed loop I of the specified ID actuator</td></tr> <tr><td>0x1A：</td><td>Position loop I</td><td>Read Position loop I of the specified ID actuator</td></tr> <tr><td>0x1C：</td><td>Maximum speed of position trapezoidal curve</td><td>Read the maximum speed of position trapezoidal curve of the specified ID actuator</td></tr> <tr><td>0x1D：</td><td>Acceleration of position trapezoidal curve</td><td>Read the  max acceleration of position trapezoidal curve of the specified ID actuator</td></tr> <tr><td>0x1E：</td><td>Deceleration of position trapezoidal curve</td><td>Read the max deceleration of position trapezoidal curve of the specified ID actuator</td></tr> <tr><td>0x22：</td><td>Maximum speed of the speed trapezoidal curve</td><td>Read the maximum speed of the speed trapezoidal curve of the specified ID actuator</td></tr> <tr><td>0x23：</td><td>Acceleration of speed trapezoidal curve</td><td>Read acceleration of speed trapezoidal curve Of the specified ID actuator</td></tr> <tr><td>0x24：</td><td>Deceleration of speed trapezoidal curve</td><td>Read deceleration of speed trapezoidal curve of the specified ID actuator</td></tr> <tr><td>0x34：</td><td>Lower limit of current loop output</td><td>Read lower limit of current loop output of the specified ID actuator</td></tr> <tr><td>0x35：</td><td>Upper limit of current loop output</td><td>Read upper limit of current loop output of the specified ID actuator</td></tr> <tr><td>0x36：</td><td>Lower limit of speed loop output</td><td>Read lower limit of speed loop output of the specified ID actuator</td></tr> <tr><td>0x37：</td><td>Upper limit of speed loop output</td><td>Read upper limit of speed loop output of the specified ID actuator</td></tr> <tr><td>0x38：</td><td>Lower limit of position loop output</td><td>Read lower limit of position loop output of the specified ID actuator</td></tr> <tr><td>0x39：</td><td>Upper limit of position loop output</td><td>Read upper limit of position loop output of the specified ID actuator</td></tr> <tr><td>0x7D：</td><td>Inertia</td><td>Read inertia of the specified ID actuator</td></tr> <tr><td>0x85：</td><td>Upper limit of actuator position</td><td>Read upper limit of actuator position of the specified ID actuator</td></tr> <tr><td>0x86：</td><td>Lower limit of actuator position</td><td>Read lower limit of actuator position of the specified ID actuator</td></tr> <tr><td>0x8A：</td><td>Actuator position offset position</td><td>Read actuator position offset position of the specified ID actuator</td></tr> <tr><td>0x92：</td><td>The lower limit of the current when the actuator is automatically reset to zero</td><td>Read the lower limit of the current when the actuator is automatically reset to zero of the specified ID actuator</td></tr> <tr><td>0x93：</td><td>The upper limit of the current when the actuator is automatically reset to zero</td><td>Read the upper limit of the current when the actuator is automatically reset to zero of the specified ID actuator</td></tr> <tr><td>0x7F：</td><td>Stall energy</td><td>Reads the stall energy of the specified ID actuator. (The value is 75.225 times of the true value) The heating energy after blocking, the unit is J.</td></tr></tbody></table>
 
-### **A.2 写入命令编码值定义表**
+### **A.2 Write command code value definition table**
 
-#### 写入指令1
+#### Write command 1
 <table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th colspan="3"style=background:PaleTurquoise>A.2.1写入指令1</th></tr></thead><tbody>
- <tr><td>指令符</td><td>定义</td><td>说明</td></tr> <tr><td>0x07：</td><td>设置指定ID执行器的模式</td><td>设置指定ID执行器的当前的模式。</td></tr> <tr><td>0x70：</td><td>电流环滤波器状态</td><td>设置指定ID执行器的电流环滤波器使能/失能</td></tr> <tr><td>0x74：</td><td>速度环滤波器状态</td><td>设置指定ID执行器的速度环滤波器使能/失能</td></tr> <tr><td>0x78：</td><td>位置环滤波器状态</td><td>设置指定ID执行器的位置环滤波器使能/失能</td></tr> <tr><td>0x2A：</td><td>执行器的开关机状态</td><td>设置指定ID执行器开机/关机</td></tr></tbody></table>
+<thead><tr class="tableizer-firstrow"><th colspan="3"style=background:PaleTurquoise>A.2.1Command byte</th></tr></thead><tbody>
+ <tr><td>Command byte</td><td>Definition </td><td>Description</td></tr> <tr><td>0x07：</td><td>Set the mode of the specified ID executor</td><td>Set the current mode of the specified ID actuator</td></tr> <tr><td>0x70：</td><td>Current loop filter status</td><td>Set the current loop filter enable/disable for the specified ID actuator</td></tr> <tr><td>0x74：</td><td>Speed loop filter status
+</td><td>Set the speed loop filter enable/disable for the specified ID actuator</td></tr> <tr><td>0x78：</td><td>Position loop filter status</td><td>Set the position loop filter enable/disable for the specified ID actuator</td></tr> <tr><td>0x2A：</td><td>Actuator on/off status</td><td>Set the specified ID actuator to power on/off</td></tr></tbody></table>
 
-#### 写入指令2
+#### Write command 2
 <table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th colspan="3"style=background:PaleTurquoise>A.2.2写入指令2</th></tr></thead><tbody>
- <tr><td>指令符</td><td>定义</td><td>说明</td></tr> <tr><td>0x72：</td><td>电流环滤波器的带宽</td><td>设置指定ID执行器电流环滤波器的带宽(Hz)</td></tr> <tr><td>0x76：</td><td>速度环滤波器的带宽</td><td>设置指定ID执行器速度环滤波器的带宽(Hz)</td></tr> <tr><td>0x7A：</td><td>位置环滤波器的带宽</td><td>设置指定ID执行器位置环滤波器的带宽(Hz)</td></tr> <tr><td>0x61：</td><td>执行器的保护温度</td><td>设置指定ID执行器的保护温度℃</td></tr> <tr><td>0x63：</td><td>执行器的恢复温度</td><td>设置指定ID执行器的恢复温度℃</td></tr></tbody></table>
+<thead><tr class="tableizer-firstrow"><th colspan="3"style=background:PaleTurquoise>A.2.2Write command 2</th></tr></thead><tbody>
+ <tr><td>Command byte</td><td>Definition </td><td>Description</td></tr> <tr><td>0x72：</td><td>Current loop filter bandwidth</td><td>Set the bandwidth (Hz) of the specified ID actuator current loop filter</td></tr> <tr><td>0x76：</td><td>Speed  loop filter bandwidth</td><td>Set the bandwidth (Hz) of the specified ID actuator speed  loop filter</td></tr> <tr><td>0x7A：</td><td>Position loop filter bandwidth</td><td>Set the bandwidth (Hz) of the specified ID actuator position loop filter</td></tr> <tr><td>0x61：</td><td>Current loop filter bandwidth</td><td>Set the bandwidth (Hz) of the specified ID actuator current loop filter</td></tr> <tr><td>0x63：</td><td>Actuator recovery temperature</td><td>Set the recovery temperature of the specified ID actuator °C</td></tr></tbody></table>
 
-#### 写入指令3
+#### Write command 3
 <table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th colspan="3"style=background:PaleTurquoise>A.2.3写入指令3</th></tr></thead><tbody>
- <tr><td>指令符</td><td>定义</td><td>说明</td></tr> <tr><td>0x08：</td><td>当前电流值</td><td>设置指定ID执行器的当前电流值。 (注：无返回数据)</td></tr> <tr><td>0x09：</td><td>当前速度值</td><td>设置指定ID执行器的当前速度值。 (注：无返回数据）</td></tr> <tr><td>0x0A：</td><td>当前位置值</td><td>设置指定ID执行器的当前位置值。 (注：无返回数据）</td></tr> <tr><td>0x0E：</td><td>电流环的P</td><td>更改指定ID执行器电流环的P值</td></tr> <tr><td>0x0F：</td><td>电流环的I</td><td>设置指定ID执行器电流环的I值</td></tr> <tr><td>0x10：</td><td>速度环的P</td><td>设置指定ID执行器速度环的P值</td></tr> <tr><td>0x11：</td><td>速度环的I</td><td>设置指定ID执行器速度环的I值</td></tr> <tr><td>0x12：</td><td>位置环的P</td><td>设置指定ID执行器位置环的P值</td></tr> <tr><td>0x13：</td><td>位置环的I</td><td>设置指定ID执行器位置环的I值</td></tr> <tr><td>0x1F：</td><td>位置梯形曲线的最大速度</td><td>更改指定ID执行器位置梯形曲线的最大速度</td></tr> <tr><td>0x20：</td><td>位置梯形曲线的加速度</td><td>更改指定ID执行器位置梯形曲线的最大加速度</td></tr> <tr><td>0x21：</td><td>位置梯形曲线的减速速度</td><td>更改指定ID执行器位置梯形曲线的最大减速度</td></tr> <tr><td>0x25：</td><td>速度梯形曲线的最大速度</td><td>更改指定ID执行器速度梯形曲线的最大速度</td></tr> <tr><td>0x26：</td><td>速度梯形曲线的加速度</td><td>更改指定ID执行器速度梯形曲线的加速度</td></tr> <tr><td>0x27：</td><td>速度梯形曲线的减速度</td><td>更改指定ID执行器速度梯形曲线的减速度</td></tr> <tr><td>0x2E：</td><td>电流环输出的下限</td><td>更改指定ID执行器电流环输出的下限</td></tr> <tr><td>0x2F：</td><td>电流环输出的上限</td><td>更改指定ID执行器电流环输出的上限</td></tr> <tr><td>0x30：</td><td>速度环输出的下限</td><td>更改指定ID执行器速度环输出的下限</td></tr> <tr><td>0x31：</td><td>速度环输出的上限</td><td>更改指定ID执行器速度环输出的上限</td></tr> <tr><td>0x32：</td><td>位置环输出的下限</td><td>更改指定ID执行器位置环输出的下限</td></tr> <tr><td>0x33：</td><td>位置环输出的上限</td><td>更改指定ID执行器位置环输出的上限</td></tr> <tr><td>0x83：</td><td>执行器位置的上限</td><td>更改指定ID执行器的位置上限值</td></tr> <tr><td>0x84：</td><td>执行器位置的下限</td><td>更改指定ID执行器的位置下限值</td></tr> <tr><td>0x87：</td><td>执行器的Home值</td><td>设置指定ID执行器的Home值</td></tr> <tr><td>0x89：</td><td>执行器的位置偏置</td><td>设置指定ID执行器的位置偏置值</td></tr> <tr><td>0x90：</td><td>执行器自动归零时电流的下</td><td>设置指定ID执行器自动归零时电流的下限</td></tr> <tr><td>0x91：</td><td>执行器自动归零时电流的上</td><td>设置指定ID执行器自动归零时电流的上限</td></tr> <tr><td>0x7E：</td><td>堵转能量</td><td>设置指定ID执行器的堵转能量。 (数值为真实值的75.225倍)堵转后发热能量，单位为J</td></tr></tbody></table>
+<thead><tr class="tableizer-firstrow"><th colspan="3"style=background:PaleTurquoise>A.2.3Write command 3</th></tr></thead><tbody>
+ <tr><td>Command byte</td><td>Definition</td><td>Description </td></tr> <tr><td>0x08：</td><td>Current value</td><td>Sets the current value of the specified ID actuator. (Note: no return data)</td></tr> <tr><td>0x09：</td><td>Current speed value</td><td>Sets the current speed value of the specified ID actuator. (Note: no return data）</td></tr> <tr><td>0x0A：</td><td>Current position value</td><td>Sets the current position value of the specified ID actuator. (Note: no return data)</td></tr> <tr><td>0x0E：</td><td>Current loop P 
+</td><td>Change current loop P of the specified ID actuator</td></tr> <tr><td>0x0F：</td><td>Current loop I </td><td>Change current loop I of the specified ID actuator</td></tr> <tr><td>0x10：</td><td>Speed loop P</td><td>Change speed loop P of the specified ID actuator</td></tr> <tr><td>0x11：</td><td>Speed loop I</td><td>Change speed loop I of the specified ID actuator</td></tr> <tr><td>0x12：</td><td>Position loop P</td><td>Change position loop P of the specified ID actuator</td></tr> <tr><td>0x13：</td><td>Position loop I</td><td>Change position loop I of the specified ID actuator</td></tr> <tr><td>0x1F：</td><td>Maximum speed of position trapezoidal curve</td><td>Change maximum speed of position trapezoidal curve of the specified ID actuator</td></tr> <tr><td>0x20：</td><td>Acceleration of position trapezoidal curve</td><td>Change acceleration of position trapezoidal curve of the specified ID actuator</td></tr> <tr><td>0x21：</td><td>Deceleration speed of position trapezoidal curve</td><td>Change deceleration of position trapezoidal curve of the specified ID actuator</td></tr> <tr><td>0x25：</td><td>Maximum speed of the speed trapezoidal curve</td><td>Change maximum speed of the speed trapezoidal curve of the specified ID actuator</td></tr> <tr><td>0x26：</td><td>Acceleration of velocity trapezoidal curve</td><td>Change acceleration of velocity trapezoidal curve of the specified ID actuator</td></tr> <tr><td>0x27：</td><td>Deceleration of the speed trapezoidal curve</td><td>Change deceleration of velocity trapezoidal curve of the specified ID actuator</td></tr> <tr><td>0x2E：</td><td>Lower limit of current loop output
+</td><td>Change the lower limit of the specified ID actuator current loop output</td></tr> <tr><td>0x2F：</td><td>Upper limit of current loop output
+</td><td>Change the upper limit of the specified ID actuator current loop output</td></tr> <tr><td>0x30：</td><td>Lower limit of speed loop output
+</td><td>Change the lower limit of the specified ID actuator speed loop output</td></tr> <tr><td>0x31：</td><td>Upper limit of speed loop output
+</td><td>Change the upper limit of the specified ID actuator speed loop output</td></tr> <tr><td>0x32：</td><td>Lower limit of position loop output
+</td><td>Change the lower limit of the specified ID actuator position loop output</td></tr> <tr><td>0x33：</td><td>Upper limit of position loop output
+</td><td>Change the upper limit of the specified ID actuator position loop output</td></tr> <tr><td>0x83：</td><td>Upper limit of actuator position</td><td>Change the upper limit of the position of the specified ID actuator</td></tr> <tr><td>0x84：</td><td>Lower limit of actuator position</td><td>Change the position lower limit of the specified ID actuator</td></tr> <tr><td>0x87：</td><td>Actuator's Home value</td><td>Set the Home value of the specified ID executor</td></tr> <tr><td>0x89：</td><td>Actuator position offset</td><td>Set the position offset value of the specified ID actuator</td></tr> <tr><td>0x90：</td><td>The upper current when the actuator is automatically zeroed</td><td>Set the lower limit of the current when the specified ID actuator is automatically reset to zero.</td></tr> <tr><td>0x91：</td><td>The lower current when the actuator is automatically zeroed</td><td>Set the upper limit of the current when the specified ID actuator is automatically reset to zero.</td></tr> <tr><td>0x7E：</td><td>Stall energy</td><td>Set the stall energy of the specified ID actuator. (The value is 75.225 times the true value) The heating energy after blocking, the unit is J</td></tr></tbody></table>
 
-#### 写入指令4
+#### Write command 4
 <table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th   colspan="3"style=background:PaleTurquoise>A.2.4写入指令4</th></tr></thead><tbody>
- <tr><td>指令符</td><td>定义</td><td>说明</td></tr> <tr><td>0xFE：</td><td>消除下位机的报警</td><td>消除下位机的报警动作，接收到命令后，下位机停止报警，否则下位机不可操作</td></tr> <tr><td>0x88</td><td>清除Homing数据</td><td>清除Homing数据</td></tr> <tr><td>0x0D</td><td>存储参数</td><td>存储参数到EEPROM</td></tr></tbody></table>
+<thead><tr class="tableizer-firstrow"><th   colspan="3"style=background:PaleTurquoise>A.2.4Write command 4</th></tr></thead><tbody>
+ <tr><td>Command byte</td><td>Definition </td><td>Description</td></tr> <tr><td>0xFE：</td><td>Eliminate the alarm of the lower computer</td><td>Eliminate the alarm action of the lower position machine. After receiving the command, the lower position machine stops the alarm, otherwise the lower position machine is inoperable.</td></tr> <tr><td>0x88</td><td>Clear Homing data</td><td>Clear Homing data</td></tr> <tr><td>0x0D</td><td>Storage parameter</td><td>Store parameters to EEPROM</td></tr></tbody></table>
 
-## 附录B:模式表
-
-<table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th style=background:PaleTurquoise>指令符</th><th style=background:PaleTurquoise>指令符</th></tr></thead><tbody>
- <tr><td>01</td><td>电流模式</td></tr> <tr><td>02</td><td>速度模式</td></tr> <tr><td>03</td><td>位置模式</td></tr> <tr><td>04</td><td>示教模式</td></tr> <tr><td>05</td><td>回放模式</td></tr> <tr><td>06</td><td>梯形位置模式</td></tr> <tr><td>07</td><td>梯形速度模式</td></tr> <tr><td>08</td><td>homing模式</td></tr></tbody></table>
-
-## 附录C:报警指令表
+## Appendix B:mode commands
 
 <table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th style=background:PaleTurquoise>指令符</th><th style=background:PaleTurquoise>指令符</th></tr></thead><tbody>
- <tr><td>0x0001</td><td>过压异常</td></tr> <tr><td>0x0002</td><td>欠压异常</td></tr> <tr><td>0x0004</td><td>堵转异常</td></tr> <tr><td>0x0008</td><td>过热异常</td></tr> <tr><td>0x0010</td><td>读写参数异常</td></tr> <tr><td>0x0020</td><td>多圈计数异常</td></tr> <tr><td>0x0040</td><td>逆变器温度传感器异常</td></tr> <tr><td>0x0080</td><td>CAN通信异常</td></tr> <tr><td>0x0100</td><td>电机温度传感器异常</td></tr> <tr><td>0x0200</td><td>位置模式阶跃大于1</td></tr> <tr><td>0x0400</td><td>DRV保护</td></tr> <tr><td>其他</td><td>设备异常</td></tr> <tr><td>注释</td><td>可同时报警多个错误，如返回数据为0005，则错误为0001过压异常与0004堵转异常</td></tr></tbody></table>
+<thead><tr class="tableizer-firstrow"><th style=background:PaleTurquoise>Command byte</th><th style=background:PaleTurquoise>Command byte</th></tr></thead><tbody>
+ <tr><td>01</td><td>Current mode</td></tr> <tr><td>02</td><td>Speed mode</td></tr> <tr><td>03</td><td>Position mode</td></tr> <tr><td>04</td><td>Teaching mode</td></tr> <tr><td>05</td><td>Playback mode</td></tr> <tr><td>06</td><td>Trapezoidal position mode</td></tr> <tr><td>07</td><td>Trapezoidal speed mode</td></tr> <tr><td>08</td><td>Homing mode</td></tr></tbody></table>
+
+## Appendix C: error warning commands
+
+
+<table class="tableizer-table">
+<thead><tr class="tableizer-firstrow"><th style=background:PaleTurquoise>command</th><th style=background:PaleTurquoise>command</th></tr></thead><tbody>
+ <tr><td>0x0001</td><td>Over voltage error</td></tr> <tr><td>0x0002</td><td>Under-voltage error</td></tr> <tr><td>0x0004</td><td>Locked rotor error</td></tr> <tr><td>0x0008</td><td>Overheating error</td></tr> <tr><td>0x0010</td><td>Parameter reading error</td></tr> <tr><td>0x0020</td><td>Multiturn counting error</td></tr> <tr><td>0x0040</td><td>Some errors with inverter temperature sensor </td></tr> <tr><td>0x0080</td><td>CAN communication error</td></tr> <tr><td>0x0100</td><td>Some errors with motor temperature sensor</td></tr> <tr><td>0x0200</td><td>Step of position mode is over 1</td></tr> <tr><td>0x0400</td><td>DRV protection</td></tr> <tr><td>other</td><td>error with equipment</td></tr> <tr><td>explanation</td><td>Many errors can be reported at the same time. If the return data is 0005, then the error will be reported as 0001 
+Overvoltage abnormality and 0004 locked rotor error.</td></tr></tbody></table>
 
 ## 附录D:型号表
 
