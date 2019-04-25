@@ -56,4 +56,4 @@ RPM/s^2: 对加速度的一阶时间导数，即加加速度（急动度），�
 
 下表简单描述了版本变更记录
 
-<table><thead><tr style="background="><th>版本号</th><th>更新时间</th><th>更新内容</th></tr></thead><tbody><tr><td>V1.0.2</td><td>18.12.07</td><td>增加了示波器和S曲线模式的使用说明</td></tr><tr><td>V1.0.1</td><td>18.04.28</td><td>全文更新配图</td></tr><tr><td rowspan=4>V1.0.0</td><td>18.03.14</td><td>更新了全章节的配图</td></tr><tr><td>18.03.12</td><td>修改了开机错误提示，更新了3.1章节3.2章节的部分配图</td></tr><tr><td>18.01.15</td><td>增加了如何修改执行器编号</td></tr><tr><td>18.01.04</td><td>添加了开机按钮</td></tr></tbody></table>
+<table><thead><tr style=background:PaleTurquois><th>版本号</th><th>更新时间</th><th>更新内容</th></tr></thead><tbody><tr><td>V1.0.2</td><td>18.12.07</td><td>增加了示波器和S曲线模式的使用说明</td></tr><tr><td>V1.0.1</td><td>18.04.28</td><td>全文更新配图</td></tr><tr><td rowspan=4>V1.0.0</td><td>18.03.14</td><td>更新了全章节的配图</td></tr><tr><td>18.03.12</td><td>修改了开机错误提示，更新了3.1章节3.2章节的部分配图</td></tr><tr><td>18.01.15</td><td>增加了如何修改执行器编号</td></tr><tr><td>18.01.04</td><td>添加了开机按钮</td></tr></tbody></table>
