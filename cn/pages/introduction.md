@@ -25,7 +25,7 @@
 下表简单描述了版本变更记录
 
 <table>
-<thead><tr ><th>Version No.</th><th>Update time</th><th>update contents</th></tr></thead><tbody>
+<thead><tr style=background:PaleTurquoise><th>Version No.</th><th>Update time</th><th>update contents</th></tr></thead><tbody>
  <tr><td>V1.0.0</td><td>2019.04</td><td>The first version</td></tr>
 </tbody></table>
 
