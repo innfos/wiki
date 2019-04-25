@@ -41,7 +41,7 @@ $ git clone https://github.com/innfos/ActuatorController_SDK.git
 
 * 打开终端进入…\example目录，该目录下有CMakeLists.txt，
 
-```sh
+```bash
 $ cmake CMakeLists.txt
 $ make
 ```
@@ -57,7 +57,7 @@ $ make
 
 *   打开终端并进入bin目录，输入命令
 
-```sh
+```bash
 $./lookupActuators -e
 ```
 *   此窗口会显示当前已连接的执行器数量，可以ctrl+c结束程序
@@ -139,7 +139,7 @@ $./lookupActuators -e
 
 *   打开终端，进入example/bin目录，输入命令
 
-```sh
+```bash
 $./monitorActuator -e
 ```
 
@@ -206,7 +206,7 @@ $./monitorActuator -e
 
 *   打开终端，进入example/bin目录，输入命令
 
-```sh
+```bash
 $./operateActuator -e
 ```
 
@@ -284,7 +284,7 @@ $./operateActuator -e
 
 *   打开终端，进入example/bin目录，输入命令
 
-```sh
+```bash
 $./tuneActuator -e
 ```
 
@@ -324,7 +324,7 @@ $./tuneActuator -e
 
 *   打开终端，进入example/bin目录，输入命令
 
-```sh
+```bash
 $./homingActuator -e
 ```
 
@@ -364,7 +364,7 @@ pController->saveAllParams(nDeviceId);
 
 *   打开终端并进入bin目录，输入命令
 
-```sh
+```bash
 $./longIdAndByteId -e
 ```
 
@@ -408,7 +408,7 @@ $./longIdAndByteId -e
 
 * 打开终端并进入bin目录，输入命令
 
-```sh
+```bash
 $./feedback_sync -e
 ```
 
@@ -464,7 +464,7 @@ ActuatorController * pController = ActuatorController::getInstance();
 
 打开命令行窗口并进入bin目录，输入命令
 
-```sh
+```bash
 ./lookupActuators.exe -e 
 ```
 
@@ -478,7 +478,7 @@ ActuatorController * pController = ActuatorController::getInstance();
 
 *   打开命令行窗口并进入bin目录，输入命令
 
-```sh
+```bash
 ./monitorActuator.exe -e
 ```
 
@@ -491,7 +491,7 @@ ActuatorController * pController = ActuatorController::getInstance();
 *   打开命令行窗口并进入bin目录，输入命令
 
 
-```sh
+```bash
 ./operateActuator.exe -e
 ```
 
@@ -513,7 +513,7 @@ ActuatorController * pController = ActuatorController::getInstance();
 
 *   打开命令行窗口并进入bin目录，输入命令
 
-```sh
+```bash
 ./tuneActuator.exe -e
 ```
 
@@ -525,7 +525,7 @@ ActuatorController * pController = ActuatorController::getInstance();
 
 *   打开命令行窗口并进入bin目录，输入命令
 
-```sh
+```bash
 ./homingActuator.exe -e
 ```
 
@@ -541,7 +541,7 @@ position 模式下，输入此范围之外的位置，执行器不会转动，�
 
 *   打开命令行窗口并进入bin目录，输入命令
 
-```sh
+```bash
 ./longIdAndByteId.exe -e
 ```
 
@@ -553,7 +553,7 @@ position 模式下，输入此范围之外的位置，执行器不会转动，�
 
 *   打开命令行窗口并进入bin目录，输入命令
 
-```sh
+```bash
 ./feedback_sync.exe -e
 ```
 
