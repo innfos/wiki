@@ -4,6 +4,8 @@
 
 *   INNFOS提供模块化机器人构建块，使您可以快速构建和编程自定义机器人系统。我们提供智能兼容执行器（SCA），数字和模拟接口板以及将这些组件连接在一起的机械和电气硬件（另请参阅[硬件配置](硬件配置 "wikilink")）。与硬件同样重要的是，INNFOS还提供软件工具和API来编程和控制从这些物理组件创建的机器人系统（有关详细信息，请参阅[Software &amp; Development](Main_Page#Learning "wikilink")），建议使用由INNFOS Actuator Studio（IAS）开发的INNFOS for SCA快速安全的调试。
 
+![shouyesca1.png](../img/shouyesca1.png)
+
 [![](https://github.com/innfos/wiki/blob/master/cn/img/shouyesca1.png)](https://github.com/innfos/wiki/blob/master/cn/img/shouyesca1.png)
 
 > Innfos SCA.
@@ -13,33 +15,16 @@
 
 *   INNFOS SCA（Smart Compliant Actuator）是一种智能，高度集成和先进的伺服系统，具有灵活和安全的控制。它高度集成了伺服电机，伺服驱动器，减速器和编码器的核心部件。在相同性能下，其体积仅为传统伺服系统的十分之一。与传统的机器人驱动相比，SCA是一项革命性的突破。它有效地解决了各类机器人多关节连接的结构问题，保证了服务机器人的联合控制和安全使用。这使得服务机器人能够与人类一起工作和生活，这为第四次工业革命和即将到来的智能机器人时代提供了重要的核心技术。
 
-[![](https://github.com/innfos/wiki/blob/master/cn/img/shouyesca2.jpeg)](https://github.com/innfos/wiki/blob/master/cn/img/shouyesca1.jpeg)
-
-
-
-<div class="figure">
-
-
-</div>
+![shouyesca2.jpeg](../img/shouyesca2.jpeg )
 
 ## 应用领域
 
 *   INNFOS SCA包括带减速器的QDD Pro，使用行星减速器的QDD和不带减速器的DD。SCA可以应用于多种场景。最小的SCA可应用于三脚架头，无人机等，而最大的SCA可应用于机器人，机器人臂等。当然，SCA通常用于电动工具，CNC，3D打印机，AGV等。
-<div class="figure">
 
-</div>
 
 # 版本变更记录
 
 下表简单描述了版本变更记录
-
-| 版本        | 	日期   |  	修改内容  |
-| :--------:  | :-----:  | :----:  |
-| V1.0.3      | 	2019-4-15   |   	修改原理图图片    |
-| V1.0.2       |  2019-4-9  |   	添加型号: <br>DD-2305   |
-| V1.0.1       |   2019-4-4    |  删除型号:<br>QDD-6010-8<br>QDD-6010-64 <br>QDD-8108-8 <br>QDD-8108-64<br>添加型号:<br>QDD-6010-6 <br>QDD-6010-36 <br>QDD-8108-6 <br>QDD-8108-36  |
-| V1.0.0       |   2018-11-12  |  第一个版本 |
-
 
 <table>
   <p>style=&quot;background: PaleTurquoise; color: black;width:75px&quot;</p>
