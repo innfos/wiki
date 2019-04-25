@@ -181,7 +181,7 @@ CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰�
 
 <table><thead><tr><th colspan="3"style=background:PaleTurquoise>3.3.1.2 发送数据1字节，返回数据3字节</th></tr></thead><tbody><tr><td>命令名称</td><td colspan="2">读取命令</td></tr><tr><td>说明</td><td colspan="2">此命令类发送数据长度为1，返回数据长度为3，读取执行器参数值，高位在前。数值为真实值的2^8倍。（一条特殊指令指令表内已特殊标注）</td></tr><tr><td>指令符</td><td colspan="2">见读取指令2</td></tr><tr><td>数据长度</td><td colspan="2">1</td></tr><tr><td>数据内容</td><td colspan="2">无</td></tr><tr><td>指令符（返回值）</td><td colspan="2">见读取指令2</td></tr><tr><td>数据长度 (返回值)</td><td colspan="2">3</td></tr><tr><td>下位机返回数据</td><td>数据为IQ8格式</td><td>或见报警指令表</td></tr></tbody></table>
 
-<table><thead><tr><th colspan="3"style=background:PaleTurquoise>3.3.1.3 发送数据1字节，返回数据5字节</th></tr></thead><tbody><tr><td>命令名称</td><td>读取命令</td></tr><tr><td>说明</td><td>此命令类发送数据长度为1，返回数据长度为5，读取执行器参数值，高位在前。</td></tr><tr><td>数值为真实值的2^24倍。（一条特殊指令指令表内已特殊标注）</td></tr><tr><td>指令符</td><td>见读取指令3</td></tr><tr><td>数据长度</td><td>1</td></tr><tr><td>数据内容</td><td>无</td></tr><tr><td>指令符（返回值）</td><td>见读取指令3</td></tr><tr><td>数据长度 (返回值)</td><td>5</td></tr><tr><td>下位机返回数据</td><td>数据为IQ24格式。(一条特殊指令指令表内已特殊标注)）</td></tr></tbody></table>
+<table><thead><tr><th colspan="3"style=background:PaleTurquoise>3.3.1.3 发送数据1字节，返回数据5字节</th></tr></thead><tbody><tr><td>命令名称</td><td>读取命令</td></tr><tr><td>说明</td><td>此命令类发送数据长度为1，返回数据长度为5，读取执行器参数值，高位在前。数值为真实值的2^24倍。（一条特殊指令指令表内已特殊标注）</td></tr><tr><td>指令符</td><td>见读取指令3</td></tr><tr><td>数据长度</td><td>1</td></tr><tr><td>数据内容</td><td>无</td></tr><tr><td>指令符（返回值）</td><td>见读取指令3</td></tr><tr><td>数据长度 (返回值)</td><td>5</td></tr><tr><td>下位机返回数据</td><td>数据为IQ24格式。(一条特殊指令指令表内已特殊标注)）</td></tr></tbody></table>
 
 ### 写入命令
 
