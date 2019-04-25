@@ -15,6 +15,21 @@
 
 # 配线
 
+<table>
+<thead><tr><th colspan="4">Table 2-1 Communication Signal Connector Pin Definitions</th></tr></thead><tbody>
+ <tr><td>Pin number</td><td>definition</td><td>description</td><td>Terminal pin distribution</td></tr>
+ <tr><td>1</td><td>PVDD</td><td>Power supply</td><td rowspan="9">![配线](../img/配线2-2.png "配线")</td></tr>
+ <tr><td>3</td><td>PVDD</td><td>Power supply</td></tr>
+ <tr><td>5</td><td>PVDD</td><td>Power supply</td></tr>
+ <tr><td>2</td><td>GND</td><td>Power Ground</td></tr>
+ <tr><td>4</td><td>GND</td><td>Power Ground</td></tr>
+ <tr><td>6</td><td>CGND</td><td>CAN communication place</td></tr>
+ <tr><td>7</td><td>CANL</td><td>CAN communication interface</td></tr>
+ <tr><td>8</td><td>CANH</td><td>CAN communication interface</td></tr>
+ <tr><td>shell</td><td>PE</td><td>shield</td></tr>
+</tbody></table>
+
+
 * INNFOS执行器的插线接口为CAN通信接口，接口如下图所示。名称相同的端口内部引脚连接在一起，其接口定义表2-1所示。CAN接口连接器至少配有CANH、CANL、CGND引脚。
 
 **表2-1通信信号连接器引脚定义**
