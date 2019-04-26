@@ -107,7 +107,7 @@ CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰�
 
 设备地址： 0x01 = 读取的对象ID
 
-数据长度：0x1 = 数据长度
+数据长度：0x01 = 数据长度
 
 指令符： 0x05 = 读取的当前速度指令
 
@@ -118,7 +118,7 @@ CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰�
 <table><thead><tr><th colspan="4"style=background:PaleTurquoise>应答命令</th></tr></thead><tbody><tr><td>设备地址</td><td>数据长度</td><td>指令符</td><td>参数内容</td></tr><tr><td>0x01</td><td>0x5</td><td>0x05</td><td>data[3~0]</td></tr></tbody></table>
 
 返回设备地址：0x01 = 应答对象ID
-数据长度：0x5 = 应答的数据长度5位
+数据长度：0x05 = 应答的数据长度5位
 指令符：0x05 = 应答当前速度指令（与发送指令符相同）
 参数内容：0xXX 0xXX 0xXX 0xXX = 应答的参数内容
 应答内容：0x05 0xXX 0xXX 0xXX 0xXX
