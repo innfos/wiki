@@ -27,7 +27,7 @@
 
 ## CAN通信的总线和多节点的连接方式
 
-< img src="../img/wiring2-3.png" style="width:780px">
+<img src="../img/wiring2-3.png" style="width:600px">
 
 CAN通信网络的连接方式为总线连接方式，图2-3 所示
 
@@ -43,7 +43,7 @@ CAN通信网络的连接方式为总线连接方式，图2-3 所示
 
 CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰有很好的抵抗能力，也能减小线缆对外的辐射，图2-5所示。
 
-< img src="../img/wiring2-5.png" style="width:780px">
+<img src="../img/wiring2-5.png" style="width:600px">
 
 图2-5：双绞线示意图
 
@@ -55,7 +55,7 @@ CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰�
 
 ### 设备为非隔离CAN,与其他信号共用GND或是COM端口
 
-< img src="../img/wiring2-11.png" style="width:780px">
+<img src="../img/wiring2-11.png" style="width:600px">
 
 
 将该设备GND或是COM与我公司设备CAN_GND连接，如2-11图所示：
@@ -64,7 +64,7 @@ CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰�
 
 ## CAN通信协议格式
 
-< img src="../img/3-1communicationprotocol.png" style="width:780px">
+<img src="../img/3-1communicationprotocol.png" style="width:600px">
 
 如图3-1：设备地址对应标识符位，CAN总线标准数据帧标识符位为11位，本协议只用了其中8位，占一个字节，数据长度对应DLC,占半字节，指令符参数内容同在数据域，指令符在前参数内容在后，高字节在前，低字节在后。数据长度等于指令符加上参数内容。
 
@@ -168,7 +168,7 @@ CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰�
 
 * * *
 
-< img src="../img/position.jpg" style="width:780px">
+<img src="../img/position.jpg" style="width:600px">
 
 * 注释：
 * 上位机所设置的上限幅值（Maximum）最高为_IQ(1.0)，下限幅值（Minimal）最低为_IQ(-1.0)，起到限幅作用（原理图如图3-2）。例：（如图:3-2用位置环的输出经过限幅模块为速度环的输入，假设_IQ（0.5），_IQ（-0.5）则位置环输出最大速度应为±0.5x6000=±3000RPM）
