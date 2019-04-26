@@ -1,4 +1,3 @@
-[English](Introduction "wikilink")
 
 # 概述
 
