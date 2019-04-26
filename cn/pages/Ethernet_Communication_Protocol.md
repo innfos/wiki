@@ -94,7 +94,7 @@
 
 **示例1.读命令**
 
-<table><tr><th colspan="6">读取执行器ID为0x01的当前速度值</th></tr><tr><td >帧头</td><td >设备地址</td><td >指令符</td><td >数据长度（2字节）</td><td >参数内容</td><td >帧尾</td></tr><tr><td >0xEE</td><td >0x01</td><td >0x5</td><td >0x00 0x00</td><td >无</td><td >0xED</td></tr></table>
+<table><tr><th colspan="6">读取执行器ID为0x01的当前速度值</th></tr><tr><td >帧头</td><td >设备地址</td><td >指令符</td><td >数据长度（2字节）</td><td >参数内容</td><td >帧尾</td></tr><tr><td >0xEE</td><td >0x01</td><td >0x05</td><td >0x00 0x00</td><td >无</td><td >0xED</td></tr></table>
 
 帧头 ：0xEE = 协议头
 
@@ -111,7 +111,7 @@
 发送内容：0x05
 
 
-<table class="tableizer-table"><tbody><tr><td  colspan="7"style=background:PaleTurquoise>应答命令</td></tr><tr><td>帧头</td><td>设备地址</td><td>指令符</td><td>数据长度（2字节）</td><td>参数内容</td><td>CRC校验</td><td>帧尾</td></tr><tr><td>0xEE</td><td>0x01</td><td>0x5</td><td>0x00 0x04</td><td>4字节数据</td><td>2字节数据</td><td>0xED</td></tr></tbody></table>
+<table class="tableizer-table"><tbody><tr><td  colspan="7"style=background:PaleTurquoise>应答命令</td></tr><tr><td>帧头</td><td>设备地址</td><td>指令符</td><td>数据长度（2字节）</td><td>参数内容</td><td>CRC校验</td><td>帧尾</td></tr><tr><td>0xEE</td><td>0x01</td><td>0x05</td><td>0x00 0x04</td><td>4字节数据</td><td>2字节数据</td><td>0xED</td></tr></tbody></table>
 
 帧头 ：0xEE = 协议头
 
