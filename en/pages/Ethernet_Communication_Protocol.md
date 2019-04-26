@@ -198,7 +198,7 @@ After successfully querying the actuator, the actuator can communicate with the 
 
 Send command to activate Ladder Position Mode:
 EE 06 07 00 01 06 3F 42 ED
-Data 06 is in trapezoidal position mode [see mode table](#!pages/Ethernet_Communication_Protocol.md#附录B:模式表 "wikilink")，3F 42为[CRC Check code](#!pages/Ethernet_Communication_Protocol.md#CRC校验码计算方法 "wikilink")that will receive a return after successful activation:
+Data 06 is in trapezoidal position mode [see mode table](#!pages/Ethernet_Communication_Protocol.md#附录B:模式表 "wikilink")，3F 42is[CRC Check code](#!pages/Ethernet_Communication_Protocol.md#CRC校验码计算方法 "wikilink")that will receive a return after successful activation:
 EE 06 07 00 01 01 ED
 At this point a speed command can be sent:
 EE 06 0A 00 04 00 01 00 00 01 D8 ED
@@ -228,7 +228,7 @@ Note: the commands for setting the speed current position value are not returned
 <thead><tr class="tableizer-firstrow"></tr></thead><tbody><tr><td colspan="2"style=background:PaleTurquoise>Send data 2 byte, return data 1 byte</td></tr><tr><td>Command name</td><td>Write command</td></tr><tr><td>Description</td><td>The data length of this command is 3 bytes, the return data length is 2 bytes, and the sent data 2 bytes at last indicate that the parameter content is to be written, and the high parameter shows in front. The value is 2^8 times the true value.</td></tr><tr><td>Command character</td><td><a href="#!pages/Ethernet_Communication_Protocol.md#Instruction 2">See instruction 2</a></td></tr><tr><td>Data length</td><td>2</td></tr><tr><td rowspan="2">Data content</td><td>The value is formed IQ8</td></tr><tr><td>0x00：Disable/power off</td></tr><tr><td>Instruction (return value)</td><td><a href="#!pages/Ethernet_Communication_Protocol.md#Write command 2">See write command 2</a></td></tr><tr><td>Data length (return value)</td><td>1</td></tr><tr><td rowspan="2">IAS return data</td><td>0x01：Success</td></tr><tr><td>0x00：Fail</td></tr></tbody></table>
 
 <table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th  colspan="3"style=background:PaleTurquoise>2.3.2.3Send data 4 byte, return data is 1 byte or less</th></tr></thead><tbody> <tr><td>Command name</td><td colspan="2">Write command</td></tr><tr><td>Description</td><td  colspan="2">The data length of this command is 5 bytes, the return data length is 2 2 bytes, and the sent data 4 bytes at last indicate that the parameter content is to be written. The value is 2^24 times the true value. (Special instructions are specified in the instruction list)</td></tr><tr><td>Command byte</td><td  colspan="2"><a href="#!pages/Ethernet_Communication_Protocol.md#Write command 3">See write command 3</a></td></tr><tr><td>Data content</td><td  colspan="2">4</td></tr><tr><td>数据内容</td><td  colspan="2">The value is formed IQ24 (Special instructions are specified in the instruction list)</td></tr><tr><td>Instruction (return value)</td><td  colspan="2"><a href="#!pages/Ethernet_Communication_Protocol.md#Write command 3">See write command 3</a></td></tr><tr><td>Data length (return value)</td><td  colspan="2">1Or0</td></tr><tr><td  rowspan="2">Lower machine returns data</td><td>0x01：Success</td><td  rowspan="2">(There are no return data for the three special instructions, which are marked in the instruction list)</td></tr><tr><td  colspan="1">0x00：Fail</td></tr></tbody></table>
+<thead><tr class="tableizer-firstrow"><th  colspan="3"style=background:PaleTurquoise>2.3.2.3Send data 4 byte, return data is 1 byte or less</th></tr></thead><tbody> <tr><td>Command name</td><td colspan="2">Write command</td></tr><tr><td>Description</td><td  colspan="2">The data length of this command is 5 bytes, the return data length is 2 2 bytes, and the sent data 4 bytes at last indicate that the parameter content is to be written. The value is 2^24 times the true value. (Special instructions are specified in the instruction list)</td></tr><tr><td>Command byte</td><td  colspan="2"><a href="#!pages/Ethernet_Communication_Protocol.md#Write command 3">See write command 3</a></td></tr><tr><td>Data content</td><td  colspan="2">4</td></tr><tr><td>Data content</td><td  colspan="2">The value is formed IQ24 (Special instructions are specified in the instruction list)</td></tr><tr><td>Instruction (return value)</td><td  colspan="2"><a href="#!pages/Ethernet_Communication_Protocol.md#Write command 3">See write command 3</a></td></tr><tr><td>Data length (return value)</td><td  colspan="2">1Or0</td></tr><tr><td  rowspan="2">Lower machine returns data</td><td>0x01：Success</td><td  rowspan="2">(There are no return data for the three special instructions, which are marked in the instruction list)</td></tr><tr><td  colspan="1">0x00：Fail</td></tr></tbody></table>
 
 <table class="tableizer-table">
 <thead><tr class="tableizer-firstrow"><th colspan="2"style=background:PaleTurquoise>2.3.2.4Send data 0 byte, return data is 1 byte</th></tr></thead><tbody><tr><td>Command name</td><td>Write command</td></tr><tr><td>Description</td><td>This command class sends a data length of 1, and returns a data length of 2</td></tr><tr><td>Command byte</td><td><a href="#!pages/Ethernet_Communication_Protocol.md#Write command 4">See write command 4</a></td></tr><tr><td>Data length</td><td>0</td></tr><tr><td>Data content</td><td>None</td></tr><tr><td>Command (return value)</td><td><a href="#!pages/Ethernet_Communication_Protocol.md#Write command 4">See write command 4</a></td></tr><tr><td>Data length(return value)</td><td>1</td></tr><tr><td rowspan="2">Lower machine returns data</td><td>0x01：success</td></tr><tr><td>0x00：fail</td></tr></tbody></table>
@@ -246,7 +246,7 @@ Note: the commands for setting the speed current position value are not returned
 ![see IQ-MATH Library file](../img/3-1通信协议.png "详见 IQ-MATH Library文档") 
 
 
-[IQ-MATH Library文档](../img/C28x_IQmath_Library.pdf "详见 IQ-MATH Library文档") 
+[IQ-MATH Library file](../img/C28x_IQmath_Library.pdf "详见 IQ-MATH Library文档") 
 
 *    Fixed point number = floating point number × 2^Q
 
@@ -330,12 +330,12 @@ CRC check code calculation method (c++):
     
     static uint16_t CRC16_1(uint8_t* pchMsg, int16_t wDataLen)
     {
-        uint8_t chCRCHi = 0xFF; // 高CRC字节初始化
-        uint8_t chCRCLo = 0xFF; // 低CRC字节初始化
-        int16_t wIndex;            // CRC循环中的索引
+        uint8_t chCRCHi = 0xFF; // High CRC byte initialization
+        uint8_t chCRCLo = 0xFF; // Low CRC byte initialization
+        int16_t wIndex;            // Index in the CRC loop
         while (wDataLen--)
         {
-            // 计算CRC
+            // Calculate CRC
             wIndex = chCRCHi ^ *pchMsg++;
             chCRCHi = chCRCLo ^ chCRCHTalbe[wIndex];
             chCRCLo = chCRCLTalbe[wIndex];
