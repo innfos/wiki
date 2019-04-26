@@ -19,7 +19,7 @@
 
 * 查看网络配置 
 
-< img src="../img/020.png" style="width:780px">
+<img src="../img/020.png" style="width:780px">
 
 * 示例中有线网卡的名字是enp0s25,输入命令
 
@@ -30,50 +30,50 @@
 
 配置完成后输入ifconfig，可看到配置成功后的ip地址
 
-< img src="../img/020.png" style="width:780px">
+<img src="../img/020.png" style="width:780px">
 
 ## windows平台环境配置
 
 *   需要win7 sp1以上的64位windows操作系统
 *   如果电脑防火墙已开启，打开控制面板，选择系统和安全，打开Windows Defender 防火墙，点击左侧高级设置，点击入站规则
 
-< img src="../img/001.png" style="width:780px">
+<img src="../img/001.png" style="width:780px">
 
 新建规则 
 
-< img src="../img/002.png" style="width:780px">
+<img src="../img/002.png" style="width:780px">
 
 选择端口，然后点击下一步 
 
-< img src="../img/003.png" style="width:780px">
+<img src="../img/003.png" style="width:780px">
 
 选择udp，并选择所有本地端口，点击下一步 
 
-< img src="../img/004.png" style="width:780px">
+<img src="../img/004.png" style="width:780px">
 
 允许连接，点击下一步， 
 
-< img src="../img/005.png" style="width:780px">
+<img src="../img/005.png" style="width:780px">
 
 默认勾选所有设置，点击下一步 
 
-< img src="../img/006.png" style="width:780px">
+<img src="../img/006.png" style="width:780px">
 
 填写自定义名字，完成即可 
 
-< img src="../img/007.png" style="width:780px">
+<img src="../img/007.png" style="width:780px">
 
 ip地址配置，
 
 打开控制面板，选择网络和Internet,再选择网络和共享中心，再选择更改适配器设置，右键单击以太网，选择属性 
 
-< img src="../img/008.png" style="width:780px">
+<img src="../img/008.png" style="width:780px">
 
 选择TCP/IPv4,然后选择属性， 配置如图：
 
 其中ip地址中的192.168.1.119中的119可以替换成100~200之间的任意整数，配置完成点击确定 
 
-< img src="../img/009.png" style="width:780px">
+<img src="../img/009.png" style="width:780px">
 
 ## 版本变更记录
 
