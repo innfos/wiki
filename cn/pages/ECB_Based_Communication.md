@@ -16,7 +16,7 @@
 
 <img src="../img/power.jpg" style="width:780px">
 
-Note: `必须先断电然后再插拔部件.`  否则可能损坏部件.
+Note: 必须先断电然后再插拔部件.  否则可能损坏部件.
 
 
 **连接ECB**
