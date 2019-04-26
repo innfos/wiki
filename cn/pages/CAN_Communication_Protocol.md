@@ -27,7 +27,7 @@
 
 ## CAN通信的总线和多节点的连接方式
 
-![配线](../img/wiring2-3.png "CAN通信网络拓扑结构")
+< img src="../img/wiring2-3.png" style="width:780px">
 
 CAN通信网络的连接方式为总线连接方式，图2-3 所示
 
