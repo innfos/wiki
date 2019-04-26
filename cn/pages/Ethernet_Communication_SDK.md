@@ -68,16 +68,16 @@ $./lookupActuators -e
 
 *   根据不同的参数选择不同的通信方式，默认为以太网通信。注意：必须先初始化控制器，才能进行其他操作
 
-```cpp
+``` cpp
     //初始化控制器
    if(strcmp(argv[1],"-s")==0)
         ActuatorController::initController(Actuator::Via_Serialport);
    elseif(strcmp(argv[1],"-e")==0)
         ActuatorController::initController();
 ```
-*   关联操作完成信号，如此用户操作成功以后，会触发该信号，根据不同的operationType，进行相应操作，本例中会在自动识别完成后，打印出识别到的执行器数量。
+*   关联操作完成信号，如此用户操作成功以后，会触发该信号，根据不同的`operationType`，进行相应操作，本例中会在自动识别完成后，打印出识别到的执行器数量。
 
-```cpp
+``` cpp
     //关联控制器的操作信号
    int nOperationConnection = pController->m_sOperationFinished->s_Connect([=](uint8_t nDeviceId,uint8_t operationType){
        switch (operationType) {
@@ -93,7 +93,7 @@ $./lookupActuators -e
         }
     });
 ```
-*   完整的应用必须要关联错误信号，以便在执行器内部发生错误时及时收到反馈并作出相应处理，nDeviceId为0时，错误不针对特定的执行器（例如未连接的错误）
+*   完整的应用必须要关联错误信号，以便在执行器内部发生错误时及时收到反馈并作出相应处理，`nDeviceId`为0时，错误不针对特定的执行器（例如未连接的错误）
 
 ```cpp
     //关联错误信号
@@ -143,14 +143,14 @@ $./lookupActuators -e
 $./monitorActuator -e
 ```
 
-*   其中Actuator ID为执行器id,attribute ID为监测的执行器属性Id，attribute value为对
+*   其中`Actuator ID`为执行器id,`attribute ID`为监测的执行器属性Id，`attribute value`为对
     应的属性值，可以ctrl+c结束程序
 
 <img src="../img/023.png" style="width:780px">
 
 **代码说明**
 
-*   自动识别成功后自动开启所有执行器，每个执行器开启成功后都会触发Actuator::Launch_Finished信号，当所有执行器都开启以后，开始自动刷新，读取执行器数据。
+*   自动识别成功后自动开启所有执行器，每个执行器开启成功后都会触发`Actuator::Launch_Finished`信号，当所有执行器都开启以后，开始自动刷新，读取执行器数据。
 
 ```cpp
    int nLaunchedActuatorCnt =0;
@@ -190,7 +190,7 @@ $./monitorActuator -e
     });
 ```
 
-*   为了监测执行器的属性变化，需关联信号m_sActuatorAttrChanged，当用户请求读取执行器的属性后，成功返回会触发该信号
+*   为了监测执行器的属性变化，需关联信号`m_sActuatorAttrChanged`，当用户请求读取执行器的属性后，成功返回会触发该信号
     //关联控制器控制的执行器属性变化信号
 	
 ```cpp
@@ -213,20 +213,20 @@ $./operateActuator -e
 <img src="../img/024.png" style="width:780px">
 
 
-*   表示执行器已经找到，输入命令l 0，该命令会启动所有已连接的执行器，如果启动成功，执行器会有绿色指示灯闪烁，表示已经启动成功，终端窗如下显示
+*   表示执行器已经找到，输入命令`l 0`，该命令会启动所有已连接的执行器，如果启动成功，执行器会有绿色指示灯闪烁，表示已经启动成功，终端窗如下显示
 
 <img src="../img/025.png" style="width:780px">
 
-*   此时可激活执行器对应模式，比如输入 a 6可以激活profile position模式，再输入p 5，
+*   此时可激活执行器对应模式，比如输入` a 6`可以激活profile position模式，再输入`p 5`，
 
-    执行器会转动到5圈的位置；输入a 7可以激活profile velocity模式，再输入v 500， 执行器将以500RPM的速度转动，停止转动输入v 0,；输入a 1可以激活电流模式，再输入 c 0.6，执行器将以恒定0.6A的电流转动（如果执行器不动，可用手轻轻转动一下执行器）， 可以ctrl+c以后再ctrl+d结束程序（因为有多线程等待键盘输入）
+    执行器会转动到5圈的位置；输入`a 7`可以激活`profile velocity`模式，再输入`v 500`， 执行器将以500RPM的速度转动，停止转动输入`v 0`,；输入`a 1`可以激活电流模式，再输入 `c 0.6`，执行器将以恒定0.6A的电流转动（如果执行器不动，可用手轻轻转动一下执行器）， 可以`ctrl+c`以后再`ctrl+d`结束程序（因为有多线程等待键盘输入）
     
 <img src="../img/026.png" style="width:780px">
      
 
 **代码说明**
 
-*   成功启动执行器后，可对执行器进行操作。getActuatorIdArray可获取所有执行器的短id，用户可以指定其中任意id并进行操作，执行器有速度、电流、位置等多种模式（Actuator::ActuatorMode），必须先激活对应的模式才能进行相应操作。
+*   成功启动执行器后，可对执行器进行操作。`getActuatorIdArray`可获取所有执行器的短id，用户可以指定其中任意id并进行操作，执行器有速度、电流、位置等多种模式（`Actuator::ActuatorMode`），必须先激活对应的模式才能进行相应操作。
 
 ```cpp
    vector<uint8_t> idArray = controllerInst->getActuatorIdArray();
@@ -290,7 +290,7 @@ $./tuneActuator -e
 
 *   此示例程序自动启动执行器并将位置环输出设置为3000RPM,速度环的电流最大输出为16.5A,
 
-    如果使用profile position模式转动执行器，执行器的最大速度不会超过3000RPM;如果 使用profile velocity模式转动执行器，执行器最大电流不会超过16.5A，可以ctrl+c结束程序 
+    如果使用`profile position`模式转动执行器，执行器的最大速度不会超过3000RPM;如果 使用`profile velocity`模式转动执行器，执行器最大电流不会超过16.5A，可以`ctrl+c`结束程序 
     
 <img src="../img/027.png" style="width:780px"> 
     
@@ -329,16 +329,16 @@ $./homingActuator -e
 ```
 
 
-*   表示已经将执行器当前位置设置为零位，范围是-9.5R到9.5R，并且开启了位置限制，如果profile position模式下，输入此范围之外的位置，执行器不会转动，可以ctrl+c结束程序 
+*   表示已经将执行器当前位置设置为零位，范围是-9.5R到9.5R，并且开启了位置限制，如果`profile position`模式下，输入此范围之外的位置，执行器不会转动，可以`ctrl+c`结束程序 
 
 <img src="../img/028.png" style="width:780px">
 
 **代码说明**
 
-*   执行器自动启动完成后，setHomingPosition会将当前位置getActuatorAttribute(id,Actuator::ACTUAL_POSITION)设置成0位，</br>setMaxPosLimit和setMinPosLimit会设置最大和最小的位置限制，setActuatorAttribute(id,Actuator::POS_OFFSET,0.5)设置极限偏移。
-    //执行器0位和限位调整
+*   执行器自动启动完成后，`setHomingPosition`会将当前位置`getActuatorAttribute(id,Actuator::ACTUAL_POSITION)`设置成0位，`setMaxPosLimit`和`setMinPosLimit`会设置最大和最小的位置限制，`setActuatorAttribute(id,Actuator::POS_OFFSET,0.5)`设置极限偏移。
 	
 ```cpp
+    //执行器0位和限位调整
    void setActuatorLimitation()
     {
         ActuatorController * pController = ActuatorController::getInstance();
@@ -372,7 +372,7 @@ $./longIdAndByteId -e
 
 **代码说明**
 
-*   信号变量以L结尾的标识该信号关联的是执行器长id，可以通过长id进行通信。长短id的区别在于长id包含了通信地址和短id，并且可以相互转换（如果不同的ip地址下有相同短id的执行器，短id转换长id会随机转换其中一个ip地址下的一个长id）。
+*   信号变量以`L`结尾的标识该信号关联的是执行器长id，可以通过长id进行通信。长短id的区别在于长id包含了通信地址和短id，并且可以相互转换（如果不同的ip地址下有相同短id的执行器，短id转换长id会随机转换其中一个ip地址下的一个长id）。
     //关联控制器的longId操作信号
 
 ```cpp
@@ -416,7 +416,7 @@ $./feedback_sync -e
 
 **代码说明**
 
-*   getActuatorAttributeWithACK和setActuatorAttributeWithACK是目前sdk提供的两个同步响应的接口，对应于getActuatorAttribute和setActuatorAttribute，可以同步获取或者设置执行器的属性，调用getActuatorAttributeWithACK和setActuatorAttributeWithACK会阻塞当前程序，直到有结果返回（不管成功或者失败）。
+*   `getActuatorAttributeWithACK`和`setActuatorAttributeWithACK`是目前sdk提供的两个同步响应的接口，对应于`getActuatorAttribute`和`setActuatorAttribute`，可以同步获取或者设置执行器的属性，调用`getActuatorAttributeWithACK`和`setActuatorAttributeWithACK`会阻塞当前程序，直到有结果返回（不管成功或者失败）。
 
 ```cpp
 ActuatorController * pController = ActuatorController::getInstance();
