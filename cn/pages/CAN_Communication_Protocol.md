@@ -4,8 +4,9 @@
 
 ## CAN协议概述
 
-* CAN 是Controller Area Network 的缩写（以下称为CAN），是ISO国际标准化的串行通信协议。
-* 本公司产品设计服从于CAN2.0A协议标准，本文详细介绍了本公司产品的产品CAN通信协议格式，及产品CAN通信结构。
+*     CAN 是Controller Area Network 的缩写（以下称为CAN），是ISO国际标准化的串行通信协议。
+
+*     本公司产品设计服从于CAN2.0A协议标准，本文详细介绍了本公司产品的产品CAN通信协议格式，及产品CAN通信结构。
 
 ## 综合性能参数
 
