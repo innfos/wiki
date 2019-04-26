@@ -1,4 +1,4 @@
-#INNFOS Wiki
+# INNFOS Wiki
 
 [主页](index.md)
 
