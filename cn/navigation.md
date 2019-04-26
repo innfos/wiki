@@ -1,4 +1,4 @@
-![innfo](img/innfoslogo.png)
+#INNFOS Wiki
 
 [主页](index.md)
 
