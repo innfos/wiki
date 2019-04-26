@@ -77,39 +77,4 @@ ip地址配置，
 
 ## 版本变更记录
 
-下表简单描述了版本变更记录
-
-<table>
-<tbody>
-<tr class="odd">
-<td align="left">
-
-**版本号**
-</td>
-<td align="left">
-
-**更新时间**
-
-</td>
-<td align="left">
-    
- **更新内容**
- 
-</td>
-</tr>
-<tr class="even">
-<td align="left">
-
-V1.0.0
-</td>
-<td align="left">
-
-18.12.25
-</td>
-<td align="left">
-
-全文
-</td>
-</tr>
-</tbody>
-</table>
+<table><tbody><tr class="odd"><td align="left">**版本号**</td><td align="left">**更新时间**</td><td align="left">**更新内容**</td></tr><tr class="even"><td align="left">V1.0.0</td><td align="left">18.12.25</td><td align="left">全文</td></tr></tbody></table>
