@@ -40,19 +40,19 @@
 
 **帧头**
 
-* 固定字节 0xEE，标识一个传输帧的开始。
+* 固定字节 `0xEE`，标识一个传输帧的开始。
 
 **设备地址**
 
-* 一个字节标识要与之通讯的设备地址，0x01～0xff 可用。0x00 为广播地址。
+* 一个字节标识要与之通讯的设备地址，`0x01～0xff` 可用。`0x00` 为广播地址。
 
 **指令符**
 
-* 一个字节标识主机与从机进行的具体操作，取值范围 0x00~0xff。详见用户层具体 描述。
+* 一个字节标识主机与从机进行的具体操作，取值范围 `0x00~0xff`。详见用户层具体描述。
 
 **数据位数**
 
-* 两个字节标识要通讯的具体数据的个数，范围 0x0000~0xffff，超出范围的不作处理。
+* 两个字节标识要通讯的具体数据的个数，范围 `0x0000~0xffff`，超出范围的不作处理。
 
 **数据内容**
 
@@ -60,11 +60,11 @@
 
 **CRC校验码**
 
-* 两个字节标识对通讯中数据内容的 CRC16 校验结果，若命令中无数据，则无 CRC校验位,CRC计算方法请参考[CRC校验码计算方法](#!pages/Ethernet_Communication_Protocol.md#CRC校验码计算方法 "wikilink")
+* 两个字节标识对通讯中数据内容的CRC16校验结果，若命令中无数据，则无 CRC校验位,CRC计算方法请参考[CRC校验码计算方法](#!pages/Ethernet_Communication_Protocol.md#CRC校验码计算方法 "wikilink")
 
 **帧尾**
 
-* 固定字节 0XED，标识一个传输帧的结束。
+* 固定字节 `0XED`，标识一个传输帧的结束。
 
 ### **以太网通信协议命令应用举例**
 
@@ -89,7 +89,7 @@
 发送内容：0x05
 
 
-<table class="tableizer-table"><tbody><tr><td  colspan="7"style=background:PaleTurquoise>应答命令</td></tr><tr><td>帧头</td><td>设备地址</td><td>指令符</td><td>数据长度（2字节）</td><td>参数内容</td><td>CRC校验</td><td>帧尾</td></tr><tr><td>0xEE</td><td>0x01</td><td>0x05</td><td>0x00 0x04</td><td>4字节数据</td><td>2字节数据</td><td>0xED</td></tr></tbody></table>
+<table class="tableizer-table"><tbody><tr><th colspan="7"style=background:PaleTurquoise>应答命令</th></tr><tr><td>帧头</td><td>设备地址</td><td>指令符</td><td>数据长度（2字节）</td><td>参数内容</td><td>CRC校验</td><td>帧尾</td></tr><tr><td>0xEE</td><td>0x01</td><td>0x05</td><td>0x00 0x04</td><td>4字节数据</td><td>2字节数据</td><td>0xED</td></tr></tbody></table>
 
 帧头 ：0xEE = 协议头
 
@@ -109,6 +109,7 @@
 
 
 Note: 参数内容data\[0\~3\]高位在前，低位在后。为_IQ24格式。_IQ(-1.0)\~_IQ(1.0)代表反转速度满量程和正转速度满量程。满量程为6000RPM。若data=_IQ(0.5)。则为0.5*6000=3000RPM。
+
 
 **示例2.写命令**
 
@@ -130,7 +131,8 @@ Note: 参数内容data\[0\~3\]高位在前，低位在后。为_IQ24格式。_IQ
 
 发送内容：0x0E 0x05 0x00 0x00 0x00
 
-说明：参数内容data\[0\~3\]高位在前，低位在后。为_IQ24格式。_IQ(-128.0)\~_IQ(127.999999940)代表反向位置值满量程和正向位置值满量程。若data=_IQ(5.0),则比例为5。
+Note:参数内容data\[0\~3\]高位在前，低位在后。为_IQ24格式。_IQ(-128.0)\~_IQ(127.999999940)代表反向位置值满量程和正向位置值满量程。若data=_IQ(5.0),则比例为5。
+
 
 <table class="tableizer-table"><thead><tr class="tableizer-firstrow"><th colspan="7" style=background:PaleTurquoise>应答命令</th></tr></thead><tbody><tr><td>帧头</td><td>设备地址</td><td>指令符</td><td>数据长度</td><td>参数内容</td><td>帧尾</td></tr><tr><td>0xEE</td><td>0x01</td><td>0x0E</td><td>0x1</td><td>0x01</td><td>0xED</td></tr></tbody></table>
 
@@ -152,41 +154,43 @@ Note: 参数内容data\[0\~3\]高位在前，低位在后。为_IQ24格式。_IQ
 
 ### 通信配置
 
-以太网通信方式采用udp通信，ECB固定了ip地址，为192.168.1.30(默认)，可以通过相关协议修改该ip地址。PC端需修改网络配置，ip地址修改为192.168.1.xxx，xxx为需大于100，以避免和ECB地址冲突，子网掩码255.255.255.0，默认网关192.168.1.1，配置成功并且连接成功通电以后，可以ping到ECB的ip地址，这样就表示连接成功，通信端口为2000，可以通过该端口与执行器通信。
+以太网通信方式采用udp通信，`ECB`固定了ip地址，为192.168.1.30(默认)，可以通过相关协议修改该ip地址。PC端需修改网络配置，ip地址修改为192.168.1.xxx，xxx为需大于100，以避免和`ECB`地址冲突，子网掩码255.255.255.0，默认网关192.168.1.1，配置成功并且连接成功通电以后，可以ping到`ECB`的ip地址，这样就表示连接成功，通信端口为`2000`，可以通过该端口与执行器通信。
 
 ### 与ECB握手
 
 使用以太网通信需要先与ECB握手，待ECB成功回复后，发送查询执行器地址指令，成功返回执行器地址指令，才能开始发送指令控制和调节执行器。
 
 发送指令：
-EE 00 44 00 00 ED
+`EE 00 44 00 00 ED`
 通信成功会收到返回指令:
-EE 00 44 00 01 01 ED
-如果不知道ECB的ip地址，可通过广播方式发送该协议(即向192.168.1.255发送该协议)，确认ECB的ip地址后，即可通过该ip地址发送其他指令。
+`EE 00 44 00 01 01 ED`
+如果不知道ECB的ip地址，可通过广播方式发送该协议(即向192.168.1.255发送该协议)，确认`ECB`的ip地址后，即可通过该ip地址发送其他指令。
 
 ### 查询执行器
 
 发送指令:
-EE 00 02 00 00 ED
+`EE 00 02 00 00 ED`
 通信成功会返回所有执行器的ID和mac地址信息，由于要轮询查找执行器，本条指令大约需要0.5s左右才能返回执行器id，如果长时间收不到执行器地址信息，可认为没有执行器成功连接。返回指令实例: 
-EE 06 02 00 04 01 64 5A DF 3B 3F ED
-其中06即为执行器的ID，01 64 5A DF为执行器mac地址。(当有多个执行器成功连接后，会多次返回该指令)
+`EE 06 02 00 04 01 64 5A DF 3B 3F ED`
+其中06即为执行器的ID，`01 64 5A DF`为执行器mac地址。(当有多个执行器成功连接后，会多次返回该指令)
 
 ### 与执行器通信
 
-成功查询到执行器后，即可根据执行器ID与执行器进行通信，例如启动ID为6的执行器的指令为：</br> EE 06 2A 00 01 01 7E 80 ED</br> 其中06为执行器ID,2A为启动或关闭执行器的指令，00 01是数据长度，01即为开机（00是关机），7E 80 为[CRC校验码](#!pages/Ethernet_Communication_Protocol.md#CRC校验码计算方法 "wikilink")。
+成功查询到执行器后，即可根据执行器ID与执行器进行通信，例如启动ID为6的执行器的指令为：
+`EE 06 2A 00 01 01 7E 80 ED`
+其中`06`为执行器ID,`2A`为启动或关闭执行器的指令，`00 01`是数据长度，`01`即为开机（`00`是关机），`7E 80` 为[CRC校验码](#!pages/Ethernet_Communication_Protocol.md#CRC校验码计算方法 "wikilink")。
 
 ### 控制执行器
 
 ##### 位置控制
 
 发送激活梯形位置模式指令:
-EE 06 07 00 01 06 3F 42 ED
-数据06为梯形位置模式,参见[模式表](#!pages/Ethernet_Communication_Protocol.md#附录B:模式表 "wikilink")，3F 42为[CRC校验码](#!pages/Ethernet_Communication_Protocol.md#CRC校验码计算方法 "wikilink")，激活成功后会收到返回：
-EE 06 07 00 01 01 ED
+`EE 06 07 00 01 06 3F 42 ED`
+数据06为梯形位置模式,参见[模式表](#!pages/Ethernet_Communication_Protocol.md#附录B:模式表 "wikilink")，`3F 42`为[CRC校验码](#!pages/Ethernet_Communication_Protocol.md#CRC校验码计算方法 "wikilink")，激活成功后会收到返回：
+`EE 06 07 00 01 01 ED`
 这时可以发送速度指令：
-EE 06 0A 00 04 00 01 00 00 01 D8 ED
-其中0A位设置速度值的指令，00 01 00 00位设置的位置值，该值是设置目标位置1R,通过公式：目标位置/128*（2^24）计算取整获得的IQ24值，关于IQ24的介绍请参考[ IQmath简介](#!pages/Ethernet_Communication_Protocol.md#IQmath简介 "wikilink")。
+`EE 06 0A 00 04 00 01 00 00 01 D8 ED`
+其中0A位设置速度值的指令，`00 01 00 00`位设置的位置值，该值是设置目标位置`1R`,通过公式：`目标位置/128*（2^24）`计算取整获得的IQ24值，关于IQ24的介绍请参考[ IQmath简介](#!pages/Ethernet_Communication_Protocol.md#IQmath简介 "wikilink")。
 
 ### 其他
 
