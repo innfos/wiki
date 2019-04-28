@@ -231,7 +231,7 @@ Note: INNFOS主要应用.
 
 ## 11. 附录C：报警指令表
 
-<table style="width:600px"><thead><tr style=background:PaleTurquoise><th>指令符</th><th>指令符</th></tr></thead><tbody><tr><td>0x0001</td><td>过压异常</td></tr><tr><td>0x0002</td><td>欠压异常</td></tr><tr><td>0x0004</td><td>堵转异常</td></tr><tr><td>0x0008</td><td>过热异常</td></tr><tr><td>0x0010</td><td>读写参数异常</td></tr><tr><td>0x0020</td><td>多圈计数异常</td></tr><tr><td>0x0040</td><td>逆变器温度传感器异常</td></tr><tr><td>0x0080</td><td>CAN通信异常</td></tr><tr><td>0x0100</td><td>电机温度传感器异常</td></tr><tr><td>0x0200</td><td>位置模式阶跃大于1</td></tr><tr><td>0x0400</td><td>DRV保护</td></tr><tr><td>其他</td><td>设备异常</td></tr><tr><td>注释</td><td>可同时报警多个错误，如返回数据为0005，<br>则错误为0001过压异常与0004堵转异常</td></tr></tbody></table>
+<table style="width:600px"><thead><tr style=background:PaleTurquoise><th>指令符</th><th>指令符</th></tr></thead><tbody><tr><td>0x0001</td><td>过压异常</td></tr><tr><td>0x0002</td><td>欠压异常</td></tr><tr><td>0x0004</td><td>堵转异常</td></tr><tr><td>0x0008</td><td>过热异常</td></tr><tr><td>0x0010</td><td>读写参数异常</td></tr><tr><td>0x0020</td><td>多圈计数异常</td></tr><tr><td>0x0040</td><td>逆变器温度传感器异常</td></tr><tr><td>0x0080</td><td>CAN通信异常</td></tr><tr><td>0x0100</td><td>电机温度传感器异常</td></tr><tr><td>0x0200</td><td>位置模式阶跃大于1</td></tr><tr><td>0x0400</td><td>DRV保护</td></tr><tr><td>其他</td><td>设备异常</td></tr><tr><td>注释</td><td>可同时报警多个错误，如返回数据为0005，则错误为0001过压异常与0004堵转异常</td></tr></tbody></table>
 
 ## 12. 附录D：型号表
 
