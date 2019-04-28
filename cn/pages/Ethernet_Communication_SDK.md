@@ -69,69 +69,69 @@ $./lookupActuators -e
 *   根据不同的参数选择不同的通信方式，默认为以太网通信。注意：必须先初始化控制器，才能进行其他操作
 
 ``` cpp
-    //初始化控制器
-   if(strcmp(argv[1],"-s")==0)
-        ActuatorController::initController(Actuator::Via_Serialport);
-   elseif(strcmp(argv[1],"-e")==0)
-        ActuatorController::initController();
+//初始化控制器
+if(strcmp(argv[1],"-s")==0)
+    ActuatorController::initController(Actuator::Via_Serialport);
+elseif(strcmp(argv[1],"-e")==0)
+    ActuatorController::initController();
 ```
 *   关联操作完成信号，如此用户操作成功以后，会触发该信号，根据不同的`operationType`，进行相应操作，本例中会在自动识别完成后，打印出识别到的执行器数量。
 
 ``` cpp
-    //关联控制器的操作信号
-   int nOperationConnection = pController->m_sOperationFinished->s_Connect([=](uint8_t nDeviceId,uint8_t operationType){
-       switch (operationType) {
-       case Actuator::Recognize_Finished://自动识别完成
-           if(pController->hasAvailableActuator())
-            {
-                vector<uint8_t> idArray = pController->getActuatorIdArray();
-                cout <<"Number of connected actuators:" << idArray.size() << endl;
-            }
-           break;
-       default:
-           break;
+//关联控制器的操作信号
+int nOperationConnection = pController->m_sOperationFinished->s_Connect([=](uint8_t nDeviceId,uint8_t operationType){
+   switch (operationType) {
+   case Actuator::Recognize_Finished://自动识别完成
+       if(pController->hasAvailableActuator())
+        {
+            vector<uint8_t> idArray = pController->getActuatorIdArray();
+            cout <<"Number of connected actuators:" << idArray.size() << endl;
         }
-    });
+       break;
+   default:
+       break;
+    }
+});
 ```
 *   完整的应用必须要关联错误信号，以便在执行器内部发生错误时及时收到反馈并作出相应处理，`nDeviceId`为0时，错误不针对特定的执行器（例如未连接的错误）
 
 ```cpp
-    //关联错误信号
-   int nErrorConnection = pController->m_sError->s_Connect([=](uint8_t nDeviceId,uint16_t nErrorType,string errorInfo){
-       if(nDeviceId==0)
-        {
-            cout <<"Error: " << (int)nErrorType <<" " << errorInfo << endl;
-        }
-       else
-        {
-            cout <<"Actuator " << (int)nDeviceId <<" " <<"error " << (int)nErrorType <<" " << errorInfo << endl;
-        }
-    });
+//关联错误信号
+int nErrorConnection = pController->m_sError->s_Connect([=](uint8_t nDeviceId,uint16_t nErrorType,string errorInfo){
+   if(nDeviceId==0)
+    {
+        cout <<"Error: " << (int)nErrorType <<" " << errorInfo << endl;
+    }
+   else
+    {
+        cout <<"Actuator " << (int)nDeviceId <<" " <<"error " << (int)nErrorType <<" " << errorInfo << endl;
+    }
+});
 ```
 
 *   关联好必要的信号以后，可以进行相应操作，第一步的操作就是识别已连接的执行器。
 
 ```cpp
-    //自动识别已连接执行器
-    pController->autoRecoginze();
+//自动识别已连接执行器
+pController->autoRecoginze();
 ```
 
 *   事件循环是保证sdk内部通讯进行的必要步骤，务必要保证事件循环不被阻塞，sdk才能触发各种信号。
 
 ```cpp
-    //执行控制器事件循环
-   while (!bExit)
-    {
-        ActuatorController::processEvents();
-    }
+//执行控制器事件循环
+while (!bExit)
+{
+    ActuatorController::processEvents();
+}
 ```
 
 *   最后在程序结束前，断开和所有信号的关联
 
 ```cpp
-    //断开信号连接
-    pController->m_sOperationFinished->s_Disconnect(nOperationConnection);
-    pController->m_sError->s_Disconnect(nErrorConnection);
+//断开信号连接
+pController->m_sOperationFinished->s_Disconnect(nOperationConnection);
+pController->m_sError->s_Disconnect(nErrorConnection);
 
 ```
 
@@ -153,53 +153,53 @@ $./monitorActuator -e
 *   自动识别成功后自动开启所有执行器，每个执行器开启成功后都会触发`Actuator::Launch_Finished`信号，当所有执行器都开启以后，开始自动刷新，读取执行器数据。
 
 ```cpp
-   int nLaunchedActuatorCnt =0;
-   //关联控制器的操作信号
-   int nOperationConnection = pController->m_sOperationFinished->s_Connect([&amp;](uint8_t nDeviceId,uint8_t operationType){
-       switch (operationType) {
-       case Actuator::Recognize_Finished://自动识别完成
-           if(pController->hasAvailableActuator())
-            {
-                vector<uint8_t> idArray = pController->getActuatorIdArray();
-            cout <<"Number of connected actuators:" << idArray.size() << endl;
-               for (uint8_t id: idArray) {
-                   if(pController->getActuatorAttribute(id,Actuator::ACTUATOR_SWITCH)==Actuator::ACTUATOR_SWITCH_OFF)
-                    {//如果执行器处于关机状态，启动执行器
-                        pController->launchActuator(id);
-                    }
-                   else
+int nLaunchedActuatorCnt =0;
+//关联控制器的操作信号
+int nOperationConnection = pController->m_sOperationFinished->s_Connect([&amp;](uint8_t nDeviceId,uint8_t operationType){
+   switch (operationType) {
+   case Actuator::Recognize_Finished://自动识别完成
+       if(pController->hasAvailableActuator())
+        {
+            vector<uint8_t> idArray = pController->getActuatorIdArray();
+        cout <<"Number of connected actuators:" << idArray.size() << endl;
+           for (uint8_t id: idArray) {
+               if(pController->getActuatorAttribute(id,Actuator::ACTUATOR_SWITCH)==Actuator::ACTUATOR_SWITCH_OFF)
+                {//如果执行器处于关机状态，启动执行器
+                    pController->launchActuator(id);
+                }
+               else
+                {
+                    ++ nLaunchedActuatorCnt;
+                   if(nLaunchedActuatorCnt == pController->getActuatorIdArray().size())//所有执行器都已启动完成
                     {
-                        ++ nLaunchedActuatorCnt;
-                       if(nLaunchedActuatorCnt == pController->getActuatorIdArray().size())//所有执行器都已启动完成
-                        {
-                            autoRefresh();
-                        }
+                        autoRefresh();
                     }
                 }
             }
-           break;
-       case Actuator::Launch_Finished:
-           if(++nLaunchedActuatorCnt == pController->getActuatorIdArray().size())//所有执行器都已启动完成
-            {
-                autoRefresh();
-            }
-           break;
-       default:
-           break;
         }
-    });
+       break;
+   case Actuator::Launch_Finished:
+       if(++nLaunchedActuatorCnt == pController->getActuatorIdArray().size())//所有执行器都已启动完成
+        {
+            autoRefresh();
+        }
+       break;
+   default:
+       break;
+    }
+});
 ```
 
 *   为了监测执行器的属性变化，需关联信号`m_sActuatorAttrChanged`，当用户请求读取执行器的属性后，成功返回会触发该信号
     //关联控制器控制的执行器属性变化信号
 	
 ```cpp
-   int nAttrConnection =pController->m_sActuatorAttrChanged->s_Connect([=](uint8_t nDeviceId,uint8_t nAttrId,double value){
-        cout <<"Actuator ID: " << (int)nDeviceId << endl;
-        cout <<"atribute ID: " << (int)nAttrId << endl;
-        cout <<"atribute value: " << value << endl;
-        cout <<"----------------------------"<<endl;
-    });
+int nAttrConnection =pController->m_sActuatorAttrChanged->s_Connect([=](uint8_t nDeviceId,uint8_t nAttrId,double value){
+    cout <<"Actuator ID: " << (int)nDeviceId << endl;
+    cout <<"atribute ID: " << (int)nAttrId << endl;
+    cout <<"atribute value: " << value << endl;
+    cout <<"----------------------------"<<endl;
+});
 ```
 
 #### 控制执行器
@@ -229,55 +229,55 @@ $./operateActuator -e
 *   成功启动执行器后，可对执行器进行操作。`getActuatorIdArray`可获取所有执行器的短id，用户可以指定其中任意id并进行操作，执行器有速度、电流、位置等多种模式（`Actuator::ActuatorMode`），必须先激活对应的模式才能进行相应操作。
 
 ```cpp
-   vector<uint8_t> idArray = controllerInst->getActuatorIdArray();
-   switch (directive)
+ vector<uint8_t> idArray = controllerInst->getActuatorIdArray();
+switch (directive)
+{
+case'a'://激活执行器指定模式，指令格式：a 模式id（Actuator::ActuatorMode）
+    controllerInst->activeActuatorMode(idArray, Actuator::ActuatorMode((int)value));
+   break;
+case'p'://指定执行器位置，指令格式：p 圈数（-127到127）
+   for (int i =0; i < idArray.size(); ++i)
     {
-   case'a'://激活执行器指定模式，指令格式：a 模式id（Actuator::ActuatorMode）
-        controllerInst->activeActuatorMode(idArray, Actuator::ActuatorMode((int)value));
-       break;
-   case'p'://指定执行器位置，指令格式：p 圈数（-127到127）
-       for (int i =0; i < idArray.size(); ++i)
-        {
-            controllerInst->setPosition(idArray.at(i), value);
-        }
-       break;
-   case'c'://指定执行器电流，指令格式：c 电流值（A）
-       for (int i =0; i < idArray.size(); ++i)
-        {
-            controllerInst->setCurrent(idArray.at(i), value);
-        }
-       break;
-   case'v'://指定执行器速度，指令格式：v 速度值（RPM）
-       for (int i =0; i < idArray.size(); ++i)
-        {
-            controllerInst->setVelocity(idArray.at(i), value);
-        }
-       break;
-   case'l'://启动指定执行器，指令格式：l 执行器id（id为0启动所有执行器）
-       if(uint8_t(value)==0)
-        {
-            controllerInst->launchAllActuators();
-        }
-       else
-        {
-            controllerInst->launchActuator(uint8_t(value));
-        }
-       //cout << "launch"<<endl;
-       break;
-   case's'://关闭指定执行器，指令格式：l 执行器id（id为0启动所有执行器）
-       if(uint8_t(value)==0)
-        {
-            controllerInst->closeAllActuators();
-        }
-       else
-        {
-            controllerInst->closeActuator(uint8_t(value));
-        }
-       //cout << "close"<<endl;
-       break;
-   default:
-       break;
+        controllerInst->setPosition(idArray.at(i), value);
     }
+   break;
+case'c'://指定执行器电流，指令格式：c 电流值（A）
+   for (int i =0; i < idArray.size(); ++i)
+    {
+        controllerInst->setCurrent(idArray.at(i), value);
+    }
+   break;
+case'v'://指定执行器速度，指令格式：v 速度值（RPM）
+   for (int i =0; i < idArray.size(); ++i)
+    {
+        controllerInst->setVelocity(idArray.at(i), value);
+    }
+   break;
+case'l'://启动指定执行器，指令格式：l 执行器id（id为0启动所有执行器）
+   if(uint8_t(value)==0)
+    {
+        controllerInst->launchAllActuators();
+    }
+   else
+    {
+        controllerInst->launchActuator(uint8_t(value));
+    }
+   //cout << "launch"<<endl;
+   break;
+case's'://关闭指定执行器，指令格式：l 执行器id（id为0启动所有执行器）
+   if(uint8_t(value)==0)
+    {
+        controllerInst->closeAllActuators();
+    }
+   else
+    {
+        controllerInst->closeActuator(uint8_t(value));
+    }
+   //cout << "close"<<endl;
+   break;
+default:
+   break;
+}
 ```
 
 #### 控制器参数调整
@@ -301,23 +301,23 @@ $./tuneActuator -e
     //执行器属性调整,调整成功，会触发执行器属性变化信号
 	
 ```cpp
-   void tuneActuator()
-    {
-        ActuatorController * pController = ActuatorController::getInstance();
-        vector<uint8_t> idArray = pController->getActuatorIdArray();
-       for (uint8_t id: idArray) {
-           //调整执行器速度环最小电流输出
-            pController->setMinOutputCurrent(id,-10);
-           //调整执行器速度环最大电流输出
-            pController->setMaxOutputCurrent(id,10);
-           //调整执行器位置环最小速度输出
-            pController->setMinOutputVelocity(id,-2000);
-           //调整执行器位置环最大速度输出，最大值要大于最小值
-            pController->setMaxOutputVelocity(id,2000);
-           //调整执行器Mode_Profile_Pos的最大速度（RPM）
-            pController->setActuatorAttribute(id,Actuator::PROFILE_POS_MAX_SPEED,1000);
-        }
+void tuneActuator()
+{
+    ActuatorController * pController = ActuatorController::getInstance();
+    vector<uint8_t> idArray = pController->getActuatorIdArray();
+   for (uint8_t id: idArray) {
+       //调整执行器速度环最小电流输出
+        pController->setMinOutputCurrent(id,-10);
+       //调整执行器速度环最大电流输出
+        pController->setMaxOutputCurrent(id,10);
+       //调整执行器位置环最小速度输出
+        pController->setMinOutputVelocity(id,-2000);
+       //调整执行器位置环最大速度输出，最大值要大于最小值
+        pController->setMaxOutputVelocity(id,2000);
+       //调整执行器Mode_Profile_Pos的最大速度（RPM）
+        pController->setActuatorAttribute(id,Actuator::PROFILE_POS_MAX_SPEED,1000);
     }
+}
 ```
 
 #### 执行器归零
@@ -339,19 +339,19 @@ $./homingActuator -e
 	
 ```cpp
     //执行器0位和限位调整
-   void setActuatorLimitation()
-    {
-        ActuatorController * pController = ActuatorController::getInstance();
-        vector<uint8_t> idArray = pController->getActuatorIdArray();
-       for (uint8_t id : idArray) {
-           //将执行器当前位置变成0位，并且最小和最大位置分别设置为-10,10,偏移设置为0.5，执行器的运动范围变成（-9.5,9.5）
-            pController->setHomingPosition(id,pController->getActuatorAttribute(id,Actuator::ACTUAL_POSITION));
-            pController->setMinPosLimit(id,-10);
-            pController->setMaxPosLimit(id,10);
-            pController->setActuatorAttribute(id,Actuator::POS_OFFSET,0.5);
-        }
-        bSetLimitation =true;
+void setActuatorLimitation()
+{
+    ActuatorController * pController = ActuatorController::getInstance();
+    vector<uint8_t> idArray = pController->getActuatorIdArray();
+   for (uint8_t id : idArray) {
+       //将执行器当前位置变成0位，并且最小和最大位置分别设置为-10,10,偏移设置为0.5，执行器的运动范围变成（-9.5,9.5）
+        pController->setHomingPosition(id,pController->getActuatorAttribute(id,Actuator::ACTUAL_POSITION));
+        pController->setMinPosLimit(id,-10);
+        pController->setMaxPosLimit(id,10);
+        pController->setActuatorAttribute(id,Actuator::POS_OFFSET,0.5);
     }
+    bSetLimitation =true;
+}
 ```
 
 *   参数设置完成，保存参数，否则，关机以后参数设置将全部丢弃
@@ -376,32 +376,32 @@ $./longIdAndByteId -e
     //关联控制器的longId操作信号
 
 ```cpp
-   int nOperationConnection = pController->m_sOperationFinishedL->s_Connect([&amp;](uint64_t nDeviceId,uint8_t operationType){
-       switch (operationType) {
-       case Actuator::Recognize_Finished://自动识别完成
-           if(pController->hasAvailableActuator())
-            {
-               //获取longId数组
-                vector<uint64_t> longIdArray = pController->getActuatorLongIdArray();
-               //获取byteid数组
-                vector<uint8_t> idArray = pController->getActuatorIdArray();
-               for (uint64_t id: longIdArray) {
-               //获取长id中的通信ip地址
-                    cout <<"Communication IP is " << pController->toString(id) << endl;
-                   //longId转换成byteId
-                    cout <<"Long id " << id <<" convert to byte id " << (int)pController->toByteId(id) << endl;
-                }
-               for(uint8_t id : idArray)
-                {
-                   //byteId转换成longId
-                    cout <<"Byte id " << (int)id <<" convert to long id " << pController->toLongId(id) << endl;
-                }
+int nOperationConnection = pController->m_sOperationFinishedL->s_Connect([&amp;](uint64_t nDeviceId,uint8_t operationType){
+   switch (operationType) {
+   case Actuator::Recognize_Finished://自动识别完成
+       if(pController->hasAvailableActuator())
+        {
+           //获取longId数组
+            vector<uint64_t> longIdArray = pController->getActuatorLongIdArray();
+           //获取byteid数组
+            vector<uint8_t> idArray = pController->getActuatorIdArray();
+           for (uint64_t id: longIdArray) {
+           //获取长id中的通信ip地址
+                cout <<"Communication IP is " << pController->toString(id) << endl;
+               //longId转换成byteId
+                cout <<"Long id " << id <<" convert to byte id " << (int)pController->toByteId(id) << endl;
             }
-           break;
-       default:
-           break;
+           for(uint8_t id : idArray)
+            {
+               //byteId转换成longId
+                cout <<"Byte id " << (int)id <<" convert to long id " << pController->toLongId(id) << endl;
+            }
         }
-    });
+       break;
+   default:
+       break;
+    }
+});
 ```
 
 #### 同步响应
