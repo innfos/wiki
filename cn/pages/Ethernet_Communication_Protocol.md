@@ -1,25 +1,3 @@
-环境配置
-=======
-
-
-## linux平台环境配置
-
-*   需要安装ubuntu16.04 LTS 及以上的系统
-*   cmake 安装：打开终端输入命令
-
-```sh
-    $ sudo apt-get install cmake
-```
-
-*   ip 地址配置：打开终端输入
-
-```sh
-    $ ifconfig
-```
-
-* 查看网络配置 
-
-<img src="../img/020.png" style="width:780px">
 以太网通信协议
 =======
 
