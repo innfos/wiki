@@ -8,13 +8,13 @@
 *   cmake 安装：打开终端输入命令
 
 ```sh
-    $ sudo apt-get install cmake
+$ sudo apt-get install cmake
 ```
 
 *   ip 地址配置：打开终端输入
 
 ```sh
-    $ ifconfig
+$ ifconfig
 ```
 
 * 查看网络配置 
