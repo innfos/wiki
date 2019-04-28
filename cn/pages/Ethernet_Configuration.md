@@ -21,14 +21,14 @@ $ ifconfig
 
 <img src="../img/020.png" style="width:600px">
 
-* 示例中有线网卡的名字是enp0s25,输入命令
+* 示例中有线网卡的名字是`enp0s25`,输入命令
 
 ```sh
 $ sudo ifconfig enp0s25 static 192.168.1.111
 ```
 
 
-配置完成后输入ifconfig，可看到配置成功后的ip地址
+配置完成后输入`ifconfig`，可看到配置成功后的ip地址
 
 <img src="../img/020.png" style="width:600px">
 
