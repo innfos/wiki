@@ -191,9 +191,10 @@ int nOperationConnection = pController->m_sOperationFinished->s_Connect([&amp;](
 ```
 
 *   为了监测执行器的属性变化，需关联信号`m_sActuatorAttrChanged`，当用户请求读取执行器的属性后，成功返回会触发该信号
-    //关联控制器控制的执行器属性变化信号
+    
 	
 ```cpp
+//关联控制器控制的执行器属性变化信号
 int nAttrConnection =pController->m_sActuatorAttrChanged->s_Connect([=](uint8_t nDeviceId,uint8_t nAttrId,double value){
     cout <<"Actuator ID: " << (int)nDeviceId << endl;
     cout <<"atribute ID: " << (int)nAttrId << endl;
