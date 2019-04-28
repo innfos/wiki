@@ -18,7 +18,7 @@
 
 * INNFOS执行器的插线接口为CAN通信接口，接口如下图所示。名称相同的端口内部引脚连接在一起，其接口定义表2-1所示。CAN接口连接器至少配有CANH、CANL、CGND引脚。
 
-<table><thead><tr><th colspan="4" style=background:PaleTurquoise>表2-1通信信号连接器引脚定义</th></tr></thead><tbody><tr><td style="width:80px">针脚号</td><td>定义</td><td>描述</td><td>端子引脚分布</td></tr><tr><td>1</td><td>PVDD</td><td>功率电源</td><td rowspan="9"><img src="../img/peixian2-2.png" style="width:550px"></td></tr><tr><td>3</td><td>PVDD</td><td>功率电源</td></tr><tr><td>5</td><td>PVDD</td><td>功率电源</td></tr><tr><td>2</td><td>GND</td><td>功率地/td></tr><tr><td>4</td><td>GND</td><td>功率地</td></tr><tr><td>6</td><td>CGND</td><td>CAN通信地</td></tr><tr><td>7</td><td>CANL</td><td>CAN通信接口</td></tr><tr><td>8</td><td>CANH</td><td>CAN通信接口</td></tr><tr><td>外壳</td><td>PE</td><td>屏蔽</td></tr></tbody></table>
+<table><thead><tr><th colspan="4" style=background:PaleTurquoise>表2-1通信信号连接器引脚定义</th></tr></thead><tbody><tr><td style="width:80px">针脚号</td><td>定义</td><td>描述</td><td>端子引脚分布</td></tr><tr><td>1</td><td>PVDD</td><td>功率电源</td><td rowspan="9"><img src="../img/peixian2-2.png" style="width:550px"></td></tr><tr><td>3</td><td>PVDD</td><td>功率电源</td></tr><tr><td>5</td><td>PVDD</td><td>功率电源</td></tr><tr><td>2</td><td>GND</td><td>功率地</td></tr><tr><td>4</td><td>GND</td><td>功率地</td></tr><tr><td>6</td><td>CGND</td><td>CAN通信地</td></tr><tr><td>7</td><td>CANL</td><td>CAN通信接口</td></tr><tr><td>8</td><td>CANH</td><td>CAN通信接口</td></tr><tr><td>外壳</td><td>PE</td><td>屏蔽</td></tr></tbody></table>
 
 
 **表2-1通信信号连接器引脚定义**
@@ -119,9 +119,13 @@ CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰�
 <table style="width:400px"><thead><tr><th colspan="4"style=background:PaleTurquoise>应答命令</th></tr></thead><tbody><tr><td>设备地址</td><td>数据长度</td><td>指令符</td><td>参数内容</td></tr><tr><td>0x01</td><td>0x05</td><td>0x05</td><td>data[3~0]</td></tr></tbody></table>
 
 返回设备地址：0x01 = 应答对象ID
+
 数据长度：0x05 = 应答的数据长度5位
+
 指令符：0x05 = 应答当前速度指令（与发送指令符相同）
+
 参数内容：0xXX 0xXX 0xXX 0xXX = 应答的参数内容
+
 应答内容：0x05 0xXX 0xXX 0xXX 0xXX
 
 说明：参数内容data[3-0]高位在前，低位在后。为_IQ24格式。_IQ(-1.0)-(1.0)代表反转速度满量程和正转速度满量程。<br>满量程为6000RPM。若data=_IQ(0.5)。则为0.5*6000=3000RPM。
