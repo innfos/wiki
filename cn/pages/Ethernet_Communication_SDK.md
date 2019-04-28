@@ -39,7 +39,7 @@ $ git clone https://github.com/innfos/ActuatorController_SDK.git
 
 #### 示例代码编译
 
-* 打开终端进入…\example目录，该目录下有CMakeLists.txt，
+* 打开终端进入`…\example`目录，该目录下有`CMakeLists.txt`
 
 ```bash
 $ cmake CMakeLists.txt
@@ -60,7 +60,7 @@ $ make
 ```bash
 $./lookupActuators -e
 ```
-*   此窗口会显示当前已连接的执行器数量，可以ctrl+c结束程序
+*   此窗口会显示当前已连接的执行器数量，可以`ctrl+c`结束程序
 
 <img src="../img/022.png" style="width:600px">
 
@@ -137,14 +137,14 @@ pController->m_sError->s_Disconnect(nErrorConnection);
 
 ##### 监测执行器状态
 
-*   打开终端，进入example/bin目录，输入命令
+*   打开终端，进入`example/bin`目录，输入命令
 
 ```bash
 $./monitorActuator -e
 ```
 
 *   其中`Actuator ID`为执行器id,`attribute ID`为监测的执行器属性Id，`attribute value`为对
-    应的属性值，可以ctrl+c结束程序
+    应的属性值，可以`ctrl+c`结束程序
 
 <img src="../img/023.png" style="width:600px">
 
@@ -205,7 +205,7 @@ int nAttrConnection =pController->m_sActuatorAttrChanged->s_Connect([=](uint8_t 
 
 #### 控制执行器
 
-*   打开终端，进入example/bin目录，输入命令
+*   打开终端，进入`example/bin`目录，输入命令
 
 ```bash
 $./operateActuator -e
@@ -283,7 +283,7 @@ default:
 
 #### 控制器参数调整
 
-*   打开终端，进入example/bin目录，输入命令
+*   打开终端，进入`example/bin`目录，输入命令
 
 ```bash
 $./tuneActuator -e
@@ -298,10 +298,11 @@ $./tuneActuator -e
 **代码说明**
     
 
-*   此示例程序自动启动执行器，启动成功后可调整执行器属性，速度环电流输出可调整速度环下的执行器扭矩，位置环速度输出可调整位置环下速度的大小。详见SCA快速使用说明。
-    //执行器属性调整,调整成功，会触发执行器属性变化信号
-	
+*   此示例程序自动启动执行器，启动成功后可调整执行器属性，速度环电流输出可调整速度环下的执行器扭矩，位置环速度输出可调整位置环下速度的大小。
+    
+    
 ```cpp
+//执行器属性调整,调整成功，会触发执行器属性变化信号
 void tuneActuator()
 {
     ActuatorController * pController = ActuatorController::getInstance();
@@ -323,7 +324,7 @@ void tuneActuator()
 
 #### 执行器归零
 
-*   打开终端，进入example/bin目录，输入命令
+*   打开终端，进入`example/bin`目录，输入命令
 
 ```bash
 $./homingActuator -e
@@ -363,7 +364,7 @@ pController->saveAllParams(nDeviceId);
 
 #### 执行器长短id
 
-*   打开终端并进入bin目录，输入命令
+*   打开终端并进入`example/bin`目录，输入命令
 
 ```bash
 $./longIdAndByteId -e
@@ -374,9 +375,10 @@ $./longIdAndByteId -e
 **代码说明**
 
 *   信号变量以`L`结尾的标识该信号关联的是执行器长id，可以通过长id进行通信。长短id的区别在于长id包含了通信地址和短id，并且可以相互转换（如果不同的ip地址下有相同短id的执行器，短id转换长id会随机转换其中一个ip地址下的一个长id）。
-    //关联控制器的longId操作信号
+    
 
 ```cpp
+//关联控制器的longId操作信号
 int nOperationConnection = pController->m_sOperationFinishedL->s_Connect([&amp;](uint64_t nDeviceId,uint8_t operationType){
    switch (operationType) {
    case Actuator::Recognize_Finished://自动识别完成
@@ -407,7 +409,7 @@ int nOperationConnection = pController->m_sOperationFinishedL->s_Connect([&amp;]
 
 #### 同步响应
 
-* 打开终端并进入bin目录，输入命令
+* 打开终端并进入`example/bin`目录，输入命令
 
 ```bash
 $./feedback_sync -e
@@ -445,14 +447,14 @@ ActuatorController * pController = ActuatorController::getInstance();
 
 #### 示例代码编译
 
-*   运行cmake-gui 出现如右界面：
-*   其中源码路径就是目录结构中的…\example所在的路径，该目录下包含了CMakeLists.txt文件；构建路径可自行定义，用于生成工程文件两个路径配置完成后点击Generate按钮弹出如下界面
+*   运行`cmake-gui` 出现如右界面：
+*   其中源码路径就是目录结构中的`…\example`所在的路径，该目录下包含了CMakeLists.txt文件；构建路径可自行定义，用于生成工程文件两个路径配置完成后点击Generate按钮弹出如下界面
 
 
 <img src="../img/011.png" style="width:600px">
 
 
-*   如果红色框内不是64位生成器，点击下拉三角，选择64位生成器，然后点击Finish按钮，生成成功后就生成了Visual Studio的工程文件，可用Visual Studio打开编译。编译完整个工程，在工程目录下会生成一个bin目录，里面有Debug或者Release文件夹（对应于编译的版本），将目录结构中的…\sdk\lib\windows_x64\debug或…\sdk\lib\windows_x64\release中的文件复制到对应版本的bin下面的Debug或者Release目录中，双击该目录中的exe就可正常运行示例程序了。
+*   如果红色框内不是64位生成器，点击下拉三角，选择64位生成器，然后点击Finish按钮，生成成功后就生成了Visual Studio的工程文件，可用Visual Studio打开编译。编译完整个工程，在工程目录下会生成一个bin目录，里面有Debug或者Release文件夹（对应于编译的版本），将目录结构中的`…\sdk\lib\windows_x64\debug`或`…\sdk\lib\windows_x64\release`中的文件复制到对应版本的bin下面的Debug或者Release目录中，双击该目录中的exe就可正常运行示例程序了。
 
 <img src="../img/012.png" style="width:600px">
 
@@ -471,8 +473,6 @@ ActuatorController * pController = ActuatorController::getInstance();
 
 
 <img src="../img/013.png" style="width:600px">
-
-
 
 
 ##### 监测执行器状态
@@ -499,7 +499,7 @@ ActuatorController * pController = ActuatorController::getInstance();
 <img src="../img/015.png" style="width:600px">
 
 
-表示执行器已经找到，输入命令l 0，该命令会启动所有已连接的执行器，如果启动成功，执行器会有绿色指示灯闪烁，表示已经启动成功，cmd窗口如下显示
+表示执行器已经找到，输入命令`l 0`，该命令会启动所有已连接的执行器，如果启动成功，执行器会有绿色指示灯闪烁，表示已经启动成功，cmd窗口如下显示
 
 <img src="../img/016.png" style="width:600px">
 
@@ -518,7 +518,7 @@ ActuatorController * pController = ActuatorController::getInstance();
 ./tuneActuator.exe -e
 ```
 
-*   此示例程序自动启动执行器并将位置环输出设置为3000RPM,速度环的电流最大输出为16.5A,如果使用profile position模式转动执行器，执行器的最大速度不会超过3000RPM;如果使用profile velocity模式转动执行器，执行器最大电流不会超过16.5A，可以ctrl+c结束程序
+*   此示例程序自动启动执行器并将位置环输出设置为3000RPM,速度环的电流最大输出为16.5A,如果使用`profile position`模式转动执行器，执行器的最大速度不会超过3000RPM;如果使用`profile velocity`模式转动执行器，执行器最大电流不会超过16.5A，可以`ctrl+c`结束程序
 
 <img src="../img/018.png" style="width:600px">
 
@@ -530,9 +530,7 @@ ActuatorController * pController = ActuatorController::getInstance();
 ./homingActuator.exe -e
 ```
 
-*   如图结果表示已经将执行器当前位置设置为零位，范围是 -9.5R 到 9.5R，并且开启了位置限制，如果 profile
-
-position 模式下，输入此范围之外的位置，执行器不会转动，可以 ctrl+c 结束程序
+*   如图结果表示已经将执行器当前位置设置为零位，范围是 -9.5R 到 9.5R，并且开启了位置限制，如果 `profile position` 模式下，输入此范围之外的位置，执行器不会转动，可以 `ctrl+c` 结束程序
 
 
 <img src="../img/LongId_w.png" style="width:600px">
@@ -558,7 +556,7 @@ position 模式下，输入此范围之外的位置，执行器不会转动，�
 ./feedback_sync.exe -e
 ```
 
-*   运行feedback_sync.exe，关联对应信号，在回调中进行操作属于异步响应，不会阻塞当前程序。同步响应，会阻塞当前程序，直到sdk返回结果，相比较而言，同步响应用法简单但是效率偏低，因为需要等待执行器响应（而且执行器部分操作没有同步响应，比如设置位置、速度、电流等）,如果对效率要求比较高，推荐使用异步响应。
+*   运行`feedback_sync.exe`，关联对应信号，在回调中进行操作属于异步响应，不会阻塞当前程序。同步响应，会阻塞当前程序，直到sdk返回结果，相比较而言，同步响应用法简单但是效率偏低，因为需要等待执行器响应（而且执行器部分操作没有同步响应，比如设置位置、速度、电流等）,如果对效率要求比较高，推荐使用异步响应。
 
 ## SDK使用说明
 
@@ -568,7 +566,7 @@ position 模式下，输入此范围之外的位置，执行器不会转动，�
 
 ### 项目中使用sdk
 
-*   本 sdk 遵循 c++11 标准，所以在构建项目之前请确认编译选项支持 c++11（比如 gcc 中使用 -std=c++11） ;
+*   本 sdk 遵循 `c++11` 标准，所以在构建项目之前请确认编译选项支持 `c++11`（比如 gcc 中使用 -std=c++11） ;
 *   将 sdk 集成到项目中的基本步骤（最好先参考 example 中的 CMakeLists.txt） :
 *   将 sdk/include、 sdk/include/asio 加入到项目的包含目录，用于关联共享库中的方法 ;
 *   将库文件目录 sdk/lib/linux_x86_64（windows 目录为 sdk/lib/debug 和 sdk/lib/release），以便可执行文件能链接到共享库，并保证运行时能够关联到共享库；
@@ -576,7 +574,7 @@ position 模式下，输入此范围之外的位置，执行器不会转动，�
 
 ### 命名空间
 
-* 在../sdk/include/actuatordefine.h定义了命名空间Actuator,并且枚举了sdk中所有用到的类型和类型值：
+* 在../sdk/include/actuatordefine.h定义了命名空间`Actuator`,并且枚举了sdk中所有用到的类型和类型值：
 
 <table >
 <thead><tr><th colspan="2" style=background:PaleTurquoise>连接状态，用于执行器和CAN的连接状态判断[ConnectStatus]</th></tr></thead><tbody>
