@@ -12,7 +12,7 @@
 
 **连接电源**
 
-*   连接电源与HUB.
+*   连接电源与`HUB`.
 
 <img src="../img/power.jpg" style="width:600px">
 
@@ -21,7 +21,7 @@ Note: 必须先断电然后再插拔部件.  否则可能损坏部件.
 
 **连接ECB**
 
-*   连接HUB与ECB
+*   连接`HUB`与`ECB`
 
 ![ECB-C1.jpg](../img/ECB-C1.jpg "fig:ECB-C1.jpg") ![ECB-C2.jpg](../img/ECB-C2.jpg "fig:ECB-C2.jpg")
 
@@ -31,7 +31,7 @@ Note: 必须先断电然后再插拔部件.  否则可能损坏部件.
 
 **连接执行器**
 
-*   用执行器连接线连接HUB与执行器
+*   用执行器连接线连接`HUB`与执行器
 
 <img src="../img/Actuator-C1.jpg" style="width:600px">
 
@@ -42,7 +42,7 @@ Note: 必须先断电然后再插拔部件.  否则可能损坏部件.
 
 **连接电脑**
 
-*   用网线连接ECB与电脑
+*   用网线连接`ECB`与电脑
 
 <img src="../img/pc-c.jpg" style="width:600px">
 
@@ -78,7 +78,7 @@ Note: 必须先断电然后再插拔部件.  否则可能损坏部件.
 
 <img src="../img/2-2.png" style="width:600px"> 
 
-安装成功后，启动IAS,单击“确认”按钮启用“下一步”按钮，然后单击“下一步”直到出现如下界面: 
+安装成功后，启动`IAS`,单击“确认”按钮启用“下一步”按钮，然后单击“下一步”直到出现如下界面: 
 
 
 <img src="../img/2-6.png" style="width:600px"> 
@@ -90,7 +90,7 @@ Note: 必须先断电然后再插拔部件.  否则可能损坏部件.
 
  **位置控制**
 
-*   单击左侧栏上的“Profile Position Mode”按钮，然后单击右侧的“Activate Profile Position Mode”。之后，您可以在“设置”中输入位置值，单位是R(范围是-127R~127R)。
+*   单击左侧栏上的`Profile Position Mode`按钮，然后单击右侧的`Activate Profile Position Mode`。之后，您可以在“设置”中输入位置值，单位是R(范围是-127R~127R)。
 
 <img src="../img/Fig6-1.png" style="width:600px"> 
 
@@ -99,7 +99,7 @@ Note: 必须先断电然后再插拔部件.  否则可能损坏部件.
 
 ### 其他
 
-想了解更多关于IAS的信息 , 请访问[INNFOS Actuator Studio(IAS)说明](#!pages/INNFOS_Actuator_Studio_IAS_instruction.md).
+想了解更多关于`IAS`的信息 , 请访问[INNFOS Actuator Studio(IAS)说明](#!pages/INNFOS_Actuator_Studio_IAS_instruction.md).
 
 ## 版本变更记录
 
