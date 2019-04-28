@@ -22,7 +22,7 @@ $ git clone https://github.com/innfos/ActuatorController_SDK.git
 
 ## 执行器连接
 
-<img src="../img/connect2.png" style="width:780px">
+<img src="../img/connect2.png" style="width:600px">
 
 如上动图为INNFOS执行器以太网通信的连接方式。
 
@@ -62,7 +62,7 @@ $./lookupActuators -e
 ```
 *   此窗口会显示当前已连接的执行器数量，可以ctrl+c结束程序
 
-<img src="../img/022.png" style="width:780px">
+<img src="../img/022.png" style="width:600px">
 
 **代码说明**
 
@@ -146,7 +146,7 @@ $./monitorActuator -e
 *   其中`Actuator ID`为执行器id,`attribute ID`为监测的执行器属性Id，`attribute value`为对
     应的属性值，可以ctrl+c结束程序
 
-<img src="../img/023.png" style="width:780px">
+<img src="../img/023.png" style="width:600px">
 
 **代码说明**
 
@@ -211,18 +211,18 @@ int nAttrConnection =pController->m_sActuatorAttrChanged->s_Connect([=](uint8_t 
 $./operateActuator -e
 ```
 
-<img src="../img/024.png" style="width:780px">
+<img src="../img/024.png" style="width:600px">
 
 
 *   表示执行器已经找到，输入命令`l 0`，该命令会启动所有已连接的执行器，如果启动成功，执行器会有绿色指示灯闪烁，表示已经启动成功，终端窗如下显示
 
-<img src="../img/025.png" style="width:780px">
+<img src="../img/025.png" style="width:600px">
 
 *   此时可激活执行器对应模式，比如输入` a 6`可以激活profile position模式，再输入`p 5`，
 
     执行器会转动到5圈的位置；输入`a 7`可以激活`profile velocity`模式，再输入`v 500`， 执行器将以500RPM的速度转动，停止转动输入`v 0`,；输入`a 1`可以激活电流模式，再输入 `c 0.6`，执行器将以恒定0.6A的电流转动（如果执行器不动，可用手轻轻转动一下执行器）， 可以`ctrl+c`以后再`ctrl+d`结束程序（因为有多线程等待键盘输入）
     
-<img src="../img/026.png" style="width:780px">
+<img src="../img/026.png" style="width:600px">
      
 
 **代码说明**
@@ -293,7 +293,7 @@ $./tuneActuator -e
 
     如果使用`profile position`模式转动执行器，执行器的最大速度不会超过3000RPM;如果 使用`profile velocity`模式转动执行器，执行器最大电流不会超过16.5A，可以`ctrl+c`结束程序 
     
-<img src="../img/027.png" style="width:780px"> 
+<img src="../img/027.png" style="width:600px"> 
     
 **代码说明**
     
@@ -332,7 +332,7 @@ $./homingActuator -e
 
 *   表示已经将执行器当前位置设置为零位，范围是-9.5R到9.5R，并且开启了位置限制，如果`profile position`模式下，输入此范围之外的位置，执行器不会转动，可以`ctrl+c`结束程序 
 
-<img src="../img/028.png" style="width:780px">
+<img src="../img/028.png" style="width:600px">
 
 **代码说明**
 
@@ -449,12 +449,12 @@ ActuatorController * pController = ActuatorController::getInstance();
 *   其中源码路径就是目录结构中的…\example所在的路径，该目录下包含了CMakeLists.txt文件；构建路径可自行定义，用于生成工程文件两个路径配置完成后点击Generate按钮弹出如下界面
 
 
-<img src="../img/011.png" style="width:780px">
+<img src="../img/011.png" style="width:600px">
 
 
 *   如果红色框内不是64位生成器，点击下拉三角，选择64位生成器，然后点击Finish按钮，生成成功后就生成了Visual Studio的工程文件，可用Visual Studio打开编译。编译完整个工程，在工程目录下会生成一个bin目录，里面有Debug或者Release文件夹（对应于编译的版本），将目录结构中的…\sdk\lib\windows_x64\debug或…\sdk\lib\windows_x64\release中的文件复制到对应版本的bin下面的Debug或者Release目录中，双击该目录中的exe就可正常运行示例程序了。
 
-<img src="../img/012.png" style="width:780px">
+<img src="../img/012.png" style="width:600px">
 
 
 #### 示例程序测试
@@ -470,7 +470,7 @@ ActuatorController * pController = ActuatorController::getInstance();
 ```
 
 
-<img src="../img/013.png" style="width:780px">
+<img src="../img/013.png" style="width:600px">
 
 
 
@@ -484,7 +484,7 @@ ActuatorController * pController = ActuatorController::getInstance();
 ```
 
 
-<img src="../img/014.png" style="width:780px">
+<img src="../img/014.png" style="width:600px">
 
 
 ##### 控制执行器
@@ -496,18 +496,18 @@ ActuatorController * pController = ActuatorController::getInstance();
 ./operateActuator.exe -e
 ```
 
-<img src="../img/015.png" style="width:780px">
+<img src="../img/015.png" style="width:600px">
 
 
 表示执行器已经找到，输入命令l 0，该命令会启动所有已连接的执行器，如果启动成功，执行器会有绿色指示灯闪烁，表示已经启动成功，cmd窗口如下显示
 
-<img src="../img/016.png" style="width:780px">
+<img src="../img/016.png" style="width:600px">
 
 
 *   此时可激活执行器对应模式，比如输入 a 6可以激活profile position模式，再输入p 10，执行器会转动到10圈的位置；输入a 7可以激活profile velocity模式，再输入v 500，执行器将以500RPM的速度转动，停止转动输入v 0,；输入a 1可以激活电流模式，再输入c 0.6，执行器将以恒定0.6A的电流转动（如果执行器不动，可用手轻轻转动一下执行器），可以ctrl+c结束程序
 
 
-<img src="../img/017.png" style="width:780px">
+<img src="../img/017.png" style="width:600px">
 
 
 ##### 执行器器参数调整
@@ -520,7 +520,7 @@ ActuatorController * pController = ActuatorController::getInstance();
 
 *   此示例程序自动启动执行器并将位置环输出设置为3000RPM,速度环的电流最大输出为16.5A,如果使用profile position模式转动执行器，执行器的最大速度不会超过3000RPM;如果使用profile velocity模式转动执行器，执行器最大电流不会超过16.5A，可以ctrl+c结束程序
 
-<img src="../img/018.png" style="width:780px">
+<img src="../img/018.png" style="width:600px">
 
 ##### 执行器归零
 
@@ -535,7 +535,7 @@ ActuatorController * pController = ActuatorController::getInstance();
 position 模式下，输入此范围之外的位置，执行器不会转动，可以 ctrl+c 结束程序
 
 
-<img src="../img/LongId_w.png" style="width:780px">
+<img src="../img/LongId_w.png" style="width:600px">
 
 
 ##### 执行器长短id
@@ -548,7 +548,7 @@ position 模式下，输入此范围之外的位置，执行器不会转动，�
 
 可以进行长短id的获取以及相互转换，并且可以通过长id获取通信ip地址。
 
-<img src="../img/Feedback_w.png" style="width:780px">
+<img src="../img/Feedback_w.png" style="width:600px">
 
 ##### 同步响应
 
