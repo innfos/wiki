@@ -10,7 +10,7 @@
 
 ## 2.综合性能参数
 
-<table style="width:600px"><thead><COL WIDTH=300><COL WIDTH=300><tr><th colspan="2"style=background:PaleTurquoise>表1-1综合性能参数说明</th></tr></thead><tbody><tr><td>项目</td><td>说明</td></tr><tr><td>链路层协议</td><td>CAN总线</td></tr><tr><td>CAN-ID类型</td><td>11bit-CAN2.0A</td></tr><tr><td>波特率</td><td>1Mbit/s</td></tr><tr><td>最大站点数</td><td>63个</td></tr><tr><td>CAN帧长度</td><td>0~8字节</td></tr><tr><td>应用层CAN帧类型</td><td>数据帧、远程帧</td></tr><tr><td>终端匹配电阻</td><td>120Ω</td></tr></tbody></table>
+<table style="width:400px"><thead><COL WIDTH=300><COL WIDTH=300><tr><th colspan="2"style=background:PaleTurquoise>表1-1综合性能参数说明</th></tr></thead><tbody><tr><td>项目</td><td>说明</td></tr><tr><td>链路层协议</td><td>CAN总线</td></tr><tr><td>CAN-ID类型</td><td>11bit-CAN2.0A</td></tr><tr><td>波特率</td><td>1Mbit/s</td></tr><tr><td>最大站点数</td><td>63个</td></tr><tr><td>CAN帧长度</td><td>0~8字节</td></tr><tr><td>应用层CAN帧类型</td><td>数据帧、远程帧</td></tr><tr><td>终端匹配电阻</td><td>120Ω</td></tr></tbody></table>
 
 本通信协议波特率为1Mbit/s，对于CAN通信，不同线的线缆对传输距离影响不大，但是要求线径尽量粗，最大节点数为64，本公司产品采用0.205mm²线径，最大传输距离为25m。
 
@@ -51,7 +51,7 @@ CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰�
 * 短距离低速通信时，为了增加抗干扰能力可以使用双绞屏蔽线，屏蔽层双端接PE。
 * 长距离高速通信时，不建议使用屏蔽线。因为屏蔽层和信号线之间存在较大分布电容，会导致传输信号延迟。
 
-## 其他设备没有外接CAN_GND 端口配线说明
+## 5.其他设备没有外接CAN_GND 端口配线说明
 
 ### 设备为非隔离CAN,与其他信号共用GND或是COM端口
 
@@ -62,7 +62,7 @@ CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰�
 
 # 通信协议
 
-## 5.CAN通信协议格式
+## 6.CAN通信协议格式
 
 <img src="../img/3-1communicationprotocol.png" style="width:600px">
 
@@ -100,7 +100,7 @@ CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰�
 
 * IQ值换算的具体方法参见附录E。
 
-## 6.CAN通信协议命令应用举例
+## 7.CAN通信协议命令应用举例
 
 **示例1.读命令**
 
@@ -178,7 +178,7 @@ CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰�
 * 位置环因为是_IQ24格式，所以正向满量程为_IQ(127.999999940)，反向满量程为_IQ(-128.0)，IQ值即实际值，例：<span style="color: red">（_IQ（60.0）则实际位置为60R，即零位置正向转60转的位置。）</span>
 * 速度环曲线模式和位置环曲线模式，可以通过设置加速度，减速度的大小，相对平滑的达到自己预设的速度值和位置，可以避免操作时瞬间电流过大，触发执行器过流保护或者供电电源过流保护。
 
-## 7.CAN通信协议命令参考
+## 8.CAN通信协议命令参考
 
 ### 读取命令
 
@@ -199,7 +199,7 @@ CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰�
 <table><thead><tr><th colspan="2" style=background:PaleTurquoise>3.3.2.4发送数据1字节，返回数据2字节</th></tr></thead><tbody><tr><td>命令名称</td><td>写入命令</td></tr><tr><td>说明</td><td>此命令类发送数据长度为1，返回数据长度为2</td></tr><tr><td>指令符</td><td>见写入指令4</td></tr><tr><td>数据长度</td><td>1</td></tr><tr><td>数据内容</td><td>无</td></tr><tr><td>指令 (返回值)</td><td>见写入指令4</td></tr><tr><td>数据长度(返回值)</td><td>2</td></tr><tr><td rowspan="2">下位机返回数据</td><td>0x01：成功</td></tr><tr><td>0x00 失败</td></tr></tbody></table>
 
 
-## 8.附录A
+## 9.附录A
 
 ### A.1读取指令编码定义表
 
@@ -219,26 +219,26 @@ CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰�
 
 <table><thead><tr><th colspan="3" style=background:PaleTurquoise>A.2.4写入指令4</th></tr></thead><tbody><tr><td>指令符</td><td>定义</td><td>说明</td></tr><tr><td>0xFE</td><td>消除下位机的报警</td><td>消除下位机的报警动作，接收到命令后，下位机停止报警，否则下位机不可操作</td></tr><tr><td>0x88</td><td>清除Homing数据</td><td>清除Homing数据</td></tr><tr><td>0x0D</td><td>存储参数</td><td>存储参数到EEPROM</td></tr></tbody></table>
 
-## 9.附录B :模式表
+## 10.附录B :模式表
 
 <table><thead><tr style=background:PaleTurquoise><th>指令符</th><th>指令符</th></tr></thead><tbody><tr><td>0x01</td><td>电流模式</td></tr><tr><td>0x02</td><td>速度模式</td></tr><tr><td>0x03</td><td>位置模式</td></tr><tr><td>0x06</td><td>位置梯形模式（S曲线）</td></tr><tr><td>0x07</td><td>速度梯形模式（S曲线）</td></tr><tr><td>0x08</td><td>homing模式</td></tr></tbody></table>
 
-## 10.附录C：报警指令表
+## 11.附录C：报警指令表
 
 <table><thead><tr style=background:PaleTurquoise><th>指令符</th><th>指令符</th></tr></thead><tbody><tr><td>0x0001</td><td>过压异常</td></tr><tr><td>0x0002</td><td>欠压异常</td></tr><tr><td>0x0004</td><td>堵转异常</td></tr><tr><td>0x0008</td><td>过热异常</td></tr><tr><td>0x0010</td><td>读写参数异常</td></tr><tr><td>0x0020</td><td>多圈计数异常</td></tr><tr><td>0x0040</td><td>逆变器温度传感器异常</td></tr><tr><td>0x0080</td><td>CAN通信异常</td></tr><tr><td>0x0100</td><td>电机温度传感器异常</td></tr><tr><td>0x0200</td><td>位置模式阶跃大于1</td></tr><tr><td>0x0400</td><td>DRV保护</td></tr><tr><td>其他</td><td>设备异常</td></tr><tr><td>注释</td><td>可同时报警多个错误，如返回数据为0005，<br>则错误为0001过压异常与0004堵转异常</td></tr></tbody></table>
 
-## 11.附录D：型号表
+## 12.附录D：型号表
 
 <table><thead><tr style=background:PaleTurquoise><th>执行器型号</th><th>电流满量程</th><th>电机端速度满量程</th><th>输出端速度满量程</th></tr></thead><tbody><tr><td>QDD Pro-6010-50</td><td>33A</td><td>6000RPM</td><td>120RPM</td></tr><tr><td>QDD-6010-6</td><td>33A</td><td>6000RPM</td><td>1000RPM</td></tr><tr><td>QDD-6010-36</td><td>33A</td><td>6000RPM</td><td>166.7RPM</td></tr><tr><td>DD-6010</td><td>33A</td><td>6000RPM</td><td>6000RPM</td></tr><tr><td>QDD Pro-3510-50</td><td>16.5A</td><td>6000RPM</td><td>120RPM</td></tr><tr><td>QDD-3510-6</td><td>16.5A</td><td>6000RPM</td><td>1000RPM</td></tr><tr><td>QDD-3510-36</td><td>16.5A</td><td>6000RPM</td><td>166.7RPM</td></tr><tr><td>DD-3510</td><td>16.5A</td><td>6000RPM</td><td>6000RPM</td></tr></tbody></table>
 
 * 输出端速度不同是因为个别型号执行器内置减速器，使输出的最大转速降低，提高扭矩。IQ换算时按照电机端速度满量程的值计算。
 
-## 12.附录E:指令发送与IQ值换算方法
+## 13.附录E:指令发送与IQ值换算方法
 * 说明书的注释部分表明：在位置模式中，IQ值即为实际值，即实际值的范围为-128~127. 999999940。这时只需要将对应的位置值转换成IQ值即可输入到参数内容中。在速度和电流模式中，转换IQ值之前需要将对应的参数值进行换算，如设定当前速度值为100RPM，则需要将设定的当前值除以最大值，即100/6000=0.01666666，然后再将0.016666666进行IQ换算，得到的值即为参数值。
 * 例如我们要设定当前的位置为60R（注意位置模式中阶跃响应的限制，若设定位置与当前位置差值超过1R则不响应），先寻找对应的指令。附录中A中第三类写入命令（写入命令3）表明，设定当前位置值的指令为0x0A。找到指令后寻找指令的对应发送格式，在“CAN通信协议命令参考”中3.3.2.3小节对应第三类写入指令，发送数据长度为5，即一个字节的指令+4个字节的参数内容。数据内容应用IQ24格式，则直接对60进行IQ换算，即60*2^24= 1006632960，再统一转换为16进制（根据测试软件需要），3C 00 00 00。根据CAN总线的数据帧格式说明，指令参数要在最高位，参数内容在后，则我们发送的指令内容 为0x 0A 3C 00 00 00，这也对应了说明中的数据长度为5（字节）。到此指令发送完毕。
 * 相应地，若要发送电流或者速度模式的设定值，需要先将参数值进行换算（各自除以对应的最大值），得到一个-1~1范围内的数，再进行IQ换算即可。发送命令的步骤与方法与位置模式相同，需要注意的是每个指令使用的数据格式，若为IQ8格式，则将公式中2^24改为2^8后再进行换算即可。
 
-## 13.附录F:版本变更记录
+## 14.附录F:版本变更记录
 
 **下表简单描述了版本变更记录**
 
