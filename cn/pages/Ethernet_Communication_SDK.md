@@ -578,47 +578,46 @@ ActuatorController * pController = ActuatorController::getInstance();
 
 * 在../sdk/include/actuatordefine.h定义了命名空间`Actuator`,并且枚举了sdk中所有用到的类型和类型值：
 
-<table >
-<thead><tr><th colspan="2" style=background:PaleTurquoise>连接状态，用于执行器和CAN的连接状态判断[ConnectStatus]</th></tr></thead><tbody>
- <tr><td>指令符</td><td>说明</td></tr> <tr><td>NO_CONNECT</td><td>无连接</td></tr> <tr><td>CAN_CONNECTED=0x02</td><td>CAN通信连接成功</td></tr> <tr><td>ACTUATOR_CONNECTED=0x04</td><td>执行器连接成功</td></tr></tbody></table>
+<table style="width:600px"><thead><tr><th colspan="2" style=background:PaleTurquoise>连接状态，用于执行器和CAN的连接状态判断[ConnectStatus]</th></tr></thead><tbody>
+ <tr><td>指令符</td><td>说明</td></tr> <tr><td>NO_CONNECT,</td><td>无连接</td></tr> <tr><td>CAN_CONNECTED=0x02,</td><td>CAN通信连接成功</td></tr> <tr><td>ACTUATOR_CONNECTED=0x04,</td><td>执行器连接成功</td></tr></tbody></table>
 
-<table class="tableizer-table">
+<table style="width:600px">
 <thead><tr class="tableizer-firstrow"><th  colspan="2" style=background:PaleTurquoise>通道ID,用于标识执行器图表数据的通道索引[Channel_ID]</th></tr></thead><tbody>
- <tr><td>指令符</td><td>说明</td></tr> <tr><td>channel_1=0</td><td>图表数据1通道,给定理想曲线</td></tr> <tr><td>channel_2</td><td>图表数据2通道，实际电流曲线</td></tr> <tr><td>channel_3</td><td>图表数据3通道，实际速度曲线</td></tr> <tr><td>channel_4</td><td>图表数据4通道，实际位置</td></tr> <tr><td>channel_cnt</td><td></td></tr></tbody></table>
+ <tr><td>指令符</td><td>说明</td></tr> <tr><td>channel_1=0,</td><td>图表数据1通道,给定理想曲线</td></tr> <tr><td>channel_2,</td><td>图表数据2通道，实际电流曲线</td></tr> <tr><td>channel_3,</td><td>图表数据3通道，实际速度曲线</td></tr> <tr><td>channel_4,</td><td>图表数据4通道，实际位置</td></tr> <tr><td>channel_cnt</td><td></td></tr></tbody></table>
 
-<table class="tableizer-table">
+<table style="width:600px">
 <thead><tr class="tableizer-firstrow"><th  colspan="2" style=background:PaleTurquoise>错误类型定义，定义了执行器内部和连接等错误代码[ErrorsDefine] </th></tr></thead><tbody>
- <tr><td>指令符</td><td>说明</td></tr> <tr><td>ERR_NONE = 0</td><td>无错误</td></tr> <tr><td>ERR_ACTUATOR_OVERVOLTAGE=0x01</td><td>执行器过压错误</td></tr> <tr><td>ERR_ACTUATOR_UNDERVOLTAGE=0x02</td><td>执行器欠压错误</td></tr> <tr><td>RR_ACTUATOR_LOCKED_ROTOR=0x04</td><td>执行器堵转错误</td></tr> <tr><td>ERR_ACTUATOR_OVERHEATING=0x08</td><td>执行器过温错误</td></tr> <tr><td>ERR_ACTUATOR_READ_OR_WRITE</td><td>执行器读写错误</td></tr> <tr><td>ERR_ACTUATOR_MULTI_TURN=0x20</td><td>执行器多圈计数错误</td></tr> <tr><td>ERR_INVERTOR_TEMPERATURE_SENSOR=0x40</td><td>执行器逆变器温度器错误</td></tr> <tr><td>ERR_CAN_COMMUNICATION=0x80</td><td>执行器 CAN 通信错误</td></tr> <tr><td>ERR_ACTUATOR_TEMPERATURE_SENSOR=0x100</td><td>执行器温度传感器错误</td></tr> <tr><td>ERR_DRV_PROTECTION=0x400</td><td>执行器 DRV 保护</td></tr> <tr><td>ERR_ID_UNUNIQUE=0x800</td><td>执行器 ID 不唯一错误</td></tr> <tr><td>ERR_ACTUATOR_DISCONNECTION=0x801</td><td>执行器未连接错误</td></tr> <tr><td>ERR_CAN_DISCONNECTION=0x802</td><td>CAN 通信转换板未连接错误</td></tr> <tr><td>ERR_IP_ADDRESS_NOT_FOUND=0x803</td><td>无可用 ip 地址错误</td></tr> <tr><td>ERR_ABNORMAL_SHUTDOWN=0x804</td><td>执行器非正常关机错误</td></tr> <tr><td>ERR_SHUTDOWN_SAVING=0x805</td><td>执行器关机时参数保存错误</td></tr> <tr><td>ERR_UNKOWN=0xffff</td><td>未知错误</td></tr></tbody></table>
+ <tr><td>指令符</td><td>说明</td></tr> <tr><td>ERR_NONE = 0,</td><td>无错误</td></tr> <tr><td>ERR_ACTUATOR_OVERVOLTAGE=0x01,</td><td>执行器过压错误</td></tr> <tr><td>ERR_ACTUATOR_UNDERVOLTAGE=0x02,</td><td>执行器欠压错误</td></tr> <tr><td>RR_ACTUATOR_LOCKED_ROTOR=0x04,</td><td>执行器堵转错误</td></tr> <tr><td>ERR_ACTUATOR_OVERHEATING=0x08</td><td>执行器过温错误</td></tr> <tr><td>enum OnlineStatus{</td><td>执行器读写错误</td></tr> <tr><td>ERR_ACTUATOR_MULTI_TURN=0x20,</td><td>执行器多圈计数错误</td></tr> <tr><td>ERR_INVERTOR_TEMPERATURE_SENSOR=0x40,</td><td>执行器逆变器温度器错误</td></tr> <tr><td>ERR_CAN_COMMUNICATION=0x80,</td><td>执行器温度传感器错误</td></tr> <tr><td>ERR_ACTUATOR_TEMPERATURE_SENSOR=0x100,</td><td>执行器 CAN 通信错误</td></tr> <tr><td>ERR_DRV_PROTECTION=0x400,</td><td>执行器 DRV 保护</td></tr> <tr><td>ERR_ID_UNUNIQUE=0x800</td><td>执行器 ID 不唯一错误</td></tr> <tr><td>ERR_ACTUATOR_DISCONNECTION=0x801,</td><td>执行器未连接错误</td></tr> <tr><td>ERR_CAN_DISCONNECTION=0x802,</td><td>CAN 通信转换板未连接错误</td></tr> <tr><td>ERR_IP_ADDRESS_NOT_FOUND=0x803,</td><td>无可用 ip 地址错误</td></tr> <tr><td>ERR_ABNORMAL_SHUTDOWN=0x804,</td><td>执行器非正常关机错误</td></tr> <tr><td>ERR_SHUTDOWN_SAVING=0x805,</td><td>执行器关机时参数保存错误</td></tr> <tr><td>ERR_UNKOWN=0xffff</td><td>未知错误</td></tr></tbody></table>
 
-<table class="tableizer-table">
+<table style="width:600px">
 <thead><tr class="tableizer-firstrow"><th colspan="2"style=background:PaleTurquoise>在线状态，用于标识执行器是否处于连接状态[OnlineStatus]</th></tr></thead><tbody>
- <tr><td>指令符</td><td>说明</td></tr> <tr><td>Status_Online=0x00</td><td>执行器在线</td></tr> <tr><td>Status_Offline=0x01</td><td>执行器离线</td></tr></tbody></table>
+ <tr><td>指令符</td><td>说明</td></tr> <tr><td>Status_Online=0x00,</td><td>执行器在线</td></tr> <tr><td>Status_Offline=0x01,</td><td>执行器离线</td></tr></tbody></table>
 
-<table class="tableizer-table">
+<table style="width:600px">
 <thead><tr class="tableizer-firstrow"><th colspan="2"style=background:PaleTurquoise>开关状态，标识执行器的开关机状态[SwitchStatus]</th></tr></thead><tbody>
- <tr><td>指令符</td><td>说明</td></tr> <tr><td>ACTUATOR_SWITCH_OFF=0</td><td>执行器已关机</td></tr> <tr><td>ACTUATOR_SWITCH_ON=1</td><td>执行器已开机</td></tr></tbody></table>
+ <tr><td>指令符</td><td>说明</td></tr> <tr><td>ACTUATOR_SWITCH_OFF=0,</td><td>执行器已关机</td></tr> <tr><td>ACTUATOR_SWITCH_ON=1,</td><td>执行器已开机</td></tr></tbody></table>
 
-<table class="tableizer-table">
+<table style="width:600px">
 <thead><tr class="tableizer-firstrow"><th colspan="2"style=background:PaleTurquoise>图表开关，用于标识执行器图表功能的开启或关闭[ChartSwitchStatus]</th></tr></thead><tbody>
- <tr><td>指令符</td><td>说明</td></tr> <tr><td>CHART_SWITCH_OFF=0</td><td>图表功能关闭，不会产生图表数据</td></tr> <tr><td>CHART_SWITCH_ON=1</td><td>图表功能开启，触发图表阈值会产生图表数据</td></tr></tbody></table>
+ <tr><td>指令符</td><td>说明</td></tr> <tr><td>CHART_SWITCH_OFF=0,</td><td>图表功能关闭，不会产生图表数据</td></tr> <tr><td>CHART_SWITCH_ON=1,</td><td>图表功能开启，触发图表阈值会产生图表数据</td></tr></tbody></table>
 
-<table class="tableizer-table">
+<table style="width:600px">
 <thead><tr class="tableizer-firstrow"><th colspan="2"style=background:PaleTurquoise>电流环图表索引，用于标识电流图表是IQ值还是ID值[CurrnetChart]</th></tr></thead><tbody>
- <tr><td>指令符</td><td>说明</td></tr> <tr><td>IQ_CHART=0</td><td>图表数据2通道，实际电流IQ曲线</td></tr> <tr><td>ID_CHART=1</td><td>图表数据2通道，实际电流ID曲线</td></tr></tbody></table>
+ <tr><td>指令符</td><td>说明</td></tr> <tr><td>IQ_CHART=0,</td><td>图表数据2通道，实际电流IQ曲线</td></tr> <tr><td>ID_CHART=1,</td><td>图表数据2通道，实际电流ID曲线</td></tr></tbody></table>
 
-<table class="tableizer-table">
+<table style="width:600px">
 <thead><tr class="tableizer-firstrow"><th colspan="2"style=background:PaleTurquoise>通信方式，可通过以太网或者串口两种方式与执行器通信，初始化执行器控制器时候要指定方式，默认为以太网通信[CommunicationType]</th></tr></thead><tbody>
- <tr><td>指令符</td><td>说明</td></tr> <tr><td>Via_Ethernet</td><td>以太网通信</td></tr> <tr><td>Via_Serialport</td><td>串口通信</td></tr></tbody></table>
+ <tr><td>指令符</td><td>说明</td></tr> <tr><td>Via_Ethernet,</td><td>以太网通信</td></tr> <tr><td>Via_Serialport,</td><td>串口通信</td></tr></tbody></table>
 
-<table class="tableizer-table">
+<table style="width:600px">
 <thead><tr class="tableizer-firstrow"><th colspan="2"style=background:PaleTurquoise>操作标识，标识操作完成，可用于判断执行器控制器的指令执行状态[OperationFlags]</th></tr></thead><tbody>
  <tr><td>指令符</td><td>说明</td></tr> <tr><td>Recognize_Finished</td><td>执行器启动完成（如果连接的是多个执行器，会触发多次启动完成信号）</td></tr> <tr><td>Launch_Finished</td><td>执行器关闭完成（如果连接的是多个执行器，会触发多次关闭完成信号）</td></tr> <tr><td>Close_Finished</td><td>执行器参数保存完成（如果连接的是多个执行器，会触发多次参数保存完成信号）</td></tr> <tr><td>Save_Params_Finished</td><td>执行器参数保存成功</td></tr> <tr><td>Save_Params_Failed</td><td>执行器参数保存失败</td></tr> <tr><td>Attribute_Change_Finished</td><td>暂未实现</td></tr></tbody></table>
 
-<table class="tableizer-table">
+<table style="width:600px">
 <thead><tr class="tableizer-firstrow"><th colspan="2"style=background:PaleTurquoise>执行器模式，标识当前执行器的模式[ActuatorMode]</th></tr></thead><tbody>
  <tr><td>指令符</td><td>说明</td></tr> <tr><td>Mode_None</td><td>&nbsp;</td></tr> <tr><td>Mode_Cur</td><td>电流模式</td></tr> <tr><td>Mode_Vel</td><td>速度模式</td></tr> <tr><td>Mode_Pos</td><td>位置模式</td></tr> <tr><td>Mode_Teaching</td><td>暂未实现</td></tr> <tr><td>Mode_Profile_Pos=6</td><td>profile位置模式，比较于位置模式，该模式有加速减速过程</td></tr> <tr><td>Mode_Profile_Vel</td><td>profile速度模式，比较于速度模式，该模式有加速减速过程</td></tr> <tr><td>Mode_Homing</td><td>归零模式</td></tr></tbody></table>
 
-<table class="tableizer-table">
+<table style="width:600px">
 <thead><tr class="tableizer-firstrow"><th colspan="2"style=background:PaleTurquoise>执行器属性，标识了执行器所有相关属性[ActuatorAttribute]</th></tr></thead><tbody>
  <tr><td>指令符</td><td>说明</td></tr> <tr><td>CUR_IQ_SETTING</td><td>电流IQ值</td></tr> <tr><td>CUR_PROPORTIONAL</td><td>电流比例</td></tr> <tr><td>CUR_INTEGRAL</td><td>电流积分</td></tr> <tr><td>CUR_ID_SETTING</td><td>电流ID值</td></tr> <tr><td>CUR_MINIMUM</td><td>预留</td></tr> <tr><td>CUR_MAXIMUM</td><td>预留</td></tr> <tr><td>CUR_NOMINAL</td><td>预留</td></tr> <tr><td>CUR_OUTPUT</td><td>预留</td></tr> <tr><td>CUR_MAXSPEED</td><td>电流环最大速度</td></tr> <tr><td>ACTUAL_CURRENT</td><td>当前电流值</td></tr> <tr><td>VEL_SETTING</td><td>速度设置</td></tr> <tr><td>VEL_PROPORTIONAL</td><td>速度比例</td></tr> <tr><td>VEL_INTEGRAL</td><td>速度积分</td></tr> <tr><td>VEL_OUTPUT_LIMITATION_MINIMUM</td><td>速度环输出最小电流比例</td></tr> <tr><td>VEL_OUTPUT_LIMITATION_MAXIMUM</td><td>速度环输出最大电流比例</td></tr> <tr><td>ACTUAL_VELOCITY</td><td>速度值</td></tr> <tr><td>POS_SETTING</td><td>位置设置</td></tr> <tr><td>POS_PROPORTIONAL</td><td>位置比例</td></tr> <tr><td>POS_INTEGRAL</td><td>位置积分</td></tr> <tr><td>POS_DIFFERENTIAL</td><td>位置微分</td></tr> <tr><td>POS_OUTPUT_LIMITATION_MINIMUM</td><td>位置环输出最小速度比例</td></tr> <tr><td>POS_OUTPUT_LIMITATION_MAXIMUM</td><td>位置环输出最大速度比例</td></tr> <tr><td>POS_LIMITATION_MINIMUM</td><td>最小位置限制</td></tr> <tr><td>POS_LIMITATION_MAXIMUM</td><td>最大位置限制</td></tr> <tr><td>HOMING_POSITION</td><td>归零位置</td></tr> <tr><td>ACTUAL_POSITION</td><td>当前位置</td></tr> <tr><td>PROFILE_POS_MAX_SPEED</td><td>profile position 模式最大速度</td></tr> <tr><td>PROFILE_POS_ACC</td><td>profile position 模式加速度</td></tr> <tr><td>PROFILE_POS_DEC</td><td>profile position 模式减速速度</td></tr> <tr><td>PROFILE_VEL_MAX_SPEED</td><td>profile velocity 模式最大速度</td></tr> <tr><td>PROFILE_VEL_ACC</td><td>profile velocity 模式加速度</td></tr> <tr><td>PROFILE_VEL_DEC</td><td>profile velocity 模式减速速度</td></tr> <tr><td>CHART_FREQUENCY</td><td>图像频率</td></tr> <tr><td>CHART_THRESHOLD</td><td>图像阈值</td></tr> <tr><td>CHART_SWITCH</td><td>图像开关</td></tr> <tr><td>POS_OFFSET</td><td>位置偏移</td></tr> <tr><td>VOLTAGE</td><td>电压</td></tr> <tr><td>POS_LIMITATION_SWITCH</td><td>开启或关闭位置限制</td></tr> <tr><td>HOMING_CUR_MAXIMUM</td><td>归零最大电流</td></tr> <tr><td>HOMING_CUR_MINIMUM</td><td>归零最小小电流</td></tr> <tr><td>CURRENT_SCALE</td><td>物理最大电流值</td></tr> <tr><td>VELOCITY_SCALE</td><td>速度最大电流值</td></tr> <tr><td>FILTER_C_STATUS</td><td>电流环滤波是否开启</td></tr> <tr><td>FILTER_C_VALUE</td><td>电流环滤波值</td></tr> <tr><td>FILTER_V_STATUS</td><td>速度环滤波是否开启</td></tr> <tr><td>FILTER_V_VALUE</td><td>速度环滤波值</td></tr> <tr><td>FILTER_P_STATUS</td><td>位置环滤波是否开启</td></tr> <tr><td>FILTER_P_VALUE</td><td>位置环滤波值</td></tr> <tr><td>INERTIA</td><td>惯量</td></tr> <tr><td>LOCK_ENERGY</td><td>堵转保护能量</td></tr> <tr><td>ACTUATOR_TEMPERATURE</td><td>执行器温度</td></tr> <tr><td>INVERTER_TEMPERATURE</td><td>逆变器温度</td></tr> <tr><td>ACTUATOR_PROTECT_TEMPERATURE</td><td>执行器保护温度</td></tr> <tr><td>ACTUATOR_RECOVERY_TEMPERATURE</td><td>执行器恢复温度</td></tr> <tr><td>INVERTER_PROTECT_TEMPERATURE</td><td>逆变器保护温度</td></tr> <tr><td>INVERTER_RECOVERY_TEMPERATURE</td><td>逆变器恢复温度</td></tr> <tr><td>CALIBRATION_SWITCH</td><td>预留</td></tr> <tr><td>CALIBRATION_ANGLE</td><td>预留</td></tr> <tr><td>ACTUATOR_SWITCH</td><td>执行器开关机</td></tr> <tr><td>FIRMWARE_VERSION</td><td>执行器固件版本</td></tr> <tr><td>ONLINE_STATUS</td><td>执行器是否在线</td></tr> <tr><td>DEVICE_ID</td><td>执行器 Id</td></tr> <tr><td>SN_ID</td><td>执行器 SN 号</td></tr> <tr><td>MODE_ID</td><td>执行器当前模式</td></tr> <tr><td>ERROR_ID</td><td>错误代码</td></tr> <tr><td>RESERVE_0</td><td>预留</td></tr> <tr><td>RESERVE_1</td><td>预留</td></tr> <tr><td>RESERVE_2</td><td>预留</td></tr> <tr><td>RESERVE_3</td><td>预留</td></tr> <tr><td>DATA_CNT</td><td>属性数量</td></tr> <tr><td>DATA_CHART</td><td>预留</td></tr> <tr><td>DATA_INVALID</td><td>非法属性值</td></tr></tbody></table>
 
