@@ -64,7 +64,7 @@ CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰�
 
 ## 3 通信协议
 
-## 3.1 CAN通信协议格式
+### 3.1 CAN通信协议格式
 
 <img src="../img/3-1communicationprotocol.png" style="width:600px">
 
