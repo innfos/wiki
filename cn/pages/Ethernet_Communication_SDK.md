@@ -580,35 +580,35 @@ ActuatorController * pController = ActuatorController::getInstance();
 
 <table >
 <thead><tr><th colspan="2" style=background:PaleTurquoise>连接状态，用于执行器和CAN的连接状态判断[ConnectStatus]</th></tr></thead><tbody>
- <tr><td>指令符</td><td>说明</td></tr> <tr><td>NO_CONNECT,</td><td>无连接</td></tr> <tr><td>CAN_CONNECTED=0x02,</td><td>CAN通信连接成功</td></tr> <tr><td>ACTUATOR_CONNECTED=0x04,</td><td>执行器连接成功</td></tr></tbody></table>
+ <tr><td>指令符</td><td>说明</td></tr> <tr><td>NO_CONNECT</td><td>无连接</td></tr> <tr><td>CAN_CONNECTED=0x02</td><td>CAN通信连接成功</td></tr> <tr><td>ACTUATOR_CONNECTED=0x04</td><td>执行器连接成功</td></tr></tbody></table>
 
 <table class="tableizer-table">
 <thead><tr class="tableizer-firstrow"><th  colspan="2" style=background:PaleTurquoise>通道ID,用于标识执行器图表数据的通道索引[Channel_ID]</th></tr></thead><tbody>
- <tr><td>指令符</td><td>说明</td></tr> <tr><td>channel_1=0,</td><td>图表数据1通道,给定理想曲线</td></tr> <tr><td>channel_2,</td><td>图表数据2通道，实际电流曲线</td></tr> <tr><td>channel_3,</td><td>图表数据3通道，实际速度曲线</td></tr> <tr><td>channel_4,</td><td>图表数据4通道，实际位置</td></tr> <tr><td>channel_cnt</td><td></td></tr></tbody></table>
+ <tr><td>指令符</td><td>说明</td></tr> <tr><td>channel_1=0</td><td>图表数据1通道,给定理想曲线</td></tr> <tr><td>channel_2</td><td>图表数据2通道，实际电流曲线</td></tr> <tr><td>channel_3</td><td>图表数据3通道，实际速度曲线</td></tr> <tr><td>channel_4</td><td>图表数据4通道，实际位置</td></tr> <tr><td>channel_cnt</td><td></td></tr></tbody></table>
 
 <table class="tableizer-table">
 <thead><tr class="tableizer-firstrow"><th  colspan="2" style=background:PaleTurquoise>错误类型定义，定义了执行器内部和连接等错误代码[ErrorsDefine] </th></tr></thead><tbody>
- <tr><td>指令符</td><td>说明</td></tr> <tr><td>ERR_NONE = 0,</td><td>无错误</td></tr> <tr><td>ERR_ACTUATOR_OVERVOLTAGE=0x01,</td><td>执行器过压错误</td></tr> <tr><td>ERR_ACTUATOR_UNDERVOLTAGE=0x02,</td><td>执行器欠压错误</td></tr> <tr><td>RR_ACTUATOR_LOCKED_ROTOR=0x04,</td><td>执行器堵转错误</td></tr> <tr><td>ERR_ACTUATOR_OVERHEATING=0x08</td><td>执行器过温错误</td></tr> <tr><td>enum OnlineStatus{</td><td>执行器读写错误</td></tr> <tr><td>ERR_ACTUATOR_MULTI_TURN=0x20,</td><td>执行器多圈计数错误</td></tr> <tr><td>ERR_INVERTOR_TEMPERATURE_SENSOR=0x40,</td><td>执行器逆变器温度器错误</td></tr> <tr><td>ERR_CAN_COMMUNICATION=0x80,</td><td>执行器温度传感器错误</td></tr> <tr><td>ERR_ACTUATOR_TEMPERATURE_SENSOR=0x100,</td><td>执行器 CAN 通信错误</td></tr> <tr><td>ERR_DRV_PROTECTION=0x400,</td><td>执行器 DRV 保护</td></tr> <tr><td>ERR_ID_UNUNIQUE=0x800</td><td>执行器 ID 不唯一错误</td></tr> <tr><td>ERR_ACTUATOR_DISCONNECTION=0x801,</td><td>执行器未连接错误</td></tr> <tr><td>ERR_CAN_DISCONNECTION=0x802,</td><td>CAN 通信转换板未连接错误</td></tr> <tr><td>ERR_IP_ADDRESS_NOT_FOUND=0x803,</td><td>无可用 ip 地址错误</td></tr> <tr><td>ERR_ABNORMAL_SHUTDOWN=0x804,</td><td>执行器非正常关机错误</td></tr> <tr><td>ERR_SHUTDOWN_SAVING=0x805,</td><td>执行器关机时参数保存错误</td></tr> <tr><td>ERR_UNKOWN=0xffff</td><td>未知错误</td></tr></tbody></table>
+ <tr><td>指令符</td><td>说明</td></tr> <tr><td>ERR_NONE = 0</td><td>无错误</td></tr> <tr><td>ERR_ACTUATOR_OVERVOLTAGE=0x01</td><td>执行器过压错误</td></tr> <tr><td>ERR_ACTUATOR_UNDERVOLTAGE=0x02</td><td>执行器欠压错误</td></tr> <tr><td>RR_ACTUATOR_LOCKED_ROTOR=0x04</td><td>执行器堵转错误</td></tr> <tr><td>ERR_ACTUATOR_OVERHEATING=0x08</td><td>执行器过温错误</td></tr> <tr><td>ERR_ACTUATOR_READ_OR_WRITE</td><td>执行器读写错误</td></tr> <tr><td>ERR_ACTUATOR_MULTI_TURN=0x20</td><td>执行器多圈计数错误</td></tr> <tr><td>ERR_INVERTOR_TEMPERATURE_SENSOR=0x40</td><td>执行器逆变器温度器错误</td></tr> <tr><td>ERR_CAN_COMMUNICATION=0x80</td><td>执行器 CAN 通信错误</td></tr> <tr><td>ERR_ACTUATOR_TEMPERATURE_SENSOR=0x100</td><td>执行器温度传感器错误</td></tr> <tr><td>ERR_DRV_PROTECTION=0x400</td><td>执行器 DRV 保护</td></tr> <tr><td>ERR_ID_UNUNIQUE=0x800</td><td>执行器 ID 不唯一错误</td></tr> <tr><td>ERR_ACTUATOR_DISCONNECTION=0x801</td><td>执行器未连接错误</td></tr> <tr><td>ERR_CAN_DISCONNECTION=0x802</td><td>CAN 通信转换板未连接错误</td></tr> <tr><td>ERR_IP_ADDRESS_NOT_FOUND=0x803</td><td>无可用 ip 地址错误</td></tr> <tr><td>ERR_ABNORMAL_SHUTDOWN=0x804</td><td>执行器非正常关机错误</td></tr> <tr><td>ERR_SHUTDOWN_SAVING=0x805</td><td>执行器关机时参数保存错误</td></tr> <tr><td>ERR_UNKOWN=0xffff</td><td>未知错误</td></tr></tbody></table>
 
 <table class="tableizer-table">
 <thead><tr class="tableizer-firstrow"><th colspan="2"style=background:PaleTurquoise>在线状态，用于标识执行器是否处于连接状态[OnlineStatus]</th></tr></thead><tbody>
- <tr><td>指令符</td><td>说明</td></tr> <tr><td>Status_Online=0x00,</td><td>执行器在线</td></tr> <tr><td>Status_Offline=0x01,</td><td>执行器离线</td></tr></tbody></table>
+ <tr><td>指令符</td><td>说明</td></tr> <tr><td>Status_Online=0x00</td><td>执行器在线</td></tr> <tr><td>Status_Offline=0x01</td><td>执行器离线</td></tr></tbody></table>
 
 <table class="tableizer-table">
 <thead><tr class="tableizer-firstrow"><th colspan="2"style=background:PaleTurquoise>开关状态，标识执行器的开关机状态[SwitchStatus]</th></tr></thead><tbody>
- <tr><td>指令符</td><td>说明</td></tr> <tr><td>ACTUATOR_SWITCH_OFF=0,</td><td>执行器已关机</td></tr> <tr><td>ACTUATOR_SWITCH_ON=1,</td><td>执行器已开机</td></tr></tbody></table>
+ <tr><td>指令符</td><td>说明</td></tr> <tr><td>ACTUATOR_SWITCH_OFF=0</td><td>执行器已关机</td></tr> <tr><td>ACTUATOR_SWITCH_ON=1</td><td>执行器已开机</td></tr></tbody></table>
 
 <table class="tableizer-table">
 <thead><tr class="tableizer-firstrow"><th colspan="2"style=background:PaleTurquoise>图表开关，用于标识执行器图表功能的开启或关闭[ChartSwitchStatus]</th></tr></thead><tbody>
- <tr><td>指令符</td><td>说明</td></tr> <tr><td>CHART_SWITCH_OFF=0,</td><td>图表功能关闭，不会产生图表数据</td></tr> <tr><td>CHART_SWITCH_ON=1,</td><td>图表功能开启，触发图表阈值会产生图表数据</td></tr></tbody></table>
+ <tr><td>指令符</td><td>说明</td></tr> <tr><td>CHART_SWITCH_OFF=0</td><td>图表功能关闭，不会产生图表数据</td></tr> <tr><td>CHART_SWITCH_ON=1</td><td>图表功能开启，触发图表阈值会产生图表数据</td></tr></tbody></table>
 
 <table class="tableizer-table">
 <thead><tr class="tableizer-firstrow"><th colspan="2"style=background:PaleTurquoise>电流环图表索引，用于标识电流图表是IQ值还是ID值[CurrnetChart]</th></tr></thead><tbody>
- <tr><td>指令符</td><td>说明</td></tr> <tr><td>IQ_CHART=0,</td><td>图表数据2通道，实际电流IQ曲线</td></tr> <tr><td>ID_CHART=1,</td><td>图表数据2通道，实际电流ID曲线</td></tr></tbody></table>
+ <tr><td>指令符</td><td>说明</td></tr> <tr><td>IQ_CHART=0</td><td>图表数据2通道，实际电流IQ曲线</td></tr> <tr><td>ID_CHART=1</td><td>图表数据2通道，实际电流ID曲线</td></tr></tbody></table>
 
 <table class="tableizer-table">
 <thead><tr class="tableizer-firstrow"><th colspan="2"style=background:PaleTurquoise>通信方式，可通过以太网或者串口两种方式与执行器通信，初始化执行器控制器时候要指定方式，默认为以太网通信[CommunicationType]</th></tr></thead><tbody>
- <tr><td>指令符</td><td>说明</td></tr> <tr><td>Via_Ethernet,</td><td>以太网通信</td></tr> <tr><td>Via_Serialport,</td><td>串口通信</td></tr></tbody></table>
+ <tr><td>指令符</td><td>说明</td></tr> <tr><td>Via_Ethernet</td><td>以太网通信</td></tr> <tr><td>Via_Serialport</td><td>串口通信</td></tr></tbody></table>
 
 <table class="tableizer-table">
 <thead><tr class="tableizer-firstrow"><th colspan="2"style=background:PaleTurquoise>操作标识，标识操作完成，可用于判断执行器控制器的指令执行状态[OperationFlags]</th></tr></thead><tbody>
