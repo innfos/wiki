@@ -2,19 +2,21 @@
 
 # CAN通信协议
 
-## 1. CAN协议概述
+## 1 产品信息
+
+### 1.1 CAN协议概述
 
 *     CAN 是Controller Area Network 的缩写（以下称为CAN），是ISO国际标准化的串行通信协议。
 
 *     本公司产品设计服从于CAN2.0A协议标准，本文详细介绍了本公司产品的产品CAN通信协议格式，及产品CAN通信结构。
 
-## 2. 综合性能参数
+### 1.2 综合性能参数
 
 <table style="width:400px"><thead><COL WIDTH=50%><COL WIDTH=50%><tr><th colspan="2"style=background:PaleTurquoise>表1-1综合性能参数说明</th></tr></thead><tbody><tr><td>项目</td><td>说明</td></tr><tr><td>链路层协议</td><td>CAN总线</td></tr><tr><td>CAN-ID类型</td><td>11bit-CAN2.0A</td></tr><tr><td>波特率</td><td>1Mbit/s</td></tr><tr><td>最大站点数</td><td>63个</td></tr><tr><td>CAN帧长度</td><td>0~8字节</td></tr><tr><td>应用层CAN帧类型</td><td>数据帧、远程帧</td></tr><tr><td>终端匹配电阻</td><td>120Ω</td></tr></tbody></table>
 
 本通信协议波特率为1Mbit/s，对于CAN通信，不同线的线缆对传输距离影响不大，但是要求线径尽量粗，最大节点数为64，本公司产品采用0.205mm²线径，最大传输距离为25m。
 
-# 配线
+## 2 配线
 
 * INNFOS执行器的插线接口为CAN通信接口，接口如下图所示。名称相同的端口内部引脚连接在一起，其接口定义表2-1所示。CAN接口连接器至少配有CANH、CANL、CGND引脚。
 
@@ -25,7 +27,7 @@
 
 公共地CGND 的连接，对提高CAN接口的抗干扰性能有很大提升。
 
-## 3. CAN通信的总线和多节点的连接方式
+### 2.1 CAN通信的总线和多节点的连接方式
 
 <img src="../img/wiring2-3.png" style="width:600px">
 
@@ -39,7 +41,7 @@ CAN通信网络的连接方式为总线连接方式，图2-3 所示
 * CAN设备长距离通信时，须将不同CAN电路的公共地CGND相互连接，以保证不同通信设备之间参考电位相等。
 * CGND是指CAN通信中的公共地，可用作信号电平参考，提升抗干扰能力；GND是执行器三相电源中的公共地，汇集三相功率电源的大电流至负极。
 
-## 4. CAN通信的线缆推荐使用双绞线
+### 2.2 CAN通信的线缆推荐使用双绞线
 
 CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰有很好的抵抗能力，也能减小线缆对外的辐射，图2-5所示。
 
@@ -51,18 +53,18 @@ CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰�
 * 短距离低速通信时，为了增加抗干扰能力可以使用双绞屏蔽线，屏蔽层双端接PE。
 * 长距离高速通信时，不建议使用屏蔽线。因为屏蔽层和信号线之间存在较大分布电容，会导致传输信号延迟。
 
-## 5. 其他设备没有外接CAN_GND 端口配线说明
+### 2.3 其他设备没有外接CAN_GND 端口配线说明
 
-### 设备为非隔离CAN,与其他信号共用GND或是COM端口
+#### 设备为非隔离CAN,与其他信号共用GND或是COM端口
 
 <img src="../img/wiring2-11.png" style="width:600px">
 
 
 将该设备GND或是COM与我公司设备CAN_GND连接，如2-11图所示：
 
-# 通信协议
+## 3 通信协议
 
-## 6. CAN通信协议格式
+## 3.1 CAN通信协议格式
 
 <img src="../img/3-1communicationprotocol.png" style="width:600px">
 
@@ -84,7 +86,7 @@ CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰�
 
 某条指令的具体参数内容，其长度等于数据长度减一。有些指令不含具体数据，其数据位数位也应为 1。
 
-### IQmath简介
+#### IQmath简介
 <table style="width:650px"><thead><tr><th rowspan="2" style=background:PaleTurquoise>Data Type</th><th colspan="2" style=background:PaleTurquoise>Range</th><th rowspan="2"style=background:PaleTurquoise>Resolution/Precision</th></tr><tr> <td>Min</td> <td>Max</td> </tr></thead><tbody><tr><td>_iq30</td><td>-2</td><td>1.999 999 999</td><td>0.000 000 001</td></tr><tr><td>_iq29</td><td>-4</td><td>3.999 999 998</td><td>0.000 000 002</td></tr><tr><td>_iq28</td><td>-8</td><td>7.999 999 996</td><td>0.000 000 004</td></tr><tr><td>_iq27</td><td>-16</td><td>15.999 999 993</td><td>0.000 000 007</td></tr><tr><td>_iq26</td><td>-32</td><td>31.999 999 985</td><td>0.000 000 015</td></tr><tr><td>_iq25</td><td>-64</td><td>63.999 999 970</td><td>0.000 000 030</td></tr><tr><td>`_iq24`</td><td>-128</td><td>127.999 999 940</td><td>0.000 000 060</td></tr><tr><td>_iq23</td><td>-256</td><td>255.999 999 981</td><td>0.000 000 119</td></tr><tr><td>_iq22</td><td>-512</td><td>511.999 999 762</td><td>0.000 000 238</td></tr><tr><td>_iq21</td><td>-1024</td><td>1023.999 999 523</td><td>0.000 000 477</td></tr><tr><td>_iq20</td><td>-2048</td><td>2047.999 999 046</td><td>0.000 000 954</td></tr><tr><td>_iq19</td><td>-4096</td><td>4095.999 998 093</td><td>0.000 001 907</td></tr><tr><td>_iq18</td><td>-8192</td><td>8191.999 996 185</td><td>0.000 003 815</td></tr><tr><td>_iq17</td><td>-16384</td><td>16383.999 992 371</td><td>0.000 007 629</td></tr><tr><td>_iq16</td><td>-32768</td><td>32767.999 984 741</td><td>0.000 015 259</td></tr><tr><td>_iq15</td><td>-65536</td><td>65535.999 969 482</td><td>0.000 030 518</td></tr><tr><td>_iq14</td><td>-131072</td><td>131071.999 938 965</td><td>0.000 061 035</td></tr><tr><td>_iq13</td><td>-262144</td><td>262143.999 877 930</td><td>0.000 122 070</td></tr><tr><td>_iq12</td><td>-524288</td><td>524287.999 755 859</td><td>0.000 244 141</td></tr><tr><td>_iq11</td><td>-1048576</td><td>1048575.999 511 719</td><td>0.000 488 281</td></tr><tr><td>_iq10</td><td>-2097152</td><td>2097151.999 023 437</td><td>0.000 976 563</td></tr><tr><td>_iq9</td><td>-4194304</td><td>4194303.998 046 875</td><td>0.001 953 125</td></tr><tr><td>_iq8</td><td>-8388608</td><td>8388607.996 093 750</td><td>0.003 906 250</td></tr><tr><td>_iq7</td><td>-16777216</td><td>16777215.992 187 500</td><td>0.007 812 500</td></tr><tr><td>_iq6</td><td>-33554432</td><td>33554431.984 375 000</td><td>0.015 625 000</td></tr><tr><td>_iq5</td><td>-67108864</td><td>67108863.968 750 000</td><td>0.031 250 000</td></tr><tr><td>_iq4</td><td>-134217728</td><td>134217727.937 500 000</td><td>0.062 500 000</td></tr><tr><td>_iq3</td><td>-268435456</td><td>268435455.875 000 000</td><td>0.125 000 000</td></tr><tr><td>_iq2</td><td>-536870912</td><td>536870911.750 000 000</td><td>0.250 000 000</td></tr><tr><td>_iq1</td><td>-1073741824</td><td>1 073741823.500 000 000</td><td>0.500 000 000</td></tr></tbody></table>
 
 Note: _iq24为INNFOS主要应用.
@@ -101,7 +103,7 @@ Note: _iq24为INNFOS主要应用.
 
 * IQ值换算的具体方法参见附录E。
 
-## 7. CAN通信协议命令应用举例
+### 3.2 CAN通信协议命令应用举例
 
 **示例1.读命令**
 
@@ -183,9 +185,9 @@ Note: _iq24为INNFOS主要应用.
 * 位置环因为是_IQ24格式，所以正向满量程为_IQ(127.999999940)，反向满量程为_IQ(-128.0)，IQ值即实际值，例：<span style="color: red">（_IQ（60.0）则实际位置为60R，即零位置正向转60转的位置。）</span>
 * 速度环曲线模式和位置环曲线模式，可以通过设置加速度，减速度的大小，相对平滑的达到自己预设的速度值和位置，可以避免操作时瞬间电流过大，触发执行器过流保护或者供电电源过流保护。
 
-## 8. CAN通信协议命令参考
+### 3.3 CAN通信协议命令参考
 
-### 读取命令
+#### 读取命令
 
 <table style="width:600px"><thead><tr><th colspan="3"style=background:PaleTurquoise>3.3.1.1 发送数据1字节， 返回数据2字节</th></tr><tr><td style="width:150px">命令名称</td><td colspan="2">读取命令</td></tr></thead><tbody><tr><td>说明</td><td colspan="2">此命令类发送数据长度为1，返回数据长度为2</td></tr><tr><td>指令符</td><td colspan="2">见读取指令1</td></tr><tr><td>数据长度</td><td colspan="2">1</td></tr><tr><td>数据内容</td><td colspan="2">无</td></tr><tr><td>指令符（返回值）</td><td colspan="2">见读取指令1</td></tr><tr><td>数据长度 (返回值)</td><td colspan="2">2</td></tr><tr><td rowspan="2">下位机返回数据</td><td>0x01 成功/使能/开机/正常</td><td rowspan="2">模式查询返回数据见模式表</td><tr><td>0x00 失败/失能/关机/异常</td></tr></tbody></table>
 
@@ -193,7 +195,7 @@ Note: _iq24为INNFOS主要应用.
 
 <table style="width:600px"><thead><tr><th colspan="3"style=background:PaleTurquoise>3.3.1.3 发送数据1字节，返回数据5字节</th></tr></thead><tbody><tr><td style="width:150px">命令名称</td><td>读取命令</td></tr><tr><td>说明</td><td>此命令类发送数据长度为1，返回数据长度为5，读取执行器参数值，高位在前。<br>数值为真实值的2^24倍。（一条特殊指令指令表内已特殊标注）</td></tr><tr><td>指令符</td><td>见读取指令3</td></tr><tr><td>数据长度</td><td>1</td></tr><tr><td>数据内容</td><td>无</td></tr><tr><td>指令符（返回值）</td><td>见读取指令3</td></tr><tr><td>数据长度 (返回值)</td><td>5</td></tr><tr><td>下位机返回数据</td><td>数据为IQ24格式。(一条特殊指令指令表内已特殊标注)）</td></tr></tbody></table>
 
-### 写入命令
+#### 写入命令
 
 <table style="width:600px"><thead><tr><th colspan="3"style=background:PaleTurquoise>3.3.2.1发送数据2字节，返回数据2字节</th></tr></thead><tbody><tr><td style="width:150px">命令名称</td><td colspan="2">写入命令</td></tr><tr><td>说明</td><td colspan="2">此命令类发送数据长度为2，返回数据长度为2，发送数据后一个字节表示要写入参数内容。<br>(注：上电后先发送开机指令才能使用，断电前必须先发送关机指令，否则零位可能丢失)</td></tr><tr><td>指令符</td><td colspan="2">见写入指令1</td></tr><tr><td>数据长度</td><td colspan="2">2</td></tr><tr><td rowspan="2">数据内容</td><td>0x01 使能/开机</td><td rowspan="2">模式设置见模式表</td></tr> <tr><td>0x00 失能/关机</td></tr><tr><td>指令 (返回值)</td><td colspan="2">见写入指令1</td></tr><tr><td>数据长度(返回值)</td><td colspan="2">2</td></tr><tr><td rowspan="2">下位机返回数据</td><td colspan="2">0x01 成功</td></tr><tr><td colspan="2">0x00 失败</td></tr></tbody></table>
 
@@ -205,7 +207,7 @@ Note: _iq24为INNFOS主要应用.
 <table style="width:600px"><thead><tr><th colspan="2" style=background:PaleTurquoise>3.3.2.4发送数据1字节，返回数据2字节</th></tr></thead><tbody><tr><td style="width:150px">命令名称</td><td>写入命令</td></tr><tr><td>说明</td><td>此命令类发送数据长度为1，返回数据长度为2</td></tr><tr><td>指令符</td><td>见写入指令4</td></tr><tr><td>数据长度</td><td>1</td></tr><tr><td>数据内容</td><td>无</td></tr><tr><td>指令 (返回值)</td><td>见写入指令4</td></tr><tr><td>数据长度(返回值)</td><td>2</td></tr><tr><td rowspan="2">下位机返回数据</td><td>0x01：成功</td></tr><tr><td>0x00 失败</td></tr></tbody></table>
 
 
-## 9. 附录A
+## 4 附录A
 
 ### A.1读取指令编码定义表
 
@@ -225,26 +227,26 @@ Note: _iq24为INNFOS主要应用.
 
 <table style="width:700px"><thead><tr><th colspan="3" style=background:PaleTurquoise>A.2.4写入指令4</th></tr></thead><tbody><tr><td style="width:100px">指令符</td><td style="width:200px">定义</td><td>说明</td></tr><tr><td>0xFE</td><td>消除下位机的报警</td><td>消除下位机的报警动作，接收到命令后，下位机停止报警，否则下位机不可操作</td></tr><tr><td>0x88</td><td>清除Homing数据</td><td>清除Homing数据</td></tr><tr><td>0x0D</td><td>存储参数</td><td>存储参数到EEPROM</td></tr></tbody></table>
 
-## 10. 附录B :模式表
+## 5 附录B :模式表
 
 <table style="width:400px"><thead><tr style=background:PaleTurquoise><th>指令符</th><th>指令符</th></tr></thead><tbody><tr><td>0x01</td><td>电流模式</td></tr><tr><td>0x02</td><td>速度模式</td></tr><tr><td>0x03</td><td>位置模式</td></tr><tr><td>0x06</td><td>位置梯形模式（S曲线）</td></tr><tr><td>0x07</td><td>速度梯形模式（S曲线）</td></tr><tr><td>0x08</td><td>homing模式</td></tr></tbody></table>
 
-## 11. 附录C：报警指令表
+## 6 附录C：报警指令表
 
 <table style="width:600px"><thead><tr style=background:PaleTurquoise><th>指令符</th><th>指令符</th></tr></thead><tbody><tr><td>0x0001</td><td>过压异常</td></tr><tr><td>0x0002</td><td>欠压异常</td></tr><tr><td>0x0004</td><td>堵转异常</td></tr><tr><td>0x0008</td><td>过热异常</td></tr><tr><td>0x0010</td><td>读写参数异常</td></tr><tr><td>0x0020</td><td>多圈计数异常</td></tr><tr><td>0x0040</td><td>逆变器温度传感器异常</td></tr><tr><td>0x0080</td><td>CAN通信异常</td></tr><tr><td>0x0100</td><td>电机温度传感器异常</td></tr><tr><td>0x0200</td><td>位置模式阶跃大于1</td></tr><tr><td>0x0400</td><td>DRV保护</td></tr><tr><td>其他</td><td>设备异常</td></tr><tr><td>注释</td><td>可同时报警多个错误，如返回数据为0005，则错误为0001过压异常与0004堵转异常</td></tr></tbody></table>
 
-## 12. 附录D：型号表
+## 7 附录D：型号表
 
 <table style="width:600px"><thead><tr style=background:PaleTurquoise><th>执行器型号</th><th>电流满量程</th><th>电机端速度满量程</th><th>输出端速度满量程</th></tr></thead><tbody><tr><td>QDD Pro-6010-50</td><td>33A</td><td>6000RPM</td><td>120RPM</td></tr><tr><td>QDD-6010-6</td><td>33A</td><td>6000RPM</td><td>1000RPM</td></tr><tr><td>QDD-6010-36</td><td>33A</td><td>6000RPM</td><td>166.7RPM</td></tr><tr><td>DD-6010</td><td>33A</td><td>6000RPM</td><td>6000RPM</td></tr><tr><td>QDD Pro-3510-50</td><td>16.5A</td><td>6000RPM</td><td>120RPM</td></tr><tr><td>QDD-3510-6</td><td>16.5A</td><td>6000RPM</td><td>1000RPM</td></tr><tr><td>QDD-3510-36</td><td>16.5A</td><td>6000RPM</td><td>166.7RPM</td></tr><tr><td>DD-3510</td><td>16.5A</td><td>6000RPM</td><td>6000RPM</td></tr></tbody></table>
 
 * 输出端速度不同是因为个别型号执行器内置减速器，使输出的最大转速降低，提高扭矩。IQ换算时按照电机端速度满量程的值计算。
 
-## 13. 附录E:指令发送与IQ值换算方法
+## 8 附录E:指令发送与IQ值换算方法
 * 说明书的注释部分表明：在位置模式中，IQ值即为实际值，即实际值的范围为-128~127. 999999940。这时只需要将对应的位置值转换成IQ值即可输入到参数内容中。在速度和电流模式中，转换IQ值之前需要将对应的参数值进行换算，如设定当前速度值为100RPM，则需要将设定的当前值除以最大值，即100/6000=0.01666666，然后再将0.016666666进行IQ换算，得到的值即为参数值。
 * 例如我们要设定当前的位置为60R（注意位置模式中阶跃响应的限制，若设定位置与当前位置差值超过1R则不响应），先寻找对应的指令。附录中A中第三类写入命令（写入命令3）表明，设定当前位置值的指令为0x0A。找到指令后寻找指令的对应发送格式，在“CAN通信协议命令参考”中3.3.2.3小节对应第三类写入指令，发送数据长度为5，即一个字节的指令+4个字节的参数内容。数据内容应用IQ24格式，则直接对60进行IQ换算，即60*2^24= 1006632960，再统一转换为16进制（根据测试软件需要），3C 00 00 00。根据CAN总线的数据帧格式说明，指令参数要在最高位，参数内容在后，则我们发送的指令内容 为0x 0A 3C 00 00 00，这也对应了说明中的数据长度为5（字节）。到此指令发送完毕。
 * 相应地，若要发送电流或者速度模式的设定值，需要先将参数值进行换算（各自除以对应的最大值），得到一个-1~1范围内的数，再进行IQ换算即可。发送命令的步骤与方法与位置模式相同，需要注意的是每个指令使用的数据格式，若为IQ8格式，则将公式中2^24改为2^8后再进行换算即可。
 
-## 14. 附录F:版本变更记录
+## 9 附录F:版本变更记录
 
 **下表简单描述了版本变更记录**
 
