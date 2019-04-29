@@ -35,7 +35,6 @@
 ## 通信协议
 
 ### 通信协议格式
-
 <table class="tableizer-table"><thead><tr class="tableizer-firstrow"><th>帧头</th><th>设备地址</th><th>指令符</th><th>数据位数</th><th>数据内容</th><th>CRC 校验码</th><th>帧尾</th></tr></thead><tbody> <tr><td>1 字节</td><td>1 字节</td><td>1 字节</td><td>2 字节</td><td>N 字节</td><td>2 字节</td><td>1 字节</td></tr></tbody></table>
 
 **帧头**
