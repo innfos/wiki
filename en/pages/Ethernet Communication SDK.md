@@ -1,34 +1,35 @@
-以太网通信SDK
+Ethernet Communication SDK
 =========
 
-## 介绍
+## Instruction
 
-*   API提供了友好的用户接口，包括了与多个INNFOS执行器进行串口或者以太网通信（推荐）功能，可同时对多个执行器发送指令或者获取执行器状态和参数信息
-*   建议初次接触API的用户优先阅读SDK中的examples。
+*   the api provides a user-friendly interface that includes serial or ethernet communication (recommended) with multiple innfos actuators to send commands to multiple actuators simultaneously or to obtain actuator status and parameter information.
+*   it is recommended that users who are new to the api should read the examples in the sdk first.
 
-## SDK下载及目录说明
+## Sdk download and directory description
 
-#### 下载
 
-*   访问该链接[download link](https://github.com/innfos/ActuatorController_SDK.git)下载SDK相关文件或者直接执行以下命令
+#### download
+
+*   visit the link download link to[download link](https://github.com/innfos/ActuatorController_SDK.git)•	download the sdk related files or execute the following command directly
+
 
 ```sh
 $ git clone https://github.com/innfos/ActuatorController_SDK.git
 ```
     
-## API相关文档
+## API related documentation
 
-*   注意事项以及相关说明文档请访问[document link](http://innfos.com/doc/index.html)
+*   notes and related documentation please go to document link[document link](http://innfos.com/doc/index.html)
 
-## 执行器连接
+## SCA connection
 
 <img src="../img/connect2.png" style="width:600px">
 
-如上动图为INNFOS执行器以太网通信的连接方式。
+Connect the device as shown above and turn it on again. 
+Warning: do not plug or unplug all cables with electricity, otherwise the device may be damaged.
 
-警告：所有线缆拔插严禁带电操作，否则容易损坏设备。
-
-## 环境配置和示例代码编译运行
+## Environment configuration and sample code compilation run
 
 ### linux平台
 
