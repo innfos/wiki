@@ -31,79 +31,51 @@
 
 
 ## QDD Pro
-  * [QDD Pro-3510-31](pages/QDDPro-3510-31.md)
-  * [QDD Pro-3510-51](pages/QDDPro-3510-51.md)
-  * [QDD Pro-3510-81](pages/QDDPro-3510-81.md)
-  * [QDD Pro-3510-101](pages/QDDPro-3510-101.md)
-  * [QDD Pro-6010-31-80](pages/QDDPro-6010-31-80.md)
-  * [QDD Pro-6010-31-90](pages/QDDPro-6010-31-90.md)
-  * [QDD Pro-6010-51-80](pages/QDDPro-6010-51-80.md)
+  * [QDD Pro-3510-51-70](pages/QDDPro-3510-51.md)
+  * [QDD Pro-3510-81-70](pages/QDDPro-3510-81.md)
   * [QDD Pro-6010-51-90](pages/QDDPro-6010-51-90.md)
-  * [QDD Pro-6010-81-80](pages/QDDPro-6010-81-80.md)
   * [QDD Pro-6010-81-90](pages/QDDPro-6010-81-90.md)
-  * [QDD Pro-6010-101-80](pages/QDDPro-6010-101-80.md)
   * [QDD Pro-6010-101-90](pages/QDDPro-6010-101-90.md)
-  * [QDD Pro-6010-121-90](pages/QDDPro-6010-121-90.md)
-  * [QDD Pro-8108-31](pages/QDDPro-8108-31.md)
-  * [QDD Pro-8108-51](pages/QDDPro-8108-51.md)
-  * [QDD Pro-8108-81](pages/QDDPro-8108-81.md)
   * [QDD Pro-8108-101](pages/QDDPro-8108-101.md)
-  * [QDD Pro-8108-121](pages/QDDPro-8108-121.md)
-  * [QDD Pro-8108-161](pages/QDDPro-8108-161.md)
+
 
 
 ## QDD
-  * [QDD-2305-36](pages/QDD-2305-36.md)
-  * [QDD-3510-6](pages/QDD-3510-6.md)
   * [QDD-3510-36](pages/QDD-3510-36.md)
-  * [QDD-6010-6](pages/QDD-6010-6.md)
   * [QDD-6010-36](pages/QDD-6010-36.md)
-  * [QDD-8108-6](pages/QDD-8108-6.md)
-  * [QDD-8108-36](pages/QDD-8108-36.md)
+
 
 ## DD
-  * [DD-2305](pages/DD-2305.md)
   * [DD-3510](pages/DD-3510.md)
   * [DD-6010](pages/DD-6010.md)
-  * [DD-8108](pages/DD-8108.md)
 
 Note: 以下型号执行器数据正在更新中，若需要该型号执行器的用户，请与售前人员联系，可提供相应的执行器样品测试。
 
 ## QDD Pro
-  * [QDD Pro-3510-31](pages/QDDPro-3510-31.md)
-  * [QDD Pro-3510-51](pages/QDDPro-3510-51.md)
-  * [QDD Pro-3510-81](pages/QDDPro-3510-81.md)
+  * [QDD Pro-3510-31-70](pages/QDDPro-3510-31.md)
   * [QDD Pro-3510-101](pages/QDDPro-3510-101.md)
   * [QDD Pro-6010-31-80](pages/QDDPro-6010-31-80.md)
   * [QDD Pro-6010-31-90](pages/QDDPro-6010-31-90.md)
   * [QDD Pro-6010-51-80](pages/QDDPro-6010-51-80.md)
-  * [QDD Pro-6010-51-90](pages/QDDPro-6010-51-90.md)
   * [QDD Pro-6010-81-80](pages/QDDPro-6010-81-80.md)
-  * [QDD Pro-6010-81-90](pages/QDDPro-6010-81-90.md)
   * [QDD Pro-6010-101-80](pages/QDDPro-6010-101-80.md)
-  * [QDD Pro-6010-101-90](pages/QDDPro-6010-101-90.md)
   * [QDD Pro-6010-121-90](pages/QDDPro-6010-121-90.md)
-  * [QDD Pro-8108-31](pages/QDDPro-8108-31.md)
-  * [QDD Pro-8108-51](pages/QDDPro-8108-51.md)
-  * [QDD Pro-8108-81](pages/QDDPro-8108-81.md)
-  * [QDD Pro-8108-101](pages/QDDPro-8108-101.md)
-  * [QDD Pro-8108-121](pages/QDDPro-8108-121.md)
-  * [QDD Pro-8108-161](pages/QDDPro-8108-161.md)
+  * [QDD Pro-8108-31-110](pages/QDDPro-8108-31.md)
+  * [QDD Pro-8108-51-110](pages/QDDPro-8108-51.md)
+  * [QDD Pro-8108-81-110](pages/QDDPro-8108-81.md)
+  * [QDD Pro-8108-121-110](pages/QDDPro-8108-121.md)
+  * [QDD Pro-8108-161-110](pages/QDDPro-8108-161.md)
 
 
 ## QDD
   * [QDD-2305-36](pages/QDD-2305-36.md)
   * [QDD-3510-6](pages/QDD-3510-6.md)
-  * [QDD-3510-36](pages/QDD-3510-36.md)
   * [QDD-6010-6](pages/QDD-6010-6.md)
-  * [QDD-6010-36](pages/QDD-6010-36.md)
   * [QDD-8108-6](pages/QDD-8108-6.md)
   * [QDD-8108-36](pages/QDD-8108-36.md)
 
 ## DD
   * [DD-2305](pages/DD-2305.md)
-  * [DD-3510](pages/DD-3510.md)
-  * [DD-6010](pages/DD-6010.md)
   * [DD-8108](pages/DD-8108.md)
 
 ## XR-Robot
