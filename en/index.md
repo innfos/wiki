@@ -31,39 +31,51 @@ Products
 
 
 ## QDD Pro
-  * [QDD Pro-3510-30](https://www.mdeditor.com/)
-  * [QDD Pro-3510-50](https://www.mdeditor.com/)
-  * [QDD Pro-3510-80](https://www.mdeditor.com/)
-  * [QDD Pro-3510-100](https://www.mdeditor.com/)
-  * [QDD Pro-6010-30-80](https://www.mdeditor.com/)
-  * [QDD Pro-6010-30-90](https://www.mdeditor.com/)
-  * [QDD Pro-6010-50-80](https://www.mdeditor.com/)
-  * [QDD Pro-6010-50-90](https://www.mdeditor.com/)
-  * [QDD Pro-6010-80-80](https://www.mdeditor.com/)
-  * [QDD Pro-6010-80-90](https://www.mdeditor.com/)
-  * [QDD Pro-6010-100-90](https://www.mdeditor.com/)
-  * [QDD Pro-6010-120-90](https://www.mdeditor.com/)
-  * [QDD Pro-8108-30](https://www.mdeditor.com/)
-  * [QDD Pro-8108-50](https://www.mdeditor.com/)
-  * [QDD Pro-8108-80](https://www.mdeditor.com/)
-  * [QDD Pro-8108-100](https://www.mdeditor.com/)
-  * [QDD Pro-8108-120](https://www.mdeditor.com/)
-  * [QDD Pro-8108-160](https://www.mdeditor.com/)
+  * [QDD Pro-3510-51-70](pages/QDDPro-3510-51.md)
+  * [QDD Pro-3510-81-70](pages/QDDPro-3510-81.md)
+  * [QDD Pro-6010-51-90](pages/QDDPro-6010-51-90.md)
+  * [QDD Pro-6010-81-90](pages/QDDPro-6010-81-90.md)
+  * [QDD Pro-6010-101-90](pages/QDDPro-6010-101-90.md)
+  * [QDD Pro-8108-101](pages/QDDPro-8108-101.md)
+
 
 
 ## QDD
-  * [QDD-2305-36](https://www.mdeditor.com/)
-  * [QDD-3510-6](https://www.mdeditor.com/)
-  * [QDD-3510-36](https://www.mdeditor.com/)
-  * [QDD-6010-6](https://www.mdeditor.com/)
-  * [QDD-6010-36](https://www.mdeditor.com/)
-  * [QDD-8108-6](https://www.mdeditor.com/)
-  * [QDD-8108-36](https://www.mdeditor.com/)
+  * [QDD-3510-36](pages/QDD-3510-36.md)
+  * [QDD-6010-36](pages/QDD-6010-36.md)
+
+
+## DD
+  * [DD-3510](pages/DD-3510.md)
+  * [DD-6010](pages/DD-6010.md)
+
+Note: The following SCA data is being updated. If you need the user of this model actuator, please contact the pre-sale staff (sales@innfos.com) to provide the corresponding sample test of the actuator.。
+
+## QDD Pro
+  * [QDD Pro-3510-31-70](pages/QDDPro-3510-31.md)
+  * [QDD Pro-3510-101](pages/QDDPro-3510-101.md)
+  * [QDD Pro-6010-31-80](pages/QDDPro-6010-31-80.md)
+  * [QDD Pro-6010-31-90](pages/QDDPro-6010-31-90.md)
+  * [QDD Pro-6010-51-80](pages/QDDPro-6010-51-80.md)
+  * [QDD Pro-6010-81-80](pages/QDDPro-6010-81-80.md)
+  * [QDD Pro-6010-101-80](pages/QDDPro-6010-101-80.md)
+  * [QDD Pro-6010-121-90](pages/QDDPro-6010-121-90.md)
+  * [QDD Pro-8108-31-110](pages/QDDPro-8108-31.md)
+  * [QDD Pro-8108-51-110](pages/QDDPro-8108-51.md)
+  * [QDD Pro-8108-81-110](pages/QDDPro-8108-81.md)
+  * [QDD Pro-8108-121-110](pages/QDDPro-8108-121.md)
+  * [QDD Pro-8108-161-110](pages/QDDPro-8108-161.md)
+
+
+## QDD
+  * [QDD-2305-36](pages/QDD-2305-36.md)
+  * [QDD-3510-6](pages/QDD-3510-6.md)
+  * [QDD-6010-6](pages/QDD-6010-6.md)
+  * [QDD-8108-6](pages/QDD-8108-6.md)
+  * [QDD-8108-36](pages/QDD-8108-36.md)
 
 ## DD
   * [DD-2305](pages/DD-2305.md)
-  * [DD-3510](pages/DD-3510.md)
-  * [DD-6010](pages/DD-6010.md)
   * [DD-8108](pages/DD-8108.md)
 
 ## XR-Robot
