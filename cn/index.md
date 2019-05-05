@@ -95,23 +95,7 @@ Note: 以下型号SCA数据正在更新中，更多详情请咨询商务团队�
 
   * 如果我们停止提供的产品有任何问题，请与我们联系。
 
-<style type="text/css">
-	table.tableizer-table {
-		font-size: 12px;
-		border: 1px solid #CCC; 
-		font-family: Arial, Helvetica, sans-serif;
-	} 
-	.tableizer-table td {
-		padding: 4px;
-		margin: 3px;
-		border: 1px solid #CCC;
-	}
-	.tableizer-table th {
-		background-color: #104E8B; 
-		color: #FFF;
-		font-weight: bold;
-	}
-</style>
+
 <table class="tableizer-table">
 <thead><tr class="tableizer-firstrow"><th>{| border="0" cellpadding="10" width="100%"</th></tr></thead><tbody>
  <tr><td>|-</td></tr>
