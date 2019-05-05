@@ -157,7 +157,7 @@ $./monitorActuator -e
 ```cpp
 int nLaunchedActuatorCnt =0;
 //关联控制器的操作信号
-int nOperationConnection = pController->m_sOperationFinished->s_Connect([&amp;](uint8_t nDeviceId,uint8_t operationType){
+int nOperationConnection = pController->m_sOperationFinished->s_Connect([&](uint8_t nDeviceId,uint8_t operationType){
    switch (operationType) {
    case Actuator::Recognize_Finished://自动识别完成
        if(pController->hasAvailableActuator())
@@ -381,7 +381,7 @@ $./longIdAndByteId -e
 
 ```cpp
 //关联控制器的longId操作信号
-int nOperationConnection = pController->m_sOperationFinishedL->s_Connect([&amp;](uint64_t nDeviceId,uint8_t operationType){
+int nOperationConnection = pController->m_sOperationFinishedL->s_Connect([&](uint64_t nDeviceId,uint8_t operationType){
    switch (operationType) {
    case Actuator::Recognize_Finished://自动识别完成
        if(pController->hasAvailableActuator())
@@ -429,7 +429,7 @@ ActuatorController * pController = ActuatorController::getInstance();
    for (uint8_t id: idArray) {
        bool bSuccess =false;
        //读取当前电流，并等待返回，如果读取失败 bSuccess的值为false
-       double current = pController->getActuatorAttributeWithACK(id,Actuator::ACTUAL_CURRENT,&amp;bSuccess);
+       double current = pController->getActuatorAttributeWithACK(id,Actuator::ACTUAL_CURRENT,&bSuccess);
        if(bSuccess)
             cout <<"current is " << current << endl;
        //设置速度环最大电流输出，并等待返回，如果设置失败，bSuccess的值为false。（设置速度、位置、电流不能使用此接口）
