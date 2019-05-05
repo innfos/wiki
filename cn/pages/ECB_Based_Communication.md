@@ -103,9 +103,6 @@ Note: 必须先断电然后再插拔部件.  否则可能损坏部件.
 
 ## 版本变更记录
 
-
-版本号| 更新时间 | 更新内容
----|---|---
-V1.0.0 | 2019.04| 第一版
+<table><thead><tr style=background:PaleTurquoise><th>版本</th><th>更新时间</th><th>更新内容</th></tr></thead><tbody><tr><td>V1.0.0</td><td>2019.04</td><td>The first version</td></tr></tbody></table>
 
 
