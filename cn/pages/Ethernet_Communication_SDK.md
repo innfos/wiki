@@ -624,6 +624,6 @@ ActuatorController * pController = ActuatorController::getInstance();
 ## 版本信息
 
 <table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th>版本</th><th>日期</th><th>修改内容</th></tr></thead><tbody>
+<thead><tr class="tableizer-firstrow" style=background:PaleTurquoise><th>版本</th><th>日期</th><th>修改内容</th></tr></thead><tbody>
  <tr><td>V2.0.0</td><td>2019-03-09</td><td>第二版本</td></tr> <tr><td>V1.0.0</td><td>2018-04-17</td><td>第一版本</td></tr></tbody></table>
 
