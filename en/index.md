@@ -49,7 +49,7 @@ Products
   * [DD-3510](pages/DD-3510.md)
   * [DD-6010](pages/DD-6010.md)
 
-Note: The following SCA data is being updated. If you need the user of this model actuator, please contact the pre-sale staff (sales@innfos.com) to provide the corresponding sample test of the actuator.。
+Note: The following SCA data is being updated. Please contact our sales team (sales@innfos.com) for more information.
 
 ## QDD Pro
   * [QDD Pro-3510-31-70](pages/QDDPro-3510-31.md)
