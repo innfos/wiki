@@ -15,7 +15,7 @@ INNFOS SCA（Smart Compliant Actuator）是一种智能，高度集成和先进�
 
 ## 应用领域
 
-INNFOS SCA包括带减速器的QDD Pro，使用行星减速器的QDD和不带减速器的DD。SCA可以应用于多种场景。最小的SCA可应用于三脚架头，无人机等，而最大的SCA可应用于机器人，机器人臂等。当然，SCA通常用于电动工具，CNC，3D打印机，AGV等。
+INNFOS SCA包括使用谐波减速器的QDD Pro，使用行星减速器的QDD和不带减速器的DD。SCA可以应用于多种场景。最小的SCA可应用于三脚架头，无人机等，而最大的SCA可应用于机器人，机器人臂等。当然，SCA通常用于电动工具，CNC，3D打印机，AGV等。
 
 
 # 版本变更记录
