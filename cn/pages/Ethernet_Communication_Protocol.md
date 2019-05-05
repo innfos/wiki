@@ -278,7 +278,8 @@ CRC校验码计算方法（c++）:
         0x00, 0xC1, 0x81, 0x40
     };
 ```
-```
+
+```cpp
     const uint8_t chCRCLTalbe[] =                                 // CRC 低位字节值表
     {
         0x00, 0xC0, 0xC1, 0x01, 0xC3, 0x03, 0x02, 0xC2, 0xC6, 0x06, 0x07, 0xC7,
@@ -306,7 +307,7 @@ CRC校验码计算方法（c++）:
     };
 ```
 
-``` cpp
+```cpp
     static uint16_t CRC16_1(uint8_t* pchMsg, int16_t wDataLen)
     {
         uint8_t chCRCHi = 0xFF; // 高CRC字节初始化
