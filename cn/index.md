@@ -95,14 +95,46 @@ Note: 以下型号SCA数据正在更新中，更多详情请咨询商务团队�
 
   * 如果我们停止提供的产品有任何问题，请与我们联系。
 
-| 版本        |日期                   |  	修改内容                                              |
-| --------    | --------------------- | ----------------------------------------------------------------------------------  |
-| V1.0.3      | 	2019-4-15            |   	修改原理图图片                                      |
-| V1.0.2      |  2019-4-9             |   	添加型号: <br>DD-2305                               |
-| V1.0.1      |   2019-4-4            |  删除型号:<br>QDD-6010-8<br>QDD-6010-64 <br>QDD-8108-8 <br>QDD-8108-64<br>添加型号:<br>QDD-6010-6 <br>QDD-6010-36 <br>QDD-8108-6 <br>QDD-8108-36  |
-| V1.0.0       |   2018-11-12  |  第一个版本 |
-
-
+<style type="text/css">
+	table.tableizer-table {
+		font-size: 12px;
+		border: 1px solid #CCC; 
+		font-family: Arial, Helvetica, sans-serif;
+	} 
+	.tableizer-table td {
+		padding: 4px;
+		margin: 3px;
+		border: 1px solid #CCC;
+	}
+	.tableizer-table th {
+		background-color: #104E8B; 
+		color: #FFF;
+		font-weight: bold;
+	}
+</style>
+<table class="tableizer-table">
+<thead><tr class="tableizer-firstrow"><th>{| border="0" cellpadding="10" width="100%"</th></tr></thead><tbody>
+ <tr><td>|-</td></tr>
+ <tr><td>|width="32%" valign="top" align="left"|</td></tr>
+ <tr><td><div id="XR1"></div></td></tr>
+ <tr><td>&nbsp;</td></tr>
+ <tr><td>=Version Information=</td></tr>
+ <tr><td>{| class="wikitable" style="width:100%"</td></tr>
+ <tr><td>*If there is any problem with the products that we stopped to provide,please contact us.</td></tr>
+ <tr><td><br/></td></tr>
+ <tr><td>&nbsp;</td></tr>
+ <tr><td>|-</td></tr>
+ <tr><td>| style="background: PaleTurquoise; color: black;width:266px" colspan="1"| '''version''' ||style="background: PaleTurquoise; color: black;width:266px" colspan="1"| '''date''' ||style="background: PaleTurquoise; color: black;width:266px" colspan="1"| '''Modify content''' </td></tr>
+ <tr><td>|-</td></tr>
+ <tr><td>|V1.0.3</td><td>||2019-4-15</td><td>||Modify the schematic picture</td></tr>
+ <tr><td>|-</td></tr>
+ <tr><td>|V1.0.2</td><td>||2019-4-9</td><td>||Add model：<br/>DD-2305</td></tr>
+ <tr><td>|-</td></tr>
+ <tr><td>|V1.0.1</td><td>||2019-4-4</td><td>||Delete model：<br/>QDD-6010-8<br/>QDD-6010-64 <br/>QDD-8108-8 <br/>QDD-8108-64<br/>Add model：<br/>QDD-6010-6 <br/>QDD-6010-36 <br/>QDD-8108-6 <br/>QDD-8108-36</td></tr>
+ <tr><td>|-</td></tr>
+ <tr><td>|V1.0.0</td><td>||2018-11-12</td><td>||The first version</td></tr>
+ <tr><td>|}</td></tr>
+</tbody></table>
 
 
 
