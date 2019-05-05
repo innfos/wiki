@@ -487,6 +487,6 @@ INNFOS执行器系统的逻辑框图：
 
 # 版本信息
 <table class="tableizer-table">
-<thead><tr class="tableizer-firstrow" style=background:PaleTurquoise><th>Version No.</th><th>Update time</th><th>update contents</th></tr></thead><tbody>
- <tr><td>V1.0.0</td><td>2019-04</td><td>The First Version</td></tr>
+<thead><tr class="tableizer-firstrow" style=background:PaleTurquoise><th>版本</th><th>更新时间</th><th>更新内容</th></tr></thead><tbody>
+ <tr><td>V1.0.0</td><td>2019-04</td><td>第一个版本</td></tr>
 </tbody></table>
