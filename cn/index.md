@@ -36,7 +36,7 @@
   * [QDD Pro-6010-50-90](pages/QDDPro-6010-51-90.md)
   * [QDD Pro-6010-80-90](pages/QDDPro-6010-81-90.md)
   * [QDD Pro-6010-100-90](pages/QDDPro-6010-101-90.md)
-  * [QDD Pro-8108-100](pages/QDDPro-8108-101.md)
+
 
 
 
@@ -63,6 +63,7 @@ Note: 以下型号SCA数据正在更新中，若需要该型号执行器的用�
   * [QDD Pro-8108-30-110](pages/QDDPro-8108-31.md)
   * [QDD Pro-8108-50-110](pages/QDDPro-8108-51.md)
   * [QDD Pro-8108-80-110](pages/QDDPro-8108-81.md)
+  * [QDD Pro-8108-100](pages/QDDPro-8108-101.md)
   * [QDD Pro-8108-120-110](pages/QDDPro-8108-121.md)
   * [QDD Pro-8108-160-110](pages/QDDPro-8108-161.md)
 
