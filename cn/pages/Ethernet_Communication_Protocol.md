@@ -251,7 +251,7 @@ Note:参数内容data\[0\~3\]高位在前，低位在后。为_IQ24格式。_IQ(
 CRC校验只计算数据内容，即数据位数之后到crc校验之前的所有内容，计算方法采用查表法。
 
 CRC校验码计算方法（c++）:
-
+``` cpp
     const uint8_t chCRCHTalbe[] =                                 // CRC 高位字节值表
     {
         0x00, 0xC1, 0x81, 0x40, 0x01, 0xC0, 0x80, 0x41, 0x01, 0xC0, 0x80, 0x41,
@@ -302,7 +302,8 @@ CRC校验码计算方法（c++）:
         0x44, 0x84, 0x85, 0x45, 0x87, 0x47, 0x46, 0x86, 0x82, 0x42, 0x43, 0x83,
         0x41, 0x81, 0x80, 0x40
     };
-    
+```
+
     static uint16_t CRC16_1(uint8_t* pchMsg, int16_t wDataLen)
     {
         uint8_t chCRCHi = 0xFF; // 高CRC字节初始化
