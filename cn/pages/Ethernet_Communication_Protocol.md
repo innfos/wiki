@@ -277,6 +277,8 @@ CRC校验码计算方法（c++）:
         0x00, 0xC1, 0x81, 0x40, 0x01, 0xC0, 0x80, 0x41, 0x01, 0xC0, 0x80, 0x41,
         0x00, 0xC1, 0x81, 0x40
     };
+```
+```
     const uint8_t chCRCLTalbe[] =                                 // CRC 低位字节值表
     {
         0x00, 0xC0, 0xC1, 0x01, 0xC3, 0x03, 0x02, 0xC2, 0xC6, 0x06, 0x07, 0xC7,
@@ -304,6 +306,7 @@ CRC校验码计算方法（c++）:
     };
 ```
 
+``` cpp
     static uint16_t CRC16_1(uint8_t* pchMsg, int16_t wDataLen)
     {
         uint8_t chCRCHi = 0xFF; // 高CRC字节初始化
@@ -318,6 +321,7 @@ CRC校验码计算方法（c++）:
         }
         return ((chCRCHi << 8) | chCRCLo);
     }
+``` 
 
 CRC16_1方法中，pchMsg指向要校验内容的地址，wDataLen为要校验内容的字节长度，该方法会返回两字节的crc校验码，将校验码加入到发送的指令中的对应位置即可。收到返回带crc校验码的指令，也可以通过该方法计算出校验码并与返回指令中的校验码比对，验证数据的有效性。
 
