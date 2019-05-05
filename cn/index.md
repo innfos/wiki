@@ -97,7 +97,7 @@ Note: 以下型号SCA数据正在更新中，更多详情请咨询商务团队�
 
 
 <table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th>version</th><th colspan="4" style="background: PaleTurquoise; color: black;width:800px">>date</th><th>Modify content</th></tr></thead><tbody>
+<thead><tr class="tableizer-firstrow"><th colspan="4" style="background: PaleTurquoise; color: black;width:800px">>version</th><th>date</th><th>Modify content</th></tr></thead><tbody>
  <tr><td>V1.0.3</td><td>2019-4-15</td><td>Modify the schematic picture</td></tr>
  <tr><td>V1.0.2</td><td>2019-4-9</td><td>Add model：</td></tr>
  <tr><td>DD-2305</td></tr>
