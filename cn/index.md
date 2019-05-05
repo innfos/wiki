@@ -97,27 +97,19 @@ Note: 以下型号SCA数据正在更新中，更多详情请咨询商务团队�
 
 
 <table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th>{| border="0" cellpadding="10" width="100%"</th></tr></thead><tbody>
- <tr><td>|-</td></tr>
- <tr><td>|width="32%" valign="top" align="left"|</td></tr>
- <tr><td><div id="XR1"></div></td></tr>
- <tr><td>&nbsp;</td></tr>
- <tr><td>=Version Information=</td></tr>
- <tr><td>{| class="wikitable" style="width:100%"</td></tr>
- <tr><td>*If there is any problem with the products that we stopped to provide,please contact us.</td></tr>
- <tr><td><br/></td></tr>
- <tr><td>&nbsp;</td></tr>
- <tr><td>|-</td></tr>
- <tr><td>| style="background: PaleTurquoise; color: black;width:266px" colspan="1"| '''version''' ||style="background: PaleTurquoise; color: black;width:266px" colspan="1"| '''date''' ||style="background: PaleTurquoise; color: black;width:266px" colspan="1"| '''Modify content''' </td></tr>
- <tr><td>|-</td></tr>
- <tr><td>|V1.0.3</td><td>||2019-4-15</td><td>||Modify the schematic picture</td></tr>
- <tr><td>|-</td></tr>
- <tr><td>|V1.0.2</td><td>||2019-4-9</td><td>||Add model：<br/>DD-2305</td></tr>
- <tr><td>|-</td></tr>
- <tr><td>|V1.0.1</td><td>||2019-4-4</td><td>||Delete model：<br/>QDD-6010-8<br/>QDD-6010-64 <br/>QDD-8108-8 <br/>QDD-8108-64<br/>Add model：<br/>QDD-6010-6 <br/>QDD-6010-36 <br/>QDD-8108-6 <br/>QDD-8108-36</td></tr>
- <tr><td>|-</td></tr>
- <tr><td>|V1.0.0</td><td>||2018-11-12</td><td>||The first version</td></tr>
- <tr><td>|}</td></tr>
+<thead><tr class="tableizer-firstrow"><th>version</th><th colspan="4" style="background: PaleTurquoise; color: black;width:800px">>date</th><th>Modify content</th></tr></thead><tbody>
+ <tr><td>V1.0.3</td><td>2019-4-15</td><td>Modify the schematic picture</td></tr>
+ <tr><td>V1.0.2</td><td>2019-4-9</td><td>Add model：</td></tr>
+ <tr><td>DD-2305</td></tr>
+ <tr><td>V1.0.1</td><td>2019-4-4</td><td>Delete model：</td></tr>
+ <tr><td>QDD-6010-8</td></tr>
+ <tr><td>QDD-6010-64 </td></tr>
+ <tr><td>QDD-8108-8 </td></tr>
+ <tr><td>QDD-8108-64</td></tr>
+ <tr><td>Add model：</td></tr>
+ <tr><td>QDD-6010-6 </td></tr>
+ <tr><td>QDD-6010-36 </td></tr>
+ <tr><td>QDD-8108-6 </td></tr>
+ <tr><td>QDD-8108-36</td></tr>
+ <tr><td>V1.0.0</td><td>2018-11-12</td><td>The first version</td></tr>
 </tbody></table>
-
-
