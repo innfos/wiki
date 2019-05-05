@@ -31,60 +31,60 @@ Warning: do not plug or unplug all cables with electricity, otherwise the device
 
 ## Environment configuration and sample code compilation run
 
-### linux平台
+### linux
 
-#### 环境配置
+#### environment configuration
 
-请参考<a href="#!pages/Ethernet_Configuration.md#linux平台环境配置">linux平台环境配置</a>
+Please refer to<a href="#!pages/Ethernet_Configuration.md#linux平台环境配置">the Linux environment configuration</a>
 
 
-#### 示例代码编译
+#### Sample code compilation
 
-* 打开终端进入`…\example`目录，该目录下有`CMakeLists.txt`
+* open the terminal and go to the`…\example`example directory, which has`CMakeLists.txt`
 
 ```bash
 $ cmake CMakeLists.txt
 $ make
 ```
 
-*   输入命令执行完成后，在该目录下会生成一个bin文件夹，该目录存放了生成的示例程序。
-*   确认执行器正确连接并供电以后，执行器会有黄色指示灯闪烁，此时可以测试示例代码。
+*   after the input command is executed, a bin folder is generated in this directory, which stores the generated sample program.
+*   after confirming that the actuator is properly connected and powered, the actuator will flash yellow and the sample code can be tested.
 
-#### 示例程序测试
+#### Sample program test
 
-*   确认执行器正确连接并供电以后，执行器会有黄色指示灯闪烁，此时可以测试示例代码
+*   after proper connection and powered on, sca will flash yellow and can be tested the sample code
 
-##### 查找已连接的执行器
+##### find connected actuators
 
-*   打开终端并进入bin目录，输入命令
+*   open the terminal and enter the bin directory, enter the command
 
 ```bash
 $./lookupActuators -e
 ```
-*   此窗口会显示当前已连接的执行器数量，可以`ctrl+c`结束程序
+*   this window will display the number of currently connected actuators. You can end the program with`ctrl+c`
 
 <img src="../img/022.png" style="width:600px">
 
-**代码说明**
+**code description**
 
-*   根据不同的参数选择不同的通信方式，默认为以太网通信。
+*   select different communication methods according to different parameters. The default is ethernet communication.
 
-Note:必须先初始化控制器，才能进行其他操作
+Note:the controller must be initialized before other operations can be performed.
 
 ``` cpp
-//初始化控制器
+//initialize controller
 if(strcmp(argv[1],"-s")==0)
     ActuatorController::initController(Actuator::Via_Serialport);
 elseif(strcmp(argv[1],"-e")==0)
     ActuatorController::initController();
 ```
-*   关联操作完成信号，如此用户操作成功以后，会触发该信号，根据不同的`operationType`，进行相应操作，本例中会在自动识别完成后，打印出识别到的执行器数量。
+*   associate the operation completion signal. After the user operates successfully, the signal will be triggered. According to different operationtype, the corresponding operation will be performed. In this example, the number of identified actuators will be printed after the automatic identification is completed.
 
 ``` cpp
-//关联控制器的操作信号
+//associated controller operation signal
 int nOperationConnection = pController->m_sOperationFinished->s_Connect([=](uint8_t nDeviceId,uint8_t operationType){
    switch (operationType) {
-   case Actuator::Recognize_Finished://自动识别完成
+   case Actuator::Recognize_Finished://automatic identification completed
        if(pController->hasAvailableActuator())
         {
             vector<uint8_t> idArray = pController->getActuatorIdArray();
@@ -96,10 +96,9 @@ int nOperationConnection = pController->m_sOperationFinished->s_Connect([=](uint
     }
 });
 ```
-*   完整的应用必须要关联错误信号，以便在执行器内部发生错误时及时收到反馈并作出相应处理，`nDeviceId`为0时，错误不针对特定的执行器（例如未连接的错误）
-
+*   the complete application must be associated with an error signal in order to receive feedback and respond accordingly when an error occurs inside the actuator. When`nDeviceId`is 0, the error is not specific to the actuator (eg unconnected error)
 ```cpp
-//关联错误信号
+//associated error signal
 int nErrorConnection = pController->m_sError->s_Connect([=](uint8_t nDeviceId,uint16_t nErrorType,string errorInfo){
    if(nDeviceId==0)
     {
@@ -112,68 +111,67 @@ int nErrorConnection = pController->m_sError->s_Connect([=](uint8_t nDeviceId,ui
 });
 ```
 
-*   关联好必要的信号以后，可以进行相应操作，第一步的操作就是识别已连接的执行器。
+*   after the necessary signals are associated, the next corresponding operation is to identify the connected actuators.
 
 ```cpp
-//自动识别已连接执行器
+//automatically identify connected actuators
 pController->autoRecoginze();
 ```
 
-*   事件循环是保证sdk内部通讯进行的必要步骤，务必要保证事件循环不被阻塞，sdk才能触发各种信号。
+*   The event loop is a necessary step to ensure the internal communication of sdk. It is necessary to ensure that the event loop is not blocked so that sdk can trigger various signals.
 
 ```cpp
-//执行控制器事件循环
+//execution controller event loop
 while (!bExit)
 {
     ActuatorController::processEvents();
 }
 ```
 
-*   最后在程序结束前，断开和所有信号的关联
+*   finally disconnect the signal from all signals before the end of the program
 
 ```cpp
-//断开信号连接
+//disconnect the signal
 pController->m_sOperationFinished->s_Disconnect(nOperationConnection);
 pController->m_sError->s_Disconnect(nErrorConnection);
 
 ```
 
-##### 监测执行器状态
+##### monitor actuator status
 
-*   打开终端，进入`example/bin`目录，输入命令
+*   open the terminal, go to the `example/bin` directory, enter the command
 
 ```bash
 $./monitorActuator -e
 ```
 
-*   其中`Actuator ID`为执行器id,`attribute ID`为监测的执行器属性Id，`attribute value`为对
-    应的属性值，可以`ctrl+c`结束程序
+*   the actuator id is the `Actuator ID`, the attribute id is the monitored executor `attribute ID`, and the attribute value is the corresponding `attribute value`. You can end the program with `ctrl+c`
 
 <img src="../img/023.png" style="width:600px">
 
-**代码说明**
+**code description**
 
-*   自动识别成功后自动开启所有执行器，每个执行器开启成功后都会触发`Actuator::Launch_Finished`信号，当所有执行器都开启以后，开始自动刷新，读取执行器数据。
+*   all actuators are automatically turned on after automatic recognition. After each actuator is successfully turned on, the actuator::launch_finished signal is triggered. When all actuators are turned on, automatic refresh is started and the actuator data is read.
 
 ```cpp
 int nLaunchedActuatorCnt =0;
-//关联控制器的操作信号
+//associated controller operation signal
 int nOperationConnection = pController->m_sOperationFinished->s_Connect([&amp;](uint8_t nDeviceId,uint8_t operationType){
    switch (operationType) {
-   case Actuator::Recognize_Finished://自动识别完成
+   case Actuator::Recognize_Finished://automatic identification completed
        if(pController->hasAvailableActuator())
         {
             vector<uint8_t> idArray = pController->getActuatorIdArray();
         cout <<"Number of connected actuators:" << idArray.size() << endl;
            for (uint8_t id: idArray) {
                if(pController->getActuatorAttribute(id,Actuator::ACTUATOR_SWITCH)==Actuator::ACTUATOR_SWITCH_OFF)
-                {//如果执行器处于关机状态，启动执行器
+                {//Start the SCA if it is off
                     pController->launchActuator(id);
                 }
                else
                 {
                     ++ nLaunchedActuatorCnt;
-                   if(nLaunchedActuatorCnt == pController->getActuatorIdArray().size())//所有执行器都已启动完成
+                   if(nLaunchedActuatorCnt == pController->getActuatorIdArray().size())//all actuators have been started
                     {
                         autoRefresh();
                     }
@@ -182,7 +180,7 @@ int nOperationConnection = pController->m_sOperationFinished->s_Connect([&amp;](
         }
        break;
    case Actuator::Launch_Finished:
-       if(++nLaunchedActuatorCnt == pController->getActuatorIdArray().size())//所有执行器都已启动完成
+       if(++nLaunchedActuatorCnt == pController->getActuatorIdArray().size())//all actuators have been started
         {
             autoRefresh();
         }
@@ -193,11 +191,12 @@ int nOperationConnection = pController->m_sOperationFinished->s_Connect([&amp;](
 });
 ```
 
-*   为了监测执行器的属性变化，需关联信号`m_sActuatorAttrChanged`，当用户请求读取执行器的属性后，成功返回会触发该信号
+*   In order to monitor the change of the properties of the actuator, the signal`m_sActuatorAttrChanged`is required. When the user requests to read the properties of the actuator, a successful return will trigger the signal.
+
     
 	
 ```cpp
-//关联控制器控制的执行器属性变化信号
+//actuator attribute change signal controlled by the associated controller
 int nAttrConnection =pController->m_sActuatorAttrChanged->s_Connect([=](uint8_t nDeviceId,uint8_t nAttrId,double value){
     cout <<"Actuator ID: " << (int)nDeviceId << endl;
     cout <<"atribute ID: " << (int)nAttrId << endl;
@@ -206,9 +205,9 @@ int nAttrConnection =pController->m_sActuatorAttrChanged->s_Connect([=](uint8_t 
 });
 ```
 
-#### 控制执行器
+#### control actuator
 
-*   打开终端，进入`example/bin`目录，输入命令
+*   open the terminal, go to the `example/bin`directory, enter the command
 
 ```bash
 $./operateActuator -e
@@ -217,47 +216,47 @@ $./operateActuator -e
 <img src="../img/024.png" style="width:600px">
 
 
-*   表示执行器已经找到，输入命令`l 0`，该命令会启动所有已连接的执行器，如果启动成功，执行器会有绿色指示灯闪烁，表示已经启动成功，终端窗如下显示
+*   indicate that the actuator has been found. Enter the command  `l 0 ` to start all connected actuators. If the startup is successful, the actuator will flash green, indicating successful startup. The terminal window is displayed as follows.
 
 <img src="../img/025.png" style="width:600px">
 
-*   此时可激活执行器对应模式，比如输入` a 6`可以激活profile position模式，再输入`p 5`，
+*  the corresponding mode of sca can be activated at this time. For example, input ` a 6`can activate the profile position mode, then input `p 5`, the actuator will rotate to 5 positions; input`a 7` can activate the `profile velocity` mode, then enter`v 500`, execute the device will rotate at 500rpm and stop rotating input`v 0`; input `a 1` can activate current mode, then input `c 0.6`, the actuator will rotate at a constant current of 0.6a (if the actuator does not move, you can gently turn it with your hand) actuator), you can `ctrl+c` and then`ctrl+d`to end the program (because there are multiple threads waiting for keyboard input) 
 
-    执行器会转动到5圈的位置；输入`a 7`可以激活`profile velocity`模式，再输入`v 500`， 执行器将以500RPM的速度转动，停止转动输入`v 0`,；输入`a 1`可以激活电流模式，再输入 `c 0.6`，执行器将以恒定0.6A的电流转动（如果执行器不动，可用手轻轻转动一下执行器）， 可以`ctrl+c`以后再`ctrl+d`结束程序（因为有多线程等待键盘输入）
     
 <img src="../img/026.png" style="width:600px">
      
 
-**代码说明**
+**code description**
 
-*   成功启动执行器后，可对执行器进行操作。`getActuatorIdArray`可获取所有执行器的短id，用户可以指定其中任意id并进行操作，执行器有速度、电流、位置等多种模式（`Actuator::ActuatorMode`），必须先激活对应的模式才能进行相应操作。
+*   the actuator can be operated after successfully started. `getActuatorIdArray` can get the short id of all actuators. The user can specify any id and operate. The actuator has multiple modes such as speed, current and position （`Actuator::ActuatorMode`）. The corresponding mode must be activated before the corresponding operation can be performed.
+
 
 ```cpp
  vector<uint8_t> idArray = controllerInst->getActuatorIdArray();
 switch (directive)
 {
-case'a'://激活执行器指定模式，指令格式：a 模式id（Actuator::ActuatorMode）
+case'a'://Activate actuator specified mode, command format: a mode id (actuator::actuatormode)
     controllerInst->activeActuatorMode(idArray, Actuator::ActuatorMode((int)value));
    break;
-case'p'://指定执行器位置，指令格式：p 圈数（-127到127）
+case'p'://specify the actuator position, command format: p laps (-127 to 127)
    for (int i =0; i < idArray.size(); ++i)
     {
         controllerInst->setPosition(idArray.at(i), value);
     }
    break;
-case'c'://指定执行器电流，指令格式：c 电流值（A）
+case'c'://Specify actuator current, command format: c current value（A）
    for (int i =0; i < idArray.size(); ++i)
     {
         controllerInst->setCurrent(idArray.at(i), value);
     }
    break;
-case'v'://指定执行器速度，指令格式：v 速度值（RPM）
+case'v'://Specify actuator speed, command format: v speed value（RPM）
    for (int i =0; i < idArray.size(); ++i)
     {
         controllerInst->setVelocity(idArray.at(i), value);
     }
    break;
-case'l'://启动指定执行器，指令格式：l 执行器id（id为0启动所有执行器）
+case'l'://Start the specified executor, the format of the instruction: l executor id (id is 0 to start all actuators)
    if(uint8_t(value)==0)
     {
         controllerInst->launchAllActuators();
@@ -268,7 +267,8 @@ case'l'://启动指定执行器，指令格式：l 执行器id（id为0启动所
     }
    //cout << "launch"<<endl;
    break;
-case's'://关闭指定执行器，指令格式：l 执行器id（id为0启动所有执行器）
+case's'://Close the specified executor, the format of the instruction: l executor id (id is 0 to start all actuators)
+
    if(uint8_t(value)==0)
     {
         controllerInst->closeAllActuators();
@@ -284,72 +284,77 @@ default:
 }
 ```
 
-#### 控制器参数调整
+#### controller parameter adjustment
 
-*   打开终端，进入`example/bin`目录，输入命令
+*   open the terminal, go to the`example/bin`directory, enter the command
 
 ```bash
 $./tuneActuator -e
 ```
 
-*   此示例程序自动启动执行器并将位置环输出设置为3000RPM,速度环的电流最大输出为16.5A,
+*  this sample program automatically starts the actuator and sets the position loop output to 3000 rpm, and the maximum current output of the speed loop is 16.5a.
 
-    如果使用`profile position`模式转动执行器，执行器的最大速度不会超过3000RPM;如果 使用`profile velocity`模式转动执行器，执行器最大电流不会超过16.5A，可以`ctrl+c`结束程序 
+If you use the `profile position` mode to rotate the actuator, the maximum speed of the actuator will not exceed 3000rpm; if you use the `profile velocity` mode to rotate the actuator, the maximum current of the actuator will not exceed 16.5a, you can end the program with `ctrl+c`
+
+  
     
 <img src="../img/027.png" style="width:600px"> 
     
-**代码说明**
+**code description**
     
 
-*   此示例程序自动启动执行器，启动成功后可调整执行器属性，速度环电流输出可调整速度环下的执行器扭矩，位置环速度输出可调整位置环下速度的大小。
+*   •	This sample program automatically starts the actuator. After successful startup, the actuator properties can be adjusted. The speed loop current output adjusts the actuator torque under the speed loop. The position loop speed output adjusts the speed of the position loop. See the sca quick start instructions for details.
+
     
     
 ```cpp
-//执行器属性调整,调整成功，会触发执行器属性变化信号
+//Actuator property adjustment, the adjustment is successful, will trigger the actuator property change signal
+
 void tuneActuator()
 {
     ActuatorController * pController = ActuatorController::getInstance();
     vector<uint8_t> idArray = pController->getActuatorIdArray();
    for (uint8_t id: idArray) {
-       //调整执行器速度环最小电流输出
+       //adjust actuator speed loop minimum current output
         pController->setMinOutputCurrent(id,-10);
-       //调整执行器速度环最大电流输出
+       //adjust actuator speed loop maximum current output
         pController->setMaxOutputCurrent(id,10);
-       //调整执行器位置环最小速度输出
+       //adjust actuator position loop minimum speed output
         pController->setMinOutputVelocity(id,-2000);
-       //调整执行器位置环最大速度输出，最大值要大于最小值
+       //adjust the maximum speed output of the actuator position loop, the maximum value is greater than the minimum value	
         pController->setMaxOutputVelocity(id,2000);
-       //调整执行器Mode_Profile_Pos的最大速度（RPM）
+       //mode_profile_pos Mode_Profile_Posadjust the maximum speed（RPM）
         pController->setActuatorAttribute(id,Actuator::PROFILE_POS_MAX_SPEED,1000);
     }
 }
 ```
 
-#### 执行器归零
+#### actuator zero
 
-*   打开终端，进入`example/bin`目录，输入命令
+*   open the terminal, go to the`example/bin`directory, enter the command
 
 ```bash
 $./homingActuator -e
 ```
 
 
-*   表示已经将执行器当前位置设置为零位，范围是-9.5R到9.5R，并且开启了位置限制，如果`profile position`模式下，输入此范围之外的位置，执行器不会转动，可以`ctrl+c`结束程序 
+*   indicate that the current position of the actuator has been set to zero, the range is -9.5r to 9.5r, and the position limit is turned on. If the position is outside the range in the `profile position` mode, the actuator will not rotate, `ctrl+c` end program
+ 
 
 <img src="../img/028.png" style="width:600px">
 
-**代码说明**
+**code description**
 
-*   执行器自动启动完成后，`setHomingPosition`会将当前位置`getActuatorAttribute(id,Actuator::ACTUAL_POSITION)`设置成0位，`setMaxPosLimit`和`setMinPosLimit`会设置最大和最小的位置限制，`setActuatorAttribute(id,Actuator::POS_OFFSET,0.5)`设置极限偏移。
+*   after the autostart is completed, `setHomingPosition` sets the current position `getActuatorAttribute(id,Actuator::ACTUAL_POSITION)` to 0, `setMaxPosLimit` and `setMinPosLimit` sets the maximum and minimum position limits, `setActuatorAttribute(id,Actuator::POS_OFFSET,0.5)` set the limit offset.
 	
 ```cpp
-    //执行器0位和限位调整
+    //actuator 0 bit and limit adjustment
 void setActuatorLimitation()
 {
     ActuatorController * pController = ActuatorController::getInstance();
     vector<uint8_t> idArray = pController->getActuatorIdArray();
    for (uint8_t id : idArray) {
-       //将执行器当前位置变成0位，并且最小和最大位置分别设置为-10,10,偏移设置为0.5，执行器的运动范围变成（-9.5,9.5）
+       //the current position of the actuator is changed to 0, and the minimum and maximum positions are set to -10, 10, the offset is set to 0.5, and the actuator's range of motion becomes (-9.5, 9.5).
         pController->setHomingPosition(id,pController->getActuatorAttribute(id,Actuator::ACTUAL_POSITION));
         pController->setMinPosLimit(id,-10);
         pController->setMaxPosLimit(id,10);
@@ -359,47 +364,47 @@ void setActuatorLimitation()
 }
 ```
 
-*   参数设置完成，保存参数，否则，关机以后参数设置将全部丢弃
+*   the parameter setting is completed and the parameters are saved. Otherwise, the parameter settings will be discarded after shutdown.
 
 ```cpp
 pController->saveAllParams(nDeviceId);
 ```
 
-#### 执行器长短id
+#### actuator length id
 
-*   打开终端并进入`example/bin`目录，输入命令
+*   open the terminal and enter the`example/bin`directory, enter the command
 
 ```bash
 $./longIdAndByteId -e
 ```
 
-*   可以进行长短id的获取以及相互转换，并且可以通过长id获取通信ip地址。
+*   it is possible to acquire and convert long and short ids, and to obtain communication ip addresses by long id.
 
-**代码说明**
+**code description**
 
-*   信号变量以`L`结尾的标识该信号关联的是执行器长id，可以通过长id进行通信。长短id的区别在于长id包含了通信地址和短id，并且可以相互转换（如果不同的ip地址下有相同短id的执行器，短id转换长id会随机转换其中一个ip地址下的一个长id）。
+*   the signal variable ends with an l. The signal is associated with the actuator length id and can be communicated with a long id. The difference between the long and short id is that the long id contains the communication address and the short id, and can be converted to each other (if different ip addresses have the same short id executor, the short id conversion long id will randomly convert one long under one ip address id).
     
 
 ```cpp
-//关联控制器的longId操作信号
+//associated controller's longid operation signal
 int nOperationConnection = pController->m_sOperationFinishedL->s_Connect([&amp;](uint64_t nDeviceId,uint8_t operationType){
    switch (operationType) {
-   case Actuator::Recognize_Finished://自动识别完成
+   case Actuator::Recognize_Finished://automatic identification completed
        if(pController->hasAvailableActuator())
         {
-           //获取longId数组
+           //get the longid array get the longid array
             vector<uint64_t> longIdArray = pController->getActuatorLongIdArray();
-           //获取byteid数组
+           //get the byteid array
             vector<uint8_t> idArray = pController->getActuatorIdArray();
            for (uint64_t id: longIdArray) {
-           //获取长id中的通信ip地址
+           //get the communication ip address in the long id
                 cout <<"Communication IP is " << pController->toString(id) << endl;
-               //longId转换成byteId
+               //convert longid to byteid
                 cout <<"Long id " << id <<" convert to byte id " << (int)pController->toByteId(id) << endl;
             }
            for(uint8_t id : idArray)
             {
-               //byteId转换成longId
+               //convert byteid to longid
                 cout <<"Byte id " << (int)id <<" convert to long id " << pController->toLongId(id) << endl;
             }
         }
@@ -410,65 +415,67 @@ int nOperationConnection = pController->m_sOperationFinishedL->s_Connect([&amp;]
 });
 ```
 
-#### 同步响应
+#### synchronous response
 
-* 打开终端并进入`example/bin`目录，输入命令
+* open the terminal and enter the `example/bin`directory, enter the command
 
 ```bash
 $./feedback_sync -e
 ```
 
-*   关联对应信号，在回调中进行操作属于异步响应，不会阻塞当前程序。同步响应，会阻塞当前程序，直到sdk返回结果，相比较而言，同步响应用法简单但是效率偏低，因为需要等待执行器响应（而且执行器部分操作没有同步响应，比如设置位置、速度、电流等）,如果对效率要求比较高，推荐使用异步响应。
+*   getactuatorattributewithack and setactuatorattributewithack are the interfaces of the two synchronous responses provided by sdk. Corresponding to getactuatorattribute and setactuatorattribute, the properties of the executor can be get synchronously. Calling getactuatorattributewithack and setactuatorattributewithack will block the current program until the result is returned (regardless of success or failure).
 
-**代码说明**
+**code description**
 
-*   `getActuatorAttributeWithACK`和`setActuatorAttributeWithACK`是目前sdk提供的两个同步响应的接口，对应于`getActuatorAttribute`和`setActuatorAttribute`，可以同步获取或者设置执行器的属性，调用`getActuatorAttributeWithACK`和`setActuatorAttributeWithACK`会阻塞当前程序，直到有结果返回（不管成功或者失败）。
+*   `getActuatorAttributeWithACK` and `setActuatorAttributeWithACK`are the interfaces of the two synchronous responses provided by sdk. Corresponding to`getActuatorAttribute` and `setActuatorAttribute`，you can get or set the properties of the executor synchronously. Calling`getActuatorAttributeWithACK` and `setActuatorAttributeWithACK`will block the current program until the result is returned (regardless of success or failure).
 
 ```cpp
+
 ActuatorController * pController = ActuatorController::getInstance();
     vector<uint8_t> idArray = pController->getActuatorIdArray();
    for (uint8_t id: idArray) {
        bool bSuccess =false;
-       //读取当前电流，并等待返回，如果读取失败 bSuccess的值为false
+       //read current and wait for return if read fails bsuccess is false
        double current = pController->getActuatorAttributeWithACK(id,Actuator::ACTUAL_CURRENT,&amp;bSuccess);
        if(bSuccess)
             cout <<"current is " << current << endl;
-       //设置速度环最大电流输出，并等待返回，如果设置失败，bSuccess的值为false。（设置速度、位置、电流不能使用此接口）
+       //Set the maximum current output of the speed loop and wait for the return. If the setting fails, the value of bsuccess is false. (this interface cannot be used to set speed, position, current)
         bSuccess = pController->setActuatorAttributeWithACK(id,Actuator::VEL_OUTPUT_LIMITATION_MAXIMUM,10);
        if(bSuccess)
             cout <<"Set VEL_OUTPUT_LIMITATION_MAXIMUM to 10A" << endl;
     }
 ```
 
-### windows平台
+### windows
 
-#### 环境配置
-
-
-请参考<a href="#!pages/Ethernet_Configuration.md#windows平台环境配置"> windows平台环境配置</a>
+#### environment configuration
 
 
-#### 示例代码编译
+Please refer to the <a href="#!pages/Ethernet_Configuration.md#windows平台环境配置"> windowsenvironment configuration</a>
 
-*   运行`cmake-gui` 出现如右界面：
-*   其中源码路径就是目录结构中的`…\example`所在的路径，该目录下包含了CMakeLists.txt文件；构建路径可自行定义，用于生成工程文件两个路径配置完成后点击Generate按钮弹出如下界面
 
+#### •	Sample code compilation
+
+*   run cmake-gui to appear as the right interface:
+*   the source path is `…\example` in the directory structure, containing the cmakelists.txt file. The build path can be customized, being used to generate the project file. After the path is configured, click the generate button to pop up the following interface.
 
 <img src="../img/011.png" style="width:600px">
 
 
-*   如果红色框内不是64位生成器，点击下拉三角，选择64位生成器，然后点击Finish按钮，生成成功后就生成了Visual Studio的工程文件，可用Visual Studio打开编译。编译完整个工程，在工程目录下会生成一个bin目录，里面有Debug或者Release文件夹（对应于编译的版本），将目录结构中的`…\sdk\lib\windows_x64\debug`或`…\sdk\lib\windows_x64\release`中的文件复制到对应版本的bin下面的Debug或者Release目录中，双击该目录中的exe就可正常运行示例程序了。
+*   if the red box is not a 64-bit generator, click on the drop-down triangle, select the 64-bit generator, and then click the finish button. Once successful, the visual studio project file will be formed and can be compiled with visual studio. Compiling the complete project to generate a bin directory, there is a debug or release folder (corresponding to the compiled version), the file in the directory structure `…\sdk\lib\windows_x64\debug`或`…\sdk\lib\windows_x64\release` is copied to the debug or release directory under the bin of the corresponding version. Double-clicking the exe in the directory will run the sample program normally.
 
 <img src="../img/012.png" style="width:600px">
 
 
-#### 示例程序测试
+#### Sample program test
 
-##### 查找已连接的执行器
 
-*   确认执行器正确连接并供电以后，执行器会有黄色指示灯闪烁，此时可以测试示例代码。
+##### Find connected actuators
 
-打开命令行窗口并进入bin目录，输入命令
+*    after confirming that the actuator is properly connected and powered, the actuator will flash yellow and the sample code can be tested.
+
+Open a command line window and go to the bin directory, enter the command ./lookupactuators.exe -e
+
 
 ```bash
 ./lookupActuators.exe -e 
@@ -478,9 +485,10 @@ ActuatorController * pController = ActuatorController::getInstance();
 <img src="../img/013.png" style="width:600px">
 
 
-##### 监测执行器状态
+##### •	Monitor actuator status
 
-*   打开命令行窗口并进入bin目录，输入命令
+
+*   open a command line window and go to the bin directory and enter the command ./monitoractuator.exe -e
 
 ```bash
 ./monitorActuator.exe -e
@@ -490,9 +498,10 @@ ActuatorController * pController = ActuatorController::getInstance();
 <img src="../img/014.png" style="width:600px">
 
 
-##### 控制执行器
+##### Control sca
 
-*   打开命令行窗口并进入bin目录，输入命令
+
+*   open a command line window, go to the bin directory and enter the command 
 
 
 ```bash
@@ -502,93 +511,97 @@ ActuatorController * pController = ActuatorController::getInstance();
 <img src="../img/015.png" style="width:600px">
 
 
-表示执行器已经找到，输入命令`l 0`，该命令会启动所有已连接的执行器，如果启动成功，执行器会有绿色指示灯闪烁，表示已经启动成功，cmd窗口如下显示
+This indicates that the actuator has been found. Enter the command l 0 to start all connected scas. If startup is successful, the actuator will flash green, the cmd window is displayed as shown below.
+
 
 <img src="../img/016.png" style="width:600px">
 
 
-*   此时可激活执行器对应模式，比如输入 a 6可以激活profile position模式，再输入p 10，执行器会转动到10圈的位置；输入a 7可以激活profile velocity模式，再输入v 500，执行器将以500RPM的速度转动，停止转动输入v 0,；输入a 1可以激活电流模式，再输入c 0.6，执行器将以恒定0.6A的电流转动（如果执行器不动，可用手轻轻转动一下执行器），可以ctrl+c结束程序
+*    the corresponding mode of sca can be activated at this time,for example, input a 6 can activate profile position mode, then inputting p 10 will lead to rotate to 10 turns; input a 7 can activate profile velocity mode, then input v 500, sca will rotate at 500rpm and stop rotating input v0; input a 1 can activate current mode, then input c 0.6, the actuator will rotate at a constant current of 0.6a (if the actuator does not move, you can gently turn it with your hand) actuator), the program will be ended with ctrl+c.
 
 
 <img src="../img/017.png" style="width:600px">
 
 
-##### 执行器器参数调整
+##### Actuator parameter adjustmen
 
-*   打开命令行窗口并进入bin目录，输入命令
+*   open a command line window, go to the bin directory and enter the command 
 
 ```bash
 ./tuneActuator.exe -e
 ```
 
-*   此示例程序自动启动执行器并将位置环输出设置为3000RPM,速度环的电流最大输出为16.5A,如果使用`profile position`模式转动执行器，执行器的最大速度不会超过3000RPM;如果使用`profile velocity`模式转动执行器，执行器最大电流不会超过16.5A，可以`ctrl+c`结束程序
+*   this sample program will automatically starts the actuator and sets the position loop output to 3000 rpm. The maximum current output of the speed loop is 16.5 a. If the actuator is rotated using the `profile position` mode, the maximum speed of the actuator will not exceed 3000 rpm; if `profile velocity` is used mode rotation actuator, the maximum current of the actuator will not exceed 16.5a, and the program can be terminated by `ctrl+c`.
 
 <img src="../img/018.png" style="width:600px">
 
-##### 执行器归零
+##### Sca zero
 
-*   打开命令行窗口并进入bin目录，输入命令
+*   open a command line window, go to the bin directory and enter the command
 
 ```bash
 ./homingActuator.exe -e
 ```
 
-*   如图结果表示已经将执行器当前位置设置为零位，范围是 -9.5R 到 9.5R，并且开启了位置限制，如果 `profile position` 模式下，输入此范围之外的位置，执行器不会转动，可以 `ctrl+c` 结束程序
+*   as shown in the figure, the current position of the actuator has been set to zero, the range is -9.5r to 9.5r, and the position limit is turned on if the `profile position` mode, enter a position outside this range, the actuator will not rotate, the program can be ended with`ctrl+c`
 
 
 <img src="../img/LongId_w.png" style="width:600px">
 
 
-##### 执行器长短id
+##### Sca length id
 
-*   打开命令行窗口并进入bin目录，输入命令
+
+*   open a command line window, go to the bin directory, enter the command
 
 ```bash
 ./longIdAndByteId.exe -e
 ```
 
-可以进行长短id的获取以及相互转换，并且可以通过长id获取通信ip地址。
+The acquisition of the length id and the mutual conversion can be performed, and the communication ip address can be obtained by the long id.
 
 <img src="../img/Feedback_w.png" style="width:600px">
 
-##### 同步响应
+##### 	Synchronous response
 
-*   打开命令行窗口并进入bin目录，输入命令
+*   open a command line window, go to the bin directory and enter the command
 
 ```bash
 ./feedback_sync.exe -e
 ```
 
-*   运行`feedback_sync.exe`，关联对应信号，在回调中进行操作属于异步响应，不会阻塞当前程序。同步响应，会阻塞当前程序，直到sdk返回结果，相比较而言，同步响应用法简单但是效率偏低，因为需要等待执行器响应（而且执行器部分操作没有同步响应，比如设置位置、速度、电流等）,如果对效率要求比较高，推荐使用异步响应。
+*   run`feedback_sync.exe`，to associate the corresponding signal. The operation in the callback is an asynchronous response and does not block the current program. Synchronous response will block the current program until sdk returns the result. In comparison, the synchronous response is simple but inefficient because it needs to wait for the actuator response (and the actuator part does not have a synchronous response, such as setting position, speed, current etc.) If the efficiency requirements are high, an asynchronous response is recommended.
 
-## SDK使用说明
+## SDK instructions
 
-### 概述
+### overview
 
-*   本SDK提供了与执行器通信的接口,可通过串口或者以太网对已经连接好的执行器进行查找、状态查询、属性调整和自定义控制。如果想快速了解sdk基本内容和使用方法,请查看example/src中的相关代码
+*   SDK provides an interface for communication with the actuator. It can search, status query, property adjustment and custom control of the connected actuator through serial port or ethernet. If you want to quickly understand the basic content and usage of sdk, please see the relevant code in example/src
 
-### 项目中使用sdk
+### Use sdk in the project
 
-*   本 sdk 遵循 `c++11` 标准，所以在构建项目之前请确认编译选项支持 `c++11`（比如 gcc 中使用 -std=c++11） ;
-*   将 sdk 集成到项目中的基本步骤（最好先参考 example 中的 CMakeLists.txt） :
-*   将 sdk/include、 sdk/include/asio 加入到项目的包含目录，用于关联共享库中的方法 ;
-*   将库文件目录 sdk/lib/linux_x86_64（windows 目录为 sdk/lib/debug 和 sdk/lib/release），以便可执行文件能链接到共享库，并保证运行时能够关联到共享库；
-*   将必要的元素加入到构建过程中（比如 CMake 中的 target_link_libraries）
 
-### 命名空间
+*   this sdk follows the `c++11` standard, so make sure the compile option supports `c++11`（before building the project (eg -std=c++11 in gcc);
+*   the basic steps to integrate sdk into your project (preferably refer to cmakelists.txt in example):
+*   add sdk/include, sdk/include/asio to the project's include directory to associate methods in the shared library;
+*   the library file directory sdk/lib/linux_x86_64 (the windows directories are sdk/lib/debug and sdk/lib/release) so that the executable can be linked to the shared library and the runtime can be associated with the shared library;
+*   add the necessary elements to the build process (such as target_link_libraries in cmake)
 
-* 在../sdk/include/actuatordefine.h定义了命名空间`Actuator`,并且枚举了sdk中所有用到的类型和类型值：
+### Namespaces
 
-<table style="width:600px"><thead><tr><th colspan="2" style=background:PaleTurquoise>连接状态，用于执行器和CAN的连接状态判断[ConnectStatus]</th></tr></thead><tbody>
- <tr><td>指令符</td><td>说明</td></tr> <tr><td>NO_CONNECT,</td><td>无连接</td></tr> <tr><td>CAN_CONNECTED=0x02,</td><td>CAN通信连接成功</td></tr> <tr><td>ACTUATOR_CONNECTED=0x04,</td><td>执行器连接成功</td></tr></tbody></table>
 
-<table style="width:600px">
-<thead><tr class="tableizer-firstrow"><th  colspan="2" style=background:PaleTurquoise>通道ID,用于标识执行器图表数据的通道索引[Channel_ID]</th></tr></thead><tbody>
- <tr><td>指令符</td><td>说明</td></tr> <tr><td>channel_1=0,</td><td>图表数据1通道,给定理想曲线</td></tr> <tr><td>channel_2,</td><td>图表数据2通道，实际电流曲线</td></tr> <tr><td>channel_3,</td><td>图表数据3通道，实际速度曲线</td></tr> <tr><td>channel_4,</td><td>图表数据4通道，实际位置</td></tr> <tr><td>channel_cnt</td><td></td></tr></tbody></table>
+* the namespace actuator is defined in ../sdk/include/`Actuator` define.h and enumerates all the types and type values used in sdk:
+
+<table style="width:600px"><thead><tr><th colspan="2" style=background:PaleTurquoise>Connection status for connection status determination of actuator and can[ConnectStatus]</th></tr></thead><tbody>
+ <tr><td>command byte</td><td>description</td></tr> <tr><td>NO_CONNECT,</td><td>no connection</td></tr> <tr><td>CAN_CONNECTED=0x02,</td><td>CANcommunication connection succeeded</td></tr> <tr><td>ACTUATOR_CONNECTED=0x04,</td><td>actuator connection succeeded</td></tr></tbody></table>
 
 <table style="width:600px">
-<thead><tr class="tableizer-firstrow"><th  colspan="2" style=background:PaleTurquoise>错误类型定义，定义了执行器内部和连接等错误代码[ErrorsDefine] </th></tr></thead><tbody>
- <tr><td>指令符</td><td>说明</td></tr> <tr><td>ERR_NONE = 0,</td><td>无错误</td></tr> <tr><td>ERR_ACTUATOR_OVERVOLTAGE=0x01,</td><td>执行器过压错误</td></tr> <tr><td>ERR_ACTUATOR_UNDERVOLTAGE=0x02,</td><td>执行器欠压错误</td></tr> <tr><td>RR_ACTUATOR_LOCKED_ROTOR=0x04,</td><td>执行器堵转错误</td></tr> <tr><td>ERR_ACTUATOR_OVERHEATING=0x08</td><td>执行器过温错误</td></tr> <tr><td>enum OnlineStatus{</td><td>执行器读写错误</td></tr> <tr><td>ERR_ACTUATOR_MULTI_TURN=0x20,</td><td>执行器多圈计数错误</td></tr> <tr><td>ERR_INVERTOR_TEMPERATURE_SENSOR=0x40,</td><td>执行器逆变器温度器错误</td></tr> <tr><td>ERR_CAN_COMMUNICATION=0x80,</td><td>执行器温度传感器错误</td></tr> <tr><td>ERR_ACTUATOR_TEMPERATURE_SENSOR=0x100,</td><td>执行器 CAN 通信错误</td></tr> <tr><td>ERR_DRV_PROTECTION=0x400,</td><td>执行器 DRV 保护</td></tr> <tr><td>ERR_ID_UNUNIQUE=0x800</td><td>执行器 ID 不唯一错误</td></tr> <tr><td>ERR_ACTUATOR_DISCONNECTION=0x801,</td><td>执行器未连接错误</td></tr> <tr><td>ERR_CAN_DISCONNECTION=0x802,</td><td>CAN 通信转换板未连接错误</td></tr> <tr><td>ERR_IP_ADDRESS_NOT_FOUND=0x803,</td><td>无可用 ip 地址错误</td></tr> <tr><td>ERR_ABNORMAL_SHUTDOWN=0x804,</td><td>执行器非正常关机错误</td></tr> <tr><td>ERR_SHUTDOWN_SAVING=0x805,</td><td>执行器关机时参数保存错误</td></tr> <tr><td>ERR_UNKOWN=0xffff</td><td>未知错误</td></tr></tbody></table>
+<thead><tr class="tableizer-firstrow"><th  colspan="2" style=background:PaleTurquoise>Channel id, the channel index used to identify the actuator chart data[Channel_ID]</th></tr></thead><tbody>
+ <tr><td>command byte</td><td>description</td> <tr><td>channel_1=0,</td><td>Chart data 1 channel, given ideal curve</td></tr> <tr><td>channel_2,</td><td>Chart data 2 channels, actual current curve</td></tr> <tr><td>channel_3,</td><td>Chart data 3 channels, actual speed curve</td></tr> <tr><td>channel_4,</td><td>Chart data 4 channels, actual location</td></tr> <tr><td>channel_cnt</td><td></td></tr></tbody></table>
+
+<table style="width:600px">
+<thead><tr class="tableizer-firstrow"><th  colspan="2" style=background:PaleTurquoise>Error type definition, defines error codes such as actuator internals and connections[ErrorsDefine] </th></tr></thead><tbody>
+ <tr><td>command byte</td><td>description</td> <tr><td>ERR_NONE = 0,</td><td>no error</td></tr> <tr><td>ERR_ACTUATOR_OVERVOLTAGE=0x01,</td><td>Actuator overvoltage error</td></tr> <tr><td>ERR_ACTUATOR_UNDERVOLTAGE=0x02,</td><td>Actuator undervoltage error</td></tr> <tr><td>RR_ACTUATOR_LOCKED_ROTOR=0x04,</td><td>Actuator locked error</td></tr> <tr><td>ERR_ACTUATOR_OVERHEATING=0x08</td><td>Actuator overheating error</td></tr> <tr><td>enum OnlineStatus{</td><td>Actuator read or write error</td></tr> <tr><td>ERR_ACTUATOR_MULTI_TURN=0x20,</td><td>Actuator multi-turn count error</td></tr> <tr><td>ERR_INVERTOR_TEMPERATURE_SENSOR=0x40,</td><td>Actuator inverter temperature error</td></tr> <tr><td>ERR_CAN_COMMUNICATION=0x80,</td><td>Actuator inverter temperature error</td></tr> <tr><td>ERR_ACTUATOR_TEMPERATURE_SENSOR=0x100,</td><td>执行器 CAN 通信错误</td></tr> <tr><td>ERR_DRV_PROTECTION=0x400,</td><td>执行器 DRV 保护</td></tr> <tr><td>ERR_ID_UNUNIQUE=0x800</td><td>执行器 ID 不唯一错误</td></tr> <tr><td>ERR_ACTUATOR_DISCONNECTION=0x801,</td><td>执行器未连接错误</td></tr> <tr><td>ERR_CAN_DISCONNECTION=0x802,</td><td>CAN 通信转换板未连接错误</td></tr> <tr><td>ERR_IP_ADDRESS_NOT_FOUND=0x803,</td><td>无可用 ip 地址错误</td></tr> <tr><td>ERR_ABNORMAL_SHUTDOWN=0x804,</td><td>执行器非正常关机错误</td></tr> <tr><td>ERR_SHUTDOWN_SAVING=0x805,</td><td>执行器关机时参数保存错误</td></tr> <tr><td>ERR_UNKOWN=0xffff</td><td>未知错误</td></tr></tbody></table>
 
 <table style="width:600px">
 <thead><tr class="tableizer-firstrow"><th colspan="2"style=background:PaleTurquoise>在线状态，用于标识执行器是否处于连接状态[OnlineStatus]</th></tr></thead><tbody>
