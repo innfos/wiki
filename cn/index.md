@@ -49,7 +49,7 @@
   * [DD-3510](pages/DD-3510.md)
   * [DD-6010](pages/DD-6010.md)
 
-Note: 以下型号SCA数据正在更新中，若需要该型号执行器的用户，请与售前人员联系(sales@innfos.com)，可提供相应的执行器样品测试。
+Note: 以下型号SCA数据正在更新中，更多详情请咨询商务团队（sales@innfos.com）
 
 ### QDD Pro
   * [QDD Pro-3510-30-70](pages/QDDPro-3510-31.md)
