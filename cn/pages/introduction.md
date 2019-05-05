@@ -21,4 +21,4 @@ INNFOS SCA包括使用谐波减速器的QDD Pro，使用行星减速器的QDD和
 # 版本变更记录
 
 下表简单描述了版本变更记录
-<table><thead><tr style=background:PaleTurquoise><th>版本</th><th>更新时间</th><th>更新内容</th></tr></thead><tbody><tr><td>V1.0.0</td><td>2019.04</td><td>第一个版本</td></tr></tbody></table>
+<table><thead><tr style="background:PaleTurquoise"><th>版本</th><th>更新时间</th><th>更新内容</th></tr></thead><tbody><tr><td>V1.0.0</td><td>2019.04</td><td>第一个版本</td></tr></tbody></table>
