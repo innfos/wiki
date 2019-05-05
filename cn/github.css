@@ -2,7 +2,6 @@ pre code {
 	display:block;
 	padding:.5em;
 	color:#333;
-	background:#f8f8ff
 }
 pre .comment,pre .template_comment,pre .diff .header,pre .javadoc {
 	color:#998;
