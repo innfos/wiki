@@ -31,11 +31,11 @@
 
 
 ## QDD Pro
-  * [QDD Pro-3510-50-70](pages/QDDPro-3510-51.md)
-  * [QDD Pro-3510-80-70](pages/QDDPro-3510-81.md)
-  * [QDD Pro-6010-50-90](pages/QDDPro-6010-51-90.md)
-  * [QDD Pro-6010-80-90](pages/QDDPro-6010-81-90.md)
-  * [QDD Pro-6010-100-90](pages/QDDPro-6010-101-90.md)
+  * [QDD Pro-3510-50-70](pages/QDDPro-3510-50.md)
+  * [QDD Pro-3510-80-70](pages/QDDPro-3510-80.md)
+  * [QDD Pro-6010-50-90](pages/QDDPro-6010-50-90.md)
+  * [QDD Pro-6010-80-90](pages/QDDPro-6010-80-90.md)
+  * [QDD Pro-6010-100-90](pages/QDDPro-6010-100-90.md)
 
 
 
