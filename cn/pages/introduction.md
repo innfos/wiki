@@ -6,6 +6,8 @@ INNFOS提供模块化机器人构建块，使您可以快速构建和编程自�
 
 <img src="../img/shouyesca1.png" width = "600px" div align=center />
 
+<img src="../img/shouyesca1.jpeg" width = "600px" div align=center />
+
 
 ## INNFOS SCA
 
