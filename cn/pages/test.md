@@ -79,4 +79,4 @@ License
 
 MDwiki is licensed under [GNU GPLv3 with additional terms applied][license].
 
-  [license]: https://github.com/Dynalon/mdwiki/blob/master/LICENSE.txt
+  [license.txt]: https://github.com/Dynalon/mdwiki/blob/master/LICENSE.txt
