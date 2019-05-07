@@ -18,7 +18,7 @@
   * [XR-Robot](index.html#!index.md#XR-Robot)
   * [ECB & HUB](index.html#!index.md#ECB_&_HUB)
 
-[FAQ](#!pages/question.md.md)
+[FAQ](#!pages/question.md)
 
 [English](https://innfos.github.io/wiki/en/#!index.md)
 
