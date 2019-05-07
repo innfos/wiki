@@ -22,7 +22,7 @@
 
 [English](https://innfos.github.io/wiki/en/#!index.md)
 
-[gimmick:theme (inverse: false)](flatly)
+
 
 
 <!-- counter pixel for counting visitors -->
