@@ -4,9 +4,7 @@
 
 [入门](gimmicks.md)
 
-[学习](gimmicks1.md)
-
-[Release notes](gimmicks2.md)
+[INNFOS 学院](gimmicks1.md)
 
 [关于INNFOS](#!pages/about.md)
 
@@ -20,7 +18,7 @@
   * [XR-Robot](tutorials/dropbox.md)
   * [ECB & HUB](tutorials/iis/iis.md)
 
-[常见问题](#!pages/.md)
+[FAQ](#!pages/.md)
 [English](https://innfos.github.io/wiki/en/#!index.md)
 
 [gimmick:theme (inverse: false)](flatly)
