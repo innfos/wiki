@@ -67,7 +67,7 @@ MicroUSB：预留USB功能接口
 <img src="../img/ECB & HUB7.png" style="width:600px">
 
 # 资源
-* [原理图]( ../img/Ethernet_TransferV2.2SCH.pdf.zip )
+* [原理图1]( ../img/Ethernet_TransferV2.2SCH.pdf.zip ) [原理图2]( ../img/HUBV3.0SCH.pdf.zip )
 * [尺寸图1]( ../img/Ethernet_TransferV2.2.zip ) [尺寸图2]( ../img/HUBV3.0.zip )
 * [STM32F429 数据表]( ../img/STM32F429.pdf.zip )
 
