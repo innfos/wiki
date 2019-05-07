@@ -30,7 +30,7 @@
 ![markdown](http://wiki.innfos.com:81/wiki/images/8/8f/%E6%9C%AA%E6%A0%87.png "markdown")
 
 
-## QDD Pro
+### QDD Pro
   * [QDD Pro-3510-50-70](pages/QDDPro-3510-50.md)
   * [QDD Pro-3510-80-70](pages/QDDPro-3510-80.md)
   * [QDD Pro-6010-50-90](pages/QDDPro-6010-50-90.md)
@@ -40,14 +40,17 @@
 
 
 
-## QDD
+### QDD
   * [QDD-3510-36](pages/QDD-3510-36.md)
   * [QDD-6010-36](pages/QDD-6010-36.md)
 
 
-## DD
+### DD
   * [DD-3510](pages/DD-3510.md)
   * [DD-6010](pages/DD-6010.md)
+
+即将推出的产品系列
+-----------------
 
 Note: 以下型号SCA数据正在更新中，更多详情请咨询商务团队（sales@innfos.com）
 
