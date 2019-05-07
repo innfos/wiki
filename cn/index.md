@@ -27,7 +27,7 @@
 
 产品系列
 -----------------
-![sca](../img/sca-type.png "sca")
+![sca](/img/sca-type.png "sca")
 
 
 ### QDD Pro
