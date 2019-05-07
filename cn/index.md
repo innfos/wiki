@@ -86,7 +86,7 @@ Note: 以下型号SCA数据正在更新中，更多详情请咨询商务团队�
  [XR-1 ](https://www.mdeditor.com/)
 网站正在维护中。请继续关注未来的更新！
 
-##ECB & HUB
+## ECB & HUB
 [ECB & HUB](pages/ECB&HUB.md)
 网站正在维护中。请继续关注未来的更新！
 
