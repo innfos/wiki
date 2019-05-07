@@ -2,14 +2,14 @@
 
 [主页](index.md)
 
-[入门](gimmicks.md)
+[入门](index.html#!index.md#入门)
 
 [INNFOS 学院](gimmicks1.md)
 
 [关于INNFOS](#!pages/about.md)
 
 [联系](gimmicks4.md)
-
+<a href="#!pages/Ethernet_Configuration.md#linux平台环境配置">linux平台环境配置</a>
 [产品]()
 
   * [QDD Pro](pages/QDD-79.md)
