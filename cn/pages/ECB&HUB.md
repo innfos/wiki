@@ -5,7 +5,7 @@ ECB是一款以太网转CAN控制器，该控制器起到了以太网和CAN通�
 
 <img src="../img/ECB & HUB1.jpg" style="width:600px">
 
-![ECB & HUB2.png](../img/ECB & HUB2.png) ![ECB & HUB3.jpg](../img/ECB & HUB3.png)
+![ECB&HUB2.png](../img/ECB&HUB2.png) ![ECB & HUB3.jpg](../img/ECB & HUB3.png)
 
 
 
