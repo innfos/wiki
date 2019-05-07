@@ -1,4 +1,5 @@
 # 简介
+
 ECB是一款以太网转CAN控制器，该控制器起到了以太网和CAN通信相互转换的网桥的作用。它采用STM32F429VET6主控芯片。拥有丰富的扩展接口。
 
 <img src="../img/ECB & HUB1.jpg" style="width:600px">
@@ -9,6 +10,7 @@ ECB是一款以太网转CAN控制器，该控制器起到了以太网和CAN通�
 
 
 # 功能
+
 * CPU:STM32F429VET6
 * LEDs X12：电源指示LED X3，用户LED X5，USB收发数据LED X2，Link * activity LED X1，Link Speed LED X1
 * Molex接口 X6：CAN通信接口
@@ -20,6 +22,7 @@ ECB是一款以太网转CAN控制器，该控制器起到了以太网和CAN通�
 
 
 # 接口说明
+
 ## 核心板管脚定义
 P1管脚定义
 <table style="width:550px">
