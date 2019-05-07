@@ -48,9 +48,11 @@ MicroUSB：预留USB功能接口
 
 # ECB 和 ECB_HUB的连接方式
 方式一：
+
 <img src="../img/ECB & HUB6.png" style="width:600px">
 
 方式二：
+
 <img src="../img/ECB & HUB7.png" style="width:600px">
 
 # 资源
