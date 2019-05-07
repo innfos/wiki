@@ -8,8 +8,8 @@
 
 [关于INNFOS](#!pages/about.md)
 
-[联系](gimmicks4.md)
-<a href="#!pages/Ethernet_Configuration.md#linux平台环境配置">linux平台环境配置</a>
+[联系我们](index.html#!pages/about.md#联系方式)
+
 [产品]()
 
   * [QDD Pro](pages/QDD-79.md)
