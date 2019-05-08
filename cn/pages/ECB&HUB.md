@@ -38,7 +38,39 @@ ECB的原理图和BOM，以及以太网通讯协议全部开源，用户可以�
 ### 核心板管脚定义
 P1管脚定义
 <table style="width:550px">
-<thead><tr class="tableizer-firstrow" style="background: PaleTurquoise; color: black"><th>P1 PIN#</th><th>PCB PIN#</th><th>Name</th><th>P1 PIN#</th><th>PCB PIN#</th><th>Name</th></tr></thead><tbody><tr><td>1</td><td>1</td><td>PC0</td><td>2</td><td>2</td><td>PB1</td></tr><tr><td>3</td><td>3</td><td>PA15</td><td>4</td><td>4</td><td>PB15</td></tr><tr><td>5</td><td>5</td><td>PB14</td><td>6</td><td>6</td><td>PB8</td></tr><tr><td>7</td><td>7</td><td>PE10</td><td>8</td><td>8</td><td>PB7</td></tr><tr><td>9</td><td>9</td><td>PE8</td><td>10</td><td>10</td><td>PE9</td></tr><tr><td>11</td><td>11</td><td>PE4</td><td>12</td><td>12</td><td>PE5</td></tr><tr><td>13</td><td>13</td><td>PD15</td><td>14</td><td>14</td><td>PE3</td></tr><tr><td>15</td><td>15</td><td>PD13</td><td>16</td><td>16</td><td>PD14</td></tr><tr><td>17</td><td>17</td><td>PD3</td><td>18</td><td>18</td><td>PD4</td></tr><tr><td>19</td><td>19</td><td>PD1</td><td>20</td><td>20</td><td>PD2</td></tr></tbody></table>
+<thead><tr class="tableizer-firstrow" style="background: PaleTurquoise; color: black"><th>P1 PIN#</th><th>Name</th><th>Alternate functions</th><th>P1 PIN#</th><th>Name</th><th>Alternate functions</th></tr></thead><tbody>
+ <tr><td>1</td><td>PC0</td><td>ADC123_IN10</td><td>2</td><td>PB1</td><td>ADC12_IN9</td></tr>
+ <tr><td>TIM1_CH3N</td></tr>
+ <tr><td>TIM3_CH4</td></tr>
+ <tr><td>TIM8_CH3N</td></tr>
+ <tr><td>3</td><td>PA15</td><td>TIM2_CH1/TIM2_ETR</td></tr>
+ <tr><td>SPI1_NSS</td></tr>
+ <tr><td>SPI3_NSS/I2S3_WS</td><td>4</td><td>PB15</td><td>TIM1_CH3N</td></tr>
+ <tr><td>TIM8_CH3N</td></tr>
+ <tr><td>SPI2_MOSI/I2S2_SD</td></tr>
+ <tr><td>TIM12_CH2</td></tr>
+ <tr><td>5</td><td>PB14</td><td>TIM1_CH2N</td></tr>
+ <tr><td>TIM8_CH2N</td></tr>
+ <tr><td>SPI2_MISO</td></tr>
+ <tr><td>I2S2ext_SD</td></tr>
+ <tr><td>TIM12_CH1</td><td>6</td><td>PB8</td><td>TIM4_CH3</td></tr>
+ <tr><td>TIM10_CH1</td></tr>
+ <tr><td>I2C1_SCL</td></tr>
+ <tr><td>CAN1_RX</td></tr>
+ <tr><td>ETH_MII_TXD3</td></tr>
+ <tr><td>7</td><td>PE10</td><td>TIM1_CH2N</td><td>8</td><td>PB7</td><td>TIM4_CH2</td></tr>
+ <tr><td>I2C1_SDA</td></tr>
+ <tr><td>USART1_RX</td></tr>
+ <tr><td>9</td><td>PE8</td><td>TIM1_CH1N</td></tr>
+ <tr><td>UART7_Tx</td><td>10</td><td>PE9</td><td>TIM1_CH1</td></tr>
+ <tr><td>11</td><td>PE4</td><td>SPI4_NSS</td><td>12</td><td>PE5</td><td>TIM9_CH1</td></tr>
+ <tr><td>SPI4_MISO</td></tr>
+ <tr><td>13</td><td>PD15</td><td>TIM4_CH4</td><td>14</td><td>PE3</td><td>TRACED0</td></tr>
+ <tr><td>15</td><td>PD13</td><td>TIM4_CH2</td><td>16</td><td>PD14</td><td>TIM4_CH3</td></tr>
+ <tr><td>17</td><td>PD3</td><td>SPI2_SCK/I2S2_CK</td><td>18</td><td>PD4</td><td>USART2_RTS</td></tr>
+ <tr><td>19</td><td>PD1</td><td>CAN1_TX</td><td>20</td><td>PD2</td><td>TIM3_ETR</td></tr>
+ <tr><td>UART5_RX</td></tr>
+</tbody></table>
 
 
 P2管脚定义
