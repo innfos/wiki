@@ -74,7 +74,7 @@ Note:必须先初始化控制器，才能进行其他操作
 //初始化控制器
 if(strcmp(argv[1],"-s")==0)
     ActuatorController::initController(Actuator::Via_Serialport);
-elseif(strcmp(argv[1],"-e")==0)
+else if(strcmp(argv[1],"-e")==0)
     ActuatorController::initController();
 ```
 *   关联操作完成信号，如此用户操作成功以后，会触发该信号，根据不同的`operationType`，进行相应操作，本例中会在自动识别完成后，打印出识别到的执行器数量。
@@ -100,11 +100,11 @@ int nOperationConnection = pController->m_sOperationFinished->s_Connect([=](uint
 ```cpp
 //关联错误信号
 int nErrorConnection = pController->m_sError->s_Connect([=](uint8_t nDeviceId,uint16_t nErrorType,string errorInfo){
-   if(nDeviceId==0)
+    if(nDeviceId==0)
     {
         cout <<"Error: " << (int)nErrorType <<" " << errorInfo << endl;
     }
-   else
+    else
     {
         cout <<"Actuator " << (int)nDeviceId <<" " <<"error " << (int)nErrorType <<" " << errorInfo << endl;
     }
@@ -162,8 +162,8 @@ int nOperationConnection = pController->m_sOperationFinished->s_Connect([&](uint
    case Actuator::Recognize_Finished://自动识别完成
        if(pController->hasAvailableActuator())
         {
-            vector<uint8_t> idArray = pController->getActuatorIdArray();
-        cout <<"Number of connected actuators:" << idArray.size() << endl;
+           vector<uint8_t> idArray = pController->getActuatorIdArray();
+           cout <<"Number of connected actuators:" << idArray.size() << endl;
            for (uint8_t id: idArray) {
                if(pController->getActuatorAttribute(id,Actuator::ACTUATOR_SWITCH)==Actuator::ACTUATOR_SWITCH_OFF)
                 {//如果执行器处于关机状态，启动执行器
