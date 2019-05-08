@@ -46,18 +46,7 @@ P1管脚定义
 
 
 P2管脚定义
-<table style="width:550px">
-<thead><tr class="tableizer-firstrow" style="background: PaleTurquoise; color: black"><th>P1 PIN#</th><th>Name</th><th>Alternate functions</th><th>P1 PIN#</th><th>Name</th><th>Alternate functions</th></tr></thead><tbody>
- <tr><td>1</td><td>PA5</td><td>ADC12_1N5<<br>TIM2_CH1/TIM2_ETR<br>TIM8_CH1N<br>SPI1_SCK</td><td>2</td><td>PA3</td><td>ADC123_IN3<br>TIM2_CH4<br>TIM5_CH4<br>TIM9_CH2<br>USART2_RX</td></tr>
- <tr><td>3</td><td>PA6</td><td>ADC12_IN6<br>TIM1_BKIN<br>TIM3_CH1<br>TIM8_BKIN<br>SPI1_MISO<br>TIM13_CH1</td><td>4</td><td>PA4</td><td>ADC12_1N4/DAC_OUT1<br>SPI1_NSS<br>SPI3_NSS/I2S3_WS</td></tr>
- <tr><td>5</td><td>AGND</td><td>&nbsp;</td><td>6</td><td>PA0</td><td>ADC123_IN0/WKUP<br>TIM2_CH1/TIM2_ETR<br>TIM5_CH1<br>TIM8_ETR<br>UART4_TX<br>ETH_MII_CRS</td></tr>
- <tr><td>7</td><td>PB3</td><td>TIM2_CH2<br>SPI1_SCK<<br>SPI3_SCK/I2S3_CK</td><td>8</td><td>PB4</td><td>TIM3_CH1<br>SPI1_MISO<br>SPI3_MISO<br>I2S3ext_SD</td></tr>
- <tr><td>9</td><td>PD3</td><td>SPI2_SCK/I2S2_CK</td><td>10</td><td>PB9</td><td>TIM4_CH4<br>TIM11_CH1<br>I2C1_SDA<br>SPI2_NSS/I2S2_WS<br>CAN1_TX</td></tr>
- <tr><td>11</td><td>PI2</td><td>TIM8_CH4<br>SPI2_MISO<br>I2S2ext_SD</td><td>12</td><td>PI3</td><td>TIM8_ETR<br>SPI2_MOSI/I2S2_SD</td></tr>
- <tr><td>13</td><td>PA8</td><td>TIM1_CH1<br>I2C3_SCL</td><td>14</td><td>PC9</td><td>TIM3_CH4<br>TIM8_CH4<br>I2C3_SDA<br>I2S_CKIN</td></tr>
- <tr><td>15</td><td>PD6</td><td>SPI3_MOSI/I2S3_SD<br>USART2_RX</td><td>16</td><td>VCC_5V</td><td>&nbsp;</td></tr>
- <tr><td>17</td><td>PD5</td><td>USART2_TX</td><td>18</td><td>PB0</td><td>TIM1_CH2N<br>TIM3_CH3<br>TIM8_CH2N<br>ETH_MII_RXD2</td></tr>
- <tr><td>19</td><td>GND</td><td>&nbsp;</td><td>20</td><td>PC7</td><td>TIM3_CH2<br>TIM8_CH2<br>I2S3_MCK<br>USART6_RX</td></tr></tbody></table>
+<table style="width:550px"><thead><tr class="tableizer-firstrow" style="background: PaleTurquoise; color: black"><th>P1 PIN#</th><th>Name</th><th>Alternate functions</th><th>P1 PIN#</th><th>Name</th><th>Alternate functions</th></tr></thead><tbody><tr><td>1</td><td>PA5</td><td>ADC12_1N5<<br>TIM2_CH1/TIM2_ETR<br>TIM8_CH1N<br>SPI1_SCK</td><td>2</td><td>PA3</td><td>ADC123_IN3<br>TIM2_CH4<br>TIM5_CH4<br>TIM9_CH2<br>USART2_RX</td></tr><tr><td>3</td><td>PA6</td><td>ADC12_IN6<br>TIM1_BKIN<br>TIM3_CH1<br>TIM8_BKIN<br>SPI1_MISO<br>TIM13_CH1</td><td>4</td><td>PA4</td><td>ADC12_1N4/DAC_OUT1<br>SPI1_NSS<br>SPI3_NSS/I2S3_WS</td></tr><tr><td>5</td><td>AGND</td><td>&nbsp;</td><td>6</td><td>PA0</td><td>ADC123_IN0/WKUP<br>TIM2_CH1/TIM2_ETR<br>TIM5_CH1<br>TIM8_ETR<br>UART4_TX<br>ETH_MII_CRS</td></tr><tr><td>7</td><td>PB3</td><td>TIM2_CH2<br>SPI1_SCK<<br>SPI3_SCK/I2S3_CK</td><td>8</td><td>PB4</td><td>TIM3_CH1<br>SPI1_MISO<br>SPI3_MISO<br>I2S3ext_SD</td></tr><tr><td>9</td><td>PD3</td><td>SPI2_SCK/I2S2_CK</td><td>10</td><td>PB9</td><td>TIM4_CH4<br>TIM11_CH1<br>I2C1_SDA<br>SPI2_NSS/I2S2_WS<br>CAN1_TX</td></tr><tr><td>11</td><td>PI2</td><td>TIM8_CH4<br>SPI2_MISO<br>I2S2ext_SD</td><td>12</td><td>PI3</td><td>TIM8_ETR<br>SPI2_MOSI/I2S2_SD</td></tr><tr><td>13</td><td>PA8</td><td>TIM1_CH1<br>I2C3_SCL</td><td>14</td><td>PC9</td><td>TIM3_CH4<br>TIM8_CH4<br>I2C3_SDA<br>I2S_CKIN</td></tr><tr><td>15</td><td>PD6</td><td>SPI3_MOSI/I2S3_SD<br>USART2_RX</td><td>16</td><td>VCC_5V</td><td>&nbsp;</td></tr><tr><td>17</td><td>PD5</td><td>USART2_TX</td><td>18</td><td>PB0</td><td>TIM1_CH2N<br>TIM3_CH3<br>TIM8_CH2N<br>ETH_MII_RXD2</td></tr><tr><td>19</td><td>GND</td><td>&nbsp;</td><td>20</td><td>PC7</td><td>TIM3_CH2<br>TIM8_CH2<br>I2S3_MCK<br>USART6_RX</td></tr></tbody></table>
 
 
 ### Amass XT60、molex、MicroUSB、网口
@@ -84,10 +73,39 @@ MicroUSB：预留USB功能接口
 
 <img src="../img/ECB & HUB7.png" style="width:600px">
 
+
+## 连接多个ECB
+<img src="../img/ECB & HUB8.png" style="width:600px">
+
+
+Note: 多个ECB连接同一电脑,ECB的IP和MAC地址不能有重复，修改ECB的IP和MAC地址请访问 修改IP和MAC地址
+
+## 修改IP和MAC地址
+#### 下载
+
+*   访问该链接[download link](https://github.com/innfos/ipChangeTool .git)下载SDK相关文件或者直接执行以下命令
+
+```sh
+$ git clone https://github.com/innfos/ipChangeTool.git
+```
+    
+2.  进入ipChangeTool目录，修改ipChange的权限：
+
+```sh
+chmod 777 ipChange
+```
+3.  确认有且只有一个ECB或者ECU已经连接到电脑并且上电后，执行命令：
+
+```sh
+./ipChange -ip=<1~255> -mac=<1~255>
+```
+*   请注意只能修改IP或者MAC地址的最后一个数。比如ECB的IP地址是192.168.1.30，只能用该工具将30修改成其他数字.
+
 ## 资源
 * [原理图1]( ../img/Ethernet_TransferV2.2SCH.pdf.zip ) [原理图2]( ../img/HUBV3.0SCH.pdf.zip )
 * [尺寸图1]( ../img/Ethernet_TransferV2.2.zip ) [尺寸图2]( ../img/HUBV3.0.zip )
 * [STM32F429 数据表]( ../img/STM32F429.pdf.zip )
+
 
 
 ## 版本变更记录
