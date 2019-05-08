@@ -39,7 +39,7 @@ ECB的原理图和BOM，以及以太网通讯协议全部开源，用户可以�
 P1管脚定义
 <table style="width:550px">
 <thead><tr class="tableizer-firstrow" style="background: PaleTurquoise; color: black"><th>P1 PIN#</th><th>Name</th><th>Alternate functions</th><th>P1 PIN#</th><th>Name</th><th>Alternate functions</th></tr></thead><tbody>
- <tr><td>1</td><td>PC0</td><td>ADC123_IN10</td><td>2</td><td>PB1</td><td>ADC12_IN9</td></tr>
+ <tr><td rowspan="4">1</td><td rowspan="4">PC0</td><td rowspan="4">ADC123_IN10</td><td rowspan="4">2</td><td rowspan="4">PB1</td><td>ADC12_IN9</td></tr>
  <tr><td>TIM1_CH3N</td></tr>
  <tr><td>TIM3_CH4</td></tr>
  <tr><td>TIM8_CH3N</td></tr>
