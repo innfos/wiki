@@ -70,7 +70,7 @@ MicroUSB：预留USB功能接口
 
 
 ## 连接多个ECB
-<img src="../img/ECB & HUB8.png" style="width:600px">
+<img src="../img/ECB & HUB8.jpg" style="width:600px">
 
 
 Note: 多个ECB连接同一电脑,ECB的IP和MAC地址不能有重复，修改ECB的IP和MAC地址请访问 修改IP和MAC地址
