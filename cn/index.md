@@ -65,8 +65,8 @@ Note: 以下型号SCA数据正在更新中，更多详情请咨询商务团队�
 ### QDD Pro
   * [QDD Pro-3510-30-70](pages/QDDPro-3510-30_v2_2.md)
   * [QDD Pro-3510-100](pages/QDDPro-3510-100_v2_2.md)
-  * [QDD Pro-6010-30-80](pages/QDDPro-6010-30-80.md)
-  * [QDD Pro-6010-30-90](pages/QDDPro-6010-30-90.md)
+  * [QDD Pro-6010-30-80](pages/QDDPro-6010-30-80_v2_2.md)
+  * [QDD Pro-6010-30-90](pages/QDDPro-6010-30-90_v2_2.md)
   * [QDD Pro-6010-50-80](pages/QDDPro-6010-50-80.md)
   * [QDD Pro-6010-80-80](pages/QDDPro-6010-80-80.md)
   * [QDD Pro-6010-100-80](pages/QDDPro-6010-100-80.md)
