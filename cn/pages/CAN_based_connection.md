@@ -88,6 +88,8 @@ Note: 必须先断电然后再插拔部件.  否则可能损坏部件.</br>请�
 
 <img src="../img/10can.jpg" style="width:600px"> 
 
+<img src="../img/10can.jpg" style="width:600px">
+
 *    将红色电源正极线与黑色电源负极线按图所示接入电源正负极。
 
 <img src="../img/05can.jpg" style="width:600px"> 
