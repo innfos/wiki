@@ -41,8 +41,8 @@
 
 
 ### QDD
-  * [QDD-3510-36](pages/QDD-3510-36.md)
-  * [QDD-6010-36](pages/QDD-6010-36.md)
+  * [QDD-3510-36](pages/QDD-3510-36_v2_2.md)
+  * [QDD-6010-36](pages/QDD-6010-36_v2_2.md)
 
 
 ### DD
