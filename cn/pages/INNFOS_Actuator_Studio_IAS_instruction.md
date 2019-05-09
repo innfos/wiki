@@ -10,9 +10,6 @@
 ![install01.jpg](../img/install01.jpg )
 
 
-> 软件安装.
-
-
 2.进入安装界面后，点击“Next”
 
 <img src="../img/1-2.png" style="width:600px">
@@ -36,8 +33,6 @@
 7.点击“Finish”，完成软件的安装
 
 <img src="../img/1-7.png" style="width:600px">
-
-> Innfos SCA.
 
 ## 软件的开机
 
@@ -82,9 +77,6 @@
 INNFOS执行器系统的逻辑框图：
 
 ![current.jpg](../img/current.jpg)
-
-![INNFOS执行器系统的逻辑框图](微伺服软件界面最终00-44 3-1.png "fig:INNFOS执行器系统的逻辑框图")
-
 
 框图的介绍：电流设置值与电流反馈值做加减运算后经过PI模块后经可选的滤波器再经限幅模块以驱动电机，电机经反馈把电流参数反馈给系统，使之形成闭环。
 
