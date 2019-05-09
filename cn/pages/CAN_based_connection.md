@@ -52,7 +52,7 @@ Note: 必须先断电然后再插拔部件.  否则可能损坏部件.</br>请�
 
 *    末端执行器安插终端电阻
 
-<img src="../img/07can.jpg" style="width:600px"> 
+<img src="../img/Actuator-C2.jpg" style="width:600px">
 
 *    完成连接，即可接通电源，进行后续调试
 
@@ -63,7 +63,7 @@ Note: 必须先断电然后再插拔部件.  否则可能损坏部件.</br>请�
 
 **硬件需求**
 
-<img src="../img/09can.jpg" style="width:600px">
+<img src="../img/08can.jpg" style="width:600px">
 
 *   从左到右依次为：INNFOS 执行器、Arduino开发板（需自备）、终端电阻、ECB连接线、执行器综合线缆，直流稳压电源
 *   您可以使用自己的Arduino开发板实现与执行器间的CAN通信及控制
@@ -104,16 +104,12 @@ Note: 必须先断电然后再插拔部件.  否则可能损坏部件.</br>请�
 
 *    末端执行器安插终端电阻
 
-<img src="../img/15can.jpg" style="width:600px"> 
+<img src="../img/Actuator-C2.jpg" style="width:600px">
 
 
 *    完成连接，即可接通电源，进行后续调试
 
 <img src="../img/16can.png" style="width:600px"> 
-
-
-
-
 
 
 
