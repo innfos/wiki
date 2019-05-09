@@ -1,4 +1,3 @@
-[English](CAN_Communication_Protocol "wikilink")
 
 基于CAN总线的通信方式
 =====
@@ -9,7 +8,7 @@
 
 ## 硬件需求与连接
 
-### 1、基于ST开发板的连接
+### 基于ST开发板的连接
 
 
 **硬件需求**
@@ -60,7 +59,7 @@ Note: 必须先断电然后再插拔部件.  否则可能损坏部件.</br>请�
 <img src="../img/07can.jpg" style="width:600px"> 
 
 
-### 2、基于Arduino开发板的连接
+### 基于Arduino开发板的连接
 
 **硬件需求**
 
