@@ -27,7 +27,7 @@ Software & Development
 
 Products
 -----------------
-![markdown](http://wiki.innfos.com:81/wiki/images/a/a7/%E5%87%8F%E9%80%9F%E6%AF%94.png "markdown")
+![sca](../en/img/sca-type.png "sca")
 
 
 ## QDD Pro
