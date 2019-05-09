@@ -8,11 +8,11 @@ pre .comment,pre .template_comment,pre .diff .header,pre .javadoc {
 	font-style:italic
 }
 pre .keyword,pre .css .rule .keyword,pre .winutils,pre .javascript .title,pre .nginx .title,pre .subst,pre .request,pre .status {
-	color:#333;
+	color:#d73a49;
 	font-weight:bold
 }
 pre .number,pre .hexcolor,pre .ruby .constant {
-	color:#099
+	color:#005cc5
 }
 pre .string,pre .tag .value,pre .phpdoc,pre .tex .formula {
 	color:#d14
