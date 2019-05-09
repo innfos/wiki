@@ -67,10 +67,10 @@ Note: 以下型号SCA数据正在更新中，更多详情请咨询商务团队�
   * [QDD Pro-3510-100](pages/QDDPro-3510-100_v2_2.md)
   * [QDD Pro-6010-30-80](pages/QDDPro-6010-30-80_v2_2.md)
   * [QDD Pro-6010-30-90](pages/QDDPro-6010-30-90_v2_2.md)
-  * [QDD Pro-6010-50-80](pages/QDDPro-6010-50-80.md)
-  * [QDD Pro-6010-80-80](pages/QDDPro-6010-80-80.md)
-  * [QDD Pro-6010-100-80](pages/QDDPro-6010-100-80.md)
-  * [QDD Pro-6010-120-90](pages/QDDPro-6010-120-90.md)
+  * [QDD Pro-6010-50-80](pages/QDDPro-6010-50-80_v2_2.md)
+  * [QDD Pro-6010-80-80](pages/QDDPro-6010-80-80_v2_2.md)
+  * [QDD Pro-6010-100-80](pages/QDDPro-6010-100-80_v2_2.md)
+  * [QDD Pro-6010-120-90](pages/QDDPro-6010-120-90_v2_2.md)
   * [QDD Pro-8108-30-110](pages/QDDPro-8108-30.md)
   * [QDD Pro-8108-50-110](pages/QDDPro-8108-50.md)
   * [QDD Pro-8108-80-110](pages/QDDPro-8108-80.md)
@@ -81,8 +81,8 @@ Note: 以下型号SCA数据正在更新中，更多详情请咨询商务团队�
 
 ### QDD
   * [QDD-2305-36](pages/QDD-2305-36_v2_2.md)
-  * [QDD-3510-6](pages/QDD-3510-6.md)
-  * [QDD-6010-6](pages/QDD-6010-6.md)
+  * [QDD-3510-6](pages/QDD-3510-6_v2_2.md)
+  * [QDD-6010-6](pages/QDD-6010-6_v2_2.md)
   * [QDD-8108-6](pages/QDD-8108-6.md)
   * [QDD-8108-36](pages/QDD-8108-36.md)
 
