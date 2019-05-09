@@ -8,7 +8,7 @@
 如果有任何疑问，请通过support@innfos.com与我们联系。
 
   * [基本介绍](pages/introduction.md)
-  * [基于CAN总线的通信方式](pages/CAN_Based_connection.md)
+  * [基于CAN总线的通信方式](pages/CAN_based_connection.md)
   * [基于ECB的通信方式](pages/ECB_Based_Communication.md)
 
 
