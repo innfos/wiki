@@ -1,12 +1,11 @@
-![innfo](img/innfoslogo.png)
+# INNFOS Wiki
+
 
 [Main Page](index.md)
 
 [Getting Started](gimmicks.md)
 
 [Learning](gimmicks1.md)
-
-[Release notes](gimmicks2.md)
 
 [About INNFOS](gimmicks3.md)
 
@@ -21,6 +20,7 @@
   * [ECB & HUB](tutorials/iis/iis.md)
 
 [FAQ](examples.md)
+
 [中文](https://innfos.github.io/wiki/cn/#!index.md)
 
 
