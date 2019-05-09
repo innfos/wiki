@@ -47,7 +47,7 @@
 
 ### DD
   * [DD-3510](pages/DD-3510_v2_2.md)
-  * [DD-6010](pages/DD-6010.md)
+  * [DD-6010](pages/DD-6010_v2_2.md)
   
   
   
