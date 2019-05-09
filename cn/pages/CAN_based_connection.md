@@ -63,7 +63,7 @@ Note: 必须先断电然后再插拔部件.  否则可能损坏部件.</br>请�
 
 **硬件需求**
 
-<img src="../img/all.jpg" style="width:600px">
+<img src="../img/09can.jpg" style="width:600px">
 
 *   从左到右依次为：INNFOS 执行器、Arduino开发板（需自备）、终端电阻、ECB连接线、执行器综合线缆，直流稳压电源
 *   您可以使用自己的Arduino开发板实现与执行器间的CAN通信及控制
@@ -74,42 +74,42 @@ Note: 必须先断电然后再插拔部件.  否则可能损坏部件.</br>请�
 
 **连接Arduino开发板与执行器综合线缆**
 
-<img src="../img/2-2.png" style="width:600px"> 
+<img src="../img/10can.jpg" style="width:600px"> 
 
 *   将执行器综合线缆的一端剪开。
 红色粗线为电源正极线；黑色粗线为电源负极线，将双绞屏蔽线剪开，其中红色细线为 CAN_H;黑色细线为 CAN_L; 银色细线为CAN_GND。
 
 
-<img src="../img/2-2.png" style="width:600px"> 
+<img src="../img/11can.jpg" style="width:600px"> 
 
 *    将ECB连接线小心剪开，并与剪开综合线缆的红色细线 CAN_H，黑色细线 CAN_L; 银色细线为CAN_GND
 如图所示找好对应引脚进行连接，焊接牢固 ，并用热缩管或绝缘胶带包好以防止短路。
 
-<img src="../img/2-2.png" style="width:600px"> 
+<img src="../img/12can.jpg" style="width:600px"> 
 
 *    将红色电源正极线与黑色电源负极线按图所示接入电源正负极。
 
-<img src="../img/2-2.png" style="width:600px"> 
+<img src="../img/13can.jpg" style="width:600px"> 
 
 *    将ECB连接线的另一端插入Arduino开发板，完成连接。
 
-<img src="../img/2-2.png" style="width:600px"> 
+<img src="../img/14can.jpg" style="width:600px"> 
 
 
 **连接执行器**
 
 *    将执行器综合线缆另一端连接执行器。
 
-<img src="../img/2-2.png" style="width:600px"> 
+<img src="../img/15can.jpg" style="width:600px"> 
 
 *    末端执行器安插终端电阻
 
-<img src="../img/2-2.png" style="width:600px"> 
+<img src="../img/15can.jpg" style="width:600px"> 
 
 
 *    完成连接，即可接通电源，进行后续调试
 
-<img src="../img/2-2.png" style="width:600px"> 
+<img src="../img/16can.png" style="width:600px"> 
 
 
 
