@@ -33,9 +33,9 @@
 ### QDD Pro
   * [QDD Pro-3510-50-70](pages/QDDPro-3510-50_v2_2.md)
   * [QDD Pro-3510-80-70](pages/QDDPro-3510-80_v2_2.md)
-  * [QDD Pro-6010-50-90](pages/QDDPro-6010-50-90.md)
-  * [QDD Pro-6010-80-90](pages/QDDPro-6010-80-90.md)
-  * [QDD Pro-6010-100-90](pages/QDDPro-6010-100-90.md)
+  * [QDD Pro-6010-50-90](pages/QDDPro-6010-50-90_v2_2.md)
+  * [QDD Pro-6010-80-90](pages/QDDPro-6010-80-90_v2_2.md)
+  * [QDD Pro-6010-100-90](pages/QDDPro-6010-100-90_v2_2.md)
 
 
 
