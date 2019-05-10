@@ -52,7 +52,7 @@ Products
 Note: The following SCA data is being updated. Please contact our sales team (sales@innfos.com) for more information.
 
 ### QDD Pro
-  * [QDD Pro-3510-31-70](pages/QDDPro-3510-30.md)
+  * [QDD Pro-3510-30-70](pages/QDDPro-3510-30.md)
   * [QDD Pro-3510-101](pages/QDDPro-3510-100.md)
   * [QDD Pro-6010-31-80](pages/QDDPro-6010-30-80.md)
   * [QDD Pro-6010-31-90](pages/QDDPro-6010-30-90.md)
