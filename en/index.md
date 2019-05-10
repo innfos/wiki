@@ -53,19 +53,19 @@ Note: The following SCA data is being updated. Please contact our sales team (sa
 
 ### QDD Pro
   * [QDD Pro-3510-30-70](pages/QDDPro-3510-30.md)
-  * [QDD Pro-3510-101](pages/QDDPro-3510-100.md)
-  * [QDD Pro-6010-31-80](pages/QDDPro-6010-30-80.md)
-  * [QDD Pro-6010-31-90](pages/QDDPro-6010-30-90.md)
-  * [QDD Pro-6010-51-80](pages/QDDPro-6010-50-80.md)
-  * [QDD Pro-6010-81-80](pages/QDDPro-6010-80-80.md)
-  * [QDD Pro-6010-101-80](pages/QDDPro-6010-100-80.md)
-  * [QDD Pro-6010-121-90](pages/QDDPro-6010-120-90.md)
-  * [QDD Pro-8108-31-110](pages/QDDPro-8108-30.md)
-  * [QDD Pro-8108-51-110](pages/QDDPro-8108-50.md)
-  * [QDD Pro-8108-81-110](pages/QDDPro-8108-80.md)
-  * [QDD Pro-8108-101](pages/QDDPro-8108-100.md)
-  * [QDD Pro-8108-121-110](pages/QDDPro-8108-120.md)
-  * [QDD Pro-8108-161-110](pages/QDDPro-8108-160.md)
+  * [QDD Pro-3510-100](pages/QDDPro-3510-100.md)
+  * [QDD Pro-6010-30-80](pages/QDDPro-6010-30-80.md)
+  * [QDD Pro-6010-30-90](pages/QDDPro-6010-30-90.md)
+  * [QDD Pro-6010-50-80](pages/QDDPro-6010-50-80.md)
+  * [QDD Pro-6010-80-80](pages/QDDPro-6010-80-80.md)
+  * [QDD Pro-6010-100-80](pages/QDDPro-6010-100-80.md)
+  * [QDD Pro-6010-120-90](pages/QDDPro-6010-120-90.md)
+  * [QDD Pro-8108-30-110](pages/QDDPro-8108-30.md)
+  * [QDD Pro-8108-50-110](pages/QDDPro-8108-50.md)
+  * [QDD Pro-8108-80-110](pages/QDDPro-8108-80.md)
+  * [QDD Pro-8108-100](pages/QDDPro-8108-100.md)
+  * [QDD Pro-8108-120-110](pages/QDDPro-8108-120.md)
+  * [QDD Pro-8108-160-110](pages/QDDPro-8108-160.md)
 
 
 ### QDD
