@@ -69,7 +69,7 @@ Note: The following SCA data is being updated. Please contact our sales team (sa
 
 
 ### QDD
-  * [QDD-2305-36](pages/QDD-2305-36.md)
+  * [QDD-2305-36](pages/QDD-2305-36_v2_2.md)
   * [QDD-3510-6](pages/QDD-3510-6.md)
   * [QDD-6010-6](pages/QDD-6010-6_v2_2.md)
   * [QDD-8108-6](pages/QDD-8108-6.md)
