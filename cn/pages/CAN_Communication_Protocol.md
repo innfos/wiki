@@ -63,8 +63,7 @@ CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰�
 
 ### 3.1 CAN通信协议格式
 
-
-<img src="../img/3-1communicationprotocol.png" style="width:600px">
+<img src="../img/wiring2_13.png" style="width:600px">
 
 如图3-1：设备地址对应标识符位，CAN总线标准数据帧标识符位为11位，本协议只用了其中8位，占一个字节，数据长度对应DLC,占半字节，指令符参数内容同在数据域，指令符在前参数内容在后，高字节在前，低字节在后。数据长度等于指令符加上参数内容。
 
@@ -85,6 +84,8 @@ CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰�
 某条指令的具体参数内容，其长度等于数据长度减一。有些指令不含具体数据，其数据位数位也应为 1。
 
 #### IQmath简介
+
+<img src="../img/3-1communicationprotocol.png" style="width:600px">
 
 <img src="../img/wiring2-5.png" style="width:600px">
 
