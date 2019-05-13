@@ -76,7 +76,7 @@ Note: The following SCA data is being updated. Please contact our sales team (sa
   * [QDD-8108-36](pages/QDD-8108-36.md)
 
 ### DD
-  * [DD-2305](pages/DD-2305.md)
+  * [DD-2305](pages/DD-2305_v2_2.md)
   * [DD-8108](pages/DD-8108.md)
 
 ## XR-Robot
