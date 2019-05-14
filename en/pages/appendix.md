@@ -13,6 +13,7 @@ After start-up, the red area is selected by the mouse and the current actuator I
 ### INNFOS Actuator Precautions
 
 *   INNFOS actuator has a low-power circuit design inside, and there is a button battery inside to supply it. This low-power circuit can achieve multi-turn counting function,which means the position change of the actuator after turned off will be recorded. The next time when the actuator is turned on,the current position of the actuator will change accordingly. The battery life is estimated to be 8 months. If the battery is dead, the replacement service is for free.
+
 (Note: This function is a test version. By using, function errors may be occur. Therefore, after each power-on, please confirm the current position of the actuator. If the current position is strikingly different from the previous setting, activate Homing mode to reset the zero position (see Homeing Mode description)to avoid misuse and damage to the mechanical structure)
 
 *   When the new actuator is in used, the Limit in Homing mode, whether turned on or off, affects the position mode for the left and right limits. As for the speed mode and current mode, it is only enabled when turned on. For example, the current Max Pos setting value is 10, and the Min Pos is -10, it can only move within this interval in the position mode. When the command sent exceeds this limit interval, the actuator will go to the limit boundary and will not rotate. For the speed and current mode, it can only be used when turned on.
