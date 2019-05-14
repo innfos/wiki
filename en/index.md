@@ -91,10 +91,6 @@ Note: The following SCA data is being updated. Please contact our sales team (sa
  [XR-1 ](https://www.mdeditor.com/)
 Website is under maintenance. Stay tuned for future updates!
 
-##ECB & HUB
-[ECB & HUB](https://www.mdeditor.com/)
-Website is under maintenance. Stay tuned for future updates!
-
 - - - -
 
 Version Information
