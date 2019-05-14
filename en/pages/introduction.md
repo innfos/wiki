@@ -1,6 +1,6 @@
 # Overview
 
-INNFOS provides modular robotic building blocks that let you build and program custom robotic systems quickly. We provide Smart Compliant Actuator(SCA), digital and analog interface boards, and the mechanical and electrical hardware to connect these components together (see also [Hardware Configuration](Hardware Configuration "wikilink")). Just as important as the hardware, INNFOS also provides software tools and APIs to program and control the robotic system created from these physical components(see [Software &amp; Development](Main_Page#Learning "wikilink") for more details),It is recommended to use the INNFOS Actuator Studio (IAS) developed by INNFOS for SCA fast and safe debugging.
+INNFOS provides modular robotic building blocks that let you build and program custom robotic systems quickly. We provide Smart Compliant Actuator(SCA), digital and analog interface boards, and the mechanical and electrical hardware to connect these components together (see also [Hardware Configuration](Hardware Configuration "wikilink") ). Just as important as the hardware, INNFOS also provides software tools and APIs to program and control the robotic system created from these physical components(see [Software &amp; Development](Main_Page#Learning "wikilink") for more details),It is recommended to use the INNFOS Actuator Studio (IAS) developed by INNFOS for SCA fast and safe debugging.
 
 <img src="../img/shouyesca1.jpeg" width = "600px" div align=center/>
 
