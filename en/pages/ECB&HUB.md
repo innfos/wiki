@@ -77,7 +77,7 @@ Method 2:
 Note: When multiple ECBs are connected to the same computer, the IP and MAC addresses of the ECB cannot be duplicated. Modify the IP and MAC addresses of the ECB,please modify the IP and MAC addresses.
 
 ## Modify IP and MAC address
-#### •	download
+#### download
 
 
 *   Visit the link[download link](https://github.com/innfos/ipChangeTool .git)o download the SDK related files or execute the following command directly
@@ -98,7 +98,7 @@ chmod 777 ipChange
 ```
 *   Please note that only the last number of IP or MAC addresses can be modified, for example, the IP address of the ECB is 192.168.1.30, and only 30 can be modified to other number.
 
-## •	Resource
+## Resource
 * [Schematic 1]( ../img/Ethernet_TransferV2.2SCH.pdf.zip ) [Schematic 2]( ../img/HUBV3.0SCH.pdf.zip )
 * [Dimensional Drawing 1]( ../img/Ethernet_TransferV2.2.zip ) [Dimensional Drawing 2]( ../img/HUBV3.0.zip )
 * [STM32F429 data sheet]( ../img/STM32F429.pdf.zip )
