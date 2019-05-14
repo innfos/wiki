@@ -8,6 +8,7 @@ INNFOS provides modular robotic building blocks that let you build and program c
 ## INNFOS SCA
 
 INNFOS SCA （Smart Compliant Actuator）is an intelligent, highly integrated and advanced servo system with flexible and safe control. It highly integrates the core components of servo motor, servo drive, reducer and encoder. Its volume is only one tenth of traditional servo system under the same performance. SCA is a revolutionary breakthrough compared to traditional robotic actuation. It effectively solves the structural problems of multiple joint connections for various types of robot and ensures the joint control and safe usage of service robots. This has enabled service robots to work and live with humans, which providing an important core technology for the Fourth Industrial Revolution and the coming era of the intelligent robot.
+
 <img src="../img/shouyesca2.jpeg" style="width:600px">
 
 ## Application fields
