@@ -20,7 +20,7 @@ Software & Development
   * [Ethernet Communication Protocol](pages/Ethernet_Communication_Protocol.md)
   * [Ethernet Communication SDK](https://www.mdeditor.com/)
   * [INNFOS Actuator Studio(IAS) instruction](pages/INNFOS_Actuator_StudioIAS_instruction.md)
-  * [Appendix](https://www.mdeditor.com/)
+  * [Appendix](pages/appendix.md)
   
  
   [ipChanged]: <https://github.com/innfos/ipChangeTool/blob/master/README.md>
