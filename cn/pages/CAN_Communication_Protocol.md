@@ -101,9 +101,9 @@ Note:_iq24为INNFOS主要应用.
 
 参考文献：
 
-[参考文献](../img/C28x_IQmath_Library.pdf)
+[C28x_IQmath_Library.pdf](../img/C28x_IQmath_Library.pdf)
 
-[参考文献](../img/IQ-MATH_Library.pdf)
+[IQ-MATH_Library.pdf](../img/IQ-MATH_Library.pdf)
 
 定点数=浮点数×2^Q
 
