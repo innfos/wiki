@@ -1,5 +1,5 @@
 # ECB & HUB
-## 简介
+## Introduction
 
 The ECB is an Ethernet to CAN controller that acts as a bridge between Ethernet and CAN communication, with the STM32F429VET6 master chip and rich expansion interfaces. The Ethernet port is a standard RJ45 Ethernet interface, whose network speed is 10/100 Mbps and the default IP address is 192.168.1.30. The Ethernet communication protocol is UDP protocol, and the default port number is 2000. The ECB has two independent CAN buses and a CAN isolation scheme with a communication rate of 1 Mbps. The bandwidth of CAN communication can be increased through the two independent CAN buses, as well as the reduced communication delay, the increased real-time performance, and the control of a complex closed-loop system in which multiple actuators are connected in series can be realized.
 
