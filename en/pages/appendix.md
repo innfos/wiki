@@ -4,7 +4,7 @@
 After start-up, the red area is selected by the mouse and the current actuator ID number can be changed. Then enter A-1 interface below and click Download to save the changed parameters.
 ![](../img/A1.png "图A-1")
 
-* 图A-1
+* FigA-1
 
 * * *
 
@@ -23,53 +23,53 @@ After start-up, the red area is selected by the mouse and the current actuator I
 
 *   The adjustment of PI value needs to start from the PI parameters of the current mode.When debugging the speed loop mode, confirm the PI value of the current loop is correctly debugged, and the position loop mode can be continued after the speed loop parameter is correct.
 
-*   数值单位说明：
+####   unit description：
 
-R: Revolutions，转数，1R=1转=360°，表示执行器的位置。
+R: Revolutions, number of revolutions, 1R = 1 revolution = 360 °, indicating the position of the actuator.
 
-RPM：Revolutions Per Minute，每分钟的转数，表示执行器的转速。
+RPM: Revolutions Per Minute, revolutions per minute, indicating actuator speed.
 
-RPM/s: 对转速的一阶时间导数，即加速度，表示执行器转速变化的快慢。
+RPM/s: The first-order time derivative of the speed, ie the acceleration, indicates the actuator’s speed changes.
 
-RPM/s^2: 对加速度的一阶时间导数，即加加速度（急动度），表示执行器加速度的变化快慢。
+RPM/s^2: The first-order time derivative of acceleration, ie jerk (jerk), indicates the actuator acceleration changes.
 
-*   ip地址配置，打开控制面板，选择网络和Internet,再选择网络和共享中心，再选择更改适配器设置，右键单击以太网，选择属性,选择TCP/IPv4,然后选择属性，其中ip地址中的192.168.1.119中的119可以替换成100~200之间的任意整数，网关可设为192.168.1.1，DNS无需填写，配置完成点击确定。配置如下图：
+*   ip address configuration is made through opening the control panel, selecting Network and Internet, to Network and Sharing Center, and then Change Adapter Settings. The next step is right clicking on Ethernet to select Properties, TCP/IPv4, then Properties, where ip address 119 in 192.168.1.119 can be replaced with any integer between 100 and 200. The gateway can be set to 192.168.1.1. The DNS does not need to be filled out, just click OK to complete the configuration. The configuration is as follows:
+
 
 ![](../img/tupian1.png "图片1")
 
-*   图B-1
+*   Fig B-1
 
-## 附录C
-### 示波器详细使用说明
+## Appendix C
+### Oscilloscope Detailed Instructions
 
-*   **Prescalar**：执行器内部采样频率为20K，采样周期为0.05ms（意义，每隔0.05ms采集一个数值）。Prescalar为前置分频数值，是将内部采样频率进行再分频，示波器显示的采样频率为20K/Prescalar。例如，若Prescalar为1，则采样频率不变，周期不变。若Prescalar为10，采样周期变为2K，每隔0.5ms（0.05ms*Prescalar）采集一个点，则在示波器中能看到的波形范围会变宽，波形刷新的频率也会变慢。相反的，若Prescalar减小，则示波器中能看到的波形范围越窄，波形局部会被放大，波形刷新频率会变快。
-*   **Trig_value**:示波器的触发数值的使用：只有当波形的值由下往上穿越触发值的时候，波形才会被显示。如触发值为100，则只有当波形的数值穿越100时才会被显示出来，如从80到120穿过100，则可以触发显示。若从100到120则不会被触发。（若有需要可设为99.9999）
-*   **Offset**:上下移动波形，只能在Y轴的方向上对波形进行上下平移，做对比用。
-*   **Scalar**:放大倍数，放大或者缩小图形的幅值时使用。示波器的Y轴范围为-1~1，当鼠标停留在波形的某个点上时，会显示出当前点的坐标位置，Y轴的坐标乘以放大倍数即为当前点的幅值大小。即幅值 A=Y*Scalar。
-*   **使用提示**：在使用示波器时，先设置好tirg_value和prescalar，等待出现波形时，可以先点击auto让软件自动找到一个offset和scalar的数值，然后再进行手动调节。每次更改完参数后，需要按下回车或切换输入框才能生效。
+*    **Prescalar*: The internal sampling frequency of the actuator is 20K, and the sampling period is 0.05ms (a value is collected every 0.05ms). Prescalar is the prescaler value, which divides the internal sampling frequency. The oscilloscope displays a sampling frequency of 20K/Prescalar. For example, if Prescalar is 1, the sampling frequency and the period stay unchanged. If the Prescalar is 10 and the sampling period becomes 2K, a point is acquired every 0.5ms (0.05ms*Prescalar), the range of waveforms shown in the oscilloscope will be wider, and the frequency of waveform refresh slower. Conversely, if Prescalar is reduced, the narrower the range of waveforms that can be seen on the oscilloscope, the larger area the waveform will be, and the waveform refresh rate will be faster.
+*   **Trig_value**: ways to use oscilloscope's trigger value: The waveform will only be displayed when the value of the waveform crosses the trigger value from bottom to top. If the trigger value is 100, it will only be displayed when the value of the waveform crosses 100. If you pass 100 from 80 to 120, the display can be triggered. If it is from 100 to 120, it will not be triggered. (Set to 99.9999 if necessary)
+*   **Offset**: Move the waveform up and down. You can only pan the waveform up and down in the direction of the Y-axis for comparison.
+*   **Scalar**: Magnification, used when zooming in or out on the amplitude of the graph. The oscilloscope's Y-axis range is -1~1. When the mouse stays at a certain point of the waveform, the coordinate position of the current point is displayed. The coordinate of the Y-axis multiplied by the magnification is the amplitude of the current point. That is, the amplitude A = Y * Scalar.
+*   **使用提示**： First set tirg_value and prescalar while using the oscilloscope, and when the waveform appearing, you can click auto to let the software automatically find an offset and scalar value, and then manually adjust. After each parameter change, you need to press Enter or switch the input box to take effect.
 
 ![](../img/XY.png "图片")
 
-*   图C-1
+*   FIg C-1
 
-## 附录D
-### 位置环S曲线模式原理详解
-
-*   在实际的应用中，执行器带动机械结构运动的时候往往需要起落平缓，快慢有序的进行。若执行器瞬间到达指定位置，则强大的转动惯量会对机械结构造成一定的冲击，所以S曲线-位置模式的作用就是让执行器每一个转动的过程都能平稳的进行。这也就是要求在执行器加减速的时候，速度有一个由低到高或由高到低逐渐变化的过程，以保证整个机械运动能够平稳的进行。
-*   下面介绍两个调整S曲线-位置模式的参数，加速度Accelerate和减速度Decelerate。加速度Accelerate即反应的是速度由低到高增加时的变化快慢，Accelerate的值越大，速度增加的就越快；减速度Decelerate即反应的是速度由高到底减少时的变化快慢。Decelerate的值越大，速度减少的就越快。反而反之。Max对应的参数是最大转速，当速度增加到最大值后还没有到达指定位置，则速度不再增加，加速度为0。
-*   以图形为例讲解这个两个参数的作用：为了方便分析图像，我们假设执行器当前位置为0 R，发送指令让其转动至20 R，最大速度设为1 RPM，加速度和减速度均设为0.1 RPM/S。此处的参数值设定仅仅为了理论分析，参数值要根据实际情况进行设定。
+## Appendix D
+### Detailed explanation of the position loop S curve mode principle
+*   In applications, the movement that the actuator driving the mechanical structure needs to be smooth, slow and orderly. If the actuator reaches the specified position in an instant, the strong moment of inertia will have a certain impact on the mechanical structure, so the function of the S-curve-position mode is to make the rotation smooth, which requires a gradual change from low to high or high to low during acceleration and deceleration to ensure smooth movement of the entire mechanical movement.
+*   The following two parameters are for adjusting the S-curve-position mode, Accelerate and Decelerate. Accelerate is the speed of change when the speed increases from low to high. The higher the value of Accelerate, the faster the speed increases. Decelerate is the speed of change when the speed is reduced from high to low. The larger the value of Decelerate, the faster the speed will decrease. Instead, the opposite is true. The parameter corresponding to Max is the maximum speed. When the speed has not reached the specified position after increasing to the maximum value, the speed will no longer increased and the acceleration is zero.
+*   Take the graph as an example to explain the role of these two parameters: assuming the current position of the actuator is 0 R, send the command to rotate it to 20 R, the maximum speed is set to 1 RPM, and the acceleration and deceleration are set into 0.1 RPM/S. The parameter values ​​here are set only for theoretical analysis, and the parameter values ​​should be set according to the actual situation.
 
 ![](../img/S.png "曲线图")
 
-* 图D-1
+* Fig D-1
 
-*   上图所示三个波形分别为S曲线模式的位置，速度，加速度与时间的函数图，对位置求一阶导数即为速度，反应物体运动的快慢；在对速度求一阶导数即为加速度，反应物体速度变化的快慢与方向。不难看出，上述图像均被以时间单位分为三个区域。0-10为加速区域；10-20为匀速区域；20-30为减速区域。
-*   当执行器按照S曲线模式运行时的图像如上图“位置-时间”所示，可以看到位置的变化是有一个平缓的过程的，根据参数设定的不同，曲线的形状也会相应改变。可以看到在加速区域中，位置量增加迅速，速度呈线性增长，加速度为常量；匀速区域中，位置量呈线性增长，速度值为常量，加速度为0；减速区域中，位置量增加缓慢，速度呈线性减少，加速度为常量。
-*   此处若增加Accelerate的值，速度曲线中左边部分的斜率会变大，速度增加变快，相应的加速路程也会变小，位置曲线的加速区域会变陡；若增加Decelerate的值，速度曲线中减速区域的斜率会变大，速度减少变快，相应的减速路程也会变小，位置曲线的减速区域会变陡。这里根据实际需要自行调整即可。
-*   需要说明的是，S-位置模式中的MAX参数即为转动速度的最大值，若MAX的值设定较大，则速度模式中可能不会出现匀速区域，加速度不会为0，位置曲线中也不会出现直线部分。这是由于速度上限值较高，执行器在到达指定位置的时候速度还没到达最大值，随即就要进行减速，所以没有匀速的过程。
+*    The three waveforms shown in the above figure are the position, velocity, acceleration and time of the S-curve mode. The first derivative of the position is the velocity, indicating the speed of the velocity change; the first derivative of the velocity is acceleration, indicating the speed and direction of velocity change. It is not difficult to see that the above images are divided into three regions in units of time, 0-10 is the acceleration zone, 10-20 is the constant velocity zone and 20-30 is the deceleration zone.
+*    When the actuator is running in S-curve mode as shown in the figure “Position-Time” above, you can see that the position change has a gentle process. The shape of the curve will change according to the parameter setting . In the acceleration region, the position amount increases rapidly, the speed increases linearly, and the acceleration is constant; in the uniform velocity region, the position amount increases linearly, the velocity value is constant, the acceleration is 0; in the deceleration region, the position amount increases slowly，the speed decreases linearly and the acceleration is constant.
+*   If you increase the value of Accelerate here, the slope of the left part of the speed curve will become larger, the speed will increase faster, the corresponding acceleration path will become smaller, and the acceleration area of the position curve will become steeper; if the value of Decelerate is increased, the slope of the deceleration zone in the curve will become larger, the speed will decrease faster, the corresponding deceleration path will become smaller, and the deceleration area of the position curve will become steeper. Here you can adjust it according to actual needs.
+*   It should be noted that the MAX parameter in the S-position mode is the maximum value of the rotational speed. If the value of MAX is set to a large value, the uniform motion region may not appear in the velocity mode, the acceleration will not be 0, and the position curve There will be no straight line in the middle. This is because the upper limit of the speed is higher, the speed of the actuator has not reached the maximum value when it reaches the specified position, and then the deceleration is performed, so there is no uniform speed.
 
-## 版本变更记录
+## Version Change Record
 
-下表简单描述了版本变更记录
+The following table briefly describes the version change records
 
-<table><thead><tr style="background:PaleTurquois"><th>版本号</th><th>更新时间</th><th>更新内容</th></tr></thead><tbody><tr><td>V1.0.2</td><td>18.12.07</td><td>增加了示波器和S曲线模式的使用说明</td></tr><tr><td>V1.0.1</td><td>18.04.28</td><td>全文更新配图</td></tr><tr><td rowspan=4>V1.0.0</td><td>18.03.14</td><td>更新了全章节的配图</td></tr><tr><td>18.03.12</td><td>修改了开机错误提示，更新了3.1章节3.2章节的部分配图</td></tr><tr><td>18.01.15</td><td>增加了如何修改执行器编号</td></tr><tr><td>18.01.04</td><td>添加了开机按钮</td></tr></tbody></table>
+<table><thead><tr style="background:PaleTurquois"><th>Version No.</th><th>Update time</th><th>update contents</th></tr></thead><tbody><tr><td>V1.0.2</td><td>18.12.07</td><td>Added instructions for the usage of the oscilloscope and S-curve mode</td></tr><tr><td>V1.0.1</td><td>18.04.28</td><td>updated figures for full text</td></tr><tr><td rowspan=4>V1.0.0</td><td>18.03.14</td><td>Updated the figures for the entire chapter</td></tr><tr><td>18.03.12</td><td>Modified the boot error warning and updated some of the figures in section 3.1 of section 3.1.</td></tr><tr><td>18.01.15</td><td>Added the modification methods of the actuator number</td></tr><tr><td>18.01.04</td><td>Added power button</td></tr></tbody></table>
