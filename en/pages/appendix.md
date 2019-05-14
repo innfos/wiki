@@ -47,7 +47,7 @@ RPM/s^2: The first-order time derivative of acceleration, ie jerk (jerk), indica
 *   **Trig_value**: ways to use oscilloscope's trigger value: The waveform will only be displayed when the value of the waveform crosses the trigger value from bottom to top. If the trigger value is 100, it will only be displayed when the value of the waveform crosses 100. If you pass 100 from 80 to 120, the display can be triggered. If it is from 100 to 120, it will not be triggered. (Set to 99.9999 if necessary)
 *   **Offset**: Move the waveform up and down. You can only pan the waveform up and down in the direction of the Y-axis for comparison.
 *   **Scalar**: Magnification, used when zooming in or out on the amplitude of the graph. The oscilloscope's Y-axis range is -1~1. When the mouse stays at a certain point of the waveform, the coordinate position of the current point is displayed. The coordinate of the Y-axis multiplied by the magnification is the amplitude of the current point. That is, the amplitude A = Y * Scalar.
-*   **使用提示**： First set tirg_value and prescalar while using the oscilloscope, and when the waveform appearing, you can click auto to let the software automatically find an offset and scalar value, and then manually adjust. After each parameter change, you need to press Enter or switch the input box to take effect.
+*   **Tips**： First set tirg_value and prescalar while using the oscilloscope, and when the waveform appearing, you can click auto to let the software automatically find an offset and scalar value, and then manually adjust. After each parameter change, you need to press Enter or switch the input box to take effect.
 
 ![](../img/XY.png "图片")
 
