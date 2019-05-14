@@ -12,7 +12,7 @@ After start-up, the red area is selected by the mouse and the current actuator I
 
 ### INNFOS Actuator Precautions
 
-*   INNFOS actuator has a low-power circuit design inside, and there is a button battery inside to supply it. This low-power circuit can achieve multi-turn counting function,which means the position change of the actuator after turned off will be recorded. The next time when the actuator is turned on,the current position of the actuator will change accordingly. The battery life is estimated to be 8 months. If the battery is dead, the replacement service is for free.
+*    INNFOS actuator has a low-power circuit design inside, and there is a button battery inside to supply it. This low-power circuit can achieve multi-turn counting function,which means the position change of the actuator after turned off will be recorded. The next time when the actuator is turned on,the current position of the actuator will change accordingly. The battery life is estimated to be 8 months. If the battery is dead, the replacement service is for free.
 (Note: This function is a test version. By using, function errors may be occur. Therefore, after each power-on, please confirm the current position of the actuator. If the current position is strikingly different from the previous setting, activate Homing mode to reset the zero position (see Homeing Mode description)to avoid misuse and damage to the mechanical structure)
 
 *   When the new actuator is in used, the Limit in Homing mode, whether turned on or off, affects the position mode for the left and right limits. As for the speed mode and current mode, it is only enabled when turned on. For example, the current Max Pos setting value is 10, and the Min Pos is -10, it can only move within this interval in the position mode. When the command sent exceeds this limit interval, the actuator will go to the limit boundary and will not rotate. For the speed and current mode, it can only be used when turned on.
@@ -55,9 +55,10 @@ RPM/s^2: The first-order time derivative of acceleration, ie jerk (jerk), indica
 
 ## Appendix D
 ### Detailed explanation of the position loop S curve mode principle
+
 *   In applications, the movement that the actuator driving the mechanical structure needs to be smooth, slow and orderly. If the actuator reaches the specified position in an instant, the strong moment of inertia will have a certain impact on the mechanical structure, so the function of the S-curve-position mode is to make the rotation smooth, which requires a gradual change from low to high or high to low during acceleration and deceleration to ensure smooth movement of the entire mechanical movement.
 *   The following two parameters are for adjusting the S-curve-position mode, Accelerate and Decelerate. Accelerate is the speed of change when the speed increases from low to high. The higher the value of Accelerate, the faster the speed increases. Decelerate is the speed of change when the speed is reduced from high to low. The larger the value of Decelerate, the faster the speed will decrease. Instead, the opposite is true. The parameter corresponding to Max is the maximum speed. When the speed has not reached the specified position after increasing to the maximum value, the speed will no longer increased and the acceleration is zero.
-*   Take the graph as an example to explain the role of these two parameters: assuming the current position of the actuator is 0 R, send the command to rotate it to 20 R, the maximum speed is set to 1 RPM, and the acceleration and deceleration are set into 0.1 RPM/S. The parameter values ​​here are set only for theoretical analysis, and the parameter values ​​should be set according to the actual situation.
+*   Take the graph as an example to explain the role of these two parameters: assuming the current position of the actuator is 0 R, send the command to rotate it to 20 R, the maximum speed is set to 1 RPM, and the acceleration and deceleration are set into 0.1 RPM/S. The parameter values here are set only for theoretical analysis, and the parameter values ​​should be set according to the actual situation.
 
 ![](../img/S.png "曲线图")
 
