@@ -16,9 +16,9 @@ Software & Development
 ------------
 
   * [CAN Communication Protocol][ipChanged]
-  * [Ethernet Configuration](ipChange.md)
+  * [Ethernet Configuration](pages/Ethernet_Configuration.md)
   * [Ethernet Communication Protocol](pages/Ethernet_Communication_Protocol.md)
-  * [Ethernet Communication SDK](https://www.mdeditor.com/)
+  * [Ethernet Communication SDK](pages/Ethernet Communication_SDK.md)
   * [INNFOS Actuator Studio(IAS) instruction](pages/INNFOS_Actuator_StudioIAS_instruction.md)
   * [Appendix](pages/appendix.md)
   
