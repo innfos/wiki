@@ -1,6 +1,3 @@
-[English](https://github.com/innfos/wiki/blob/master/en/pages/INNFOS_Actuator_StudioIAS_instruction.md)
-
-
 # 软件的使用
 
 ## 软件的安装
