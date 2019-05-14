@@ -14,7 +14,6 @@
 
 本通信协议波特率为1Mbit/s，对于CAN通信，不同线的线缆对传输距离影响不大，但是要求线径尽量粗，最大节点数为64，本公司产品采用0.205mm²线径，最大传输距离为25m。
 
-<a href="#!pages/CAN_Communication_Protocol.md#miao">miao1</a>
 
 
 ## 2 配线
@@ -226,7 +225,6 @@ Note:(上电后先发送SCA使能指令才能使用，断电前必须先发送SC
 
 <table style="width:700px"><thead><tr><th colspan="3" style=background:PaleTurquoise>A.2.1写入指令1</th></tr></thead><tbody><tr><td style="width:100px">指令符</td><td style="width:200px">定义</td><td>说明</td></tr><tr><td>0x07</td><td>设置指定ID执行器的模式</td><td>设置指定ID执行器的当前的模式。</td></tr><tr><td>0x70</td><td>电流环滤波器状态</td><td>设置指定ID执行器的电流环滤波器使能/失能</td></tr><tr><td>0x74</td><td>速度环滤波器状态</td><td>设置指定ID执行器的速度环滤波器使能/失能</td></tr><tr><td>0x78</td><td>位置环滤波器状态</td><td>设置指定ID执行器的位置环滤波器使能/失能</td></tr><tr><td>0x2A</td><td>执行器的使能/失能状态</td><td>设置指定ID执行器使能/失能</td></tr></tbody></table>
 
-<h3 id="miao">喵星人基地</h3>
 
 <table style="width:700px"><thead><tr><th colspan="3" style=background:PaleTurquoise>A.2.2写入指令2</th></tr></thead><tbody><tr><td style="width:100px">指令符</td><td style="width:200px">定义</td><td>说明</td></tr><tr><td>0x72</td><td>电流环滤波器的带宽</td><td>设置指定ID执行器电流环滤波器的带宽(Hz)</td></tr><tr><td>0x76</td><td>速度环滤波器的带宽</td><td>设置指定ID执行器速度环滤波器的带宽(Hz)</td></tr><tr><td>0x7A</td><td>位置环滤波器的带宽</td><td>设置指定ID执行器位置环滤波器的带宽(Hz)</td></tr><tr><td>0x6B</td><td>执行器的电机保护温度</td><td>设置指定ID执行器的电机保护温度℃</td></tr><tr><td>0x6D</td><td>执行器的电机恢复温度</td><td>设置指定ID执行器的电机恢复温度℃</td></tr><tr><td>0x61</td><td>执行器的逆变器保护温度</td><td>设置指定ID执行器的逆变器保护温度℃</td></tr><tr><td>0x63</td><td>执行器的逆变器恢复温度</td><td>设置指定ID执行器的逆变器恢复温度℃</td></tr></tbody></table>
 
