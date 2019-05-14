@@ -1,22 +1,28 @@
-## 附录A:
-
-开机后鼠标选中红色区域，可更改当前执行器ID编号,更改后，进入下图A-1界面后，点击Download保存更改参数。 
-
+## Appendix A:
+### INNNFOS Actuator ID Modification
+ 
+After start-up, the red area is selected by the mouse and the current actuator ID number can be changed. Then enter A-1 interface below and click Download to save the changed parameters.
 ![](../img/A1.png "图A-1")
 
 * 图A-1
 
 * * *
 
-## 附录B
+## Appendix B
 
-### INNFOS执行器使用注意事项
+### INNFOS Actuator Precautions
 
-*   INNFOS执行器内部有低功耗电路设计，内部有一块纽扣电池为其供电，此低功耗电路可实现多圈计数功能，即当执行器关机后，改变执行器的当前位置，下次开机执行器的当前位置会相对变化，此电池使用寿命预计为8个月，若电池没电，可以寄回免费更换电池。（注：此功能为测试版本，使用时可能会出现多圈错误情况，所以每次上电后，应先观察执行器的当前位置，如果当前位置与之前设定相差较大，应激活Homing模式，重新设置零位，具体操作见上文中如何使用homing模式说明，避免误操作损伤机械结构）
-*   新版执行器使用时，Homing模式中的Limit限制无论开启与否，左右极限都对位置模式起作用，对速度模式与电流模式来说，则是仅开启有效，不开启无效，例如，当前Max Pos设置值为10，Min Pos设置值为-10，则位置模式使用时，只能在此区间内运动，当发的指令超过此限制区间时，执行器会转到限位边界处，不在转动，例如当前位置为0，发送大于10的指令，电机会停在位置为10处，发送小于-10时，电机会停在位置为-10处，如果当前位置在限位范围外，例如20，设置限位内的位置，电机会停到设置的指定位置，发送电机限位外的位置指令时，无论多少，电机都会转到限位边界处，例如发送21，电机会转到位置10处。而对于速度与电流模式来说，则需要开启Limit限制，此限制才会生效，不开启不生效。
-*   新版执行器对Position模式做出了限制，当所发指令阶跃变化超过1时，执行器不响应，并提示0x0200错误，以避免发生大阶跃损伤机械结构。
-*   软件限位和机械限位的区别：机械限位是物理限位，是机械结构可以实际动作的上下限范围。软件限位是虚拟限位，是在上位机中设置的运动上下限范围。软件限位的范围应小于等于机械限位的范围。
-*   在调节PI参数时要从电流模式开始依次调节，每一个环节的PI都需要调节。例如在调试速度环模式时，要先调试电流环的PI值，当速度环参数正常后才能继续调试位置环模式。
+*   INNFOS actuator has a low-power circuit design inside, and there is a button battery inside to supply it. This low-power circuit can achieve multi-turn counting function,which means the position change of the actuator after turned off will be recorded. The next time when the actuator is turned on,the current position of the actuator will change accordingly. The battery life is estimated to be 8 months. If the battery is dead, the replacement service is for free.
+(Note: This function is a test version. By using, function errors may be occur. Therefore, after each power-on, please confirm the current position of the actuator. If the current position is strikingly different from the previous setting, activate Homing mode to reset the zero position (see Homeing Mode description)to avoid misuse and damage to the mechanical structure)
+
+*   When the new actuator is in used, the Limit in Homing mode, whether turned on or off, affects the position mode for the left and right limits. As for the speed mode and current mode, it is only enabled when turned on. For example, the current Max Pos setting value is 10, and the Min Pos is -10, it can only move within this interval in the position mode. When the command sent exceeds this limit interval, the actuator will go to the limit boundary and will not rotate. For the speed and current mode, it can only be used when turned on.
+
+*   For the new actuator, there are limits for Position mode. When the command step changes by more than 1, the actuator does not respond and prompts a 0x0200 error to avoid mechanical structure damage caused by the large step input.
+
+*   The difference between software and mechanical limit: mechanical limit, a physical limit, is the upper and lower limit of the actual movement of the mechanical structure. The software limit, the virtual limit, is the upper and lower limits of the motion set in PC. The range of software limits should be less than or equal to the mechanical limit.
+
+*   The adjustment of PI value needs to start from the PI parameters of the current mode.When debugging the speed loop mode, confirm the PI value of the current loop is correctly debugged, and the position loop mode can be continued after the speed loop parameter is correct.
+
 *   数值单位说明：
 
 R: Revolutions，转数，1R=1转=360°，表示执行器的位置。
