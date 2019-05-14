@@ -1,4 +1,3 @@
-
 # 概述
 
 INNFOS提供模块化机器人构建块，使您可以快速构建和编程自定义机器人系统。我们提供智能兼容执行器（SCA），数字和模拟接口板以及将这些组件连接在一起的机械和电气硬件（另请参阅[硬件配置](硬件配置 "wikilink")）。与硬件同样重要的是，INNFOS还提供软件工具和API来编程和控制从这些物理组件创建的机器人系统（有关详细信息，请参阅[Software &amp; Development](Main_Page#Learning "wikilink")），建议使用由INNFOS 开发的 INNFOS Actuator Studio（IAS）对 SCA进行快速安全的调试。
@@ -21,4 +20,4 @@ INNFOS SCA包括使用谐波减速器的QDD Pro，使用行星减速器的QDD和
 # 版本变更记录
 
 下表简单描述了版本变更记录
-<table><thead><tr style="background:PaleTurquoise"><th>版本</th><th>更新时间</th><th>更新内容</th></tr></thead><tbody><tr><td>V1.0.0</td><td>2019.04</td><td>第一个版本</td></tr></tbody></table>
+<table><thead><tr style="background:PaleTurquoise"><th>版本</th><th>更新时间</th><th>更新内容</th></tr></thead><tbody><tr><td>V1.0.1</td><td>2019.05</td><td>优化SCA应用范围描述</td></tr><tr><td>V1.0.0</td><td>2019.04</td><td>第一个版本</td></tr></tbody></table>
