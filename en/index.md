@@ -2,7 +2,7 @@ Main Page
 =====
 
 
-Getting Started
+##  Getting Started
 --------
 The following instructions are meant to get you up and running quickly if you are new to INNFOS actuators. 
 If there's any questions,please contact us at support@innfos.com.
@@ -12,7 +12,7 @@ If there's any questions,please contact us at support@innfos.com.
 
 
 
-Software & Development
+##  Software & Development
 ------------
 
   * [CAN Communication Protocol][ipChanged]
@@ -25,12 +25,12 @@ Software & Development
  
   [ipChanged]: <https://github.com/innfos/ipChangeTool/blob/master/README.md>
 
-Products
+##  Products
 -----------------
 ![sca](../en/img/sca-type.png "sca")
 
 
-## QDD Pro
+### QDD Pro
   * [QDD Pro-3510-50-70](pages/QDDPro-3510-50_v2_2.md)
   * [QDD Pro-3510-80-70](pages/QDDPro-3510-80_v2_2.md)
   * [QDD Pro-6010-50-90](pages/QDDPro-6010-50-90_v2_2.md)
@@ -40,12 +40,12 @@ Products
 
 
 
-## QDD
+### QDD
   * [QDD-3510-36](pages/QDD-3510-36_v2_2.md)
   * [QDD-6010-36](pages/QDD-6010-36_v2_2.md)
 
 
-## DD
+### DD
   * [DD-3510](pages/DD-3510_v2_2.md)
   * [DD-6010](pages/DD-6010_v2_2.md)
   
@@ -55,7 +55,8 @@ Products
   * [ECB & HUB](pages/ECB&HUB.md)
   
 ----  
-  
+
+## the upcoming products
 
 Note: The following SCA data is being updated. Please contact our sales team (sales@innfos.com) for more information.
 
@@ -93,7 +94,7 @@ Website is under maintenance. Stay tuned for future updates!
 
 - - - -
 
-Version Information
+##  Version Information
 ----------------------
 
 
