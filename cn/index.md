@@ -32,23 +32,23 @@
 
 
 ### QDD Pro
-  * [QDD Pro-3510-50-70](pages/QDDPro-3510-50_v2_2.md)
-  * [QDD Pro-3510-80-70](pages/QDDPro-3510-80_v2_2.md)
-  * [QDD Pro-6010-50-90](pages/QDDPro-6010-50-90_v2_2.md)
-  * [QDD Pro-6010-80-90](pages/QDDPro-6010-80-90_v2_2.md)
-  * [QDD Pro-6010-100-90](pages/QDDPro-6010-100-90_v2_2.md)
+  * [QDD Pro-3510-50-70](pages/QDDPro-NE30-50_v2_2.md)
+  * [QDD Pro-3510-80-70](pages/QDDPro-NE30-80_v2_2.md)
+  * [QDD Pro-6010-50-90](pages/QDDPro-PR60-50-90_v2_2.md)
+  * [QDD Pro-6010-80-90](pages/QDDPro-PR60-80-90_v2_2.md)
+  * [QDD Pro-6010-100-90](pages/QDDPro-PR60-100-90_v2_2.md)
 
 
 
 
 ### QDD
-  * [QDD-3510-36](pages/QDD-3510-36_v2_2.md)
-  * [QDD-6010-36](pages/QDD-6010-36_v2_2.md)
+  * [QDD-3510-36](pages/QDD-NE30-36_v2_2.md)
+  * [QDD-6010-36](pages/QDD-PR60-36_v2_2.md)
 
 
 ### DD
-  * [DD-3510](pages/DD-3510_v2_2.md)
-  * [DD-6010](pages/DD-6010_v2_2.md)
+  * [DD-3510](pages/DD-NE30_v2_2.md)
+  * [DD-6010](pages/DD-PR60_v2_2.md)
   
   
   
@@ -64,32 +64,32 @@
 Note: 以下型号SCA数据正在更新中，更多详情请咨询商务团队（sales@innfos.com）
 
 ### QDD Pro
-  * [QDD Pro-3510-30-70](pages/QDDPro-3510-30_v2_2.md)
-  * [QDD Pro-3510-100](pages/QDDPro-3510-100_v2_2.md)
-  * [QDD Pro-6010-30-80](pages/QDDPro-6010-30-80_v2_2.md)
-  * [QDD Pro-6010-30-90](pages/QDDPro-6010-30-90_v2_2.md)
-  * [QDD Pro-6010-50-80](pages/QDDPro-6010-50-80_v2_2.md)
-  * [QDD Pro-6010-80-80](pages/QDDPro-6010-80-80_v2_2.md)
-  * [QDD Pro-6010-100-80](pages/QDDPro-6010-100-80_v2_2.md)
-  * [QDD Pro-6010-120-90](pages/QDDPro-6010-120-90_v2_2.md)
-  * [QDD Pro-8108-30-110](pages/QDDPro-8108-30.md)
-  * [QDD Pro-8108-50-110](pages/QDDPro-8108-50.md)
-  * [QDD Pro-8108-80-110](pages/QDDPro-8108-80.md)
-  * [QDD Pro-8108-100](pages/QDDPro-8108-100.md)
-  * [QDD Pro-8108-120-110](pages/QDDPro-8108-120.md)
-  * [QDD Pro-8108-160-110](pages/QDDPro-8108-160.md)
+  * [QDD Pro-3510-30-70](pages/QDDPro-NE30-30_v2_2.md)
+  * [QDD Pro-3510-100](pages/QDDPro-NE30-100_v2_2.md)
+  * [QDD Pro-6010-30-80](pages/QDDPro-PR60-30-80_v2_2.md)
+  * [QDD Pro-6010-30-90](pages/QDDPro-PR60-30-90_v2_2.md)
+  * [QDD Pro-6010-50-80](pages/QDDPro-PR60-50-80_v2_2.md)
+  * [QDD Pro-6010-80-80](pages/QDDPro-PR60-80-80_v2_2.md)
+  * [QDD Pro-6010-100-80](pages/QDDPro-PR60-100-80_v2_2.md)
+  * [QDD Pro-6010-120-90](pages/QDDPro-PR60-120-90_v2_2.md)
+  * [QDD Pro-8108-30-110](pages/QDDPro-NU80-30.md)
+  * [QDD Pro-8108-50-110](pages/QDDPro-NU80-50.md)
+  * [QDD Pro-8108-80-110](pages/QDDPro-NU80-80.md)
+  * [QDD Pro-8108-100](pages/QDDPro-NU80-100.md)
+  * [QDD Pro-8108-120-110](pages/QDDPro-NU80-120.md)
+  * [QDD Pro-8108-160-110](pages/QDDPro-NU80-160.md)
 
 
 ### QDD
-  * [QDD-2305-36](pages/QDD-2305-36_v2_2.md)
-  * [QDD-3510-6](pages/QDD-3510-6_v2_2.md)
-  * [QDD-6010-6](pages/QDD-6010-6_v2_2.md)
-  * [QDD-8108-6](pages/QDD-8108-6.md)
-  * [QDD-8108-36](pages/QDD-8108-36.md)
+  * [QDD-EL20-36](pages/QDD-EL20-36_v2_2.md)
+  * [QDD-NE30-6](pages/QDD-NE30-6_v2_2.md)
+  * [QDD-PR60-6](pages/QDD-PR60-6_v2_2.md)
+  * [QDD-NU80-6](pages/QDD-NU80-6.md)
+  * [QDD-NU80-36](pages/QDD-NU80-36.md)
 
 ### DD
-  * [DD-2305](pages/DD-2305_v2_2.md)
-  * [DD-8108](pages/DD-8108.md)
+  * [DD-EL20](pages/DD-EL20_v2_2.md)
+  * [DD-NU80](pages/DD-NU80.md)
 
 ## XR-Robot
  [XR-1 ](https://www.mdeditor.com/)
@@ -107,4 +107,4 @@ Note: 以下型号SCA数据正在更新中，更多详情请咨询商务团队�
 
 
 <table class="tableizer-table">
-<thead><tr class="tableizer-firstrow" style="background: PaleTurquoise; color: black;width:500px"><th >版本</th><th>更新时间</th><th>更新内容</th></tr></thead><tbody><tr><td>V1.0.3</td><td>2019-4-15</td><td>修改图片</td></tr><tr><td>V1.0.2</td><td>2019-4-9</td><td>增加型号：<br>DD-2305</td></tr><tr><td>V1.0.1</td><td>2019-4-4</td><td>删除型号：<br>QDD-6010-8<br>QDD-6010-64 <br>QDD-8108-8 <br>QDD-8108-64<br>增加型号：<br>QDD-6010-6 <br>QDD-6010-36 <br>QDD-8108-6 <br>QDD-8108-36</td></tr><tr><td>V1.0.0</td><td>2018-11-12</td><td>第一个版本</td></tr></tbody></table>
+<thead><tr class="tableizer-firstrow" style="background: PaleTurquoise; color: black;width:500px"><th >版本</th><th>更新时间</th><th>更新内容</th></tr></thead><tbody><tr><td>V1.0.4</td><td>2019-5-15</td><td>更改产品名称</td></tr><tr><td>V1.0.3</td><td>2019-4-15</td><td>修改图片</td></tr><tr><td>V1.0.2</td><td>2019-4-9</td><td>增加型号：<br>DD-2305</td></tr><tr><td>V1.0.1</td><td>2019-4-4</td><td>删除型号：<br>QDD-6010-8<br>QDD-6010-64 <br>QDD-8108-8 <br>QDD-8108-64<br>增加型号：<br>QDD-6010-6 <br>QDD-6010-36 <br>QDD-8108-6 <br>QDD-8108-36</td></tr><tr><td>V1.0.0</td><td>2018-11-12</td><td>第一个版本</td></tr></tbody></table>
