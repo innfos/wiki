@@ -1,6 +1,6 @@
 # Parameter introduction 
 ## QDD-NU80-36 Parameter Diagram[mm]
-![QDD-NU80-36]( ../img/DD_NU80_36三视图.png ) 
+![QDD-NU80-36]( ../img/Qdd_NU80_6三视图.png ) 
 ### 3D model 
 ![QDD-NU80-36](   )
 
