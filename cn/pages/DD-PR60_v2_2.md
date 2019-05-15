@@ -2,7 +2,7 @@
 ## DD-PR60工程参数图[单位：毫米]
 ![DD-PR60]( ../img/DD_6010三视图.png ) 
 ### 3D 模型
-[模型文件]( ../img/DD-6010_v2_2.step.zip )
+[模型文件]( ../img/DD-PR60_v2_2.step.zip )
 
 
 ## DD-PR60参数
