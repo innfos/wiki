@@ -1,8 +1,8 @@
-环境配置
+Ethernet Configuration
 =======
 
 
-## linux平台环境配置
+## linux platform environment configuration
 
 *   available for ubuntu16.04 LTS and above
 *   cmake installation: open terminal & input command
