@@ -1,15 +1,15 @@
 # Parameter introduction 
-## QDD Pro-3510-100 Parameter Diagram[mm]
-![QDD Pro-3510-100](  ../img/Qddpro_3510三视图.png   )
+## QDD Pro-NE30-100 Parameter Diagram[mm]
+![QDD Pro-NE30-100](  ../img/Qddpro_NE30三视图.png   )
 ### 3D model 
-[Model file]( ../img/QDD_Pro-3510-100-70_v2_2.step.zip )
+[Model file]( ../img/QDD_Pro-NE30-100-70_v2_2.step.zip )
 
 
-## QDD Pro-3510-100parameter
+## QDD Pro-NE30-100parameter
 
 Note:The harmonic gear drive is fixed by the flexible wheel, so the actual gear ratio is the harmonic nominal gear ratio plus 1.
 
-<table class="tableizer-table"><thead><tr class="tableizer-firstrow"><th colspan="2" style="background: PaleTurquoise; color: black;width:800px">QDD Pro-3510-100parameter</th></tr></thead><tbody>
+<table class="tableizer-table"><thead><tr class="tableizer-firstrow"><th colspan="2" style="background: PaleTurquoise; color: black;width:800px">QDD Pro-NE30-100 parameter</th></tr></thead><tbody>
  <tr><td>Motor power</td><td>200 W</td></tr>
  <tr><td>Motor type</td><td>Brushless servo motor</td></tr>
  <tr><td>Nominal torque</td><td>10.5 Nm</td></tr>
@@ -32,7 +32,7 @@ Note:The harmonic gear drive is fixed by the flexible wheel, so the actual gear 
 </tbody></table>
 	
 
-<img src="../img/QDD Pro-3510-100quxian.png" style="width:400px">
+<img src="../img/QDD Pro-NE30-100quxian.png" style="width:400px">
 
 
 ### Connector Pin Layout
