@@ -74,7 +74,7 @@ Select TCP/IPv4, then select Property, and configuration is shown as:
 
 <img src="../img/009.png" style="width:600px">
 
-## Version Change Records
 
-<table><tbody><tr class="odd"><td align="left">
-version</td><td align="left">	update time</td><td align="left">	update content</td></tr><tr class="even"><td align="left">V1.0.0</td><td align="left">18.12.25</td><td align="left">全文</td></tr></tbody></table>
+# Version Information
+<table><thead><tr style="background:PaleTurquoise"><th>Version</th><th>	Update time</th><th>	update contents</th></tr></thead><tbody><tr><td>V2.2.0</td><td>2019-05-09</td><td>Current version</td></tr><tr><td>V1.0.0</td><td>18.12.25</td><td>The first version</td></tr>
+</tbody></table>
