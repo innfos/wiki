@@ -2,7 +2,7 @@
 ## QDD Pro-6010-80-90 Parameter Diagram[mm]
 ![QDD Pro-6010-80-90]( ../img/Qddpro_6010_x_90三视图.png )
 ### 3D model
-[Model file]( ../img/QDD_Pro-6010-80-90_v2_2.step.zip )
+[Model file]( ../img/QDD_Pro-PR60-80-90_v2_2.step.zip )
 
 ## QDD Pro-6010-80-90parameter
 
