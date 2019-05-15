@@ -1,8 +1,8 @@
 # 参数介绍 
 ## DD-NE30工程参数图[单位：毫米]
-![DD-NE30]( ../img/DD_3510三视图.png ) 
+![DD-NE30]( ../img/DD_NE30三视图.png ) 
 ### 3D 模型
-[模型文件]( ../img/DD-3510_v2_2.step.zip )
+[模型文件]( ../img/DD-NE30_v2_2.step.zip )
 
 
 ## DD-NE30参数
