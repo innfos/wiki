@@ -1,15 +1,15 @@
 # 参数介绍 
 ## QDD-NU80-6工程参数图[单位：毫米]
-![QDD-NU80-6]( ../img/Qdd_8108_6三视图.png ) 
+![QDD-NU80-6]( ../img/Qdd_NU80_6三视图.png ) 
 ### 3D 模型
-[模型文件]( ../img/Qdd_8108_63D.STEP.zip )
+[模型文件]( ../img/Qdd_NU80_63D.STEP.zip )
 
 
 ## QDD-NU80-6参数
 <table class="tableizer-table"><table class="tableizer-table" style="width:400px">
   <thead><tr class="tableizer-firstrow"><th colspan="2" style="background: PaleTurquoise; color: black;">QDD-NU80-6参数</th></tr></thead><tbody><tr><td>功率</td><td>500 W</td></tr><tr><td>电机类型</td><td>无刷伺服电机</td></tr><tr><td>额定扭矩</td><td>12 Nm</td></tr><tr><td>峰值扭矩</td><td>36 Nm</td></tr><tr><td>旋转角度</td><td>> 360.0 °</td></tr><tr><td>温度范围</td><td>-20~+80 °C</td></tr><tr><td>分辨率</td><td>98304（16bit） Step/turn</td></tr><tr><td>精度</td><td>5 Arcmin</td></tr><tr><td>空载转速</td><td>250 RPM</td></tr><tr><td>额定转速</td><td>180 RPM</td></tr><tr><td>减速比</td><td>6:1</td></tr><tr><td>噪声</td><td><= 70 dB(A)</td></tr><tr><td>额定电压</td><td>42 VDC</td></tr><tr><td>电压范围</td><td>24~45 VDC</td></tr><tr><td>额定电流</td><td>4.8 A</td></tr><tr><td>静态工作电流</td><td>0.08 A</td></tr><tr><td>集成电力电子</td><td>yes</td></tr><tr><td>传感器</td><td>多圈绝对式编码器</td></tr><tr><td>通信接口</td><td>CAN</td></tr><tr><td>直径</td><td>110 mm</td></tr><tr><td>长度</td><td>58.2 mm</td></tr><tr><td>重量</td><td>773 g</td></tr></tr><tr><td>相电流满量程</td><td>33A</td></tr><tr><td>转矩系数</td><td>   </td></tr></tbody></table>
 
-<img src="../img/Qdd-8108-6曲线.png" style="width:400px">
+<img src="../img/Qdd-NU80-6曲线.png" style="width:400px">
 
 
 
