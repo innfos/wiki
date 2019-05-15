@@ -1,16 +1,16 @@
 # Parameter introduction 
-## DD-8108 Parameter Diagram[mm]
-![DD-8108]( ../img/DD_8108三视图.png ) 
+## DD-NU80 Parameter Diagram[mm]
+![DD-NU80]( ../img/DD_NU80三视图.png ) 
 ### 3D model 
-[Model file]( ../img/DD_81083D.STEP.zip )
+[Model file]( ../img/DD_NU803D.STEP.zip )
 
 
-## DD-8108parameter
+## DD-NU80parameter
 <table class="tableizer-table"><table class="tableizer-table" style="width:400px">
- <thead><tr class="tableizer-firstrow"><th colspan="2" style="background: PaleTurquoise; color: black;">DD 8108parameter</th></tr></thead><tbody><tr><td>Motor power</td><td>500 W</td></tr><tr><td>Motor type</td><td>Brushless servo motor</td></tr><tr><td>Nominal torque</td><td>2 Nm</td></tr>
+ <thead><tr class="tableizer-firstrow"><th colspan="2" style="background: PaleTurquoise; color: black;">DD NU80 parameter</th></tr></thead><tbody><tr><td>Motor power</td><td>500 W</td></tr><tr><td>Motor type</td><td>Brushless servo motor</td></tr><tr><td>Nominal torque</td><td>2 Nm</td></tr>
  <tr><td>Peak torque</td><td>6 Nm</td></tr><tr><td>Angle of rotation</td><td>> 360.0 °</td></tr><tr><td>Temperature range</td><td>-20~+80 °C</td></tr><tr><td>Resolution</td><td>16384(14bit) Step/turn</td></tr><tr><td>No load speed</td><td>1500 RPM</td></tr><tr><td>Nominal speed</td><td>1082 RPM</td></tr><tr><td>Noise level</td><td><= 70 dB(A)</td></tr><tr><td>Nominal voltage</td><td>42 VDC</td></tr><tr><td>Voltage range</td><td>24~45 VDC</td></tr><tr><td>Nominal power current</td><td>12 A</td></tr><tr><td>Quiescent Current</td><td>0.08 A</td></tr><tr><td>Integrated power electronics</td><td>yes</td></tr><tr><td>Sensor system</td><td>Multiloop absoulute encoder</td></tr><tr><td>Interface</td><td>CAN</td></tr><tr><td>Motor rotor moment of inertia</td><td>89.516 Kg*mm²</td></tr></tbody></table>
 
-<img src="../img/DD-8108quxian.png" style="width:400px">
+<img src="../img/DD-NU80quxian.png" style="width:400px">
 
 ### Connector Pin Layout
 <table class="tableizer-table" style="width:700px">
