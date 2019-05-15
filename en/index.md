@@ -31,8 +31,8 @@ If there's any questions,please contact us at support@innfos.com.
 
 
 ### QDD Pro
-  * [QDD Pro-3510-50-70](pages/QDDPro-3510-50_v2_2.md)
-  * [QDD Pro-3510-80-70](pages/QDDPro-3510-80_v2_2.md)
+  * [QDD Pro-NE30-50-70](pages/QDDPro-NE30-50_v2_2.md)
+  * [QDD Pro-NE30-80-70](pages/QDDPro-NE30-80_v2_2.md)
   * [QDD Pro-PR60-50-90](pages/QDDPro-PR60-50-90_v2_2.md)
   * [QDD Pro-PR60-80-90](pages/QDDPro-PR60-80-90_v2_2.md)
   * [QDD Pro-PR60-100-90](pages/QDDPro-PR60-100-90_v2_2.md)
@@ -42,7 +42,7 @@ If there's any questions,please contact us at support@innfos.com.
 
 ### QDD
   * [QDD-NE30-36](pages/QDD-NE30-36_v2_2.md)
-  * [QDD-6010-36](pages/QDD-6010-36_v2_2.md)
+  * [QDD-PR60-36](pages/QDD-PR60-36_v2_2.md)
 
 
 ### DD
