@@ -1,13 +1,13 @@
 # Parameter introduction 
-## DD-2305 Parameter Diagram[mm]
-![DD-2305]( ../img/DD_2305三视图.png ) 
+## DD-EL20 Parameter Diagram[mm]
+![DD-EL20]( ../img/DD_EL20三视图.png ) 
 ### 3D model 
-[Model file]( ../img/DD-2305_v2_2.step.zip )
+[Model file]( ../img/DD-EL20_v2_2.step.zip )
 
 
-## DD-2305parameter
+## DD-EL20parameter
 <table class="tableizer-table"><table class="tableizer-table" style="width:400px">
- <thead><tr class="tableizer-firstrow"><th colspan="2" style="background: PaleTurquoise; color: black;">DD 2305parameter</th></tr></thead><tbody>
+ <thead><tr class="tableizer-firstrow"><th colspan="2" style="background: PaleTurquoise; color: black;">DD EL20parameter</th></tr></thead><tbody>
  <tr><td>Motor power</td><td>36 W</td></tr>
  <tr><td>Motor type</td><td>Brushless servo motor</td></tr>
  <tr><td>Nominal torque</td><td>0.023 Nm</td></tr>
@@ -29,7 +29,7 @@
 </tbody></table>
 
 
-<img src="../img/DD-2305quxian.png" style="width:400px">
+<img src="../img/DD-EL20quxian.png" style="width:400px">
 
 
 ### Connector Pin Layout
