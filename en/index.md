@@ -33,21 +33,21 @@ If there's any questions,please contact us at support@innfos.com.
 ### QDD Pro
   * [QDD Pro-3510-50-70](pages/QDDPro-3510-50_v2_2.md)
   * [QDD Pro-3510-80-70](pages/QDDPro-3510-80_v2_2.md)
-  * [QDD Pro-6010-50-90](pages/QDDPro-6010-50-90_v2_2.md)
-  * [QDD Pro-6010-80-90](pages/QDDPro-6010-80-90_v2_2.md)
-  * [QDD Pro-6010-100-90](pages/QDDPro-6010-100-90_v2_2.md)
+  * [QDD Pro-PR60-50-90](pages/QDDPro-PR60-50-90_v2_2.md)
+  * [QDD Pro-PR60-80-90](pages/QDDPro-PR60-80-90_v2_2.md)
+  * [QDD Pro-PR60-100-90](pages/QDDPro-PR60-100-90_v2_2.md)
 
 
 
 
 ### QDD
-  * [QDD-3510-36](pages/QDD-3510-36_v2_2.md)
+  * [QDD-NE30-36](pages/QDD-NE30-36_v2_2.md)
   * [QDD-6010-36](pages/QDD-6010-36_v2_2.md)
 
 
 ### DD
-  * [DD-3510](pages/DD-3510_v2_2.md)
-  * [DD-6010](pages/DD-6010_v2_2.md)
+  * [DD-NE30](pages/DD-NE30_v2_2.md)
+  * [DD-PR60](pages/DD-PR60_v2_2.md)
   
 
   
@@ -61,32 +61,32 @@ If there's any questions,please contact us at support@innfos.com.
 Note: The following SCA data is being updated. Please contact our sales team (sales@innfos.com) for more information.
 
 ### QDD Pro
-  * [QDD Pro-3510-30-70](pages/QDDPro-3510-30_v2_2.md)
-  * [QDD Pro-3510-100](pages/QDDPro-3510-100_v2_2.md)
-  * [QDD Pro-6010-30-80](pages/QDDPro-6010-30-80.md)
-  * [QDD Pro-6010-30-90](pages/QDDPro-6010-30-90.md)
-  * [QDD Pro-6010-50-80](pages/QDDPro-6010-50-80.md)
-  * [QDD Pro-6010-80-80](pages/QDDPro-6010-80-80.md)
-  * [QDD Pro-6010-100-80](pages/QDDPro-6010-100-80.md)
-  * [QDD Pro-6010-120-90](pages/QDDPro-6010-120-90.md)
-  * [QDD Pro-8108-30-110](pages/QDDPro-8108-30.md)
-  * [QDD Pro-8108-50-110](pages/QDDPro-8108-50.md)
-  * [QDD Pro-8108-80-110](pages/QDDPro-8108-80.md)
-  * [QDD Pro-8108-100](pages/QDDPro-8108-100.md)
-  * [QDD Pro-8108-120-110](pages/QDDPro-8108-120.md)
-  * [QDD Pro-8108-160-110](pages/QDDPro-8108-160.md)
+  * [QDD Pro-NE30-30-70](pages/QDDPro-NE30-30_v2_2.md)
+  * [QDD Pro-NE30-100](pages/QDDPro-NE30-100_v2_2.md)
+  * [QDD Pro-PR60-30-80](pages/QDDPro-PR60-30-80.md)
+  * [QDD Pro-PR60-30-90](pages/QDDPro-PR60-30-90.md)
+  * [QDD Pro-PR60-50-80](pages/QDDPro-PR60-50-80.md)
+  * [QDD Pro-PR60-80-80](pages/QDDPro-PR60-80-80.md)
+  * [QDD Pro-PR60-100-80](pages/QDDPro-PR60-100-80.md)
+  * [QDD Pro-PR60-120-90](pages/QDDPro-PR60-120-90.md)
+  * [QDD Pro-NU80-30-110](pages/QDDPro-NU80-30.md)
+  * [QDD Pro-NU80-50-110](pages/QDDPro-NU80-50.md)
+  * [QDD Pro-NU80-80-110](pages/QDDPro-NU80-80.md)
+  * [QDD Pro-NU80-100-110](pages/QDDPro-NU80-100.md)
+  * [QDD Pro-NU80-120-110](pages/QDDPro-NU80-120.md)
+  * [QDD Pro-NU80-160-110](pages/QDDPro-NU80-160.md)
 
 
 ### QDD
-  * [QDD-2305-36](pages/QDD-2305-36_v2_2.md)
-  * [QDD-3510-6](pages/QDD-3510-6_v2_2.md)
-  * [QDD-6010-6](pages/QDD-6010-6_v2_2.md)
-  * [QDD-8108-6](pages/QDD-8108-6.md)
-  * [QDD-8108-36](pages/QDD-8108-36.md)
+  * [QDD-EL20-36](pages/QDD-EL20-36_v2_2.md)
+  * [QDD-NE30-6](pages/QDD-NE30-6_v2_2.md)
+  * [QDD-PR60-6](pages/QDD-PR60-6_v2_2.md)
+  * [QDD-NU80-6](pages/QDD-NU80-6.md)
+  * [QDD-NU80-36](pages/QDD-NU80-36.md)
 
 ### DD
-  * [DD-2305](pages/DD-2305_v2_2.md)
-  * [DD-8108](pages/DD-8108.md)
+  * [DD-EL20](pages/DD-EL20_v2_2.md)
+  * [DD-NU80](pages/DD-NU80.md)
 
 ## XR-Robot
  [XR-1 ](https://www.mdeditor.com/)
