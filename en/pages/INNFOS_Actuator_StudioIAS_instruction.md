@@ -1,4 +1,3 @@
-[中文](INNFOS_Actuator_Studio（IAS）使用说明 "wikilink")
 
 # INNFOS Actuator Studio(IAS)
 
