@@ -1,12 +1,12 @@
 # Parameter introduction 
-## QDD-3510-6 Parameter Diagram[mm]
-![QDD-3510-6]( ../img/DD_3510_6三视图.png ) 
+## QDD-NE30-6 Parameter Diagram[mm]
+![QDD-NE30-6]( ../img/DD_NE30_6三视图.png ) 
 ### 3D model 
-[Model file]( ../img/QDD-3510-6_v2_2.step.zip ) 
+[Model file]( ../img/QDD-NE30-6_v2_2.step.zip ) 
 
 
-## QDD-3510-6parameter
-<table class="tableizer-table"><thead><tr class="tableizer-firstrow"><th colspan="2" style="background: PaleTurquoise; color: black;width:800px">QDD-3510-6parameter</th></tr></thead><tbody><tr><td>Motor power</td><td>200 W</td></tr><tr><td>Motor type</td><td>Brushless servo motor</td></tr><tr><td>Nominal torque</td><td>1.98 Nm</td></tr><tr><td>Peak torque</td><td>6 Nm</td></tr><tr><td>Angle of rotation</td><td>> 360.0 °</td></tr><tr><td>Temperature range</td><td>-20~+80 °C</td></tr><tr><td>Resolution</td><td>98304（16bit） Step/turn</td></tr><tr><td>Position accuracy</td><td>5 arcmin</td></tr>
+## QDD-NE30-6parameter
+<table class="tableizer-table"><thead><tr class="tableizer-firstrow"><th colspan="2" style="background: PaleTurquoise; color: black;width:800px">QDD-NE30-6 parameter</th></tr></thead><tbody><tr><td>Motor power</td><td>200 W</td></tr><tr><td>Motor type</td><td>Brushless servo motor</td></tr><tr><td>Nominal torque</td><td>1.98 Nm</td></tr><tr><td>Peak torque</td><td>6 Nm</td></tr><tr><td>Angle of rotation</td><td>> 360.0 °</td></tr><tr><td>Temperature range</td><td>-20~+80 °C</td></tr><tr><td>Resolution</td><td>98304（16bit） Step/turn</td></tr><tr><td>Position accuracy</td><td>5 arcmin</td></tr>
 <tr><td>No load speed</td><td>1000 RPM</td></tr><tr><td>Nominal speed</td><td>667 RPM</td></tr><tr><td>Gear ratio</td><td>6:1</td></tr><tr><td>Noise level</td><td><= 70 dB(A)</td></tr><tr><td>Nominal voltage</td><td>42 VDC</td></tr><tr><td>Voltage range</td><td>24~45 VDC</td></tr><tr><td>Nominal power current</td><td>4.8 A</td></tr><tr><td>Quiescent Current</td><td>0.08 A</td></tr><tr><td>Integrated power electronics</td><td>yes</td></tr><tr><td>Sensor system</td><td>Multiloop absoulute encoder</td></tr><tr><td>Interface</td><td>CAN</td></tr></tbody></table>
 
 
