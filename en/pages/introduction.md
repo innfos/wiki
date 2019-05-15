@@ -18,4 +18,4 @@ INNFOS SCA includes QDD Pro with harmonic reducer, QDD using planetary reducer a
 # Version Change Record
 
 The following table briefly describes the version change records
-<table><thead><tr style="background:PaleTurquoise"><th>Version</th><th>	Update time</th><th>	update contents</th></tr></thead><tbody><tr><td>V1.0.1</td><td>2019.05</td><td>优化SCA应用范围描述</td></tr><tr><td>V1.0.0</td><td>2019.04</td><td>	The first version</td></tr></tbody></table>
+<table><thead><tr style="background:PaleTurquoise"><th>Version</th><th>	Update time</th><th>	update contents</th></tr></thead><tbody><tr><td>V1.0.1</td><td>2019.05</td><td>Optimize SCA application scope</td></tr><tr><td>V1.0.0</td><td>2019.04</td><td>	The first version</td></tr></tbody></table>
