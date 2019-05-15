@@ -1,15 +1,15 @@
 # Parameter introduction 
-## QDD-8108-6 Parameter Diagram[mm]
-![QDD-8108-6]( ../img/DD_8108_6三视图.png ) 
+## QDD-NU80-6 Parameter Diagram[mm]
+![QDD-NU80-6]( ../img/DD_NU80_6三视图.png ) 
 ### 3D model 
 ![Model file ](   )
 
 
-## QDD-8108-6parameter
-<table class="tableizer-table"><thead><tr class="tableizer-firstrow"><th colspan="2" style="background: PaleTurquoise; color: black;width:800px">QDD-8108-6parameter</th></tr></thead><tbody>
+## QDD-NU80-6parameter
+<table class="tableizer-table"><thead><tr class="tableizer-firstrow"><th colspan="2" style="background: PaleTurquoise; color: black;width:800px">QDD-NU80-6 parameter</th></tr></thead><tbody>
 <tr><td>Motor power</td><td>500 W</td></tr><tr><td>Motor type</td><td>Brushless servo motor</td></tr><tr><td>Nominal torque</td><td>12 Nm</td></tr><tr><td>Peak torque</td><td>36 Nm</td></tr><tr><td>Angle of rotation</td><td>> 360.0 °</td></tr><tr><td>Temperature range</td><td>-20~+80 °C</td></tr><tr><td>Resolution</td><td>98304（16bit） Step/turn</td></tr><tr><td>Position accuracy</td><td>5 arcmin</td></tr><tr><td>No load speed</td><td>250 RPM</td></tr><tr><td>Nominal speed</td><td>180 RPM</td></tr><tr><td>Gear ratio</td><td>6:1</td></tr><tr><td>Noise level</td><td><= 70 dB(A)</td></tr><tr><td>Nominal voltage</td><td>42 VDC</td></tr><tr><td>Voltage range</td><td>24~45 VDC</td></tr><tr><td>Nominal power current</td><td>4.8 A</td></tr><tr><td>Quiescent Current</td><td>0.08 A</td></tr><tr><td>Integrated power electronics</td><td>yes</td></tr><tr><td>Sensor system</td><td>Multiloop absoulute encoder</td></tr><tr><td>Interface</td><td>CAN</td></tr></tbody></table>
 
-<img src="../img/Qdd-8108-6quxian.png" style="width:400px">
+<img src="../img/Qdd-NU80-6quxian.png" style="width:400px">
 
 
 ### Connector Pin Layout
