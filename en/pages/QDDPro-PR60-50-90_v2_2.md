@@ -4,7 +4,7 @@
 ### 3D model
 [Model file]( ../img/QDD_Pro-PR60-50-90_v2_2.step.zip )
 
-## QDD Pro-6010-50-90parameter
+## QDD Pro-PR60-50-90parameter
 
 Note:The harmonic gear drive is fixed by the flexible wheel, so the actual gear ratio is the harmonic nominal gear ratio plus 1.
 
