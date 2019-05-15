@@ -1,12 +1,12 @@
 # Parameter introduction 
-## QDD Pro-3510-30 Parameter Diagram[mm]
-![QDD Pro-3510-30](  ../img/Qddpro_3510三视图.png   ) 
+## QDD Pro-NE30-30 Parameter Diagram[mm]
+![QDD Pro-NE30-30](  ../img/Qddpro_NE30三视图.png   ) 
 ### 3D model 
-[Model file]( ../img/QDD_Pro-3510-30-70_v2_2.step.zip )
+[Model file]( ../img/QDD_Pro-NE30-30-70_v2_2.step.zip )
 
 
-## QDD Pro-3510-30parameter
-<table class="tableizer-table"><thead><tr class="tableizer-firstrow"><th colspan="2" style="background: PaleTurquoise; color: black;width:800px">QDD Pro-3510-30parameter</th></tr></thead><tbody>
+## QDD Pro-NE30-30parameter
+<table class="tableizer-table"><thead><tr class="tableizer-firstrow"><th colspan="2" style="background: PaleTurquoise; color: black;width:800px">QDD Pro-NE30-30parameter</th></tr></thead><tbody>
  <tr><td>Motor power</td><td>200 W</td></tr>
  <tr><td>Motor type</td><td>Brushless servo motor</td></tr>
  <tr><td>Nominal torque</td><td>7.8 Nm</td></tr>
@@ -28,7 +28,7 @@
  <tr><td>Interface</td><td>CAN</td></tr>
 </tbody></table>
 
-<img src="../img/QDD Pro-3510-30quxian.png" style="width:400px">
+<img src="../img/QDD Pro-NE30-30quxian.png" style="width:400px">
 
 
 ### Connector Pin Layout
