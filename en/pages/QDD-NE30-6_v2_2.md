@@ -1,6 +1,6 @@
 # Parameter introduction 
 ## QDD-NE30-6 Parameter Diagram[mm]
-![QDD-NE30-6]( ../img/DD_NE30_6三视图.png ) 
+![QDD-NE30-6]( ../img/Qdd_NE30_6三视图.png ) 
 ### 3D model 
 [Model file]( ../img/QDD-NE30-6_v2_2.step.zip ) 
 
