@@ -19,8 +19,7 @@ INNFOS自主研发的SCA智能柔性执行器系列，核心技术已经达到�
 
 ## 联系方式
 
-<table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><tbody>
+<table><thead><tr style="background:PaleTurquoise">
  <tr><td>电话</td><td>+86-010-5397-6638/+86-010-5397-6640</td></tr>
  <tr><td>地址</td><td>中国北京市房山区窦店弘安路85号中关村新兴产业前沿技术研究院3号楼2层</td></tr>
  <tr><td>电子邮件</td><td>sales@innfos.com</td></tr>
