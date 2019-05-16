@@ -11,7 +11,7 @@ Ethernet Communication SDK
 
 #### download
 
-*   visit the link download link to[download link](https://github.com/innfos/ActuatorController_SDK.git)•	download the sdk related files or execute the following command directly
+*   visit the link download link to [download link](https://github.com/innfos/ActuatorController_SDK.git) download the sdk related files or execute the following command directly
 
 
 ```sh
@@ -20,7 +20,7 @@ $ git clone https://github.com/innfos/ActuatorController_SDK.git
     
 ## API related documentation
 
-*   notes and related documentation please go to document link[document link](http://innfos.com/doc/index.html)
+*   notes and related documentation please go to [document link](http://innfos.com/doc/index.html)
 
 ## SCA connection
 
@@ -35,7 +35,7 @@ Warning: do not plug or unplug all cables with electricity, otherwise the device
 
 #### environment configuration
 
-Please refer to<a href="#!pages/Ethernet_Configuration.md#linux平台环境配置">the Linux environment configuration</a>
+Please refer to <a href="#!pages/Ethernet_Configuration.md#linux_platform_environment_configuration">the Linux environment configuration</a>
 
 
 #### Sample code compilation
@@ -97,7 +97,9 @@ int nOperationConnection = pController->m_sOperationFinished->s_Connect([=](uint
 });
 ```
 *   the complete application must be associated with an error signal in order to receive feedback and respond accordingly when an error occurs inside the actuator. When`nDeviceId`is 0, the error is not specific to the actuator (eg unconnected error)
+
 ```cpp
+
 //associated error signal
 int nErrorConnection = pController->m_sError->s_Connect([=](uint8_t nDeviceId,uint16_t nErrorType,string errorInfo){
    if(nDeviceId==0)
@@ -109,6 +111,7 @@ int nErrorConnection = pController->m_sError->s_Connect([=](uint8_t nDeviceId,ui
         cout <<"Actuator " << (int)nDeviceId <<" " <<"error " << (int)nErrorType <<" " << errorInfo << endl;
     }
 });
+
 ```
 
 *   after the necessary signals are associated, the next corresponding operation is to identify the connected actuators.
