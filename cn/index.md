@@ -65,7 +65,7 @@ Note: 以下型号SCA数据正在更新中，更多详情请咨询商务团队�
 
 ### QDD Pro
   * [QDD Pro-NE30-30-70](pages/QDDPro-NE30-30_v2_2.md)
-  * [QDD Pro-NE30-100](pages/QDDPro-NE30-100_v2_2.md)
+  * [QDD Pro-NE30-100-70](pages/QDDPro-NE30-100-70_v2_2.md)
   * [QDD Pro-PR60-30-80](pages/QDDPro-PR60-30-80_v2_2.md)
   * [QDD Pro-PR60-30-90](pages/QDDPro-PR60-30-90_v2_2.md)
   * [QDD Pro-PR60-50-80](pages/QDDPro-PR60-50-80_v2_2.md)
