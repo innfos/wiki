@@ -75,7 +75,8 @@ The user layer defines the command interface for the slave to communicate with t
 #### Protocol example
 
 **Example 1. Read command**
-<table style="width:600px"><thead><tr class="tableizer-firstrow"></tr></thead><tbody><tr><td  colspan="3" style=background:PaleTurquoise><tr><th colspan="6">Read the current speed value with actuator ID 0x01</th></tr><tr><td >Frame header</td><td >Device address</td><td >command byte</td><td >Data length (2 bytes）</td><td >Parameter </td><td >End of frame</td></tr><tr><td >0xEE</td><td >0x01</td><td >0x5</td><td >0x00 0x00</td><td >none</td><td >0xED</td></tr></table>
+<table class="tableizer-table">
+<tbody><tr><td  colspan="6"style=background:PaleTurquoise>Read the current speed value with actuator ID 0x01</th></tr><tr><td >Frame header</td><td >Device address</td><td >command byte</td><td >Data length (2 bytes）</td><td >Parameter </td><td >End of frame</td></tr><tr><td >0xEE</td><td >0x01</td><td >0x5</td><td >0x00 0x00</td><td >none</td><td >0xED</td></tr></table>
 
 Frame header: 0xEE = Protocol header
 
