@@ -1,6 +1,6 @@
 # Parameter introduction 
 ## QDD-PR60-6 Parameter Diagram[mm]
-![QDD-PR60-6]( ../img/DD_PR60_6三视图.png ) 
+![QDD-PR60-6]( ../img/Qdd_PR60_6三视图.png ) 
 ### 3D model 
 [Model file]( ../img/QDD-PR60-6_v2_2.step.zip )
 
