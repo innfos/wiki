@@ -409,19 +409,12 @@ In the CRC16_1 method, pchmsg points to the address and wdatalen is the byte len
  <tr><td>0x0001</td><td>Over voltage error</td></tr> <tr><td>0x0002</td><td>Under-voltage error</td></tr> <tr><td>0x0004</td><td>Locked rotor error</td></tr> <tr><td>0x0008</td><td>Overheating error</td></tr> <tr><td>0x0010</td><td>Parameter reading error</td></tr> <tr><td>0x0020</td><td>Multiturn counting error</td></tr> <tr><td>0x0040</td><td>Some errors with inverter temperature sensor </td></tr> <tr><td>0x0080</td><td>CAN communication error</td></tr> <tr><td>0x0100</td><td>Some errors with motor temperature sensor</td></tr> <tr><td>0x0200</td><td>Step of position mode is over 1</td></tr> <tr><td>0x0400</td><td>DRV protection</td></tr> <tr><td>other</td><td>error with equipment</td></tr> <tr><td>explanation</td><td>Many errors can be reported at the same time. If the return data is 0005, then the error will be reported as 0001 
 Overvoltage abnormality and 0004 locked rotor error.</td></tr></tbody></table>
 
-## Appendix D: Version Table
-
-<table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th style=background:PaleTurquoise>SCA Models</th><th style=background:PaleTurquoise>Current full measuring ranges</th><th style=background:PaleTurquoise>Motor full speed measuring ranges</th><th style=background:PaleTurquoise>Output in full speed measuring ranges</th></tr></thead><tbody>
- <tr><td>QDD Pro-8108-50</td><td>33A</td><td>1500RPM</td><td>30RPM</td></tr> <tr><td>QDD-8108-6</td><td>33A</td><td>1500RPM</td><td>250RPM</td></tr> <tr><td>DD-8108</td><td>33A</td><td>1500RPM</td><td>1500RPM</td></tr> <tr><td>QDD Pro-6010-50</td><td>33A</td><td>4200RPM</td><td>84RPM</td></tr> <tr><td>QDD-6010-36</td><td>33A</td><td>4200RPM</td><td>117RPM</td></tr> <tr><td>DD-6010</td><td>33A</td><td>4200RPM</td><td>4200RPM</td></tr> <tr><td>QDD Pro-3510-50</td><td>16.5A</td><td>6000RPM</td><td>120RPM</td></tr> <tr><td>QDD-3510-6</td><td>16.5A</td><td>6000RPM</td><td>1000RPM</td></tr> <tr><td>QDD-3510-36</td><td>16.5A</td><td>6000RPM</td><td>166.7RPM</td></tr> <tr><td>DD-3510</td><td>16.5A</td><td>6000RPM</td><td>6000RPM</td></tr> <tr><td>QDD-2305-6</td><td>16.5A</td><td>6000RPM</td><td>1000RPM</td></tr> <tr><td>QDD-2305-36</td><td>16.5A</td><td>6000RPM</td><td>166.7RPM</td></tr> <tr><td>DD-2305</td><td>16.5A</td><td>6000RPM</td><td>6000RPM</td></tr></tbody></table>
 
 *   Output is in different speed because some model of SCA has reducer inside to lower the maximum speed of output and make the torque improve. Motor full speed measuring ranges counts in IQ values
 
 ##  Version change records
 
-
 Version changes recorded as below:
-
 
 <table class="tableizer-table">
 <thead><tr class="tableizer-firstrow"><th style=background:PaleTurquoise>Version</th><th style=background:PaleTurquoise>Update time</th><th style=background:PaleTurquoise>Changed type</th></tr></thead><tbody>
