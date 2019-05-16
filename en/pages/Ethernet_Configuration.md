@@ -4,7 +4,7 @@ Ethernet Configuration
 
 ## linux platform environment configuration
 
-*   available for ubuntu16.04 LTS and above
+*   available for ubuntu 16.04 LTS and above
 *   cmake installation: open terminal & input command
 
 ```sh
