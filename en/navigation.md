@@ -7,9 +7,9 @@
 
 [Learning](gimmicks1.md)
 
-[About INNFOS](gimmicks3.md)
+[About INNFOS](pages/about.md)
 
-[About Contact](pages/about.md)
+[About Contact](gimmicks1.md)
 
 [Products]()
 
