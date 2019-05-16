@@ -44,19 +44,19 @@ The user layer defines the command interface for the slave to communicate with t
 
 **Frame header**
 
-* Fixed byte 0xEE, which identifies the beginning of a transmission frame.
+* Fixed byte `0xEE`, which identifies the beginning of a transmission frame.
 
 **Device address**
 
-* One byte identifies the address of the device to communicate with, 0x01 to 0xff are available. 0x00 is the broadcast address.
+* One byte identifies the address of the device to communicate with, `0x01` to 0xff are available. `0x00` is the broadcast address.
 
 **command byte**
 
-* One byte identifies the address of the device to communicate with, 0x01 to 0xff are available. 0x00 is the broadcast address.
+* One byte identifies the address of the device to communicate with, `0x01` to `0xFF` are available. `0x00` is the broadcast address.
 
 **Number of data bits**
 
-* Two bytes identify the number of specific data to be communicated, ranging from 0x0000 to 0xffff, and the out of range is not processed.
+* Two bytes identify the number of specific data to be communicated, ranging from `0x0000` to `0xFFFF`, and the out of range is not processed.
 
 **Data content**
 
@@ -68,7 +68,7 @@ The user layer defines the command interface for the slave to communicate with t
 
 **End of frame**
 
-* Fixed byte 0XED, identifying the end of a transmission frame.
+* Fixed byte `0XED`, identifying the end of a transmission frame.
 
 ### **Ethernet communication protocol command application examples**
 
@@ -76,7 +76,7 @@ The user layer defines the command interface for the slave to communicate with t
 
 **Example 1. Read command**
 
-<table><tr><th colspan="6">Read the current speed value with actuator ID 0x01</th></tr><tr><td >Frame header</td><td >Device address</td><td >command byte</td><td >Data length (2 bytes）</td><td >Parameter </td><td >End of frame</td></tr><tr><td >0xEE</td><td >0x01</td><td >0x5</td><td >0x00 0x00</td><td >none</td><td >0xED</td></tr></table>
+<table><tr><th colspan="6">Read the current speed value with actuator ID 1</th></tr><tr><td >Frame header</td><td >Device address</td><td >command byte</td><td >Data length (2 bytes）</td><td >Parameter </td><td >End of frame</td></tr><tr><td >0xEE</td><td >0x01</td><td >0x5</td><td >0x00 0x00</td><td >none</td><td >0xED</td></tr></table>
 
 Frame header: `0xEE` = Protocol header
 
@@ -84,7 +84,7 @@ Device address: `0x01` = Read ID
 
 Command character: `0x05` = Read current speed command 
 
-Data length: `0x00` = Data length 
+Data length: `0x00 0x00` = Data length 
 
 Parameter content: None = Sent parameter
 
@@ -117,7 +117,7 @@ Description: The high parameter data [0~3] is put in front followed by lower dat
 **Example 2. Write command**
 
 <table class="tableizer-table">
-<thead ><tr class="tableizer-firstrow"><th  colspan="7" style=background:PaleTurquoise>Set the ratio P of the current loop with actuator ID 0x01 (set value is 5）</th></tr></thead><tbody><tr><th>Frame header</th><th>Device address</th><th>command byte</th><th>Data length</th><th>parameter</th><th>CRC codecheck</th><th>End of frame</th></tr><tr><td>0xEE</td><td>0x01</td><td>0x0E</td><td>0x4</td><td>0x05 0x00 0x00 0x00</td><td>2 bytes</td><td>0xED</td></tr></tbody></table>
+<thead ><tr class="tableizer-firstrow"><th  colspan="7" style=background:PaleTurquoise>Set the ratio P of the current loop with actuator ID 1 (set value is 5）</th></tr></thead><tbody><tr><th>Frame header</th><th>Device address</th><th>command byte</th><th>Data length</th><th>parameter</th><th>CRC codecheck</th><th>End of frame</th></tr><tr><td>0xEE</td><td>0x01</td><td>0x0E</td><td>0x4</td><td>0x05 0x00 0x00 0x00</td><td>2 bytes</td><td>0xED</td></tr></tbody></table>
 
 Frame header: `0xEE` = Protocol header 
 
@@ -197,14 +197,14 @@ After successfully querying the actuator, the actuator can communicate with the 
 
 Send command to activate Ladder Position Mode:
 `0xEE 0x06 0x07 0x00 0x01 0x06 0x3F 0x42 0xED`
-Data `0x06` is in trapezoidal position mode [see mode table](#!pages/Ethernet_Communication_Protocol.md#附录B:模式表 "wikilink")，`0x3F 0x42` is[CRC Check code](#!pages/Ethernet_Communication_Protocol.md#CRC校验码计算方法 "wikilink")that will receive a return after successful activation:
+Data `0x06` is in trapezoidal position mode [see mode table](#!pages/Ethernet_Communication_Protocol.md#Appendix B:mode commands "wikilink")，`0x3F 0x42` is [CRC Check code](#!pages/Ethernet_Communication_Protocol.md#CRC check code calculation method "wikilink")  that will receive a return after successful activation:
 `0xEE 0x06 0x07 0x00 0x01 0x01 0xED`
 At this point a speed command can be sent:
 `0xEE 0x06 0x0A 0x00 0x04 0x00 0x01 0x00 0x00 0x01 0xD8 0xED`
-The `0x0A` bit sets the speed value command and the `0x00 0x01 0x00 0x00` bit sets the position value. The value is the set target position 1R. Calculate the IQ24 value obtained by the formula: target position /128*(2^24), IQ24 Please refer to the introduction of[ IQmath for an introduction](#!pages/Ethernet_Communication_Protocol.md#IQmath简介 "wikilink")。
+The `0x0A` bit sets the speed value command and the `0x00 0x01 0x00 0x00` bit sets the position value. The value is the set target position 1R. Calculate the IQ24 value obtained by the formula: target position /128*(2^24), IQ24 Please refer to the introduction of [ IQmath for an introduction](#!pages/Ethernet_Communication_Protocol.md#IQmath Introduction "wikilink")。
 
 
-Note: the commands for setting the speed current position value are not returned, and other commands are returned. For more communication instructions, please refer to[Ethernet communication protocol command reference](#!pages/Ethernet_Communication_Protocol.md#以太网通信协议命令参考 "wikilink")。
+Note: the commands for setting the speed current position value are not returned, and other commands are returned. For more communication instructions, please refer to [Ethernet communication protocol command reference](#!pages/Ethernet_Communication_Protocol.md#Ethernet Communication Protocol Command Reference"wikilink")。
 
 ## Ethernet Communication Protocol Command Reference
 
