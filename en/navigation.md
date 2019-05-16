@@ -9,6 +9,8 @@
 
 [About INNFOS](pages/about.md)
 
+[Contact](gimmicks1.md)
+
 [Products]()
 
   * [QDD Pro](tutorials.md)
