@@ -1,5 +1,4 @@
 Ethernet communication
-
 =====
 
 
@@ -24,13 +23,13 @@ Note: The unit must be powered off and then plugged in. Otherwise the accessorie
 
 ![ECB-C1.jpg](../img/ECB-C1.jpg "fig:ECB-C1.jpg") ![ECB-C2.jpg](../img/ECB-C2.jpg "fig:ECB-C2.jpg")
 
-*   HUB inserts feedback brake capacitor and terminating resistor
+*   `HUB` inserts feedback brake capacitor and terminating resistor
 
 ![ECB-C3.jpg](../img/ECB-C3.jpg "fig:ECB-C3.jpg") ![ECB-C4.jpg](../img/ECB-C4.jpg)
 
 **Connect to SCA**
 
-*   Connect the HUB and actuator with the actuator cable
+*   Connect the `HUB` and actuator with the actuator cable
 
 <img src="../img/Actuator-C1.jpg" style="width:600px">
 
@@ -96,8 +95,6 @@ Click the "1" or "2" button to start the actuator, and the button "1" is green m
 
 <img src="../img/Fig6-3.png" style="width:600px"> 
 
-
-### Other
 
 
 For more information on IAS, please visit the[INNFOS Actuator Studio(IAS)instructions](#!pages/INNFOS_Actuator_Studio_IAS_instruction.md).
