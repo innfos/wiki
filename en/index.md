@@ -43,7 +43,7 @@ If there's any questions,please contact us at support@innfos.com.
 ### QDD
   * [QDD-NE30-36](pages/QDD-NE30-36_v2_2.md)
   * [QDD-PR60-36](pages/QDD-PR60-36_v2_2.md)
-
+  * [QDD-NU80-6](pages/QDD-NU80-6_v2_2.md)
 
 ### DD
   * [DD-NE30](pages/DD-NE30_v2_2.md)
@@ -62,7 +62,7 @@ Note: The following SCA data is being updated. Please contact our sales team (sa
 
 ### QDD Pro
   * [QDD Pro-NE30-30-70](pages/QDDPro-NE30-30_v2_2.md)
-  * [QDD Pro-NE30-100](pages/QDDPro-NE30-100_v2_2.md)
+  * [QDD Pro-NE30-100-70](pages/QDDPro-NE30-100-70_v2_2.md)
   * [QDD Pro-PR60-30-80](pages/QDDPro-PR60-30-80.md)
   * [QDD Pro-PR60-30-90](pages/QDDPro-PR60-30-90.md)
   * [QDD Pro-PR60-50-80](pages/QDDPro-PR60-50-80.md)
@@ -81,7 +81,6 @@ Note: The following SCA data is being updated. Please contact our sales team (sa
   * [QDD-EL20-36](pages/QDD-EL20-36_v2_2.md)
   * [QDD-NE30-6](pages/QDD-NE30-6_v2_2.md)
   * [QDD-PR60-6](pages/QDD-PR60-6_v2_2.md)
-  * [QDD-NU80-6](pages/QDD-NU80-6.md)
   * [QDD-NU80-36](pages/QDD-NU80-36.md)
 
 ### DD
