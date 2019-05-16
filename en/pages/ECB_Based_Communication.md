@@ -60,7 +60,7 @@ Note: The unit must be powered off and then plugged in. Otherwise the accessorie
 
 **Download IAS**
 
-*   If the computer system is linux, please visit[IAS(linux)](https://github.com/innfos/INNFOS-Actuator-Studio-linux.git)to get the latest version of IAS(INNFOS Actuator Studio)(Linux),If the system is window, please visit[IAS(windows)](https://github.com/innfos/INNFOS-Actuator-Studio-windows.git).
+*   If the computer system is linux, please visit [IAS(linux)](https://github.com/innfos/INNFOS-Actuator-Studio-linux.git) to get the latest version of IAS(INNFOS Actuator Studio)(Linux),If the system is window, please visit [IAS(windows)](https://github.com/innfos/INNFOS-Actuator-Studio-windows.git).
 
 **Configure IP address**
 
