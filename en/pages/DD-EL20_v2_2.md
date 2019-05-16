@@ -28,19 +28,14 @@
  <tr><td>Motor rotor moment of inertia</td><td>2.25254 Kg*mm²</td></tr>
 </tbody></table>
 
-
 <img src="../img/DD-EL20quxian.png" style="width:400px">
-
 
 ### Connector Pin Layout
 <table class="tableizer-table" style="width:700px">
 <thead><tr class="tableizer-firstrow"><th colspan="4" style="background: PaleTurquoise; color: black;">Connector Pin Layout</th></tr></thead><tbody><tr><td>Pin NO.</td><td>Color</td><td>Signal</td><td>Terminal pin distribution</td></tr><tr><td>1</td><td>PVDD</td><td>Black</td><td rowspan="9"><img src="../img/配线2-3.png" style="width:450px"></td></tr><tr><td>3</td><td>PVDD</td><td>Black</td></tr><tr><td>5</td><td>PVDD</td><td>Black</td></tr><tr><td>2</td><td>GND</td><td>Black</td></tr><tr><td>4</td><td>GND</td><td>Black</td></tr><tr><td>6</td><td>CAN-GND</td><td>Gray</td></tr><tr><td>7</td><td>CAN-L</td><td>Gray</td></tr><tr><td>8</td><td>CAN-H</td><td>Gray</td></tr></tbody></table>
 
+# Version change records
 
-
-
-
-# Version Information
 <table class="tableizer-table"><thead><tr class="tableizer-firstrow" style="background: PaleTurquoise; color: black;width:500px"><th >version</td><td>date</td><td>Modify content</td></tr><tr><td>V2.3.0</td><td>2019-05-15</td><td>Model update</th></tr><tr><td>V2.2.0</td><td>2019-05-09</td><td>Current version</td></tr>
  <tr><td>V1.0.0</td><td>2019-04</td><td>The first version</td></tr>
 </tbody></table>
