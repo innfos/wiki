@@ -8,7 +8,7 @@ The following instructions are meant to get you up and running quickly if you ar
 If there's any questions,please contact us at support@innfos.com.
 
   * [Introduction](pages/introduction.md)
-  * [ECB-Based Communication](pages/ECB-Based_Communication.md)
+  * [ECB-Based Communication](pages/ECB_Based_Communication.md)
 
 
 
