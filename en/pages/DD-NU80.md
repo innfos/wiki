@@ -18,14 +18,7 @@
 
 
 
-
-
 # Version Information
-
-
-<table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"></thead><tbody>
- <tr><td>version</td><td>date</td><td>Modify content</td></tr>
- <tr><td>V1.0.1</td><td>2019-4-12</td><td>Add Motor rotor moment of inertia</td></tr>
- <tr><td>V1.0.0</td><td>2018-09-18</td><td>The first version</td></tr>
+<table class="tableizer-table"><thead><tr class="tableizer-firstrow" style="background: PaleTurquoise; color: black;width:500px"><th >version</td><td>date</td><td>Modify content</td></tr><tr><td>V2.3.0</td><td>2019-05-15</td><td>Model update</th></tr><tr><td>V2.2.0</td><td>2019-05-09</td><td>Current version</td></tr>
+ <tr><td>V1.0.0</td><td>2019-04</td><td>The first version</td></tr>
 </tbody></table>
