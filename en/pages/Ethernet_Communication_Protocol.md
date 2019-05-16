@@ -204,13 +204,13 @@ At this point a speed command can be sent:
 EE 06 0A 00 04 00 01 00 00 01 D8 ED
 The 0A bit sets the speed value command and the 00 01 00 00 bit sets the position value. The value is the set target position 1R. Calculate the IQ24 value obtained by the formula: target position /128*(2^24), IQ24 Please refer to the introduction of[ IQmath for an introduction](#!pages/Ethernet_Communication_Protocol.md#IQmath简介 "wikilink")。
 
-### other
+### Other
 
 Note: the commands for setting the speed current position value are not returned, and other commands are returned. For more communication instructions, please refer to[Ethernet communication protocol command reference](#!pages/Ethernet_Communication_Protocol.md#以太网通信协议命令参考 "wikilink")。
 
 ## Ethernet Communication Protocol Command Reference
 
-### read command
+### Read command
 <table class="tableizer-table"><thead><tr class="tableizer-firstrow"></tr></thead><tbody><tr><td  colspan="3" style=background:PaleTurquoise>2.3.1.1 Send data 0 byte, return data 1 byte</td></tr><tr><td>Command Name</td><td colspan="2">Read Command</td></tr><tr><td>description</td><td colspan="2">This command sends a data length of 1, and its return data with the length of 2</td></tr><tr><td>Command byte</td><td colspan="2"><a href="#!pages/Ethernet_Communication_Protocol.md#Read instruction 1">See read instruction 1</a></td></tr><tr><td>Data length</td><td colspan="2">0</td></tr><tr><td>Data content/td><td colspan="2">No</td></tr><tr><td>Command byte（return value）</td><td colspan="2"><a href="#!pages/Ethernet_Communication_Protocol.md#Read instruction 1">See read instruction 1</a></td></tr><tr><td>Data length （return value）</td><td colspan="2">1</td></tr><tr><td rowspan="2">Lower machine returns data</td><td>0x01：Success / enable / boot / normal</td><td rowspan="2">Pattern query return data see <a href="#!pages/Ethernet_Communication_Protocol.md#Appendix B:mode table">mode table</a></td></tr><tr><td>0x00：Failed / disabled / shut down / abnormal</td></tr></tbody></table>
 
 <table class="tableizer-table">
@@ -219,7 +219,7 @@ Note: the commands for setting the speed current position value are not returned
 <table class="tableizer-table">
 <thead><tr class="tableizer-firstrow"></tr></thead><tbody><tr><td  colspan="2" style=background:PaleTurquoise>2.3.1.3 Send data 0 byte, return data 4 bytes</td></tr><tr><td>Command name</td><td>Read command</td></tr><tr><td>Description</td><td>This command sends a data length of 1, and its return data with the length of 5. the parameter in high position shows first. The value is 2^24 times the true value（special instructions are specified in the instruction list）</td></tr><tr><td>Command character</td><td><a href="#!pages/Ethernet_Communication_Protocol.md# Read instruction 3">See read instruction 3</a></td></tr><tr><td>data length</td><td>0</td></tr><tr><td>Data content</td><td>none</td></tr><tr><td>Command character (return value)</td><td><a href="#!pages/Ethernet_Communication_Protocol.md#Read instruction 3">See read instruction 3</a></td></tr><tr><td>Data length (return value)</td><td>4</td></tr> <tr><td>Lower machine returns data</td><td>Data is formed as iq24(special instructions are specified in the instruction list）</td></tr></tbody></table>
 
-### write command
+### Write command
 
 <table class="tableizer-table">
 <thead><tr class="tableizer-firstrow"></tr></thead><tbody><tr><td colspan="3"style=background:PaleTurquoise>2.3.2.1Send data 1 byte, return data 1 byte</td></tr><tr><td>Command name</td><td colspan="2">Write command</td></tr><tr><td>Description</td><td colspan="2">This command class sends a data length of 2, a return data length is 2, and a byte after the data is sent indicates that the parameter content is to be written. (note: a power-on command should be sent to use and a power-off command should be sent before powering off, otherwise the zero position may be lost.)</td></tr><tr><td>Command character</td><td colspan="2"><a href="#!pages/Ethernet_Communication_Protocol.md#Write instruction 1">See write instruction 1</a></td></tr><tr><td>Data length</td><td colspan="2">1</td></tr><tr><td rowspan="2">Data content</td><td>0x01：enable/ power on</td><td rowspan="2">The mode setting is<a href="#!pages/Ethernet_Communication_Protocol.md#Appendix B:mode table">mode table</a></td></tr><tr><td>0x00：disable/power off</td></tr><tr><td>Data length (return value)</td><td colspan="2"><a href="#!pages/Ethernet_Communication_Protocol.md#Write instruction 1">See write instruction 1</a></td></tr><tr><td>Data length (return value)</td><td colspan="2">1</td></tr><tr><td rowspan="2">Lower machine returns data</td><td colspan="2">0x01：Success</td></tr><tr><td colspan="2">0x00：Failed</td></tr></tbody></table>
@@ -240,7 +240,7 @@ Note: the commands for setting the speed current position value are not returned
 *   The processor we use generally supports hardware floating-point operations directly, such as some devices with FPU, or only supports fixed-point operations. In this case, the processing of floating-point numbers needs to be done by the compiler. On devices that support hardware floating-point processing, the quickest way to program floating-point operations is to use floating-point types directly, such as single-precision floats. However, in many cases we can only use one fixed-point processor because the limitation of cost, material and other factors. That directly using the float type for floating-point operations will make the compiler generate a lot of code to complete the operation that looks very simple, which causes longer execution time, and occupies multiplied resources. This involves the problem of how to efficiently handle floating-point operations on fixed-point processors.
 
 
-*   •	Since it is a fixed-point processor, its efficiency in processing fixed-point numbers, or literally "integers", is much higher than it is in dealing with floating-point types. On fixed-point processors, we use fixed-point integers to represent a floating-point number, and specify integer digits and scales to easily convert fixed-point and floating-point numbers. Taking a 32-bit fixed-point number as an example, suppose the conversion factor is Q, that is, the number of decimal places in 32 bits is Q, and the number of integer digits is 31-Q (in the case of signed numbers), then fixed-point numbers and floating-point numbers Conversion relationship is
+*   Since it is a fixed-point processor, its efficiency in processing fixed-point numbers, or literally "integers", is much higher than it is in dealing with floating-point types. On fixed-point processors, we use fixed-point integers to represent a floating-point number, and specify integer digits and scales to easily convert fixed-point and floating-point numbers. Taking a 32-bit fixed-point number as an example, suppose the conversion factor is Q, that is, the number of decimal places in 32 bits is Q, and the number of integer digits is 31-Q (in the case of signed numbers), then fixed-point numbers and floating-point numbers Conversion relationship is
 
 
 ![see IQ-MATH Library file](../img/3-1通信协议.png "详见 IQ-MATH Library文档") 
@@ -353,7 +353,7 @@ EE 06 2A 00 01 01 7E 80 ED
 
 EE is the frame header, 06 is the actuator ID, 2A is the power-on command character, 00 01 is the data length, 01 is the data content, and ED is the frame tail. The data content 01 calculated by the above method is 7E 80.
 
-### **A.1Read instruction code definition table**
+### **A.1 Read instruction code definition table**
 
 
 #### Read command 1
