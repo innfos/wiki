@@ -8,7 +8,9 @@ The INNFOS R&D team has been focusing on the development of new actuators in hig
 INNFOS SCA (Smart Compliant Actuator) is totally self-developed by INNFOS and its core techniques have reached the international advanced level, with its high integration, bus control, high torque output, easy usage and low cost. It is fully in line with robot growing trend and has become the core component of the robots.
 
 <img src="../img/About 1.png" >
+
 <img src="../img/About 2.png" >
+
 <img src="../img/About 3.png" >
 
 
