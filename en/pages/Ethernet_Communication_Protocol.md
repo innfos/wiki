@@ -197,7 +197,7 @@ After successfully querying the actuator, the actuator can communicate with the 
 
 Send command to activate Ladder Position Mode:
 `0xEE 0x06 0x07 0x00 0x01 0x06 0x3F 0x42 0xED`
-Data `0x06` is in trapezoidal position mode [see mode table](#!pages/Ethernet_Communication_Protocol.md#Appendix B:mode commands "wikilink")，`0x3F 0x42` is [CRC Check code](#!pages/Ethernet_Communication_Protocol.md#CRC check code calculation method "wikilink")  that will receive a return after successful activation:
+Data `0x06` is in trapezoidal position mode [se1e mode table](#!pages/Ethernet_Communication_Protocol.md#Appendix\ B:mode\ commands "wikilink")，`0x3F 0x42` is [CRC Check code](#!pages/Ethernet_Communication_Protocol.md#CRC check code calculation method "wikilink")  that will receive a return after successful activation:
 `0xEE 0x06 0x07 0x00 0x01 0x01 0xED`
 At this point a speed command can be sent:
 `0xEE 0x06 0x0A 0x00 0x04 0x00 0x01 0x00 0x00 0x01 0xD8 0xED`
