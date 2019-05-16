@@ -75,42 +75,42 @@ The user layer defines the command interface for the slave to communicate with t
 #### Protocol example
 
 **Example 1. Read command**
-<table class="tableizer-table">
-<tbody><tr><td  colspan="6"style=background:PaleTurquoise>Read the current speed value with actuator ID 0x01</th></tr><tr><td >Frame header</td><td >Device address</td><td >command byte</td><td >Data length (2 bytes）</td><td >Parameter </td><td >End of frame</td></tr><tr><td >0xEE</td><td >0x01</td><td >0x5</td><td >0x00 0x00</td><td >none</td><td >0xED</td></tr></table>
 
-Frame header: 0xEE = Protocol header
+<table><tr><th colspan="6">Read the current speed value with actuator ID 0x01</th></tr><tr><td >Frame header</td><td >Device address</td><td >command byte</td><td >Data length (2 bytes）</td><td >Parameter </td><td >End of frame</td></tr><tr><td >0xEE</td><td >0x01</td><td >0x5</td><td >0x00 0x00</td><td >none</td><td >0xED</td></tr></table>
 
-Device address: 0x01 = Read ID 
+Frame header: `0xEE` = Protocol header
 
-Command character: 0x05 = Read current speed command 
+Device address: `0x01` = Read ID 
 
-Data length: 0x0 = Data length 
+Command character: `0x05` = Read current speed command 
+
+Data length: `0x00` = Data length 
 
 Parameter content: None = Sent parameter
 
-End of frame: 0xED = Protocol Tail 
+End of frame: `0xED` = Protocol Tail 
 
-Send content: 0x05
+Send content: `0x05`
 
 
 <table class="tableizer-table">
 <tbody><tr><td  colspan="7"style=background:PaleTurquoise>Answer command</td></tr><tr><td>Frame header</td><td>Device address</td><td>command byte</td><td>Data length (2 bytes)</td><td>Parameter</td><td>CRC codecheck</td><td>End of frame</td></tr><tr><td>0xEE</td><td>0x01</td><td>0x5</td><td>0x00 0x04</td><td>Data length (4 bytes)</td><td>Data length (2 bytes)</td><td>0xED</td></tr></tbody></table>
 
-Frame header: 0xEE = Protocol header 
+Frame header: `0xEE` = Protocol header 
 
-Device address: 0x01 = Read object ID 
+Device address: `0x01` = Read object ID 
 
-Command character: 0x05 = Current speed command read
+Command character: `0x05` = Current speed command read
 
-Data length: 0x04 = Data length 
+Data length: `0x04` = Data length 
 
 Parameter content: Four-byte speed data = Transmitted parameter 
 
 Check Bit: Two bytes of data = check digit 
 
-End of frame: 0xED = Protocol tail
+End of frame: `0xED` = Protocol tail
 
-Response content: 0x05 0xXX 0xXX 0xXX 0xXX 
+Response content: `0x05 0xXX 0xXX 0xXX 0xXX` 
 
 Description: The high parameter data [0~3] is put in front followed by lower data in _IQ24 format. _IQ(-1.0)~_IQ(1.0) represents the reverse speed full scale and forward speed full scale. The full scale is 6000RPM. If data = _IQ (0.5),then it is 0.5*6000=3000RPM.
 
@@ -119,42 +119,42 @@ Description: The high parameter data [0~3] is put in front followed by lower dat
 <table class="tableizer-table">
 <thead ><tr class="tableizer-firstrow"><th  colspan="7" style=background:PaleTurquoise>Set the ratio P of the current loop with actuator ID 0x01 (set value is 5）</th></tr></thead><tbody><tr><th>Frame header</th><th>Device address</th><th>command byte</th><th>Data length</th><th>parameter</th><th>CRC codecheck</th><th>End of frame</th></tr><tr><td>0xEE</td><td>0x01</td><td>0x0E</td><td>0x4</td><td>0x05 0x00 0x00 0x00</td><td>2 bytes</td><td>0xED</td></tr></tbody></table>
 
-Frame header: 0xEE = Protocol header 
+Frame header: `0xEE` = Protocol header 
 
-Device address: 0x01 = Set object ID 
+Device address: `0x01` = Set object ID 
 
-Data length: 0x4 = Data length
+Data length: `0x04` = Data length
 
-Command character: 0x0E = Position set 
+Command character: `0x0E` = Position set 
 
-Parameter content: 0x05 0x00 0x00 0x00 = Sent parameter 
+Parameter content: `0x05 0x00 0x00 0x00` = Sent parameter 
 
 Check bit: Two bytes of data = Check digit
 
-End of frame: 0xED = End of protocol
+End of frame: `0xED` = End of protocol
 
-Send content: 0x0E 0x05 0x00 0x00 0x00 
+Send content: `0x0E 0x05 0x00 0x00 0x00 `
 
 Description: The high parameter data [0~3] is put in front followed by lower data in _IQ24 format. For the _IQ24 format. _IQ(-128.0)~_IQ(127.999999940) represents the reverse position value full scale and forward position value full scale. If data=_IQ(5.0), the ratio is 5.
 
 <table class="tableizer-table">
 <thead><tr class="tableizer-firstrow"><th colspan="7" style=background:PaleTurquoise>Answer command</th></tr></thead><tbody><tr><th>Frame header</th><th>Device address</th><th>command byte</th><th>Data length</th><th>parameter</th><th>End of frame</th></tr><tr><td>0xEE</td><td>0x01</td><td>0x0E</td><td>0x1</td><td>0x01</td><td>0xED</td></tr></tbody></table>
 
-Frame header: 0xEE = Protocol header 
+Frame header: `0xEE` = Protocol header 
 
-Return device address: 0x01 = Response object ID 
+Return device address: `0x01` = Response object ID 
 
-Data length: 0x1 = Data length of the response 
+Data length: `0x01` = Data length of the response 
 
-Command character: 0x0E = Acknowledgement setting 
+Command character: `0x0E` = Acknowledgement setting 
 
 Current position instruction (corresponding to transmission) 
 
-Parameter content: 0x01 = Parameter response (0x01 indicates successful write) 
+Parameter content: `0x01` = Parameter response (0x01 indicates successful write) 
 
-End of frame: 0xED = end of protocol
+End of frame: `0xED` = end of protocol
 
-Response content: 0x0E 0x01
+Response content: `0x0E 0x01`
 
 ## Transmission process
 
@@ -168,43 +168,41 @@ First handshake with the ECB to use Ethernet communication, after the ECB succes
 
 Send command: 
 
-EE 00 44 00 00 ED to ECB
+`0xEE 0x00 0x44 0x00 0x00 0xED` to ECB
 
 A return command will be received after successful communication: 
 
-EE 00 44 00 01 01 ED 
+`0xEE 0x00 0x44 0x00 0x01 0x01 0xED` 
 
 Send the protocol by broadcast (ie send the protocol to 192.168.1.255) to get ECB IP address and send other commands through the ip address.
 
 ### Query actuator
 
 Send command: 
-EE 00 02 00 00 ED 
+`0xEE 0x00 0x02 0x00 0x00 0xED` 
 The ID and mac address information will be sent after successful communication. Since it is necessary to poll and find the actuator, this instruction takes about 0.5s to return the actuator id. If it is not received actuator address information for a long time, it can be considered that no actuator is successfully connected. Return instruction example: 
-EE 06 02 00 04 01 64 5A DF 3B 3F ED 
-06 is actually the actuator ID, 01 64 5A DF is the actuator mac address. (When multiple actuators are successfully connected, this command will be returned multiple for many times)
+`0xEE 0x06 0x02 0x00 0x04 0x01 0x64 0x5A 0xDF 0x3B 0x3F 0xED `
+`0x06` is actually the actuator ID, `0x01 0x64 0x5A 0xDF` is the actuator mac address. (When multiple actuators are successfully connected, this command will be returned multiple for many times)
 
 
 ### Communicating with the actuator
 
 
-After successfully querying the actuator, the actuator can communicate with the actuator according to the actuator ID, for example, the command to start the actuator with ID 6 is: EE 06 2A 00 01 01 7E 80 ED 
-06 is the actuator ID and 2A is the command to turn on or turn off the actuator, 00 01 is the data length, 01 is the boot (00 is the shutdown), 7E 80 is the CRC check code.
-(#!pages/Ethernet_Communication_Protocol.md#CRC校验码计算方法 "wikilink")。
+After successfully querying the actuator, the actuator can communicate with the actuator according to the actuator ID, for example, the command to start the actuator with ID 6 is: `0xEE 0x06 0x2A 0x00 0x01 0x01 0x7E 0x80 0xED`
+`0x060x` is the actuator ID and `0x2A` is the command to turn on or turn off the actuator, `0x00 0x01` is the data length, `0x01` is the boot (`0x00` is the shutdown), `0x7E 0x80 `is the CRC check code.
 
-### control actuator
+### Control actuator
 
 ##### Position control
 
 Send command to activate Ladder Position Mode:
-EE 06 07 00 01 06 3F 42 ED
-Data 06 is in trapezoidal position mode [see mode table](#!pages/Ethernet_Communication_Protocol.md#附录B:模式表 "wikilink")，3F 42is[CRC Check code](#!pages/Ethernet_Communication_Protocol.md#CRC校验码计算方法 "wikilink")that will receive a return after successful activation:
-EE 06 07 00 01 01 ED
+`0xEE 0x06 0x07 0x00 0x01 0x06 0x3F 0x42 0xED`
+Data `0x06` is in trapezoidal position mode [see mode table](#!pages/Ethernet_Communication_Protocol.md#附录B:模式表 "wikilink")，`0x3F 0x42` is[CRC Check code](#!pages/Ethernet_Communication_Protocol.md#CRC校验码计算方法 "wikilink")that will receive a return after successful activation:
+`0xEE 0x06 0x07 0x00 0x01 0x01 0xED`
 At this point a speed command can be sent:
-EE 06 0A 00 04 00 01 00 00 01 D8 ED
-The 0A bit sets the speed value command and the 00 01 00 00 bit sets the position value. The value is the set target position 1R. Calculate the IQ24 value obtained by the formula: target position /128*(2^24), IQ24 Please refer to the introduction of[ IQmath for an introduction](#!pages/Ethernet_Communication_Protocol.md#IQmath简介 "wikilink")。
+`0xEE 0x06 0x0A 0x00 0x04 0x00 0x01 0x00 0x00 0x01 0xD8 0xED`
+The `0x0A` bit sets the speed value command and the `0x00 0x01 0x00 0x00` bit sets the position value. The value is the set target position 1R. Calculate the IQ24 value obtained by the formula: target position /128*(2^24), IQ24 Please refer to the introduction of[ IQmath for an introduction](#!pages/Ethernet_Communication_Protocol.md#IQmath简介 "wikilink")。
 
-### Other
 
 Note: the commands for setting the speed current position value are not returned, and other commands are returned. For more communication instructions, please refer to[Ethernet communication protocol command reference](#!pages/Ethernet_Communication_Protocol.md#以太网通信协议命令参考 "wikilink")。
 
@@ -222,16 +220,16 @@ Note: the commands for setting the speed current position value are not returned
 ### Write command
 
 <table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"></tr></thead><tbody><tr><td colspan="3"style=background:PaleTurquoise>2.3.2.1Send data 1 byte, return data 1 byte</td></tr><tr><td style="width:250px">Command name</td><td colspan="2">Write command</td></tr><tr><td>Description</td><td colspan="2">This command class sends a data length of 2, a return data length is 2, and a byte after the data is sent indicates that the parameter content is to be written. (note: a power-on command should be sent to use and a power-off command should be sent before powering off, otherwise the zero position may be lost.)</td></tr><tr><td>Command character</td><td colspan="2"><a href="#!pages/Ethernet_Communication_Protocol.md#Write instruction 1">See write instruction 1</a></td></tr><tr><td>Data length</td><td colspan="2">1</td></tr><tr><td rowspan="2">Data content</td><td>0x01：enable/ power on</td><td rowspan="2">The mode setting is<a href="#!pages/Ethernet_Communication_Protocol.md#Appendix B:mode table">mode table</a></td></tr><tr><td>0x00：disable/power off</td></tr><tr><td>Data length (return value)</td><td colspan="2"><a href="#!pages/Ethernet_Communication_Protocol.md#Write instruction 1">See write instruction 1</a></td></tr><tr><td>Data length (return value)</td><td colspan="2">1</td></tr><tr><td rowspan="2">Lower machine returns data</td><td colspan="2">0x01：Success</td></tr><tr><td colspan="2">0x00：Failed</td></tr></tbody></table>
+<thead><tr class="tableizer-firstrow"></tr></thead><tbody><tr><td colspan="3"style=background:PaleTurquoise>2.3.2.1 Send data 1 byte, return data 1 byte</td></tr><tr><td style="width:250px">Command name</td><td colspan="2">Write command</td></tr><tr><td>Description</td><td colspan="2">This command class sends a data length of 2, a return data length is 2, and a byte after the data is sent indicates that the parameter content is to be written. (note: a power-on command should be sent to use and a power-off command should be sent before powering off, otherwise the zero position may be lost.)</td></tr><tr><td>Command character</td><td colspan="2"><a href="#!pages/Ethernet_Communication_Protocol.md#Write instruction 1">See write instruction 1</a></td></tr><tr><td>Data length</td><td colspan="2">1</td></tr><tr><td rowspan="2">Data content</td><td>0x01：enable/ power on</td><td rowspan="2">The mode setting is<a href="#!pages/Ethernet_Communication_Protocol.md#Appendix B:mode table">mode table</a></td></tr><tr><td>0x00：disable/power off</td></tr><tr><td>Data length (return value)</td><td colspan="2"><a href="#!pages/Ethernet_Communication_Protocol.md#Write instruction 1">See write instruction 1</a></td></tr><tr><td>Data length (return value)</td><td colspan="2">1</td></tr><tr><td rowspan="2">Lower machine returns data</td><td colspan="2">0x01：Success</td></tr><tr><td colspan="2">0x00：Failed</td></tr></tbody></table>
 
 <table class="tableizer-table">
 <thead><tr class="tableizer-firstrow"></tr></thead><tbody><tr><td colspan="2"style=background:PaleTurquoise>Send data 2 byte, return data 1 byte</td></tr><tr><td style="width:250px">Command name</td><td>Write command</td></tr><tr><td>Description</td><td>The data length of this command is 3 bytes, the return data length is 2 bytes, and the sent data 2 bytes at last indicate that the parameter content is to be written, and the high parameter shows in front. The value is 2^8 times the true value.</td></tr><tr><td>Command character</td><td><a href="#!pages/Ethernet_Communication_Protocol.md#Instruction 2">See instruction 2</a></td></tr><tr><td>Data length</td><td>2</td></tr><tr><td rowspan="2">Data content</td><td>The value is formed IQ8</td></tr><tr><td>0x00：Disable/power off</td></tr><tr><td>Instruction (return value)</td><td><a href="#!pages/Ethernet_Communication_Protocol.md#Write command 2">See write command 2</a></td></tr><tr><td>Data length (return value)</td><td>1</td></tr><tr><td rowspan="2">IAS return data</td><td>0x01：Success</td></tr><tr><td>0x00：Fail</td></tr></tbody></table>
 
 <table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th  colspan="3"style=background:PaleTurquoise>2.3.2.3Send data 4 byte, return data is 1 byte or less</th></tr></thead><tbody> <tr><td style="width:250px">Command name</td><td colspan="2">Write command</td></tr><tr><td>Description</td><td  colspan="2">The data length of this command is 5 bytes, the return data length is 2 2 bytes, and the sent data 4 bytes at last indicate that the parameter content is to be written. The value is 2^24 times the true value. (Special instructions are specified in the instruction list)</td></tr><tr><td>Command byte</td><td  colspan="2"><a href="#!pages/Ethernet_Communication_Protocol.md#Write command 3">See write command 3</a></td></tr><tr><td>Data content</td><td  colspan="2">4</td></tr><tr><td>Data content</td><td  colspan="2">The value is formed IQ24 (Special instructions are specified in the instruction list)</td></tr><tr><td>Instruction (return value)</td><td  colspan="2"><a href="#!pages/Ethernet_Communication_Protocol.md#Write command 3">See write command 3</a></td></tr><tr><td>Data length (return value)</td><td  colspan="2">1or0</td></tr><tr><td  rowspan="2">Lower machine returns data</td><td style="width:150px">0x01：Success</td><td  rowspan="2">(There are no return data for the three special instructions, which are marked in the instruction list)</td></tr><tr><td style="width:150px">0x00：Fail</td></tr></tbody></table>
+<thead><tr class="tableizer-firstrow"><th  colspan="3"style=background:PaleTurquoise>2.3.2.3 Send data 4 byte, return data is 1 byte or less</th></tr></thead><tbody> <tr><td style="width:250px">Command name</td><td colspan="2">Write command</td></tr><tr><td>Description</td><td  colspan="2">The data length of this command is 5 bytes, the return data length is 2 2 bytes, and the sent data 4 bytes at last indicate that the parameter content is to be written. The value is 2^24 times the true value. (Special instructions are specified in the instruction list)</td></tr><tr><td>Command byte</td><td  colspan="2"><a href="#!pages/Ethernet_Communication_Protocol.md#Write command 3">See write command 3</a></td></tr><tr><td>Data content</td><td  colspan="2">4</td></tr><tr><td>Data content</td><td  colspan="2">The value is formed IQ24 (Special instructions are specified in the instruction list)</td></tr><tr><td>Instruction (return value)</td><td  colspan="2"><a href="#!pages/Ethernet_Communication_Protocol.md#Write command 3">See write command 3</a></td></tr><tr><td>Data length (return value)</td><td  colspan="2">1Or0</td></tr><tr><td  rowspan="2">Lower machine returns data</td><td>0x01：Success</td><td  rowspan="2">(There are no return data for the three special instructions, which are marked in the instruction list)</td></tr><tr><td  colspan="1">0x00：Fail</td></tr></tbody></table>
 
 <table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th colspan="2"style=background:PaleTurquoise>2.3.2.4Send data 0 byte, return data is 1 byte</th></tr></thead><tbody><tr><td style="width:250px">Command name</td><td>Write command</td></tr><tr><td>Description</td><td>This command class sends a data length of 1, and returns a data length of 2</td></tr><tr><td>Command byte</td><td><a href="#!pages/Ethernet_Communication_Protocol.md#Write command 4">See write command 4</a></td></tr><tr><td>Data length</td><td>0</td></tr><tr><td>Data content</td><td>None</td></tr><tr><td>Command (return value)</td><td><a href="#!pages/Ethernet_Communication_Protocol.md#Write command 4">See write command 4</a></td></tr><tr><td>Data length(return value)</td><td>1</td></tr><tr><td rowspan="2">Lower machine returns data</td><td>0x01：success</td></tr><tr><td>0x00：fail</td></tr></tbody></table>
+<thead><tr class="tableizer-firstrow"><th colspan="2"style=background:PaleTurquoise>2.3.2.4 Send data 0 byte, return data is 1 byte</th></tr></thead><tbody><tr><td style="width:250px">Command name</td><td>Write command</td></tr><tr><td>Description</td><td>This command class sends a data length of 1, and returns a data length of 2</td></tr><tr><td>Command byte</td><td><a href="#!pages/Ethernet_Communication_Protocol.md#Write command 4">See write command 4</a></td></tr><tr><td>Data length</td><td>0</td></tr><tr><td>Data content</td><td>None</td></tr><tr><td>Command (return value)</td><td><a href="#!pages/Ethernet_Communication_Protocol.md#Write command 4">See write command 4</a></td></tr><tr><td>Data length(return value)</td><td>1</td></tr><tr><td rowspan="2">Lower machine returns data</td><td>0x01：success</td></tr><tr><td>0x00：fail</td></tr></tbody></table>
 
 ## Appendix A
 
@@ -349,9 +347,9 @@ In the CRC16_1 method, pchmsg points to the address and wdatalen is the byte len
 
 •	Actuator boot command:
 
-EE 06 2A 00 01 01 7E 80 ED
+`0xEE 0x06 0x2A 0x00 0x01 0x01 0x7E 0x80 0xED`
 
-EE is the frame header, 06 is the actuator ID, 2A is the power-on command character, 00 01 is the data length, 01 is the data content, and ED is the frame tail. The data content 01 calculated by the above method is 7E 80.
+`0xEE` is the frame header, `0x06` is the actuator ID, `0x2A` is the power-on command character, `0x00 0x01` is the data length, `0x01` is the data content, and `0xED` is the frame tail. The data content `0x01` calculated by the above method is `0x7E 0x80`.
 
 ### **A.1 Read instruction code definition table**
 
@@ -376,42 +374,38 @@ EE is the frame header, 06 is the actuator ID, 2A is the power-on command charac
 
 #### Write command 1
 <table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th colspan="3"style=background:PaleTurquoise>A.2.1Command byte</th></tr></thead><tbody>
+<thead><tr class="tableizer-firstrow"><th colspan="3"style=background:PaleTurquoise>A.2.1 Command byte</th></tr></thead><tbody>
  <tr><td>Command byte</td><td>Definition </td><td>Description</td></tr> <tr><td>0x07：</td><td>Set the mode of the specified ID executor</td><td>Set the current mode of the specified ID actuator</td></tr> <tr><td>0x70：</td><td>Current loop filter status</td><td>Set the current loop filter enable/disable for the specified ID actuator</td></tr> <tr><td>0x74：</td><td>Speed loop filter status
 </td><td>Set the speed loop filter enable/disable for the specified ID actuator</td></tr> <tr><td>0x78：</td><td>Position loop filter status</td><td>Set the position loop filter enable/disable for the specified ID actuator</td></tr> <tr><td>0x2A：</td><td>Actuator on/off status</td><td>Set the specified ID actuator to power on/off</td></tr></tbody></table>
 
 #### Write command 2
 <table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th colspan="3"style=background:PaleTurquoise>A.2.2Write command 2</th></tr></thead><tbody>
+<thead><tr class="tableizer-firstrow"><th colspan="3"style=background:PaleTurquoise>A.2.2 Write command 2</th></tr></thead><tbody>
  <tr><td>Command byte</td><td>Definition </td><td>Description</td></tr> <tr><td>0x72：</td><td>Current loop filter bandwidth</td><td>Set the bandwidth (Hz) of the specified ID actuator current loop filter</td></tr> <tr><td>0x76：</td><td>Speed  loop filter bandwidth</td><td>Set the bandwidth (Hz) of the specified ID actuator speed  loop filter</td></tr> <tr><td>0x7A：</td><td>Position loop filter bandwidth</td><td>Set the bandwidth (Hz) of the specified ID actuator position loop filter</td></tr> <tr><td>0x61：</td><td>Current loop filter bandwidth</td><td>Set the bandwidth (Hz) of the specified ID actuator current loop filter</td></tr> <tr><td>0x63：</td><td>Actuator recovery temperature</td><td>Set the recovery temperature of the specified ID actuator °C</td></tr></tbody></table>
 
 #### Write command 3
 <table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th colspan="3"style=background:PaleTurquoise>A.2.3Write command 3</th></tr></thead><tbody>
+<thead><tr class="tableizer-firstrow"><th colspan="3"style=background:PaleTurquoise>A.2.3 Write command 3</th></tr></thead><tbody>
  <tr><td>Command byte</td><td>Definition</td><td>Description </td></tr> <tr><td>0x08：</td><td>Current value</td><td>Sets the current value of the specified ID actuator. (Note: no return data)</td></tr> <tr><td>0x09：</td><td>Current speed value</td><td>Sets the current speed value of the specified ID actuator. (Note: no return data）</td></tr> <tr><td>0x0A：</td><td>Current position value</td><td>Sets the current position value of the specified ID actuator. (Note: no return data)</td></tr> <tr><td>0x0E：</td><td>Current loop P 
-</td><td>Change current loop P of the specified ID actuator</td></tr> <tr><td>0x0F：</td><td>Current loop I </td><td>Change current loop I of the specified ID actuator</td></tr> <tr><td>0x10：</td><td>Speed loop P</td><td>Change speed loop P of the specified ID actuator</td></tr> <tr><td>0x11：</td><td>Speed loop I</td><td>Change speed loop I of the specified ID actuator</td></tr> <tr><td>0x12：</td><td>Position loop P</td><td>Change position loop P of the specified ID actuator</td></tr> <tr><td>0x13：</td><td>Position loop I</td><td>Change position loop I of the specified ID actuator</td></tr> <tr><td>0x1F：</td><td>Maximum speed of position trapezoidal curve</td><td>Change maximum speed of position trapezoidal curve of the specified ID actuator</td></tr> <tr><td>0x20：</td><td>Acceleration of position trapezoidal curve</td><td>Change acceleration of position trapezoidal curve of the specified ID actuator</td></tr> <tr><td>0x21：</td><td>Deceleration speed of position trapezoidal curve</td><td>Change deceleration of position trapezoidal curve of the specified ID actuator</td></tr> <tr><td>0x25：</td><td>Maximum speed of the speed trapezoidal curve</td><td>Change maximum speed of the speed trapezoidal curve of the specified ID actuator</td></tr> <tr><td>0x26：</td><td>Acceleration of velocity trapezoidal curve</td><td>Change acceleration of velocity trapezoidal curve of the specified ID actuator</td></tr> <tr><td>0x27：</td><td>Deceleration of the speed trapezoidal curve</td><td>Change deceleration of velocity trapezoidal curve of the specified ID actuator</td></tr> <tr><td>0x2E：</td><td>Lower limit of current loop output
-</td><td>Change the lower limit of the specified ID actuator current loop output</td></tr> <tr><td>0x2F：</td><td>Upper limit of current loop output
-</td><td>Change the upper limit of the specified ID actuator current loop output</td></tr> <tr><td>0x30：</td><td>Lower limit of speed loop output
-</td><td>Change the lower limit of the specified ID actuator speed loop output</td></tr> <tr><td>0x31：</td><td>Upper limit of speed loop output
-</td><td>Change the upper limit of the specified ID actuator speed loop output</td></tr> <tr><td>0x32：</td><td>Lower limit of position loop output
-</td><td>Change the lower limit of the specified ID actuator position loop output</td></tr> <tr><td>0x33：</td><td>Upper limit of position loop output
-</td><td>Change the upper limit of the specified ID actuator position loop output</td></tr> <tr><td>0x83：</td><td>Upper limit of actuator position</td><td>Change the upper limit of the position of the specified ID actuator</td></tr> <tr><td>0x84：</td><td>Lower limit of actuator position</td><td>Change the position lower limit of the specified ID actuator</td></tr> <tr><td>0x87：</td><td>Actuator's Home value</td><td>Set the Home value of the specified ID executor</td></tr> <tr><td>0x89：</td><td>Actuator position offset</td><td>Set the position offset value of the specified ID actuator</td></tr> <tr><td>0x90：</td><td>The upper current when the actuator is automatically zeroed</td><td>Set the lower limit of the current when the specified ID actuator is automatically reset to zero.</td></tr> <tr><td>0x91：</td><td>The lower current when the actuator is automatically zeroed</td><td>Set the upper limit of the current when the specified ID actuator is automatically reset to zero.</td></tr> <tr><td>0x7E：</td><td>Stall energy</td><td>Set the stall energy of the specified ID actuator. (The value is 75.225 times the true value) The heating energy after blocking, the unit is J</td></tr></tbody></table>
+</td><td>Change current loop P of the specified ID actuator</td></tr> <tr><td>0x0F：</td><td>Current loop I </td><td>Change current loop I of the specified ID actuator</td></tr> <tr><td>0x10：</td><td>Speed loop P</td><td>Change speed loop P of the specified ID actuator</td></tr> <tr><td>0x11：</td><td>Speed loop I</td><td>Change speed loop I of the specified ID actuator</td></tr> <tr><td>0x12：</td><td>Position loop P</td><td>Change position loop P of the specified ID actuator</td></tr> <tr><td>0x13：</td><td>Position loop I</td><td>Change position loop I of the specified ID actuator</td></tr> <tr><td>0x1F：</td><td>Maximum speed of position trapezoidal curve</td><td>Change maximum speed of position trapezoidal curve of the specified ID actuator</td></tr> <tr><td>0x20：</td><td>Acceleration of position trapezoidal curve</td><td>Change acceleration of position trapezoidal curve of the specified ID actuator</td></tr> <tr><td>0x21：</td><td>Deceleration speed of position trapezoidal curve</td><td>Change deceleration of position trapezoidal curve of the specified ID actuator</td></tr> <tr><td>0x25：</td><td>Maximum speed of the speed trapezoidal curve</td><td>Change maximum speed of the speed trapezoidal curve of the specified ID actuator</td></tr> <tr><td>0x26：</td><td>Acceleration of velocity trapezoidal curve</td><td>Change acceleration of velocity trapezoidal curve of the specified ID actuator</td></tr> <tr><td>0x27：</td><td>Deceleration of the speed trapezoidal curve</td><td>Change deceleration of velocity trapezoidal curve of the specified ID actuator</td></tr> <tr><td>0x2E：</td><td>Lower limit of current loop output</td><td>Change the lower limit of the specified ID actuator current loop output</td></tr> <tr><td>0x2F：</td><td>Upper limit of current loop output</td><td>Change the upper limit of the specified ID actuator current loop output</td></tr> <tr><td>0x30：</td><td>Lower limit of speed loop output</td><td>Change the lower limit of the specified ID actuator speed loop output</td></tr> <tr><td>0x31：</td><td>Upper limit of speed loop output
+</td><td>Change the upper limit of the specified ID actuator speed loop output</td></tr> <tr><td>0x32：</td><td>Lower limit of position loop output</td><td>Change the lower limit of the specified ID actuator position loop output</td></tr> <tr><td>0x33：</td><td>Upper limit of position loop output</td><td>Change the upper limit of the specified ID actuator position loop output</td></tr> <tr><td>0x83：</td><td>Upper limit of actuator position</td><td>Change the upper limit of the position of the specified ID actuator</td></tr> <tr><td>0x84：</td><td>Lower limit of actuator position</td><td>Change the position lower limit of the specified ID actuator</td></tr> <tr><td>0x87：</td><td>Actuator's Home value</td><td>Set the Home value of the specified ID executor</td></tr> <tr><td>0x89：</td><td>Actuator position offset</td><td>Set the position offset value of the specified ID actuator</td></tr> <tr><td>0x90：</td><td>The upper current when the actuator is automatically zeroed</td><td>Set the lower limit of the current when the specified ID actuator is automatically reset to zero.</td></tr> <tr><td>0x91：</td><td>The lower current when the actuator is automatically zeroed</td><td>Set the upper limit of the current when the specified ID actuator is automatically reset to zero.</td></tr> <tr><td>0x7E：</td><td>Stall energy</td><td>Set the stall energy of the specified ID actuator. (The value is 75.225 times the true value) The heating energy after blocking, the unit is J</td></tr></tbody></table>
 
 #### Write command 4
 <table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th   colspan="3"style=background:PaleTurquoise>A.2.4Write command 4</th></tr></thead><tbody>
+<thead><tr class="tableizer-firstrow"><th   colspan="3"style=background:PaleTurquoise>A.2.4 Write command 4</th></tr></thead><tbody>
  <tr><td>Command byte</td><td>Definition </td><td>Description</td></tr> <tr><td>0xFE：</td><td>Eliminate the alarm of the lower computer</td><td>Eliminate the alarm action of the lower position machine. After receiving the command, the lower position machine stops the alarm, otherwise the lower position machine is inoperable.</td></tr> <tr><td>0x88</td><td>Clear Homing data</td><td>Clear Homing data</td></tr> <tr><td>0x0D</td><td>Storage parameter</td><td>Store parameters to EEPROM</td></tr></tbody></table>
 
 ## Appendix B:mode commands
 
 <table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th style=background:PaleTurquoise><td style="width:300px">Command byte</th><th style=background:PaleTurquoise><td style="width:300px">Command byte</th></tr></thead><tbody><tr><td>01</td><td>Current mode</td></tr> <tr><td>02</td><td>Speed mode</td></tr> <tr><td>03</td><td>Position mode</td></tr> <tr><td>04</td><td>Teaching mode</td></tr> <tr><td>05</td><td>Playback mode</td></tr> <tr><td>06</td><td>Trapezoidal position mode</td></tr> <tr><td>07</td><td>Trapezoidal speed mode</td></tr> <tr><td>08</td><td>Homing mode</td></tr></tbody></table>
+<thead><tr class="tableizer-firstrow"><th style=background:PaleTurquoise>Command byte</th><th style=background:PaleTurquoise>Command byte</th></tr></thead><tbody>
+ <tr><td>01</td><td>Current mode</td></tr> <tr><td>02</td><td>Speed mode</td></tr> <tr><td>03</td><td>Position mode</td></tr> <tr><td>04</td><td>Teaching mode</td></tr> <tr><td>05</td><td>Playback mode</td></tr> <tr><td>06</td><td>Trapezoidal position mode</td></tr> <tr><td>07</td><td>Trapezoidal speed mode</td></tr> <tr><td>08</td><td>Homing mode</td></tr></tbody></table>
 
 ## Appendix C: error warning commands
 
 
 <table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th style=background:PaleTurquoise>command</th><th style=background:PaleTurquoise>command</th></tr></thead><tbody>
+<thead><tr class="tableizer-firstrow"><th style=background:PaleTurquoise>command</th><th style=background:PaleTurquoise>Command</th></tr></thead><tbody>
  <tr><td>0x0001</td><td>Over voltage error</td></tr> <tr><td>0x0002</td><td>Under-voltage error</td></tr> <tr><td>0x0004</td><td>Locked rotor error</td></tr> <tr><td>0x0008</td><td>Overheating error</td></tr> <tr><td>0x0010</td><td>Parameter reading error</td></tr> <tr><td>0x0020</td><td>Multiturn counting error</td></tr> <tr><td>0x0040</td><td>Some errors with inverter temperature sensor </td></tr> <tr><td>0x0080</td><td>CAN communication error</td></tr> <tr><td>0x0100</td><td>Some errors with motor temperature sensor</td></tr> <tr><td>0x0200</td><td>Step of position mode is over 1</td></tr> <tr><td>0x0400</td><td>DRV protection</td></tr> <tr><td>other</td><td>error with equipment</td></tr> <tr><td>explanation</td><td>Many errors can be reported at the same time. If the return data is 0005, then the error will be reported as 0001 
 Overvoltage abnormality and 0004 locked rotor error.</td></tr></tbody></table>
 
