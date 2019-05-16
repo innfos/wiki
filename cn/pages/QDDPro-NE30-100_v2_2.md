@@ -1,6 +1,6 @@
 # 参数介绍 
 ## QDD Pro-NE30-100工程参数图[单位：毫米]
-![QDD Pro-NE30-101]( ../img/Qddpro_3510三视图.png )
+![QDD Pro-NE30-101]( ../img/Qddpro_NE30三视图.png )
 ### 3D 模型
 [模型文件]( ../img/QDD_Pro-NE30-100-70_v2_2.step.zip )
 
@@ -17,5 +17,5 @@ Note:谐波为柔轮固定方式，所示实际减速比为谐波标称减速比
 
 
 # 版本变更记录
-<table class="tableizer-table">
-<thead><tr class="tableizer-firstrow" style="background: PaleTurquoise; color: black;width:500px"><th >版本</th><th>更新时间</th><th>更新内容</th></tr></thead><tr><td>V2.2.0</td><td>2019-05-09</td><td>当前版本</th></tr></thead><tr><td>V1.0.0</td><td>2019-04</td><td>第一个版本</td></tr></tbody></table>
+<table class="tableizer-table"><thead><tr class="tableizer-firstrow" style="background: PaleTurquoise; color: black;width:500px"><th >版本</th><th>更新时间</th><th>更新内容</th></tr></thead><tr><td>V2.3.0</td><td>2019-05-15</td><td>型号更新</th></tr><tr><td>V2.2.0</td><td>2019-05-09</td><td>当前版本</th></tr></thead><tr><td>V1.0.0</td><td>2019-04</td><td>第一个版本</td></tr></tbody></table>
+
