@@ -9,7 +9,7 @@
 
 [About INNFOS](gimmicks3.md)
 
-[About Contact](gimmicks4.md)
+[About Contact](pages/about.md)
 
 [Products]()
 
