@@ -367,11 +367,6 @@ EE 06 2A 00 01 01 7E 80 ED
 
 <table style="width:400px"><thead><tr class="tableizer-firstrow"><th style=background:PaleTurquoise;width:100px>指令符</th><th style=background:PaleTurquoise>指令符</th></tr></thead><tbody> <tr><td>0x0001</td><td>过压异常</td></tr> <tr><td>0x0002</td><td>欠压异常</td></tr> <tr><td>0x0004</td><td>堵转异常</td></tr> <tr><td>0x0008</td><td>过热异常</td></tr> <tr><td>0x0010</td><td>读写参数异常</td></tr> <tr><td>0x0020</td><td>多圈计数异常</td></tr> <tr><td>0x0040</td><td>逆变器温度传感器异常</td></tr> <tr><td>0x0080</td><td>CAN通信异常</td></tr> <tr><td>0x0100</td><td>电机温度传感器异常</td></tr> <tr><td>0x0200</td><td>位置模式阶跃大于1</td></tr> <tr><td>0x0400</td><td>DRV保护</td></tr> <tr><td>其他</td><td>设备异常</td></tr> <tr><td>注释</td><td>可同时报警多个错误，如返回数据为0005，则错误为0001过压异常与0004堵转异常</td></tr></tbody></table>
 
-## 附录D:型号表
-
-<table style="width:600px"><thead><tr class="tableizer-firstrow"><th style=background:PaleTurquoise>执行器型号</th><th style=background:PaleTurquoise>电流满量程</th><th style=background:PaleTurquoise>电机端速度满量程</th><th style=background:PaleTurquoise>输出端速度满量程</th></tr></thead><tbody> <tr><td>QDD Pro-8108-50</td><td>33A</td><td>1500RPM</td><td>30RPM</td></tr> <tr><td>QDD-8108-6</td><td>33A</td><td>1500RPM</td><td>250RPM</td></tr> <tr><td>DD-8108</td><td>33A</td><td>1500RPM</td><td>1500RPM</td></tr> <tr><td>QDD Pro-6010-50</td><td>33A</td><td>4200RPM</td><td>84RPM</td></tr> <tr><td>QDD-6010-36</td><td>33A</td><td>4200RPM</td><td>117RPM</td></tr> <tr><td>DD-6010</td><td>33A</td><td>4200RPM</td><td>4200RPM</td></tr> <tr><td>QDD Pro-3510-50</td><td>16.5A</td><td>6000RPM</td><td>120RPM</td></tr> <tr><td>QDD-3510-6</td><td>16.5A</td><td>6000RPM</td><td>1000RPM</td></tr> <tr><td>QDD-3510-36</td><td>16.5A</td><td>6000RPM</td><td>166.7RPM</td></tr> <tr><td>DD-3510</td><td>16.5A</td><td>6000RPM</td><td>6000RPM</td></tr> <tr><td>QDD-2305-6</td><td>16.5A</td><td>6000RPM</td><td>1000RPM</td></tr> <tr><td>QDD-2305-36</td><td>16.5A</td><td>6000RPM</td><td>166.7RPM</td></tr> <tr><td>DD-2305</td><td>16.5A</td><td>6000RPM</td><td>6000RPM</td></tr></tbody></table>
-
-*   输出端速度不同是因为个别型号执行器内置减速器，使输出的最大转速降低，提高扭矩。IQ换算时按照电机端速度满量程的值计算。
 
 ## 版本变更记录
 
