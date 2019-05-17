@@ -73,7 +73,7 @@ Twisted pairs are recommended to use as CAN communication cables because of its 
 
 ### 3.1 communication protocol format
 
-<img src="../img/wiring2_13.png" style="width:600px">
+<img src="../img/wiring2-13.png" style="width:600px">
 
 **图3-1**
 
@@ -120,7 +120,7 @@ For example, when the floating point number -2.0 is converted to a fixed point n
 
 The range of representation of the 32-bit signed number is: -2147483648 to 2147483647. If we convert the maximum value of 2147483647 of the signed fixed point number to a floating point number corresponding to Q, the result is: floating point number 2147483647/2^24=127.999999940.
 
-* See Appendix E for specific methods of IQ value conversion.
+* See Appendix D for specific methods of IQ value conversion.
 
 ### 3.2 CAN communication protocol command application example
 
