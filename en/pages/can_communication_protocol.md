@@ -274,7 +274,7 @@ The shutdown command must be send before power-off, otherwise the zero position 
 
 * Correspondingly, if the current or speed mode settings commands need to be sent,the parameter values need to be convert firstly (divided by the corresponding maximum value), to get a number in the range of -1 to 1, and then perform IQ conversion. The steps and methods for sending commands are the same as the position mode. Note that the data format used by each command, if it's in IQ8 format, convert the 2^24 in the formula to 2^8 and then convert it.
 
-## Appendix F: Version Change Record
+## Appendix : Version Change Record
 
 **The following table briefly describes the version change record.**
 
