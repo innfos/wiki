@@ -2,9 +2,9 @@
 =======
 
 
-## linux平台环境配置
+## Linux平台环境配置
 
-*   需要安装ubuntu16.04 LTS 及以上的系统
+*   需要安装Ubuntu16.04 LTS 及以上的系统
 *   cmake 安装：打开终端输入命令
 
 ```sh
@@ -32,9 +32,9 @@ $ sudo ifconfig enp0s25 static 192.168.1.111
 
 <img src="../img/020.png" style="width:600px">
 
-## windows平台环境配置
+## Windows平台环境配置
 
-*   需要win7 sp1以上的64位windows操作系统
+*   需要win7 sp1以上的64位Windows操作系统
 *   如果电脑防火墙已开启，打开控制面板，选择系统和安全，打开Windows Defender 防火墙，点击左侧高级设置，点击入站规则
 
 <img src="../img/001.png" style="width:600px">
