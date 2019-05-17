@@ -16,7 +16,7 @@ If there's any questions,please contact us at support@innfos.com.
 ##  Software & Development
 ------------
 
-  * [CAN Communication Protocol][can_communication_protocol.md]
+  * [CAN Communication Protocol](can_communication_protocol.md)
   * [Ethernet Configuration](pages/Ethernet_Configuration.md)
   * [Ethernet Communication Protocol](pages/Ethernet_Communication_Protocol.md)
   * [Ethernet Communication SDK](pages/Ethernet_Communication_SDK.md)
