@@ -373,7 +373,7 @@ CRC16_1方法中，pchMsg指向要校验内容的地址，wDataLen为要校验�
 <table style="width:700px"><thead><tr class="tableizer-firstrow"><th   colspan="3"style=background:PaleTurquoise>A.2.4写入指令5</th></tr></thead><tbody> <tr><td style="width:100px">指令符</td><td style="width:200px">定义</td><td>说明</td></tr><tr><td>0x3D</td><td>修改执行器ID</td><td>修改执行器ID,修改成功后需要使用新的ID进行通信。</td></tr></tbody></table>
 
 ## 附录B:模式表
-<table style="width:400px"><thead><tr class="tableizer-firstrow"><th style="background:PaleTurquoise;width:100px">指令符</th><th style=background:PaleTurquoise>指令符</th></tr></thead><tbody> <tr><td>01</td><td>电流模式</td></tr><tr><td>02</td><td>速度模式</td></tr><tr><td>03</td><td>位置模式</td></tr><tr><td>04</td><td>示教模式</td></tr><tr><td>05</td><td>回放模式</td></tr><tr><td>06</td><td>梯形位置模式</td></tr><tr><td>07</td><td>梯形速度模式</td></tr><tr><td>08</td><td>homing模式</td></tr></tbody></table>
+<table style="width:400px"><thead><tr class="tableizer-firstrow"><th style="background:PaleTurquoise;width:100px">指令符</th><th style=background:PaleTurquoise>指令符</th></tr></thead><tbody> <tr><td>01</td><td>电流模式</td></tr><tr><td>02</td><td>速度模式</td></tr><tr><td>03</td><td>位置模式</td></tr><tr><tr><td>06</td><td>梯形位置模式</td></tr><tr><td>07</td><td>梯形速度模式</td></tr><tr><td>08</td><td>homing模式</td></tr></tbody></table>
 
 ## 附录C:报警指令表
 
@@ -382,5 +382,5 @@ CRC16_1方法中，pchMsg指向要校验内容的地址，wDataLen为要校验�
 
 ## 版本变更记录
 
-<table class="tableizer-table"><thead><tr class="tableizer-firstrow"><th style=background:PaleTurquoise>版本号</th><th style=background:PaleTurquoise>更新时间</th><th style=background:PaleTurquoise>更新内容</th></tr></thead><tbody> <tr><td>V1.0.0</td><td>18.04.28</td><td>增加100报警指令</td></tr></tbody></table>
+<table style="width:800px"><thead><tr style="background:PaleTurquoise"><th style="width:80px">版本号</th><th style="width:100px">更新时间</th><th style="width:100px">更改类型</th><th style="width:80px">位置</th><th>更新内容</th></tr></thead><tbody> <tr><td>V1.0.0</td><td>18.04.28</td><td>增加</td><td>全文</td><td>第一版</td></tr><tr><td rowspan="3">V1.1.0</td><td rowspan="3">19.05.17</td><td>增加</td><td>附录A</td><td>增加协议0x3D,0x45,0x53,0x6B-0x6E,0x8B,0x8C,0x94的协议说明</td></tr><tr><td>修改</td><td>全文</td><td>专有名词大写，关键字变色</td></tr><tr><td>增加</td><td>以太网通信协议命令参考</td><td>增加读取命令4和写入命令5类型</td></tr></tbody></table>
 
