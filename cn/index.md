@@ -9,7 +9,7 @@
 
   * [基本介绍](pages/introduction.md)
   * [基于CAN总线的通信方式](pages/CAN_Based_Communication.md)
-  * [基于ECB的通信方式](pages/ECB_Based_Communication.md)
+  * [基于以太网的通信方式](pages/ECB_Based_Communication.md)
 
 
 
