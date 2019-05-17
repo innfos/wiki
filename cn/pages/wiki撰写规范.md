@@ -25,11 +25,8 @@ Note: 在同一标题内容下，表格宽度统一。
 
 <img src="../img/026.png" style="width:600px">
 
-Note: 所有页面中的图片格式以本代码为准，特殊情况下除外。如产品系列中的图片格式；带图号的图号要将图号居中对齐，代码格式如下：
-
 <p><div class="md-text" style="text-align: center;"><strong>图3-1</strong></div></p >
-
-
+Note: 所有页面中的图片格式以本代码为准，特殊情况下除外。如产品系列中的图片格式；带图号的要将图号居中对齐，代码格式如下：
 
 
 ### 图片要求
@@ -40,70 +37,11 @@ Note: 所有页面中的图片格式以本代码为准，特殊情况下除外�
 ### 版本变更记录
 在制作版本变更记录表格时，要有版本号、更新时间、更改类型、位置及更新内容，并以此为规范运用于每个文档中。其中版本号命名格式为VX.X.X, 例如：V1.0.0。 更新时间格式为20XX.XX.XX, 例如：2019.05.17。（型号数据因为涉及的修改很多，可以在稳定之后，小的修改采用以上格式）
 
-
-This is an H2
--------------
-
-
-### 锚点与链接 Links
-
-[普通链接](http://localhost/)
-
-[普通链接带标题](http://localhost/ "普通链接带标题")
-
-直接链接：<https://github.com>
-
-[锚点链接][anchor-id] 
-
-
-
-
-
-#### 行内代码 Inline code
-
-执行命令：`npm install marked`
-
-
-
-
-
-#### JS代码　
-
+### JS代码格式　
 ```javascript
 function test(){
 	console.log("Hello world!");
 }
- 
-(function(){
-    var box = function(){
-        return box.fn.init();
-    };
-
-    box.prototype = box.fn = {
-        init : function(){
-            console.log('box.init()');
-
-			return this;
-        },
-
-		add : function(str){
-			alert("add", str);
-
-			return this;
-		},
-
-		remove : function(str){
-			alert("remove", str);
-
-			return this;
-		}
-    };
-    
-    box.fn.init.prototype = box.fn;
-    
-    window.box =box;
-})();
-
 var testBox = box();
 testBox.add("jQuery").remove("jQuery");
 ```
