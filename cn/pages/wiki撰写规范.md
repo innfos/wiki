@@ -54,3 +54,10 @@ function test(){
 var testBox = box();
 testBox.add("jQuery").remove("jQuery");
 ```
+
+## 版本变更记录
+
+**下表简单描述了版本变更记录**
+
+<table style="width:800px"><thead><tr style="background:PaleTurquoise"><th style="width:80px">版本号</th><th style="width:100px">更新时间</th><th style="width:100px">更改类型</th><th style="width:80px">位置</th><th>更新内容</th></tr></thead><tbody><tr><td>V1.0.0</td><td>17.12.15</td><td>修改</td><td>第二章通配线</td><td>更新了CAN接口定义</td></tbody></table>
+
