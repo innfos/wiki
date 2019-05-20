@@ -15,7 +15,7 @@ IAS是一款可视化的INNFOS执行器调试软件，主要功能包括控制�
 
 1. 解压下载好的压缩包
 2. 进入IAS目录
-3. 双击INNFOS Actuator Studio图标或者使用下面命令启动执行器：
+3. 双击INNFOS Actuator Studio图标或者使用下面命令启动IAS：
 
 ```sh
 $ ./INNFOS\ Actuator\ Studio
