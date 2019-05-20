@@ -7,7 +7,7 @@ IAS is a visual debug control software for INNFOS actuator, the main functions o
 
 ## Download
 
-### linux
+### Linux
 
 *   visit this link [download link](https://github.com/innfos/INNFOS-Actuator-Studio-linux.git) or you can use command blow:
 
@@ -15,7 +15,7 @@ IAS is a visual debug control software for INNFOS actuator, the main functions o
 $ git clone https://github.com/innfos/INNFOS-Actuator-Studio-linux.git
 ```
 
-### windows
+### Windows
 
  visit this link [download link](https://github.com/innfos/INNFOS-Actuator-Studio-windows.git) to download Setup.exe file or you can use command blow:
  
@@ -25,7 +25,7 @@ $ git clone https://github.com/innfos/INNFOS-Actuator-Studio-windows.git
 
 ## IAS installation
 
-### linux plantform
+### Linux plantform
 
 1. Unzip the IAS to your desired location
 2. Enter the IAS folder
@@ -37,12 +37,12 @@ $ ./INNFOS\ Actuator\ Studio
 
 ### Windows plantform
 
-1.Double-click the installation software &quot;Setup.exe&quot; 
+1.Double-click the installation software "Setup.exe" 
 
 ![install01.jpg](../img/install01.jpg)
 
 
-2.After entering the installation interface, click &quot;Next&quot;
+2.After entering the installation interface, click "Next"
 
 ![1-2.png](../img/1-2.png)
 
@@ -50,7 +50,7 @@ $ ./INNFOS\ Actuator\ Studio
 
 ![1-3.png](../img/1-3.png)
 
-4.Select the installation location and click &quot;Install&quot;
+4.Select the installation location and click "Install"
 
 ![1-4.png](../img/1-4.png)
 
@@ -58,11 +58,11 @@ $ ./INNFOS\ Actuator\ Studio
 
 ![1-5.png](../img/1-5.png)
 
-6.If encounter an alarm from anti-virus software, please select &quot;Allow this operation&quot;
+6.If encounter an alarm from anti-virus software, please select "Allow this operation"
 
 ![1-7.png](../img/1-7.png)
 
-7.Click &quot;Finish&quot; to complete the software installation.
+7.Click "Finish" to complete the software installation.
 
 ![1-7.png](../img/1-7.png)
 
@@ -72,11 +72,11 @@ $ ./INNFOS\ Actuator\ Studio
 
 ![install02.jpg](../img/install02.jpg)
 
-2.Click &quot;confirm that you've read the document&quot;, then click &quot;next&quot; to enter the next interface. </br>(Note:Please click“show the document!” to read the software instructions when use the product for the first time.) 
+2.Click "confirm that you've read the document", then click "next" to enter the next interface. </br>(Note:Please click“show the document!” to read the software instructions when use the product for the first time.) 
 
 ![2-2.png](../img/2-2.png)
 
-3.Select the actuator communication mode (The default setting is Ethernet communication), then click &quot;next&quot;
+3.Select the actuator communication mode (The default setting is Ethernet communication), then click "next"
 
 ![2-3.png](../img/2-3.png)
 
@@ -156,7 +156,7 @@ Description: after the mixed practice of the current setting value and current f
 
 <span style="color: red">[Note: In current loop mode, the Id axial force is generally set to 0.
 
-For&quot;Minimal&quot;set a fixed value of -0.82, for&quot;Maximal&quot;set a fixed value of 0.82.]</span> 
+For"Minimal"set a fixed value of -0.82, for"Maximal"set a fixed value of 0.82.]</span> 
 
 ![Fig3-3.png](../img/Fig3-3.png)
 
@@ -168,7 +168,7 @@ For&quot;Minimal&quot;set a fixed value of -0.82, for&quot;Maximal&quot;set a fi
 
 2.Parameter setting: application mode
 
-*   Enter the current value in&quot;Iq Setting&quot;(Mark 1), press&quot;Enter&quot; or &quot;Set Current&quot; to start the INNFOS actuator,
+*   Enter the current value in"Iq Setting"(Mark 1), press"Enter" or "Set Current" to start the INNFOS actuator,
 
     then the actuator will output the corresponding torque.
 
@@ -179,7 +179,7 @@ For&quot;Minimal&quot;set a fixed value of -0.82, for&quot;Maximal&quot;set a fi
 
 ![Fig3-5.png](../img/Fig3-5.png)
 
-3.Click on &quot;View Graph&quot; to open the oscilloscope
+3.Click on "View Graph" to open the oscilloscope
 
 ![Fig3-6.png](../img/Fig3-6.png)
 
@@ -229,13 +229,13 @@ Logic block diagram of the INNFOS actuator system:
 
 ![velocity.jpg](../img/velocity.jpg)
 
-![• Logic diagram of INNFOS actuation system](微伺服软件界面最终00-43 4-1.png "fig:• Logic diagram of INNFOS actuation system")
+![? Logic diagram of INNFOS actuation system](微伺服软件界面最终00-43 4-1.png "fig:? Logic diagram of INNFOS actuation system")
 
 Description: After the speed value setting and the speed feedback value are added and subtracted, the PI module is passed through the optional filter and then the module outputs the current to the current loop. When the current loop mode is ensured to operate correctly, the motor is driven by the current loop. The encoder feeds the speed parameter back to the system to form a closed loop.
 
 * * *
 
-### Click on &quot;Velocity Regulation&quot; to enter speed loop mode
+### Click on "Velocity Regulation" to enter speed loop mode
 
 ![Fig4-2.png](../img/Fig4-2.png)
 
@@ -262,13 +262,13 @@ Description: After the speed value setting and the speed feedback value are adde
 
 ### Speed loop usage
 
-1.Click on &quot;Active Velocity Mode&quot; to activate the current speed loop mode.
+1.Click on "Active Velocity Mode" to activate the current speed loop mode.
 
 ![Fig4-4.png](../img/Fig4-4.png)
 
 2.Speed loop basic parameter settings:
 
-*   Enter the speed value (unit: RPM) in the &quot;Setting&quot; box. Press Enter or click on &quot;Set Velocity&quot; on the right, then INNFOS SCA starts to rotate.
+*   Enter the speed value (unit: RPM) in the "Setting" box. Press Enter or click on "Set Velocity" on the right, then INNFOS SCA starts to rotate.
 *   After rotating, the status value column, as shown in the figure, can be seen as the parameter values of different INNFOS SCA.
 *   Adjust the Proportional box and the Integral box to adjust the PI value(Mark 2).
 *   The Mininal box and Maximum box shows the output limit for speed loop (followed by Current loop input),
@@ -278,7 +278,7 @@ Description: After the speed value setting and the speed feedback value are adde
 
 ![Fig4-5.png](../img/Fig4-5.png)
 
-3.Click on &quot;View Graph&quot; to open the oscilloscope
+3.Click on "View Graph" to open the oscilloscope
 
 ![Fig4-6.png](../img/Fig4-6.png)
 
@@ -303,7 +303,7 @@ Description: After the speed value setting and the speed feedback value are adde
 
 ![Fig4-8.png](../img/Fig4-8.png)
 
-6.Set the parameters in the &quot;View Graph&quot; view to better check the current INNFOS SCA different parameter waveforms, adjusting the value of Proportional and Integral (PI), so that the performance will be reflected in the form of waveform in the oscilloscope.
+6.Set the parameters in the "View Graph" view to better check the current INNFOS SCA different parameter waveforms, adjusting the value of Proportional and Integral (PI), so that the performance will be reflected in the form of waveform in the oscilloscope.
 
 <span style="color: red">Note: The unused channel offset is set to 0 and the amplification is set to 1 (channel2 and channel4 in the figure) or click the OFF to shut it down.</span> 
 
@@ -357,7 +357,7 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 2.Position loop basic parameter settings:
 
-*   Enter the position value (unit: R) in the “Setting” box（Mark.1）, Press &quot;Set Position&quot; (Mark.4)and then the INNFOS actuator starts to rotate.
+*   Enter the position value (unit: R) in the “Setting” box（Mark.1）, Press "Set Position" (Mark.4)and then the INNFOS actuator starts to rotate.
 
     INNFOS actuator will stop rotate after arrives the assigned input position.
 *   After rotating, the status value column (Mark. 5) can see the current parameter values.
@@ -366,14 +366,14 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 ![Fig5-5.png](../img/Fig5-5.png)
 
-3.Click on &quot;View Graph&quot; to open the oscilloscope
+3.Click on "View Graph" to open the oscilloscope
 
 ![Fig5-6.png](../img/Fig5-6.png)
 
 4.Oscilloscope Function Description
 
-*   &quot;Prescalar&quot; can set the time of the entire waveform (Mark 1);
-*   &quot;trig_value&quot; sets the trigger value (Mark 2);
+*   "Prescalar" can set the time of the entire waveform (Mark 1);
+*   "trig_value" sets the trigger value (Mark 2);
 *   Position at the Fig.3 saves, pauses, and automatically scales the parameters;
 *   Channel1 sets the offset and magnification of the given waveform (Mark 4);
 *   Channel2 sets the offset and amplification of the INNFOS actuator current (Mark 5);
@@ -386,12 +386,12 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 *   Enter the positional value 1 in Value1 (unit: R)
 *   Enter positional value 2 in Value2 (unit: R)
-*   Enter the time (unit: ms) in “Interval”, the input parameter is of the rotating for one time (for example, Value1 is 2, Value2 is -2, and Interval is 1000. After startup, INNFOS Actuator first goes to position 2, 1000mS and then goes to position-2.Go to position 2 again after 1000ms, and then run it repeatedly until the user clicks &quot;Stop&quot;).
-*   Click the &quot;Start&quot; button to turn on the INNFOS actuator.
+*   Enter the time (unit: ms) in “Interval”, the input parameter is of the rotating for one time (for example, Value1 is 2, Value2 is -2, and Interval is 1000. After startup, INNFOS Actuator first goes to position 2, 1000mS and then goes to position-2.Go to position 2 again after 1000ms, and then run it repeatedly until the user clicks "Stop").
+*   Click the "Start" button to turn on the INNFOS actuator.
 
 ![Fig5-8.png](../img/Fig5-8.png)
 
-6. Click &quot;View Graph&quot; to open the oscilloscope window, you can view the given (this the time is the square wave generator), current, speed, position four-channel parameter waveform. <span style="color: red">Note: No the channel offset used is set to and the zoom is set to 1 (as in channel 2 and in the image to the right) Channel3）</span>
+6. Click "View Graph" to open the oscilloscope window, you can view the given (this the time is the square wave generator), current, speed, position four-channel parameter waveform. <span style="color: red">Note: No the channel offset used is set to and the zoom is set to 1 (as in channel 2 and in the image to the right) Channel3）</span>
 
 
 
@@ -405,7 +405,7 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 ## Position loop S-curve mode
 
-### Click on &quot;Profile Velocity Mode&quot; to enter position loop S-curve mode
+### Click on "Profile Velocity Mode" to enter position loop S-curve mode
 
 ![Fig6-1.png](../img/Fig6-1.png)
 
@@ -433,7 +433,7 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 2.Basic parameters of position loop S-curve mode:
 
-*   Enter the position of the rotation in the &quot;Target&quot; box (unit: R) and the INNFOS actuator will start to rotate to the specified position.
+*   Enter the position of the rotation in the "Target" box (unit: R) and the INNFOS actuator will start to rotate to the specified position.
 *   After the INNFOS actuator rotating, the values of the current INNFOS actuator can be seen in the status value column(right in Figure 4).
 *   Accelerate box and Decelerate box, at the right picture 2, are the rise and fall of speed in the S curve mode. For example, the larger the Accelerate value is, the shorter time the INNFOS actuator reaches the maximum speed needs; and the smaller the Accelerate value is , the longer time that INNFOS actuator reaches the maximum speed is needed. The larger the Decelerate value, the shorter the time that the INNFOS actuator will decrease from maximum speed to zero. The smaller the Decelerate value, the longer the INNFOS actuator will decrease from maximum speed to zero.
 *   “Max” limits the maximum speed of the INNFOS actuator and increases as the value increases. As shown in the three figures on the right, the current maximum speed is 1000 RPM.
@@ -445,7 +445,7 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 ## Velocity loop S-curve mode
 
-### Click on &quot;Profile Velocity Mode&quot; to enter the velocity loop S-curve mode
+### Click on "Profile Velocity Mode" to enter the velocity loop S-curve mode
 
 ![Fig7-1.png](../img/Fig7-1.png)
 
@@ -473,15 +473,15 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 2.Basic parameters of Velocity loop S-mode:
 
-*   Enter the speed value of the INNFOS actuator (unit: RPM) in the &quot;Target&quot; box and the INNFOS actuator will start to rotate until the input value is reached.
+*   Enter the speed value of the INNFOS actuator (unit: RPM) in the "Target" box and the INNFOS actuator will start to rotate until the input value is reached.
 *   After the INNFOS actuator rotating, the values of the current INNFOS actuator can be seen in the status value column, (right in Figure 3).
-*   The &quot;Accelerate&quot;, &quot;Decelerate&quot; and &quot;Max&quot; items at 2 in the right figure are the rectified parameters of the S curve.
+*   The "Accelerate", "Decelerate" and "Max" items at 2 in the right figure are the rectified parameters of the S curve.
 
 ![Fig7-4.png](../img/Fig7-4.png)
 
 ## Homing mode
 
-### Click on &quot;Homing Mode&quot; to enter the homing mode
+### Click on "Homing Mode" to enter the homing mode
 
 ![Fig8-1.png](../img/Fig8-1.png)
 
@@ -507,7 +507,7 @@ Click on “Active Homing Mode” to activate the current homing mode.
 
 ### Manual calibration of left and right limits
 
-1.Click on the red box position &quot;Active Homing Mode&quot; on the right to enter the homing mode. 
+1.Click on the red box position "Active Homing Mode" on the right to enter the homing mode. 
 
 ![Fig9-1.png](../img/Fig9-1.png)
 
@@ -515,11 +515,11 @@ Click on “Active Homing Mode” to activate the current homing mode.
 
 ![Fig9-2.png](../img/Fig9-2.png)
 
-3.Manually adjust the joint to the left mechanical limit and click on &quot;Max_Set&quot;, at which point the value at the &quot;Max Pos&quot; will change.
+3.Manually adjust the joint to the left mechanical limit and click on "Max_Set", at which point the value at the "Max Pos" will change.
 
 ![Fig9-3.png](../img/Fig9-3.png)
 
-4.Manually adjust the joint to the right mechanical limit and click on &quot;Min_Set&quot;. The value of the &quot;Min Pos&quot; column will change.
+4.Manually adjust the joint to the right mechanical limit and click on "Min_Set". The value of the "Min Pos" column will change.
 
 ![Fig9-4.png](../img/Fig9-4.png)
 
@@ -531,7 +531,7 @@ Click on “Active Homing Mode” to activate the current homing mode.
 
 ![Fig9-6.png](../img/Fig9-6.png)
 
-7.Click the &quot;Download&quot; button to save the current parameters. 
+7.Click the "Download" button to save the current parameters. 
 
 ![Fig9-7.png](../img/Fig9-7.png)
 
@@ -548,7 +548,7 @@ As shown in the figure, an error message is displayed.
 
 ### Error handling
 
-Click &quot;OK&quot; and &quot;Clear Errors&quot; to solve the problem. After clearing, the INNFOS actuator enters current loop mode. 
+Click "OK" and "Clear Errors" to solve the problem. After clearing, the INNFOS actuator enters current loop mode. 
 
 ![File9-2.png](../img/File9-2.png)
 
