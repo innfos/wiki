@@ -548,6 +548,5 @@ Click "OK" and "Clear Errors" to solve the problem. After clearing, the INNFOS a
 ![File9-2.png](../img/File9-2.png)
 
 
-# Version Information
-<table><thead><tr style="background:PaleTurquoise"><th>Version</th><th>	Update time</th><th>	update contents</th></tr></thead><tbody><tr><td>V1.0.0</td><td>2019-04</td><td>The First Version</td></tr>
-</tbody></table>
+# Version change record
+<table><thead><tr style="background:PaleTurquoise"><th>Version</th><th>Update time</th><th>Change type</th><th>Position</th><th>update contents</th></tr></thead><tbody><tr><td>V1.1.0</td><td>2019.05.20</td><td>Modify</td><td>all content</td><td>fix link and uppercase</td></tr><tr><td>V1.0.0</td><td>2019.04.23</td><td>Add</td><td>all content</td><td>The First Version</td></tr>
