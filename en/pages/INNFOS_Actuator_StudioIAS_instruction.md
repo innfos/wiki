@@ -9,7 +9,7 @@ IAS is a visual debug control software for INNFOS actuator, the main functions o
 
 ### Linux
 
-*   visit this link [download link](https://github.com/innfos/INNFOS-Actuator-Studio-linux.git) or you can use command blow:
+Visit this link [download link](https://github.com/innfos/INNFOS-Actuator-Studio-linux.git) or you can use command blow:
 
 ```sh
 $ git clone https://github.com/innfos/INNFOS-Actuator-Studio-linux.git
@@ -17,7 +17,7 @@ $ git clone https://github.com/innfos/INNFOS-Actuator-Studio-linux.git
 
 ### Windows
 
- visit this link [download link](https://github.com/innfos/INNFOS-Actuator-Studio-windows.git) to download Setup.exe file or you can use command blow:
+ Visit this link [download link](https://github.com/innfos/INNFOS-Actuator-Studio-windows.git) to download Setup.exe file or you can use command blow:
  
 ```sh
 $ git clone https://github.com/innfos/INNFOS-Actuator-Studio-windows.git
