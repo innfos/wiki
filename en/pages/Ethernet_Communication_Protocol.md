@@ -392,7 +392,5 @@ Actuator boot command:
 ##  Version change records
 
 Version changes recorded as below:
+<table style="width:800px"><thead><tr style="background:PaleTurquoise"><th style="width:80px">Version</th><th style="width:100px">Time</th><th style="width:100px">Change type</th><th style="width:80px">Position</th><th>Content</th></tr></thead><tbody><tr><td rowspan="3">V1.1.0</td><td rowspan="3">2019.05.17</td><td>Add</td><td>Appendix A</td><td>Add introductions of 0x3D,0x45,0x53,0x6B-0x6E,0x8B,0x8C,0x9</td></tr><tr><td>Modify</td><td>All content</td><td>Uppercase some words,change color of keywords</td></tr><tr><td>Add</td><td>Ethernet Communication Protocol Command Reference</td><td>Add write command 5 and read command 4</td></tr><tr><td>V1.0.0</td><td>2019.04.28</td><td>Add</td><td>All content</td><td>The first version</td></tr></tbody></table>
 
-<table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th style=background:PaleTurquoise>Version</th><th style=background:PaleTurquoise>Update time</th><th style=background:PaleTurquoise>Changed type</th></tr></thead><tbody>
- <tr><td>V1.0.0</td><td>18.04.28</td><td>position</td></tr></tbody></table>
