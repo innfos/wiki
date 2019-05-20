@@ -379,7 +379,7 @@ Actuator boot command:
 
 ## Appendix B:mode commands
 
-<table class="tableizer-table"><thead><tr class="tableizer-firstrow"><th style=background:PaleTurquoise>Command byte</th><th style=background:PaleTurquoise >Command byte</th></tr></thead><tbody><tr><td>01</td><td>Current mode</td></tr> <tr><td>02</td><td>Speed mode</td></tr> <tr><td>03</td><td>Position mode</td></tr> <tr><td>04</td><td>Teaching mode</td></tr> <tr><td>05</td><td>Playback mode</td></tr> <tr><td>06</td><td>Trapezoidal position mode</td></tr> <tr><td>07</td><td>Trapezoidal speed mode</td></tr> <tr><td>08</td><td>Homing mode</td></tr></tbody></table>
+<table class="tableizer-table"><thead><tr class="tableizer-firstrow"><th style=background:PaleTurquoise>Command byte</th><th style=background:PaleTurquoise >Command byte</th></tr></thead><tbody><tr><td>01</td><td>Current mode</td></tr> <tr><td>02</td><td>Speed mode</td></tr> <tr><td>03</td><td>Position mode</td></tr> <tr> <tr><td>06</td><td>Trapezoidal position mode</td></tr> <tr><td>07</td><td>Trapezoidal speed mode</td></tr> <tr><td>08</td><td>Homing mode</td></tr></tbody></table>
 
 ## Appendix C: error warning commands
 
