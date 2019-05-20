@@ -8,7 +8,8 @@ Ethernet communication
 
 <img src="../img/all.jpg" style="width:600px">
 
-From front to back, from left to right: ECB, HUB, 2 terminal resistors, feedback brake capacitor, ECB cable, INNFOS actuator, SCA actuator cable, emergency stop switch + power supply.
+From front to back, from left to right: `ECB`, `HUB`, 2 `terminal resistors`, `feedback brake capacitor`, `ECB cable`, `INNFOS actuator`, `SCA actuator cable`, `emergency stop switch` + `power supply`.
+
 **Connect the power supply**
 
 *   Connect the power supply to the `HUB`.
@@ -99,7 +100,7 @@ Click the "1" or "2" button to start the actuator, and the button "1" is green m
 
 For more information on IAS, please visit the[INNFOS Actuator Studio(IAS)instructions](#!pages/INNFOS_Actuator_Studio_IAS_instruction.md).
 
-# Version Information
+# Version change record
 <table class="tableizer-table"><thead><tr class="tableizer-firstrow" style="background: PaleTurquoise; color: black;width:500px"><th >version</td><td>date</td><td>Modify content</td></tr>
  <tr><td>V1.0.0</td><td>2019-05</td><td>The first version</td></tr>
 </tbody></table>
