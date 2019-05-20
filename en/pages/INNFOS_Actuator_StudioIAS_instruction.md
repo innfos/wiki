@@ -7,7 +7,7 @@ IAS is a visual debug control software for INNFOS actuator, the main functions o
 
 ## Download
 
-### Linux
+### Linux platform
 
 Visit this link [download link](https://github.com/innfos/INNFOS-Actuator-Studio-linux.git) or you can use command blow:
 
@@ -15,7 +15,7 @@ Visit this link [download link](https://github.com/innfos/INNFOS-Actuator-Studio
 $ git clone https://github.com/innfos/INNFOS-Actuator-Studio-linux.git
 ```
 
-### Windows
+### Windows platform
 
  Visit this link [download link](https://github.com/innfos/INNFOS-Actuator-Studio-windows.git) to download Setup.exe file or you can use command blow:
  
@@ -114,7 +114,6 @@ Logic block diagram of the INNFOS actuator system:
 
 ![current.jpg](../img/current.jpg)
 
-![Logic block diagram of the INNFOS actuator system](微伺服软件界面最终00-44 3-1.png "fig:Logic block diagram of the INNFOS actuator system")
 
 Description: after the mixed practice of the current setting value and current feedback value, passing through the PI module, the optional filter and the limiting module to drive the motor, the motor feeds back the current parameter to the system to form a closed loop.
 
@@ -229,7 +228,6 @@ Logic block diagram of the INNFOS actuator system:
 
 ![velocity.jpg](../img/velocity.jpg)
 
-![? Logic diagram of INNFOS actuation system](微伺服软件界面最终00-43 4-1.png "fig:? Logic diagram of INNFOS actuation system")
 
 Description: After the speed value setting and the speed feedback value are added and subtracted, the PI module is passed through the optional filter and then the module outputs the current to the current loop. When the current loop mode is ensured to operate correctly, the motor is driven by the current loop. The encoder feeds the speed parameter back to the system to form a closed loop.
 
@@ -318,8 +316,6 @@ Description: After the speed value setting and the speed feedback value are adde
 Logic block diagram of the INNFOS actuator system：
 
 ![position.jpg](../img/position.jpg)
-
-![Logic block diagram of the INNFOS actuator system:](微伺服软件界面最终00-44 5-1.png "fig:Logic block diagram of the INNFOS actuator system:")
 
 Introduction of the block diagram:
 
@@ -437,7 +433,6 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 *   After the INNFOS actuator rotating, the values of the current INNFOS actuator can be seen in the status value column(right in Figure 4).
 *   Accelerate box and Decelerate box, at the right picture 2, are the rise and fall of speed in the S curve mode. For example, the larger the Accelerate value is, the shorter time the INNFOS actuator reaches the maximum speed needs; and the smaller the Accelerate value is , the longer time that INNFOS actuator reaches the maximum speed is needed. The larger the Decelerate value, the shorter the time that the INNFOS actuator will decrease from maximum speed to zero. The smaller the Decelerate value, the longer the INNFOS actuator will decrease from maximum speed to zero.
 *   “Max” limits the maximum speed of the INNFOS actuator and increases as the value increases. As shown in the three figures on the right, the current maximum speed is 1000 RPM.
-*   关于位置环S曲线模式的原理分析参见附录D。
 
 ![Fig6-4.png](../img/Fig6-4.png)
 
