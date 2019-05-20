@@ -1,8 +1,27 @@
-# 软件的使用
+INNFOS Actuator Studio(IAS)
+=======
+
+## 介绍
+
+IAS是一款可视化的INNFOS执行器调试软件，主要功能包括控制、修改执行器ID、可视化图表调节执行器、动作编辑等等。IAS可以直观、方便的修改和控制INNFOS执行器。使用IAS无需编程经验，但是不适合复杂的功能开发。
+
+## 下载IAS
+
+•如果电脑系统为Linux,访问[IAS(Linux)](https://github.com/innfos/INNFOS-Actuator-Studio-linux.git)获取最新版本的IAS(INNFOS Actuator Studio)(Linux),如果电脑系统是Windows请访问 [IAS(Windows)](https://github.com/innfos/INNFOS-Actuator-Studio-windows.git).
 
 ## 软件的安装
 
-1.双击安装软件“Setup V3.2.2exe”（V3.2.2为当前软件版本）
+### linux plantform
+
+1. 解压下载好的压缩包</br> 2. 进入IAS目录</br> 3. 双击INNFOS Actuator Studio图标或者使用下面命令启动执行器：
+
+```sh
+$ ./INNFOS\ Actuator\ Studio
+```
+
+### Windows plantform
+
+1.双击安装软件“Setup.exe”
 
 ![install01.jpg](../img/install01.jpg )
 
