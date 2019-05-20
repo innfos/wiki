@@ -27,7 +27,9 @@ $ git clone https://github.com/innfos/INNFOS-Actuator-Studio-windows.git
 
 ### linux plantform
 
-1. Unzip the IAS to your desired location</br> 2. Enter the IAS folder</br> 3. Launch the program by either double clicking the INNFOS Actuator Studio icon or using the command
+1. Unzip the IAS to your desired location
+2. Enter the IAS folder
+3. Launch the program by either double clicking the INNFOS Actuator Studio icon or using the command
 
 ```sh
 $ ./INNFOS\ Actuator\ Studio
