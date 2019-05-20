@@ -3,15 +3,15 @@ Ethernet Communication SDK
 
 ## Instruction
 
-*   the api provides a user-friendly interface that includes serial or ethernet communication (recommended) with multiple innfos actuators to send commands to multiple actuators simultaneously or to obtain actuator status and parameter information.
-*   it is recommended that users who are new to the api should read the examples in the sdk first.
+*   the SDK provides a user-friendly interface that includes serial or ethernet communication (recommended) with multiple innfos actuators to send commands to multiple actuators simultaneously or to obtain actuator status and parameter information.
+*   it is recommended that users who are new to the API should read the examples in the SDK first.
 
-## Sdk download and directory description
+## SDK download and directory description
 
 
 #### download
 
-*   visit the link download link to [download link](https://github.com/innfos/ActuatorController_SDK.git) download the sdk related files or execute the following command directly
+*   visit the link download link to [download link](https://github.com/innfos/ActuatorController_SDK.git) download the SDK related files or execute the following command directly
 
 
 ```sh
@@ -121,7 +121,7 @@ int nErrorConnection = pController->m_sError->s_Connect([=](uint8_t nDeviceId,ui
 pController->autoRecoginze();
 ```
 
-*   The event loop is a necessary step to ensure the internal communication of sdk. It is necessary to ensure that the event loop is not blocked so that sdk can trigger various signals.
+*   The event loop is a necessary step to ensure the internal communication of SDK. It is necessary to ensure that the event loop is not blocked so that SDK can trigger various signals.
 
 ```cpp
 //execution controller event loop
@@ -306,7 +306,7 @@ If you use the `profile position` mode to rotate the actuator, the maximum speed
 **code description**
     
 
-*   •	This sample program automatically starts the actuator. After successful startup, the actuator properties can be adjusted. The speed loop current output adjusts the actuator torque under the speed loop. The position loop speed output adjusts the speed of the position loop. See the sca quick start instructions for details.
+*   ?	This sample program automatically starts the actuator. After successful startup, the actuator properties can be adjusted. The speed loop current output adjusts the actuator torque under the speed loop. The position loop speed output adjusts the speed of the position loop. See the sca quick start instructions for details.
 
     
     
@@ -426,11 +426,11 @@ int nOperationConnection = pController->m_sOperationFinishedL->s_Connect([&amp;]
 $./feedback_sync -e
 ```
 
-*   getactuatorattributewithack and setactuatorattributewithack are the interfaces of the two synchronous responses provided by sdk. Corresponding to getactuatorattribute and setactuatorattribute, the properties of the executor can be get synchronously. Calling getactuatorattributewithack and setactuatorattributewithack will block the current program until the result is returned (regardless of success or failure).
+*   getactuatorattributewithack and setactuatorattributewithack are the interfaces of the two synchronous responses provided by SDK. Corresponding to getactuatorattribute and setactuatorattribute, the properties of the executor can be get synchronously. Calling getactuatorattributewithack and setactuatorattributewithack will block the current program until the result is returned (regardless of success or failure).
 
 **code description**
 
-*   `getActuatorAttributeWithACK` and `setActuatorAttributeWithACK`are the interfaces of the two synchronous responses provided by sdk. Corresponding to`getActuatorAttribute` and `setActuatorAttribute`，you can get or set the properties of the executor synchronously. Calling`getActuatorAttributeWithACK` and `setActuatorAttributeWithACK`will block the current program until the result is returned (regardless of success or failure).
+*   `getActuatorAttributeWithACK` and `setActuatorAttributeWithACK`are the interfaces of the two synchronous responses provided by SDK. Corresponding to`getActuatorAttribute` and `setActuatorAttribute`，you can get or set the properties of the executor synchronously. Calling`getActuatorAttributeWithACK` and `setActuatorAttributeWithACK`will block the current program until the result is returned (regardless of success or failure).
 
 ```cpp
 
@@ -457,7 +457,7 @@ ActuatorController * pController = ActuatorController::getInstance();
 Please refer to the <a href="#!pages/Ethernet_Configuration.md#windows平台环境配置"> windowsenvironment configuration</a>
 
 
-#### •	Sample code compilation
+#### ?	Sample code compilation
 
 *   run cmake-gui to appear as the right interface:
 *   the source path is `…\example` in the directory structure, containing the cmakelists.txt file. The build path can be customized, being used to generate the project file. After the path is configured, click the generate button to pop up the following interface.
@@ -465,7 +465,7 @@ Please refer to the <a href="#!pages/Ethernet_Configuration.md#windows平台环�
 <img src="../img/011.png" style="width:600px">
 
 
-*   if the red box is not a 64-bit generator, click on the drop-down triangle, select the 64-bit generator, and then click the finish button. Once successful, the visual studio project file will be formed and can be compiled with visual studio. Compiling the complete project to generate a bin directory, there is a debug or release folder (corresponding to the compiled version), the file in the directory structure `…\sdk\lib\windows_x64\debug`or`…\sdk\lib\windows_x64\release` is copied to the debug or release directory under the bin of the corresponding version. Double-clicking the exe in the directory will run the sample program normally.
+*   if the red box is not a 64-bit generator, click on the drop-down triangle, select the 64-bit generator, and then click the finish button. Once successful, the visual studio project file will be formed and can be compiled with visual studio. Compiling the complete project to generate a bin directory, there is a debug or release folder (corresponding to the compiled version), the file in the directory structure `…\SDK\lib\windows_x64\debug`or`…\SDK\lib\windows_x64\release` is copied to the debug or release directory under the bin of the corresponding version. Double-clicking the exe in the directory will run the sample program normally.
 
 <img src="../img/012.png" style="width:600px">
 
@@ -488,7 +488,7 @@ Open a command line window and go to the bin directory, enter the command ./look
 <img src="../img/013.png" style="width:600px">
 
 
-##### •	Monitor actuator status
+##### ?	Monitor actuator status
 
 
 *   open a command line window and go to the bin directory and enter the command ./monitoractuator.exe -e
@@ -573,27 +573,27 @@ The acquisition of the length id and the mutual conversion can be performed, and
 ./feedback_sync.exe -e
 ```
 
-*   run`feedback_sync.exe`，to associate the corresponding signal. The operation in the callback is an asynchronous response and does not block the current program. Synchronous response will block the current program until sdk returns the result. In comparison, the synchronous response is simple but inefficient because it needs to wait for the actuator response (and the actuator part does not have a synchronous response, such as setting position, speed, current etc.) If the efficiency requirements are high, an asynchronous response is recommended.
+*   run`feedback_sync.exe`，to associate the corresponding signal. The operation in the callback is an asynchronous response and does not block the current program. Synchronous response will block the current program until SDK returns the result. In comparison, the synchronous response is simple but inefficient because it needs to wait for the actuator response (and the actuator part does not have a synchronous response, such as setting position, speed, current etc.) If the efficiency requirements are high, an asynchronous response is recommended.
 
 ## SDK instructions
 
 ### overview
 
-*   SDK provides an interface for communication with the actuator. It can search, status query, property adjustment and custom control of the connected actuator through serial port or ethernet. If you want to quickly understand the basic content and usage of sdk, please see the relevant code in example/src
+*   SDK provides an interface for communication with the actuator. It can search, status query, property adjustment and custom control of the connected actuator through serial port or ethernet. If you want to quickly understand the basic content and usage of SDK, please see the relevant code in example/src
 
-### Use sdk in the project
+### Use SDK in the project
 
 
-*   this sdk follows the `c++11` standard, so make sure the compile option supports `c++11`（before building the project (eg -std=c++11 in gcc);
-*   the basic steps to integrate sdk into your project (preferably refer to cmakelists.txt in example):
-*   add sdk/include, sdk/include/asio to the project's include directory to associate methods in the shared library;
-*   the library file directory sdk/lib/linux_x86_64 (the windows directories are sdk/lib/debug and sdk/lib/release) so that the executable can be linked to the shared library and the runtime can be associated with the shared library;
+*   this SDK follows the `c++11` standard, so make sure the compile option supports `c++11`（before building the project (eg -std=c++11 in gcc);
+*   the basic steps to integrate SDK into your project (preferably refer to cmakelists.txt in example):
+*   add SDK/include, SDK/include/asio to the project's include directory to associate methods in the shared library;
+*   the library file directory SDK/lib/linux_x86_64 (the windows directories are SDK/lib/debug and SDK/lib/release) so that the executable can be linked to the shared library and the runtime can be associated with the shared library;
 *   add the necessary elements to the build process (such as target_link_libraries in cmake)
 
 ### Namespaces
 
 
-* the namespace actuator is defined in ../sdk/include/`Actuator` define.h and enumerates all the types and type values used in sdk:
+* the namespace actuator is defined in ../SDK/include/`Actuator` define.h and enumerates all the types and type values used in SDK:
 
 <table style="width:600px"><thead><tr><th colspan="2" style=background:PaleTurquoise>Connection status for connection status determination of actuator and can[ConnectStatus]</th></tr></thead><tbody>
  <tr><td>command byte</td><td>description</td></tr> <tr><td>NO_CONNECT,</td><td>no connection</td></tr> <tr><td>CAN_CONNECTED=0x02,</td><td>CANcommunication connection succeeded</td></tr> <tr><td>ACTUATOR_CONNECTED=0x04,</td><td>actuator connection succeeded</td></tr></tbody></table>
