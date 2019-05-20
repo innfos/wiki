@@ -117,7 +117,7 @@ Description: The high parameter data [0~3] is put in front followed by lower dat
 **Example 2. Write command**
 
 <table class="tableizer-table">
-<thead ><tr class="tableizer-firstrow"><th  colspan="7" style=background:PaleTurquoise>Set the ratio P of the current loop with actuator ID 1 (set value is 5）</th></tr></thead><tbody><tr><th>Frame header</th><th>Device address</th><th>command byte</th><th>Data length</th><th>parameter</th><th>CRC codecheck</th><th>End of frame</th></tr><tr><td>0xEE</td><td>0x01</td><td>0x0E</td><td>0x4</td><td>0x05 0x00 0x00 0x00</td><td>2 bytes</td><td>0xED</td></tr></tbody></table>
+<thead ><tr class="tableizer-firstrow"><th  colspan="7" style=background:PaleTurquoise>Set the ratio P of the current loop with actuator ID 1 (set value is 5）</th></tr></thead><tbody><tr><th>Frame header</th><th>Device address</th><th>command byte</th><th>Data length</th><th>parameter</th><th>CRC codecheck</th><th>End of frame</th></tr><tr><td>0xEE</td><td>0x01</td><td>0x0E</td><td>0x04</td><td>0x05 0x00 0x00 0x00</td><td>2 bytes</td><td>0xED</td></tr></tbody></table>
 
 Frame header: `0xEE` = Protocol header 
 
@@ -125,7 +125,7 @@ Device address: `0x01` = Set object ID
 
 Data length: `0x04` = Data length
 
-Command character: `0x0E` = Position set 
+Command character: `0x0E` = Current proportion set 
 
 Parameter content: `0x05 0x00 0x00 0x00` = Sent parameter 
 
