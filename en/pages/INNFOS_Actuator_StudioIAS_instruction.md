@@ -10,23 +10,28 @@ IAS is a visual debug control software for INNFOS actuator, the main functions o
 ### linux
 
 *   visit this link [download link](https://github.com/innfos/INNFOS-Actuator-Studio-linux.git) or you can use command blow:
-<div class="sourceCode">
 
-    $ <span class="kw">git</span> clone https://github.com/innfos/INNFOS-Actuator-Studio-linux.git`</pre></div>
+```sh
+$ git clone https://github.com/innfos/INNFOS-Actuator-Studio-linux.git
+```
 
-    ### windows
+### windows
 
-*   visit this link [download link](https://github.com/innfos/INNFOS-Actuator-Studio-windows.git) to download Setup.exe file or you can use command blow:
-    <div class="sourceCode"><pre class="sourceCode bash">`$ <span class="kw">git</span> clone https://github.com/innfos/INNFOS-Actuator-Studio-windows.git`</pre></div>
+ visit this link [download link](https://github.com/innfos/INNFOS-Actuator-Studio-windows.git) to download Setup.exe file or you can use command blow:
+ 
+```sh
+$ git clone https://github.com/innfos/INNFOS-Actuator-Studio-windows.git
+```
 
-    ## IAS installation
+## IAS installation
 
-    ### linux plantform
+### linux plantform
 
-    1. Unzip the IAS to your desired location</br> 2. Enter the IAS folder</br> 3. Launch the program by either double clicking the INNFOS Actuator Studio icon or using the command
+1. Unzip the IAS to your desired location</br> 2. Enter the IAS folder</br> 3. Launch the program by either double clicking the INNFOS Actuator Studio icon or using the command
 
-    <div class="sourceCode"><pre class="sourceCode bash">`$ <span class="kw">./INNFOS\ Actuator\ Studio</span>
-</div>
+```sh
+$ ./INNFOS\ Actuator\ Studio
+```
 
 ### Windows plantform
 
