@@ -16,6 +16,6 @@ Brushless servo motor</td></tr><tr><td>Voltage range</td><td>24~45 VDC</td></tr>
 
 
 # Version Information
-<table class="tableizer-table"><thead><tr class="tableizer-firstrow" style="background: PaleTurquoise; color: black;width:500px"><th >version</td><td>date</td><td>Modify content</td></tr><tr><td>V3.0</td><td>2019-05-22</td><td>Model update</th></tr><tr><td>V2.2.0</td><td>2019-05-09</td><td>Current version</td></tr>
+<table class="tableizer-table"><thead><tr class="tableizer-firstrow" style="background: PaleTurquoise; color: black;width:500px"><th >version</td><td>date</td><td>Modify content</td></tr><tr><td>V3.0</td><td>2019-05-22</td><td>Model update</th></tr><tr><td>V2.2.0</td><td>2019-05-09</td><td>The second version</td></tr>
  <tr><td>V1.0.0</td><td>2019-04</td><td>The first version</td></tr>
 </tbody></table>
