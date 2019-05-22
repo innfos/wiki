@@ -87,50 +87,50 @@ Common problems
 
 **Limit minimum/maximum value?**
 
-*   限制电机的输出，快速使用说明有介绍</br>
+*   Limit motor output refers to quick instructions</br>
 
-**请问咱们电机的额定电流是12安，我们用上位机测试的时候有达到过20安以上，这个情况正常吗?**
+**Please let us know that the rated current of the motor is 12 A, but when we tested with the upper computer, it has reached more than 20 A. Is this normal?**
 
-*   上位机显示的电流是相电流，额定电流是母线电流</br>
+*   The current displayed by the host computer is the phase current, and the rated current is the bus current.</br>
 
-**请问咱们电机内部采集编码器的频率是多少啊?**
+**What is the frequency of the internal encoder acquisition of the motor?**
 
-*   我们内部是以20K频率采数据。可以根据您的需求速率发送实际速度通信带宽越高就越快</br>
+*   We use internal data at 20K to send actual speed according to your demand rate. The faster the communication bandwidth, the faster.</br>
 
-**位置里面的单位（R）是里面的电机转一圈的意思吗?**
+**Is the unit (R) inside the position mode meaning that the motor inside turns one turn?**
 
-*   是，对于QDD-NE30-36，里面转一圈，外面转10度</br>
+*   Yes, (QDD-3510-36) turns inside and 10 degrees outside (QDD-3510-36) will turn.</br>
 
-**我如果控制电机，在电流模式下，如果每两毫秒发一个电流，电机能识别吗?**
+**Can the motor in current mode recognize if a current is sent every two milliseconds？**
 
-*   可以，连接数量多可能不能。</br>
+*   Yes, but if there are too many, it may cannot be connected.</br>
 
-**电机读出来的速度单位是什么啊?**
+**What is the speed unit that the motor reads out?**
 
-*   rpm，转每分 Revolutions per minute</br>
+*   rpm, turn per minute Revolutionsperminute</br>
 
-**上位机显示的速度是转子转速吗?**
+**Is the speed displayed by the upper level controlling the rotor speed?**
 
-*   是，计算输出端速度，需要比例换算</br>
+*   Yes, to calculate the output speed need proportional conversion</br>
 
-**堵转能量设置不进去?**
+**The stall energy setting does not go in?**
 
-*   设置完回车，然后保存</br>
+*   Set the carriage return and save</br>
 
 ## 操作问题
 
-**原始编码器数据怎么导出?**
+**How to export the original encoder data?**
 
-*    我们当前只能获取执行器转的圈数
+*    We currently only get the number of turns of the actuator
 
-**电流模式下速度怎么控制?**
+**How to control the speed in current mode?**
 
-*   电流模式下控制不了速度，只能限制最大速度，从限幅处限制，
+*   The speed cannot be controlled in the current mode, only the maximum speed can be limited, and the limit is limited.
 
-**电机堵转后的状态，如何清除电机堵转错误?**
+**How to clear the motor stall error after the motor is blocked?**
 
-*   点击ClearErrors按键
+*   Click the ClearErrors button
 
-## 故障排除
+## Troubleshooting
 
-## 开发问题
+## Development issues
