@@ -29,6 +29,8 @@ Note: 在同一标题内容下，表格宽度统一。
 ### 图片要求
 - 图片上传时，请查看图片的大小，若图片过大请将图片压缩后上传；
 
+- 中、英文档中所有图片统一使用英文图片；
+
 - 在编写图片代码时要统一格式。代码格式如下效果：
 
 Note: 所有页面中的图片格式以本代码为准，特殊情况下除外。如产品系列中的图片格式；
@@ -75,5 +77,5 @@ testBox.add("jQuery").remove("jQuery");
 ## 版本变更记录
 **下表简单描述了版本变更记录**
 
-<table style="width:600px"><thead><tr style="background:PaleTurquoise"><th style="width:80px">版本号</th><th style="width:100px">更新时间</th><th style="width:100px">更改类型</th><th style="width:80px">位置</th><th>更新内容</th></tr></thead><tbody><tr><td>V1.0.0</td><td>2019.05.17</td><td>添加</td><td>wiki编辑规范</td><td>全文添加</td></tbody></table>
+<table style="width:600px"><thead><tr style="background:PaleTurquoise"><th style="width:80px">版本号</th><th style="width:100px">更新时间</th><th style="width:100px">更改类型</th><th style="width:80px">位置</th><th>更新内容</th></tr></thead><tbody><tr><td>V1.0.1</td><td>2019.05.22</td><td>添加</td><td>图片、版本变更</td><td>添加内容</td><tr><td>V1.0.0</td><td>2019.05.17</td><td>添加</td><td>wiki编辑规范</td><td>全文添加</td></tbody></table>
 
