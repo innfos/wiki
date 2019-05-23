@@ -17,4 +17,4 @@ Note:The harmonic gear drive is fixed by the flexible wheel, so the actual gear 
 ## Version Information
 
 
-<table style="width:600px"><thead><tr style="background:PaleTurquoise"><th style="width:80px">VERSION</th><th style="width:100px">DATE</th><th style="width:100px">TYPE </th><th style="width:80px">LOCATION</th><th>MODIFY CONTENT</th></tr></thead><tbody><tr><td>V2.2.0</td><td>2019.05.09</td><td>Adding</td><td>QDDPro-PR60-80-90</td><td>Addiing text</th></tr></thead><tbody><tr><td>V1.0.0</td><td>2019.04.11</td><td>Adding</td><td>QDDPro-PR60-80-90</td><td>Addiing text</td></tbody></table>
+<table style="width:600px"><thead><tr style="background:PaleTurquoise"><th style="width:80px">VERSION</th><th style="width:100px">DATE</th><th style="width:100px">TYPE </th><th style="width:80px">LOCATION</th><th>MODIFY CONTENT</th></tr></thead><tbody><tr><td>V2.2.0</td><td>2019.05.09</td><td>Adding</td><td>QDDPro-NE30-50</td><td>Addiing text</th></tr></thead><tbody><tr><td>V1.0.0</td><td>2019.04.11</td><td>Adding</td><td>QDDPro-NE30-50</td><td>Addiing text</td></tbody></table>
