@@ -16,5 +16,7 @@ Note:谐波为柔轮固定方式，因此实际减速比为谐波标称减速比
 <table class="tableizer-table" style="width:700px">
 <thead><tr class="tableizer-firstrow"><th colspan="4" style="background: PaleTurquoise; color: black;">接插件型号图</th></tr></thead><tbody><tr><td>标号</td><td>Signal</td><td>颜色</td><td >端子引脚分布</td></tr><tr><td>1</td><td>PVDD</td><td>黑线</td><td rowspan="9"><img src="../img/配线2-2.png" style="width:450px"></td></tr><tr><td>3</td><td>PVDD</td><td>黑线</td></tr><tr><td>5</td><td>PVDD</td><td>黑线</td></tr><tr><td>2</td><td>GND</td><td>黑线</td></tr><tr><td>4</td><td>GND</td><td>黑线</td></tr><tr><td>6</td><td>CAN-GND</td><td>灰线</td></tr><tr><td>7</td><td>CAN-L</td><td>灰线</td></tr><tr><td>8</td><td>CAN-H</td><td>灰线</td></tr></tbody></table>
 
-# 版本变更记录
-<table class="tableizer-table"><thead><tr class="tableizer-firstrow" style="background: PaleTurquoise; color: black;width:500px"><th >版本</th><th>更新时间</th><th>更新内容</th></tr></thead><tr><td>V2.2.0</td><td>2019-05-09</td><td>当前版本</th></tr></thead><tr><td>V1.0.0</td><td>2019-04</td><td>第一个版本</td></tr></tbody></table>
+## 版本变更记录
+
+
+<table style="width:600px"><thead><tr style="background:PaleTurquoise"><th style="width:80px">版本号</th><th style="width:100px">更新时间</th><th style="width:100px">更改类型</th><th style="width:80px">位置</th><th>更新内容</th></tr></thead><tbody><tr><td>V2.2.0</td><td>2019.05.09</td><td>添加</td><td>QDDPro-PR60-80-80</td><td>全文添加</th></tr></thead><tbody><tr><td>V1.0.0</td><td>2019.04.11</td><td>添加</td><td>QDDPro-PR60-80-80</td><td>全文添加</td></tbody></table>
