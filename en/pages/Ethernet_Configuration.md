@@ -35,44 +35,54 @@ After the configuration, enter`ifconfig`to see the ip address.
 ##  Windows platform environment configuration
 
 *   requires 64-bit Windows operating system above win7 sp1
-*   If the computer firewall turned on, open the Control Panel, select System and Security, open the Windows Defender Firewall, click Advanced Settings on the left, and click Inbound Rules.
-<img src="../img/001.png" style="width:600px">
 
-New rule 
+A new inbound rule need setting if the computer firewall is turned on:
 
-<img src="../img/002.png" style="width:600px">
+Enter cmd in the search bar, right click on the command prompt, select Run as administrator and open a command window
+<img src="../img/cmd.png" style="width:600px">
 
-Select the port and click Next
+Enter the new inbound rule command
+```sh
+netsh advfirewall firewall add rule name="Actuator" protocol=UDP dir=in action=allow
+```
 
-<img src="../img/003.png" style="width:600px">
 
-Select udp ，select all local ports, and click Next 
+Run the delete rule command if it is no longer needed
+```sh
+netsh advfirewall firewall delete rule name="Actuator" protocol=UDP dir=in
+```
 
-<img src="../img/004.png" style="width:600px">
+IP address configuration:
+Enter cmd in the search bar, right click on the command prompt, select Run as administrator, open a command prompt window
 
-Allow connection, click next 
+<img src="../img/cmd.png" style="width:600px">
 
-<img src="../img/005.png" style="width:600px">
+View the Ethernet NIC name
+```sh
+ipconfig
+```
 
-By default, all settings are checked and click Next.
+<img src="../img/ipconfig.jpg" style="width:600px">
 
-<img src="../img/006.png" style="width:600px">
 
-Fill in the name and click “complete” 
+Ethernet NIC name in the above figure is Ethernet, modify the IP address of NIC, and enter the command.
 
-<img src="../img/007.png" style="width:600px">
+```sh
+netsh interface ip set address name="Ethernet" source=static addr=192.168.1.111  mask=255.255.255.0  gateway=192.168.1.1 
+```
+<img src="../img/staticIP.png" style="width:600px">
 
-Ip address configuration,
 
-Open the Control Panel, select Network and Internet, then choose Network and Sharing Center, then select Change Adapter Settings, right click on Ethernet, select Property
+The `111` in `addr=192.168.1.111` can be modified to other values to avoid IP address conflicts (recommended 100~200)
 
-<img src="../img/008.png" style="width:600px">
+If reset the IP address to automatic assignment, enter the command
 
-Select TCP/IPv4, then select Property, and configuration is shown as:
+```sh
+netsh interface ip set address name="Ethernet" source=dhcp
+```
 
-119 of 192.168.1.119 in the ip address can be replaced with any integer between 100 and 200, and then click Enter after configuration.
+<img src="../img/dhcp.png" style="width:600px">
 
-<img src="../img/009.png" style="width:600px">
 
 
 # Version Information
