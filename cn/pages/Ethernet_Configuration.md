@@ -28,14 +28,15 @@ $ sudo ifconfig enp0s25 static 192.168.1.111
 ```
 
 
-配置完成后输入`ifconfig`，可看到配置成功后的ip地址
+配置完成后输入`ifconfig`，可看到配置成功后的IP地址
 
 <img src="../img/020.png" style="width:600px">
 
 ## Windows平台环境配置
 
 * 需要win7 sp1以上的64位Windows操作系统
-* 如果电脑防火墙已开启，需要先新建入站规则：
+
+如果电脑防火墙已开启，需要先新建入站规则：
 
 在搜索栏中输入cmd,右键单击命令提示符，选择以管理员身份运行，打开命令提示符窗口
 
@@ -53,9 +54,7 @@ netsh advfirewall firewall add rule name="Actuator" protocol=UDP dir=in action=a
 netsh advfirewall firewall delete rule name="Actuator" protocol=UDP dir=in
 ```
 
-* IP地址配置:
-
-
+IP地址配置:
 在搜索栏中输入cmd,右键单击命令提示符，选择以管理员身份运行，打开命令提示符窗口
 
 <img src="../img/cmd.png" style="width:600px">
