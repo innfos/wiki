@@ -34,47 +34,57 @@ $ sudo ifconfig enp0s25 static 192.168.1.111
 
 ## Windows平台环境配置
 
-*   需要win7 sp1以上的64位Windows操作系统
-*   如果电脑防火墙已开启，打开控制面板，选择系统和安全，打开Windows Defender 防火墙，点击左侧高级设置，点击入站规则
+* 需要win7 sp1以上的64位Windows操作系统
+* 如果电脑防火墙已开启，需要先新建入站规则：
 
-<img src="../img/001.png" style="width:600px">
+在搜索栏中输入cmd,右键单击命令提示符，选择以管理员身份运行，打开命令提示符窗口
 
-新建规则 
+<img src="../img/cmd.png" style="width:600px">
 
-<img src="../img/002.png" style="width:600px">
+输入新建入站规则命令
 
-选择端口，然后点击下一步 
+```sh
+netsh advfirewall firewall add rule name="Actuator" protocol=UDP dir=in action=allow
+```
 
-<img src="../img/003.png" style="width:600px">
+如果不再需要该规则,可运行删除规则命令
 
-选择udp，并选择所有本地端口，点击下一步 
+```sh
+netsh advfirewall firewall delete rule name="Actuator" protocol=UDP dir=in
+```
 
-<img src="../img/004.png" style="width:600px">
+* IP地址配置:
 
-允许连接，点击下一步， 
 
-<img src="../img/005.png" style="width:600px">
+在搜索栏中输入cmd,右键单击命令提示符，选择以管理员身份运行，打开命令提示符窗口
 
-默认勾选所有设置，点击下一步 
+<img src="../img/cmd.png" style="width:600px">
 
-<img src="../img/006.png" style="width:600px">
+查看以太网网卡名称
 
-填写自定义名字，完成即可 
+```sh
+ipconfig
+```
 
-<img src="../img/007.png" style="width:600px">
+<img src="../img/ipcofig.jpg" style="width:600px">
 
-ip地址配置，
+上图中以太网网卡名字是Ethernet,修改该网卡的IP地址，输入命令
 
-打开控制面板，选择网络和Internet,再选择网络和共享中心，再选择更改适配器设置，右键单击以太网，选择属性 
+```sh
+netsh interface ip set address name="Ethernet" source=static addr=192.168.1.111  mask=255.255.255.0  gateway=192.168.1.1 
+```
+<img src="../img/staticIP.png" style="width:600px">
 
-<img src="../img/008.png" style="width:600px">
+其中`addr=192.168.1.111`中的`111`可以修改为其他数值，避免IP地址冲突（建议为100~200）
 
-选择TCP/IPv4,然后选择属性， 配置如图：
+如果想恢复IP地址为自动分配，输入命令
 
-其中ip地址中的192.168.1.119中的119可以替换成100~200之间的任意整数，配置完成点击确定 
+```sh
+netsh interface ip set address name="Ethernet" source=dhcp
+```
 
-<img src="../img/009.png" style="width:600px">
+<img src="../img/dhcp.png" style="width:600px">
 
 ## 版本变更记录
 
-<table><tbody><tr class="odd"; style=background:PaleTurquoise><td align="left">版本号</td><td align="left">更新时间</td><td align="left">更新内容</td></tr><tr class="even"><td align="left">V1.0.0</td><td align="left">18.12.25</td><td align="left">全文</td></tr></tbody></table>
+<table><tbody><tr class="odd"; style=background:PaleTurquoise><td align="left">版本号</td><td align="left">更新时间</td><td align="left">更新内容</td></tr><tr class="even"><td align="left">V2.0.0</td><td align="left">2019.05.25</td><td align="left">全文</td></tr><tr class="even"><td align="left">V1.0.0</td><td align="left">18.12.25</td><td align="left">全文</td></tr></tbody></table>
