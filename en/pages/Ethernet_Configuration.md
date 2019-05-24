@@ -39,6 +39,7 @@ After the configuration, enter`ifconfig`to see the ip address.
 A new inbound rule need setting if the computer firewall is turned on:
 
 Enter cmd in the search bar, right click on the command prompt, select Run as administrator and open a command window
+
 <img src="../img/cmd.png" style="width:600px">
 
 Enter the new inbound rule command
