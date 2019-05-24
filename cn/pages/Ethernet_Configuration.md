@@ -66,7 +66,7 @@ netsh advfirewall firewall delete rule name="Actuator" protocol=UDP dir=in
 ipconfig
 ```
 
-<img src="../img/ipcofig.jpg" style="width:600px">
+<img src="../img/ipconfig.jpg" style="width:600px">
 
 上图中以太网网卡名字是Ethernet,修改该网卡的IP地址，输入命令
 
