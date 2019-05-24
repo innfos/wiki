@@ -99,7 +99,7 @@ chmod 777 ipChange
 *   Please note that only the last number of IP or MAC addresses can be modified, for example, the IP address of the ECB is 192.168.1.30, and only 30 can be modified to other number.
 
 ## Resource
-* [Schematic 1]( ../img/Ethernet_TransferV2.2SCH.pdf.zip ) [Schematic 2]( ../img/HUBV3.0SCH.pdf.zip )
+* [Ethernet_TransferV2.2SCH]( ../img/Ethernet_TransferV2.2SCH.rar ) [HUBV2.1SCH]( ../img/HUBV2.1SCH.rar )
 * [Dimensional Drawing 1]( ../img/Ethernet_TransferV2.2.zip ) [Dimensional Drawing 2]( ../img/HUBV3.0.zip )
 * [STM32F429 data sheet]( ../img/STM32F429.pdf.zip )
 
