@@ -94,7 +94,7 @@ chmod 777 ipChange
 ```sh
 ./ipChange -ip=<1~255> -mac=<1~255>
 ```
-*   请注意只能修改IP或者MAC地址的最后一个数。比如ECB的IP地址是192.168.1.30，只能用该工具将30修改成其他数字.
+4.  请注意只能修改IP或者MAC地址的最后一个数。比如ECB的IP地址是192.168.1.30，只能用该工具将30修改成其他数字.
 
 ## 资源
 * [Ethernet_TransferV2.2SCH]( ../img/Ethernet_TransferV2.2SCH.rar )   [HUBV2.1SCH]( ../img/HUBV2.1SCH.rar )
