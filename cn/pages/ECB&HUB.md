@@ -78,7 +78,7 @@ Note: 多个ECB连接同一电脑,ECB的IP和MAC地址不能有重复，修改EC
 ## 修改IP和MAC地址
 #### 下载
 
-*   访问该链接[download link](https://github.com/innfos/ipChangeTool .git)下载SDK相关文件或者直接执行以下命令
+1.  访问该链接[download link](https://github.com/innfos/ipChangeTool .git)下载SDK相关文件或者直接执行以下命令
 
 ```sh
 $ git clone https://github.com/innfos/ipChangeTool.git
