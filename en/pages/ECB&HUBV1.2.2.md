@@ -99,7 +99,7 @@ chmod 777 ipChange
 *   Please note that only the last number of IP or MAC addresses can be modified, for example, the IP address of the ECB is 192.168.1.30, and only 30 can be modified to other number.
 
 ## Resource
-* [Ethernet_TransferV2.2SCH]( ../img/Ethernet_TransferV2.2SCH.rar ) [HUBV2.1SCH]( ../img/HUBV2.1SCH.rar )
+* [ECBV1.2.2SCH]( ../img/ECBV1.2.2.pdf ) [ECB_HUBV1.2.2SCH]( ../img/ECB_HUBV1.2.2.pdf )
 * [Dimensional Drawing 1]( ../img/Ethernet_TransferV2.2.zip ) [Dimensional Drawing 2]( ../img/HUBV3.0.zip )
 * [STM32F429 data sheet]( ../img/STM32F429.pdf.zip )
 
@@ -107,4 +107,4 @@ chmod 777 ipChange
 
 ## Version updating records
 <table class="tableizer-table">
-<thead><tr class="tableizer-firstrow" style="background: PaleTurquoise; color: black;width:500px"><th >Version</th><th>Update time</th><th>Content</th></tr></thead><tr><td>V1.0.0</td><td>2019-05</td><td>the first version</td></tr></tbody></table>
+<thead><tr class="tableizer-firstrow" style="background: PaleTurquoise; color: black;width:500px"><th >Version</th><th>Update time</th><th>Content</th></tr></thead><tr><td>V1.2.2</td><td>2019-05</td><td>the first version</td></tr></tbody></table>
