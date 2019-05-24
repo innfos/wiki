@@ -65,7 +65,7 @@ ipconfig
 <img src="../img/ipconfig.jpg" style="width:600px">
 
 
-Ethernet NIC name in the above figure is Ethernet, modify the IP address of NIC, and enter the command.
+Ethernet NIC name in the above figure is `Ethernet`, modify the IP address of NIC, and enter the command.
 
 ```sh
 netsh interface ip set address name="Ethernet" source=static addr=192.168.1.111  mask=255.255.255.0  gateway=192.168.1.1 
