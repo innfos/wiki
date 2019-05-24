@@ -78,23 +78,23 @@ Note: 多个ECB连接同一电脑,ECB的IP和MAC地址不能有重复，修改EC
 ## 修改IP和MAC地址
 #### 下载
 
-1.  访问该链接[download link](https://github.com/innfos/ipChangeTool .git)下载SDK相关文件或者直接执行以下命令
+* 访问该链接[download link](https://github.com/innfos/ipChangeTool .git)下载SDK相关文件或者直接执行以下命令
 
 ```sh
 $ git clone https://github.com/innfos/ipChangeTool.git
 ```
     
-2.  进入ipChangeTool目录，修改ipChange的权限：
+* 进入ipChangeTool目录，修改ipChange的权限：
 
 ```sh
 chmod 777 ipChange
 ```
-3.  确认有且只有一个ECB或者ECU已经连接到电脑并且上电后，执行命令：
+* 确认有且只有一个ECB或者ECU已经连接到电脑并且上电后，执行命令：
 
 ```sh
 ./ipChange -ip=<1~255> -mac=<1~255>
 ```
-4.  请注意只能修改IP或者MAC地址的最后一个数。比如ECB的IP地址是192.168.1.30，只能用该工具将30修改成其他数字.
+* 请注意只能修改IP或者MAC地址的最后一个数。比如ECB的IP地址是192.168.1.30，只能用该工具将30修改成其他数字.
 
 ## 资源
 * [Ethernet_TransferV2.2SCH]( ../img/Ethernet_TransferV2.2SCH.rar )   [HUBV2.1SCH]( ../img/HUBV2.1SCH.rar )
