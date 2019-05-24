@@ -99,7 +99,7 @@ chmod 777 ipChange
 * 请注意只能修改IP或者MAC地址的最后一个数。比如ECB的IP地址是192.168.1.30，只能用该工具将30修改成其他数字.
 
 ## 资源
-* [Ethernet_TransferV2.2SCH]( ../img/Ethernet_TransferV2.2SCH.rar )   [HUBV2.1SCH]( ../img/HUBV2.1SCH.rar )
+* [ECBV1.2.2.pdf]( ../img/ECBV1.2.2.pdf )   [ECB_HUBV1.2.2.pdf]( ../img/ECB_HUBV1.2.2.pdf )
 * [尺寸图1]( ../img/Ethernet_TransferV2.2.zip ) [尺寸图2]( ../img/HUBV3.0.zip )
 * [STM32F429 数据表]( ../img/STM32F429.pdf.zip )
 
@@ -108,5 +108,5 @@ chmod 777 ipChange
 ## 版本变更记录
 **下表简单描述了版本变更记录**
 
-<table style="width:600px"><thead><tr style="background:PaleTurquoise"><th style="width:80px">版本号</th><th style="width:100px">更新时间</th><th style="width:100px">更改类型</th><th style="width:80px">位置</th><th>更新内容</th></tr></thead><tbody><tr><td>V1.0.0</td><td>2019.05.02</td><td>添加</td><td>ECB & HUB</td><td>全文添加</td></tbody></table>
+<table style="width:600px"><thead><tr style="background:PaleTurquoise"><th style="width:80px">版本号</th><th style="width:100px">更新时间</th><th style="width:100px">更改类型</th><th style="width:80px">位置</th><th>更新内容</th></tr></thead><tbody><tr><td>V1.2.2</td><td>2019.05.02</td><td>添加</td><td>ECB & HUB</td><td>全文添加</td></tbody></table>
 
