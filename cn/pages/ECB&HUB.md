@@ -56,9 +56,11 @@ MicroUSB：预留USB功能接口
 
 ## 外形尺寸
 
+
 ![ECB & HUB4.png](../img/ECB & HUB4.png) ![ECB & HUB5.jpg](../img/ECB & HUB5.png)
 
-
+ Note: 单位为mm
+ 
 ## ECB 和 ECB_HUB的连接方式
 方式一：
 
