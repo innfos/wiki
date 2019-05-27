@@ -118,5 +118,5 @@
 ## 开发问题
 
 
-<table style="width:600px"><thead><tr style="background:PaleTurquoise"><th style="width:80px">版本号</th><th style="width:100px">更新时间</th><th style="width:100px">更改类型</th><th style="width:80px">位置</th><th>更新内容</th></tr><tr><td>V1.0.0</td><td>2019.05.27</td><td>添加</td><td></td><td>全文添加</td></tbody></table>
+<table style="width:600px"><thead><tr style="background:PaleTurquoise"><th style="width:80px">版本号</th><th style="width:100px">更新时间</th><th style="width:100px">更改类型</th><th style="width:80px">位置</th><th>更新内容</th></tr><tr><td>V1.0.0</td><td>2019.05.27</td><td>添加</td><td>全文</td><td>全文添加</td></tbody></table>
 
