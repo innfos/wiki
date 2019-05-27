@@ -57,7 +57,7 @@ MicroUSB：预留USB功能接口
 ## 外形尺寸
 
 
-![ECB & HUB4.png](../img/ECB & HUB4.png) ![ECB & HUB5.jpg](../img/ECB & HUB5.png)
+![ECB_v2_2.png](../img/ECB_v2_2.png) ![ECB_HUB_v2_2.png](../img/ECB_HUB_v2_2.png)
 
  Note: 单位为mm
  
@@ -100,7 +100,6 @@ chmod 777 ipChange
 
 ## 资源
 * [ECB_SCH]( ../img/ECB_v2_2.pdf )   [ECB_HUB_SCH]( ../img/ECB_HUB_v2_2.pdf )
-* [尺寸图1]( ../img/Ethernet_TransferV2.2.zip ) [尺寸图2]( ../img/HUBV3.0.zip )
 * [STM32F429 数据表]( ../img/STM32F429.pdf.zip )
 
 
