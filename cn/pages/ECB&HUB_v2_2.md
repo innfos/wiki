@@ -99,7 +99,7 @@ chmod 777 ipChange
 * 请注意只能修改IP或者MAC地址的最后一个数。比如ECB的IP地址是192.168.1.30，只能用该工具将30修改成其他数字.
 
 ## 资源
-* [ECBV1.2.2SCH]( ../img/ECBV1.2.2.pdf )   [ECB_HUBV1.2.2SCH]( ../img/ECB_HUBV1.2.2.pdf )
+* [ECB_SCH]( ../img/ECB_v2_2.pdf )   [ECB_HUB_SCH]( ../img/ECB_HUB_v2_2.pdf )
 * [尺寸图1]( ../img/Ethernet_TransferV2.2.zip ) [尺寸图2]( ../img/HUBV3.0.zip )
 * [STM32F429 数据表]( ../img/STM32F429.pdf.zip )
 
