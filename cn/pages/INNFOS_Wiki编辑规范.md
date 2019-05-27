@@ -56,9 +56,12 @@ Note: 带图号的要将图号居中对齐，代码格式效果如上：
 
 ### 版本变更
 #### 版本变更记录
-- 在制作版本变更记录表格时，要有版本号、更新时间、更改类型、位置及更新内容，并以此为规范运用于每个文档中。其中版本号命名格式为VX.X.X, 例如：V1.0.0。 更新时间格式为20XX.XX.XX, 例如：2019.05.17。（型号数据因为涉及的修改很多，可以在稳定之后，小的修改采用以上格式）
+- 在制作版本变更记录表格时，要有版本号、更新时间、更改类型、位置及更新内容，并以此为规范运用于每个文档中。其中版本号命名格式为vX.X.X, 例如：v1.0.0。 更新时间格式为20XX.XX.XX, 例如：2019.05.17。（型号数据因为涉及的修改很多，可以在稳定之后，小的修改采用以上格式）
+
+- 版本号命名格式vX.X.X中前两位数值为机械提供版本型号，后一位数值是对机械提供版本型号修改次数的记录统计；
 
 - 英文版本中“版本变更记录”的英文翻译统一用"Version updating records"
+
 
 #### 版本更新要求
 - 所有文档涉及版本号更新时需新建文档，请勿直接在原版本修改。例如：QDD-NU80-6_v2_2.md更新版本时新建文档名为QDD-NU80-6_v3_0.md。
@@ -81,5 +84,5 @@ testBox.add("jQuery").remove("jQuery");
 ## 版本变更记录
 **下表简单描述了版本变更记录**
 
-<table style="width:600px"><thead><tr style="background:PaleTurquoise"><th style="width:80px">版本号</th><th style="width:100px">更新时间</th><th style="width:100px">更改类型</th><th style="width:80px">位置</th><th>更新内容</th></tr></thead><tbody><tr><td>V1.0.2</td><td>2019.05.27</td><td>添加</td><td>图片</td><td>添加内容</td><tr><td>V1.0.1</td><td>2019.05.22</td><td>添加</td><td>图片、版本变更</td><td>添加内容</td><tr><td>V1.0.0</td><td>2019.05.17</td><td>添加</td><td>INNFOS Wiki编写规范</td><td>全文添加</td></tbody></table>
+<table style="width:600px"><thead><tr style="background:PaleTurquoise"><th style="width:80px">版本号</th><th style="width:100px">更新时间</th><th style="width:100px">更改类型</th><th style="width:80px">位置</th><th>更新内容</th></tr></thead><tbody><tr><td>v1.0.2</td><td>2019.05.27</td><td>添加</td><td>图片、版本变更</td><td>添加内容</td><tr><td>v1.0.1</td><td>2019.05.22</td><td>添加</td><td>图片、版本变更</td><td>添加内容</td><tr><td>v1.0.0</td><td>2019.05.17</td><td>添加</td><td>INNFOS Wiki编写规范</td><td>全文添加</td></tbody></table>
 
