@@ -73,7 +73,7 @@
 
 **什么是限幅最小值/最大值?**
 
-*   限制电机的输出，快速使用说明有介绍</br>
+*   用于限制电机的输出，快速使用说明有介绍</br>
 
 **请问咱们电机的额定电流是12安，我们用上位机测试的时候有达到过20安以上，这个情况正常吗?**
 
@@ -117,6 +117,7 @@
 
 ## 开发问题
 
+## 版本变更记录
 
 <table style="width:600px"><thead><tr style="background:PaleTurquoise"><th style="width:80px">版本号</th><th style="width:100px">更新时间</th><th style="width:100px">更改类型</th><th style="width:80px">位置</th><th>更新内容</th></tr><tr><td>V1.0.0</td><td>2019.05.27</td><td>添加</td><td>全文</td><td>全文添加</td></tbody></table>
 
