@@ -53,7 +53,7 @@
   
   
 ### 配件
-  * [ECB & HUB](pages/ECB&HUB_v1_2_2.md)
+  * [ECB & HUB](pages/ECB&HUB_v2_2.md)
   
 ----
 
