@@ -100,7 +100,7 @@ chmod 777 ipChange
 
 ## 资源
 * [ECB_SCH]( ../img/ECB_v2_2.pdf )   [ECB_HUB_SCH]( ../img/ECB_HUB_v2_2.pdf )
-* [STM32F429 数据表]( ../img/STM32F429.pdf.zip )
+* [STM32F429 数据表]( ../img/STM32F429VIT6.PDF )
 
 
 
