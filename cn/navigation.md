@@ -20,7 +20,7 @@
 
 [FAQ](#!pages/question.md)
 
-[English](https://innfos.github.io/wiki/en/#!index.md)
+[English](http://innfos.com/wiki/en/index.html#!index.md)
 
 
 
