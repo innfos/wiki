@@ -19,7 +19,7 @@ ECB的原理图和BOM，以及以太网通讯协议全部开源，用户可以�
 * 以太网通讯：1路，10/100M 自适应速率
 * CAN通讯：2路，速率1Mbps
 * LED 12个：电源指示LED 3个，用户LED 5个，USB收发数据指示LED 2个，以太网连接状态指示LED 1个，以太网速率指示LED 1个
-* Molex复合接口 ：6个，单个复合接口同时包含CAN信号和功率信号
+* 功率信号复合接口 ：6个，单个复合接口同时包含CAN信号和功率信号
 * 扩展接口： 2排2.54mm双排针，包含以下资源：
 * I2C
 * SPI
@@ -44,14 +44,14 @@ P2管脚定义
 <table style="width:680px"><thead><tr class="tableizer-firstrow" style="background: PaleTurquoise; color: black"><th>P1 PIN#</th><th>Name</th><th>Alternate functions</th><th>P1 PIN#</th><th>Name</th><th>Alternate functions</th></tr></thead><tbody><tr><td>1</td><td>PA5</td><td>ADC12_1N5<<br>TIM2_CH1/TIM2_ETR<br>TIM8_CH1N<br>SPI1_SCK</td><td>2</td><td>PA3</td><td>ADC123_IN3<br>TIM2_CH4<br>TIM5_CH4<br>TIM9_CH2<br>USART2_RX</td></tr><tr><td>3</td><td>PA6</td><td>ADC12_IN6<br>TIM1_BKIN<br>TIM3_CH1<br>TIM8_BKIN<br>SPI1_MISO<br>TIM13_CH1</td><td>4</td><td>PA4</td><td>ADC12_1N4/DAC_OUT1<br>SPI1_NSS<br>SPI3_NSS/I2S3_WS</td></tr><tr><td>5</td><td>AGND</td><td>&nbsp;</td><td>6</td><td>PA0</td><td>ADC123_IN0/WKUP<br>TIM2_CH1/TIM2_ETR<br>TIM5_CH1<br>TIM8_ETR<br>UART4_TX<br>ETH_MII_CRS</td></tr><tr><td>7</td><td>PB3</td><td>TIM2_CH2<br>SPI1_SCK<<br>SPI3_SCK/I2S3_CK</td><td>8</td><td>PB4</td><td>TIM3_CH1<br>SPI1_MISO<br>SPI3_MISO<br>I2S3ext_SD</td></tr><tr><td>9</td><td>PD3</td><td>SPI2_SCK/I2S2_CK</td><td>10</td><td>PB9</td><td>TIM4_CH4<br>TIM11_CH1<br>I2C1_SDA<br>SPI2_NSS/I2S2_WS<br>CAN1_TX</td></tr><tr><td>11</td><td>PI2</td><td>TIM8_CH4<br>SPI2_MISO<br>I2S2ext_SD</td><td>12</td><td>PI3</td><td>TIM8_ETR<br>SPI2_MOSI/I2S2_SD</td></tr><tr><td>13</td><td>PA8</td><td>TIM1_CH1<br>I2C3_SCL</td><td>14</td><td>PC9</td><td>TIM3_CH4<br>TIM8_CH4<br>I2C3_SDA<br>I2S_CKIN</td></tr><tr><td>15</td><td>PD6</td><td>SPI3_MOSI/I2S3_SD<br>USART2_RX</td><td>16</td><td>VCC_5V</td><td>&nbsp;</td></tr><tr><td>17</td><td>PD5</td><td>USART2_TX</td><td>18</td><td>PB0</td><td>TIM1_CH2N<br>TIM3_CH3<br>TIM8_CH2N<br>ETH_MII_RXD2</td></tr><tr><td>19</td><td>GND</td><td>&nbsp;</td><td>20</td><td>PC7</td><td>TIM3_CH2<br>TIM8_CH2<br>I2S3_MCK<br>USART6_RX</td></tr></tbody></table>
 
 
-### Amass XT60、molex、MicroUSB、网口
-Amass XT60：电源输入
+### 接口规格
+电源输入接口：Amass XT60
 
-Molex：CAN通信接口，CAN1-J1、J2、J3；CAN2-J4、J5、J6
+功率信号复合接口：Molex
 
-MicroUSB：预留USB功能接口
+USB接口：MicroUSB，预留USB功能接口
 
-网口：连接上位机
+以太网接口：RJ45连接器， 连接上位机
 
 
 ## 外形尺寸
