@@ -21,7 +21,7 @@
 
 [FAQ](examples.md)
 
-[中文](https://innfos.github.io/wiki/cn/#!index.md)
+[中文](http://innfos.com/wiki/cn/index.html#!index.md)
 
 
 <!-- counter pixel for counting visitors -->
