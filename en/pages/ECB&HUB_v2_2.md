@@ -5,9 +5,9 @@ The ECB is an Ethernet to CAN controller that acts as a bridge between Ethernet 
 
 ECB's schematic, BOM and Ethernet communication protocols are all open source and can be directly developed on the ECB according to users’ needs, greatly saving new products R&D time, thereby accelerating the time to go to the market.
 
-<img src="../img/ECB & HUB1.jpg" style="width:600px">
+<img src="../img/ECB&HUB_v2_2PCBA1.png" style="width:600px">
 
-![ECB&HUB2.png](../img/ECB&HUB2.png) ![ECB & HUB3.jpg](../img/ECB & HUB3.png)
+![ECB&HUB_v2_2PCBA2.png](../img/ECB&HUB_v2_2PCBA2.png) ![ECB&HUB_v2_2PCBA3.png](../img/ECB&HUB_v2_2PCBA3.png)
 
 
 
@@ -55,7 +55,7 @@ Network port LIANDA_L60055-14: connect the host computer
 
 ## Dimensions
 
-![ECB_v2_2.png](../img/ECB_v2_2.png) ![ECB_HUB_v2_2.png](../img/ECB_HUB_v2_2.png)
+![ECB_v2_2PCB.png](../img/ECB_v2_2PCB.png) ![ECB_HUB_v2_2PCB.png](../img/ECB_HUB_v2_2PCB.png)
 
 
 ## How to connect ECB and ECB_HUB
