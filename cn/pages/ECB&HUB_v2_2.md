@@ -44,14 +44,14 @@ P2管脚定义
 <table style="width:450px"><thead><tr class="tableizer-firstrow" style="background: PaleTurquoise; color: black"><th style="width:100px">P1 PIN#</th><th>Name</th><th style="width:100px">P1 PIN#</th><th>Name</th></tr></thead><tbody><tr><td>1</td><td>PA5</td><td>2</td><td>PA3</td></tr><tr><td>3</td><td>PA6</td><td>4</td><td>PA4</td></tr><tr><td>5</td><td>AGND</td><td>6</td><td>PA0</td></tr><tr><td>7</td><td>PB3</td><td>8</td><td>PB4</td></tr><tr><td>9</td><td>PD3</td><td>10</td><td>PB9</td></tr><tr><td>11</td><td>PI2</td><td>12</td><td>PI3</td></tr><tr><td>13</td><td>PA8</td><td>14</td><td>PC9</td></tr><tr><td>15</td><td>PD6</td><td>16</td><td>VCC_5V</td></tr><tr><td>17</td><td>PD5</td><td>18</td><td>PB0</td></tr><tr><td>19</td><td>GND</td><td>20</td><td>PC7</td></tr></tbody></table>
 
 
-### 接口规格
+### 接口规格型号
 电源输入接口：Amass XT60PT-M
 
 功率信号复合接口：Molex 430450827
 
-USB接口：MicroUSB 韩荣U-F-M5DD-Y-L，预留USB功能接口
+USB接口：MicroUSB 韩荣U-F-M5DD-Y-L
 
-以太网接口：RJ45连接器 L60055-14， 连接上位机
+以太网接口：RJ45连接器 L60055-14
 
 
 ## 外形尺寸
