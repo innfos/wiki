@@ -258,7 +258,7 @@ CRC校验只计算数据内容，即数据位数之后到crc校验之前的所�
 
 CRC校验码计算方法（c++）:
 ``` cpp
-    const uint8_t chCRCHTalbe[] =                                 // CRC 高位字节值表
+    const uint8_t chCRCHTable[] =                                 // CRC 高位字节值表
     {
         0x00, 0xC1, 0x81, 0x40, 0x01, 0xC0, 0x80, 0x41, 0x01, 0xC0, 0x80, 0x41,
         0x00, 0xC1, 0x81, 0x40, 0x01, 0xC0, 0x80, 0x41, 0x00, 0xC1, 0x81, 0x40,
@@ -286,7 +286,7 @@ CRC校验码计算方法（c++）:
 ```
 
 ```cpp
-    const uint8_t chCRCLTalbe[] =                                 // CRC 低位字节值表
+    const uint8_t chCRCLTable[] =                                 // CRC 低位字节值表
     {
         0x00, 0xC0, 0xC1, 0x01, 0xC3, 0x03, 0x02, 0xC2, 0xC6, 0x06, 0x07, 0xC7,
         0x05, 0xC5, 0xC4, 0x04, 0xCC, 0x0C, 0x0D, 0xCD, 0x0F, 0xCF, 0xCE, 0x0E,
@@ -323,8 +323,8 @@ CRC校验码计算方法（c++）:
         {
             // 计算CRC
             wIndex = chCRCHi ^ *pchMsg++;
-            chCRCHi = chCRCLo ^ chCRCHTalbe[wIndex];
-            chCRCLo = chCRCLTalbe[wIndex];
+            chCRCHi = chCRCLo ^ chCRCHTable[wIndex];
+            chCRCLo = chCRCLTable[wIndex];
         }
         return ((chCRCHi << 8) | chCRCLo);
     }
