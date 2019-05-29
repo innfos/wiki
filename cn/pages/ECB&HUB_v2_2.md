@@ -5,9 +5,9 @@ ECB(Ethernet to CAN Bridge)是一款以太网转CAN控制器，该控制器起�
 
 ECB的原理图和BOM，以及以太网通讯协议全部开源，用户可以根据自己的需求，在ECB上直接进行开发，大大提高了新产品的研发效率，从而加快新产品的上市时间。
   
-<img src="../img/ECB & HUB1.jpg" style="width:600px">
+<img src="../img/ECB&HUB_v2_2PCBA1.png" style="width:600px">
 
-![ECB&HUB2.png](../img/ECB&HUB2.png) ![ECB & HUB3.jpg](../img/ECB & HUB3.png)
+![ECB&HUB_v2_2PCBA2.png](../img/ECB&HUB_v2_2PCBA2.png) ![ECB&HUB_v2_2PCBA3.png](../img/ECB&HUB_v2_2PCBA3.png)
 
 
 
@@ -57,7 +57,7 @@ USB接口：MicroUSB接口，韩荣U-F-M5DD-Y-L
 ## 外形尺寸
 
 
-![ECB_v2_2.png](../img/ECB_v2_2.png) ![ECB_HUB_v2_2.png](../img/ECB_HUB_v2_2.png)
+![ECB_v2_2PCB.png](../img/ECB_v2_2PCB.png) ![ECB_HUB_v2_2PCB.png](../img/ECB_HUB_v2_2PCB.png)
 
  Note: 单位为mm
  
