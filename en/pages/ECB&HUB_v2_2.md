@@ -49,7 +49,7 @@ Molex 430450827：communication interface，CAN1-J1、J2、J3；CAN2-J4、J5、J
 
 MicroUSB ROHE_U-F-M5DD-Y-L：USB function interface reserved
 
-Network port L60055-14: connect the host computer
+Network port LIANDA_L60055-14: connect the host computer
 
 
 
