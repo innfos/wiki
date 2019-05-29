@@ -45,11 +45,11 @@ P2管脚定义
 
 
 ### 接口规格
-电源输入接口：Amass XT60PT-M
+电源输入接口：Amass-XT60PT-M
 
-功率信号复合接口：Molex
+功率信号复合接口：Molex-430450827
 
-USB接口：MicroUSB，预留USB功能接口
+USB接口：MicroUSB-韩荣U-F-M5DD-Y-L，预留USB功能接口
 
 以太网接口：RJ45连接器， 连接上位机
 
