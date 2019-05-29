@@ -19,7 +19,7 @@
 
 
 
-# Version Information
-<table class="tableizer-table"><thead><tr class="tableizer-firstrow" style="background: PaleTurquoise; color: black;width:500px"><th >version</td><td>date</td><td>Modify content</td></tr><tr><td>V2.3.0</td><td>2019-05-15</td><td>Model update</th></tr><tr><td>V2.2.0</td><td>2019-05-09</td><td>Current version</td></tr>
- <tr><td>V1.0.0</td><td>2019-04</td><td>The first version</td></tr>
-</tbody></table>
+## Version Update Records
+
+
+<table style="width:600px"><thead><tr style="background:PaleTurquoise"><th style="width:80px">Version number</th><th style="width:100px">Update time</th><th style="width:100px">Type </th><th style="width:80px">Location</th><th>Update content</th></tr></thead><tbody><tr><td>V2.2.0</td><td>2019.05.09</td><td>Add</td><td>DD-PR60</td><td>Full text added</th></tr></thead><tbody><tr><td>V1.0.0</td><td>2019.04.11</td><td>Add</td><td>DD-PR60</td><td>Full text added</td></tbody></table>
