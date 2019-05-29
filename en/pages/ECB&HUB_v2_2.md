@@ -43,13 +43,13 @@ P2 pin definition
 
 
 ### Amass XT60、molex、MicroUSB、Network port
-Amass XT60：power input
+Amass XT60PT-M：power input
 
-Molex：communication interface，CAN1-J1、J2、J3；CAN2-J4、J5、J6
+Molex 430450827：communication interface，CAN1-J1、J2、J3；CAN2-J4、J5、J6
 
-MicroUSB：USB function interface reserved
+MicroUSB ROHE_U-F-M5DD-Y-L：USB function interface reserved
 
-Network port: connect the host computer
+Network port L60055-14: connect the host computer
 
 
 
