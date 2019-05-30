@@ -61,16 +61,16 @@ Network port LIANDA_L60055-14: connect the host computer
 
 Method 1:
 
-<img src="../img/ECB & HUB6.png" style="width:600px">
+<img src="../img/ECB&HUB_v2_2PCBA4.png" style="width:600px">
 
 Method 2:
 
-<img src="../img/ECB & HUB7.png" style="width:600px">
+<img src="../img/ECB&HUB_v2_2PCBA5.png" style="width:600px">
 
 
 ## Connect multiple ECBs
 
-<img src="../img/ECB & HUB8.jpg" style="width:600px">
+<img src="../img/ECB&HUB_v2_2PCBA6.png" style="width:600px">
 
 
 Note: When multiple ECBs are connected to the same computer, the IP and MAC addresses of the ECB cannot be duplicated. Modify the IP and MAC addresses of the ECB,please modify the IP and MAC addresses.
@@ -105,4 +105,4 @@ chmod 777 ipChange
 
 ## Version updating records
 <table class="tableizer-table">
-<thead><tr class="tableizer-firstrow" style="background: PaleTurquoise; color: black;width:600px"><th >Version</th><th>Update time</th><th>Change type</th><th>Position</th><th>Content</th></tr></thead><tr><td rowspan="3">V2.2.2</td><td rowspan="3">2019.05.29</td><td>revise</td><td>Introduction</td><td>Edit image</td></tr><tr><td>revise</td><td>Dimensions</td><td>Edit image</td></tr><tr><td>add</td><td>Amass XT60、molex、MicroUSB、Network port</td><td>Add specific model</td></tr><tr><td>V2.2.1</td><td>2019.05.28</td><td>delete</td><td>Core board pin definition</td><td>delete Alternate functions</td></tr><tr><td>V2.2.0</td><td>2019-05</td><td>add</td><td>ECB&HUB</td><td>the first version</td></tr></tbody></table>
+<thead><tr class="tableizer-firstrow" style="background: PaleTurquoise; color: black;width:600px"><th >Version</th><th>Update time</th><th>Change type</th><th>Position</th><th>Content</th></tr></thead><tr><td rowspan="2">V2.2.3</td><td rowspan="2">2019.05.30</td><td>revise</td><td>How to connect ECB and ECB_HUB</td><td>Edit image</td></tr><tr><td>revise</td><td>Connect multiple ECBs</td><td>Edit image</td></tr><tr><td rowspan="3">V2.2.2</td><td rowspan="3">2019.05.29</td><td>revise</td><td>Introduction</td><td>Edit image</td></tr><tr><td>revise</td><td>Dimensions</td><td>Edit image</td></tr><tr><td>add</td><td>Amass XT60、molex、MicroUSB、Network port</td><td>Add specific model</td></tr><tr><td>V2.2.1</td><td>2019.05.28</td><td>delete</td><td>Core board pin definition</td><td>delete Alternate functions</td></tr><tr><td>V2.2.0</td><td>2019-05</td><td>add</td><td>ECB&HUB</td><td>the first version</td></tr></tbody></table>
