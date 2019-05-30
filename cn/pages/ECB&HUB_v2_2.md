@@ -64,15 +64,15 @@ USB接口：MicroUSB接口，韩荣U-F-M5DD-Y-L
 ## ECB 和 ECB_HUB的连接方式
 方式一：
 
-<img src="../img/ECB & HUB6.png" style="width:600px">
+<img src="../img/ECB&HUB_v2_2PCBA4.png" style="width:600px">
 
 方式二：
 
-<img src="../img/ECB & HUB7.png" style="width:600px">
+<img src="../img/ECB&HUB_v2_2PCBA5.png" style="width:600px">
 
 
 ## 连接多个ECB
-<img src="../img/ECB & HUB8.jpg" style="width:600px">
+<img src="../img/ECB&HUB_v2_2PCBA6.png" style="width:600px">
 
 
 Note: 多个ECB连接同一电脑,ECB的IP和MAC地址不能有重复，修改ECB的IP和MAC地址请访问 修改IP和MAC地址
@@ -107,5 +107,5 @@ chmod 777 ipChange
 ## 版本变更记录
 **下表简单描述了版本变更记录**
 
-<table style="width:600px"><thead><tr style="background:PaleTurquoise"><th style="width:80px">版本号</th><th style="width:100px">更新时间</th><th style="width:100px">更改类型</th><th style="width:80px">位置</th><th>更新内容</th></tr></thead><tbody><tr><td rowspan="3">V2.2.2</td><td rowspan="3">19.05.29</td><td>修改</td><td>简介</td><td>修改简介图片</td></tr><tr><td>修改</td><td>外形尺寸</td><td>修改图片</td></tr><tr><td>添加</td><td>接口规格型号</td><td>添加接口具体型号</td></tr><tr><td>V2.2.1</td><td>2019.05.28</td><td>删除</td><td>接口说明</td><td>删除Alternate functions</td></tr><tr><td>V2.2.0</td><td>2019.05.02</td><td>添加</td><td>ECB & HUB</td><td>全文添加</td></tbody></table>
+<table style="width:600px"><thead><tr style="background:PaleTurquoise"><th style="width:80px">版本号</th><th style="width:100px">更新时间</th><th style="width:100px">更改类型</th><th style="width:80px">位置</th><th>更新内容</th></tr></thead><tbody><tr><td rowspan="3">V2.2.3</td><td rowspan="3">19.05.30</td><td>修改</td><td>ECB 和 ECB_HUB的连接方式</td><td>修改图片</td></tr><tr><td>修改</td><td>连接多个ECB</td><td>修改图片</td></tr><tr><td rowspan="3">V2.2.2</td><td rowspan="3">19.05.29</td><td>修改</td><td>简介</td><td>修改简介图片</td></tr><tr><td>修改</td><td>外形尺寸</td><td>修改图片</td></tr><tr><td>添加</td><td>接口规格型号</td><td>添加接口具体型号</td></tr><tr><td>V2.2.1</td><td>2019.05.28</td><td>删除</td><td>接口说明</td><td>删除Alternate functions</td></tr><tr><td>V2.2.0</td><td>2019.05.02</td><td>添加</td><td>ECB & HUB</td><td>全文添加</td></tbody></table>
 
