@@ -2,7 +2,7 @@
 ## DD-NU80工程参数图[单位：毫米]
 ![DD-NU80]( ../img/DD_NU80三视图.png ) 
 ### 3D 模型
-[模型文件]( ../img/DD_NU803D_v3_2.STEP.zip )
+[模型文件]( ../img/DD_NU803D_v2_2.STEP.zip )
 
 
 ## DD-NU80参数
