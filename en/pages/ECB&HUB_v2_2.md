@@ -28,8 +28,9 @@ ECB's schematic, BOM and Ethernet communication protocols are all open source an
 
 
  Note: 
-The product power supply must not exceed the maximum input voltage; 
-be stored in a dry environment, exposed to the sun, rain, falling, throwing and falling; be sensitive to static electricity, static electricity may cause permanent damage to the chip, the user is Before touching the product, it is best to let the static electricity carried by the body first, and then put it on the wall through the human body static eliminator or the hand for a while;
+*    The product power supply must not exceed the maximum input voltage; be stored in a dry environment, avoid to store under the sun or in the rain, being thrown or fallen
+*    It is sensitive to static electricity which may cause permanent damage to the chip. 
+*    Please discharge the static electricity carried by the body before touching the product, such as ,by human body static eliminator or putting hands on the wall for a while;
 
 ## Interface Description
 
