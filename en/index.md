@@ -42,8 +42,8 @@ If there's any questions,please contact us at support@innfos.com.
 
 
 ### QDD
-  * [QDD-NE30-36](pages/QDD-NE30-36_v2_2.md)
-  * [QDD-PR60-36](pages/QDD-PR60-36_v2_2.md)
+  * [QDD-NE30-36](pages/QDD-NE30-36_v2_12.md)
+  * [QDD-PR60-36](pages/QDD-PR60-36_v2_12.md)
   * [QDD-NU80-6](pages/QDD-NU80-6_v3_1.md)   <span style="color:red"> NEW！</span>
 
 ### DD
