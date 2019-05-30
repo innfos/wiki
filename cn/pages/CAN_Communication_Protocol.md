@@ -56,7 +56,8 @@ CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰�
 
 <img src="../img/wiring2-11.png" style="width:600px">
 
-**图2-3：将其他设备GND或是COM与我公司设备CAN_GND连接**
+<div class="md-text" style="text-align: center;"><strong>图2-3 将其他设备GND或是COM与我公司设备CAN_GND连接</strong></div>
+
 
 ## 3 通信协议
 
