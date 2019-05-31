@@ -83,10 +83,7 @@ The red thick line is the positive; the black thick one is the negative line. Cu
 
 <img src="../img/03can.jpg" style="width:600px"> 
 
-*    将ECB连接线小心剪开，并与剪开综合线缆的红色细线 CAN_H，黑色细线 CAN_L; 银色细线为CAN_GND
-Carefully cut the ECB cable and cut the red thin wire CAN_H of the integrated cable, black thin wire CAN_L, the silver thin wire CAN_GND,
-
-and then connect the corresponding pins as shown in the figure. Wielding firmly and prevent short circuit by heat shrink tube or insulating tape.
+*    Carefully cut the ECB cable and cut the red thin wire CAN_H of the integrated cable, black thin wire CAN_L, the silver thin wire CAN_GND,and then connect the corresponding pins as shown in the figure. Wielding firmly and prevent short circuit by heat shrink tube or insulating tape.
 
 <img src="../img/10can.jpg" style="width:600px"> 
 
