@@ -1,6 +1,6 @@
 # 参数介绍 
 ## QDD Pro-NE30-30工程参数图[单位：毫米]
-![QDD Pro-NE30-30](  ../img/Qddpro_NE30三视图.png   )
+![QDD Pro-NE30-30](  ../img/Qddpro_NE30_v2_2三视图.png   )
 ### 3D 模型
 [模型文件]( ../img/QDD_Pro-NE30-30-70_v2_2.step.zip )
 
