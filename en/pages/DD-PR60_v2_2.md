@@ -1,6 +1,6 @@
 # Parameter introduction 
 ## DD-PR60 Parameter Diagram[mm]
-![DD-PR60]( ../img/DD_PR60三视图.png ) 
+![DD-PR60]( ../img/DD_PR60_v2_2sanshitu.png ) 
 ### 3D model 
 [Model file]( ../img/DD-PR60_v2_2.step.zip )
 
