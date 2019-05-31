@@ -1,6 +1,6 @@
 # Parameter introduction 
 ## DD-NE30 Parameter Diagram[mm]
-![DD-NE30]( ../img/DD_NE30三视图.png ) 
+![DD-NE30]( ../img/DD_NE30_v2_2sanshitu.png ) 
 ### 3D model 
 [Model file]( ../img/DD-NE30_v2_2.step.zip )
 
