@@ -1,6 +1,6 @@
 # Parameter introduction
 ## QDD Pro-PR60-50-90 Parameter Diagram[mm]
-![QDD Pro-PR60-50-90]( ../img/Qddpro_6010_x_90三视图.png )
+![QDD Pro-PR60-50-90]( ../img/Qddpro_PR60_x_90_v2_2sanshitu.png )
 ### 3D model
 [Model file]( ../img/QDD_Pro-PR60-50-90_v2_2.step.zip )
 
