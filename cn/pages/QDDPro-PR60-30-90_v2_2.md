@@ -1,6 +1,6 @@
 # 参数介绍 
 ## QDD Pro-PR60-30-90工程参数图[单位：毫米]
-![QDD Pro-PR60-30-90三视图]( ../img/Qddpro_PR60_x_90三视图.png )
+![QDD Pro-PR60-30-90三视图]( ../img/Qddpro_PR60_x_90_v2_2三视图.png )
 
 ### 3D 模型  
 [模型文件]( ../img/QDD_Pro-PR60-30-90_v2_2.step.zip )
