@@ -110,7 +110,7 @@ Note: 参数内容data\[0\~3\]高位在前，低位在后。为_IQ24格式。_IQ
 
 **示例2.写命令**
 
-<table class="tableizer-table"><thead ><tr class="tableizer-firstrow"><th  colspan="7" style=background:PaleTurquoise>设置执行器ID为0x01的电流环的比例P（设置值为5）</th></tr></thead><tbody><tr><td>帧头</td><td>设备地址</td><td>指令符</td><td>数据长度</td><td>参数内容</td><td>CRC校验</td><td>帧尾</td></tr><tr><td>0xEE</td><td>0x01</td><td>0x0E</td><td>0x04</td><td>0x05 0x00 0x00 0x00</td><td>2字节数据</td><td>0xED</td></tr></tbody></table>
+<table class="tableizer-table"><thead ><tr class="tableizer-firstrow"><th  colspan="7" style=background:PaleTurquoise>设置执行器ID为0x01的电流环的比例P（设置值为5）</th></tr></thead><tbody><tr><td>帧头</td><td>设备地址</td><td>指令符</td><td>数据长度</td><td>参数内容</td><td>CRC校验</td><td>帧尾</td></tr><tr><td>0xEE</td><td>0x01</td><td>0x0A</td><td>0x04</td><td>0x05 0x00 0x00 0x00</td><td>2字节数据</td><td>0xED</td></tr></tbody></table>
 
 帧头 ：0xEE = 协议头
 
@@ -118,7 +118,7 @@ Note: 参数内容data\[0\~3\]高位在前，低位在后。为_IQ24格式。_IQ
 
 指 令 符：0x0A = 设置位置
 
-数据长度：0x4 = 数据长度
+数据长度：0x04 = 数据长度
 
 参数内容：0x05 0x00 0x00 0x00 = 发送的参数内容
 
