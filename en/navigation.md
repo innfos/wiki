@@ -21,6 +21,8 @@
 
 [FAQ](examples.md)
 
+[INNFOS Website](http://innfos.com)
+
 [中文](http://innfos.com/wiki/cn/index.html#!index.md)
 
 
