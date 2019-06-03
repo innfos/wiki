@@ -123,9 +123,9 @@ Frame header: `0xEE` = Protocol header
 
 Device address: `0x01` = Set object ID 
 
-Data length: `0x04` = Data length
+Command character: `0x0A` = Position set 
 
-Command character: `0x0E` = Current proportion set 
+Data length: `0x04` = Data length
 
 Parameter content: `0x05 0x00 0x00 0x00` = Sent parameter 
 
@@ -133,7 +133,6 @@ Check bit: Two bytes of data = Check digit
 
 End of frame: `0xED` = End of protocol
 
-Send content: `0x0E 0x05 0x00 0x00 0x00 `
 
 Description: The high parameter data [0~3] is put in front followed by lower data in _IQ24 format. For the _IQ24 format. _IQ(-128.0)~_IQ(127.999999940) represents the reverse position value full scale and forward position value full scale. If data=_IQ(5.0), the ratio is 5.
 
@@ -144,17 +143,15 @@ Frame header: `0xEE` = Protocol header
 
 Return device address: `0x01` = Response object ID 
 
-Data length: `0x01` = Data length of the response 
-
-Command character: `0x0E` = Acknowledgement setting 
+Command character: `0x0A` = Acknowledgement setting 
 
 Current position instruction (corresponding to transmission) 
+
+Data length: `0x01` = Data length of the response 
 
 Parameter content: `0x01` = Parameter response (0x01 indicates successful write) 
 
 End of frame: `0xED` = end of protocol
-
-Response content: `0x0E 0x01`
 
 ## Transmission process
 
