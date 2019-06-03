@@ -20,6 +20,8 @@
 
 [FAQ](#!pages/question.md)
 
+[INNFOS 官网](http://innfos.com/home)
+
 [English](http://innfos.com/wiki/en/index.html#!index.md)
 
 
