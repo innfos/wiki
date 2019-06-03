@@ -76,7 +76,7 @@ The user layer defines the command interface for the slave to communicate with t
 
 **Example 1. Read command**
 
-<table><tr><th colspan="6">Read the current speed value with actuator ID 1</th></tr><tr><td >Frame header</td><td >Device address</td><td >command byte</td><td >Data length (2 bytes）</td><td >Parameter </td><td >End of frame</td></tr><tr><td >0xEE</td><td >0x01</td><td >0x5</td><td >0x00 0x00</td><td >none</td><td >0xED</td></tr></table>
+<table><tr><th colspan="6">Read the current speed value with actuator ID 1</th></tr><tr><td >Frame header</td><td >Device address</td><td >command byte</td><td >Data length (2 bytes）</td><td >Parameter </td><td >End of frame</td></tr><tr><td >0xEE</td><td >0x01</td><td >0x05</td><td >0x00 0x00</td><td >none</td><td >0xED</td></tr></table>
 
 Frame header: `0xEE` = Protocol header
 
@@ -94,7 +94,7 @@ Send content: `0x05`
 
 
 <table class="tableizer-table">
-<tbody><tr><td  colspan="7"style=background:PaleTurquoise>Answer command</td></tr><tr><td>Frame header</td><td>Device address</td><td>command byte</td><td>Data length (2 bytes)</td><td>Parameter</td><td>CRC codecheck</td><td>End of frame</td></tr><tr><td>0xEE</td><td>0x01</td><td>0x5</td><td>0x00 0x04</td><td>Data length (4 bytes)</td><td>Data length (2 bytes)</td><td>0xED</td></tr></tbody></table>
+<tbody><tr><td  colspan="7"style=background:PaleTurquoise>Answer command</td></tr><tr><td>Frame header</td><td>Device address</td><td>command byte</td><td>Data length (2 bytes)</td><td>Parameter</td><td>CRC codecheck</td><td>End of frame</td></tr><tr><td>0xEE</td><td>0x01</td><td>0x05</td><td>0x00 0x04</td><td>Data length (4 bytes)</td><td>Data length (2 bytes)</td><td>0xED</td></tr></tbody></table>
 
 Frame header: `0xEE` = Protocol header 
 
@@ -117,7 +117,7 @@ Description: The high parameter data [0~3] is put in front followed by lower dat
 **Example 2. Write command**
 
 <table class="tableizer-table">
-<thead ><tr class="tableizer-firstrow"><th  colspan="7" style=background:PaleTurquoise>Set the ratio P of the current loop with actuator ID 1 (set value is 5）</th></tr></thead><tbody><tr><th>Frame header</th><th>Device address</th><th>command byte</th><th>Data length</th><th>parameter</th><th>CRC codecheck</th><th>End of frame</th></tr><tr><td>0xEE</td><td>0x01</td><td>0x0E</td><td>0x04</td><td>0x05 0x00 0x00 0x00</td><td>2 bytes</td><td>0xED</td></tr></tbody></table>
+<thead ><tr class="tableizer-firstrow"><th  colspan="7" style=background:PaleTurquoise>Set the ratio P of the current loop with actuator ID 1 (set value is 5）</th></tr></thead><tbody><tr><th>Frame header</th><th>Device address</th><th>command byte</th><th>Data length</th><th>parameter</th><th>CRC codecheck</th><th>End of frame</th></tr><tr><td>0xEE</td><td>0x01</td><td>0x0A</td><td>0x04</td><td>0x05 0x00 0x00 0x00</td><td>2 bytes</td><td>0xED</td></tr></tbody></table>
 
 Frame header: `0xEE` = Protocol header 
 
@@ -137,7 +137,7 @@ End of frame: `0xED` = End of protocol
 Description: The high parameter data [0~3] is put in front followed by lower data in _IQ24 format. For the _IQ24 format. _IQ(-128.0)~_IQ(127.999999940) represents the reverse position value full scale and forward position value full scale. If data=_IQ(5.0), the ratio is 5.
 
 <table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th colspan="7" style=background:PaleTurquoise>Answer command</th></tr></thead><tbody><tr><th>Frame header</th><th>Device address</th><th>command byte</th><th>Data length</th><th>parameter</th><th>End of frame</th></tr><tr><td>0xEE</td><td>0x01</td><td>0x0E</td><td>0x1</td><td>0x01</td><td>0xED</td></tr></tbody></table>
+<thead><tr class="tableizer-firstrow"><th colspan="7" style=background:PaleTurquoise>Answer command</th></tr></thead><tbody><tr><th>Frame header</th><th>Device address</th><th>command byte</th><th>Data length</th><th>parameter</th><th>End of frame</th></tr><tr><td>0xEE</td><td>0x01</td><td>0x0A</td><td>0x1</td><td>0x01</td><td>0xED</td></tr></tbody></table>
 
 Frame header: `0xEE` = Protocol header 
 
