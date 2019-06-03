@@ -231,7 +231,7 @@ Note:_iq24为INNFOS主要应用.
 
 #### 写入指令1:
 
-<table style="width:700px"><thead><tr class="tableizer-firstrow"><th colspan="3"style=background:PaleTurquoise>A.2.1写入指令1</th></tr></thead><tbody> <tr><td style="width:100px">指令符</td><td style="width:200px">定义</td><td>说明</td></tr><tr><td>0x07</td><td>设置指定ID执行器的模式</td><td>设置指定ID执行器的当前的模式。</td></tr><tr><td>0x70</td><td>电流环滤波器状态</td><td>设置指定ID执行器的电流环滤波器使能/失能</td></tr><tr><td>0x74</td><td>速度环滤波器状态</td><td>设置指定ID执行器的速度环滤波器使能/失能</td></tr><tr><td>0x78</td><td>位置环滤波器状态</td><td>设置指定ID执行器的位置环滤波器使能/失能</td></tr><tr><td>0x8C</td><td>位置限位状态</td><td>设置指定ID执行器的位置限位使能/失能</td></tr><tr><td>0x2A</td><td>执行器的开失能状态</td><td>设置指定ID执行器使能/失能</td></tr></tbody></table>
+<table style="width:700px"><thead><tr class="tableizer-firstrow"><th colspan="3"style=background:PaleTurquoise>A.2.1写入指令1</th></tr></thead><tbody> <tr><td style="width:100px">指令符</td><td style="width:200px">定义</td><td>说明</td></tr><tr><td>0x07</td><td>设置指定ID执行器的模式</td><td>设置指定ID执行器的当前的模式。</td></tr><tr><td>0x70</td><td>电流环滤波器状态</td><td>设置指定ID执行器的电流环滤波器使能/失能</td></tr><tr><td>0x74</td><td>速度环滤波器状态</td><td>设置指定ID执行器的速度环滤波器使能/失能</td></tr><tr><td>0x78</td><td>位置环滤波器状态</td><td>设置指定ID执行器的位置环滤波器使能/失能</td></tr><tr><td>0x8C</td><td>位置限位状态</td><td>设置指定ID执行器的位置限位使能/失能</td></tr><tr><td>0x2A</td><td>执行器的使失能状态</td><td>设置指定ID执行器使能/失能</td></tr></tbody></table>
 
 #### 写入指令2:
 
