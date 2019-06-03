@@ -137,7 +137,7 @@ End of frame: `0xED` = End of protocol
 Description: The high parameter data [0~3] is put in front followed by lower data in _IQ24 format. For the _IQ24 format. _IQ(-128.0)~_IQ(127.999999940) represents the reverse position value full scale and forward position value full scale. If data=_IQ(5.0), the ratio is 5.
 
 <table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th colspan="7" style=background:PaleTurquoise>Answer command</th></tr></thead><tbody><tr><th>Frame header</th><th>Device address</th><th>command byte</th><th>Data length</th><th>parameter</th><th>End of frame</th></tr><tr><td>0xEE</td><td>0x01</td><td>0x0A</td><td>0x1</td><td>0x01</td><td>0xED</td></tr></tbody></table>
+<thead><tr class="tableizer-firstrow"><th colspan="7" style=background:PaleTurquoise>Answer command</th></tr></thead><tbody><tr><th>Frame header</th><th>Device address</th><th>command byte</th><th>Data length</th><th>parameter</th><th>End of frame</th></tr><tr><td>0xEE</td><td>0x01</td><td>0x0A</td><td>0x01</td><td>0x01</td><td>0xED</td></tr></tbody></table>
 
 Frame header: `0xEE` = Protocol header 
 
