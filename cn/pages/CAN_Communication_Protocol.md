@@ -40,15 +40,6 @@ SCA（除特殊型号外）内部采用隔离电路，保证了电气的安全�
 * 每路CAN连接的连接设备数量最多为64个。
 * 用万用表测量CANH和CANL之间的阻值可以确认现场两端接电阻是否正确，正常阻值应为60Ω左右（两个电阻的并联值）。
 
-### 2.3 其他设备没有外接CAN_GND 端口配线说明
-
-#### 设备为非隔离CAN,与其他信号共用GND或是COM端口
-
-<img src="../img/wiring2-11.png" style="width:600px">
-
-<div class="md-text" style="text-align: center;"><strong>图2-3 将其他设备GND或是COM与我公司设备CAN_GND连接</strong></div>
-
-
 ## 3 通信协议
 
 ### 3.1 CAN通信协议格式
