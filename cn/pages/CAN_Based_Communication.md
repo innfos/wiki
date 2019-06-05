@@ -5,6 +5,59 @@
 *    您可以根据需要连接自己的嵌入式控制板实现对INNFOS执行器的控制。
 *    此处提供两种常见嵌入式开发板的连接实例供参考。
 
+
+##  CAN的物理层说明
+
+### CAN协议概述
+
+*     CAN 是Controller Area Network 的缩写（以下称为CAN），是ISO国际标准化的串行通信协议。
+
+*     本公司产品设计服从于CAN2.0A协议标准，本文详细介绍了本公司产品的产品CAN通信协议格式，及产品CAN通信结构。
+
+### 综合性能参数
+
+<table style="width:400px"><thead><COL WIDTH=50%><COL WIDTH=50%><tr><th colspan="2"style=background:PaleTurquoise>表1-1综合性能参数说明</th></tr></thead><tbody><tr><td>项目</td><td>说明</td></tr><tr><td>链路层协议</td><td>CAN总线</td></tr><tr><td>CAN-ID类型</td><td>11bit-CAN2.0A</td></tr><tr><td>波特率</td><td>1Mbit/s</td></tr><tr><td>最大站点数</td><td>63个</td></tr><tr><td>CAN帧长度</td><td>0~8字节</td></tr><tr><td>应用层CAN帧类型</td><td>数据帧、远程帧</td></tr><tr><td>终端匹配电阻</td><td>120Ω</td></tr></tbody></table>
+
+本通信协议波特率为1Mbit/s，对于CAN通信，不同线的线缆对传输距离影响不大，但是要求线径尽量粗，最大节点数为64，本公司产品采用0.205mm²线径，最大传输距离为25m。
+
+
+## CAN的硬件连接说明
+
+* INNFOS执行器的插线接口为CAN通信接口，接口如下图所示。名称相同的端口内部引脚连接在一起，其接口定义表2-1所示。CAN接口连接器至少配有CANH、CANL、CGND引脚。
+
+<table><thead><tr><th colspan="4" style=background:PaleTurquoise>表2-1通信信号连接器引脚定义</th></tr></thead><tbody><tr><td style="width:80px">针脚号</td><td>定义</td><td>描述</td><td>端子引脚分布</td></tr><tr><td>1</td><td>PVDD</td><td>功率电源</td><td rowspan="9"><img src="../img/peixian2-2.png" style="width:450px"></td></tr><tr><td>3</td><td>PVDD</td><td>功率电源</td></tr><tr><td>5</td><td>PVDD</td><td>功率电源</td></tr><tr><td>2</td><td>GND</td><td>功率地</td></tr><tr><td>4</td><td>GND</td><td>功率地</td></tr><tr><td>6</td><td>CGND</td><td>CAN通信地</td></tr><tr><td>7</td><td>CANL</td><td>CAN通信接口</td></tr><tr><td>8</td><td>CANH</td><td>CAN通信接口</td></tr></tbody></table>
+
+
+### CAN通信的总线和多节点的连接方式
+
+
+<img src="../img/wiring2-3.png" style="width:600px">
+
+<div class="md-text" style="text-align: center;"><strong>图2-1 CAN通信网络的连接方式</strong></div>
+
+<img src="../img/wiring2-4.png" style="width:600px">
+
+<div class="md-text" style="text-align: center;"><strong>图2-2 CAN通信网络的连接方式</strong></div>
+
+
+各个CAN收发设备采用一进一出的形式连接在总线上，并且相互隔离。
+
+* 推荐使用带屏蔽双绞线连接，总线两端分别连接两个120Ω终端匹配电阻防止信号反射，屏蔽层一般使用单点可靠接地。
+* 用万用表测量CANH和CANL之间的阻值可以确认现场两端接电阻是否正确，正常阻值应为60Ω左右（两个电阻的并联值）。
+* 连接设备数量最多为64个。
+* CAN设备通信时，须将不同CAN电路的公共地CGND相互连接，以保证不同通信设备之间参考电位相等。
+* GND是执行器的功率地。
+* CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰有很好的抵抗能力，也能减小线缆对外的辐射。
+
+### 其他设备没有外接CAN_GND 端口配线说明
+
+#### 设备为非隔离CAN,与其他信号共用GND或是COM端口
+
+<img src="../img/wiring2-11.png" style="width:600px">
+
+<div class="md-text" style="text-align: center;"><strong>图2-3 将其他设备GND或是COM与我公司设备CAN_GND连接</strong></div>
+
+
 ## 硬件需求与连接
 
 ### 基于ST开发板的连接
