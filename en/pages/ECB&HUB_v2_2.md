@@ -73,7 +73,7 @@ Method 2:
 <img src="../img/ECB&HUB_v2_2PCBA6.png" style="width:600px">
 
 
-Note: When multiple ECBs are connected to the same computer, the IP and MAC addresses of the ECB cannot be duplicated. Modify the IP and MAC addresses of the ECB,please modify the IP and MAC addresses.
+Note: When multiple ECBs are connected to the same computer, the IP and MAC addresses of the ECB cannot be duplicated. Modify the IP and MAC addresses of the ECB,please [modify the IP and MAC addresses](#!pages/ECB&HUB_v2_2.md#Modify_IP_and_MAC_address "wikilink").
 
 ## Modify IP and MAC address
 #### download
