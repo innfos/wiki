@@ -39,7 +39,7 @@
 
 <div class="md-text" style="text-align: center;"><strong>图2-2 CAN通信网络的连接示意图</strong></div>
 
-CAN通信是通过CAN_H与CAN_L之间的电压差传递电平信号。<br>
+CAN通信是通过CAN_H与CAN_L之间的电压差传递电平信号的。<br>
 如果没有隔离，在某些情况下，CAN总线上的电压可能会远远超出规范值，很可能会损坏整条总线上的大部分设备。<br>
 而SCA（除特殊型号外）内部设计了CAN隔离电路，从而保证了通信过程中的电气安全。<br>
 
