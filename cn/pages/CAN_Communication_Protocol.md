@@ -29,7 +29,7 @@
 
 <img src="../img/wiring2-4.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图2-2 CAN通信网络的连接方式示意图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图2-2 CAN通信网络的连接示意图</strong></div>
 
 
 SCA（除特殊型号外）内部采用隔离电路，保证了电气的安全。
