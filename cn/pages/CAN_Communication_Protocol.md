@@ -1,6 +1,4 @@
-# CAN通信协议
-
-## 1 产品信息
+## 1 CAN的物理层说明
 
 ### 1.1 CAN协议概述
 
@@ -15,38 +13,33 @@
 本通信协议波特率为1Mbit/s，对于CAN通信，不同线的线缆对传输距离影响不大，但是要求线径尽量粗，最大节点数为64，本公司产品采用0.205mm²线径，最大传输距离为25m。
 
 
-## 2 配线
+## 2 CAN的硬件连接说明
 
 * INNFOS执行器的插线接口为CAN通信接口，接口如下图所示。名称相同的端口内部引脚连接在一起，其接口定义表2-1所示。CAN接口连接器至少配有CANH、CANL、CGND引脚。
 
 <table><thead><tr><th colspan="4" style=background:PaleTurquoise>表2-1通信信号连接器引脚定义</th></tr></thead><tbody><tr><td style="width:80px">针脚号</td><td>定义</td><td>描述</td><td>端子引脚分布</td></tr><tr><td>1</td><td>PVDD</td><td>功率电源</td><td rowspan="9"><img src="../img/peixian2-2.png" style="width:450px"></td></tr><tr><td>3</td><td>PVDD</td><td>功率电源</td></tr><tr><td>5</td><td>PVDD</td><td>功率电源</td></tr><tr><td>2</td><td>GND</td><td>功率地</td></tr><tr><td>4</td><td>GND</td><td>功率地</td></tr><tr><td>6</td><td>CGND</td><td>CAN通信地</td></tr><tr><td>7</td><td>CANL</td><td>CAN通信接口</td></tr><tr><td>8</td><td>CANH</td><td>CAN通信接口</td></tr></tbody></table>
 
-公共地CGND 的连接，对提高CAN接口的抗干扰性能有很大提升。
 
 ### 2.1 CAN通信的总线和多节点的连接方式
 
+
 <img src="../img/wiring2-3.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图2-1 CAN通信网络的连接方式为总线连接方式</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图2-1 CAN通信网络的连接方式</strong></div>
 
-各个CAN收发设备挂接在总线上，每个分支长度要小于0.3m，否则会引起反射，造成通信问题。 
+<img src="../img/wiring2-4.png" style="width:600px">
+
+<div class="md-text" style="text-align: center;"><strong>图2-1 CAN通信网络的连接方式</strong></div>
+
+
+各个CAN收发设备采用一进一出的形式连接在总线上，并且相互隔离。
 
 * 推荐使用带屏蔽双绞线连接，总线两端分别连接两个120Ω终端匹配电阻防止信号反射，屏蔽层一般使用单点可靠接地。
 * 用万用表测量CANH和CANL之间的阻值可以确认现场两端接电阻是否正确，正常阻值应为60Ω左右（两个电阻的并联值）。
-* 挂接设备数量最多为64个。
-* CAN设备长距离通信时，须将不同CAN电路的公共地CGND相互连接，以保证不同通信设备之间参考电位相等。
-* CGND是指CAN通信中的公共地，可用作信号电平参考，提升抗干扰能力；GND是执行器三相电源中的功率地，功率电流都会由地流回电源。
-
-### 2.2 CAN通信的线缆推荐使用双绞线
-
-CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰有很好的抵抗能力，也能减小线缆对外的辐射。
-
-<img src="../img/wiring2-5.png" style="width:600px">
-
-<div class="md-text" style="text-align: center;"><strong>图2-2：双绞线示意图</strong></div>
-
-* 双绞线的扭矩D应小于2cm，扭矩越小抗干扰效果越好。
-* 为了避免受到外界干扰的影响，传输数据的电缆通常使用带有屏蔽层的双绞线，并且屏蔽层要接参考地。
+* 连接设备数量最多为64个。
+* CAN设备通信时，须将不同CAN电路的公共地CGND相互连接，以保证不同通信设备之间参考电位相等。
+* GND是执行器的功率地。
+* CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰有很好的抵抗能力，也能减小线缆对外的辐射。
 
 ### 2.3 其他设备没有外接CAN_GND 端口配线说明
 
