@@ -29,7 +29,7 @@
 
 <img src="../img/wiring2-4.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图2-1 CAN通信网络的连接方式</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图2-2 CAN通信网络的连接方式</strong></div>
 
 
 各个CAN收发设备采用一进一出的形式连接在总线上，并且相互隔离。
