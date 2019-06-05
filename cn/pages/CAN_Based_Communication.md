@@ -33,29 +33,20 @@
 
 <img src="../img/wiring2-3.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图2-1 CAN通信网络的连接方式</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图2-1 CAN通信网络的连接框图</strong></div>
 
 <img src="../img/wiring2-4.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图2-2 CAN通信网络的连接方式</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图2-2 CAN通信网络的连接示意图</strong></div>
 
 
-各个CAN收发设备采用一进一出的形式连接在总线上，并且相互隔离。
+SCA（除特殊型号外）内部采用隔离电路，保证了电气的安全。
 
-* 推荐使用带屏蔽双绞线连接，总线两端分别连接两个120Ω终端匹配电阻防止信号反射，屏蔽层一般使用单点可靠接地。
-* 用万用表测量CANH和CANL之间的阻值可以确认现场两端接电阻是否正确，正常阻值应为60Ω左右（两个电阻的并联值）。
-* 连接设备数量最多为64个。
-* CAN设备通信时，须将不同CAN电路的公共地CGND相互连接，以保证不同通信设备之间参考电位相等。
-* GND是执行器的功率地。
 * CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰有很好的抵抗能力，也能减小线缆对外的辐射。
-
-### 其他设备没有外接CAN_GND 端口配线说明
-
-#### 设备为非隔离CAN,与其他信号共用GND或是COM端口
-
-<img src="../img/wiring2-11.png" style="width:600px">
-
-<div class="md-text" style="text-align: center;"><strong>图2-3 将其他设备GND或是COM与我公司设备CAN_GND连接</strong></div>
+* 总线两端分别连接两个120Ω终端匹配电阻防止信号反射。
+* CAN设备通信时，须将不同CAN电路的公共地CGND相互连接，以保证不同通信设备之间参考电位相等。
+* 每路CAN连接的连接设备数量最多为64个。
+* 用万用表测量CANH和CANL之间的阻值可以确认现场两端接电阻是否正确，正常阻值应为60Ω左右（两个电阻的并联值）。
 
 
 ## 硬件需求与连接
