@@ -75,7 +75,7 @@ USB接口：MicroUSB接口，韩荣U-F-M5DD-Y-L
 <img src="../img/ECB&HUB_v2_2PCBA6.png" style="width:600px">
 
 
-Note: 多个ECB连接同一电脑,ECB的IP和MAC地址不能有重复，修改ECB的IP和MAC地址请访问 修改IP和MAC地址
+Note: 多个ECB连接同一电脑,ECB的IP和MAC地址不能有重复，修改ECB的IP和MAC地址请访问[ 修改IP和MAC地址](#!pages/ECB&HUB_v2_2.md#修改IP和MAC地址 "wikilink")
 
 ## 修改IP和MAC地址
 #### 下载
