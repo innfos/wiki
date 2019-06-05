@@ -97,12 +97,12 @@ chmod 777 ipChange
 ./ipChange -ip=<1~255> -mac=<1~255>
 ```
 * 请注意只能修改IP或者MAC地址的最后一个数。比如ECB的IP地址是192.168.1.30，只能用该工具将30修改成其他数字。
-## 以太网IAP升级程序
+## 以太网IAP固件升级
 * 系统启动：ECB上电后，默认进入bootloader程序，5秒后，会自动跳转到用户程序，如果CPU ROM中没有用户程序，系统会一直运行在bootloader程序中。
-* 以太网IAP软件：使用以太网IAP软件，可以对ECB进行程序升级，软件的下载以及使用说明，请参考以下链接：
+* 以太网IAP软件：使用以太网IAP软件，可以对ECB进行固件升级，软件的下载以及使用说明，请参考以下链接：
 * 用户程序擦除：当系统处于bootloader程序中，可以通过以太网IAP软件对用户程序进行擦除。
 * 用户程序跳转到bootloader程序：当系统运行在用户程序时，通过以太网IAP软件，可以将系统跳转回bootloader程序中，如果跳转成功，除非系统复位或者成功升级用户程序，否则系统会一直运行在bootloader程序中。
-* 用户程序升级：当系统处于bootloader程序中，可以使用以太网IAP软件，对ECB软件进行升级。
+* 固件升级：当系统处于bootloader程序中，可以使用以太网IAP软件，对ECB进行固件升级。
 ## 资源
 * [ECB_SCH]( ../img/ECB_v2_2.pdf )   [ECB_HUB_SCH]( ../img/ECB_HUB_v2_2.pdf )
 * [STM32F429 数据表]( ../img/STM32F429VIT6.PDF )
