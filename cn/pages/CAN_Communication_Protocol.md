@@ -23,11 +23,11 @@
 ### 2.1 CAN通信的总线和多节点的连接方式
 
 
-<img src="../img/wiring2-3.png" style="width:850px">
+<img src="../img/wiring2-3.png" style="width:1000px">
 
 <div class="md-text" style="text-align: center;"><strong>图2-1 CAN通信网络的连接框图</strong></div>
 
-<img src="../img/wiring2-4.png" style="width:850px">
+<img src="../img/wiring2-4.png" style="width:1000px">
 
 <div class="md-text" style="text-align: center;"><strong>图2-2 CAN通信网络的连接示意图</strong></div>
 
