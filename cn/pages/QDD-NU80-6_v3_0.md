@@ -17,4 +17,4 @@
 ## 版本变更记录
 
 
-<table style="width:600px"><thead><tr style="background:PaleTurquoise"><th style="width:80px">版本号</th><th style="width:100px">更新时间</th><th style="width:100px">更改类型</th><th style="width:80px">位置</th><th>更新内容</th></tr></thead><tbody><tr><td>V3.0.0</td><td>2019.05.22</td><td>添加</td><td>QDD-NU80-6</td><td>全文添加</th></tr></thead><tbody><tr><td>V2.2.0</td><td>2019.05.09</td><td>添加</td><td>QDD-NU80-6</td><td>全文添加</th></tr></thead><tbody><tr><td>V1.0.0</td><td>2019.04.11</td><td>添加</td><td>QQD-NU80-6</td><td>全文添加</td></tbody></table>
+<table style="width:600px"><thead><tr style="background:PaleTurquoise"><th style="width:80px">版本号</th><th style="width:100px">更新时间</th><th style="width:100px">更改类型</th><th style="width:80px">位置</th><th>更新内容</th></tr></thead><tbody><tr><td>V3.0.0</td><td>2019.05.22</td><td>添加</td><td>QDD-NU80-6</td><td>全文添加</th></tr></thead><tbody><tr><td><ahref="http://innfos.com/wiki/cn/index.html#!pages/QDD-NU80-6_v2_2.md">V2.2.0 </a></td><td>2019.05.09</td><td>添加</td><td>QDD-NU80-6</td><td>全文添加</th></tr></thead><tbody><tr><td>V1.0.0</td><td>2019.04.11</td><td>添加</td><td>QQD-NU80-6</td><td>全文添加</td></tbody></table>
