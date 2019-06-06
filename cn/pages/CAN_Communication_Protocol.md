@@ -23,17 +23,18 @@
 ### 2.1 CAN通信的总线和多节点的连接方式
 
 
-<img src="../img/wiring2-3.png" style="width:600px">
+<img src="../img/wiring2-3.png" style="width:850px">
 
 <div class="md-text" style="text-align: center;"><strong>图2-1 CAN通信网络的连接框图</strong></div>
 
-<img src="../img/wiring2-4.png" style="width:600px">
+<img src="../img/wiring2-4.png" style="width:850px">
 
 <div class="md-text" style="text-align: center;"><strong>图2-2 CAN通信网络的连接示意图</strong></div>
 
-CAN通信是通过CAN_H与CAN_L之间的电压差来传递电平信号的。<br>
-如果没有隔离，在某些情况下，CAN总线上的电压可能会远远超出规范值，很可能会损坏整条总线上的大部分设备。<br>
-而SCA（除特殊型号外）内部设计了CAN隔离电路，从而保证了通信过程中的电气安全。<br>
+
+note:CAN通信是通过CAN_H与CAN_L之间的电压差来传递电平信号的。<br>
+如果没有隔离，在某些情况下，CAN总线上的电压可能会远远超出规范值，很可能会损坏整条总线上的大部分设备。
+<br>而SCA（除特殊型号外）内部设计了CAN隔离电路，从而保证了通信过程中的电气安全。
 
 * CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰有很好的抵抗能力，也能减小线缆对外的辐射。
 * 总线两端分别连接两个120Ω终端匹配电阻防止信号反射。
