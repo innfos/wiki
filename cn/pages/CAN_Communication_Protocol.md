@@ -15,7 +15,7 @@
 
 ## CAN的硬件连接说明
 
-* INNFOS执行器的插线接口为CAN通信接口，接口如下图所示。名称相同的端口内部引脚连接在一起，其接口定义表2-1所示。CAN接口连接器至少配有CANH、CANL、CGND引脚。
+* INNFOS执行器的插线接口为CAN通信接口，接口如下图所示。名称相同的端口内部引脚连接在一起，其接口定义表2所示。CAN接口连接器至少配有CANH、CANL、CGND引脚。
 
 <table><thead><tr><th colspan="4" style=background:PaleTurquoise>表2通信信号连接器引脚定义</th></tr></thead><tbody><tr><td style="width:80px">针脚号</td><td>定义</td><td>描述</td><td>端子引脚分布</td></tr><tr><td>1</td><td>PVDD</td><td>功率电源</td><td rowspan="9"><img src="../img/peixian2-2.png" style="width:450px"></td></tr><tr><td>3</td><td>PVDD</td><td>功率电源</td></tr><tr><td>5</td><td>PVDD</td><td>功率电源</td></tr><tr><td>2</td><td>GND</td><td>功率地</td></tr><tr><td>4</td><td>GND</td><td>功率地</td></tr><tr><td>6</td><td>CGND</td><td>CAN通信地</td></tr><tr><td>7</td><td>CANL</td><td>CAN通信接口</td></tr><tr><td>8</td><td>CANH</td><td>CAN通信接口</td></tr></tbody></table>
 
@@ -49,7 +49,7 @@ Note: CAN通信是通过CAN_H与CAN_L之间的电压差来传递电平信号的�
 
 <p><div class="md-text" style="text-align: center;"><strong>图3</strong></div></p>
 
-如图3-1：设备地址对应标识符位，CAN总线标准数据帧标识符位为11位，本协议只用了其中8位，占一个字节，数据长度对应DLC,占半字节，指令符参数内容同在数据域，指令符在前参数内容在后，高字节在前，低字节在后。数据长度等于指令符加上参数内容。
+如图3：设备地址对应标识符位，CAN总线标准数据帧标识符位为11位，本协议只用了其中8位，占一个字节，数据长度对应DLC,占半字节，指令符参数内容同在数据域，指令符在前参数内容在后，高字节在前，低字节在后。数据长度等于指令符加上参数内容。
 
 **设备地址**
 
@@ -69,7 +69,7 @@ Note: CAN通信是通过CAN_H与CAN_L之间的电压差来传递电平信号的�
 
 #### IQmath简介
 
-<img src="../img/3-1communicationprotocol.png" style="width:600px">
+<img src="../img/3-1communicationprotocol.png" style="width:750px">
 
 <p><div class="md-text" style="text-align: center;"><strong>图4</strong></div></p>
 
@@ -160,11 +160,11 @@ Note:_iq24为INNFOS主要应用.
 
 <img src="../img/position.jpg" style="width:600px">
 
-<p><div class="md-text" style="text-align: center;"><strong>图3-3</strong></div></p>
+<p><div class="md-text" style="text-align: center;"><strong>图5</strong></div></p>
 
 * 注释：
-* 上位机所设置的上限幅值（Maximum）最高为_IQ(1.0)，下限幅值（Minimal）最低为_IQ(-1.0)，起到限幅作用（原理图如图3-3）。例：（如图:3-3用位置环的输出经过限幅模块为速度环的输入，假设限幅设为_IQ（0.5），_IQ（-0.5）则位置环输出最大速度应为±0.5x6000=±3000RPM）
-* 比例积分设置值上限为_IQ(127.999999940)，设定值下限为_IQ(-128.0)，但设置值根据实际操作情况调节（原理图: 3-3）
+* 上位机所设置的上限幅值（Maximum）最高为_IQ(1.0)，下限幅值（Minimal）最低为_IQ(-1.0)，起到限幅作用（原理图如图5）。例：（如图:3-3用位置环的输出经过限幅模块为速度环的输入，假设限幅设为_IQ（0.5），_IQ（-0.5）则位置环输出最大速度应为±0.5x6000=±3000RPM）
+* 比例积分设置值上限为_IQ(127.999999940)，设定值下限为_IQ(-128.0)，但设置值根据实际操作情况调节（原理图: 5）
 * 电流环设置电流值范围为_IQ(-1.0)～_IQ(1.0)之间，电流实际值为IQ值乘以满量程，例：（QDD-PR60-36型号执行器满量程电流值为33A ，_IQ(0.5) 实际电流值则为0.5x33A=16.5A，见各型号SCA参数表）
 * 速度环设置速度值范围为_IQ(-1.0)～_IQ(1.0)之间，速度实际值为IQ值乘以满量程（见各型号SCA参数表）。例：（_IQ(0.5)则实际速度为0.5*6000=3000RPM）
 * 位置环是_IQ24格式，正向满量程为_IQ(127.0)，反向满量程为_IQ(-127.0)，IQ值即实际值，例：<span style="color: red">（_IQ（60.0）则实际位置为60R，即零位置正向转60转的位置。）</span>
