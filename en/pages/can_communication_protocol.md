@@ -1,20 +1,20 @@
 # CAN Communication Protocol
 
-## 1 Products Information
+## Products Information
 
-### 1.1 CAN Protocol Overview
+### CAN Protocol Overview
 
 *     CAN is an abbreviation of Controller Area Network (hereafter referred to as CAN) and is an ISO international standardized serial communication protocol.
 
 *     INNFOS product design is subject to the CAN2.0A protocol standard. This article details the CAN communication protocol format of the company's products and the CAN communication structure of the product.
 
-### 1.2 Comprehensive performance parameters
+### Comprehensive performance parameters
 
 <table style="width:400px"><thead><COL WIDTH=50%><COL WIDTH=50%><tr><th colspan="2"style=background:PaleTurquoise>Table 1-1 Description of the comprehensive performance parameters</th></tr></thead><tbody><tr><td>project</td><td>Description</td></tr><tr><td>Link layer protocol</td><td>CAN bus</td></tr><tr><td>CAN-ID type</td><td>11bit-CAN2.0A</td></tr><tr><td>Baud rate</td><td>1Mbit/s</td></tr><tr><td>Maximum number of sites</td><td>63</td></tr><tr><td>CAN frame length</td><td>0~8 bytes</td></tr><tr><td>Application layer CAN frame type</td><td>Data frame, remote frame</td></tr><tr><td>Terminal matching resistor</td><td>120Ω</td></tr></tbody></table>
 
 The baud rate of this communication protocol is 1Mbit/s. For CAN communication, the cable types have little effect on the transmission distance, but the wire diameter is as thick as possible. The maximum number of nodes is 64. The company's products use 0.205mm2 wire diameter, the largest. The transmission distance is 25m.
 
-## 2 Wiring
+## Wiring
 
 * The INNFOS actuator's patch cord interface is a CAN communication interface, as shown in the figure below. The internal pins of the same name are connected together, and their interface definitions are shown in Figure 2-1. The CAN interface connector is equipped with at least CANH, CANL, and CGND pins.
 
@@ -26,7 +26,7 @@ The baud rate of this communication protocol is 1Mbit/s. For CAN communication, 
 The connection of CAN_GND greatly improves the anti-interference performance of the CAN interface.
 
 
-### 2.1 CAN communication bus and multi-node connection
+### CAN communication bus and multi-node connection
 
 <img src="../img/wiring2-3.png" style="width:600px">
 
@@ -46,7 +46,7 @@ Each CAN transceiver device is attached to the bus, and each branch length is le
 *   CGND refers to CAN_GND, which can be used as a signal level reference and improve the anti-interference ability; GND is the common ground in the three-phase power supply of the actuator, and collects the large current of the three-phase power supply to the negative pole.
 
 
-### 2.2 Twisted pairs are recommended to use as CAN communication cables
+### Twisted pairs are recommended to use as CAN communication cables
 
 Twisted pairs are recommended to use as CAN communication cables because of its good resistance to high-frequency magnetic field noise interference and abilities to reduce the external radiation of the cables, as shown in Figure 2-5.
 
@@ -61,17 +61,9 @@ Twisted pairs are recommended to use as CAN communication cables because of its 
 
 *   Shielded wires are not recommended for long distance high speed communication. The large distributed capacitance between the shield and the signal line could cause transmission delay of signal.
 
-### 2.3 Descriptions for other devices without external CAN_GND port wiring
+## communication protocol
 
-#### The device is non-isolated CAN, sharing GND or COM port with other signals
-
-<img src="../img/wiring2-11.png" style="width:600px">
-
-**Fig 2-3：Connections shared with other circuits**
-
-## 3 communication protocol
-
-### 3.1 communication protocol format
+### communication protocol format
 
 <img src="../img/wiring2-13.png" style="width:600px">
 
@@ -122,7 +114,7 @@ The range of representation of the 32-bit signed number is: -2147483648 to 21474
 
 * See Appendix D for specific methods of IQ value conversion.
 
-### 3.2 CAN communication protocol command application example
+### CAN communication protocol command application example
 
 **Example 1. Write command**
 
@@ -208,7 +200,7 @@ Note:
 *  Speed loop curve mode and position loop curve mode, you can set the acceleration, deceleration, and relatively smooth to reach your preset speed value and position, which can avoid excessive current during operation, trigger actuator over-current protection or Power supply overcurrent protection.
 
 
-### 3.3 CAN communication protocol command reference
+### CAN communication protocol command reference
 
 #### Receive command
 
@@ -233,7 +225,7 @@ The shutdown command must be send before power-off, otherwise the zero position 
 <table style="width:600px"><thead><tr><th colspan="2" style=background:PaleTurquoise>3.3.2.4 Send data 1 bytes, return data 2 bytes</th></tr></thead><tbody><tr><td style="width:150px">Command name</td><td>write command</td></tr><tr><td>Description</td><td>The data length of this command class is 1 bytes, the return data length is 2 bytes</td></tr><tr><td>command key</td><td>write command 4</td></tr><tr><td>Data length</td><td>1</td></tr><tr><td>Data content</td><td>No</td></tr><tr><td>Command character (return value)</td><td>write command 4</td></tr><tr><td>Data length (return value)</td><td>2</td></tr><tr><td rowspan="2">slave computer returns data</td><td>0x01：sucess</td></tr><tr><td>0x00：fail</td></tr></tbody></table>
 
 
-## 4 Appendix A
+## Appendix A
 
 ### A.1 Write command code value definition table
 
@@ -243,7 +235,7 @@ The shutdown command must be send before power-off, otherwise the zero position 
 
 <table style="width:700px"><thead><tr><th colspan="3" style=background:PaleTurquoise>A.1.3 Read command 3</th></tr></thead><tbody><tr><td style="width:100px">Command key</td><td style="width:200px">Definition</td><td style="width:400px">Description</td></tr><tr><td>0x04</td><td>current value</td><td>Read the current current value of the specified ID actuator. The current value needs to be multiplied by the current full scale (See the SCAs parameter list). The unit is A.</td></tr><tr><td>0x05</td><td>Current speed value</td><td>Read the current speed value of the specified ID actuator. The true speed value needs to be multiplied by the speed full scale (see Appendix D) in RPM.</td></tr><tr><td>0x06</td><td>	Current position value</td><td>Reads the current position value of the specified ID executor in R</td></tr><tr><td>0x15</td><td>Current loop P</td><td>Read P of the current loop of the specified ID actuator</td></tr><tr><td>0x16</td><td>Current loop I</td><td>Read I of the current loop of the specified ID actuator</td></tr><tr><td>0x17</td><td>Speed loop P</td><td>Read the current speed loop P of the specified ID actuator</td></tr><tr><td>0x18</td><td>Speed loop I</td><td>Read the current speed loop I of the specified ID actuator</td></tr><tr><td>0x19</td><td>position loop P</td><td>Read the current position loop P of the specified ID executor</td></tr><tr><td>0x1A</td><td>position loop I</td><td>Read the current position loop I of the specified ID executor</td></tr><tr><td>0x1C</td><td>Max speed of position trapezoidal curve</td><td>Reads the maximum speed of the trapezoidal curve of the current position of the specified ID actuator</td></tr><tr><td>0x1D</td><td>Acceleration of position trapezoidal curve</td><td>Reads the maximum acceleration of the trapezoidal curve at the current position of the specified ID actuator</td></tr><tr><td>0x1E</td><td>Deceleration of position trapezoidal curve</td><td>Read the maximum deceleration of the trapezoidal curve of the current position of the specified ID actuator</td></tr><tr><td>0x22</td><td>Max speed of the speed trapezoidal curve</td><td>Reads the maximum speed of the current speed trapezoidal curve of the specified ID actuator</td></tr><tr><td>0x23</td><td>Acceleration of velocity trapezoidal curve</td><td>Reads the maximum acceleration of the current speed trapezoidal curve of the specified ID actuator</td></tr><tr><td>0x24</td><td>Deceleration of the speed trapezoidal curve</td><td>Reads the maximum deceleration of the current speed trapezoidal curve of the specified ID actuator</td></tr><tr><td>0x34</td><td>Lower limit of current loop output</td><td>Read the lower limit of the current current loop output of the specified ID actuator</td></tr><tr><td>0x35</td><td>Upper limit of current loop output</td><td>Read the upper limit of the current current loop output of the specified ID actuator</td></tr><tr><td>0x36</td><td>Lower limit of the speed loop output</td><td>Read the lower limit of the current speed loop output of the specified ID actuator</td></tr><tr><td>0x37</td><td>Upper limit of speed loop output</td><td>Read the upper limit of the current speed loop output of the specified ID actuator</td></tr><tr><td>0x38</td><td>Lower limit of position loop output</td><td>Read the lower limit of the current position loop output of the specified ID actuator</td></tr><tr><td>0x39</td><td>Upper limit of position loop output</td><td>Read the upper limit of the current position loop output of the specified ID actuator</td></tr><tr><td>0x85</td><td>Upper limit of actuator position</td><td>read upper limit of actuator position</td></tr><tr><td>0x86</td><td>Lower limit of actuator position</td><td>Read the lower limit of the position of the execution ID actuator</td></tr><tr><td>0x8A</td><td>	Actuator position offset</td><td>Read the position offset value of the specified ID actuator</td></tr><tr><td>0x92</td><td>The lower limit of the current when the actuator is automatically reset to zero</td><td>Read the lower limit of the current when the specified ID actuator is automatically reset to zero</td></tr><tr><td>0x93</td><td>	The upper limit of the current when the actuator is automatically reset to zero</td><td>Read the upper limit of the current when the specified ID actuator is automatically reset to zero</td></tr><tr><td>0x7F</td><td>Stall energy</td><td>Reads the stall energy of the specified ID actuator. （The value is 75.225 times the true value）The heating energy after blocking, the unit is J.</td></tr></tbody></table>
 
-### A.2 Write command code value definition table
+### Write command code value definition table
 
 <table style="width:700px"><thead><tr><th colspan="3" style=background:PaleTurquoise>A.2.1 Write command 1</th></tr></thead><tbody><tr><td style="width:100px">Command key</td><td style="width:200px">Definition</td><td>Description</td></tr><tr><td>0x07：</td><td>Set the mode of the specified ID executor</td><td>Set the current mode of the specified ID executor</td></tr><tr><td>0x70：</td><td>Current loop filter status</td><td>Set the current loop filter enable/disable for the specified ID actuator</td></tr><tr><td>0x74：</td><td>Speed loop filter status</td><td>Set the speed loop filter enable/disable for the specified ID actuator</td></tr><tr><td>0x78：</td><td>Position loop filter status</td><td>Set position loop filter enable/disable for the specified ID actuator</td></tr><tr><td>0x2A：</td><td>Actuator on/off status</td><td>Set the specified ID actuator to power on/off</td></tr>
 </tbody></table>
@@ -258,16 +250,16 @@ The shutdown command must be send before power-off, otherwise the zero position 
 
 <table style="width:700px"><thead><tr><th colspan="3" style=background:PaleTurquoise>A.2.4 Write command 4</th></tr></thead><tbody><tr><td>Command key</td><td>Definition</td><td>Description</td></tr><tr><td>0xFE：</td><td>Eliminate the alarm of the lower computer</td><td>Eliminate the alarm action of the lower position machine. After receiving the command, the lower position machine stops the alarm, otherwise the lower position machine is inoperable.</td></tr><tr><td>0x88</td><td>Clear Homing data</td><td>Clear Homing data</td></tr><tr><td>0x0D</td><td>Storage parameter</td><td>Storage parameter</td></tr></tbody></table>
 
-## 5 Appendix B :Mode table
+## Appendix B :Mode table
 
 <table style="width:400px"><thead><tr style=background:PaleTurquoise><th>Command key</th><th>Command key</th></tr></thead><tbody><tr><td>0x01</td><td>Current mode</td></tr><tr><td>0x02</td><td>Speed mode</td></tr><tr><td>0x03</td><td>Position mode</td></tr><tr><td>0x06</td><td>Position trapezoidal mode (S curve)</td></tr><tr><td>0x07</td><td>Speed trapezoidal mode (S curve)</td></tr><tr><td>0x08</td><td>Homing mode</td></tr></tbody></table>
 
-## 6 AppendixC：Alarm instruction list
+## AppendixC：Alarm instruction list
 
 <table style="width:600px"><thead><tr style=background:PaleTurquoise><th>Command character</th><th>Command character</th></tr></thead><tbody><tr><td>0x0001</td><td>Overvoltage abnormality</td></tr><tr><td>0x0002</td><td>Undervoltage abnormality</td></tr><tr><td>0x0004</td><td>Abnormal blocking</td></tr><tr><td>0x0008</td><td>Overheating abnormality</td></tr><tr><td>0x0010</td><td>Abnormal read and write parameters</td></tr><tr><td>0x0020</td><td>Multi-turn count abnormality</td></tr><tr><td>0x0040</td><td>Inverter temperature sensor is abnormal</td></tr><tr><td>0x0080</td><td>communication is abnormal</td></tr><tr><td>0x0100</td><td>communication is abnormal</td></tr><tr><td>0x0200</td><td>Position mode step greater than 1</td></tr><tr><td>0x0400</td><td>DRV protection</td></tr><tr><td>other</td><td>Device exception</td></tr><tr><td>explaination</td><td>Multiple errors can be alarmed at the same time. If the return data is 0X05, the error is 0X01 overvoltage abnormality and 0004 blocked abnormality.</td></tr></tbody></table>
 
 
-## 7 Appendix D: Command Sending and IQ Value Conversion Method
+## Appendix D: Command Sending and IQ Value Conversion Method
 * The comment section of the manual indicates that the IQ value in the position mode is the actual value, ranging from -128 to 127. 999999940. At this time, only the corresponding position value needs to be converted into an IQ value to be input into the parameter content. In the speed and current mode, the corresponding parameter value needs to be converted before converting the IQ value. If the current speed value is set to 100 RPM, the current value of the setting needs to be divided by the maximum value, ie 100/6000=0.01666666, and then Then, the IQ conversion is performed by 0.016666666, and the obtained value is the parameter value.
 
 * For example, we need to set the current position to 60R (note the limit of the step response in the position mode. If the difference between the set position and the current position exceeds 1R, it will not respond), first find the corresponding command. The third type of write command (write command 3) in Appendix A indicates that the instruction to set the current position value is 0x0A. After finding the instruction, look for the corresponding transmission format of the instruction. In the "CAN Communication Protocol Command Reference", the 3.3.2.3 subsection corresponds to the third type of write instruction, and the transmission data length is 5, that is, one byte instruction + 4 bytes parameter. content. When the data content is applied to the IQ24 format, the IQ conversion is performed directly on 60, that is, 60*2^24=1006632960, and then unified into hexadecimal (according to the test software), 3C 00 00 00. According to the data frame format description of CAN bus, the instruction parameter should be at the highest position, and the content of the parameter is after, the content of the instruction we send is 0x 0A 3C 00 00 00, which also corresponds to the length of the data in the description is 5 (bytes). The instruction is sent to this point.
