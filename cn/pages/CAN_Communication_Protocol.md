@@ -45,7 +45,7 @@ Note: CAN通信是通过CAN_H与CAN_L之间的电压差来传递电平信号的�
 
 ### CAN通信协议格式
 
-<img src="../img/wiring2_13.png" style="width:600px">
+<img src="../img/wiring2_13.png" style="width:750px">
 
 <p><div class="md-text" style="text-align: center;"><strong>图3</strong></div></p>
 
