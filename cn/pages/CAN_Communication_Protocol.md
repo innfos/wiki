@@ -78,7 +78,7 @@ Note: CAN通信是通过CAN_H与CAN_L之间的电压差来传递电平信号的�
 
 #### IQmath简介
 
-<img src="../img/3-1communicationprotocol.png" style="width:750px">
+<img src="../img/3-1communicationprotocol.png" style="width:1000px">
 
 <p><div class="md-text" style="text-align: center;"><strong>图4</strong></div></p>
 
