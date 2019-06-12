@@ -25,23 +25,23 @@
 
 * INNFOS执行器的插线接口为CAN通信接口，接口如下图所示。名称相同的端口内部引脚连接在一起，其接口定义表2-1所示。CAN接口连接器至少配有CANH、CANL、CGND引脚。
 
-<table><thead><tr><th colspan="4" style=background:PaleTurquoise>表2-1通信信号连接器引脚定义</th></tr></thead><tbody><tr><td style="width:80px">针脚号</td><td>定义</td><td>描述</td><td>端子引脚分布</td></tr><tr><td>1</td><td>PVDD</td><td>功率电源</td><td rowspan="9"><img src="../img/peixian2-2.png" style="width:450px"></td></tr><tr><td>3</td><td>PVDD</td><td>功率电源</td></tr><tr><td>5</td><td>PVDD</td><td>功率电源</td></tr><tr><td>2</td><td>GND</td><td>功率地</td></tr><tr><td>4</td><td>GND</td><td>功率地</td></tr><tr><td>6</td><td>CGND</td><td>CAN通信地</td></tr><tr><td>7</td><td>CANL</td><td>CAN通信接口</td></tr><tr><td>8</td><td>CANH</td><td>CAN通信接口</td></tr></tbody></table>
+<table><thead><tr><th colspan="4" style=background:PaleTurquoise>表1通信信号连接器引脚定义</th></tr></thead><tbody><tr><td style="width:80px">针脚号</td><td>定义</td><td>描述</td><td>端子引脚分布</td></tr><tr><td>1</td><td>PVDD</td><td>功率电源</td><td rowspan="9"><img src="../img/peixian2-2.png" style="width:450px"></td></tr><tr><td>3</td><td>PVDD</td><td>功率电源</td></tr><tr><td>5</td><td>PVDD</td><td>功率电源</td></tr><tr><td>2</td><td>GND</td><td>功率地</td></tr><tr><td>4</td><td>GND</td><td>功率地</td></tr><tr><td>6</td><td>CGND</td><td>CAN通信地</td></tr><tr><td>7</td><td>CANL</td><td>CAN通信接口</td></tr><tr><td>8</td><td>CANH</td><td>CAN通信接口</td></tr></tbody></table>
 
 
 ### CAN通信的总线和多节点的连接方式
 
 
-<img src="../img/wiring2-3.png" style="width:600px">
+<img src="../img/wiring2-3.png" style="width:870px">
 
-<div class="md-text" style="text-align: center;"><strong>图2-1 CAN通信网络的连接框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
 
-<img src="../img/wiring2-4.png" style="width:600px">
+<img src="../img/wiring2-4.png" style="width:870px">
 
-<div class="md-text" style="text-align: center;"><strong>图2-2 CAN通信网络的连接示意图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图2 CAN通信网络的连接示意图</strong></div>
 
-CAN通信是通过CAN_H与CAN_L之间的电压差来传递电平信号的。<br>
-如果没有隔离，在某些情况下，CAN总线上的电压可能会远远超出规范值，很可能会损坏整条总线上的大部分设备。<br>
-而SCA（除特殊型号外）内部设计了CAN隔离电路，从而保证了通信过程中的电气安全。<br>
+Note:CAN通信是通过CAN_H与CAN_L之间的电压差来传递电平信号的。
+如果没有隔离，在某些情况下，CAN总线上的电压可能会远远超出规范值，很可能会损坏整条总线上的大部分设备。
+而SCA（除特殊型号外）内部设计了CAN隔离电路，从而保证了通信过程中的电气安全。
 
 * CAN通信网络推荐使用双绞线缆，双绞线对高频磁场噪声干扰有很好的抵抗能力，也能减小线缆对外的辐射。
 * 总线两端分别连接两个120Ω终端匹配电阻防止信号反射。
