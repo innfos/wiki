@@ -12,6 +12,7 @@
 
 本通信协议波特率为1Mbit/s，对于CAN通信，不同线的线缆对传输距离影响不大，但是要求线径尽量粗，最大节点数为64，本公司产品采用0.205mm²线径，最大传输距离为25m。
 
+----
 
 ## CAN的硬件连接说明
 
@@ -23,9 +24,9 @@
 
 <table><thead><tr><th colspan="4" style=background:PaleTurquoise>表2通信信号连接器引脚定义</th></tr></thead><tbody><tr><td style="width:80px">针脚号</td><td>定义</td><td>描述</td><td>端子引脚分布</td></tr><tr><td>1</td><td>PVDD</td><td>功率电源</td><td rowspan="9"><img src="../img/peixian2-2.png" style="width:450px"></td></tr><tr><td>3</td><td>PVDD</td><td>功率电源</td></tr><tr><td>5</td><td>PVDD</td><td>功率电源</td></tr><tr><td>2</td><td>GND</td><td>功率地</td></tr><tr><td>4</td><td>GND</td><td>功率地</td></tr><tr><td>6</td><td>CGND</td><td>CAN通信地</td></tr><tr><td>7</td><td>CANL</td><td>CAN通信接口</td></tr><tr><td>8</td><td>CANH</td><td>CAN通信接口</td></tr></tbody></table>
 
+----
 
 ### CAN通信的总线和多节点的连接方式
-
 
 <img src="../img/wiring2-3.png" style="width:1000px">
 
@@ -44,6 +45,8 @@ Note: CAN通信是通过CAN_H与CAN_L之间的电压差来传递电平信号的�
 * CAN设备通信时，须将不同CAN电路的公共地CGND相互连接，以保证不同通信设备之间参考电位相等。
 * 每路CAN连接的设备数量最多为64个。
 * 用万用表测量CAN_H和CAN_L之间的阻值可以确认现场两端接电阻是否正确，正常阻值应为60Ω左右（两个电阻的并联值）。
+
+----
 
 ## 通信协议
 
@@ -70,6 +73,8 @@ Note: CAN通信是通过CAN_H与CAN_L之间的电压差来传递电平信号的�
 **参数内容**
 
 某条指令的具体参数内容，其长度等于数据长度减一。有些指令不含具体数据，其数据位数位也应为 1。
+
+----
 
 #### IQmath简介
 
@@ -98,6 +103,8 @@ Note:_iq24为INNFOS主要应用.
 32位有符号数的表示范围是：-2147483648到2147483647。如果我们把有符号定点数的最大值2147483647转换为Q为24对应的浮点数，则结果为：浮点数2147483647/2^24=127.999999940。
 
 * IQ值换算的具体方法参见附录D。
+
+----
 
 ### CAN通信协议命令应用举例
 
@@ -129,6 +136,8 @@ Note:_iq24为INNFOS主要应用.
 
 说明：参数内容data[3-0]高位在前，低位在后。为_IQ24格式。_IQ(-1.0)-(1.0)代表反转速度满量程和正转速度满量程。<br>满量程为6000RPM。若data=_IQ(0.5)。则为0.5*6000=3000RPM。
 
+----
+
 **示例2.写命令**
 
 <table style="width:400px"><thead><tr><th colspan="4"style=background:PaleTurquoise>设置执行器电机ID为0x01的当前位置值 </th></tr></thead><tbody><tr><td>设备地址</td><td>数据长度</td><td>指令符</td><td>参数内容</td></tr><tr><td>0x01</td><td>0x5</td><td>0x0A</td><td>0x05 0x00 0x00 0x00</td></tr></tbody></table>
@@ -147,8 +156,7 @@ Note:_iq24为INNFOS主要应用.
 
 *    应答内容：无应答（特殊协议）
 
-
-* * *
+----
 
 #### 使用指令模式的一般步骤：
 
@@ -174,6 +182,8 @@ Note:_iq24为INNFOS主要应用.
 * 位置环是_IQ24格式，正向满量程为_IQ(127.0)，反向满量程为_IQ(-127.0)，IQ值即实际值，例：<span style="color: red">（_IQ（60.0）则实际位置为60R，即零位置正向转60转的位置。）</span>
 * 速度环曲线模式和位置环曲线模式，可以通过设置加速度，减速度的大小，相对平滑的达到自己预设的速度值和位置，可以避免操作时瞬间电流过大，触发执行器过流保护或者供电电源过流保护。
 
+----
+
 ### CAN通信协议命令参考
 
 #### 读取命令
@@ -195,6 +205,7 @@ Note:_iq24为INNFOS主要应用.
 
 <table style="width:600px"><thead><tr class="tableizer-firstrow"><th colspan="2"style=background:PaleTurquoise>3.3.2.4 发送数据1字节，返回数据2字节</th></tr></thead><tbody><tr><td style="width:150px">名称</td><td>写入命令</td></tr><tr><td>说明</td><td>此命令类发送数据长度为1，返回数据长度为2</td></tr><tr><td>指令符</td><td><a href="#!pages/CAN_Communication_Protocol.md#写入指令4:">见写入指令4</a></td></tr><tr><td>数据长度</td><td>1</td></tr><tr><td>数据内容</td><td>无</td></tr><tr><td>指令 (返回值)</td><td><a href="#!pages/CAN_Communication_Protocol.md#写入指令4:">见写入指令4</a></td></tr><tr><td>数据长度(返回值)</td><td>2</td></tr><tr><td rowspan="2">执行器返回数据</td><td>0x01：成功</td></tr><tr><td>0x00：失败</td></tr></tbody></table>
 
+----
 
 ## 附录A
 
@@ -233,18 +244,26 @@ Note:_iq24为INNFOS主要应用.
 
 <table style="width:700px"><thead><tr><th colspan="3" style=background:PaleTurquoise>A.2.4写入指令4</th></tr></thead><tbody><tr><td style="width:100px">指令符</td><td style="width:200px">定义</td><td>说明</td></tr><tr><td>0xFE</td><td>消除下位机的报警</td><td>消除下位机的报警动作，接收到命令后，下位机停止报警，否则下位机不可操作</td></tr><tr><td>0x88</td><td>清除Homing数据</td><td>清除Homing数据</td></tr><tr><td>0x0D</td><td>存储参数</td><td>存储参数到EEPROM</td></tr></tbody></table>
 
+----
+
 ##  附录B :模式表
 
 <table style="width:400px"><thead><tr style=background:PaleTurquoise><th>指令符</th><th>指令符</th></tr></thead><tbody><tr><td>0x01</td><td>电流模式</td></tr><tr><td>0x02</td><td>速度模式</td></tr><tr><td>0x03</td><td>位置模式</td></tr><tr><td>0x06</td><td>位置梯形模式（S曲线）</td></tr><tr><td>0x07</td><td>速度梯形模式（S曲线）</td></tr><tr><td>0x08</td><td>homing模式</td></tr></tbody></table>
+
+----
 
 ## 附录C：报警指令表
 
 <table style="width:600px"><thead><tr style=background:PaleTurquoise><th>指令符</th><th>指令符</th></tr></thead><tbody><tr><td>0x0001</td><td>过压异常</td></tr><tr><td>0x0002</td><td>欠压异常</td></tr><tr><td>0x0004</td><td>堵转异常</td></tr><tr><td>0x0008</td><td>过热异常</td></tr><tr><td>0x0010</td><td>读写参数异常</td></tr><tr><td>0x0020</td><td>多圈计数异常</td></tr><tr><td>0x0040</td><td>逆变器温度传感器异常</td></tr><tr><td>0x0080</td><td>CAN通信异常</td></tr><tr><td>0x0100</td><td>电机温度传感器异常</td></tr><tr><td>0x0200</td><td>位置模式阶跃大于1</td></tr><tr><td>0x0400</td><td>DRV保护</td></tr><tr><td>其他</td><td>设备异常</td></tr><tr><td>注释</td><td>可同时报警多个错误，如返回数据为0005，则错误为0001过压异常与0004堵转异常</td></tr></tbody></table>
 
+----
+
 ## 附录D:指令发送与IQ值换算方法
 * 说明书的注释部分表明：在位置模式中，IQ值即为实际值，即实际值的范围为-128～127. 999999940。这时只需要将对应的位置值转换成IQ值即可输入到参数内容中。<br>在速度和电流模式中，转换IQ值之前需要将对应的参数值进行换算，如设定当前速度值为100RPM，则需要将设定的当前值除以最大值，即100/6000=0.01666666，然后再将0.016666666进行IQ换算，得到的值即为参数值。
 * 例如我们要设定当前的位置为60R（注意位置模式中阶跃响应的限制，若设定位置与当前位置差值超过1R则不响应），先寻找对应的指令。附录A中第三类写入命令（写入命令3）表明，设定当前位置值的指令为0x0A。找到指令后寻找指令的对应发送格式，在“CAN通信协议命令参考”中3.3.2.3小节对应第三类写入指令，发送数据长度为5，即一个字节的指令+4个字节的参数内容。<br>数据内容应用IQ24格式，则直接对60进行IQ换算，即60*2^24= 1006632960，再统一转换为16进制（根据测试软件需要），3C 00 00 00。根据CAN总线的数据帧格式说明，指令参数要在最高位，参数内容在后，则我们发送的指令内容 为0x 0A 3C 00 00 00，这也对应了说明中的数据长度为5（字节）。到此指令发送完毕。
 * 相应地，若要发送电流或者速度模式的设定值，需要先将参数值进行换算（各自除以对应的最大值），得到一个-1.0～1.0范围内的数，再进行IQ换算即可。发送命令的步骤与方法与位置模式相同，需要注意的是每个指令使用的数据格式，若为IQ8格式，则将公式中2^24改为2^8后再进行换算即可。
+
+----
 
 ## 版本变更记录
 
