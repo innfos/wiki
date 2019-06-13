@@ -8,7 +8,7 @@ The following instructions are meant to get you up and running quickly if you ar
 If there's any questions,please contact us at support@innfos.com.
 
   * [Introduction](pages/introduction.md)
-  * [CAN-Based Communication](pages/Can_Based_Connection.md)
+  * [CAN-Based Communication](pages/CAN_Based_Connection.md)
   * [ECB-Based Communication](pages/ECB_Based_Communication.md)
 
 
@@ -16,7 +16,7 @@ If there's any questions,please contact us at support@innfos.com.
 ##  Software & Development
 ------------
 
-  * [CAN Communication Protocol](pages/Can_Communication_Protocol.md)
+  * [CAN Communication Protocol](pages/CAN_Communication_Protocol.md)
   * [Ethernet Configuration](pages/Ethernet_Configuration.md)
   * [Ethernet Communication Protocol](pages/Ethernet_Communication_Protocol.md)
   * [Ethernet Communication SDK](pages/Ethernet_Communication_SDK.md)
