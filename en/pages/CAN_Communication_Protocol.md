@@ -1,4 +1,4 @@
-## CAN的物理层说明
+## Physical layer description of CAN
 
 ### CAN Protocol Overview
 
@@ -14,7 +14,7 @@ The baud rate of this communication protocol is 1Mbit/s. For CAN communication, 
 
 ----
 
-## CAN的硬件连接说明
+## Hardware connection introduction of CAN
 
 ### 接口规格型号
 
