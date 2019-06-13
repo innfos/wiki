@@ -16,9 +16,9 @@ The baud rate of this communication protocol is 1Mbit/s. For CAN communication, 
 
 ## Hardware connection introduction of CAN
 
-### 接口规格型号
+### Interface specification model
 
-功率信号复合接口：Molex 430450827
+communication interface：Molex 430450827
 
 * The INNFOS actuator's patch cord interface is a CAN communication interface, as shown in the figure below. The internal pins of the same name are connected together, and their interface definitions are shown in Figure 2-1. The CAN interface connector is equipped with at least CANH, CANL, and CGND pins.
 
