@@ -151,7 +151,7 @@ Send content: 0x0A 0x05 0x00 0x00 0x00
 
 Description: Parameter content data[3 ~0] The high position is in the front and the low position is in the back. For the _IQ24 format. _IQ(-128.0)~_IQ(127.999999940) represents the reverse position value full scale and forward position value full scale. If data=_IQ(5.0), set the current position to 5.
 
-*    应答内容：无应答（特殊协议）
+*   Respons: no response (special agreement)
 
 ----
 
@@ -195,7 +195,6 @@ Note:
 <table class="tableizer-table"><thead><tr class="tableizer-firstrow"></tr></thead><tbody><tr><td colspan="3" style=background:PaleTurquoise>3.3.1.2 Send data 1 byte, return data 3 bytes</td></tr><tr><td style="width:250px">Command name</td><td colspan="2">Read command</td></tr><tr><td>Description</td><td  colspan="2">This command sends a data length of 1, and its return data with the length of 3. <br>The parameter in high position shows first. The value is 2^8 times the true value.<br>(special instructions are specified in the instruction list)</td></tr><tr><td>Command character</td><td  colspan="2">See <a href="#!pages/Can_Communication_Protocol.md#Read_command_2">Read Command 2</a></td></tr><tr><td>Data length</td><td colspan="2">1</td></tr> <tr><td>Data content</td><td colspan="2">None</td></tr><tr><td>Command character (return value)</td><td colspan="2">See <a href="#!pages/Can_Communication_Protocol.md#Read_commamd_2">Read Command 2</a></td></tr><tr><td>Data length (return value)</td><td  colspan="2">3</td></tr><tr><td>Lower machine returns data</td><td>The data is in iq8 format</td><td>Or see <a href="#!pages/Can_Communication_Protocol.md#Appendix_C:the_error_warning_instruction_list"> the error warning instruction list</a></td></tr></tbody></table>
 
 <table class="tableizer-table"><thead><tr class="tableizer-firstrow"></tr></thead><tbody><tr><td  colspan="2" style=background:PaleTurquoise>3.3.1.3 Send data 1 byte, return data 5 bytes</td></tr><tr><td style="width:250px">Command name</td><td>Read command</td></tr><tr><td>Description</td><td>This command sends a data length of 1, and its return data with the length of 5. <br>the parameter in high position shows first. The value is 2^24 times the true value<br>(special instructions are specified in the instruction list)</td></tr><tr><td>Command character</td><td>See <a href="#!pages/Can_Communication_Protocol.md#Read_command_3">Read Command 3</a></td></tr><tr><td>Data length</td><td>1</td></tr><tr><td>Data content</td><td>none</td></tr><tr><td>Command character (return value)</td><td>See <a href="#!pages/Can_Communication_Protocol.md#Read_command_3">Read Command 3</a></td></tr><tr><td>Data length (return value)</td><td>5</td></tr> <tr><td>Lower machine returns data</td><td>Data is formed as iq24(special instructions are specified in the instruction list）</td></tr></tbody></table>
-
 
 ### Write command
 
