@@ -2,11 +2,13 @@
 ### INNNFOS Actuator ID Modification
  
 After start-up, the red area is selected by the mouse and the current actuator ID number can be changed. Then enter A-1 interface below and click Download to save the changed parameters.
+
+
 ![](../img/A1.png "图A-1")
 
 * FigA-1
 
-* * *
+----
 
 ## Appendix B
 
@@ -41,7 +43,10 @@ RPM/s^2: The first-order time derivative of acceleration, ie jerk (jerk), indica
 
 *   Fig B-1
 
+----
+
 ## Appendix C
+
 ### Oscilloscope Detailed Instructions
 
 *    **Prescalar**: The internal sampling frequency of the actuator is 20K, and the sampling period is 0.05ms (a value is collected every 0.05ms). Prescalar is the prescaler value, which divides the internal sampling frequency. The oscilloscope displays a sampling frequency of 20K/Prescalar. For example, if Prescalar is 1, the sampling frequency and the period stay unchanged. If the Prescalar is 10 and the sampling period becomes 2K, a point is acquired every 0.5ms (0.05ms*Prescalar), the range of waveforms shown in the oscilloscope will be wider, and the frequency of waveform refresh slower. Conversely, if Prescalar is reduced, the narrower the range of waveforms that can be seen on the oscilloscope, the larger area the waveform will be, and the waveform refresh rate will be faster.
@@ -54,7 +59,10 @@ RPM/s^2: The first-order time derivative of acceleration, ie jerk (jerk), indica
 
 *   FIg C-1
 
+----
+
 ## Appendix D
+
 ### Detailed explanation of the position loop S curve mode principle
 
 *   In applications, the movement that the actuator driving the mechanical structure needs to be smooth, slow and orderly. If the actuator reaches the specified position in an instant, the strong moment of inertia will have a certain impact on the mechanical structure, so the function of the S-curve-position mode is to make the rotation smooth, which requires a gradual change from low to high or high to low during acceleration and deceleration to ensure smooth movement of the entire mechanical movement.
@@ -69,6 +77,8 @@ RPM/s^2: The first-order time derivative of acceleration, ie jerk (jerk), indica
 *    When the actuator is running in S-curve mode as shown in the figure “Position-Time” above, you can see that the position change has a gentle process. The shape of the curve will change according to the parameter setting . In the acceleration region, the position amount increases rapidly, the speed increases linearly, and the acceleration is constant; in the uniform velocity region, the position amount increases linearly, the velocity value is constant, the acceleration is 0; in the deceleration region, the position amount increases slowly，the speed decreases linearly and the acceleration is constant.
 *   If you increase the value of Accelerate here, the slope of the left part of the speed curve will become larger, the speed will increase faster, the corresponding acceleration path will become smaller, and the acceleration area of the position curve will become steeper; if the value of Decelerate is increased, the slope of the deceleration zone in the curve will become larger, the speed will decrease faster, the corresponding deceleration path will become smaller, and the deceleration area of the position curve will become steeper. Here you can adjust it according to actual needs.
 *   It should be noted that the MAX parameter in the S-position mode is the maximum value of the rotational speed. If the value of MAX is set to a large value, the uniform motion region may not appear in the velocity mode, the acceleration will not be 0, and the position curve There will be no straight line in the middle. This is because the upper limit of the speed is higher, the speed of the actuator has not reached the maximum value when it reaches the specified position, and then the deceleration is performed, so there is no uniform speed.
+
+----
 
 ## Version Change Record
 
