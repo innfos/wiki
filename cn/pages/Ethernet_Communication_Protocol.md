@@ -126,7 +126,7 @@ Note: 参数内容data\[0\~3\]高位在前，低位在后。为_IQ24格式。_IQ
 
 帧尾 ：0xED = 协议尾
 
-Note:参数内容data\[0\~3\]高位在前，低位在后。为_IQ24格式。_IQ(-128.0)\~_IQ(127.999999940)代表反向位置值满量程和正向位置值满量程。若data=_IQ(5.0),则比例为5。
+Note: 参数内容data\[0\~3\]高位在前，低位在后。为_IQ24格式。_IQ(-128.0)\~_IQ(127.999999940)代表反向位置值满量程和正向位置值满量程。若data=_IQ(5.0),则比例为5。
 
 
 <table class="tableizer-table"><thead><tr class="tableizer-firstrow"><th colspan="7" style=background:PaleTurquoise>应答命令</th></tr></thead><tbody><tr><td>帧头</td><td>设备地址</td><td>指令符</td><td>数据长度</td><td>参数内容</td><td>帧尾</td></tr><tr><td>0xEE</td><td>0x01</td><td>0x0E</td><td>0x01</td><td>0x01</td><td>0xED</td></tr></tbody></table>
