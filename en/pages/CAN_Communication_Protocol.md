@@ -31,11 +31,11 @@ communication interface：Molex 430450827
 
 <img src="../img/wiring2-3.png" style="width:1000px">
 
-<div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig1 Connection diagram of CAN communication</strong></div>
 
 <img src="../img/wiring2-4.png" style="width:1000px">
 
-<div class="md-text" style="text-align: center;"><strong>图2 CAN通信网络的连接示意图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig2 Connection diagram of CAN communication</strong></div>
 
 
 Note: CAN communication is an electrical level signal transmitted by the voltage difference between CAN_H and CAN_L.
