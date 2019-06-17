@@ -20,5 +20,7 @@ Note:谐波为柔轮固定方式，所示实际减速比为谐波标称减速比
 
 
 
-# 版本变更记录
-<table class="tableizer-table"><thead><tr class="tableizer-firstrow" style="background: PaleTurquoise; color: black;width:500px"><th >版本</th><th>更新时间</th><th>更新内容</th></tr></thead><tr><td>V2.2.0</td><td>2019-05-09</td><td>当前版本</th></tr></thead><tr><td>V1.0.0</td><td>2019-04</td><td>第一个版本</td></tr></tbody></table>
+## 版本变更记录
+
+
+<table style="width:600px"><thead><tr style="background:PaleTurquoise"><th style="width:80px">版本号</th><th style="width:100px">更新时间</th><th style="width:100px">更改类型</th><th style="width:80px">位置</th><th>更新内容</th></tr></thead><tbody><tr><td>V2.2.0</td><td>2019.05.09</td><td>添加</td><td>QDDPro-NU80-160</td><td>全文添加</th></tr></thead><tbody><tr><td>V1.0.0</td><td>2019.04.11</td><td>添加</td><td>QDDPro-NU80-160</td><td>全文添加</td></tbody></table>
