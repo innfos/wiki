@@ -2,7 +2,7 @@
 ## QDD Pro-NU80-160工程参数图[单位：毫米]
 ![QDD Pro-NU80-160]( ../img/Qddpro_NU80三视图.png ) 
 ### 3D 模型
-[模型文件]( ../img/QDD Pro-NU80-160-110_v2_2.step )]
+[模型文件]( ../img/QDD Pro-NU80-160-110_v2_2.step )
 
 
 
