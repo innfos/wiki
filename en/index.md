@@ -64,7 +64,6 @@ Note: The following SCA data is being updated. Please contact our sales team (sa
 ### QDD Pro
   * [QDD Pro-NE30-30-70](pages/QDDPro-NE30-30_v2_2.md)
   * [QDD Pro-NE30-100-70](pages/QDDPro-NE30-100_v2_2.md)
-  * [QDD Pro-PR60-30-80](pages/QDDPro-PR60-30-80_v2_2.md)
   * [QDD Pro-PR60-30-90](pages/QDDPro-PR60-30-90_v2_2.md)
   * [QDD Pro-PR60-50-80](pages/QDDPro-PR60-50-80_v2_2.md)
   * [QDD Pro-PR60-80-80](pages/QDDPro-PR60-80-80_v2_2.md)
