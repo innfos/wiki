@@ -101,5 +101,5 @@ Website is under maintenance. Stay tuned for future updates!
 
 
 <table class="tableizer-table">
-<thead><tr class="tableizer-firstrow" style="background: PaleTurquoise; color: black;width:500px"><th >version</th><th>date</th><th>	Modify content</th></tr></thead><tbody><tr><td>V1.0.3</td><td>2019-4-15</td><td>Modify the schematic picture</td></tr><tr><td>V1.0.2</td><td>2019-4-9</td><td>Add model：<br>DD-EL20</td></tr><tr><td>V1.0.1</td><td>2019-4-4</td><td>Delete model：<br>QDD-PR60-8<br>QDD-PR60-64 <br>QDD-NU80-8 <br>QDD-NU80-64<br>Add model：<br>QDD-PR60-6 <br>QDD-PR60-36 <br>QDD-8108-6 <br>QDD-NU80-36</td></tr><tr><td>V1.0.0</td><td>2018-11-12</td><td>The first version</td></tr></tbody></table>
+<thead><tr class="tableizer-firstrow" style="background: PaleTurquoise; color: black;width:500px"><th >version</th><th>date</th><th>	Modify content</th></tr></thead><tbody><tr><td>V1.0.3</td><td>2019-4-15</td><td>Modify the schematic picture</td></tr><tr><td>V1.0.2</td><td>2019-4-9</td><td>Add model：<br>DD-EL20</td></tr><tr><td>V1.0.1</td><td>2019-4-4</td><td>Delete model：<br>QDD-PR60-8<br>QDD-PR60-64 <br>QDD-NU80-8 <br>QDD-NU80-64<br>QDD Pro-PR60-30-90<br>Add model：<br>QDD-PR60-6 <br>QDD-PR60-36 <br>QDD-8108-6 <br>QDD-NU80-36</td></tr><tr><td>V1.0.0</td><td>2018-11-12</td><td>The first version</td></tr></tbody></table>
 
