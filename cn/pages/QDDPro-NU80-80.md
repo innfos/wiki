@@ -2,7 +2,7 @@
 ## QDD Pro-NU80-80工程参数图[单位：毫米]
 ![QDD Pro-NU80-80]( ../img/Qddpro_NU80三视图.png ) 
 ### 3D 模型
-[模型文件]( ../img/QDD Pro-NU80-80-110_v2_2.step.zip )
+[模型文件]( ../img/QDD_Pro-NU80-80-110_v2_2.step.zip )
 
 Note:谐波为柔轮固定方式，因此减速比为谐波标称减速比加1.
 
