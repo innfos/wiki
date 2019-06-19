@@ -54,9 +54,9 @@ The SCA (except for special models) is internally designed with CAN isolation ci
 
 ### communication protocol format
 
-<img src="../img/wiring2-13.png" style="width:800px">
+<img src="../img/wiring2_13.png" style="width:800px">
 
-<p><div class="md-text" style="text-align: center;"><strong>图3</strong></div></p>
+<p><div class="md-text" style="text-align: center;"><strong>Fig 3</strong></div></p>
 
 Figure 3: Device address corresponding identifier bit, CAN bus standard data frame identifier bit is 11 bits, this protocol uses only 8 of them, just occupies one byte, data length corresponds to DLC, occupies a half byte. The contents of the instruction parameter are also located in data field. The content of the instruction located at front followed by the parameter, the high byte located at front followed by the low byte.The data length is equal to the instruction character plus the parameter content
 
