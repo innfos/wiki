@@ -8,7 +8,7 @@ Ethernet communication
 
 <img src="../img/all.jpg" style="width:600px">
 
-From front to back, from left to right: `ECB`, `HUB`, 2 `terminal resistors`, `feedback brake capacitor`, `ECB cable`, `INNFOS actuator`, `SCA actuator cable`, `emergency stop switch` + `power supply`.
+From front to back, from left to right: `ECB`, `HUB`, 2 `terminal resistors`, `feedback brake capacitor`, `ECB cable`, `INNFOS actuator`, `SCA cable`, `emergency stop switch` + `power supply`.
 
 **Connect the power supply**
 
