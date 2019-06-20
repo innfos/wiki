@@ -14,7 +14,7 @@ Communication method based on CAN bus
 
 <img src="../img/01can.jpg" style="width:600px">
 
-*   From left to right: INNFOS actuator, ST development board (self-provided), terminating resistor, actuator integrated cable, DC stabilized voltage supply
+*   From left to right: INNFOS SCA, ST development board (self-provided), terminating resistor, actuator cable, DC stabilized voltage supply
 *   You can use your own ST development board to implement CAN communication and control with the actuator
 *   Optional emergency stop switch depending on usage
 
