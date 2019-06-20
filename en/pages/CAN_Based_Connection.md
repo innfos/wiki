@@ -14,7 +14,7 @@ Communication method based on CAN bus
 
 <img src="../img/01can.jpg" style="width:600px">
 
-*   From left to right: INNFOS SCA, ST development board (self-provided), terminating resistor, actuator cable, DC stabilized voltage supply
+*   From left to right: `INNFOS SCA`, `ST development board (self-provided)`, `terminating resistor`, `actuator cable`, `DC stabilized voltage supply`
 *   You can use your own ST development board to implement CAN communication and control with the actuator
 *   Optional emergency stop switch depending on usage
 
@@ -65,7 +65,7 @@ The red thick line is the positive; the black thick one is the negative line. Cu
 
 <img src="../img/08can.jpg" style="width:600px">
 
-*   From left to right: INNFOS actuator, Arduino development board (self-provided), terminating resistor, ECB cable, actuator integrated cable, DC stabilized power supply
+*   From left to right: `INNFOS SCA`, `Arduino development board (self-provided)`, `terminating resistor`, `ECB cable`, `actuator  cable`, `DC stabilized power supply`
 *   You can use your own Arduino development board to communicate and control CAN with the actuator
 *  Optional emergency stop switch depending on usage
 
