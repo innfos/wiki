@@ -1,6 +1,6 @@
 # Parameter introduction
 ## QDD Pro-NU80-80 Parameter Diagram[mm]
-![QDD Pro-NU80-80-110]( ../img/Qddpro_NU80sanshitu.png )
+![QDD Pro-NU80-80-110]( ../img/Qddpro_NU80_80_v2_2sanshitu.png )
 ### 3D model
 [Model file]( ../img/QDD_Pro-NU80-80-110_v2_2.step.zip )
 
