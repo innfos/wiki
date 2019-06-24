@@ -1,7 +1,7 @@
 # About INNFOS
 
 
-## A robot company with key actuator technology
+### A robot company with key actuator technology
 
 The INNFOS R&D team has been focusing on the development of new actuators in high performance robots for many years. We have assembled outstanding engineers around the world to develop basic technologies，including motor design, motor drive, high precision encoders, flexible joints and so forth.
 
@@ -14,7 +14,7 @@ INNFOS SCA (Smart Compliant Actuator) is totally self-developed by INNFOS and it
 <img src="../img/About 3.png" >
 
 
-## Contact
+### Contact
 
 <table><thead><tr style="background:PaleTurquoise">
  <tr><td>Tell</td><td>+86-010-5397-6638/+86-010-5397-6640</td></tr>
