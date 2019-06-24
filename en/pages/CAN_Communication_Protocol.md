@@ -47,7 +47,7 @@ The SCA (except for special models) is internally designed with CAN isolation ci
 
 ### communication protocol format
 
-<img src="../img/wiring2_13.png" style="width:800px">
+<img src="../img/wiring2-13.png" style="width:800px">
 
 <p><div class="md-text" style="text-align: center;"><strong>Fig 3</strong></div></p>
 
