@@ -1,0 +1,34 @@
+install:
+    game-settings:
+        accountId: 4037659025
+        modified: false
+        timestamp: 1548860955392
+    gameflow-patcher-lock: null
+    gameflow-process-info: null
+    gameflow-spectate-reconnect-info: null
+    globals:
+        locale: "zh_CN"
+        region: "TENCENT"
+    last-valid-login-splash:
+        theme: "season2018-post"
+        version: "1.44"
+    lcu-settings:
+        accountId: 4037659025
+        modified: false
+        timestamp: 1548849235316
+    npe-splash:
+        enableNewPlayerSplash: false
+    patcher:
+        client_migrated: false
+        client_patcher_available: false
+        game_migrated: false
+        game_patcher_available: false
+    perks-settings:
+        accountId: 4037659025
+        modified: false
+        timestamp: 1548859587249
+    rso-auth:
+        install-identifier: "6c5953e76de79743b1a3e8f184f6f99a"
+    telemetry:
+        fresh_installation: true
+        installation_id: "WoVrBw=="
