@@ -87,7 +87,7 @@ Note: 以下型号SCA数据正在更新中，更多详情请咨询商务团队�
 
 ### DD
   * [DD-EL20](pages/DD-EL20_v2_2.md)
-  * [DD-NU80](pages/DD-NU80.md)
+  * [DD-NU80](pages/DD-NU80_v2_2.md)
 
 ## XR-Robot
  [XR-1 ](https://www.mdeditor.com/)
