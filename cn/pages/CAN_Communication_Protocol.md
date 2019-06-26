@@ -1,3 +1,5 @@
+<meta name="viewport" content="width=device-width, initial-scale=1" /> 
+
 ## CAN的物理层说明
 
 ### CAN协议概述
