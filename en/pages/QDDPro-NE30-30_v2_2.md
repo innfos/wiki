@@ -1,6 +1,6 @@
 # Parameter introduction 
 ## QDD Pro-NE30-30 Parameter Diagram[mm]
-![QDD Pro-NE30-30](  ../img/Qddpro_NE30_v2_2sanshitu.png   ) 
+![QDD Pro-NE30-30](  ../img/Qddpro_NE30_v2_2sanshitu-xxx.png   ) 
 ### 3D model 
 [Model file]( ../img/QDD_Pro-NE30-30-70_v2_2.step.zip )
 
