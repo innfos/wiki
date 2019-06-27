@@ -39,7 +39,7 @@ The red thick line is the positive; the black thick one is the negative line. Cu
 
 <img src="../img/04can.jpg" style="width:600px"> 
 
-*    Connect the red thin line CAN_H and the black thin line CAN_L to the corresponding positions on the ST development board.
+*    Connect the red power positive line and the black power negative line to the positive and negative terminals as shown.
 
 <img src="../img/05can.jpg" style="width:600px"> 
 
