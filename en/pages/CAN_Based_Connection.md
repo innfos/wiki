@@ -18,19 +18,18 @@ Communication method based on CAN bus
 *   You can use your own ST development board to implement CAN communication and control with the actuator
 *   Optional emergency stop switch depending on usage
 
-Note: The components can be plugged in only after power-down, otherwise they may be damaged. <br>Please make sure that your DC power supply voltage is consistent with the actuator voltage range, or may cause an overvoltage or under-voltage error.
+Note: The components can be plugged in only after power-down, otherwise they may be damaged. <br>Please make sure that your DC power supply voltage is within the SCA voltage range, or may cause SCA damage.
 
 
 **Connect ST development board to SCA integrated cabls**
 
 
-*   Take the actuator integrated cable
+*   Take the actuator cable
 
 <img src="../img/02can.jpg" style="width:600px"> 
 
-*   Cut one end of the actuator integrated cable.
+*   Cut one end of the actuator cable.
  
-
 The red thick line is the positive; the black thick one is the negative line. Cut the twisted pair shielded wire, where the red thin line is CAN_H; the black thin one is CAN_L; The silver line is CAN_GND.
 
 <img src="../img/03can.jpg" style="width:600px"> 
@@ -46,7 +45,7 @@ The red thick line is the positive; the black thick one is the negative line. Cu
 
 **Connecting SCA**
 
-*    Connect the other end of the integrated cable to the actuator.
+*    Connect the other end of the actuator cable to the SCA.
 
 <img src="../img/06can.jpg" style="width:600px"> 
 
@@ -69,21 +68,21 @@ The red thick line is the positive; the black thick one is the negative line. Cu
 *   You can use your own Arduino development board to communicate and control CAN with the actuator
 *  Optional emergency stop switch depending on usage
 
-Note: The components can only be plugged in after power-down, otherwise they may be damaged.<br> Please make sure that your DC power supply voltage is consistent with the actuator voltage range, or may cause an overvoltage or under-voltage error.
+Note: The components can only be plugged in after power-down, otherwise they may be damaged.<br> Please make sure that your DC power supply voltage is within the SCA voltage range, or may cause SCA damage.
 
 
 **Connect the Arduino development board to the actuator integrated cable**
 
-*   Take the actuator integrated cable。
+*   Take the actuator cable。
 
 <img src="../img/09can.jpg" style="width:600px"> 
 
-*   Cut one end of the actuator integrated cable. 
+*   Cut one end of the actuator cable. 
 The red thick line is the positive; the black thick one is the negative line. Cut the twisted pair shielded wire, where the red thin line is CAN_H; the black thin one is CAN_L; The silver line is CAN_GND.
 
 <img src="../img/03can.jpg" style="width:600px"> 
 
-*    Carefully cut the ECB cable and cut the red thin wire CAN_H of the integrated cable, black thin wire CAN_L, the silver thin wire CAN_GND,and then connect the corresponding pins as shown in the figure. Wielding firmly and prevent short circuit by heat shrink tube or insulating tape.
+*    Carefully cut the ECB cable and cut the red thin wire CAN_H of the cable, black thin wire CAN_L, the silver thin wire CAN_GND,and then connect the corresponding pins as shown in the figure. Welding firmly and prevent short circuit by heat shrink tube or insulating tape.
 
 <img src="../img/10can.jpg" style="width:600px"> 
 
@@ -98,7 +97,7 @@ The red thick line is the positive; the black thick one is the negative line. Cu
 
 **Connecting actuator**
 
-*    Connect the other end of the actuator integrated cable to the actuator.
+*    Connect the other end of the actuator cable to the SCA.
 
 <img src="../img/06can.jpg" style="width:600px"> 
 
