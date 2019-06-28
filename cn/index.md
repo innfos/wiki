@@ -76,7 +76,7 @@ Note: 以下型号SCA数据正在更新中，更多详情请咨询商务团队�
   * [QDD Pro-NU80-80-110](pages/QDDPro-NU80-80.md)
   * [QDD Pro-NU80-100-110](pages/QDDPro-NU80-100.md)
   * [QDD Pro-NU80-120-110](pages/QDDPro-NU80-120.md)
-  * [QDD Pro-NU80-160-110](pages/QDDPro-NU80-160.md)
+  * [QDD Pro-NU80-160-110](pages/QDDPro-NU80-160-110_v2_2.md)
 
 
 ### QDD
