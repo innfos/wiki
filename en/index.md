@@ -79,8 +79,6 @@ Note: The following SCA data is being updated. Please contact our sales team (sa
 
 ### QDD
   * [QDD-EL20-36](pages/QDD-EL20-36_v2_2.md)
-  * [QDD-NE30-6](pages/QDD-NE30-6_v2_2.md)
-  * [QDD-PR60-6](pages/QDD-PR60-6_v2_2.md)
   * [QDD-NU80-36](pages/QDD-NU80-36.md)
 
 ### DD
