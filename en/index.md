@@ -62,14 +62,11 @@ If there's any questions,please contact us at support@innfos.com.
 Note: The following SCA data is being updated. Please contact our sales team (sales@innfos.com) for more information.
 
 ### QDD Pro
-  * [QDD Pro-NE30-30-70](pages/QDDPro-NE30-30_v2_2.md)
   * [QDD Pro-NE30-100-70](pages/QDDPro-NE30-100_v2_2.md)
-  * [QDD Pro-PR60-30-90](pages/QDDPro-PR60-30-90_v2_2.md)
   * [QDD Pro-PR60-50-80](pages/QDDPro-PR60-50-80_v2_2.md)
   * [QDD Pro-PR60-80-80](pages/QDDPro-PR60-80-80_v2_2.md)
   * [QDD Pro-PR60-100-80](pages/QDDPro-PR60-100-80_v2_2.md)
   * [QDD Pro-PR60-120-90](pages/QDDPro-PR60-120-90_v2_2.md)
-  * [QDD Pro-NU80-30-110](pages/QDDPro-NU80-30.md)
   * [QDD Pro-NU80-50-110](pages/QDDPro-NU80-50.md)
   * [QDD Pro-NU80-80-110](pages/QDDPro-NU80-80.md)
   * [QDD Pro-NU80-100-110](pages/QDDPro-NU80-100.md)
