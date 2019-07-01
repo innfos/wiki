@@ -1,6 +1,6 @@
 # 参数介绍 
 ## QDD Pro-NU80-50工程参数图[单位：毫米]
-![QDD Pro-NU80-50]( ../img/Qddpro_NU80三视图.png ) 
+![QDD Pro-NU80-50]( ../img/Qddpro_NU80_v2_2三视图.png ) 
 ### 3D 模型
 [模型文件]( ../img/QddPro_NU80_1013D.STEP.zip )
 
