@@ -198,5 +198,5 @@ Note: 必须先断电然后再插拔部件.  否则可能损坏部件.</br>请�
 
 ## 版本变更记录
 
-<table><thead><tr style=background:PaleTurquoise><th>版本</th><th>更新时间</th><th>更新内容</th></tr></thead><tbody><tr><td>V1.0.0</td><td>2019.04</td><td>第一个版本</td></tr></tbody></table>
+<table class="tableizer-table"><thead><tr style=background:PaleTurquoise><th style="width:100px">版本号</th><th style="width:100px">更新时间</th><th style="width:100px">更改类型</th><th style="width:150px">位置</th><th style="width:350px">更新内容</th></tr></thead><tbody><tr><td>V1.0.0</td><td>2019.04</td><td>添加</td><td>全文</td><td>全文添加</td></tr></tbody></table>
 
