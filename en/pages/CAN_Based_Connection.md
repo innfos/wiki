@@ -1,14 +1,33 @@
 Communication method based on CAN bus
 =====
 
-*    The INNFOS SCA can communicate directly with the CAN interface of the embedded control board.
-*   INNFOS SCA can be controlled by connecting your own embedded control board
-*    Two common connection examples for embedded development boards are provided as follows.
+## Physical layer description of CAN
 
-## Hardware requirements and connections
+### CAN Protocol Overview
+
+*     CAN is an abbreviation of Controller Area Network (hereafter referred to as CAN) and is an ISO international standardized serial communication protocol.
+
+*     INNFOS product design is subject to the CAN2.0A protocol standard. This article details the CAN communication protocol format of the company's products and the CAN communication structure of the product.
+
+### Comprehensive performance parameters
+
+<table style="width:400px"><thead><COL WIDTH=50%><COL WIDTH=50%><tr><th colspan="2"style=background:PaleTurquoise>Table 1 Description of the comprehensive performance parameters</th></tr></thead><tbody><tr><td>project</td><td>Description</td></tr><tr><td>Link layer protocol</td><td>CAN bus</td></tr><tr><td>CAN-ID type</td><td>11bit-CAN2.0A</td></tr><tr><td>Baud rate</td><td>1Mbit/s</td></tr><tr><td>Maximum number of sites</td><td>63</td></tr><tr><td>CAN frame length</td><td>0~8 bytes</td></tr><tr><td>Application layer CAN frame type</td><td>Data frame, remote frame</td></tr><tr><td>Terminal matching resistor</td><td>120Ω</td></tr></tbody></table>
+
+The baud rate of this communication protocol is 1Mbit/s. For CAN communication, the cable types have little effect on the transmission distance, but the wire diameter is as thick as possible. The maximum number of nodes is 64. The company's products use 0.205mm2 wire diameter, the largest. The transmission distance is 25m.
+
+----
+
+## Hardware connection introduction of CAN
+
+<table><thead><tr><th colspan="4" style=background:PaleTurquoise>Table 2 Communication Signal Connector Pin Definitions</th></tr></thead><tbody><tr><td style="width:80px">Pin number</td><td>definition</td><td>description</td><td>	Terminal pin distribution</td></tr><tr><td>1</td><td>PVDD</td><td>Power supply</td><td rowspan="9"><img src="../img/配线2-2.png" style="width:550px"></td></tr><tr><td>3</td><td>PVDD</td><td>Power supply</td></tr><tr><td>5</td><td>PVDD</td><td>Power supply</td></tr><tr><td>2</td><td>GND</td><td>Power Ground</td></tr><tr><td>4</td><td>GND</td><td>Power Ground</td></tr><tr><td>6</td><td>CGND</td><td>CAN Ground</td></tr><tr><td>7</td><td>CANL</td><td>CAN communication interface</td></tr><tr><td>8</td><td>CANH</td><td>CAN communication interface</td></tr></tbody></table>
+
+----
 
 ### Connection based on ST development board
 
+*    The INNFOS SCA can communicate directly with the CAN interface of the embedded control board.
+*   INNFOS SCA can be controlled by connecting your own embedded control board
+*    Two common connection examples for embedded development boards are provided as follows.
 
 **Hardware requirements**
 
