@@ -7,7 +7,7 @@
 
 ![Qddpro_NE30_v2_2正面固定.png](../img/Qddpro_NE30_v2_2正面固定.png "fig:Qddpro_NE30_v2_2正面固定.png") ![Qddpro_NE30_v2_2反面固定.png](../img/Qddpro_NE30_v2_2反面固定.png "fig:Qddpro_NE30_v2_2反面固定.png")
 ### 3D 模型
-[模型文件]( ../img/QDD_Pro-NE30-50-70_v2_2.step.zip )
+[模型文件]( ../img/QDD_Pro-NE30-x-70_v2_2.step.zip )
 
 ## QDD Pro-NE30-50参数
 
