@@ -1,6 +1,11 @@
 # 参数介绍 
 ## QDD Pro-PR60-80-80工程参数图[单位：毫米]
 ![QDD Pro-PR60-81-80]( ../img/Qddpro_PR60_x_80_v2_2三视图.png ) 
+
+**使用安装说明**
+*   正面固定
+
+![Qddpro_PR60_x_80_v2_2正面固定.png](../img/Qddpro_PR60_x_80_v2_2正面固定.png "fig:Qddpro_PR60_x_80_v2_2.png") 
 ### 3D 模型
 [模型文件]( ../img/QDD_Pro-PR60-80-80_v2_2.step.zip )
 
