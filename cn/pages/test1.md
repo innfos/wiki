@@ -5,11 +5,11 @@ ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismo
 
 
 
-| Tables        | Are           | Cool  |
+| Tables        | Are           | Cool  |![Qddpro_NE30_v2_2正面固定.png](../img/Qddpro_NE30_v2_2正面固定.png "fig:Qddpro_NE30_v2_2正面固定.png") 
 | ------------- |:-------------:| -----:|
 | col 3 is      | right-aligned | $1600 |
 | col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 | ![Qddpro_NE30_v2_2正面固定.png](../img/Qddpro_NE30_v2_2正面固定.png "fig:Qddpro_NE30_v2_2正面固定.png") 
+| zebra stripes | are neat      |    $1 | 
 ![Qddpro_NE30_v2_2反面固定.png](../img/Qddpro_NE30_v2_2反面固定.png "fig:Qddpro_NE30_v2_2反面固定.png")
 
 
