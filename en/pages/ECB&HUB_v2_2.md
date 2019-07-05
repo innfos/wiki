@@ -98,11 +98,11 @@ chmod 777 ipChange
 *   Please note that only the last number of IP or MAC addresses can be modified, for example, the IP address of the ECB is 192.168.1.30, and only 30 can be modified to other number.
 
 ## Resource
-* [ECB_SCH]( ../img/ECB_v2_2.pdf ) [ECB_HUB_SCH]( ../img/ECB_HUB_v2_2.pdf )
+* [ECB_SCH]( ../img/ECB_v2_2.pdf ) [ECB_HUB_SCH]( ../img/ECB_HUB_v2_2.pdf ) [ECB_Core]( ../img/ECB_Core_v2_0.pdf )
 * [STM32F429 data sheet]( ../img/STM32F429VIT6.PDF )
 
 
 
 ## Version updating records
 <table class="tableizer-table">
-<thead><tr class="tableizer-firstrow" style="background: PaleTurquoise; color: black;width:600px"><th >Version</th><th>Update time</th><th>Change type</th><th>Position</th><th>Content</th></tr></thead><tr><td rowspan="2">V2.2.3</td><td rowspan="2">2019.05.30</td><td>revise</td><td>How to connect ECB and ECB_HUB</td><td>Edit image</td></tr><tr><td>revise</td><td>Connect multiple ECBs</td><td>Edit image</td></tr><tr><td rowspan="3">V2.2.2</td><td rowspan="3">2019.05.29</td><td>revise</td><td>Introduction</td><td>Edit image</td></tr><tr><td>revise</td><td>Dimensions</td><td>Edit image</td></tr><tr><td>add</td><td>Amass XT60、molex、MicroUSB、Network port</td><td>Add specific model</td></tr><tr><td>V2.2.1</td><td>2019.05.28</td><td>delete</td><td>Core board pin definition</td><td>delete Alternate functions</td></tr><tr><td>V2.2.0</td><td>2019-05</td><td>add</td><td>ECB&HUB</td><td>the first version</td></tr></tbody></table>
+<thead><tr class="tableizer-firstrow" style="background: PaleTurquoise; color: black;width:600px"><th >Version</th><th>Update time</th><th>Change type</th><th>Position</th><th>Content</th></tr></thead><tr><td>V2.2.4</td><td>2019.07.05</td><td>add</td><td>Resource</td><td>Add ECB_Core Schematic</td></tr><tr><td rowspan="2">V2.2.3</td><td rowspan="2">2019.05.30</td><td>revise</td><td>How to connect ECB and ECB_HUB</td><td>Edit image</td></tr><tr><td>revise</td><td>Connect multiple ECBs</td><td>Edit image</td></tr><tr><td rowspan="3">V2.2.2</td><td rowspan="3">2019.05.29</td><td>revise</td><td>Introduction</td><td>Edit image</td></tr><tr><td>revise</td><td>Dimensions</td><td>Edit image</td></tr><tr><td>add</td><td>Amass XT60、molex、MicroUSB、Network port</td><td>Add specific model</td></tr><tr><td>V2.2.1</td><td>2019.05.28</td><td>delete</td><td>Core board pin definition</td><td>delete Alternate functions</td></tr><tr><td>V2.2.0</td><td>2019-05</td><td>add</td><td>ECB&HUB</td><td>the first version</td></tr></tbody></table>
