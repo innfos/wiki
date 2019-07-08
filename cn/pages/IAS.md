@@ -112,7 +112,7 @@ $ ./INNFOS\ Actuator\ Studio
 
 <div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
 
-*   等待三秒后，如图，标记一处为该执行器ID号，标记2处为错误清除键，标记3处为Detail键可进入执行器操作界面，标记4处为该执行器的信息显示区域。
+*   等待三秒左右，如图，标记一处为该执行器ID号，标记2处为错误清除键，标记3处为Detail键可进入执行器操作界面，标记4处为该执行器的信息显示区域。
 
 <img src="../img/wiring2-3.png" style="width:600px">
 
@@ -136,8 +136,8 @@ INNFOS执行器系统的逻辑框图：
 
 <div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
 
-
 框图介绍：电流设置值与电流反馈值做加减运算后经过PI模块后经可选的滤波器再经限幅模块以驱动电机，电机经反馈把电流参数反馈给系统，使之形成闭环。
+
 
 ### 电流环模式各项功能描述
 
@@ -188,7 +188,7 @@ INNFOS执行器系统的逻辑框图：
 
 ### 电流环使用方式
 
-1.点击“电流模式”激活当前电流环模式。
+1.点击“Active Current Mode”激活当前电流环模式。
 
 <img src="../img/wiring2-3.png" style="width:600px">
 
@@ -196,16 +196,16 @@ INNFOS执行器系统的逻辑框图：
 
 2.参数设置：应用方式
 
-*   在“相电流”中输入电流值大小（右图中1处），按回车键或”设置电流”键，INNFOS执行器开始输出相应扭矩。若负载不够大，INNFOS执行器会高速运转。
+*   在“Phase Current”中输入电流值大小（右图中1处），按回车键或”设置电流”键，INNFOS执行器开始输出相应扭矩。若负载不够大，INNFOS执行器会高速运转。
 *   INNFOS执行器开始转动后，在状态值栏可以看到当前INNFOS执行器的各项参数值。(如右图中3处)
-*   按“停止”键可停止INNFOS执行器的转动。（右图中2处）
-*   “电流限制”参数栏中可以设置最大电流值。
+*   按“Halt”键可停止INNFOS执行器的转动。（右图中2处）
+*   “Limit”参数栏中可以设置最大电流值。
 
 <img src="../img/wiring2-3.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
 
-3.点击“波形图”可打开示波器
+3.点击“View Graph”可打开示波器
 
 <img src="../img/wiring2-3.png" style="width:600px">
 
@@ -213,12 +213,11 @@ INNFOS执行器系统的逻辑框图：
 
 4.示波器各项功能描述
 
-*   右图中“分频参数”可设置波形的预分频系数（图1处），“触发值”可设置触发数值（图2处），图 3处设置参数的保存、暂停、自动缩放；
-*   通道1为INNFOS执行器给定波形的偏置和放大倍数（图4处）；
-*   通道2为INNFOS执行器电流波形的偏置和放大倍数（图5处）；
-*   通道3为INNFOS执行器速度波形的偏置和放大倍数（图6处）；
-*   通道4为INNFOS执行器位置波形的偏置和放大倍数（图7处）。
-*   示波器的详细使用说明请见附录C。
+*   右图中“prescalar”可设置波形的预分频系数（图1处），“trig_value”可设置触发数值（图2处），图 3处设置参数的保存、暂停、自动缩放；
+*   Channel 1 为INNFOS执行器给定波形的偏置和放大倍数（图4处）；
+*   Channel 2 为INNFOS执行器电流波形的偏置和放大倍数（图5处）；
+*   Channel 3 为INNFOS执行器速度波形的偏置和放大倍数（图6处）；
+*   Channel 4 为INNFOS执行器位置波形的偏置和放大倍数（图7处）。
 
 <img src="../img/wiring2-3.png" style="width:600px">
 
