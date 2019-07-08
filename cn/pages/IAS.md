@@ -196,10 +196,10 @@ INNFOS执行器系统的逻辑框图：
 
 2.参数设置：应用方式
 
-*   在“Phase Current”中输入电流值大小（右图中1处），按回车键或”设置电流”键，INNFOS执行器开始输出相应扭矩。若负载不够大，INNFOS执行器会高速运转。
+*   在`Phase Current`中输入电流值大小（右图中1处），按`回车`键或`设置电流`键，INNFOS执行器开始输出相应扭矩。若负载不够大，INNFOS执行器会高速运转。
 *   INNFOS执行器开始转动后，在状态值栏可以看到当前INNFOS执行器的各项参数值。(如右图中3处)
-*   按“Halt”键可停止INNFOS执行器的转动。（右图中2处）
-*   “Limit”参数栏中可以设置最大电流值。
+*   按`Halt`键可停止INNFOS执行器的转动。（右图中2处）
+*   `Limit`参数栏中可以设置最大电流值。
 
 <img src="../img/wiring2-3.png" style="width:600px">
 
@@ -213,11 +213,11 @@ INNFOS执行器系统的逻辑框图：
 
 4.示波器各项功能描述
 
-*   右图中“prescalar”可设置波形的预分频系数（图1处），“trig_value”可设置触发数值（图2处），图 3处设置参数的保存、暂停、自动缩放；
-*   Channel 1 为INNFOS执行器给定波形的偏置和放大倍数（图4处）；
-*   Channel 2 为INNFOS执行器电流波形的偏置和放大倍数（图5处）；
-*   Channel 3 为INNFOS执行器速度波形的偏置和放大倍数（图6处）；
-*   Channel 4 为INNFOS执行器位置波形的偏置和放大倍数（图7处）。
+*   右图中`prescalar`可设置波形的预分频系数（图1处），`trig_value`可设置触发数值（图2处），图 3处设置参数的保存、暂停、自动缩放；
+*   `Channel 1` 为INNFOS执行器给定波形的偏置和放大倍数（图4处）；
+*   `Channel 2` 为INNFOS执行器电流波形的偏置和放大倍数（图5处）；
+*   `Channel 3` 为INNFOS执行器速度波形的偏置和放大倍数（图6处）；
+*   `Channel 4` 为INNFOS执行器位置波形的偏置和放大倍数（图7处）。
 
 <img src="../img/wiring2-3.png" style="width:600px">
 
@@ -227,22 +227,22 @@ INNFOS执行器系统的逻辑框图：
 
 5.方波发生器参数值设定
 
-*   在“值1”中输入电流值1（单位：A）（右图1处）
-*   在“值2”中输入电流值2（单位：A）（右图2处）
-*   在“间隔”内输入时间（单位：ms）（右图3处）
-*   选择点击“开始”键（右图4处），方波发生器会按设定的时间（“间隔”值），连续生效 值1和 值2到指定的位置，直到关闭此按钮。
+*   在`Value 1`中输入电流值1（单位：A）（右图1处）
+*   在`Value 2`中输入电流值2（单位：A）（右图2处）
+*   在`Interval`内输入时间（单位：ms）（右图3处）
+*   选择点击`Start`键（右图4处），方波发生器会按设定的时间（`Interval`值），连续生效`Value 1`和`Value 2`到指定的位置，直到关闭此按钮。
 
 <img src="../img/wiring2-3.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
 
-6.点击“波形图”按钮打开示波器窗口，可以查看给定（通道 1，此时为方波发生器）、电流（通道 2）、速度（通道 3）、位置（通道 4）四通道参数波形，如图 
+6.点击`View Graph`按钮打开示波器窗口，可以查看给定（ `Channel 1` 此时为方波发生器）、电流（ `Channel 2` ）、速度（ `Channel 3` ）、位置（ `Channel 4` ）四通道参数波形，如图 
 
 <img src="../img/wiring2-3.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
 
-7.点击“Stop”键，可停止方波发生器的运行。
+7.点击`Stop`键，可停止方波发生器的运行。
 
 <img src="../img/wiring2-3.png" style="width:600px">
 
@@ -262,7 +262,7 @@ INNFOS执行器系统的逻辑框图：
 
 框图的介绍： 速度值设置与速度反馈值做加减后经PI模块后经可选的滤波器再经模块输出电流给电流环，在确保电流环模式运行正确的情况下，通过电流环驱动电机，经编码器把速度参数反馈给系统，使之形成闭环。
 
-### 点击“速度模式”进入速度环模式
+### 点击“Velocity Mode”进入速度环模式
 
 <img src="../img/wiring2-3.png" style="width:600px">
 
@@ -295,7 +295,7 @@ INNFOS执行器系统的逻辑框图：
 
 ### 速度环使用方式
 
-1.点击“激活速度模式”，激活当前速度环模式。
+1.点击“ Active Velocity Mode”，激活当前速度环模式。
 
 <img src="../img/wiring2-3.png" style="width:600px">
 
@@ -303,17 +303,17 @@ INNFOS执行器系统的逻辑框图：
 
 2.速度环基本参数设置：
 
-*   右图1处“设置”框中输入转速值大小（单位：RPM），按回车键或点击右图4处的”设置速度”键，INNFOS执行器开始转动。若转速值为负值则反向转动。
+*   图1处“Setting”框中输入转速值大小（单位：RPM），按回车键或点击右图4处的“Set Velocity”键，INNFOS执行器开始转动。若转速值为负值则反向转动。
 *   INNFOS执行器开始转动后，右图5处的状态值栏可以看到当前INNFOS执行器的各项参数值。
-*   调节“比例”框和“积分”框可调节PI值，右图2处。
-*   右图3处的“最大电流”框和“最小电流”框为速度环输出限幅（后接电流环的输入），例如：电流最大值为33A（PR60型为33A，NE30型为16.5A，具体参见各型号SCA参数表相电流满量程值。输入值为0.5，那么INNFOS执行器电流增加到33×0.5的时候，电流值将受限，不再增加。
-*   按“停止”键可停止INNFOS执行器的转动。
+*   调节“Proportional”框和“Integral”框可调节PI值，右图2处。
+*   右图3处的“Mininal”框和“Maximum”框为速度环输出限幅（后接电流环的输入），例如：电流最大值为33A（PR60型为33A，NE30型为16.5A，具体参见各型号SCA参数表相电流满量程值。输入值为0.5，那么INNFOS执行器电流增加到33×0.5的时候，电流值将受限，不再增加。
+*   按“Halt”键可停止INNFOS执行器的转动。
 
 <img src="../img/wiring2-3.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
 
-3.点击“波形图”可打开示波器,参数界面介绍同上。
+3.点击“View Graph”可打开示波器,参数界面介绍同上。
 
 <img src="../img/wiring2-3.png" style="width:600px">
 
@@ -321,16 +321,16 @@ INNFOS执行器系统的逻辑框图：
 
 4.方波发生器参数值设定
 
-*   在“值1”中输入转速1。(单位:RPM)
-*   在“值2”中输入转速2。(单位:RPM)
-*   在“间隔”内输入单位时间（单位：ms），可设置INNFOS执行器方波发生器的参数。
-*   选择点击“开始”键，开启INNFOS执行器转动。
+*   在`Value 1`中输入转速1。(单位:RPM)
+*   在`Value 2`中输入转速2。(单位:RPM)
+*   在`Interval`内输入单位时间（单位：ms），可设置INNFOS执行器方波发生器的参数。
+*   选择点击`Start`键，INNFOS执行器将开始转动。
 
 <img src="../img/wiring2-3.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
 
-5.设置“波形图”视图里的参数，可以更好的查看当前INNFOS执行器 各项参数波形，调节INNFOS执行器“比例”和“积分”（PI） 的数值，其性能会在示波器中以波形方式反应出来。
+5.设置“View Graph”视图里的参数，可以更好的查看当前INNFOS执行器 各项参数波形，调节INNFOS执行器“比例”和“积分”（PI） 的数值，其性能会在示波器中以波形方式反应出来。
 
 <span style="color: red">注：不用的通道偏置设置为0，放大设置为1（右图中channel2和channel4），或者直接点击OFF关闭其显示</span>
 
@@ -390,7 +390,7 @@ INNFOS执行器系统的逻辑框图：
 
 2.位置环基本参数设置：
 
-*   右图1处“设置”框中输入位置值大小（单位：R），在右图4处按“Set Position”键，INNFOS执行器开始转动，INNFOS执行器转到输入位置后，停止。
+*   右图1处“设置”框中输入位置值大小（单位：R），在图4处按“Set Position”键，INNFOS执行器开始转动，INNFOS执行器转到输入位置后，停止。
 *   INNFOS执行器开始转动后，右图5处状态值栏可以看到当前INNFOS执行器的各项参数值。
 *   调节Proportional框可调节比例值，如右图2处。
 *   在框X中输入0.1-1的数值，按“步增”“步减”按钮，执行器可转动相应位置，最大阶跃值为1。
