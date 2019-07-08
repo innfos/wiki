@@ -24,25 +24,25 @@ $ ./INNFOS\ Actuator\ Studio
 
 ### Windows平台
 
-1.双击安装软件“Setup.exe”
+1.双击安装软件`Setup.exe`
 
 <img src="../img/wiring2-3.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
 
-2.进入安装界面后，点击“Next”
+2.进入安装界面后，点击`Next`
 
 <img src="../img/wiring2-3.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
 
-3.点击“I Agree”
+3.点击`I Agree`
 
 <img src="../img/wiring2-3.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
 
-4.选择安装位置，然后点击“Install”
+4.选择安装位置，然后点击`Install`
 
 <img src="../img/wiring2-3.png" style="width:600px">
 
@@ -60,7 +60,7 @@ $ ./INNFOS\ Actuator\ Studio
 
 <div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
 
-7.点击“Finish”，完成软件的安装
+7.点击`Finish`，完成软件的安装
 
 <img src="../img/wiring2-3.png" style="width:600px">
 
@@ -76,13 +76,13 @@ $ ./INNFOS\ Actuator\ Studio
 
 <div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
 
-2.点击“confirm that you’ve read the document”，然后点击“next”，进入下一界面，（如果是初次对本产品使用者，请点击show the document！ ,阅读软件使用说明）
+2.点击`confirm that you’ve read the document`，然后点击“next”，进入下一界面，（如果是初次对本产品使用者，请点击show the document！ ,阅读软件使用说明）
 
 <img src="../img/wiring2-3.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
 
-3.选择执行器通信方式（默认为以太网通信），然后继续点击“next”（注：如果是初次使用以太网通信，应配置静态IP,具体配置见附录B）
+3.选择执行器通信方式（默认为以太网通信），然后继续点击`next`（注：如果是初次使用以太网通信，应配置静态IP,具体配置见附录B）
 
 <img src="../img/wiring2-3.png" style="width:600px">
 
@@ -118,7 +118,7 @@ $ ./INNFOS\ Actuator\ Studio
 
 <div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
 
-4.双击执行器信息框或者点击“Detail”键，进入电流环模式。
+4.双击执行器信息框或者点击`Detail`键，进入电流环模式。
 
 <img src="../img/wiring2-3.png" style="width:600px">
 
