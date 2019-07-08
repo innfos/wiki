@@ -483,14 +483,13 @@ INNFOS执行器系统的逻辑框图：
 
 3.位置环S曲线模式步加步减设置：
 
-*   在“设置”框中输入转动的位置（单位：R），也可点击键盘方向键进行设置。点击键盘默认为增加1。
+*   在`Target`框中输入转动的位置（单位：R），也可点击键盘方向键进行设置。点击键盘默认为增加1。
 *   在框X中输入数值，按`step add``step minus`按钮，执行器可转动相应位置，点击一次可使执行器转动一次。
 *   INNFOS执行器开始转动后，在状态值栏可以看到当前INNFOS执行器的各项参数值，右图4处。
 
 <img src="../img/wiring2-3.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
-
 
 ----
 
