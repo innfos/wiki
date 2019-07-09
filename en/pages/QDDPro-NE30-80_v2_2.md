@@ -21,5 +21,4 @@ Power signal composite interface: Molex 430450827
 
 ## Version Updating Records
 
-
-<table style="width:600px"><thead><tr style="background:PaleTurquoise"><th style="width:80px">Version number</th><th style="width:100px">Update time</th><th style="width:100px">Type </th><th style="width:80px">Location</th><th>Update content</th></tr></thead><tbody><tr><td>V2.2.0</td><td>2019.05.09</td><td>Add</td><td>QDDPro-NE30-80</td><td>Full text added</th></tr></thead><tbody><tr><td>V1.0.0</td><td>2019.04.11</td><td>Add</td><td>QDDPro-NE30-80</td><td>Full text added</td></tbody></table>
+<table style="width:400px"><thead><tr style="background:PaleTurquoise"><th style="width:100px">Version number</th><th style="width:150px">Update time</th><th style="width:150px">Update content</th></tr></thead><tbody><tr><td>V2.2.1</td><td>2019.07.03</td><td>Updated the values of rated torque <br>Updated the values peak torque <br>Updated maximum load <br>Updated installation instructions</th></tr></thead><tbody><tr><td>V2.2.0</td><td>2019.05.09</td><td>Full text added</th></tr></thead><tbody><tr><td>V1.0.0</td><td>2019.04.11</td><td>Full text added</td></tbody></table>
