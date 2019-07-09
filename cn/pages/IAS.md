@@ -74,55 +74,55 @@ $ ./INNFOS\ Actuator\ Studio
 
 <img src="../img/new1.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图1</strong></div>
 
 2.点击`confirm that you’ve read the document`，然后点击`next`，进入下一界面，（如果是初次对本产品使用者，请点击`show the document！` ,阅读软件使用说明）
 
 <img src="../img/new1.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图2 CAN通信网络的连接框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图2</strong></div>
 
 3.选择执行器通信方式（默认为以太网通信），然后继续点击`next`（注：如果是初次使用以太网通信，应配置静态IP,具体配置 见附录B）
 
 <img src="../img/new2.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图3</strong></div>
 
 *   当USB转CAN未连接或连接不正常时，会出现如图错误提示。
 
 <img src="../img/new3.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图4</strong></div>
 
 *   当外部执行器没有连接或连接不正常时，会出现如图错误提示
 
 <img src="../img/new4.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图5</strong></div>
 
 *   当外部系统连接正确，系统进入执行器运行界面，单机红色区域OFF，如图，标记1处OFF为单个执行器开关，2处ON为总开关，比如多个执行器同时连接时，点击总开关即可控制所有执行器开关机。
 
 <img src="../img/new5.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图6</strong></div>
 
 *   点击OFF开机后，弹出右图中红色区域提示信息
 
 <img src="../img/new6.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图7</strong></div>
 
 *   等待三秒左右，如图，标记一处为该执行器ID号，标记2处为错误清除键，标记3处为Detail键可进入执行器操作界面，标记4处为该执行器的信息显示区域。
 
 <img src="../img/new7.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图8</strong></div>
 
 4.双击执行器信息框或者点击`Detail`键，进入电流环模式。
 
 <img src="../img/new8.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图9</strong></div>
 
 ----
 
