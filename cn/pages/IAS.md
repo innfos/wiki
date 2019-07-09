@@ -130,11 +130,9 @@ $ ./INNFOS\ Actuator\ Studio
 
 INNFOS执行器系统的逻辑框图：
 
-![current.jpg](../img/current.jpg)
-
 <img src="../img/current.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图10</strong></div>
 
 框图介绍：电流设置值与电流反馈值做加减运算后经过PI模块后经可选的滤波器再经限幅模块以驱动电机，电机经反馈把电流参数反馈给系统，使之形成闭环。
 
@@ -163,7 +161,7 @@ INNFOS执行器系统的逻辑框图：
 
 <img src="../img/new9.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图11</strong></div>
 
 
 ### 基本参数的描述
@@ -184,7 +182,7 @@ INNFOS执行器系统的逻辑框图：
 
 <img src="../img/new10.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图12</strong></div>
 
 ### 电流环使用方式
 
@@ -192,7 +190,7 @@ INNFOS执行器系统的逻辑框图：
 
 <img src="../img/new11.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图13</strong></div>
 
 2.参数设置：应用方式
 
@@ -203,13 +201,13 @@ INNFOS执行器系统的逻辑框图：
 
 <img src="../img/new12.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图14</strong></div>
 
 3.点击“View Graph”可打开示波器
 
 <img src="../img/new13.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图15</strong></div>
 
 4.示波器各项功能描述
 
@@ -221,7 +219,7 @@ INNFOS执行器系统的逻辑框图：
 
 <img src="../img/new14.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图16</div>
 
 <span style="color: red">[注：不用的通道偏置设置为0，放大设置为1，或者直接点击OFF关闭其显示]</span> !
 
@@ -234,19 +232,19 @@ INNFOS执行器系统的逻辑框图：
 
 <img src="../img/new15.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图17</strong></div>
 
 6.点击`View Graph`按钮打开示波器窗口，可以查看给定（ `Channel 1` 此时为方波发生器）、电流（ `Channel 2` ）、速度（ `Channel 3` ）、位置（ `Channel 4` ）四通道参数波形，如图 
 
 <img src="../img/new16.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图18</strong></div>
 
 7.点击`Stop`键，可停止方波发生器的运行。
 
 <img src="../img/new17.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图19</strong></div>
 
 ----
 
