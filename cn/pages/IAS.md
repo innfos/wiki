@@ -130,9 +130,9 @@ $ ./INNFOS\ Actuator\ Studio
 
 INNFOS执行器系统的逻辑框图：
 
-<img src="../img/current.png" style="width:600px">
+<img src="../img/current.jpg" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图10</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图10 INNFOS执行器系统的逻辑框图</strong></div>
 
 框图介绍：电流设置值与电流反馈值做加减运算后经过PI模块后经可选的滤波器再经限幅模块以驱动电机，电机经反馈把电流参数反馈给系统，使之形成闭环。
 
@@ -162,7 +162,6 @@ INNFOS执行器系统的逻辑框图：
 <img src="../img/new9.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图11</strong></div>
-
 
 ### 基本参数的描述
 
@@ -225,9 +224,9 @@ INNFOS执行器系统的逻辑框图：
 
 5.方波发生器参数值设定
 
-*   在`Value 1`中输入电流值1（单位：A）（右图1处）
-*   在`Value 2`中输入电流值2（单位：A）（右图2处）
-*   在`Interval`内输入时间（单位：ms）（右图3处）
+*   在`Value 1`中输入电流值1（单位：A）（图1处）
+*   在`Value 2`中输入电流值2（单位：A）（图2处）
+*   在`Interval`内输入时间（单位：ms）（图3处）
 *   选择点击`Start`键（右图4处），方波发生器会按设定的时间（`Interval`值），连续生效`Value 1`和`Value 2`到指定的位置，直到关闭此按钮。
 
 <img src="../img/new15.png" style="width:600px">
@@ -252,11 +251,9 @@ INNFOS执行器系统的逻辑框图：
 
 INNFOS执行器系统的逻辑框图：
 
-![velocity.jpg](../img/velocity.jpg)
+<img src="../img/velocity.jpg" style="width:600px">
 
-<img src="../img/wiring2-3.png" style="width:600px">
-
-<div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图20 INNFOS执行器系统的逻辑框图</strong></div>
 
 框图的介绍： 速度值设置与速度反馈值做加减后经PI模块后经可选的滤波器再经模块输出电流给电流环，在确保电流环模式运行正确的情况下，通过电流环驱动电机，经编码器把速度参数反馈给系统，使之形成闭环。
 
