@@ -72,31 +72,31 @@ $ ./INNFOS\ Actuator\ Studio
 
 1、双击运行软件 启动用户界面
 
-<img src="../img/wiring2-3.png" style="width:600px">
+<img src="../img/new1.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
 
 2.点击`confirm that you’ve read the document`，然后点击`next`，进入下一界面，（如果是初次对本产品使用者，请点击show the document！ ,阅读软件使用说明）
 
-<img src="../img/wiring2-3.png" style="width:600px">
+<img src="../img/new1.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图2 CAN通信网络的连接框图</strong></div>
 
-3.选择执行器通信方式（默认为以太网通信），然后继续点击`next`（注：如果是初次使用以太网通信，应配置静态IP,具体配置见附录B）
+3.选择执行器通信方式（默认为以太网通信），然后继续点击`next`（注：如果是初次使用以太网通信，应配置静态IP,具体配置 见附录B）
 
-<img src="../img/wiring2-3.png" style="width:600px">
+<img src="../img/new2.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
 
 *   当USB转CAN未连接或连接不正常时，会出现如图错误提示。
 
-<img src="../img/wiring2-3.png" style="width:600px">
+<img src="../img/new3.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
 
 *   当外部执行器没有连接或连接不正常时，会出现如图错误提示
 
-<img src="../img/wiring2-3.png" style="width:600px">
+<img src="../img/new4.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
 
