@@ -194,9 +194,9 @@ INNFOS执行器系统的逻辑框图：
 
 2.参数设置：应用方式
 
-*   在`Phase Current`中输入电流值大小（右图中1处），按回车键或`Set Current`键，INNFOS执行器开始输出相应扭矩。若负载不够大，INNFOS执行器会高速运转。
-*   INNFOS执行器开始转动后，在状态值栏可以看到当前INNFOS执行器的各项参数值。(如右图中3处)
-*   按`Halt`键可停止INNFOS执行器的转动。（右图中2处）
+*   在`Phase Current`中输入电流值大小（图中1处），按回车键或`Set Current`键，INNFOS执行器开始输出相应扭矩。若负载不够大，INNFOS执行器会高速运转。
+*   INNFOS执行器开始转动后，在状态值栏可以看到当前INNFOS执行器的各项参数值。(如图中3处)
+*   按`Halt`键可停止INNFOS执行器的转动。（如图中2处）
 *   `Limit`参数栏中可以设置最大电流值。
 
 <img src="../img/new12.png" style="width:600px">
@@ -221,7 +221,7 @@ INNFOS执行器系统的逻辑框图：
 
 <div class="md-text" style="text-align: center;"><strong>图16</div>
 
-<span style="color: red">[注：不用的通道偏置设置为0，放大设置为1，或者直接点击OFF关闭其显示]</span> !
+<span style="color: red">[注：不用的通道偏置设置为0，放大设置为1，或者直接点击OFF关闭其显示!]</span> 
 
 5.方波发生器参数值设定
 
