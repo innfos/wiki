@@ -196,7 +196,7 @@ INNFOS执行器系统的逻辑框图：
 
 2.参数设置：应用方式
 
-*   在`Phase Current`中输入电流值大小（右图中1处），按`回车`键或`设置电流`键，INNFOS执行器开始输出相应扭矩。若负载不够大，INNFOS执行器会高速运转。
+*   在`Phase Current`中输入电流值大小（右图中1处），按回车键或`Set Current`键，INNFOS执行器开始输出相应扭矩。若负载不够大，INNFOS执行器会高速运转。
 *   INNFOS执行器开始转动后，在状态值栏可以看到当前INNFOS执行器的各项参数值。(如右图中3处)
 *   按`Halt`键可停止INNFOS执行器的转动。（右图中2处）
 *   `Limit`参数栏中可以设置最大电流值。
@@ -393,7 +393,7 @@ INNFOS执行器系统的逻辑框图：
 *   右图1处`Setting`框中输入位置值大小（单位：R），在图4处按`Set Position`键，INNFOS执行器开始转动，INNFOS执行器转到输入位置后，停止。
 *   INNFOS执行器开始转动后，右图5处状态值栏可以看到当前INNFOS执行器的各项参数值。
 *   调节`Proportional`框可调节比例值，如右图2处。
-*   在框X中输入0.1-1的数值，按`step add``step minus`按钮，执行器可转动相应位置，最大阶跃值为1。
+*   在框X中输入0.1-1的数值，按`step add`和`step minus`按钮，执行器可转动相应位置，最大阶跃值为1。
 *   右图的3处的`Mininal`框和`Maximum`框为位置环输出给速度环的速度限制。执行器速度最大为6000RPM，例如输入值为0.5，那么INNFOS执行器最大速度增加到6000×0.5=3000R/分钟的时候，速度值将受限，不再增加。
 
 <img src="../img/wiring2-3.png" style="width:600px">
@@ -673,7 +673,4 @@ INNFOS执行器系统的逻辑框图：
 ----
 
 ## 版本信息
-<table class="tableizer-table">
-<thead><tr class="tableizer-firstrow" style=background:PaleTurquoise><th>版本</th><th>更新时间</th><th>更新内容</th></tr></thead><tbody>
- <tr><td>V1.0.0</td><td>2019-04</td><td>第一个版本</td></tr>
-</tbody></table>
+<table class="tableizer-table"><thead><tr class="tableizer-firstrow" style=background:PaleTurquoise><th>版本</th><th>更新时间</th><th>更新内容</th></tr></thead><tbody><tr><td>V1.0.0</td><td>2019-04</td><td>第一个版本</td></tr></tbody></table>
