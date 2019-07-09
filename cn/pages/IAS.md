@@ -259,9 +259,9 @@ INNFOS执行器系统的逻辑框图：
 
 ### 点击“Velocity Mode”进入速度环模式
 
-<img src="../img/wiring2-3.png" style="width:600px">
+<img src="../img/new18.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图21</strong></div>
 
 ### 速度环模式各项功能描述
 
@@ -284,17 +284,17 @@ INNFOS执行器系统的逻辑框图：
 （8）示波器开关 
 
 
-<img src="../img/wiring2-3.png" style="width:600px">
+<img src="../img/new19.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图22</strong></div>
 
 ### 速度环使用方式
 
 1.点击“ Active Velocity Mode”，激活当前速度环模式。
 
-<img src="../img/wiring2-3.png" style="width:600px">
+<img src="../img/new20.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图23</strong></div>
 
 2.速度环基本参数设置：
 
@@ -304,15 +304,15 @@ INNFOS执行器系统的逻辑框图：
 *   右图3处的`Mininal`框和`Maximum`框为速度环输出限幅（后接电流环的输入），例如：电流最大值为33A（PR60型为33A，NE30型为16.5A，具体参见各型号SCA参数表相电流满量程值。输入值为0.5，那么INNFOS执行器电流增加到33×0.5的时候，电流值将受限，不再增加。
 *   按`Halt`键可停止INNFOS执行器的转动。
 
-<img src="../img/wiring2-3.png" style="width:600px">
+<img src="../img/new21.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图24</strong></div>
 
 3.点击`View Graph`可打开示波器,参数界面介绍同上。
 
-<img src="../img/wiring2-3.png" style="width:600px">
+<img src="../img/new22.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图25</strong></div>
 
 4.方波发生器参数值设定
 
@@ -321,17 +321,17 @@ INNFOS执行器系统的逻辑框图：
 *   在`Interval`内输入单位时间（单位：ms），可设置INNFOS执行器方波发生器的参数。
 *   选择点击`Start`键，INNFOS执行器将开始转动。
 
-<img src="../img/wiring2-3.png" style="width:600px">
+<img src="../img/new23.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图26</strong></div>
 
 5.设置`View Graph`视图里的参数，可以更好的查看当前INNFOS执行器 各项参数波形，调节INNFOS执行器“比例”和“积分”（PI） 的数值，其性能会在示波器中以波形方式反应出来。
 
 <span style="color: red">注：不用的通道偏置设置为0，放大设置为1（右图中channel2和channel4），或者直接点击OFF关闭其显示</span>
 
-<img src="../img/wiring2-3.png" style="width:600px">
+<img src="../img/new24.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图27</strong></div>
 
 ----
 
