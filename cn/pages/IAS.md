@@ -671,13 +671,13 @@ INNFOS执行器系统的逻辑框图：
 
 1.如有新版本更新，会有提示
 
-<img src="../img/new81.png" style="width:600px">
+<img src="../img/new82.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图9-1</strong></div>
 
 2.显示本次升级内容及升级按钮
 
-<img src="../img/new82.png" style="width:600px">
+<img src="../img/new81.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图9-2</strong></div>
 
