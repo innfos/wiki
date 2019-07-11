@@ -155,7 +155,7 @@ INNFOS执行器系统的逻辑框图：
 
 <img src="../img/new21.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图11</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图3-2</strong></div>
 
 ### 基本参数的描述
 
@@ -175,7 +175,7 @@ INNFOS执行器系统的逻辑框图：
 
 <img src="../img/new22.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图3-2</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图3-3</strong></div>
 
 ### 电流环使用方式
 
@@ -183,7 +183,7 @@ INNFOS执行器系统的逻辑框图：
 
 <img src="../img/new23.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图3-3</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图3-4</strong></div>
 
 2.参数设置：应用方式
 
@@ -194,13 +194,13 @@ INNFOS执行器系统的逻辑框图：
 
 <img src="../img/new24.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图3-4</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图3-5</strong></div>
 
 3.点击“View Graph”可打开示波器
 
 <img src="../img/new25.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图3-5</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图3-6</strong></div>
 
 4.示波器各项功能描述
 
@@ -212,7 +212,7 @@ INNFOS执行器系统的逻辑框图：
 
 <img src="../img/new26.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图3-6</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图3-7</strong></div>
 
 Note:不用的通道偏置设置为0，放大设置为1，或者直接点击OFF关闭其显示!
 
@@ -225,19 +225,19 @@ Note:不用的通道偏置设置为0，放大设置为1，或者直接点击OFF�
 
 <img src="../img/new28.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图3-7</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图3-8</strong></div>
 
 6.点击`View Graph`按钮打开示波器窗口，可以查看给定（ `Channel 1` 此时为方波发生器）、电流（ `Channel 2` ）、速度（ `Channel 3` ）、位置（ `Channel 4` ）四通道参数波形，如图 
 
 <img src="../img/new29.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图3-8</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图3-9</strong></div>
 
 7.点击`Stop`键，可停止方波发生器的运行。
 
 <img src="../img/new30.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图3-9</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图3-10</strong></div>
 
 ----
 
