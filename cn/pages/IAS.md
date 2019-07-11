@@ -84,13 +84,13 @@ $ ./INNFOS\ Actuator\ Studio
 
 *   当USB转CAN未连接或连接不正常时，会出现如图错误提示。
 
-<img src="../img/new13.png" style="width:600px">
+<img src="../img/new14.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图2-4</strong></div>
 
 *   当外部执行器没有连接或连接不正常时，会出现如图错误提示
 
-<img src="../img/new14.png" style="width:600px">
+<img src="../img/new13.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图2-5</strong></div>
 
