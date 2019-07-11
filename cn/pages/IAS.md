@@ -507,35 +507,18 @@ INNFOS执行器系统的逻辑框图：
 <div class="md-text" style="text-align: center;"><strong>图44</strong></div>
 
 
-5.点击`Stop`键，可停止方波发生器的运行。
-
-
-<img src="../img/new59.png" style="width:600px">
-
-<div class="md-text" style="text-align: center;"><strong>图45</strong></div>
-
-
-
-
-
-<img src="../img/new56.png" style="width:600px">
-
-<div class="md-text" style="text-align: center;"><strong>图42</strong></div>
-
-
-
 <img src="../img/new57.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图43</strong></div>
 
 
 
+5.点击`Stop`键，可停止方波发生器的运行。
 
 
+<img src="../img/new59.png" style="width:600px">
 
-
-
-
+<div class="md-text" style="text-align: center;"><strong>图45</strong></div>
 
 
 
@@ -550,6 +533,15 @@ INNFOS执行器系统的逻辑框图：
 <img src="../img/new55.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图41</strong></div>
+
+
+<img src="../img/new56.png" style="width:600px">
+
+<div class="md-text" style="text-align: center;"><strong>图42</strong></div>
+
+
+
+
 
 
 ----
