@@ -486,10 +486,16 @@ INNFOS执行器系统的逻辑框图：
 <div class="md-text" style="text-align: center;"><strong>图40</strong></div>
 
 
+<img src="../img/new55.png" style="width:600px">
+
+<div class="md-text" style="text-align: center;"><strong>图33</strong></div>
+
+
 
 3.点击“波形图”可打开示波器，参数界面介绍同上 
 
-<img src="../img/new45.png" style="width:600px">
+
+<img src="../img/new55.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图33</strong></div>
 
@@ -502,12 +508,12 @@ INNFOS执行器系统的逻辑框图：
 *   在`Interval`内输入时间（单位：ms），输入参数为转动一次的时间。（例：`Value 1`为2，`Value 1`为-2，`Value 1`为1000，启动后，INNFOS执行器先转到位置2，1000mS后转到位置-2，在过1000ms再次转到位置2，如此反复运行直至用户点击“停止”)。
 *   点击`Start`键，开启INNFOS执行器转动。
 
-<img src="../img/new58.png" style="width:600px">
+<img src="../img/new57.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图44</strong></div>
 
 
-<img src="../img/new57.png" style="width:600px">
+<img src="../img/new58.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图43</strong></div>
 
