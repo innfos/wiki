@@ -26,43 +26,37 @@ $ ./INNFOS\ Actuator\ Studio
 
 1.双击安装软件`Setup.exe`
 
-<img src="../img/wiring2-3.png" style="width:600px">
+<img src="../img/new0.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
 
 2.进入安装界面后，点击`Next`
 
-<img src="../img/wiring2-3.png" style="width:600px">
+<img src="../img/new01.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
 
 3.点击`I Agree`
 
-<img src="../img/wiring2-3.png" style="width:600px">
+<img src="../img/new02.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
 
 4.选择安装位置，然后点击`Install`
 
-<img src="../img/wiring2-3.png" style="width:600px">
+<img src="../img/new03.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
 
 5.等待安装完成
 
-<img src="../img/wiring2-3.png" style="width:600px">
+<img src="../img/new04.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
 
-6.如遇到有杀毒软件提示报警时，请选择“允许本次操作”，
+6.点击`Finish`，完成软件的安装
 
-<img src="../img/wiring2-3.png" style="width:600px">
-
-<div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
-
-7.点击`Finish`，完成软件的安装
-
-<img src="../img/wiring2-3.png" style="width:600px">
+<img src="../img/new05.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
 
