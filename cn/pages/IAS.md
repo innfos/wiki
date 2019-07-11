@@ -675,15 +675,15 @@ INNFOS执行器系统的逻辑框图：
 
 6.设置左右极限偏置
 
-<img src="../img/wiring2-3.png" style="width:600px">
+<img src="../img/new76.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
 
 7.点击“保存”按钮即可保存当前参数 
 
-<img src="../img/wiring2-3.png" style="width:600px">
+<img src="../img/new77.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图</strong></div>
 
 
 ### 温度保护设置
