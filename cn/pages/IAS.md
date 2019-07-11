@@ -420,11 +420,11 @@ INNFOS执行器系统的逻辑框图：
 
 5.点击`Stop`键，可停止方波发生器的运行。
 
-<img src="../img/new48.png" style="width:600px">
+<img src="../img/new47.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图35</strong></div>
 
-6.位置环S曲线模式步加步减设置：
+6.位置模式步加步减设置：
 
 *   在框X中输入转动的位置（单位：R），也可点击键盘方向键进行设置。点击键盘默认为增加0.1。
 *   在框X中输入数值，按`step add`和`step minus`按钮，执行器可转动相应位置，点击一次可使执行器正向或反向转动一次。
