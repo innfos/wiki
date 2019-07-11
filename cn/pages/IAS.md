@@ -327,11 +327,24 @@ INNFOS执行器系统的逻辑框图：
 
 5.设置`View Graph`视图里的参数，可以更好的查看当前INNFOS执行器 各项参数波形，调节INNFOS执行器“比例”和“积分”（PI） 的数值，其性能会在示波器中以波形方式反应出来。
 
-<span style="color: red">注：不用的通道偏置设置为0，放大设置为1（右图中channel2和channel4），或者直接点击OFF关闭其显示</span>
-
 <img src="../img/new24.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图27</strong></div>
+
+<span style="color: red">注：不用的通道偏置设置为0，放大设置为1（右图中channel2和channel4），或者直接点击OFF关闭其显示</span>
+
+6.点击`Stop`键，可停止方波发生器的运行。
+
+<img src="../img/new25.png" style="width:600px">
+
+<div class="md-text" style="text-align: center;"><strong>图28</strong></div>
+
+
+
+
+
+
+
 
 ----
 
