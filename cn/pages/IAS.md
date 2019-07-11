@@ -608,37 +608,6 @@ INNFOS执行器系统的逻辑框图：
 
 ### 归位模式各项功能描述
 
-1.自动校准左右极限
-
-*   先后点击“清除”和“归零”按键，重复两次清除当前左右极限，直到右图8-1图1处数据变为如下大数值。
-
-<img src="../img/new79.png" style="width:600px">
-
-<div class="md-text" style="text-align: center;"><strong>图52</strong></div>
-
-*   此时会返回左右极限的值到图的1处。然后手动控制转动INNFOS执行器到想要的零点，最后点击Homing按键，则当前位置变为零点，图中右侧图的1处的左右极限会根据点击Homing前的位置进行偏移。这样就保证了软件限位和机械限位的一致性。
-
-<img src="../img/new74.png" style="width:600px">
-
-<div class="md-text" style="text-align: center;"><strong>图53</strong></div>
-
-*   然后，设置到左右极限的余量偏置（图8-2中右侧图的3处），则实际运动范围为左右极限减去偏置，(图8-2中右侧图：左软件限位为10-0.5=9.5；右软件限位为-10+0.5=-9.5。)最后，确认软件限位开启如如图8-2中右侧图的4处后，点击“保存”按钮即可保存当前参数。
-
-<img src="../img/new75.png" style="width:600px">
-
-<div class="md-text" style="text-align: center;"><strong>图54</strong></div>
-
-
-<img src="../img/new76.png" style="width:600px">
-
-<div class="md-text" style="text-align: center;"><strong>图55</strong></div>
-
-
-<img src="../img/new77.png" style="width:600px">
-
-<div class="md-text" style="text-align: center;"><strong>图56</strong></div>
-
-
 ### 手动校准左右极限
 
 1.点击右图红框位置“激活归零模式”;进入归位模式。
@@ -684,6 +653,10 @@ INNFOS执行器系统的逻辑框图：
 <img src="../img/new77.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图</strong></div>
+
+
+
+
 
 
 ### 温度保护设置
