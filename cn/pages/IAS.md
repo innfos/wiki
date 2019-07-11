@@ -356,9 +356,9 @@ INNFOS执行器系统的逻辑框图：
 
 INNFOS执行器系统的逻辑框图：
 
-<img src="../img/wiring2-3.png" style="width:600px">
+<img src="../img/position.jpg" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图29 INNFOS执行器系统的逻辑框图/strong></div>
 
 框图的介绍： 在确保电流环和速度环准确的情况下，位置设置值与位置反馈值做加减运算后经过PI模块后经可选的滤波器再经限幅模块输出速度值，然后速度值经速度环再经电流环驱动电机，电机经编码器把位置参数反馈给系统，使之形成闭环。
 
@@ -398,7 +398,7 @@ INNFOS执行器系统的逻辑框图：
 
 <img src="../img/new43.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图31</strong></div>
 
 2.位置环基本参数设置：
 
@@ -408,15 +408,15 @@ INNFOS执行器系统的逻辑框图：
 *   在框X中输入0.1-1的数值，按`step add`和`step minus`按钮，执行器可转动相应位置，最大阶跃值为1。
 *   右图的3处的`Mininal`框和`Maximum`框为位置环输出给速度环的速度限制。执行器速度最大为6000RPM，例如输入值为0.5，那么INNFOS执行器最大速度增加到6000×0.5=3000R/分钟的时候，速度值将受限，不再增加。
 
-<img src="../img/wiring2-3.png" style="width:600px">
+<img src="../img/new44.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图32</strong></div>
 
 3.点击“波形图”可打开示波器，参数界面介绍同上 
 
-<img src="../img/wiring2-3.png" style="width:600px">
+<img src="../img/new45.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图33</strong></div>
 
 4.方波发生器参数值设定
 
@@ -425,23 +425,26 @@ INNFOS执行器系统的逻辑框图：
 *   在`Interval`内输入时间（单位：ms），输入参数为转动一次的时间。（例：`Value 1`为2，`Value 1`为-2，`Value 1`为1000，启动后，INNFOS执行器先转到位置2，1000mS后转到位置-2，在过1000ms再次转到位置2，如此反复运行直至用户点击“停止”)。
 *   点击`Start`键，开启INNFOS执行器转动。
 
-<img src="../img/wiring2-3.png" style="width:600px">
+<img src="../img/new46.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图34</strong></div>
 
 5.点击`View Graph`按钮打开示波器窗口，可以查看给定（此 时为方波发生器）、电流、速度、位置四通道参数波形。
 
 6.调节“积分”，其性能会在示波器中以波形方式反应出来。
 
-<img src="../img/wiring2-3.png" style="width:600px">
+<img src="../img/new47.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图35</strong></div>
 
 7.点击`Stop`键，可停止方波发生器的运行。
 
-<img src="../img/wiring2-3.png" style="width:600px">
+<img src="../img/new48.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图36</strong></div>
+
+
+
 
 ----
 
@@ -449,9 +452,9 @@ INNFOS执行器系统的逻辑框图：
 
 ### 点击“梯形位置模式”进入位置环S曲线模式
 
-<img src="../img/wiring2-3.png" style="width:600px">
+<img src="../img/new51.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图37</strong></div>
 
 ### 位置环S曲线模式各项功能描述
 
@@ -469,17 +472,17 @@ INNFOS执行器系统的逻辑框图：
 
 （6）INNFOS执行器当前连接状态 
 
-<img src="../img/wiring2-3.png" style="width:600px">
+<img src="../img/new52.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图38</strong></div>
 
 ### 位置环S曲线模式使用方式
 
 1.点击“Active Profile Position Mode” 激活当前位置环S曲线模式 
 
-<img src="../img/wiring2-3.png" style="width:600px">
+<img src="../img/new53.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图39</strong></div>
 
 
 2.位置环S曲线模式基本参数设置：
@@ -489,9 +492,9 @@ INNFOS执行器系统的逻辑框图：
 *   右图2处的`Accelerate`框和`Decelerate`框为S曲线模式下的速度上升和下降的平缓度，例如：加速度值越大，INNFOS执行器达到最大速度的时间越短，加速度值越小，INNFOS执行器达到最大转速的时间越长。减速度值越大，INNFOS执行器从最大速度降低到零的时间越短，减速度值越小，INNFOS执行器从最大速度降低到零的时间越长。
 *   `Max`限制了INNFOS执行器的最大转速，随数值增加而增加，如右图的3处，当前最大转速为1000RPM。
 
-<img src="../img/wiring2-3.png" style="width:600px">
+<img src="../img/new54.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图40</strong></div>
 
 3.位置环S曲线模式步加步减设置：
 
@@ -499,9 +502,36 @@ INNFOS执行器系统的逻辑框图：
 *   在框X中输入数值，按`step add`和`step minus`按钮，执行器可转动相应位置，点击一次可使执行器转动一次。
 *   INNFOS执行器开始转动后，在状态值栏可以看到当前INNFOS执行器的各项参数值，右图4处。
 
-<img src="../img/wiring2-3.png" style="width:600px">
+<img src="../img/new55.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图41</strong></div>
+
+
+
+<img src="../img/new56.png" style="width:600px">
+
+<div class="md-text" style="text-align: center;"><strong>图42</strong></div>
+
+
+
+<img src="../img/new57.png" style="width:600px">
+
+<div class="md-text" style="text-align: center;"><strong>图43</strong></div>
+
+
+
+<img src="../img/new58.png" style="width:600px">
+
+<div class="md-text" style="text-align: center;"><strong>图44</strong></div>
+
+
+
+<img src="../img/new59.png" style="width:600px">
+
+<div class="md-text" style="text-align: center;"><strong>图45</strong></div>
+
+
+
 
 ----
 
@@ -509,9 +539,9 @@ INNFOS执行器系统的逻辑框图：
 
 ### 点击“Profile Velocity Mode”进入速度环S曲线模式
 
-<img src="../img/wiring2-3.png" style="width:600px">
+<img src="../img/new61.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图46</strong></div>
 
 *   文字序号与图中序号对应
 
@@ -527,17 +557,17 @@ INNFOS执行器系统的逻辑框图：
 
 （6）INNFOS执行器当前连接状态 
 
-<img src="../img/wiring2-3.png" style="width:600px">
+<img src="../img/new62.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图47</strong></div>
 
 ### 速度环S曲线模式使用方式
 
 1.点击“Active Profile Velocity Mode”，激活当前速度环S曲线模式。 
 
-<img src="../img/wiring2-3.png" style="width:600px">
+<img src="../img/new63.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图48</strong></div>
 
 2.速度环S曲线模式基本参数设置：
 
@@ -546,9 +576,9 @@ INNFOS执行器系统的逻辑框图：
 *   右图中2处的加速度、减速度和最大速度项为S曲线的调整参数。
 
 
-<img src="../img/wiring2-3.png" style="width:600px">
+<img src="../img/new64.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图49</strong></div>
 
 ----
 
@@ -556,17 +586,17 @@ INNFOS执行器系统的逻辑框图：
 
 ### 点击“归零模式”进入归位模式
 
-<img src="../img/wiring2-3.png" style="width:600px">
+<img src="../img/new71.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图50</strong></div>
 
 ### 归位模式使用方式
 
 点击“Homing Mode”，激活当前归位模式。
 
-<img src="../img/wiring2-3.png" style="width:600px">
+<img src="../img/new72.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图51</strong></div>
 
 ### 归位模式各项功能描述
 
@@ -574,17 +604,37 @@ INNFOS执行器系统的逻辑框图：
 
 *   先后点击“清除”和“归零”按键，重复两次清除当前左右极限，直到右图8-1图1处数据变为如下大数值（这是软件限位的上下限）。然后将右图8-1图2处调为如下大数值（这是限流，比如加大负载时需要较大电流，需要放开电流限制）。然后点击Auto按钮，INNFOS执行器就会自动顺时针转动，直到触碰机械左极限（这里定义顺时针碰的机械限位为左极限，逆时针的为右极限），然后自动逆时针转动直到触碰机械右极限停止。
 
-<img src="../img/wiring2-3.png" style="width:600px">
+<img src="../img/new73.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图52</strong></div>
 
 *   此时会返回左右极限的值到图8-1的1处。然后手动控制转动INNFOS执行器到想要的零点（例如图8-2中左侧图的2处），最后点击Homing按键，则当前位置变为零点（如图8-2中右侧图03的2处），图8-2中右侧图的1处的左右极限会根据点击Homing前的位置进行偏移（对比图8-2中两侧图）。这样就保证了软件限位和机械限位的一致性。
 
-<img src="../img/wiring2-3.png" style="width:600px">
+<img src="../img/new74.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图53</strong></div>
 
 *   然后，设置到左右极限的余量偏置（图8-2中右侧图的3处），则实际运动范围为左右极限减去偏置，(图8-2中右侧图：左软件限位为33.774918-1.4=32.374918；右软件限位为-32.4932+1.4=-31.0932。)最后，确认软件限位开启如如图8-2中右侧图的4处后，点击“保存”按钮即可保存当前参数。
+
+<img src="../img/new75.png" style="width:600px">
+
+<div class="md-text" style="text-align: center;"><strong>图54</strong></div>
+
+
+<img src="../img/new76.png" style="width:600px">
+
+<div class="md-text" style="text-align: center;"><strong>图55</strong></div>
+
+
+
+<img src="../img/new77.png" style="width:600px">
+
+<div class="md-text" style="text-align: center;"><strong>图56</strong></div>
+
+
+
+
+
 
 ### 手动校准左右极限
 
@@ -665,7 +715,23 @@ INNFOS执行器系统的逻辑框图：
 
 1.如有新版本更新，会有提示
 
-4.完成在线升级
+<img src="../img/new81.png" style="width:600px">
+
+<div class="md-text" style="text-align: center;"><strong>图</strong></div>
+
+2.显示本次升级内容及升级按钮
+
+<img src="../img/new82.png" style="width:600px">
+
+<div class="md-text" style="text-align: center;"><strong>图</strong></div>
+
+3.点击update等待升级完成
+
+<img src="../img/new83.png" style="width:600px">
+
+<div class="md-text" style="text-align: center;"><strong>图</strong></div>
+
+
 
 ----
 ## 错误提示
