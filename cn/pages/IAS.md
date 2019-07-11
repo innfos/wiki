@@ -72,55 +72,55 @@ $ ./INNFOS\ Actuator\ Studio
 
 1、双击运行软件 启动用户界面
 
-<img src="../img/new1.png" style="width:600px">
+<img src="../img/.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图1</strong></div>
 
 2.点击`confirm that you’ve read the document！`，然后点击`next`，进入下一界面，（如果是初次对本产品使用者，请点击`show the document！` ,阅读软件使用说明）
 
-<img src="../img/new1.png" style="width:600px">
+<img src="../img/new11.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图2</strong></div>
 
 3.选择执行器通信方式（默认为以太网通信），然后继续点击`next`（注：如果是初次使用以太网通信，应配置静态IP,具体配置 见附录B）
 
-<img src="../img/new2.png" style="width:600px">
+<img src="../img/new12.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图3</strong></div>
 
 *   当USB转CAN未连接或连接不正常时，会出现如图错误提示。
 
-<img src="../img/new3.png" style="width:600px">
+<img src="../img/new13.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图4</strong></div>
 
 *   当外部执行器没有连接或连接不正常时，会出现如图错误提示
 
-<img src="../img/new4.png" style="width:600px">
+<img src="../img/new14.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图5</strong></div>
 
 *   当外部系统连接正确，系统进入执行器运行界面，单机红色区域OFF，如图，标记1处OFF为单个执行器开关，2处ON为总开关，比如多个执行器同时连接时，点击总开关即可控制所有执行器开关机。
 
-<img src="../img/new5.png" style="width:600px">
+<img src="../img/new15.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图6</strong></div>
 
 *   点击OFF开机后，弹出右图中红色区域提示信息
 
-<img src="../img/new6.png" style="width:600px">
+<img src="../img/new16.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图7</strong></div>
 
 *   等待三秒左右，如图，标记一处为该执行器ID号，标记2处为错误清除键，标记3处为Detail键可进入执行器操作界面，标记4处为该执行器的信息显示区域。
 
-<img src="../img/new7.png" style="width:600px">
+<img src="../img/new17.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图8</strong></div>
 
 4.双击执行器信息框或者点击`Detail`键，进入电流环模式。
 
-<img src="../img/new8.png" style="width:600px">
+<img src="../img/ne18.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图9</strong></div>
 
@@ -159,7 +159,7 @@ INNFOS执行器系统的逻辑框图：
 
 （9）示波器开关
 
-<img src="../img/new9.png" style="width:600px">
+<img src="../img/new21.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图11</strong></div>
 
@@ -179,7 +179,7 @@ INNFOS执行器系统的逻辑框图：
 
 <span style="color: red">[注:电流环模式中，比例设置、积分设置根据执行器型号已进行预设，无需更改；最小电流设置固定值-0.82，最大电流设置固定值0.82，并已进行预设，无需更改。]</span> 
 
-<img src="../img/new10.png" style="width:600px">
+<img src="../img/new22.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图12</strong></div>
 
@@ -187,7 +187,7 @@ INNFOS执行器系统的逻辑框图：
 
 1.点击“Active Current Mode”激活当前电流环模式。
 
-<img src="../img/new11.png" style="width:600px">
+<img src="../img/new23.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图13</strong></div>
 
@@ -198,13 +198,13 @@ INNFOS执行器系统的逻辑框图：
 *   按`Halt`键可停止INNFOS执行器的转动。（如图中2处）
 *   `Limit`参数栏中可以设置最大电流值。
 
-<img src="../img/new12.png" style="width:600px">
+<img src="../img/new24.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图14</strong></div>
 
 3.点击“View Graph”可打开示波器
 
-<img src="../img/new13.png" style="width:600px">
+<img src="../img/new25.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图15</strong></div>
 
@@ -216,7 +216,7 @@ INNFOS执行器系统的逻辑框图：
 *   `Channel 3` 为INNFOS执行器速度波形的偏置和放大倍数（图6处）；
 *   `Channel 4` 为INNFOS执行器位置波形的偏置和放大倍数（图7处）。
 
-<img src="../img/new14.png" style="width:600px">
+<img src="../img/new26.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图16</strong></div>
 
@@ -229,19 +229,23 @@ Note:不用的通道偏置设置为0，放大设置为1，或者直接点击OFF�
 *   在`Interval`内输入时间（单位：ms）（图3处）
 *   选择点击`Start`键（右图4处），方波发生器会按设定的时间（`Interval`值），连续生效`Value 1`和`Value 2`到指定的位置，直到关闭此按钮。
 
-<img src="../img/new15.png" style="width:600px">
+<img src="../img/new27.png" style="width:600px">
+
+<div class="md-text" style="text-align: center;"><strong>图17</strong></div>
+
+<img src="../img/new28.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图17</strong></div>
 
 6.点击`View Graph`按钮打开示波器窗口，可以查看给定（ `Channel 1` 此时为方波发生器）、电流（ `Channel 2` ）、速度（ `Channel 3` ）、位置（ `Channel 4` ）四通道参数波形，如图 
 
-<img src="../img/new16.png" style="width:600px">
+<img src="../img/new29.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图18</strong></div>
 
 7.点击`Stop`键，可停止方波发生器的运行。
 
-<img src="../img/new17.png" style="width:600px">
+<img src="../img/new30.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图19</strong></div>
 
@@ -259,7 +263,7 @@ INNFOS执行器系统的逻辑框图：
 
 ### 点击“Velocity Mode”进入速度环模式
 
-<img src="../img/new18.png" style="width:600px">
+<img src="../img/new31.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图21</strong></div>
 
@@ -284,7 +288,7 @@ INNFOS执行器系统的逻辑框图：
 （8）示波器开关 
 
 
-<img src="../img/new19.png" style="width:600px">
+<img src="../img/new32.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图22</strong></div>
 
@@ -292,7 +296,7 @@ INNFOS执行器系统的逻辑框图：
 
 1.点击“Active Velocity Mode”，激活当前速度环模式。
 
-<img src="../img/new20.png" style="width:600px">
+<img src="../img/new33.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图23</strong></div>
 
@@ -304,13 +308,13 @@ INNFOS执行器系统的逻辑框图：
 *   右图3处的`Mininal`框和`Maximum`框为速度环输出限幅（后接电流环的输入），例如：电流最大值为33A（PR60型为33A，NE30型为16.5A，具体参见各型号SCA参数表相电流满量程值。输入值为0.5，那么INNFOS执行器电流增加到33×0.5的时候，电流值将受限，不再增加。
 *   按`Halt`键可停止INNFOS执行器的转动。
 
-<img src="../img/new21.png" style="width:600px">
+<img src="../img/new34.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图24</strong></div>
 
 3.点击`View Graph`可打开示波器,参数界面介绍同上。
 
-<img src="../img/new22.png" style="width:600px">
+<img src="../img/new35.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图25</strong></div>
 
@@ -321,13 +325,13 @@ INNFOS执行器系统的逻辑框图：
 *   在`Interval`内输入单位时间（单位：ms），可设置INNFOS执行器方波发生器的参数。
 *   选择点击`Start`键，INNFOS执行器将开始转动。
 
-<img src="../img/new23.png" style="width:600px">
+<img src="../img/new36.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图26</strong></div>
 
 5.设置`View Graph`视图里的参数，可以更好的查看当前INNFOS执行器 各项参数波形，调节INNFOS执行器“比例”和“积分”（PI） 的数值，其性能会在示波器中以波形方式反应出来。
 
-<img src="../img/new24.png" style="width:600px">
+<img src="../img/new37.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图27</strong></div>
 
@@ -335,7 +339,7 @@ INNFOS执行器系统的逻辑框图：
 
 6.点击`Stop`键，可停止方波发生器的运行。
 
-<img src="../img/new25.png" style="width:600px">
+<img src="../img/new38.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图28</strong></div>
 
@@ -360,9 +364,9 @@ INNFOS执行器系统的逻辑框图：
 
 ### 点击“位置环”进入位置环模式
 
-<img src="../img/wiring2-3.png" style="width:600px">
+<img src="../img/new41.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图29</strong></div>
 
 ### 位置环模式各项功能描述
 
@@ -384,15 +388,15 @@ INNFOS执行器系统的逻辑框图：
 
 （8）示波器开关 
 
-<img src="../img/wiring2-3.png" style="width:600px">
+<img src="../img/new42.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图30</strong></div>
 
 ### 位置环使用方式
 
 1.点击`Active Position Mode`，激活当前位置环模式。 
 
-<img src="../img/wiring2-3.png" style="width:600px">
+<img src="../img/new43.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
 
