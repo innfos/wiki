@@ -473,11 +473,8 @@ INNFOS执行器系统的逻辑框图：
 
 <div class="md-text" style="text-align: center;"><strong>图39</strong></div>
 
-
 2.位置环S曲线模式基本参数设置：
 
-*   在`Target`框中输入转动的位置（单位：R），INNFOS执行器开始转动到指定位置。
-*   INNFOS执行器开始转动后，在状态值栏可以看到当前INNFOS执行器的各项参数值，右图4处。
 *   右图2处的`Accelerate`框和`Decelerate`框为S曲线模式下的速度上升和下降的平缓度，例如：加速度值越大，INNFOS执行器达到最大速度的时间越短，加速度值越小，INNFOS执行器达到最大转速的时间越长。减速度值越大，INNFOS执行器从最大速度降低到零的时间越短，减速度值越小，INNFOS执行器从最大速度降低到零的时间越长。
 *   `Max`限制了INNFOS执行器的最大转速，随数值增加而增加，如右图的3处，当前最大转速为1000RPM。
 
@@ -486,19 +483,22 @@ INNFOS执行器系统的逻辑框图：
 <div class="md-text" style="text-align: center;"><strong>图40</strong></div>
 
 
+2.位置环S曲线模式基本参数设置：
+
+*   在`Target`框中输入转动的位置（单位：R），INNFOS执行器开始转动到指定位置。
+*   INNFOS执行器开始转动后，在状态值栏可以看到当前INNFOS执行器的各项参数值，右图4处。
+
 <img src="../img/new55.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图33</strong></div>
-
 
 
 3.点击“波形图”可打开示波器，参数界面介绍同上 
 
 
-<img src="../img/new55.png" style="width:600px">
+<img src="../img/new60.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图33</strong></div>
-
 
 
 4.方波发生器参数值设定
@@ -518,16 +518,11 @@ INNFOS执行器系统的逻辑框图：
 <div class="md-text" style="text-align: center;"><strong>图43</strong></div>
 
 
-
 5.点击`Stop`键，可停止方波发生器的运行。
-
 
 <img src="../img/new59.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图45</strong></div>
-
-
-
 
 3.位置环S曲线模式步加步减设置：
 
@@ -544,10 +539,6 @@ INNFOS执行器系统的逻辑框图：
 <img src="../img/new56.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图42</strong></div>
-
-
-
-
 
 
 ----
