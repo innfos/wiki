@@ -76,7 +76,7 @@ $ ./INNFOS\ Actuator\ Studio
 
 <div class="md-text" style="text-align: center;"><strong>图1</strong></div>
 
-2.点击`confirm that you’ve read the document`，然后点击`next`，进入下一界面，（如果是初次对本产品使用者，请点击`show the document！` ,阅读软件使用说明）
+2.点击`confirm that you’ve read the document！`，然后点击`next`，进入下一界面，（如果是初次对本产品使用者，请点击`show the document！` ,阅读软件使用说明）
 
 <img src="../img/new1.png" style="width:600px">
 
@@ -290,7 +290,7 @@ INNFOS执行器系统的逻辑框图：
 
 ### 速度环使用方式
 
-1.点击“ Active Velocity Mode”，激活当前速度环模式。
+1.点击“Active Velocity Mode”，激活当前速度环模式。
 
 <img src="../img/new20.png" style="width:600px">
 
