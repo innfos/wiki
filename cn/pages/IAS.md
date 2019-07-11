@@ -626,7 +626,7 @@ INNFOS执行器系统的逻辑框图：
 
 <img src="../img/new80.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图8-6/strong></div>
+<div class="md-text" style="text-align: center;"><strong>图8-6</strong></div>
 
 6.设置左右极限偏置
 
@@ -655,7 +655,6 @@ INNFOS执行器系统的逻辑框图：
 
 
 3.设置逆变器保护温度
-
 
 
 4设置逆变器恢复温度
