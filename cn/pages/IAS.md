@@ -493,7 +493,7 @@ INNFOS执行器系统的逻辑框图：
 <div class="md-text" style="text-align: center;"><strong>图33</strong></div>
 
 
-3.点击“波形图”可打开示波器，参数界面介绍同上 
+3.点击“波形图”可打开示波器，参数界面介绍同上:
 
 
 <img src="../img/new60.png" style="width:600px">
@@ -501,7 +501,7 @@ INNFOS执行器系统的逻辑框图：
 <div class="md-text" style="text-align: center;"><strong>图33</strong></div>
 
 
-4.方波发生器参数值设定
+4.方波发生器参数值设定：
 
 *   在`Value 1`中输入位置值1(单位:R)
 *   在`Value 2`”中输入位置值2(单位:R)
@@ -512,6 +512,7 @@ INNFOS执行器系统的逻辑框图：
 
 <div class="md-text" style="text-align: center;"><strong>图44</strong></div>
 
+*   波形图如下：
 
 <img src="../img/new58.png" style="width:600px">
 
@@ -527,14 +528,13 @@ INNFOS执行器系统的逻辑框图：
 3.位置环S曲线模式步加步减设置：
 
 *   在`Target`框中输入转动的位置（单位：R），也可点击键盘方向键进行设置。点击键盘默认为增加1。
-*   在框X中输入数值，按`step add`和`step minus`按钮，执行器可转动相应位置，点击一次可使执行器转动一次。
-*   INNFOS执行器开始转动后，在状态值栏可以看到当前INNFOS执行器的各项参数值，右图4处。
-
 
 <img src="../img/new55.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图41</strong></div>
 
+*   在框X中输入数值，按`step add`和`step minus`按钮，执行器可转动相应位置，点击一次可使执行器转动一次。
+*   INNFOS执行器开始转动后，在状态值栏可以看到当前INNFOS执行器的各项参数值，右图4处。
 
 <img src="../img/new56.png" style="width:600px">
 
@@ -634,14 +634,9 @@ INNFOS执行器系统的逻辑框图：
 <div class="md-text" style="text-align: center;"><strong>图55</strong></div>
 
 
-
 <img src="../img/new77.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图56</strong></div>
-
-
-
-
 
 
 ### 手动校准左右极限
@@ -677,7 +672,6 @@ INNFOS执行器系统的逻辑框图：
 <img src="../img/wiring2-3.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
-
 
 6.设置左右极限偏置
 
@@ -738,7 +732,6 @@ INNFOS执行器系统的逻辑框图：
 <img src="../img/new83.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图</strong></div>
-
 
 
 ----
