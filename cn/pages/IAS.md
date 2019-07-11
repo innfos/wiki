@@ -325,7 +325,7 @@ INNFOS执行器系统的逻辑框图：
 
 <div class="md-text" style="text-align: center;"><strong>图26</strong></div>
 
-5.设置`View Graph`视图里的参数，可以更好的查看当前INNFOS执行器 各项参数波形，调节INNFOS执行器“比例”和“积分”（PI） 的数值，其性能会在示波器中以波形方式反应出来。
+5.设置`View Graph`视图里的参数，可以更好的查看当前INNFOS执行器各项参数波形。
 
 <img src="../img/new37.png" style="width:600px">
 
@@ -338,12 +338,6 @@ INNFOS执行器系统的逻辑框图：
 <img src="../img/new38.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图28</strong></div>
-
-
-
-
-
-
 
 
 ----
@@ -401,7 +395,6 @@ INNFOS执行器系统的逻辑框图：
 *   右图1处`Setting`框中输入位置值大小（单位：R），在图4处按`Set Position`键，INNFOS执行器开始转动，INNFOS执行器转到输入位置后，停止。
 *   INNFOS执行器开始转动后，右图5处状态值栏可以看到当前INNFOS执行器的各项参数值。
 *   调节`Proportional`框可调节比例值，如右图2处。
-*   在框X中输入0.1-1的数值，按`step add`和`step minus`按钮，执行器可转动相应位置，最大阶跃值为1。
 *   右图的3处的`Mininal`框和`Maximum`框为位置环输出给速度环的速度限制。执行器速度最大为6000RPM，例如输入值为0.5，那么INNFOS执行器最大速度增加到6000×0.5=3000R/分钟的时候，速度值将受限，不再增加。
 
 <img src="../img/new44.png" style="width:600px">
@@ -425,21 +418,21 @@ INNFOS执行器系统的逻辑框图：
 
 <div class="md-text" style="text-align: center;"><strong>图34</strong></div>
 
-5.点击`View Graph`按钮打开示波器窗口，可以查看给定（此 时为方波发生器）、电流、速度、位置四通道参数波形。
-
-6.调节“积分”，其性能会在示波器中以波形方式反应出来。
-
-<img src="../img/new47.png" style="width:600px">
-
-<div class="md-text" style="text-align: center;"><strong>图35</strong></div>
-
-7.点击`Stop`键，可停止方波发生器的运行。
+5.点击`Stop`键，可停止方波发生器的运行。
 
 <img src="../img/new48.png" style="width:600px">
 
+<div class="md-text" style="text-align: center;"><strong>图35</strong></div>
+
+6.位置环S曲线模式步加步减设置：
+
+*   在框X中输入转动的位置（单位：R），也可点击键盘方向键进行设置。点击键盘默认为增加0.1。
+*   在框X中输入数值，按`step add`和`step minus`按钮，执行器可转动相应位置，点击一次可使执行器正向或反向转动一次。
+*   INNFOS执行器开始转动后，在状态值栏可以看到当前INNFOS执行器的各项参数值，右图4处。
+
+<img src="../img/new47.png" style="width:600px">
+
 <div class="md-text" style="text-align: center;"><strong>图36</strong></div>
-
-
 
 
 ----
@@ -492,15 +485,36 @@ INNFOS执行器系统的逻辑框图：
 
 <div class="md-text" style="text-align: center;"><strong>图40</strong></div>
 
-3.位置环S曲线模式步加步减设置：
 
-*   在`Target`框中输入转动的位置（单位：R），也可点击键盘方向键进行设置。点击键盘默认为增加1。
-*   在框X中输入数值，按`step add`和`step minus`按钮，执行器可转动相应位置，点击一次可使执行器转动一次。
-*   INNFOS执行器开始转动后，在状态值栏可以看到当前INNFOS执行器的各项参数值，右图4处。
 
-<img src="../img/new55.png" style="width:600px">
+3.点击“波形图”可打开示波器，参数界面介绍同上 
 
-<div class="md-text" style="text-align: center;"><strong>图41</strong></div>
+<img src="../img/new45.png" style="width:600px">
+
+<div class="md-text" style="text-align: center;"><strong>图33</strong></div>
+
+
+
+4.方波发生器参数值设定
+
+*   在`Value 1`中输入位置值1(单位:R)
+*   在`Value 2`”中输入位置值2(单位:R)
+*   在`Interval`内输入时间（单位：ms），输入参数为转动一次的时间。（例：`Value 1`为2，`Value 1`为-2，`Value 1`为1000，启动后，INNFOS执行器先转到位置2，1000mS后转到位置-2，在过1000ms再次转到位置2，如此反复运行直至用户点击“停止”)。
+*   点击`Start`键，开启INNFOS执行器转动。
+
+<img src="../img/new58.png" style="width:600px">
+
+<div class="md-text" style="text-align: center;"><strong>图44</strong></div>
+
+
+5.点击`Stop`键，可停止方波发生器的运行。
+
+
+<img src="../img/new59.png" style="width:600px">
+
+<div class="md-text" style="text-align: center;"><strong>图45</strong></div>
+
+
 
 
 
@@ -516,17 +530,26 @@ INNFOS执行器系统的逻辑框图：
 
 
 
-<img src="../img/new58.png" style="width:600px">
-
-<div class="md-text" style="text-align: center;"><strong>图44</strong></div>
 
 
 
-<img src="../img/new59.png" style="width:600px">
-
-<div class="md-text" style="text-align: center;"><strong>图45</strong></div>
 
 
+
+
+
+
+
+3.位置环S曲线模式步加步减设置：
+
+*   在`Target`框中输入转动的位置（单位：R），也可点击键盘方向键进行设置。点击键盘默认为增加1。
+*   在框X中输入数值，按`step add`和`step minus`按钮，执行器可转动相应位置，点击一次可使执行器转动一次。
+*   INNFOS执行器开始转动后，在状态值栏可以看到当前INNFOS执行器的各项参数值，右图4处。
+
+
+<img src="../img/new55.png" style="width:600px">
+
+<div class="md-text" style="text-align: center;"><strong>图41</strong></div>
 
 
 ----
