@@ -82,7 +82,7 @@ $ ./INNFOS\ Actuator\ Studio
 
 <div class="md-text" style="text-align: center;"><strong>图2</strong></div>
 
-3.选择执行器通信方式（默认为以太网通信），然后继续点击`next`（注：如果是初次使用以太网通信，应配置静态IP,具体配置 见附录B）
+3.选择执行器通信方式（默认为以太网通信），然后继续点击`next`（注：如果是初次使用以太网通信，应配置静态IP,具体配置）
 
 <img src="../img/new12.png" style="width:600px">
 
@@ -112,7 +112,7 @@ $ ./INNFOS\ Actuator\ Studio
 
 <div class="md-text" style="text-align: center;"><strong>图7</strong></div>
 
-*   等待三秒左右，如图，标记一处为该执行器ID号，标记2处为错误清除键，标记3处为Detail键可进入执行器操作界面，标记4处为该执行器的信息显示区域。
+*   等待三秒左右，如图，标记一处为该执行器ID号和内部版本号，标记2处为错误清除键，标记3处为Detail键可进入执行器操作界面，标记4处为该执行器的信息显示区域。
 
 <img src="../img/new17.png" style="width:600px">
 
@@ -228,10 +228,6 @@ Note:不用的通道偏置设置为0，放大设置为1，或者直接点击OFF�
 *   在`Value 2`中输入电流值2（单位：A）（图2处）
 *   在`Interval`内输入时间（单位：ms）（图3处）
 *   选择点击`Start`键（右图4处），方波发生器会按设定的时间（`Interval`值），连续生效`Value 1`和`Value 2`到指定的位置，直到关闭此按钮。
-
-<img src="../img/new27.png" style="width:600px">
-
-<div class="md-text" style="text-align: center;"><strong>图17</strong></div>
 
 <img src="../img/new28.png" style="width:600px">
 
