@@ -153,7 +153,7 @@ INNFOS执行器系统的逻辑框图：
 
 （9）示波器开关
 
-<img src="../img/new3-1.png" style="width:600px">
+<img src="../img/new21.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图11</strong></div>
 
