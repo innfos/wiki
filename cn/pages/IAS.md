@@ -26,7 +26,7 @@ $ ./INNFOS\ Actuator\ Studio
 
 1.双击安装软件`Setup.exe`
 
-<img src="../img/new0.png" style="width:600px">
+<img src="../img/new000.png" style="width:100px">
 
 <div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
 
@@ -66,7 +66,7 @@ $ ./INNFOS\ Actuator\ Studio
 
 1、双击运行软件 启动用户界面
 
-<img src="../img/.png" style="width:600px">
+<img src="../img/new001.png" style="width:100px">
 
 <div class="md-text" style="text-align: center;"><strong>图1</strong></div>
 
