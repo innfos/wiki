@@ -120,7 +120,7 @@ $ ./INNFOS\ Actuator\ Studio
 
 4.双击执行器信息框或者点击`Detail`键，进入电流环模式。
 
-<img src="../img/ne18.png" style="width:600px">
+<img src="../img/new18.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图9</strong></div>
 
