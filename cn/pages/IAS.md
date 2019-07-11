@@ -697,13 +697,13 @@ INNFOS执行器系统的逻辑框图：
 
 如图，弹出错误提示信息。
 
-<img src="../img/File9-1.png" style="width:600px">
+<img src="../img/new91.png" style="width:600px">
 
 ### 错误处理方式
 
 点击“OK”，再点击“Clear Errors”可清除错误，清除错误后，INNFOS执行器进入电流环模式。
 
-<img src="../img/File9-2.png" style="width:600px">
+<img src="../img/new92.png" style="width:600px">
 
 ----
 
