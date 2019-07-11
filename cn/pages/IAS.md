@@ -638,7 +638,7 @@ INNFOS执行器系统的逻辑框图：
 
 5.若只设定零点，则手动将关节或执行器调节至想要的零点，点击2处的“归零”按键，1处的当前位置值会变为0。
 
-<img src="../img/new76.png" style="width:600px">
+<img src="../img/new80.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
 
