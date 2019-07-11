@@ -594,7 +594,7 @@ INNFOS执行器系统的逻辑框图：
 
 ### 点击“归零模式”进入归位模式
 
-<img src="../img/new71.png" style="width:600px">
+<img src="../img/new78.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图50</strong></div>
 
@@ -602,7 +602,7 @@ INNFOS执行器系统的逻辑框图：
 
 点击“Homing Mode”，激活当前归位模式。
 
-<img src="../img/new72.png" style="width:600px">
+<img src="../img/new71.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图51</strong></div>
 
@@ -612,7 +612,7 @@ INNFOS执行器系统的逻辑框图：
 
 *   先后点击“清除”和“归零”按键，重复两次清除当前左右极限，直到右图8-1图1处数据变为如下大数值（这是软件限位的上下限）。然后将右图8-1图2处调为如下大数值（这是限流，比如加大负载时需要较大电流，需要放开电流限制）。然后点击Auto按钮，INNFOS执行器就会自动顺时针转动，直到触碰机械左极限（这里定义顺时针碰的机械限位为左极限，逆时针的为右极限），然后自动逆时针转动直到触碰机械右极限停止。
 
-<img src="../img/new73.png" style="width:600px">
+<img src="../img/new79.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图52</strong></div>
 
