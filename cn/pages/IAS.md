@@ -414,7 +414,7 @@ INNFOS执行器系统的逻辑框图：
 *   在`Interval`内输入时间（单位：ms），输入参数为转动一次的时间。（例：`Value 1`为0.1，`Value 1`为0，`Value 1`为1000，启动后，INNFOS执行器先转到位置0.1，1000mS后转到位置0，在过1000ms再次转到位置2，如此反复运行直至用户点击“停止”)。
 *   点击`Start`键，开启INNFOS执行器转动。
 
-<img src="../img/new45.png" style="width:600px">
+<img src="../img/new48.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图34</strong></div>
 
