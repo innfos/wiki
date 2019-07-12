@@ -62,7 +62,7 @@ $ ./INNFOS\ Actuator\ Studio
 
 ----
 
-## 软件的开机
+## IAS boot
 
 1、Double-click to run the software and enter the user interface.
 
@@ -451,7 +451,7 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 ----
 
-## 位置环S曲线模式
+## 位置环S曲线模式Position loop S-curve mode
 
 ### 点击“梯形位置模式”进入位置环S曲线模式
 
