@@ -1,60 +1,60 @@
-## 介绍
+## Overview
 
-IAS是一款可视化的INNFOS执行器调试软件，主要功能包括控制、修改执行器ID、可视化图表调节执行器、动作编辑等等。IAS可以直观、方便的修改和控制INNFOS执行器。使用IAS无需编程经验，但是不适合复杂的功能开发。
+IAS is a visual debug control software for INNFOS actuator, the main functions of which include control, ID modification, visual graphic data regulation, motion editing, etc. It can intuitively modify and control INNFOS actuators in a convenient way.It does not require the programming skills of users when using IAS, but is unsuitable for complex function combinations.
 
 ----
 
-## 下载IAS
+## Download
 
 如果电脑系统为Linux,访问[IAS(Linux)](https://github.com/innfos/INNFOS-Actuator-Studio-linux.git)获取最新版本的IAS(INNFOS Actuator Studio)(Linux),如果电脑系统是Windows请访问 [IAS(Windows)](https://github.com/innfos/INNFOS-Actuator-Studio-windows.git).
 
 ----
 
-## 软件的安装
+## IAS installation
 
-### Linux平台
+### Linux plantform
 
-1. 解压下载好的压缩包
-2. 进入IAS目录
-3. 双击INNFOS Actuator Studio图标或者使用下面命令启动IAS：
+1. Unzip the IAS to your desired location
+2. Enter the IAS folder
+3. Launch the program by either double clicking the INNFOS Actuator Studio icon or using the command
 
 ```sh
 $ ./INNFOS\ Actuator\ Studio
 ```
 
-### Windows平台
+### Windows plantform
 
-1.双击安装软件`Setup.exe`
+1.Double-click the installation software`Setup.exe`
 
 <img src="../img/new000.png" style="width:100px">
 
 <div class="md-text" style="text-align: center;"><strong>图1-1</strong></div>
 
-2.进入安装界面后，点击`Next`
+2.After entering the installation interface, click`Next`
 
 <img src="../img/new01.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图1-2</strong></div>
 
-3.点击`I Agree`
+3.Click `I Agree`
 
 <img src="../img/new02.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图1-3</strong></div>
 
-4.选择安装位置，然后点击`Install`
+4.Select the installation location and click`Install`
 
 <img src="../img/new03.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图1-4</strong></div>
 
-5.等待安装完成
+5.Wait for the completion of the installation;
 
 <img src="../img/new04.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图1-5</strong></div>
 
-6.点击`Finish`，完成软件的安装
+6.Click`Finish`to complete the software installation.
 
 <img src="../img/new05.png" style="width:600px">
 
@@ -64,55 +64,60 @@ $ ./INNFOS\ Actuator\ Studio
 
 ## 软件的开机
 
-1、双击运行软件 启动用户界面
+1、Double-click to run the software and enter the user interface.
 
 <img src="../img/new001.png" style="width:100px">
 
 <div class="md-text" style="text-align: center;"><strong>图2-1</strong></div>
 
-2.点击`confirm that you’ve read the document！`，然后点击`next`，进入下一界面，（如果是初次对本产品使用者，请点击`show the document！` ,阅读软件使用说明）
+2.Click`confirm that you've read the document`, then click `next` to enter the next interface. 
+
+Note:Please click“show the document!” to read the software instructions when use the product for the first time.
 
 <img src="../img/new11.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图2-2</strong></div>
 
-3.选择执行器通信方式（默认为以太网通信），然后继续点击`next`（注：如果是初次使用以太网通信，应配置静态IP,具体配置）
+3.Select the actuator communication mode (The default setting is Ethernet communication), then click `next`
 
 <img src="../img/new12.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图2-3</strong></div>
 
-*   当USB转CAN未连接或连接不正常时，会出现如图错误提示。
+Note: Please confirm that the static IP is correctly configured before start using Ethernet communication.
+
+
+*    When the USB to CAN is not connected or connected abnormally, an error message will appear.
 
 <img src="../img/new14.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图2-4</strong></div>
 
-*   当外部执行器没有连接或连接不正常时，会出现如图错误提示
+*    When the external actuator is not connected or connected abnormally, an error message will appear.
 
 <img src="../img/new13.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图2-5</strong></div>
 
-*   当外部系统连接正确，系统进入执行器运行界面，单机红色区域OFF，如图，标记1处OFF为单个执行器开关，2处ON为总开关，比如多个执行器同时连接时，点击总开关即可控制所有执行器开关机。
+*    When the external system is connected correctly, it enters running interface of the actuator. The red area is OFF. As shown in figure 2-6, OFF at mark 1 is a single actuator switch, ON at mark 2 is a main switch, when the actuators are connected at the same time, click on mark 2 to control all actuators.
 
 <img src="../img/new15.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图2-6</strong></div>
 
-*   点击OFF开机后，弹出右图中红色区域提示信息
+*   After clicking `OFF`, the messages in the red area showed in figure 2-7 will pop up.
 
 <img src="../img/new16.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图2-7</strong></div>
 
-*   等待三秒左右，如图，标记一处为该执行器ID号和内部版本号，标记2处为错误清除键，标记3处为Detail键可进入执行器操作界面，标记4处为该执行器的信息显示区域。
+*   In about three seconds, as shown in figure 2-8, mark 1 for the actuator ID number, mark 2 is the error clear key, mark 3 for the enter operation interface key, and mark 4 for the actuator's information display area.
 
 <img src="../img/new17.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图2-8</strong></div>
 
-4.双击执行器信息框或者点击`Detail`键，进入电流环模式。
+4.Click on message box or click `Detail` to enter the current loop mode.
 
 <img src="../img/new18.png" style="width:600px">
 
@@ -120,44 +125,45 @@ $ ./INNFOS\ Actuator\ Studio
 
 ----
 
-## 电流环模式
+## Current mode
 
-INNFOS执行器系统的逻辑框图：
+Logic block diagram of the INNFOS actuator system:
 
 <img src="../img/current.jpg" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图3-1 INNFOS执行器系统的逻辑框图</strong></div>
 
-框图介绍：电流设置值与电流反馈值做加减运算后经过PI模块后经可选的滤波器再经限幅模块以驱动电机，电机经反馈把电流参数反馈给系统，使之形成闭环。
+Description: after the mixed practice of the current setting value and current feedback value, passing through the PI module, the optional filter and the limiting module to drive the motor, the motor feeds back the current parameter to the system to form a closed loop.
 
 
-### 电流环模式各项功能描述
+### Function Descriptions of Current Loop Mode
 
 *   文字序号与图中序号对应
 
-（1）电流环模式
+（1）Current loop mode
 
-（2）电流环模式简易示意图
+（2）Simple diagram of current loop mode
 
-（3）当前模式下状态激活
+（3）Status activation in current mode
 
-（4）参数设置
+（4）parameter settings
 
-（5）INNFOS执行器状态参数值
+（5）INNFOS SCA status parameter values
 
-（6）错误警告
+（6）Error warning
 
-（7）方波发生器参数值设定
+（7）Square wave generator parameter value setting
 
-（8）INNFOS执行器当前连接状态
+（8）INNFOS actuator current connection status
 
-（9）示波器开关
+（9）Oscilloscope switch
 
 <img src="../img/new21.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图3-2</strong></div>
 
-### 基本参数的描述
+
+### Description of basic parameters
 
 *   文字序号与图中序号对应
 
@@ -177,38 +183,43 @@ INNFOS执行器系统的逻辑框图：
 
 <div class="md-text" style="text-align: center;"><strong>图3-3</strong></div>
 
-### 电流环使用方式
+### Current loop usage
 
-1.点击“Active Current Mode”激活当前电流环模式。
+1.Click on“Active Current Mode”to activate the current current loop mode.
 
 <img src="../img/new23.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图3-4</strong></div>
 
-2.参数设置：应用方式
+2.Parameter setting: application mode
 
 *   在`Phase Current`中输入电流值大小（图中1处），按回车键或`Set Current`键，INNFOS执行器开始输出相应扭矩。若负载不够大，INNFOS执行器会高速运转。
-*   INNFOS执行器开始转动后，在状态值栏可以看到当前INNFOS执行器的各项参数值。(如图中3处)
-*   按`Halt`键可停止INNFOS执行器的转动。（如图中2处）
-*   `Limit`参数栏中可以设置最大电流值。
+
+then the actuator will output the corresponding torque.If the load is not heavy enough, the INNFOS actuator will running in high speed.
+
+
+*   After rotating, you can see the current status in the INNFOS actuator parameter values.(Mark 3)
+*   Press the `Halt` to stop the rotation of the INNFOS actuator.(Mark 2)
+*   The maximum current value can be set in the `Limit` parameter.
+
 
 <img src="../img/new24.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图3-5</strong></div>
 
-3.点击“View Graph”可打开示波器
+3.Click on "View Graph" to open the oscilloscope
 
 <img src="../img/new25.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图3-6</strong></div>
 
-4.示波器各项功能描述
+4.Oscilloscope Function Description
 
-*   右图中`prescalar`可设置波形的预分频系数（图1处），`trig_value`可设置触发数值（图2处），图 3处设置参数的保存、暂停、自动缩放；
-*   `Channel 1` 为INNFOS执行器给定波形的偏置和放大倍数（图4处）；
-*   `Channel 2` 为INNFOS执行器电流波形的偏置和放大倍数（图5处）；
-*   `Channel 3` 为INNFOS执行器速度波形的偏置和放大倍数（图6处）；
-*   `Channel 4` 为INNFOS执行器位置波形的偏置和放大倍数（图7处）。
+*   `prescalar` in the right picture can set the time of the entire waveform (Mark 1),`trig_value` can be set(Mark 2).The setting parameters can be saved, paused and automatically scaled in(Mark 3);
+*    `channel1` is the offset and magnification of the given waveform of the INNFOS actuators (Mark 4);
+*    `channel2` is the offset and amplification of the INNFOS actuator current (Mark 5);
+*    `channel3` is the offset and magnification of the INNFOS actuator speed (Mark 6);
+*    `channel4` is the offset and magnification of the INNFOS actuator position (Mark 7).
 
 <img src="../img/new26.png" style="width:600px">
 
@@ -216,12 +227,12 @@ INNFOS执行器系统的逻辑框图：
 
 Note:不用的通道偏置设置为0，放大设置为1，或者直接点击OFF关闭其显示!
 
-5.方波发生器参数值设定
+5.Square wave generator parameter setting
 
-*   在`Value 1`中输入电流值1（单位：A）（图1处）
-*   在`Value 2`中输入电流值2（单位：A）（图2处）
+*   Enter the current value 1 in `Value 1`(Mark 1)
+*   Enter the current value 2 in `Value 2` (Mark 2)
 *   在`Interval`内输入时间（单位：ms）（图3处）（例：`Value 1`为0.1，`Value 1`为0，`Value 1`为1000，启动后，先给定INNFOS执行器相电流为-0.001A，1000mS后给定相电流为0.5A,再过1000ms再次给定相电流-0.001A，如此反复运行直至用户点击“停止”)。
-*   选择点击`Start`键（右图4处），方波发生器会按设定的时间（`Interval`值），连续生效`Value 1`和`Value 2`到指定的位置，直到关闭此按钮。
+*   Select `Start`(Mark 4), and the square wave generator will press the set time ( `Interval` value), continuously validate Value1 and Value2 to the specified position until the button is closed.
 
 <img src="../img/new28.png" style="width:600px">
 
@@ -233,7 +244,7 @@ Note:不用的通道偏置设置为0，放大设置为1，或者直接点击OFF�
 
 <div class="md-text" style="text-align: center;"><strong>图3-9</strong></div>
 
-7.点击`Stop`键，可停止方波发生器的运行。
+7.Click the `Stop` button to stop the square wave generator.
 
 <img src="../img/new30.png" style="width:600px">
 
