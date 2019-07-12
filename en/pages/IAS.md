@@ -252,79 +252,84 @@ Note:不用的通道偏置设置为0，放大设置为1，或者直接点击OFF�
 
 ----
 
-## 速度环模式
+## Speed mode usage
 
-INNFOS执行器系统的逻辑框图：
+Logic block diagram of the INNFOS actuator system:
 
 <img src="../img/velocity.jpg" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图4-1 INNFOS执行器系统的逻辑框图</strong></div>
 
-框图的介绍： 速度值设置与速度反馈值做加减后经PI模块后经可选的滤波器再经模块输出电流给电流环，在确保电流环模式运行正确的情况下，通过电流环驱动电机，经编码器把速度参数反馈给系统，使之形成闭环。
+Description: After the speed value setting and the speed feedback value are added and subtracted, the PI module is passed through the optional filter and then the module outputs the current to the current loop. When the current loop mode is ensured to operate correctly, the motor is driven by the current loop. The encoder feeds the speed parameter back to the system to form a closed loop.
 
-### 点击“Velocity Mode”进入速度环模式
+### Click on "Velocity Mode" to enter speed mode
 
 <img src="../img/new31.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图4-2</strong></div>
 
-### 速度环模式各项功能描述
+### Description of Speed Loop Mode Functions
 
 *   文字序号与图中序号对应
 
-（1）速度环模式简易示意图
+(1)Simple diagram of speed loop mode
 
-（2）当前模式下状态激活
+(2)Activation in current mode
 
-（3）基本参数设置
+(3)Basic parameter settings
 
-（4）INNFOS执行器状态参数值
+(4)INNFOS SCA parameter values
 
-（5）错误警告
+(5)Error warning
 
-（6）方波发生器参数值设定
+(6)Square-wave generator parameter value setting
 
-（7）INNFOS执行器连接状态
+(7)INNFOS actuator connection status
 
-（8）示波器开关 
+(8)Oscilloscope switch 
 
 
 <img src="../img/new32.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图4-3</strong></div>
 
-### 速度环使用方式
+### Speed mode usage
 
-1.点击“Active Velocity Mode”，激活当前速度环模式。
+1.Click on "Active Velocity Mode" to activate the current Speed Mode.
 
 <img src="../img/new33.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图4-4</strong></div>
 
-2.速度环基本参数设置：
+2.Speed loop basic parameter settings:
 
-*   图1处`Setting`框中输入转速值大小（单位：RPM），按回车键或点击右图4处的`Set Velocity`键，INNFOS执行器开始转动。若转速值为负值则反向转动。
-*   INNFOS执行器开始转动后，右图5处的状态值栏可以看到当前INNFOS执行器的各项参数值。
-*   调节`Proportional`框和`Integral`框可调节PI值，右图2处。
-*   右图3处的`Mininal`框和`Maximum`框为速度环输出限幅（后接电流环的输入），例如：电流最大值为33A（PR60型为33A，NE30型为16.5A，具体参见各型号SCA参数表相电流满量程值。输入值为0.5，那么INNFOS执行器电流增加到33×0.5的时候，电流值将受限，不再增加。
-*   按`Halt`键可停止INNFOS执行器的转动。
+*   Enter the speed value (unit: RPM) in the `Setting` box. Press Enter or click on `Set Velocity` on the right, then INNFOS SCA starts to rotate.
+*   After rotating, the status value column, as shown in the figure, can be seen as the parameter values of different INNFOS SCA.
+*   After rotating, the status value column, as shown in the figure, can be seen as the parameter values of different INNFOS SCA.
+*   Adjust the `Proportional` box and the `Integral` box to adjust the PI value(Mark 2).
+*   The Mininal box and Maximum box shows the output limit for speed loop (followed by Current loop input),
+for example, current up to 33A（Model 6010 is 33A and Model 3510 is 16.5A. See Appendix D of the CAN Bus Communication Protocol for details.）, input value is 0.5；When the INNFOS actuator current is increased to 33*0.5, the current value will be limited without increasing.
+*   Press the `Halt` button to stop the rotation of the INNFOS actuator.
 
 <img src="../img/new34.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图4-5</strong></div>
 
-3.点击`View Graph`可打开示波器,参数界面介绍同上。
+3.Click on `View Graph` to open the oscilloscope
 
 <img src="../img/new35.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图4-6</strong></div>
 
-4.方波发生器参数值设定
+4.Introduction to Speed Loop Oscilloscope
 
-*   在`Value 1`中输入转速1。(单位:RPM)
-*   在`Value 2`中输入转速2。(单位:RPM)
 *   在`Interval`内输入单位时间（单位：ms），可设置INNFOS执行器方波发生器的参数。（例：`Value 1`为-0.001，`Value 1`为300，`Value 1`为1000，启动后，INNFOS执行器先到速度-0.001 RPM，1000mS后速度为 300 RPM，在过1000ms再次到速度-0.001 RMP，如此反复运行直至用户点击“停止”)。
-*   选择点击`Start`键，INNFOS执行器将开始转动。
+
+*   Enter the number of revolutions in `Value1`. (Unit: RPM)
+*   Enter the reverse number in `Value2`. (Unit: RPM)
+*   Enter the unit time (in ms) in `Interval` to set the parameters of the INNFOS actuator square wave generator.
+*   Select `Start` to turn the INNFOS actuator on.
+
 
 <img src="../img/new36.png" style="width:600px">
 
@@ -338,69 +343,70 @@ INNFOS执行器系统的逻辑框图：
 
 Note:不用的通道偏置设置为0，放大设置为1（右图中channel2和channel4），或者直接点击OFF关闭其显示
 
-6.点击`Stop`键，可停止方波发生器的运行。
+6.Click `Stop` to stop the square-wave generator.
 
 <img src="../img/new38.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图4-9</strong></div>
 
-
 ----
 
-## 位置环模式
+## Position Mode
 
-INNFOS执行器系统的逻辑框图：
+Logic block diagram of the INNFOS actuator system：
 
 <img src="../img/position.jpg" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图5-1 INNFOS执行器系统的逻辑框图</strong></div>
 
-框图的介绍： 在确保电流环和速度环准确的情况下，位置设置值与位置反馈值做加减运算后经过PI模块后经可选的滤波器再经限幅模块输出速度值，然后速度值经速度环再经电流环驱动电机，电机经编码器把位置参数反馈给系统，使之形成闭环。
+Introduction of the block diagram:
 
-### 点击“位置环”进入位置环模式
+In the case of ensuring the accuracy of the current loop and the speed loop, the set position value and the feedback value, through addition and subtraction, passed through the PI module and then output the speed value through the optional filter. After that, the speed loop drives the motor through the current loop, and the motor feeds back the position parameters to the system via the encoder. All this form a closed loop.
+
+### Click “Position Mode” to enter the position mode
 
 <img src="../img/new41.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图5-2</strong></div>
 
-### 位置环模式各项功能描述
+### Description of Position Mode Function
 
 *   文字序号与图中序号对应
 
-（1）位置环模式示意图
+(1) Position loop mode diagram
 
-（2）当前模式下状态激活
+(2) Status activation in current mode
 
-（3）基本参数设置
+(3) Basic parameter settings
 
-（4）INNFOS执行器状态参数值
+(4) INNFOS actuator status parameter values
 
-（5）错误警告
+(5) Error warning
 
-（6）方波发生器参数值设定
+(6) Square wave generator parameter value setting
 
-（7）INNFOS执行器连接状态
+(7) INNFOS actuator connection status
 
-（8）示波器开关 
-
+(8) Oscilloscope switch
 <img src="../img/new42.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图5-3</strong></div>
 
-### 位置环使用方式
+### Position Mode Usage
 
-1.点击`Active Position Mode`，激活当前位置环模式。 
+1.Click on “Active Position Mode” to activate the current position mode. 
 
 <img src="../img/new43.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图5-4</strong></div>
 
-2.位置环基本参数设置：
+2.Position Mode basic parameter settings:
 
-*   右图1处`Setting`框中输入位置值大小（单位：R），在图4处按`Set Position`键，INNFOS执行器开始转动，INNFOS执行器转到输入位置后，停止。
-*   INNFOS执行器开始转动后，右图5处状态值栏可以看到当前INNFOS执行器的各项参数值。
-*   调节`Proportional`框可调节比例值，如右图2处。
-*   右图的3处的`Mininal`框和`Maximum`框为位置环输出给速度环的速度限制。执行器速度最大为6000RPM，例如输入值为0.5，那么INNFOS执行器最大速度增加到6000×0.5=3000R/分钟的时候，速度值将受限，不再增加。
+*    Enter the position value (unit: R) in the `Setting` box（Mark.1）, Press `Set Position` (Mark.4)and then the INNFOS actuator starts to rotate.INNFOS actuator will stop rotate after arrives the assigned input position
+*    After rotating, the status value column (Mark. 5) can see the current parameter values.
+*    Adjust the Proportional box to change the scale value (Mark. 2).
+*    The Mininal box and Maximum box (Mark. 3)are the speed limit of the speed loop for the position loop, for example, speed is up to 6000RPM, input value is 0.5, then the maximum speed of the INNFOS actuator rise to 6000*0.5=3000R/min, the speed value will be limited and will not increase.
+
 
 <img src="../img/new44.png" style="width:600px">
 
@@ -412,18 +418,21 @@ INNFOS执行器系统的逻辑框图：
 
 <div class="md-text" style="text-align: center;"><strong>图5-6</strong></div>
 
-4.方波发生器参数值设定
+4.Setting of Square-wave Gnerator Prameter Value
 
-*   在`Value 1`中输入位置值1(单位:R)
-*   在`Value 2`”中输入位置值2(单位:R)
-*   在`Interval`内输入时间（单位：ms），输入参数为转动一次的时间。（例：`Value 1`为0.1，`Value 1`为0，`Value 1`为1000，启动后，INNFOS执行器先转到位置0.1，1000mS后转到位置0，在过1000ms再次转到位置2，如此反复运行直至用户点击“停止”)。
-*   点击`Start`键，开启INNFOS执行器转动。
+*   在`Interval`内输入时间（单位：ms），输入参数为转动一次的时间。（例：`Value 1`为0.1，`Value 2`为0，`Interval`为1000，启动后，INNFOS执行器先转到位置0.1，1000mS后转到位置0，在过1000ms再次转到位置2，如此反复运行直至用户点击“停止”)。
+
+*    Enter the number of revolutions in `Value1`. (Unit: RPM)
+*    Enter the reverse number in `Value2`. (Unit: RPM)
+*    Enter the unit time (in ms) in `Interval` to set the parameters of the INNFOS actuator square wave generator.
+*    Select `Start` to turn the INNFOS actuator on.
+
 
 <img src="../img/new48.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图5-7</strong></div>
 
-5.点击`Stop`键，可停止方波发生器的运行。
+5.Click `Stop` to stop the square-wave generator.
 
 <img src="../img/new46.png" style="width:600px">
 
