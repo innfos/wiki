@@ -140,7 +140,7 @@ Description: after the mixed practice of the current setting value and current f
 
 *   文字序号与图中序号对应
 
-（1）Current loop mode
+（1）Current Mode schematic diagram
 
 （2）Simple diagram of current loop mode
 
@@ -272,7 +272,7 @@ Description: After the speed value setting and the speed feedback value are adde
 
 *   文字序号与图中序号对应
 
-(1)Simple diagram of speed loop mode
+(1)Speed Mode schematic diagram
 
 (2)Activation in current mode
 
@@ -373,7 +373,7 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 *   文字序号与图中序号对应
 
-(1) Position loop mode diagram
+(1) Position Mode schematic diagram
 
 (2) Status activation in current mode
 
@@ -451,56 +451,58 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 ----
 
-## 位置环S曲线模式Position loop S-curve mode
+##  Profile Position Mode
 
-### 点击“梯形位置模式”进入位置环S曲线模式
+### Click on "Profile Position Mode" to enter Profile Position Mode⚓
 
 <img src="../img/new51.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图6-1</strong></div>
 
-### 位置环S曲线模式各项功能描述
+### Profile Position Mode functional descriptions
 
-*   文字序号与图中序号对应
+*   文字序号与图中序号对应 
 
-（1）位置环S曲线模式简易示意图
+ (1) Profile Position Mode schematic diagram
 
-（2）当前模式下状态激活
+ (2) Status activation in current mode
 
-（3）基本参数设置
+ (3) Basic parameter setting
 
-（4）INNFOS执行器状态参数值
+ (4) INNFOS actuator status parameter value
 
-（5）错误警告
+ (5) Error warning
 
-（6）INNFOS执行器当前连接状态 
+ (6) INNFOS actuator current connection status
 
 <img src="../img/new52.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图6-2</strong></div>
 
-### 位置环S曲线模式使用方式
+### Profile Position Mode usage
 
-1.点击“Active Profile Position Mode” 激活当前位置环S曲线模式 
+1.Click on “Active Profile Velocity Mode” to activate Profile Position Mode
 
 <img src="../img/new53.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图6-3</strong></div>
 
-2.位置环S曲线模式基本参数设置：
+2.Basic parameters of position loop S-curve mode:
 
-*   右图2处的`Accelerate`框和`Decelerate`框为S曲线模式下的速度上升和下降的平缓度，例如：加速度值越大，INNFOS执行器达到最大速度的时间越短，加速度值越小，INNFOS执行器达到最大转速的时间越长。减速度值越大，INNFOS执行器从最大速度降低到零的时间越短，减速度值越小，INNFOS执行器从最大速度降低到零的时间越长。
-*   `Max`限制了INNFOS执行器的最大转速，随数值增加而增加，如右图的3处，当前最大转速为1000RPM。
+*   Accelerate box and Decelerate box, at the right picture 2, are the rise and fall of speed in the S curve mode. For example, the larger the Accelerate value is, the shorter time the INNFOS actuator reaches the maximum speed needs; and the smaller the Accelerate value is , the longer time that INNFOS actuator reaches the maximum speed is needed. The larger the Decelerate value, the shorter the time that the INNFOS actuator will decrease from maximum speed to zero. The smaller the Decelerate value, the longer the INNFOS actuator will decrease from maximum speed to zero.
+
+*   `Max` limits the maximum speed of the INNFOS actuator and increases as the value increases. As shown in the three figures on the right, the current maximum speed is 1000 RPM.
 
 <img src="../img/new54.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图6-4</strong></div>
 
 
-2.位置环S曲线模式基本参数设置：
+2.Basic parameters of position loop S-curve mode:
 
-*   在`Target`框中输入转动的位置（单位：R），INNFOS执行器开始转动到指定位置。
-*   INNFOS执行器开始转动后，在状态值栏可以看到当前INNFOS执行器的各项参数值，右图4处。
+*    Enter the position of the rotation in the "Target" box (unit: R) and the INNFOS actuator will start to rotate to the specified position.
+
+*   After the INNFOS actuator rotating, the values of the current INNFOS actuator can be seen in the status value column(right in Figure 4).
 
 <img src="../img/new55.png" style="width:600px">
 
@@ -515,12 +517,14 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 <div class="md-text" style="text-align: center;"><strong>图6-6</strong></div>
 
 
-4.方波发生器参数值设定：
+4.Setting of Square wave-generator parameter values
 
-*   在`Value 1`中输入位置值1(单位:R)
-*   在`Value 2`”中输入位置值2(单位:R)
-*   在`Interval`内输入时间（单位：ms），输入参数为转动一次的时间。（例：`Value 1`为2，`Value 1`为-2，`Value 1`为1000，启动后，INNFOS执行器先转到位置2，1000mS后转到位置-2，在过1000ms再次转到位置2，如此反复运行直至用户点击“停止”)。
-*   点击`Start`键，开启INNFOS执行器转动。
+*    Enter the positional value 1 in `Value1` (unit: R)
+*    Enter positional value 2 in `Value2` (unit: R)
+*    Enter the time (unit: ms) in “Interval”, the input parameter is of the rotating for one time (for example, Value1 is 2, Value2 is -2, and Interval is 1000. After startup, INNFOS Actuator first goes to position 2, 1000mS and then goes to position-2.Go to position 2 again after 1000ms, and then run it repeatedly until the user clicks "Stop").
+*    Click the "Start" button to turn on the INNFOS actuator.
+
+
 
 <img src="../img/new57.png" style="width:600px">
 
@@ -533,7 +537,7 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 <div class="md-text" style="text-align: center;"><strong>图6-8</strong></div>
 
 
-5.点击`Stop`键，可停止方波发生器的运行。
+5.Click the “Stop” to stop the square wave generator.
 
 <img src="../img/new59.png" style="width:600px">
 
@@ -557,45 +561,48 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 ----
 
-## 速度环S曲线模式
+## Profile Velocity Mode
 
-### 点击“Profile Velocity Mode”进入速度环S曲线模式
+### Click on "Profile Velocity Mode" to enter the Profile Velocity Mode
 
 <img src="../img/new61.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图7-1</strong></div>
 
+### Profile Velocity mode functional descriptions
+
 *   文字序号与图中序号对应
 
-（1）速度环S曲线模式简易示意图
+(1) Profile Velocity Mode schematic diagram
 
-（2）当前模式下状态激活
+(2) Status activation in current mode
 
-（3）基本参数设置
+(3) Basic parameter setting
 
-（4）INNFOS执行器状态参数值
+(4) INNFOS actuator status parameter value
 
-（5）错误警告
+(5) Error warning
 
-（6）INNFOS执行器当前连接状态 
+(6) INNFOS actuator current connection status
+
 
 <img src="../img/new62.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图7-2</strong></div>
 
-### 速度环S曲线模式使用方式
+###  Profile Velocity Mode Usage
 
-1.点击“Active Profile Velocity Mode”，激活当前速度环S曲线模式。 
+1. Click on `Active Profile Velocity Mode` to activate the Velocity loop S-mode 
 
 <img src="../img/new63.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图7-3</strong></div>
 
-2.速度环S曲线模式基本参数设置：
+2.Basic parameters of Profile Velocity Mode:
 
-*   在`Target`框中输入INNFOS执行器的速度值（单位：RPM），INNFOS执行器开始转动，直至达到输入值。
-*   INNFOS执行器开始转动后，在状态值栏可以看到当前INNFOS执行器的各项参数值，右图3处。
-*   右图中2处的加速度、减速度和最大速度项为S曲线的调整参数。
+*    Enter the speed value of the INNFOS actuator (unit: RPM) in the `Target` box and the INNFOS actuator will start to rotate until the input value is reached.
+*    After the INNFOS actuator rotating, the values of the current INNFOS actuator can be seen in the status value column, (right in Figure 3).
+*    The `Accelerate`, `Decelerate` and `Max` items at 2 in the right figure are the rectified parameters of the S curve.
 
 
 <img src="../img/new64.png" style="width:600px">
@@ -604,37 +611,38 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 ----
 
-## 归零模式
+## Homing mode
 
-### 点击“归零模式”进入归位模式
+### Click on "Homing Mode" to enter the homing mode
 
 <img src="../img/new78.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图8-1</strong></div>
 
-### 归位模式使用方式
+### Homing Mode usage 
 
-#### 手动校准左右极限
+#### Manual calibration of left and right limits
 
-1.点击右图红框位置“激活归零模式”;进入归位模式。
+1.Click on the red box position "Active Homing Mode" on the right to enter the homing mode.
 
 <img src="../img/new71.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图8-2</strong></div>
 
-2.先后点击“清除”;和“归零”按键，重复两次可清除当前左右极限，并使当前位置变为零位。直到右图红框1处数据变为如图大数值（这是软件限位的上下限）。然后将右图2处调为如下大数值（这是限流，比如加大负载时需要较大电流，需要放开电流限制）。
+2. Click the `Clear` and `Homing` buttons one after the other, and to clear the current left and right limits using this operation twice. Until the data in the red box 1 on the right is changed to the large value (this is the upper and lower limits of the software limit). Then adjust the right picture 2 to the following large value (this is the current limit, such as the need for a larger current when the load is increased, and the current limit needs to be released).
 
 <img src="../img/new79.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图8-3</strong></div>
 
-3.手动将关节或执行器调节到左机械极限，点击“最大位置”，此时“最小位置”;栏处的数值会改变，左机械极限设定完毕。（此处也可以手动输入极限数值，单位：R）
+3.Manually adjust the joint to the left mechanical limit and click on `Max_Set`, at which point the value at the `Max Pos` will change.
+
 
 <img src="../img/new74.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图8-4</strong></div>
 
-4.手动将关节或执行器调节到右机械极限，点击“最小位置”;，此时“最小位置”栏处的数值会改变，右机械极限设定完毕。（此处也可以手动输入极限数值，单位：R）
+4.Manually adjust the joint to the right mechanical limit and click on `Min_Set`. The value of the `Min Pos` column will change.
 
 <img src="../img/new75.png" style="width:600px">
 
@@ -642,19 +650,19 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 注意：位置模式使用时，应注意当前限位范围，如果当前位置在限位范围外，发位置指令时，位置则会回到限位范围内。
 
-5.若只设定零点，则手动将关节或执行器调节至想要的零点，点击2处的“归零”按键，1处的当前位置值会变为0。
+5.When only set the zero point,manually adjust the joint to zero point, click `homing`, and then 1 will become 0.
 
 <img src="../img/new80.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图8-6</strong></div>
 
-6.设置左右极限偏置
+6.Set the left and right limit offset
 
 <img src="../img/new76.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图8-7</strong></div>
 
-7.点击“保存”按钮即可保存当前参数 
+7.Click the "Download" button to save the current parameters. 
 
 <img src="../img/new77.png" style="width:600px">
 
@@ -708,19 +716,21 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 
 ----
-## 错误提示
+## Error warning
 
-### 当有错误出现时，错误框内会提示错误内容
+### When an error occurs, the error message will be displayed in the box.
 
-如图，弹出错误提示信息。
+As shown in the figure, an error message is displayed.
 
 <img src="../img/new91.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图9-3</strong></div>
 
-### 错误处理方式
+Note: If you use the latest version of the host computer software, the alarm will be detailed.
 
-点击“OK”，再点击“Clear Errors”可清除错误，清除错误后，INNFOS执行器进入电流环模式。
+### Error handling
+
+Click "OK" and "Clear Errors" to solve the problem. After clearing, the INNFOS actuator enters current loop mode.
 
 <img src="../img/new92.png" style="width:600px">
 
