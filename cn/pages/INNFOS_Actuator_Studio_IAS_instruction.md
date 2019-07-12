@@ -709,4 +709,4 @@ INNFOS执行器系统的逻辑框图：
 ----
 
 ## 版本信息
-<table class="tableizer-table"><thead><tr class="tableizer-firstrow" style=background:PaleTurquoise><th>版本</th><th>更新时间</th><th>更新内容</th></tr></thead><tbody><tr><td><a href="http://innfos.com/wiki/cn/index.html#!pages/.md">V1.1.0</td><td>2019-07</td><td>第二版</td></tr><tr><td>V1.0.0</td><td>2019-04</td><td>第一个版本</td></tr></tbody></table>
+<table class="tableizer-table"><thead><tr class="tableizer-firstrow" style=background:PaleTurquoise><th>版本</th><th>更新时间</th><th>更新内容</th></tr></thead><tbody><tr><td><a href="http://innfos.com/wiki/cn/index.html#!pages/INNFOS_Actuator_Studio_IAS_instruction_V_1_0_0.md">V1.1.0</td><td>2019-07</td><td>第二版</td></tr><tr><td>V1.0.0</td><td>2019-04</td><td>第一个版本</td></tr></tbody></table>
