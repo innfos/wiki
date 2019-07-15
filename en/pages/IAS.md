@@ -339,7 +339,7 @@ for example, current up to 33A（Model 6010 is 33A and Model 3510 is 16.5A. See 
 
 <div class="md-text" style="text-align: center;"><strong>Fig 4-7</strong></div>
 
-5.设置`View Graph`视图里的参数，可以更好的查看当前INNFOS执行器各项参数波形。
+5.Set the parameters in the`View Graph`to have a better view of the parameter waveforms of the current INNFOS SCA.
 
 Note:The free channel offset is set to 0,  zoomed to 1, or directly click OFF to turn off!
 
@@ -439,11 +439,13 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 <div class="md-text" style="text-align: center;"><strong>Fig 5-8</strong></div>
 
-6.位置模式步加步减设置：
 
-*   在框X中输入转动的位置（单位：R），也可点击键盘方向键进行设置。点击键盘默认为增加0.1。
-*   在框X中输入数值，按`step add`和`step minus`按钮，执行器可转动相应位置，点击一次可使执行器正向或反向转动一次。
-*   INNFOS执行器开始转动后，在状态值栏可以看到当前INNFOS执行器的各项参数值。
+6. Position mode step add & step minus setting:
+
+*    Enter the position of rotation (unit: R) in box X, or click the keyboard direction button to set. Clicking on the keyboard defaults to have an increase of 0.1.
+*    Enter the value in box X, press `step add` and `step minus` to let SCA rotate the corresponding position. One click makes SCA rotate forward or reverse once.
+*    After rotating,  the parameters of the current INNFOS SCA  can be seen in the status value bar .
+
 
 <img src="../img/new47.png" style="width:600px">
 
