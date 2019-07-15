@@ -74,27 +74,25 @@ Note: The unit must be powered off and then plugged in. Otherwise the accessorie
 **Usage** 
 
 
-<img src="../img/2-2.png" style="width:600px"> 
+<img src="../img/new11.png" style="width:600px"> 
 
 After successful installation, start IAS, click the "OK" button to enable the "Next" button, and then click "Next" until the following interface appears:
 
-<img src="../img/2-6.png" style="width:600px"> 
+<img src="../img/new15.png" style="width:600px"> 
 
 Click the "1" or "2" button to start the actuator, and the button "1" is green meaning successful starting up. Click on the message box or click on the "Details" button (located under button "1") to enter the actuator debug interface.
 
 
-<img src="../img/2-9.png" style="width:600px"> 
+<img src="../img/new18.png" style="width:600px"> 
 
 
  **Position control**
 
 *   Click the `Profile Position Mode`button on the left sidebar and then click`Activate Profile Position Mode`.Then enter the position value in "Settings" in units of R (range -127R~127R).
 
-<img src="../img/Fig6-1.png" style="width:600px"> 
+<img src="../img/new51.png" style="width:600px"> 
 
-<img src="../img/Fig6-3.png" style="width:600px"> 
-
-
+<img src="../img/new52.png" style="width:600px"> 
 
 For more information on IAS, please visit the[INNFOS Actuator Studio(IAS)instructions](#!pages/INNFOS_Actuator_Studio_IAS_instruction.md).
 
