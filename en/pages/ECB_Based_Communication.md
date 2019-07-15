@@ -78,8 +78,6 @@ Note: The unit must be powered off and then plugged in. Otherwise the accessorie
 
 After successful installation, start IAS, click the "OK" button to enable the "Next" button, and then click "Next" until the following interface appears:
 
-
-
 <img src="../img/2-6.png" style="width:600px"> 
 
 Click the "1" or "2" button to start the actuator, and the button "1" is green meaning successful starting up. Click on the message box or click on the "Details" button (located under button "1") to enter the actuator debug interface.
