@@ -76,25 +76,25 @@ Note: 必须先断电然后再插拔部件.  否则可能损坏部件.
 **使用** 
 
 
-<img src="../img/2-2.png" style="width:600px"> 
+<img src="../img/new22.png" style="width:600px"> 
 
 安装成功后，启动`IAS`,单击“确认”按钮启用“下一步”按钮，然后单击“下一步”直到出现如下界面: 
 
 
-<img src="../img/2-6.png" style="width:600px"> 
+<img src="../img/new26.png" style="width:600px"> 
 
 单击“1”或“2”按钮启动执行器，按钮“1”变为绿色表示您已成功启动执行器。单击消息框或单击“详细信息”按钮（位于按钮“1”下方） 进入执行器调试界面。 
 
-<img src="../img/2-9.png" style="width:600px"> 
+<img src="../img/new29.png" style="width:600px"> 
 
 
  **位置控制**
 
 *   单击左侧栏上的`Profile Position Mode`按钮，然后单击右侧的`Activate Profile Position Mode`。之后，您可以在“设置”中输入位置值，单位是R(范围是-127R~127R)。
 
-<img src="../img/Fig6-1.png" style="width:600px"> 
+<img src="../img/new61.png" style="width:600px"> 
 
-<img src="../img/Fig6-3.png" style="width:600px"> 
+<img src="../img/new63.png" style="width:600px"> 
 
 
 ### 其他
