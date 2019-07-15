@@ -41,7 +41,7 @@ Note: The unit must be powered off and then plugged in. Otherwise the accessorie
 
 **Connect to a computer**
 
-*   Connect`ECB` to computer with net cable
+*   Connect`ECB` to computer with Ethernet cable
 
 <img src="../img/pc-c.jpg" style="width:600px">
 
