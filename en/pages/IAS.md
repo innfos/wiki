@@ -326,7 +326,8 @@ for example, current up to 33A（Model 6010 is 33A and Model 3510 is 16.5A. See 
 
 4.Introduction to Speed Loop Oscilloscope
 
-*   在`Interval`内输入单位时间（单位：ms），可设置INNFOS执行器方波发生器的参数。（例：`Value 1`为-0.001，`Value 1`为300，`Value 1`为1000，启动后，INNFOS执行器先到速度-0.001 RPM，1000mS后速度为 300 RPM，在过1000ms再次到速度-0.001 RMP，如此反复运行直至用户点击“停止”)。
+*   Enter the time (in ms) in `Interval` (Figure 3) to set the parameters of square wave generator. (e.g.: `Value 1` is 0.1, `Value 2` is 0, `Interval` is 1000. After startup, the  speed of INNFOS SCA is -0.001RPM. After a period of 1000ms, its speed is 300 RPM, and the speed will go back to -0.001A after another 1000ms . Iteratively run this operation until the user clicks "stop").
+
 
 *   Enter the number of revolutions in `Value1`. (Unit: RPM)
 *   Enter the reverse number in `Value2`. (Unit: RPM)
@@ -339,10 +340,6 @@ for example, current up to 33A（Model 6010 is 33A and Model 3510 is 16.5A. See 
 <div class="md-text" style="text-align: center;"><strong>Fig 4-7</strong></div>
 
 5.设置`View Graph`视图里的参数，可以更好的查看当前INNFOS执行器各项参数波形。
-
-<img src="../img/new37.png" style="width:600px">
-
-<div class="md-text" style="text-align: center;"><strong>Fig 4-8</strong></div>
 
 Note:The free channel offset is set to 0,  zoomed to 1, or directly click OFF to turn off!
 
@@ -423,7 +420,8 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 4.Setting of Square-wave Gnerator Prameter Value
 
-*   在`Interval`内输入时间（单位：ms），输入参数为转动一次的时间。（例：`Value 1`为0.1，`Value 2`为0，`Interval`为1000，启动后，INNFOS执行器先转到位置0.1，1000mS后转到位置0，在过1000ms再次转到位置2，如此反复运行直至用户点击“停止”)。
+*   Enter the time (ms) in `Interval` (Figure 3) to enter parameter which is the time of one round. (e.g.: `Value 1` is 0.1, `Value 2` is 0, `Interval` is 1000. After startup, the position of INNFOS SCA is 0.1. After a period of 1000ms, its position is 0, and the position is 2 after another 1000ms . Iteratively run this operation until the user clicks "stop").
+
 
 *    Enter the number of revolutions in `Value1`. (Unit: RPM)
 *    Enter the reverse number in `Value2`. (Unit: RPM)
