@@ -8,7 +8,7 @@ Ethernet communication
 
 <img src="../img/all.jpg" style="width:600px">
 
-From front to back, from left to right: `ECB`, `HUB`, 2 `terminal resistors`, `regenerated brake capacitor`, `ECB cable`, `INNFOS SCA`, `SCA cable`, `emergency stop switch` + `power supply`.
+From front to back, from left to right: `ECB`, `HUB`, 2 `terminal resistors`, `regenerative brake capacitor`, `ECB cable`, `INNFOS SCA`, `SCA cable`, `emergency stop switch` + `power supply`.
 
 **Connect the power supply**
 
@@ -24,7 +24,7 @@ Note: The unit must be powered off and then plugged in. Otherwise the accessorie
 
 ![ECB-C1.jpg](../img/ECB-C1.jpg "fig:ECB-C1.jpg") ![ECB-C2.jpg](../img/ECB-C2.jpg "fig:ECB-C2.jpg")
 
-*   `HUB` inserts feedback brake capacitor and terminating resistor
+*   `HUB` inserts regenerative brake capacitor and terminating resistor
 
 ![ECB-C3.jpg](../img/ECB-C3.jpg "fig:ECB-C3.jpg") ![ECB-C4.jpg](../img/ECB-C4.jpg)
 
