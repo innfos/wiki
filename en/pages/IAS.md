@@ -715,7 +715,7 @@ As shown in the figure, an error message is displayed.
 
 <img src="../img/new91.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>Fig 9-3</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 10-3</strong></div>
 
 Note: If you use the latest version of the host computer software, the alarm will be detailed.
 
@@ -725,7 +725,7 @@ Click "OK" and "Clear Errors" to solve the problem. After clearing, the INNFOS a
 
 <img src="../img/new92.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>Fig 9-3</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 10-3</strong></div>
 
 ----
 
