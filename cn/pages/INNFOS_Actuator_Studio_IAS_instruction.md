@@ -689,7 +689,7 @@ INNFOS执行器系统的逻辑框图：
 
 <img src="../img/new91.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图9-3</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图10-1</strong></div>
 
 ### 错误处理方式
 
@@ -697,7 +697,7 @@ INNFOS执行器系统的逻辑框图：
 
 <img src="../img/new92.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图9-3</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图10-2</strong></div>
 
 ----
 
