@@ -28,37 +28,37 @@ $ ./INNFOS\ Actuator\ Studio
 
 <img src="../img/new000.png" style="width:100px">
 
-<div class="md-text" style="text-align: center;"><strong>图1-1</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 1-1</strong></div>
 
 2.After entering the installation interface, click`Next`
 
 <img src="../img/new01.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图1-2</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 1-2</strong></div>
 
 3.Click `I Agree`
 
 <img src="../img/new02.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图1-3</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 1-3</strong></div>
 
 4.Select the installation location and click`Install`
 
 <img src="../img/new03.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图1-4</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 1-4</strong></div>
 
 5.Wait for the completion of the installation;
 
 <img src="../img/new04.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图1-5</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 1-5</strong></div>
 
 6.Click`Finish`to complete the software installation.
 
 <img src="../img/new05.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图1-6</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 1-6</strong></div>
 
 ----
 
@@ -68,7 +68,7 @@ $ ./INNFOS\ Actuator\ Studio
 
 <img src="../img/new001.png" style="width:100px">
 
-<div class="md-text" style="text-align: center;"><strong>图2-1</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 2-1</strong></div>
 
 2.Click`confirm that you've read the document`, then click `next` to enter the next interface. 
 
@@ -76,13 +76,13 @@ Note:Please click“show the document!” to read the software instructions when
 
 <img src="../img/new11.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图2-2</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 2-2</strong></div>
 
 3.Select the actuator communication mode (The default setting is Ethernet communication), then click `next`
 
 <img src="../img/new12.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图2-3</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 2-3</strong></div>
 
 Note: Please confirm that the static IP is correctly configured before start using Ethernet communication.
 
@@ -91,37 +91,37 @@ Note: Please confirm that the static IP is correctly configured before start usi
 
 <img src="../img/new14.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图2-4</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 2-4</strong></div>
 
 *    When the external actuator is not connected or connected abnormally, an error message will appear.
 
 <img src="../img/new13.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图2-5</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 2-5</strong></div>
 
 *    When the external system is connected correctly, it enters running interface of the actuator. The red area is OFF. As shown in figure 2-6, OFF at mark 1 is a single actuator switch, ON at mark 2 is a main switch, when the actuators are connected at the same time, click on mark 2 to control all actuators.
 
 <img src="../img/new15.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图2-6</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 2-6</strong></div>
 
 *   After clicking `OFF`, the messages in the red area showed in figure 2-7 will pop up.
 
 <img src="../img/new16.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图2-7</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 2-7</strong></div>
 
 *   In about three seconds, as shown in figure 2-8, mark 1 for the actuator ID number, mark 2 is the error clear key, mark 3 for the enter operation interface key, and mark 4 for the actuator's information display area.
 
 <img src="../img/new17.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图2-8</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 2-8</strong></div>
 
 4.Click on message box or click `Detail` to enter the current loop mode.
 
 <img src="../img/new18.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图2-9</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 2-9</strong></div>
 
 ----
 
@@ -131,14 +131,14 @@ Logic block diagram of the INNFOS actuator system:
 
 <img src="../img/current.jpg" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图3-1 INNFOS执行器系统的逻辑框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 3-1 Logic block diagram of the INNFOS SCA system</strong></div>
 
 Description: after the mixed practice of the current setting value and current feedback value, passing through the PI module, the optional filter and the limiting module to drive the motor, the motor feeds back the current parameter to the system to form a closed loop.
 
 
 ### Function Descriptions of Current Loop Mode
 
-*   文字序号与图中序号对应
+*   The number in the text corresponds to that in the figure
 
 （1）Current Mode schematic diagram
 
@@ -160,24 +160,24 @@ Description: after the mixed practice of the current setting value and current f
 
 <img src="../img/new21.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图3-2</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 3-2</strong></div>
 
 
 ### Description of basic parameters
 
-*   文字序号与图中序号对应
+*   The number in the text corresponds to that in the figure
 
-（1）相电流
+（1）Phase current
 
-（2）比例设置（预设）
+（2）Proportional setting (default)
 
-（3）积分设置（预设）
+（3）integral setting (default)
 
-（4）最大电流（预设）
+（4）Maximum current (default)
 
-（5）最小电流（预设）
+（5）Minimum current (default)
 
-<span style="color: red">[注:电流环模式中，比例设置、积分设置根据执行器型号已进行预设，无需更改；最小电流设置固定值-0.82，最大电流设置固定值0.82，并已进行预设，无需更改。]</span> 
+<span style="color: red">[In current loop mode, the proportional setting and integral setting have been preset according to the actuator model, there is no need to change; the minimum current setting is -0.82, the maximum current setting is 0.82, and the preset has been made without modification.]</span> 
 
 Enter the current value in Phase Current (1 in the figure), click Enter or Set Current, and INNFOS SCA starts to output the corresponding torque. If the load is not large enough, the INNFOS  SCA will run at high speed.
 
@@ -185,7 +185,7 @@ Enter the current value in Phase Current (1 in the figure), click Enter or Set C
 
 <img src="../img/new22.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图3-3</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 3-3</strong></div>
 
 ### Current loop usage
 
@@ -193,7 +193,7 @@ Enter the current value in Phase Current (1 in the figure), click Enter or Set C
 
 <img src="../img/new23.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图3-4</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 3-4</strong></div>
 
 2.Parameter setting: application mode
 
@@ -205,13 +205,13 @@ Enter the current value in Phase Current (1 in the figure), click Enter or Set C
 
 <img src="../img/new24.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图3-5</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 3-5</strong></div>
 
 3.Click on "View Graph" to open the oscilloscope
 
 <img src="../img/new25.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图3-6</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 3-6</strong></div>
 
 4.Oscilloscope Function Description
 
@@ -223,7 +223,7 @@ Enter the current value in Phase Current (1 in the figure), click Enter or Set C
 
 <img src="../img/new26.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图3-7</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 3-7</strong></div>
 
 Note:The free channel offset is set to 0,  zoomed to 1, or directly click OFF to turn off!
 
@@ -236,19 +236,19 @@ Note:The free channel offset is set to 0,  zoomed to 1, or directly click OFF to
 
 <img src="../img/new28.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图3-8</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 3-8</strong></div>
 
 6.点击`View Graph`按钮打开示波器窗口，可以查看给定（ `Channel 1` 此时为方波发生器）、电流（ `Channel 2` ）、速度（ `Channel 3` ）、位置（ `Channel 4` ）四通道参数波形，如图 
 
 <img src="../img/new29.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图3-9</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 3-9</strong></div>
 
 7.Click the `Stop` button to stop the square wave generator.
 
 <img src="../img/new30.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图3-10</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 3-10</strong></div>
 
 ----
 
@@ -258,7 +258,7 @@ Logic block diagram of the INNFOS actuator system:
 
 <img src="../img/velocity.jpg" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图4-1 INNFOS执行器系统的逻辑框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 4-1 Logic block diagram of the INNFOS SCA system</strong></div>
 
 Description: After the speed value setting and the speed feedback value are added and subtracted, the PI module is passed through the optional filter and then the module outputs the current to the current loop. When the current loop mode is ensured to operate correctly, the motor is driven by the current loop. The encoder feeds the speed parameter back to the system to form a closed loop.
 
@@ -266,7 +266,7 @@ Description: After the speed value setting and the speed feedback value are adde
 
 <img src="../img/new31.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图4-2</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 4-2</strong></div>
 
 ### Description of Speed Loop Mode Functions
 
@@ -291,7 +291,7 @@ Description: After the speed value setting and the speed feedback value are adde
 
 <img src="../img/new32.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图4-3</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 4-3</strong></div>
 
 ### Speed mode usage
 
@@ -299,7 +299,7 @@ Description: After the speed value setting and the speed feedback value are adde
 
 <img src="../img/new33.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图4-4</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 4-4</strong></div>
 
 2.Speed loop basic parameter settings:
 
@@ -313,13 +313,13 @@ for example, current up to 33A（Model 6010 is 33A and Model 3510 is 16.5A. See 
 
 <img src="../img/new34.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图4-5</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 4-5</strong></div>
 
 3.Click on `View Graph` to open the oscilloscope
 
 <img src="../img/new35.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图4-6</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 4-6</strong></div>
 
 4.Introduction to Speed Loop Oscilloscope
 
@@ -333,13 +333,13 @@ for example, current up to 33A（Model 6010 is 33A and Model 3510 is 16.5A. See 
 
 <img src="../img/new36.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图4-7</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 4-7</strong></div>
 
 5.设置`View Graph`视图里的参数，可以更好的查看当前INNFOS执行器各项参数波形。
 
 <img src="../img/new37.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图4-8</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 4-8</strong></div>
 
 Note:The free channel offset is set to 0,  zoomed to 1, or directly click OFF to turn off!
 
@@ -347,7 +347,7 @@ Note:The free channel offset is set to 0,  zoomed to 1, or directly click OFF to
 
 <img src="../img/new38.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图4-9</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 4-9</strong></div>
 
 ----
 
@@ -357,7 +357,7 @@ Logic block diagram of the INNFOS actuator system：
 
 <img src="../img/position.jpg" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图5-1 INNFOS执行器系统的逻辑框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 5-1 INNFOS执行器系统的逻辑框图</strong></div>
 
 Introduction of the block diagram:
 
@@ -367,7 +367,7 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 <img src="../img/new41.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图5-2</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 5-2</strong></div>
 
 ### Description of Position Mode Function
 
@@ -390,7 +390,7 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 (8) Oscilloscope switch
 <img src="../img/new42.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图5-3</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 5-3</strong></div>
 
 ### Position Mode Usage
 
@@ -398,7 +398,7 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 <img src="../img/new43.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图5-4</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 5-4</strong></div>
 
 2.Position Mode basic parameter settings:
 
@@ -410,13 +410,13 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 <img src="../img/new44.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图5-5</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 5-5</strong></div>
 
 3.点击“波形图”可打开示波器，参数界面介绍同上 
 
 <img src="../img/new45.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图5-6</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 5-6</strong></div>
 
 4.Setting of Square-wave Gnerator Prameter Value
 
@@ -430,13 +430,13 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 <img src="../img/new48.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图5-7</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 5-7</strong></div>
 
 5.Click `Stop` to stop the square-wave generator.
 
 <img src="../img/new46.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图5-8</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 5-8</strong></div>
 
 6.位置模式步加步减设置：
 
@@ -457,7 +457,7 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 <img src="../img/new51.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图6-1</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 6-1</strong></div>
 
 ### Profile Position Mode functional descriptions
 
@@ -477,7 +477,7 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 <img src="../img/new52.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图6-2</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 6-2</strong></div>
 
 ### Profile Position Mode usage
 
@@ -485,7 +485,7 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 <img src="../img/new53.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图6-3</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 6-3</strong></div>
 
 2.Basic parameters of position loop S-curve mode:
 
@@ -495,7 +495,7 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 <img src="../img/new54.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图6-4</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 6-4</strong></div>
 
 
 2.Basic parameters of position loop S-curve mode:
@@ -506,7 +506,7 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 <img src="../img/new55.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图6-5</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 6-5</strong></div>
 
 
 3.点击“波形图”可打开示波器，参数界面介绍同上:
@@ -514,7 +514,7 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 <img src="../img/new60.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图6-6</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 6-6</strong></div>
 
 
 4.Setting of Square wave-generator parameter values
@@ -526,14 +526,14 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 <img src="../img/new57.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图6-7</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 6-7</strong></div>
 
 
 5.Click the “Stop” to stop the square wave generator.
 
 <img src="../img/new59.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图6-9</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 6-9</strong></div>
 
 6.位置环S曲线模式步加步减设置：
 
@@ -548,7 +548,7 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 <img src="../img/new56.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图6-11</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 6-11</strong></div>
 
 ----
 
@@ -558,7 +558,7 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 <img src="../img/new61.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图7-1</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 7-1</strong></div>
 
 ### Profile Velocity mode functional descriptions
 
@@ -579,7 +579,7 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 <img src="../img/new62.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图7-2</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 7-2</strong></div>
 
 ###  Profile Velocity Mode Usage
 
@@ -587,7 +587,7 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 <img src="../img/new63.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图7-3</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 7-3</strong></div>
 
 2.Basic parameters of Profile Velocity Mode:
 
@@ -598,7 +598,7 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 <img src="../img/new64.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图7-4</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 7-4</strong></div>
 
 ----
 
@@ -608,7 +608,7 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 <img src="../img/new78.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图8-1</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 8-1</strong></div>
 
 ### Homing Mode usage 
 
@@ -618,20 +618,20 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 <img src="../img/new71.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图8-2</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 8-2</strong></div>
 
 2. Click the `Clear` and `Homing` buttons one after the other, and to clear the current left and right limits using this operation twice. Until the data in the red box 1 on the right is changed to the large value (this is the upper and lower limits of the software limit). Then adjust the right picture 2 to the following large value (this is the current limit, such as the need for a larger current when the load is increased, and the current limit needs to be released).
 
 <img src="../img/new79.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图8-3</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 8-3</strong></div>
 
 3.Manually adjust the joint to the left mechanical limit and click on `Max_Set`, at which point the value at the `Max Pos` will change.
 
 
 <img src="../img/new74.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图8-4</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 8-4</strong></div>
 
 4.Manually adjust the joint to the right mechanical limit and click on `Min_Set`. The value of the `Min Pos` column will change.
 
@@ -645,19 +645,19 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 <img src="../img/new80.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图8-6</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 8-6</strong></div>
 
 6.Set the left and right limit offset
 
 <img src="../img/new76.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图8-7</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 8-7</strong></div>
 
 7.Click the "Download" button to save the current parameters. 
 
 <img src="../img/new77.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图8-8</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 8-8</strong></div>
 
 ### 温度保护设置
 
@@ -691,19 +691,19 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 <img src="../img/new82.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图9-1</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 9-1</strong></div>
 
 2.显示本次升级内容及升级按钮
 
 <img src="../img/new81.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图9-2</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 9-2</strong></div>
 
 3.点击update等待升级完成
 
 <img src="../img/new83.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图9-3</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 9-3</strong></div>
 
 
 ----
@@ -715,7 +715,7 @@ As shown in the figure, an error message is displayed.
 
 <img src="../img/new91.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图9-3</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 9-3</strong></div>
 
 Note: If you use the latest version of the host computer software, the alarm will be detailed.
 
@@ -725,7 +725,7 @@ Click "OK" and "Clear Errors" to solve the problem. After clearing, the INNFOS a
 
 <img src="../img/new92.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图9-3</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 9-3</strong></div>
 
 ----
 
