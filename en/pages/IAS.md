@@ -231,7 +231,9 @@ Note:The free channel offset is set to 0,  zoomed to 1, or directly click OFF to
 
 *   Enter the current value 1 in `Value 1`(Mark 1)
 *   Enter the current value 2 in `Value 2` (Mark 2)
-*   在`Interval`内输入时间（单位：ms）（图3处）（例：`Value 1`为0.1，`Value 1`为0，`Value 1`为1000，启动后，先给定INNFOS执行器相电流为-0.001A，1000mS后给定相电流为0.5A,再过1000ms再次给定相电流-0.001A，如此反复运行直至用户点击“停止”)。
+*   Enter the time (in ms) in `Interval` (Figure 3) (e.g.: `Value 1` is 0.1, `Value 2` is 0, `Interval` is 1000. After startup, the phase current of INNFOS SCA is -0.001A. After a period of 1000ms, the given phase current is 0.5A, and the phase current is again given to -0.001A after another 1000ms . Iteratively run this operation until the user clicks "stop").
+
+
 *   Select `Start`(Mark 4), and the square wave generator will press the set time ( `Interval` value), continuously validate Value1 and Value2 to the specified position until the button is closed.
 
 <img src="../img/new28.png" style="width:600px">
