@@ -6,7 +6,7 @@ IAS is a visual debug control software for INNFOS actuator, the main functions o
 
 ## Download
 
-如果电脑系统为Linux,访问[IAS(Linux)](https://github.com/innfos/INNFOS-Actuator-Studio-linux.git)获取最新版本的IAS(INNFOS Actuator Studio)(Linux),如果电脑系统是Windows请访问 [IAS(Windows)](https://github.com/innfos/INNFOS-Actuator-Studio-windows.git).
+If the computer system is Linux,visit [IAS(Linux)](https://github.com/innfos/INNFOS-Actuator-Studio-linux.git)to get the latest version of IAS (INNFOS Actuator Studio) (Linux)visit, if it is Windows, please visit[IAS(Windows)](https://github.com/innfos/INNFOS-Actuator-Studio-windows.git).
 
 ----
 
@@ -179,6 +179,10 @@ Description: after the mixed practice of the current setting value and current f
 
 <span style="color: red">[注:电流环模式中，比例设置、积分设置根据执行器型号已进行预设，无需更改；最小电流设置固定值-0.82，最大电流设置固定值0.82，并已进行预设，无需更改。]</span> 
 
+Enter the current value in Phase Current (1 in the figure), click Enter or Set Current, and INNFOS SCA starts to output the corresponding torque. If the load is not large enough, the INNFOS  SCA will run at high speed.
+
+
+
 <img src="../img/new22.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图3-3</strong></div>
@@ -193,11 +197,7 @@ Description: after the mixed practice of the current setting value and current f
 
 2.Parameter setting: application mode
 
-*   在`Phase Current`中输入电流值大小（图中1处），按回车键或`Set Current`键，INNFOS执行器开始输出相应扭矩。若负载不够大，INNFOS执行器会高速运转。
-
-then the actuator will output the corresponding torque.If the load is not heavy enough, the INNFOS actuator will running in high speed.
-
-
+*   Enter the current value in `Phase Current` (1 in the figure), click Enter or Set Current, then the actuator will output the corresponding torque.If the load is not heavy enough, the INNFOS actuator will running in high speed.
 *   After rotating, you can see the current status in the INNFOS actuator parameter values.(Mark 3)
 *   Press the `Halt` to stop the rotation of the INNFOS actuator.(Mark 2)
 *   The maximum current value can be set in the `Limit` parameter.
@@ -225,7 +225,7 @@ then the actuator will output the corresponding torque.If the load is not heavy 
 
 <div class="md-text" style="text-align: center;"><strong>图3-7</strong></div>
 
-Note:不用的通道偏置设置为0，放大设置为1，或者直接点击OFF关闭其显示!
+Note:The free channel offset is set to 0,  zoomed to 1, or directly click OFF to turn off!
 
 5.Square wave generator parameter setting
 
@@ -341,7 +341,7 @@ for example, current up to 33A（Model 6010 is 33A and Model 3510 is 16.5A. See 
 
 <div class="md-text" style="text-align: center;"><strong>图4-8</strong></div>
 
-Note:不用的通道偏置设置为0，放大设置为1（右图中channel2和channel4），或者直接点击OFF关闭其显示
+Note:The free channel offset is set to 0,  zoomed to 1, or directly click OFF to turn off!
 
 6.Click `Stop` to stop the square-wave generator.
 
@@ -524,17 +524,9 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 *    Enter the time (unit: ms) in “Interval”, the input parameter is of the rotating for one time (for example, Value1 is 2, Value2 is -2, and Interval is 1000. After startup, INNFOS Actuator first goes to position 2, 1000mS and then goes to position-2.Go to position 2 again after 1000ms, and then run it repeatedly until the user clicks "Stop").
 *    Click the "Start" button to turn on the INNFOS actuator.
 
-
-
 <img src="../img/new57.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图6-7</strong></div>
-
-*   波形图如下：
-
-<img src="../img/new58.png" style="width:600px">
-
-<div class="md-text" style="text-align: center;"><strong>图6-8</strong></div>
 
 
 5.Click the “Stop” to stop the square wave generator.
@@ -543,7 +535,7 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 <div class="md-text" style="text-align: center;"><strong>图6-9</strong></div>
 
-3.位置环S曲线模式步加步减设置：
+6.位置环S曲线模式步加步减设置：
 
 *   在`Target`框中输入转动的位置（单位：R），也可点击键盘方向键进行设置。点击键盘默认为增加1。
 
@@ -557,7 +549,6 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 <img src="../img/new56.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图6-11</strong></div>
-
 
 ----
 
