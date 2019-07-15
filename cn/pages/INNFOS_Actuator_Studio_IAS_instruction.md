@@ -227,11 +227,8 @@ Note:不用的通道偏置设置为0，放大设置为1，或者直接点击OFF�
 
 <div class="md-text" style="text-align: center;"><strong>图3-8</strong></div>
 
-6.点击`View Graph`按钮打开示波器窗口，可以查看给定（ `Channel 1` 此时为方波发生器）、电流（ `Channel 2` ）、速度（ `Channel 3` ）、位置（ `Channel 4` ）四通道参数波形，如图 
+6.点击`View Graph`按钮打开示波器窗口，可以查看给定（ `Channel 1` 此时为方波发生器）、电流（ `Channel 2` ）、速度（ `Channel 3` ）、位置（ `Channel 4` ）四通道参数波形。
 
-<img src="../img/new29.png" style="width:600px">
-
-<div class="md-text" style="text-align: center;"><strong>图3-9</strong></div>
 
 7.点击`Stop`键，可停止方波发生器的运行。
 
@@ -320,10 +317,6 @@ INNFOS执行器系统的逻辑框图：
 <div class="md-text" style="text-align: center;"><strong>图4-7</strong></div>
 
 5.设置`View Graph`视图里的参数，可以更好的查看当前INNFOS执行器各项参数波形。
-
-<img src="../img/new37.png" style="width:600px">
-
-<div class="md-text" style="text-align: center;"><strong>图4-8</strong></div>
 
 Note:不用的通道偏置设置为0，放大设置为1（右图中channel2和channel4），或者直接点击OFF关闭其显示
 
