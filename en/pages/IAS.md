@@ -238,7 +238,8 @@ Note:The free channel offset is set to 0,  zoomed to 1, or directly click OFF to
 
 <div class="md-text" style="text-align: center;"><strong>Fig 3-8</strong></div>
 
-6.点击`View Graph`按钮打开示波器窗口，可以查看给定（ `Channel 1` 此时为方波发生器）、电流（ `Channel 2` ）、速度（ `Channel 3` ）、位置（ `Channel 4` ）四通道参数波形，如图 
+6.Click`View Graph`to open the oscilloscope window, you can view the given（ `Channel 1` square wave generator）、 current（ `Channel 2` ）、velocity（ `Channel 3` ）、position（ `Channel 4` ）four-channel parameter waveform, as shown on the right.
+
 
 <img src="../img/new29.png" style="width:600px">
 
