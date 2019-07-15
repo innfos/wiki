@@ -270,7 +270,7 @@ Description: After the speed value setting and the speed feedback value are adde
 
 ### Description of Speed Loop Mode Functions
 
-*   文字序号与图中序号对应
+*   The number in the text corresponds to that in the figure
 
 (1)Speed Mode schematic diagram
 
@@ -357,7 +357,7 @@ Logic block diagram of the INNFOS actuator system：
 
 <img src="../img/position.jpg" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>Fig 5-1 INNFOS执行器系统的逻辑框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 5-1 Logic block diagram of the INNFOS SCA system</strong></div>
 
 Introduction of the block diagram:
 
@@ -371,7 +371,7 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 ### Description of Position Mode Function
 
-*   文字序号与图中序号对应
+*   The number in the text corresponds to that in the figure
 
 (1) Position Mode schematic diagram
 
@@ -461,7 +461,7 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 ### Profile Position Mode functional descriptions
 
-*   文字序号与图中序号对应 
+*   The number in the text corresponds to that in the figure
 
  (1) Profile Position Mode schematic diagram
 
@@ -562,7 +562,7 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 ### Profile Velocity mode functional descriptions
 
-*   文字序号与图中序号对应
+*   The number in the text corresponds to that in the figure
 
 (1) Profile Velocity Mode schematic diagram
 
@@ -715,7 +715,7 @@ As shown in the figure, an error message is displayed.
 
 <img src="../img/new91.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>Fig 10-3</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 10-1</strong></div>
 
 Note: If you use the latest version of the host computer software, the alarm will be detailed.
 
@@ -725,7 +725,7 @@ Click "OK" and "Clear Errors" to solve the problem. After clearing, the INNFOS a
 
 <img src="../img/new92.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>Fig 10-3</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 10-2</strong></div>
 
 ----
 
