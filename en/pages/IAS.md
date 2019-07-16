@@ -538,7 +538,9 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 <div class="md-text" style="text-align: center;"><strong>Fig 6-9</strong></div>
 
-6.位置环S曲线模式步加步减设置：
+6. Position mode step add & step minus setting:
+
+*    Enter the position of rotation (unit: R) in box X, or click the keyboard direction button to set. Clicking on the keyboard defaults to have an increase of 0.1.
 
 *   在`Target`框中输入转动的位置（单位：R），也可点击键盘方向键进行设置。点击键盘默认为增加1。
 
@@ -546,8 +548,9 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 <div class="md-text" style="text-align: center;"><strong>图6-10</strong></div>
 
-*   在框X中输入数值，按`step add`和`step minus`按钮，执行器可转动相应位置，点击一次可使执行器转动一次。
-*   INNFOS执行器开始转动后，在状态值栏可以看到当前INNFOS执行器的各项参数值，右图4处。
+*    Enter the value in box X, press `step add` and `step minus` to let SCA rotate the corresponding position. One click makes SCA rotate forward or reverse once.
+*    After rotating, the parameters of the current INNFOS SCA can be seen in the status value bar .
+
 
 <img src="../img/new56.png" style="width:600px">
 
