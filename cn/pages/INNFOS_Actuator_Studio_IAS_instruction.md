@@ -124,7 +124,7 @@ $ ./INNFOS\ Actuator\ Studio
 
 INNFOS执行器系统的逻辑框图：
 
-<img src="../img/current.jpg" style="width:600px">
+<img src="../img/current.jpg" style="width:800px">
 
 <div class="md-text" style="text-align: center;"><strong>图3-1 INNFOS执行器系统的逻辑框图</strong></div>
 
@@ -242,7 +242,7 @@ Note:不用的通道偏置设置为0，放大设置为1，或者直接点击OFF�
 
 INNFOS执行器系统的逻辑框图：
 
-<img src="../img/velocity.jpg" style="width:600px">
+<img src="../img/velocity.jpg" style="width:800px">
 
 <div class="md-text" style="text-align: center;"><strong>图4-1 INNFOS执行器系统的逻辑框图</strong></div>
 
@@ -333,7 +333,7 @@ Note:不用的通道偏置设置为0，放大设置为1（右图中channel2和ch
 
 INNFOS执行器系统的逻辑框图：
 
-<img src="../img/position.jpg" style="width:600px">
+<img src="../img/position.jpg" style="width:800px">
 
 <div class="md-text" style="text-align: center;"><strong>图5-1 INNFOS执行器系统的逻辑框图</strong></div>
 
