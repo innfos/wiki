@@ -177,9 +177,9 @@ Send the protocol by broadcast (ie send the protocol to 192.168.1.255) to get EC
 
 Send command: 
 `0xEE 0x00 0x02 0x00 0x00 0xED` 
-The ID and mac address information will be sent after successful communication. Since it is necessary to poll and find the actuator, this instruction takes about 0.5s to return the actuator id. If it is not received actuator address information for a long time, it can be considered that no actuator is successfully connected. Return instruction example: 
+The ID and serial number information will be sent after successful communication. Since it is necessary to poll and find the actuator, this instruction takes about 0.5s to return the actuator id. If it is not received actuator address information for a long time, it can be considered that no actuator is successfully connected. Return instruction example: 
 `0xEE 0x06 0x02 0x00 0x04 0x01 0x64 0x5A 0xDF 0x3B 0x3F 0xED `
-`0x06` is actually the actuator ID, `0x01 0x64 0x5A 0xDF` is the actuator mac address. (When multiple actuators are successfully connected, this command will be returned multiple for many times)
+`0x06` is actually the actuator ID, `0x01 0x64 0x5A 0xDF` is the actuator serial number. (When multiple actuators are successfully connected, this command will be returned multiple for many times)
 
 
 ### Communicating with the actuator
