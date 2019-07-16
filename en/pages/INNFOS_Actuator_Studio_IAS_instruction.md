@@ -732,4 +732,5 @@ Click "OK" and "Clear Errors" to solve the problem. After clearing, the INNFOS a
 ----
 
 ## Version Change Records
+
 <table class="tableizer-table"><thead><tr class="tableizer-firstrow" style=background:PaleTurquoise><th>Version number</th><th>Update time</th><th>Update content</th></tr></thead><tbody><tr><td>V1.1.0</td><td>2019-07</td><td>Second Version</td></tr><tr><td><a href="http://innfos.com/wiki/en/index.html#!pages/INNFOS_Actuator_Studio_IAS_instruction_V_1_0_0.md">V1.0.0</td><td>2019-04</td><td>First Verison</td></tr></tbody></table>
