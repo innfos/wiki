@@ -645,7 +645,7 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 <div class="md-text" style="text-align: center;"><strong>图8-5</strong></div>
 
-注意：位置模式使用时，应注意当前限位范围，如果当前位置在限位范围外，发位置指令时，位置则会回到限位范围内。
+Note: When in the  position mode, pay attention to the current limit range. If the current position is out of the range, the position will return to the limit range when the position command is issued.
 
 5.When only set the zero point,manually adjust the joint to zero point, click `homing`, and then 1 will become 0.
 
@@ -683,12 +683,9 @@ The motor protection temperature defaults to 60 °C.
 
 Note: The set protection temperature needs to be 5 °C higher than the recovery temperature.
 
-
-
 ### Locked rotor energy setting
 
 ----
-
 
 ## New version online updating
 
@@ -710,8 +707,8 @@ Note: The set protection temperature needs to be 5 °C higher than the recovery 
 
 <div class="md-text" style="text-align: center;"><strong>Fig 9-3</strong></div>
 
-
 ----
+
 ## Error warning
 
 ### When an error occurs, the error message will be displayed in the box.
