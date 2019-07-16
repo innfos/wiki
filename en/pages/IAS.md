@@ -125,7 +125,7 @@ Note: Please confirm that the static IP is correctly configured before start usi
 
 ----
 
-## Current mode
+## Current Mode
 
 Logic block diagram of the INNFOS actuator system:
 
@@ -187,7 +187,7 @@ Enter the current value in Phase Current (1 in the figure), click Enter or Set C
 
 <div class="md-text" style="text-align: center;"><strong>Fig 3-3</strong></div>
 
-### Current loop usage
+### Current oop usage
 
 1.Click on“Active Current Mode”to activate the current current loop mode.
 
@@ -255,7 +255,7 @@ Note:The free channel offset is set to 0,  zoomed to 1, or directly click OFF to
 
 ----
 
-## Speed mode usage
+## Speed Mode
 
 Logic block diagram of the INNFOS actuator system:
 
