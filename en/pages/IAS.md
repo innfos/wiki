@@ -412,7 +412,7 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 <div class="md-text" style="text-align: center;"><strong>Fig 5-5</strong></div>
 
-3.点击“波形图”可打开示波器，参数界面介绍同上 
+3. Click “View Graph” to open the oscilloscope. The parameter introduction is the same with the above
 
 <img src="../img/new45.png" style="width:600px">
 
@@ -449,7 +449,7 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 <img src="../img/new47.png" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>图5-9</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 5-9</strong></div>
 
 
 ----
@@ -512,7 +512,7 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 <div class="md-text" style="text-align: center;"><strong>Fig 6-5</strong></div>
 
 
-3.点击“波形图”可打开示波器，参数界面介绍同上:
+3. Click `View Graph` to open the oscilloscope. The parameter introduction is the same with the above:
 
 
 <img src="../img/new60.png" style="width:600px">
@@ -665,47 +665,46 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 <div class="md-text" style="text-align: center;"><strong>Fig 8-8</strong></div>
 
-### 温度保护设置
+### Temperature protection setting
 
-1.设置电机保护温度
+1. Set protection temperature
 
-输入电机保护温度并回车，点击“download”保存，执行器将在达到保护温度后停止转动，并将自动切入电流环模式。
-电机保护温度默认为75℃。
+Enter the protection temperature and press Enter，and then click “download” to save. SCA will stop rotating after reaching the protection temperature and will automatically turn into the current loop mode.
+The protection temperature defaults to 75 °C.
+
+2. Set recovery temperature
+
+Enter the protection temperature and press Enter, and then click “download” to save. SCA will be restore after cooling down to the recovery temperature.
+The motor protection temperature defaults to 60 °C.
+
+3. Set  inverter protection temperature
+
+4 set inverter recovery temperature
+
+Note: The set protection temperature needs to be 5 °C higher than the recovery temperature.
 
 
-2.设置电机恢复温度
 
-输入电机保护温度并回车，点击“download”保存，执行器将在降温至恢复温度后恢复可控，用户可继续。
-电机保护温度默认为60℃。
-
-
-3.设置逆变器保护温度
-
-
-4设置逆变器恢复温度
-
-注：设置的保护温度需比恢复温度高5℃
-
-### 堵转能量设置
+### Locked rotor energy setting
 
 ----
 
 
-## 新版本在线升级功能
+## New version online updating
 
-1.如有新版本更新，会有提示
+1. Notification will be sent if new version updates is avaliable
 
 <img src="../img/new82.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 9-1</strong></div>
 
-2.显示本次升级内容及升级按钮
+2. The updating content and button will be listed
 
 <img src="../img/new81.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 9-2</strong></div>
 
-3.点击update等待升级完成
+3. Click update to finish the updating
 
 <img src="../img/new83.png" style="width:600px">
 
