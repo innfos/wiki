@@ -23,7 +23,7 @@
 
 [INNFOS Website](http://innfos.com)
 
-[中文](http://innfos.com/wiki/cn/index.html#!index.md)
+[中文](http://wiki.innfos.com/wiki/cn/index.html#!index.md)
 
 
 <!-- counter pixel for counting visitors -->
