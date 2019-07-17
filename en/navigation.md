@@ -19,7 +19,7 @@
   * [XR-Robot](tutorials/dropbox.md)
   * [ECB & HUB](tutorials/iis/iis.md)
 
-[FAQ](examples.md)
+[FAQ](question.md)
 
 [INNFOS Website](http://innfos.com)
 
