@@ -8,7 +8,7 @@
 
 ![Qddpro_PR60_x_80_v2_2正面固定.png](../img/Qddpro_PR60_x_80_v2_2正面固定.png "fig:Qddpro_PR60_x_80_v2_2.png")![Qddpro_PR60_x_80_v2_2正面固定.png](../img/Qddpro_PR60_x_80_v2_2正面固定.png "fig:Qddpro_PR60_x_80_v2_2.png")  
 ### 3D 模型
-[模型文件]( ../img/QDD_Pro-PR60-80-80_v2_2.step.zip )
+[模型文件]( ../img/QDD_Pro-PR60-x-80_v2_2.step.zip )
 
 
 ## QDD Pro-PR60-80-80参数
