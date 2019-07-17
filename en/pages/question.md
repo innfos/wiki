@@ -65,7 +65,7 @@ Common problems
 
 **Occasionally Overvoltageerror occurs (the input voltage is 42V)?**
 
-*   •	Please check if a large capacitor is plugged into the HUB
+*   Please check if a large capacitor is plugged into the HUB
 
 **Is it possible to control immediately after the motor is blocked?**
 
