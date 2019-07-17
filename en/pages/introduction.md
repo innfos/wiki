@@ -15,6 +15,6 @@ INNFOS SCA （Smart Compliant Actuator）is an intelligent, highly integrated an
 
 INNFOS SCA includes QDD Pro with harmonic reducer, QDD using planetary reducer and DD without reducer. SCA can be applied to multiple scenarios. The smallest SCA can be applied to tripod head, drone, etc. while largest one can be applied to robots, robotic arms and so forth. Of course, SCAs are commonly used in electric tools, CNC, 3D printers, AGV, etc.
 
-# Version Change Records
+## Version Change Records
 
 <table><thead><tr style="background:PaleTurquoise"><th>Version</th><th>	Update time</th><th>	update contents</th></tr></thead><tbody><tr><td>V1.0.1</td><td>2019.05</td><td>Optimize SCA application scope</td></tr><tr><td>V1.0.0</td><td>2019.04</td><td>	The first version</td></tr></tbody></table>
