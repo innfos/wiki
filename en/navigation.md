@@ -9,15 +9,15 @@
 
 [About INNFOS](#!pages/about.md)
 
-[Contact](index.html#!pages/about.md#Contact_Us)
+[Contact](index.html#!pages/about.md#Contact)
 
 [Products]()
 
-  * [QDD Pro](index.html#!pages/about.md#Contact_Us)
-  * [QDD](tutorials/github.md)
-  * [DD](tutorials/drive.md)
-  * [XR-Robot](tutorials/dropbox.md)
-  * [ECB & HUB](tutorials/iis/iis.md)
+  * [QDD Pro](index.html#!index.md#Products)
+  * [QDD](index.html#!index.md#Products)
+  * [DD](index.html#!index.md#Products)
+  * [XR-Robot](index.html#!index.md#XR-Robot)
+  * [ECB & HUB](index.html#!index.md#ECB_&_HUB)
 
 [FAQ](pages/question.md)
 
