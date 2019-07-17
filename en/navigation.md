@@ -7,13 +7,13 @@
 
 [Learning](gimmicks1.md)
 
-[About INNFOS](pages/about.md)
+[About INNFOS](#!pages/about.md)
 
-[Contact](gimmicks1.md)
+[Contact](index.html#!pages/about.md#Contact_Us)
 
 [Products]()
 
-  * [QDD Pro](tutorials.md)
+  * [QDD Pro](index.html#!pages/about.md#Contact_Us)
   * [QDD](tutorials/github.md)
   * [DD](tutorials/drive.md)
   * [XR-Robot](tutorials/dropbox.md)
