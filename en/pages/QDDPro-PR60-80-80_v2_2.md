@@ -8,7 +8,7 @@
 
 ![Qddpro_PR60_x_80_v2_2zhengmian.png](../img/Qddpro_PR60_x_80_v2_2zhengmian.png "fig:Qddpro_PR60_x_80_v2_2zhengmian.png")![Qddpro_PR60_x_80_v2_2zhengmian.png](../img/Qddpro_PR60_x_80_v2_2zhengmian.png "fig:Qddpro_PR60_x_80_v2_2zhengmian.png") 
 ### 3D model
-[Model file]( ../img/QDD_Pro-PR60-80-80_v2_2.step.zip )
+[Model file]( ../img/QDD_Pro-PR60-x-80_v2_2.step.zip )
 
 ## QDD Pro-PR60-80-80parameter
 
