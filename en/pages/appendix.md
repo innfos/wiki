@@ -8,11 +8,6 @@ After start-up, the red area is selected by the mouse and the current actuator I
 
 <div class="md-text" style="text-align: center;"><strong>Fig A-1</strong></div>
 
-
-![](../img/A1.png "图A-1")
-
-* FigA-1
-
 ----
 
 ## Appendix B
@@ -44,11 +39,7 @@ RPM/s^2: The first-order time derivative of acceleration, ie jerk (jerk), indica
 *   ip address configuration is made through opening the control panel, selecting Network and Internet, to Network and Sharing Center, and then Change Adapter Settings. The next step is right clicking on Ethernet to select Properties, TCP/IPv4, then Properties, where ip address 119 in 192.168.1.119 can be replaced with any integer between 100 and 200. The gateway can be set to 192.168.1.1. The DNS does not need to be filled out, just click OK to complete the configuration. The configuration is as follows:
 
 
-![](../img/tupian1.png "图片1")
-
-*   Fig B-1
-
-<img src="../img/tupian1.png" style="width:800px">
+<img src="../img/tupian1.png" style="width:500px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig B-1</strong></div>
 
@@ -64,11 +55,7 @@ RPM/s^2: The first-order time derivative of acceleration, ie jerk (jerk), indica
 *   **Scalar**: Magnification, used when zooming in or out on the amplitude of the graph. The oscilloscope's Y-axis range is -1~1. When the mouse stays at a certain point of the waveform, the coordinate position of the current point is displayed. The coordinate of the Y-axis multiplied by the magnification is the amplitude of the current point. That is, the amplitude A = Y * Scalar.
 *   **Tips**： First set tirg_value and prescalar while using the oscilloscope, and when the waveform appearing, you can click auto to let the software automatically find an offset and scalar value, and then manually adjust. After each parameter change, you need to press Enter or switch the input box to take effect.
 
-![](../img/XY.png "图片")
-
-*   FIg C-1
-
-<img src="../img/XY.png" style="width:800px">
+<img src="../img/XY.png" style="width:500px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig A-1</strong></div>
 
@@ -81,10 +68,6 @@ RPM/s^2: The first-order time derivative of acceleration, ie jerk (jerk), indica
 *   In applications, the movement that the actuator driving the mechanical structure needs to be smooth, slow and orderly. If the actuator reaches the specified position in an instant, the strong moment of inertia will have a certain impact on the mechanical structure, so the function of the S-curve-position mode is to make the rotation smooth, which requires a gradual change from low to high or high to low during acceleration and deceleration to ensure smooth movement of the entire mechanical movement.
 *   The following two parameters are for adjusting the S-curve-position mode, Accelerate and Decelerate. Accelerate is the speed of change when the speed increases from low to high. The higher the value of Accelerate, the faster the speed increases. Decelerate is the speed of change when the speed is reduced from high to low. The larger the value of Decelerate, the faster the speed will decrease. Instead, the opposite is true. The parameter corresponding to Max is the maximum speed. When the speed has not reached the specified position after increasing to the maximum value, the speed will no longer increased and the acceleration is zero.
 *   Take the graph as an example to explain the role of these two parameters: assuming the current position of the actuator is 0 R, send the command to rotate it to 20 R, the maximum speed is set to 1 RPM, and the acceleration and deceleration are set into 0.1 RPM/S. The parameter values here are set only for theoretical analysis, and the parameter values ​​should be set according to the actual situation.
-
-![](../img/S.png "曲线图")
-
-* Fig D-1
 
 <img src="../img/S.png" style="width:800px">
 
