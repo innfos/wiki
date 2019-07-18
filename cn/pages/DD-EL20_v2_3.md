@@ -16,7 +16,7 @@
 ## 版本变更记录
 **下表简单描述了版本变更记录**
 
-<table style="width:400px"><thead><tr style="background:PaleTurquoise"><th style="width:100px">版本号</th><th style="width:150px">更新时间</th><th style="width:150px">更新内容</th></tr></thead><tbody><tr><td>v2.2.0</td><td>2019.05.09</td><td>全文添加</th></tr></thead><tbody><tr><td>v1.0.0</td><td>2019.04.11</td><td>全文添加</td></tbody></table>
+<table style="width:400px"><thead><tr style="background:PaleTurquoise"><th style="width:100px">版本号</th><th style="width:150px">更新时间</th><th style="width:150px">更新内容</th></tr></thead><tbody><tr><td>v2.3.0</td><td>2019.07.18</td><td>内部结构更新</th></tr></thead><tbody><tr><td>v2.2.0</td><td>2019.05.09</td><td>全文添加</th></tr></thead><tbody><tr><td>v1.0.0</td><td>2019.04.11</td><td>全文添加</td></tbody></table>
 
 
 
