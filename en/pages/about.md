@@ -3,9 +3,10 @@
 
 ### A robot company with key actuator technology
 
-The INNFOS R&D team has been focusing on the development of new actuators in high performance robots for many years. We have assembled outstanding engineers around the world to develop basic technologies，including motor design, motor drive, high precision encoders, flexible joints and so forth.
+For many years, INNFOS R&D team has been focusing on the development of new actuators for high performance robots. We have assembled outstanding engineers around the world to develop from the motor design, motor drive, high precision encoders, ﬂexible joints and so forth. 
 
-INNFOS SCA (Smart Compliant Actuator) is totally self-developed by INNFOS and its core techniques have reached the international advanced level, with its high integration, bus control, high torque output, easy usage and low cost. It is fully in line with robot growing trend and has become the core component of the robots.
+INNFOS SCA (Smart Compliant Actuator) is totally self-developed by INNFOS， whose core techniques have reached the international leading level with a competitive price. It features high integration, bus control, high torque output, and easy usage. SCA is fully in line with robot developing trend and has become the core component of the robots.
+
 
 <img src="../img/About 1.png" >
 
