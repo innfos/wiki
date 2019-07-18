@@ -4,6 +4,10 @@
  
 After start-up, the red area is selected by the mouse and the current actuator ID number can be changed. Then enter A-1 interface below and click Download to save the changed parameters.
 
+<img src="../img/A1.png" style="width:800px">
+
+<div class="md-text" style="text-align: center;"><strong>Fig A-1/strong></div>
+
 
 ![](../img/A1.png "图A-1")
 
@@ -44,6 +48,10 @@ RPM/s^2: The first-order time derivative of acceleration, ie jerk (jerk), indica
 
 *   Fig B-1
 
+<img src="../img/tupian1.png" style="width:800px">
+
+<div class="md-text" style="text-align: center;"><strong>Fig B-1/strong></div>
+
 ----
 
 ## Appendix C
@@ -60,6 +68,10 @@ RPM/s^2: The first-order time derivative of acceleration, ie jerk (jerk), indica
 
 *   FIg C-1
 
+<img src="../img/XY.png" style="width:800px">
+
+<div class="md-text" style="text-align: center;"><strong>Fig A-1/strong></div>
+
 ----
 
 ## Appendix D
@@ -73,6 +85,10 @@ RPM/s^2: The first-order time derivative of acceleration, ie jerk (jerk), indica
 ![](../img/S.png "曲线图")
 
 * Fig D-1
+
+<img src="../img/S.png" style="width:800px">
+
+<div class="md-text" style="text-align: center;"><strong>Fig D-1/strong></div>
 
 *    The three waveforms shown in the above figure are the position, velocity, acceleration and time of the S-curve mode. The first derivative of the position is the velocity, indicating the speed of the velocity change; the first derivative of the velocity is acceleration, indicating the speed and direction of velocity change. It is not difficult to see that the above images are divided into three regions in units of time, 0-10 is the acceleration zone, 10-20 is the constant velocity zone and 20-30 is the deceleration zone.
 *    When the actuator is running in S-curve mode as shown in the figure “Position-Time” above, you can see that the position change has a gentle process. The shape of the curve will change according to the parameter setting . In the acceleration region, the position amount increases rapidly, the speed increases linearly, and the acceleration is constant; in the uniform velocity region, the position amount increases linearly, the velocity value is constant, the acceleration is 0; in the deceleration region, the position amount increases slowly，the speed decreases linearly and the acceleration is constant.
