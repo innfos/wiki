@@ -126,7 +126,7 @@ INNFOS执行器控制系统框图：
 
 <img src="../img/current.jpg" style="width:800px">
 
-<div class="md-text" style="text-align: center;"><strong>图3-1 INNFOS执行器系统的逻辑框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图3-1 INNFOS执行器控制系统框图</strong></div>
 
 框图介绍：电流设置值与电流反馈值做加减运算后经过PI模块后经可选的滤波器再经限幅模块以驱动电机，电机经反馈把电流参数反馈给系统，使之形成闭环。
 
@@ -244,7 +244,7 @@ INNFOS执行器控制系统框图：
 
 <img src="../img/velocity.jpg" style="width:800px">
 
-<div class="md-text" style="text-align: center;"><strong>图4-1 INNFOS执行器系统的逻辑框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图4-1 INNFOS执行器控制系统框图</strong></div>
 
 框图的介绍： 速度值设置与速度反馈值做加减后经PI模块后经可选的滤波器再经模块输出电流给电流环，在确保电流环模式运行正确的情况下，通过电流环驱动电机，经编码器把速度参数反馈给系统，使之形成闭环。
 
@@ -335,7 +335,7 @@ INNFOS执行器控制系统框图：
 
 <img src="../img/position.jpg" style="width:800px">
 
-<div class="md-text" style="text-align: center;"><strong>图5-1 INNFOS执行器系统的逻辑框图</strong></div>
+<div class="md-text" style="text-align: center;"><strong>图5-1 INNFOS执行器控制系统框图</strong></div>
 
 框图的介绍： 在确保电流环和速度环准确的情况下，位置设置值与位置反馈值做加减运算后经过PI模块后经可选的滤波器再经限幅模块输出速度值，然后速度值经速度环再经电流环驱动电机，电机经编码器把位置参数反馈给系统，使之形成闭环。
 
