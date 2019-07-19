@@ -75,11 +75,11 @@ Note: The following SCA data is being updated. Please contact our sales team (sa
 
 
 ### QDD
-  * [QDD-EL20-36](pages/QDD-EL20-36_v2_2.md)
+  * [QDD-EL20-36](pages/QDD-EL20-36_v2_3.md)
   * [QDD-NU80-36](pages/QDD-NU80-36_v2_2.md)
 
 ### DD
-  * [DD-EL20](pages/DD-EL20_v2_2.md)
+  * [DD-EL20](pages/DD-EL20_v2_3.md)
   * [DD-NU80](pages/DD-NU80.md)
 
 ## XR-Robot
