@@ -9,11 +9,11 @@ Common problems
 
 **•	How to change the speed to the degree/ s? How to change the position to  degree?**
 
-*   The speed unit is r/min, the position unit is r, convert the minute into second to calculate the angular velocity.</br>
+*   The unit of speed is Revolution(s) Per Minute（RPM for short）, which is to convert minute into second, and multiply by 360° to calculate the angular velocity. For example, the speed is 60 rpm, divided by 60, you can get 1 r/s. 1 turn is 360 degrees, equal to 360degree/s. The position unit is r, multiplied by 360° to obtain the angle. If the current position is 0.5r, multiply by 360 degrees to get 180degree.</br>
 
 **How to convert the current A after reading four bytes, is it sign int32?**
 
-*   The current unit is A, the speed unit is RPM, and the position unit is R. The current value of the motor is represented by 4 bytes of data,2^24 times of the true value. The higher position is followed by lower position, not sign int32. _iq24 format.
+*   It is not sign int32 but _iq24 format. Represented by 4 bytes of data, the true value of the motor is 2^24 times of the true value. Low byte is put behind the high byte. The four-byte data is converted into the IQ value (between -1 and 1), and then multiplied the current full scale, thus get the current value.
 
 **Is there a PC software that automatically generates a CRC command?**
 
@@ -21,11 +21,11 @@ Common problems
 
 **How long will it last with a rated current of 7A (torque 0.6Nm) and 800RPM?**
 
-*   Pay attention to the inverter temperature and motor temperature. Its duration is related to heat dissipation, if the heat dissipation is good, the internal and external heat can get to balance so that it can work all the time. But if the motor casing exceeds 80℃, it is recommended to stop working.
+*   Pay attention to the inverter temperature and motor temperature. The default motor protection temperature in IAS is 75 ℃, and the inverter protection temperature is 70 ℃. The duration is related to heat dissipation. If the protection temperature is reached, the temperature must be lowered below the recovery temperature for control.
 
 **Current feedback is 20A but the current clamp measures the supply current is only 2.4A. Why?**
 
-*   The phase current of the motor is different from the bus current.、
+*   The phase current of the motor is different from the bus current.
 
 **Does current feedback refer to the peak phase current?**
 
@@ -37,11 +37,7 @@ Common problems
 
 **What is the current series torque coefficient of the QDD-PR60-36 series? **
 
-*   33A corresponds to 2Nm, current and torque are linear relationship. The maximum current is 33A, the maximum is 2Nm.</br>
-
-**The current can't reach 33A. Is the value of current if it is a little more than 30A going to stop? **
-
-*   Increase the current limit value, 2Nm is the instantaneous maximum torque, and it can't work for a long time.</br>
+*   The current moment coefficient is the peak torque / full range of phase current. As for the module QDD-PR60-36, its peak torque is 72Nm, the full range of phase current is 33A, that is which means that current torque coefficient is 2.1816Nm/A.</br>
 
 **When the current is large, it stops after one turn?**
 
