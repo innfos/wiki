@@ -28,7 +28,7 @@ If there's any questions,please contact us at support@innfos.com.
 
 ##  Products
 -----------------
-![sca](../en/img/sca-type.png "sca")
+![sca](../en/img/sca-type_190722.png "sca")
 
 
 ### QDD Pro
