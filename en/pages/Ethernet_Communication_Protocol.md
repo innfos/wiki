@@ -366,7 +366,7 @@ Actuator boot command:
 
 #### Read command 4
 
-<table style="width:700px"><thead><tr class="tableizer-firstrow"></tr></thead><tbody> <tr><td colspan="3"style=background:PaleTurquoise>A.1.4 Read command 4</td></tr><tr><td style="width:100px">Command byte</td><td style="width:200px">Definition</td><td>Description</td></tr><tr><td>0x94</td><td>SCA's current,velocity and position</td><td>Read the current,velocity and position SCA with the specified ID. The first 3 bytes equal to the position value. The values are 2^16 times the true values.<br> The 2 bytes in the middle is velocity value. The values are 2^14 times the true values.<br> The last 2 bytes are current value. The values are 2^14 times the true values. </td></tr></tbody></table>
+<table style="width:700px"><thead><tr class="tableizer-firstrow"></tr></thead><tbody> <tr><td colspan="3"style=background:PaleTurquoise>A.1.4 Read command 4</td></tr><tr><td style="width:100px">Command byte</td><td style="width:200px">Definition</td><td>Description</td></tr><tr><td>0x94</td><td>SCA's current,velocity and position</td><td>Read the current,velocity and position SCA with the specified ID. <br>The first 3 bytes equal to the position value. The values are 2^16 times the true values.<br> The 2 bytes in the middle is velocity value. The values are 2^14 times the true values.<br> The last 2 bytes are current value. The values are 2^14 times the true values. </td></tr></tbody></table>
 
 ### **A.2 Write command code value definition table**
 
