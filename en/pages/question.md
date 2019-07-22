@@ -35,7 +35,7 @@ Common problems
 
 *   BLDC</br>
 
-**What is the current series torque coefficient of the QDD-PR60-36 series? **
+**What is the current series torque coefficient of the QDD-PR60-36 series?**
 
 *   The current moment coefficient is the peak torque / full range of phase current. As for the module QDD-PR60-36, its peak torque is 72Nm, the full range of phase current is 33A, which means that current torque coefficient is 2.1816Nm/A.</br>
 
