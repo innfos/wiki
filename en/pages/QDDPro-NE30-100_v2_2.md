@@ -11,7 +11,7 @@
 [Model file]( ../img/QDD_Pro-NE30-x-70_v2_2.step.zip )
 
 
-## QDD Pro-NE30-100parameter
+## QDD Pro-NE30-100 Parameter
 
 Note:The actual reduction ratio is the harmonic nomical gear ratio plus 1 because the flexspline is fixed.
 
