@@ -80,9 +80,7 @@ Note: The following SCA data is being updated. Please contact our sales team (sa
 ### QDD
   * [QDD-EL20-36](pages/QDD-EL20-36_v2_3.md)
   * [QDD-NU80-36](pages/QDD-NU80-36_v2_2.md)
-  * [QDD-C-EL20-36](pages/QDD-C-EL20-36_v1_8.md)
-  * [QDD-C-NE30-36](pages/QDD-C-NE30-36_v1_8.md)
-  * [QDD-C-PR60-36](pages/QDD-C-PR60-36_v1_8.md)
+
 
 ### DD
   * [DD-EL20](pages/DD-EL20_v2_3.md)
@@ -99,4 +97,4 @@ Website is under maintenance. Stay tuned for future updates!
 
   * If there is any problem with the products that we stopped to provide,please contact us.
 
-<table class="tableizer-table"><thead><tr class="tableizer-firstrow" style="background: PaleTurquoise; color: black;width:500px"><th>Version</th><th>Date</th><th>Modify content</th></tr></thead><tbody><tr><td>V1.0.6</td><td>2019-6-28</td><td>Delete model：<br>QDD Pro-NE30-30-70<br>QDD Pro-PR60-30-90<br>QDD Pro-NU80-30-110</td></tr><tr><td>V1.0.5</td><td>2019-6-19</td><td>Delete model:<br>QDD Pro-PR60-30-80<br>QDD-NE30-6<br>QDD-PR60-6</td></tr><tr><td>V1.0.4</td><td>2019-5-15</td><td>update model</td></tr><tr><td>V1.0.3</td><td>2019-4-15</td><td>Modify the schematic picture</td></tr><tr><td>V1.0.2</td><td>2019-4-9</td><td>Add model：<br>DD-EL20</td></tr><tr><td>V1.0.1</td><td>2019-4-4</td><td>Delete model：<br>QDD-PR60-8<br>QDD-PR60-64 <br>QDD-NU80-8 <br>QDD-NU80-64<br>Add model：<br>QDD-PR60-6 <br>QDD-PR60-36 <br>QDD-8108-6 <br>QDD-NU80-36</td></tr><tr><td>V1.0.0</td><td>2018-11-12</td><td>The first version</td></tr></tbody></table>
+<table class="tableizer-table"><thead><tr class="tableizer-firstrow" style="background: PaleTurquoise; color: black;width:500px"><th>Version</th><th>Date</th><th>Modify content</th></tr></thead><tbody><tr><td>V1.0.7</td><td>2019-7-23</td><td>Add model：<br>QDD-C-EL20-36<br>QDD-C-NE30-36<br>QDD-C-PR60-36</td></tr><tr><td>V1.0.6</td><td>2019-6-28</td><td>Delete model：<br>QDD Pro-NE30-30-70<br>QDD Pro-PR60-30-90<br>QDD Pro-NU80-30-110</td></tr><tr><td>V1.0.5</td><td>2019-6-19</td><td>Delete model:<br>QDD Pro-PR60-30-80<br>QDD-NE30-6<br>QDD-PR60-6</td></tr><tr><td>V1.0.4</td><td>2019-5-15</td><td>update model</td></tr><tr><td>V1.0.3</td><td>2019-4-15</td><td>Modify the schematic picture</td></tr><tr><td>V1.0.2</td><td>2019-4-9</td><td>Add model：<br>DD-EL20</td></tr><tr><td>V1.0.1</td><td>2019-4-4</td><td>Delete model：<br>QDD-PR60-8<br>QDD-PR60-64 <br>QDD-NU80-8 <br>QDD-NU80-64<br>Add model：<br>QDD-PR60-6 <br>QDD-PR60-36 <br>QDD-8108-6 <br>QDD-NU80-36</td></tr><tr><td>V1.0.0</td><td>2018-11-12</td><td>The first version</td></tr></tbody></table>
