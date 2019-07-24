@@ -2,7 +2,7 @@
 
 [Main Page](index.md)
 
-[Getting Started](index.html#!pages/about.md#Getting_Started)
+[Getting Started](index.html#!index.md##Getting_Started)
 
 [Learning](gimmicks1.md)
 
