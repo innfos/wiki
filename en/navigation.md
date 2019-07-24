@@ -1,9 +1,8 @@
 # INNFOS Wiki
 
-
 [Main Page](index.md)
 
-[Getting Started](gimmicks.md)
+[Getting Started](index.html#!pages/about.md#Getting_Started)
 
 [Learning](gimmicks1.md)
 
