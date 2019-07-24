@@ -69,7 +69,7 @@ Note: 必须先断电然后再插拔部件.  否则可能损坏部件.</br>请�
 <img src="../img/02can.jpg" style="width:600px"> 
 
 *   将执行器综合线缆的一端剪开
-红色粗线为电源正极线；黑色粗线为电源负极线，
+红色粗线为电源正极线,黑色粗线为电源负极线;
 将双绞屏蔽线剪开，其中红色细线为 CAN_H;黑色细线为 CAN_L; 银色细线为CAN_GND。
 
 <img src="../img/03can.jpg" style="width:600px"> 
