@@ -87,17 +87,17 @@ Common problems
 
 *   Yes. For QDD-NE30-36, the output of the reducer rotates by 10 degrees when the input of it makes one revolution</br>
 
-**Can the motor in current mode recognize if a current is sent every two milliseconds？**
+**In current mode, can the motor recognize it that if a current is sent every two milliseconds?**
 
-*   Yes, but if there are too many, it may cannot be connected.
+*    Yes, but too many number of connections may not be recognized.
 
-**What is the speed unit that the motor reads out?**
+**What is the speed unit that the motor reads?**
 
-*   rpm, Revolutions per minute</br>
+*    Rpm, Revolutions per minute.
 
-**Is the speed displayed by the upper Machine controlling the rotor speed?**
+**Is the speed displayed by the upper computer the rotor speed?**
 
-*   Yes, to calculate the output speed need proportional conversion</br>
+*    Yes. For models with reducer, the output speed is counted according to the reduction ratio.
 
 **The stall energy setting does not setted in?**
 
