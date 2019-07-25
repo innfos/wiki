@@ -249,7 +249,7 @@ Note:
 
 ## Appendix C：Alarm instruction list
 
-<table style="width:600px"><thead><tr style=background:PaleTurquoise><th>Command character</th><th>Command character</th></tr></thead><tbody><tr><td>0x0001</td><td>Overvoltage abnormality</td></tr><tr><td>0x0002</td><td>Undervoltage abnormality</td></tr><tr><td>0x0004</td><td>Abnormal blocking</td></tr><tr><td>0x0008</td><td>Overheating abnormality</td></tr><tr><td>0x0010</td><td>Abnormal read and write parameters</td></tr><tr><td>0x0020</td><td>Multi-turn count abnormality</td></tr><tr><td>0x0040</td><td>Inverter temperature sensor is abnormal</td></tr><tr><td>0x0080</td><td>communication is abnormal</td></tr><tr><td>0x0100</td><td>communication is abnormal</td></tr><tr><td>0x0200</td><td>Position mode step greater than 1</td></tr><tr><td>0x0400</td><td>DRV protection</td></tr><tr><td>other</td><td>Device exception</td></tr><tr><td>explaination</td><td>Multiple errors can be alarmed at the same time. If the return data is 0X05, the error is 0X01 overvoltage abnormality and 0004 blocked abnormality.</td></tr></tbody></table>
+<table style="width:600px"><thead><tr style=background:PaleTurquoise><th>Command character</th><th>Command character</th></tr></thead><tbody><tr><td>0x0001</td><td>Overvoltage Error</td></tr><tr><td>0x0002</td><td>Undervoltage Error</td></tr><tr><td>0x0004</td><td>Abnormal blocking</td></tr><tr><td>0x0008</td><td>Overheating Error</td></tr><tr><td>0x0010</td><td>Read and Write Error</td></tr><tr><td>0x0020</td><td>Multi-turn count Error</td></tr><tr><td>0x0040</td><td>Inverter temperature sensor error</td></tr><tr><td>0x0080</td><td>communication is abnormal</td></tr><tr><td>0x0100</td><td>Motor tempuature sensor error</td></tr><tr><td>0x0200</td><td>Step is too big</td></tr><tr><td>0x0400</td><td>DRV protection Error</td></tr><tr><td>other</td><td>Device exception</td></tr><tr><td>explaination</td><td>Multiple errors can be alarmed at the same time. If the return data is 0X05, the error is 0X01 overvoltage abnormality and 0004 blocked abnormality.</td></tr></tbody></table>
 
 
 ## Appendix D: Command Sending and IQ Value Conversion Method
@@ -260,7 +260,7 @@ Note:
 
 * Correspondingly, if the current or speed mode settings commands need to be sent,the parameter values need to be convert firstly (divided by the corresponding maximum value), to get a number in the range of -1 to 1, and then perform IQ conversion. The steps and methods for sending commands are the same as the position mode. Note that the data format used by each command, if it's in IQ8 format, convert the 2^24 in the formula to 2^8 and then convert it.
 
-## Appendix D: Version Change Record
+## Version Change Record
 
 **The following table briefly describes the version change record.**
 
