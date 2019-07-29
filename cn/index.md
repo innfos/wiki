@@ -56,7 +56,7 @@
   
 ### 配件
   * [ECB & HUB](pages/ECB&HUB_v2_2.md)
-  * [ECB配件](pages/ECB配件_v1_0.md)  <span style="color:red"> NEW！</span>
+  * [SCA其他配件](pages/SCA其他配件_v1_0.md) 
  
   
 ----
