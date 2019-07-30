@@ -2,7 +2,7 @@
 ## QDD Lite-PR60-36工程参数图[单位：毫米]
 ![QDD Lite-PR60-36]( ../img/Qdd_C_PR60_36_v1_8三视图.png ) 
 ### 3D 模型
-[模型文件]( ../img/QDD-C-PR60-36_v1_8.step.zip )
+[模型文件]( ../img/QDD Lite-PR60-36_v1_8.step.zip )
 
 
 ## QDD Lite-PR60-36参数
