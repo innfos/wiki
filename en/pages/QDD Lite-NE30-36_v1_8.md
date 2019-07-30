@@ -2,7 +2,7 @@
 ## QDD Lite-NE30-36 Parameter Diagram[mm]
 ![QDD Lite-NE30-36]( ../img/Qdd_C_NE30_36_v1_8sanshitu.png )
 ### 3D model
-[Model file]( ../img/QDD-C-NE30-36_v1_8.step.zip )
+[Model file]( ../img/QDD Lite-NE30-36_v1_8.step.zip )
 
 ## QDD Lite-NE30-36 Parameter
 
