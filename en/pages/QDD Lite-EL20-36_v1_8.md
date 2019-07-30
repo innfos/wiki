@@ -2,7 +2,7 @@
 ## QDD Lite-EL20-36 Parameter Diagram[mm]
 ![QDD Lite-EL20-36]( ../img/Qdd_C_EL20_36_v1_8sanshitu.png ) 
 ### 3D model 
-[Model file]( ../img/QDD-C-EL20-36_v1_8.step.zip )
+[Model file]( ../img/QDD Lite-EL20-36_v1_8.step.zip )
 
 
 ## QDD Lite-EL20-36 Parameter
