@@ -17,4 +17,4 @@
 ## Version Updating Records
 
 
-<table style="width:400px"><thead><tr style="background:PaleTurquoise"><th style="width:100px">Version number</th><th style="width:150px">Update time</th><th style="width:150px">Update content</th></tr></thead><tbody><tr><td>v1.8.0</td><td>2019.06.20</td><td>Full text added</th></tr></thead><tbody><tr><td>v1.0.0</td><td>2019.04.11</td><td>Full text added</td></tbody></table>
+<table style="width:500px"><thead><tr style="background:PaleTurquoise"><th style="width:100px">Version number</th><th style="width:150px">Update time</th><th style="width:3800px">Update content</th></tr></thead><tbody><tr><td>v1.8.1</td><td>2019.07.30</td><td>Updated the values of no load speed <br>Updated the values of norminal speed <br>Updated the values of nominal torque <br>Updated the values of peak torque <br>Updated the values of torque coefficient</th></tr></thead><tbody><tr><td>v1.8.0</td><td>2019.06.20</td><td>Full text added</th></tr></thead><tbody><tr><td>v1.0.0</td><td>2019.04.11</td><td>Full text added</td></tbody></table>
