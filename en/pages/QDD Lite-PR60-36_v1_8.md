@@ -2,7 +2,7 @@
 ## QDD Lite-PR60-36 Parameter Diagram[mm]
 ![QDD Lite-PR60-36]( ../img/Qdd_C_PR60_36_v1_8sanshitu.png ) 
 ### 3D model 
-[Model file]( ../img/QDD-C-PR60-36_v1_8.step.zip )
+[Model file]( ../img/QDD Lite-PR60-36_v1_8.step.zip )
 
 
 ## QDD Lite-PR60-36 Parameter
