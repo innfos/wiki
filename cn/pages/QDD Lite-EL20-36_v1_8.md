@@ -2,7 +2,7 @@
 ## QDD Lite-EL20-36工程参数图[单位：毫米]
 ![QDD Lite-EL20-36]( ../img/Qdd_C_EL20_36_v1_8三视图.png ) 
 ### 3D 模型
-[模型文件]( ../img/QDD-C-EL20-36_v1_8.step.zip )
+[模型文件]( ../img/QDD Lite-EL20-36_v1_8.step.zip )
 
 
 ## QDD Lite-EL20-36参数
