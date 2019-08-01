@@ -105,6 +105,6 @@ Note: 以下型号SCA数据正在更新中，更多详情请咨询商务团队�
 版本信息
 ----------------------
 
-  * 如果我们停止提供的产品有任何问题，请与我们联系。
+  * 如果对我们停止提供的产品有任何问题，请与我们联系。
 
 <table class="tableizer-table"><thead><tr class="tableizer-firstrow" style="background: PaleTurquoise; color: black;width:500px"><th>版本</th><th>更新时间</th><th>更新内容</th></tr></thead><tbody><tr><td>V1.0.8</td><td>2019-7-29</td><td>添加SCA其他配件</td></tr><tr><td> V1.0.7 </td><td>2019-7-23</td><td>增加型号：<br>QDD Lite-EL20-36<br>QDD Lite-NE30-36<br>QDD Lite-PR60-36</td></tr> <tr><td>V1.0.6</td><td>2019-6-28</td><td>删除型号：<br>QDD Pro-NE30-30-70<br>QDD Pro-PR60-30-90<br>QDD Pro-NU80-30-110</td></tr><tr><td>V1.0.5</td><td>2019-6-19</td><td>删除型号：<br>QDD Pro-PR60-30-80<br>QDD-NE30-6<br>QDD-PR60-6</td></tr><tr><td>V1.0.4</td><td>2019-5-15</td><td>型号更新</td></tr><tr><td>V1.0.3</td><td>2019-4-15</td><td>修改图片</td></tr><tr><td>V1.0.2</td><td>2019-4-9</td><td>增加型号：<br>DD-EL20</td></tr><tr><td>V1.0.1</td><td>2019-4-4</td><td>删除型号：<br>QDD-PR60-8<br>QDD-PR60-64 <br>QDD-NU80-8 <br>QDD-NU80-64<br>增加型号：<br>QDD-PR60-6 <br>QDD-PR60-36 <br>QDD-NU80-6 <br>QDD-NU80-36</td></tr><tr><td>V1.0.0</td><td>2018-11-12</td><td>第一个版本</td></tr></tbody></table>
