@@ -1,4 +1,4 @@
-c'le以太网通信SDK(v4.0.0)
+以太网通信SDK(v4.0.0)
 =========
 
 ## 介绍
@@ -119,8 +119,7 @@ $./02a_enableSingleActuator
 
 **代码说明**
 
-*   查找完已连接的所有执行器后,可使用`getActuatorIdArray`获取执行器ID数组,不同于`UnifiedID`,执行器ID不包含执行器通信IP地址信息，
-		如果不存在不同IP地址下有相同ID的执行器，推荐直接使用执行器ID进行操作
+*   查找完已连接的所有执行器后,可使用`getActuatorIdArray`获取执行器ID数组,不同于`UnifiedID`,执行器ID不包含执行器通信IP地址信息，如果不存在不同IP地址下有相同ID的执行器，推荐直接使用执行器ID进行操作
 
 ```cpp
 //Gets an array of all actuator IDs
@@ -366,14 +365,14 @@ $./05a_feedback_sync
 
 **代码说明**
 
-*   异步获取执行器参数需要有三部分工作，第一部分注册回调函数，该回调函数再请求参数返回值会被调用，addParaRequestCallback支持函数指针和std::function两种方式传入回调函数。
+*   异步获取执行器参数需要有三部分工作，第一部分注册回调函数，该回调函数再请求参数返回值会被调用，`addParaRequestCallback`支持函数指针和std::function两种方式传入回调函数。
 
 ```cpp
 //Add an actuator request parameter callback which will be invoked when the parameter request returns
 pController->addParaRequestCallback(paramFeedback);
 ```
 
-*   异步获取执行器参数的回调函数有三个变量，第一个变量ActuatorController::UnifiedID是执行器uID,代表是该ID的执行器请求结果返回，第二个变量是paramType参数类型，代表返回的参数是哪种参数，关于参数种类请参考actuatordefine.h中的ActuatorAttribute，第三个变量就是该执行此类参数的参数值
+*   异步获取执行器参数的回调函数有三个变量，第一个变量`ActuatorController::UnifiedID`是执行器uID,代表是该ID的执行器请求结果返回，第二个变量`paramType`是参数类型，代表返回的参数是哪种参数，关于参数种类请参考`actuatordefine.h`中的`ActuatorAttribute`，第三个变量就是该执行此类参数的参数值
 
 ```cpp
 void paramFeedback(ActuatorController::UnifiedID uID,uint8_t paramType,double paramValue)
@@ -396,7 +395,8 @@ void paramFeedback(ActuatorController::UnifiedID uID,uint8_t paramType,double pa
 ```
 
 
-*  第二部分工作是请求执行器参数，requestCVPValue会请求执行器的电流、速度和位置，该函数只发送请求，不等待请求返回。
+*  第二部分工作是请求执行器参数，`requestCVPValue`会请求执行器的电流、速度和位置，该函数只发送请求，不等待请求返回。
+
 ```cpp
 //Asynchronous request executor current, velocity, poistion, and when the request returns,
 //the callback function is triggered by a polling callback event. This function does not block.
@@ -404,7 +404,7 @@ pController->requestCVPValue(idArray.at(0));
 
 ```
 
-*  第三部分工作是轮询请求返回结果，即调用ActuatorController::processEvents()，该函数会轮询请求返回结果，当请求返回后调用已经注册的回调函数。
+*  第三部分工作是轮询请求返回结果，即调用`ActuatorController::processEvents()`，该函数会轮询请求返回结果，当请求返回后调用已经注册的回调函数。
 
 ```cpp
 //Event polling, polling callback events, event triggering calls to the corresponding callback function
@@ -546,7 +546,7 @@ pController->requestCVPValue(idArray.at(0));
 
 *   本 sdk 遵循 `c++11` 标准，所以在构建项目之前请确认编译选项支持 `c++11`（比如 gcc 中使用 -std=c++11） ;
 *   将 sdk 集成到项目中的基本步骤（最好先参考 example 中的 CMakeLists.txt） :
-*   将 sdk/include、 sdk/include/asio 加入到项目的包含目录，用于关联共享库中的方法 ;
+*   将 sdk/include、 加入到项目的包含目录，用于关联共享库中的方法 ;
 *   将库文件目录 sdk/lib/linux_x86_64（windows 目录为 sdk/lib/debug 和 sdk/lib/release），以便可执行文件能链接到共享库，并保证运行时能够关联到共享库；
 *   将必要的元素加入到构建过程中（比如 CMake 中的 target_link_libraries）
 
@@ -599,8 +599,6 @@ pController->requestCVPValue(idArray.at(0));
 
 ## 版本信息
 
-<table class="tableizer-table">
-<thead><tr class="tableizer-firstrow" style=background:PaleTurquoise><th>版本</th><th>日期</th><th>修改内容</th></tr></thead><tbody>
- <tr><td>V2.0.0</td><td>2019-03-09</td><td>第二版本</td></tr> <tr><td>V1.0.0</td><td>2018-04-17</td><td>第一版本</td></tr></tbody></table>
+<table style="width:400px"><thead><tr style="background:PaleTurquoise"><th style="width:100px">版本号</th><th style="width:150px">更新时间</th><th style="width:150px">更新内容</th></tr></thead><tbody><tr><td>v4.0.0</td><td>2019.08.05</td><td>全文添加</th></tr></thead><tbody><tr><td><a href="http://innfos.com/wiki/cn/index.html#!pages/QDD-NU80-6_v3_2.md">v3.4.0 </a></td><td>2019.06.06</td><td>全文添加</th></tr></thead></tbody></table>
 
 
