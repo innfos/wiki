@@ -1,4 +1,4 @@
-以太网通信SDK(v4.0.0)
+c'le以太网通信SDK(v4.0.0)
 =========
 
 ## 介绍
@@ -58,386 +58,362 @@ $ make
 *   打开终端并进入bin目录，输入命令
 
 ```bash
-$./lookupActuators -e
+$./01_lookupActuators
 ```
-*   此窗口会显示当前已连接的执行器数量，可以`ctrl+c`结束程序
+*   此窗口会显示当前已连接的执行器数量，示例中连接了一个ID为1的执行器，其通信IP地址为192.168.1.30
 
-<img src="../img/022.png" style="width:600px">
+<img src="../img/sdkv4.0.0/022.png" style="width:600px">
 
 **代码说明**
 
-*   根据不同的参数选择不同的通信方式，默认为以太网通信。
+*   初始化执行器控制器。
 
 Note:必须先初始化控制器，才能进行其他操作
 
 ``` cpp
-//初始化控制器
-if(strcmp(argv[1],"-s")==0)
-    ActuatorController::initController(Actuator::Via_Serialport);
-else if(strcmp(argv[1],"-e")==0)
-    ActuatorController::initController();
+ActuatorController * pController = ActuatorController::initController();
 ```
-*   关联操作完成信号，如此用户操作成功以后，会触发该信号，根据不同的`operationType`，进行相应操作，本例中会在自动识别完成后，打印出识别到的执行器数量。
+*   查找已连接执行器，需要先定义一个错误变量，用于查找不到执行器时返回相应错误代码。`lookupActuators`函数会返回所有已连接执行器的`UnifiedID`数组。
 
 ``` cpp
-//关联控制器的操作信号
-int nOperationConnection = pController->m_sOperationFinished->s_Connect([=](uint8_t nDeviceId,uint8_t operationType){
-   switch (operationType) {
-   case Actuator::Recognize_Finished://自动识别完成
-       if(pController->hasAvailableActuator())
-        {
-            vector<uint8_t> idArray = pController->getActuatorIdArray();
-            cout <<"Number of connected actuators:" << idArray.size() << endl;
-        }
-       break;
-   default:
-       break;
-    }
-});
-```
-*   完整的应用必须要关联错误信号，以便在执行器内部发生错误时及时收到反馈并作出相应处理，`nDeviceId`为0时，错误不针对特定的执行器（例如未连接的错误）
-
-```cpp
-//关联错误信号
-int nErrorConnection = pController->m_sError->s_Connect([=](uint8_t nDeviceId,uint16_t nErrorType,string errorInfo){
-    if(nDeviceId==0)
-    {
-        cout <<"Error: " << (int)nErrorType <<" " << errorInfo << endl;
-    }
-    else
-    {
-        cout <<"Actuator " << (int)nDeviceId <<" " <<"error " << (int)nErrorType <<" " << errorInfo << endl;
-    }
-});
+//ec Define an error type, ec==0x00 means no error, ec will be passed to pcontroller-> lookupActuators(ec) by reference,
+//when the error occurs, ec value will be modified by SDK to the corresponding error code
+Actuator::ErrorsDefine ec;
+//Find the connected actuators and return the UnifiedID of all actuators found.
+//UnifiedID is a structure composed of the actuator ID (actuatorID) and IP(ipAddress) of ECB(ECU)
+std::vector<ActuatorController::UnifiedID> uIDArray = pController->lookupActuators(ec);
 ```
 
-*   关联好必要的信号以后，可以进行相应操作，第一步的操作就是识别已连接的执行器。
+*   输出所有已连接的执行器的`UnifiedID`信息,如果没有找到执行器，输出错误代码
 
-```cpp
-//自动识别已连接执行器
-pController->autoRecoginze();
-```
-
-*   事件循环是保证sdk内部通讯进行的必要步骤，务必要保证事件循环不被阻塞，sdk才能触发各种信号。
-
-```cpp
-//执行控制器事件循环
-while (!bExit)
+``` cpp
+//If the size of the uIDArray is greater than zero, the connected actuators have been found
+if(uIDArray.size() > 0)
 {
-    ActuatorController::processEvents();
+    for(auto uID : uIDArray)
+    {
+        cout << "Actuator ID: "<<(int)uID.actuatorID << " IP address: " << uID.ipAddress.c_str() << endl;
+    }
 }
-```
-
-*   最后在程序结束前，断开和所有信号的关联
-
-```cpp
-//断开信号连接
-pController->m_sOperationFinished->s_Disconnect(nOperationConnection);
-pController->m_sError->s_Disconnect(nErrorConnection);
+else
+{
+    //ec=0x803 Communication with ECB(ECU) failed
+    //ec=0x802 Communication with actuator failed
+    cout << "Connected error code:" << hex << ec << endl;
+}
 
 ```
 
-##### 监测执行器状态
+
+##### 使能单个执行器
 
 *   打开终端，进入`example/bin`目录，输入命令
 
 ```bash
-$./monitorActuator -e
+$./02a_enableSingleActuator
 ```
 
-*   其中`Actuator ID`为执行器id,`attribute ID`为监测的执行器属性Id，`attribute value`为对
-    应的属性值，可以`ctrl+c`结束程序
+*   使能单个执行器，使能后执行器指示灯会变成绿色
 
-<img src="../img/023.png" style="width:600px">
+<img src="../img/sdkv4.0.0/023.png" style="width:600px">
 
 **代码说明**
 
-*   自动识别成功后自动开启所有执行器，每个执行器开启成功后都会触发`Actuator::Launch_Finished`信号，当所有执行器都开启以后，开始自动刷新，读取执行器数据。
+*   查找完已连接的所有执行器后,可使用`getActuatorIdArray`获取执行器ID数组,不同于`UnifiedID`,执行器ID不包含执行器通信IP地址信息，
+		如果不存在不同IP地址下有相同ID的执行器，推荐直接使用执行器ID进行操作
 
 ```cpp
-int nLaunchedActuatorCnt =0;
-//关联控制器的操作信号
-int nOperationConnection = pController->m_sOperationFinished->s_Connect([&](uint8_t nDeviceId,uint8_t operationType){
-   switch (operationType) {
-   case Actuator::Recognize_Finished://自动识别完成
-       if(pController->hasAvailableActuator())
-        {
-           vector<uint8_t> idArray = pController->getActuatorIdArray();
-           cout <<"Number of connected actuators:" << idArray.size() << endl;
-           for (uint8_t id: idArray) {
-               if(pController->getActuatorAttribute(id,Actuator::ACTUATOR_SWITCH)==Actuator::ACTUATOR_SWITCH_OFF)
-                {//如果执行器处于关机状态，启动执行器
-                    pController->launchActuator(id);
-                }
-               else
-                {
-                    ++ nLaunchedActuatorCnt;
-                   if(nLaunchedActuatorCnt == pController->getActuatorIdArray().size())//所有执行器都已启动完成
-                    {
-                        autoRefresh();
-                    }
-                }
-            }
-        }
-       break;
-   case Actuator::Launch_Finished:
-       if(++nLaunchedActuatorCnt == pController->getActuatorIdArray().size())//所有执行器都已启动完成
-        {
-            autoRefresh();
-        }
-       break;
-   default:
-       break;
-    }
-});
+//Gets an array of all actuator IDs
+vector<uint8_t> idArray = pController->getActuatorIdArray();
 ```
 
-*   为了监测执行器的属性变化，需关联信号`m_sActuatorAttrChanged`，当用户请求读取执行器的属性后，成功返回会触发该信号
+*   使能一个执行器，成功返回true，否则返回false
     
 	
 ```cpp
-//关联控制器控制的执行器属性变化信号
-int nAttrConnection =pController->m_sActuatorAttrChanged->s_Connect([=](uint8_t nDeviceId,uint8_t nAttrId,double value){
-    cout <<"Actuator ID: " << (int)nDeviceId << endl;
-    cout <<"atribute ID: " << (int)nAttrId << endl;
-    cout <<"atribute value: " << value << endl;
-    cout <<"----------------------------"<<endl;
-});
+//Enable an actuator
+if(pController->enableActuator(idArray.at(0)))
+{
+    cout << "Enable actuator " << (int)idArray.at(0) << " successfully!" << endl;
+}
 ```
 
-#### 控制执行器
+#### 使能多个个执行器
 
 *   打开终端，进入`example/bin`目录，输入命令
 
 ```bash
-$./operateActuator -e
+$./02b_enableActuatorsInBatch 
 ```
 
-<img src="../img/024.png" style="width:600px">
+<img src="../img/sdkv4.0.0/024.png" style="width:600px">
 
-
-*   表示执行器已经找到，输入命令`l 0`，该命令会启动所有已连接的执行器，如果启动成功，执行器会有绿色指示灯闪烁，表示已经启动成功，终端窗如下显示
-
-<img src="../img/025.png" style="width:600px">
-
-*   此时可激活执行器对应模式，比如输入` a 6`可以激活profile position模式，再输入`p 5`，
-
-    执行器会转动到5圈的位置；输入`a 7`可以激活`profile velocity`模式，再输入`v 500`， 执行器将以500RPM的速度转动，停止转动输入`v 0`,；输入`a 1`可以激活电流模式，再输入 `c 0.6`，执行器将以恒定0.6A的电流转动（如果执行器不动，可用手轻轻转动一下执行器）， 可以`ctrl+c`以后再`ctrl+d`结束程序（因为有多线程等待键盘输入）
-    
-<img src="../img/026.png" style="width:600px">
      
 
 **代码说明**
 
-*   成功启动执行器后，可对执行器进行操作。`getActuatorIdArray`可获取所有执行器的短id，用户可以指定其中任意id并进行操作，执行器有速度、电流、位置等多种模式（`Actuator::ActuatorMode`），必须先激活对应的模式才能进行相应操作。
+*   使能已连接的所有执行器，所有执行器使能后返回true，否则返回false
 
 ```cpp
- vector<uint8_t> idArray = controllerInst->getActuatorIdArray();
-switch (directive)
+//Enable all connected actuators
+if(pController->enableActuatorInBatch(uIDArray))
 {
-case'a'://激活执行器指定模式，指令格式：a 模式id（Actuator::ActuatorMode）
-    controllerInst->activeActuatorMode(idArray, Actuator::ActuatorMode((int)value));
-   break;
-case'p'://指定执行器位置，指令格式：p 圈数（-127到127）
-   for (int i =0; i < idArray.size(); ++i)
-    {
-        controllerInst->setPosition(idArray.at(i), value);
-    }
-   break;
-case'c'://指定执行器电流，指令格式：c 电流值（A）
-   for (int i =0; i < idArray.size(); ++i)
-    {
-        controllerInst->setCurrent(idArray.at(i), value);
-    }
-   break;
-case'v'://指定执行器速度，指令格式：v 速度值（RPM）
-   for (int i =0; i < idArray.size(); ++i)
-    {
-        controllerInst->setVelocity(idArray.at(i), value);
-    }
-   break;
-case'l'://启动指定执行器，指令格式：l 执行器id（id为0启动所有执行器）
-   if(uint8_t(value)==0)
-    {
-        controllerInst->launchAllActuators();
-    }
-   else
-    {
-        controllerInst->launchActuator(uint8_t(value));
-    }
-   //cout << "launch"<<endl;
-   break;
-case's'://关闭指定执行器，指令格式：l 执行器id（id为0启动所有执行器）
-   if(uint8_t(value)==0)
-    {
-        controllerInst->closeAllActuators();
-    }
-   else
-    {
-        controllerInst->closeActuator(uint8_t(value));
-    }
-   //cout << "close"<<endl;
-   break;
-default:
-   break;
+    cout << "All actuators have been enabled successfully! " << endl;
 }
+
 ```
 
-#### 控制器参数调整
+#### 执行器电流控制
 
 *   打开终端，进入`example/bin`目录，输入命令
 
 ```bash
-$./tuneActuator -e
+$./03a_currentControl
 ```
 
-*   此示例程序自动启动执行器并将位置环输出设置为3000RPM,速度环的电流最大输出为16.5A,
-
-    如果使用`profile position`模式转动执行器，执行器的最大速度不会超过3000RPM;如果 使用`profile velocity`模式转动执行器，执行器最大电流不会超过16.5A，可以`ctrl+c`结束程序 
+*   此示例程序将在电流模式下控制执行器
     
-<img src="../img/027.png" style="width:600px"> 
+<img src="../img/sdkv4.0.0/025.png" style="width:600px"> 
     
 **代码说明**
     
 
-*   此示例程序自动启动执行器，启动成功后可调整执行器属性，速度环电流输出可调整速度环下的执行器扭矩，位置环速度输出可调整位置环下速度的大小。
+*   此示例程序自动使能执行器，使能执行器后，激活执行器电流模式，将给执行器指定0.6A的电流，1s后指定-0.6A的电流，最后失能执行器。`Actuator::Mode_Cur`请参考`actuatorDefine.h`中的`ActuatorMode`。
     
-    
+       
 ```cpp
-//执行器属性调整,调整成功，会触发执行器属性变化信号
-void tuneActuator()
-{
-    ActuatorController * pController = ActuatorController::getInstance();
-    vector<uint8_t> idArray = pController->getActuatorIdArray();
-   for (uint8_t id: idArray) {
-       //调整执行器速度环最小电流输出
-        pController->setMinOutputCurrent(id,-10);
-       //调整执行器速度环最大电流输出
-        pController->setMaxOutputCurrent(id,10);
-       //调整执行器位置环最小速度输出
-        pController->setMinOutputVelocity(id,-2000);
-       //调整执行器位置环最大速度输出，最大值要大于最小值
-        pController->setMaxOutputVelocity(id,2000);
-       //调整执行器Mode_Profile_Pos的最大速度（RPM）
-        pController->setActuatorAttribute(id,Actuator::PROFILE_POS_MAX_SPEED,1000);
-    }
-}
+//Enable an actuator,If there are no actuators with the same ID under multiple IP addresses, you can omit the ipAddress parameter
+pController->enableActuator(actuator.actuatorID,actuator.ipAddress);
+//Activate current mode
+pController->activateActuatorMode(actuator.actuatorID,Actuator::Mode_Cur);
+cout << "set current to 0.6A" << endl;
+pController->setCurrent(actuator.actuatorID,0.6);
+std::this_thread::sleep_for(std::chrono::seconds(1));
+cout << "set current to -0.6A" << endl;
+pController->setCurrent(actuator.actuatorID,-0.6);
+std::this_thread::sleep_for(std::chrono::seconds(1));
 ```
 
-#### 执行器归零
+#### 执行器速度控制
 
 *   打开终端，进入`example/bin`目录，输入命令
 
 ```bash
-$./homingActuator -e
+$./03b_velocityControl 
 ```
 
+*   此示例程序自动使能执行器，使能成功后激活执行器的profile velocity模式，然后发送速度指令，执行器将以500RPM的速度转动3s，再以-500RPM的速度转动3s，最后执行器失能
 
-*   表示已经将执行器当前位置设置为零位，范围是-9.5R到9.5R，并且开启了位置限制，如果`profile position`模式下，输入此范围之外的位置，执行器不会转动，可以`ctrl+c`结束程序 
-
-<img src="../img/028.png" style="width:600px">
+<img src="../img/sdkv4.0.0/026.png" style="width:600px">
 
 **代码说明**
 
-*   执行器自动启动完成后，`setHomingPosition`会将当前位置`getActuatorAttribute(id,Actuator::ACTUAL_POSITION)`设置成0位，`setMaxPosLimit`和`setMinPosLimit`会设置最大和最小的位置限制，`setActuatorAttribute(id,Actuator::POS_OFFSET,0.5)`设置极限偏移。
+*   关于`Actuator::Mode_Profile_Vel`请参考`actuatorDefine.h`中的`ActuatorMode`
 	
 ```cpp
-    //执行器0位和限位调整
-void setActuatorLimitation()
-{
-    ActuatorController * pController = ActuatorController::getInstance();
-    vector<uint8_t> idArray = pController->getActuatorIdArray();
-   for (uint8_t id : idArray) {
-       //将执行器当前位置变成0位，并且最小和最大位置分别设置为-10,10,偏移设置为0.5，执行器的运动范围变成（-9.5,9.5）
-        pController->setHomingPosition(id,pController->getActuatorAttribute(id,Actuator::ACTUAL_POSITION));
-        pController->setMinPosLimit(id,-10);
-        pController->setMaxPosLimit(id,10);
-        pController->setActuatorAttribute(id,Actuator::POS_OFFSET,0.5);
-    }
-    bSetLimitation =true;
-}
+//Enable an actuator,If there are no actuators with the same ID under multiple IP addresses, you can omit the ipAddress parameter
+pController->enableActuator(actuator.actuatorID,actuator.ipAddress);
+//activate profile velocity mode
+pController->activateActuatorMode(actuator.actuatorID,Actuator::Mode_Profile_Vel);
+
+cout << "set velocity to 500RPM" << endl;
+pController->setVelocity(actuator.actuatorID,500);
+std::this_thread::sleep_for(std::chrono::seconds(3));
+cout << "set velocity to -500RPM" << endl;
+pController->setVelocity(actuator.actuatorID,-500);
+std::this_thread::sleep_for(std::chrono::seconds(3));
 ```
 
-*   参数设置完成，保存参数，否则，关机以后参数设置将全部丢弃
 
-```cpp
-pController->saveAllParams(nDeviceId);
-```
-
-#### 执行器长短id
+#### 执行器位置控制
 
 *   打开终端并进入`example/bin`目录，输入命令
 
 ```bash
-$./longIdAndByteId -e
+$./03c_positionControl
 ```
 
-*   可以进行长短id的获取以及相互转换，并且可以通过长id获取通信ip地址。
+*   此示例程序自动使能执行器，使能成功后激活执行器的profile position模式，然后发送位置指令，执行器将先转动到10R的位置，4s后再转动到-10R的位置，3s后失能执行器。
+
+<img src="../img/sdkv4.0.0/027.png" style="width:600px">
 
 **代码说明**
 
-*   信号变量以`L`结尾的标识该信号关联的是执行器长id，可以通过长id进行通信。长短id的区别在于长id包含了通信地址和短id，并且可以相互转换（如果不同的ip地址下有相同短id的执行器，短id转换长id会随机转换其中一个ip地址下的一个长id）。
+*   关于`Actuator::Mode_Profile_Pos`请参考`actuatorDefine.h`中的`ActuatorMode`
     
 
 ```cpp
-//关联控制器的longId操作信号
-int nOperationConnection = pController->m_sOperationFinishedL->s_Connect([&](uint64_t nDeviceId,uint8_t operationType){
-   switch (operationType) {
-   case Actuator::Recognize_Finished://自动识别完成
-       if(pController->hasAvailableActuator())
-        {
-           //获取longId数组
-            vector<uint64_t> longIdArray = pController->getActuatorLongIdArray();
-           //获取byteid数组
-            vector<uint8_t> idArray = pController->getActuatorIdArray();
-           for (uint64_t id: longIdArray) {
-           //获取长id中的通信ip地址
-                cout <<"Communication IP is " << pController->toString(id) << endl;
-               //longId转换成byteId
-                cout <<"Long id " << id <<" convert to byte id " << (int)pController->toByteId(id) << endl;
-            }
-           for(uint8_t id : idArray)
-            {
-               //byteId转换成longId
-                cout <<"Byte id " << (int)id <<" convert to long id " << pController->toLongId(id) << endl;
-            }
-        }
-       break;
-   default:
-       break;
-    }
-});
+//Enable actuator
+pController->enableActuator(actuator.actuatorID,actuator.ipAddress);
+//activate profile position mode
+pController->activateActuatorMode(actuator.actuatorID,Actuator::Mode_Profile_Pos);
+
+cout << "set position to 10 revolutions " << endl;
+pController->setPosition(actuator.actuatorID,10);
+std::this_thread::sleep_for(std::chrono::seconds(4));
+cout << "set position to -10 revolutions " << endl;
+pController->setPosition(actuator.actuatorID,-10);
+std::this_thread::sleep_for(std::chrono::seconds(3));
 ```
 
-#### 同步响应
+#### 执行器参数设置
 
 * 打开终端并进入`example/bin`目录，输入命令
 
 ```bash
-$./feedback_sync -e
+$./04_actuatorSetting 
 ```
 
-*   关联对应信号，在回调中进行操作属于异步响应，不会阻塞当前程序。同步响应，会阻塞当前程序，直到sdk返回结果，相比较而言，同步响应用法简单但是效率偏低，因为需要等待执行器响应（而且执行器部分操作没有同步响应，比如设置位置、速度、电流等）,如果对效率要求比较高，推荐使用异步响应。
+*   此示例程序自动使能执行器，使能成功后激活执行器的profile position模式，然后修改执行器参数，执行器将以不同的速度转动到指定位置。
+
+<img src="../img/sdkv4.0.0/028.png" style="width:600px">
 
 **代码说明**
 
-*   `getActuatorAttributeWithACK`和`setActuatorAttributeWithACK`是目前sdk提供的两个同步响应的接口，对应于`getActuatorAttribute`和`setActuatorAttribute`，可以同步获取或者设置执行器的属性，调用`getActuatorAttributeWithACK`和`setActuatorAttributeWithACK`会阻塞当前程序，直到有结果返回（不管成功或者失败）。
+*   使能执行器，使能成功后激活执行器的profile position模式
 
 ```cpp
-ActuatorController * pController = ActuatorController::getInstance();
-    vector<uint8_t> idArray = pController->getActuatorIdArray();
-   for (uint8_t id: idArray) {
-       bool bSuccess =false;
-       //读取当前电流，并等待返回，如果读取失败 bSuccess的值为false
-       double current = pController->getActuatorAttributeWithACK(id,Actuator::ACTUAL_CURRENT,&bSuccess);
-       if(bSuccess)
-            cout <<"current is " << current << endl;
-       //设置速度环最大电流输出，并等待返回，如果设置失败，bSuccess的值为false。（设置速度、位置、电流不能使用此接口）
-        bSuccess = pController->setActuatorAttributeWithACK(id,Actuator::VEL_OUTPUT_LIMITATION_MAXIMUM,10);
-       if(bSuccess)
-            cout <<"Set VEL_OUTPUT_LIMITATION_MAXIMUM to 10A" << endl;
-    }
+if(pController->enableActuator(actuatorID))
+{
+    cout << "Enable actuator " << (int)actuatorID << " successfully!" << endl;
+}
+//activate profile position mode
+pController->activateActuatorMode(actuatorID,Actuator::Mode_Profile_Pos);
 ```
+
+*   将执行器profile position模式下的加速度、减速度、最大速度分别设置300RPM/s,-300RPM/s,500RPM,然后执行器转动到-15R的位置，此时执行器转速较慢。
+
+```cpp
+//change acceleration to 300 RPM/s
+pController->setProfilePosAcceleration(actuatorID,300);
+//change deceleration to -300 RPM/s
+pController->setProfilePosDeceleration(actuatorID,-300);
+//change max velocity to 500 RPM
+pController->setProfilePosMaxVelocity(actuatorID,500);
+cout << "change position in low speed " << endl;
+pController->setPosition(actuatorID,-15);
+this_thread::sleep_for(std::chrono::seconds(5));
+```
+
+*   将执行器profile position模式下的加速度、减速度、最大速度分别设置1200RPM/s,-1200RPM/s,3000RPM,然后执行器转动到15R的位置，此时执行器转速较快。
+
+```cpp
+//change acceleration to 1200 RPM/s
+pController->setProfilePosAcceleration(actuatorID,1200);
+//change deceleration to -1200 RPM/s
+pController->setProfilePosDeceleration(actuatorID,-1200);
+//change max velocity to 3000 RPM/s
+pController->setProfilePosMaxVelocity(actuatorID,3000);
+cout << "change position in high speed " << endl;
+pController->setPosition(actuatorID,15);
+this_thread::sleep_for(std::chrono::seconds(4));
+
+```
+
+*   执行器参数修改后，需要保存参数，否则执行器失能后将丢弃所有参数修改
+
+```cpp
+//Save parameters,or you will lose all changes after disable the actuator
+if(pController->saveAllParams(actuatorID))
+{
+    cout << "Save parameters sucessfully!" << endl;
+}
+
+```
+
+#### 同步获取执行器参数
+
+* 打开终端并进入`example/bin`目录，输入命令
+
+```bash
+$./05a_feedback_sync
+```
+
+*   此示例程序自动使能执行器，使能成功后同步获取执行器的电流和位置。
+
+<img src="../img/sdkv4.0.0/029.png" style="width:600px">
+
+**代码说明**
+
+*   同步读取执行器的位置和电流，getPosition、getCurrent、getVelocity的第二个参数为true，sdk将发送读取对应执行器参数指令并等待返回，该函数会阻塞1-2ms，如果该参数为false，将会返回最近一次请求返回的结果（该结果跟执行器的实际参数可能不符）。
+
+```cpp
+/**
+ * Read the position of the actuator, if the second parameter is true, sdk will send the read position request to the actuator and wait for the return,
+ * otherwise, the result of the last request is returned immediately
+ **/
+double pos = pController->getPosition(actuatorID,true);
+/**
+ * Read the current of the actuator, if the second parameter is true, sdk will send the read current request to the actuator and wait for the return,
+ * otherwise, the result of the last request is returned immediately
+ **/
+double cur = pController->getCurrent(actuatorID,true);
+cout << "Actuator postion:" << pos << "R,current:" << cur << "A" <<endl;
+
+```
+
+#### 异步获取执行器参数
+
+* 打开终端并进入`example/bin`目录，输入命令
+
+```bash
+$./05a_feedback_sync
+```
+
+*   此示例程序自动使能执行器，使能成功后异步获取执行器的电流和位置，可以使用ctrl-c结束程序。
+
+<img src="../img/sdkv4.0.0/030.png" style="width:600px">
+
+**代码说明**
+
+*   异步获取执行器参数需要有三部分工作，第一部分注册回调函数，该回调函数再请求参数返回值会被调用，addParaRequestCallback支持函数指针和std::function两种方式传入回调函数。
+
+```cpp
+//Add an actuator request parameter callback which will be invoked when the parameter request returns
+pController->addParaRequestCallback(paramFeedback);
+```
+
+*   异步获取执行器参数的回调函数有三个变量，第一个变量ActuatorController::UnifiedID是执行器uID,代表是该ID的执行器请求结果返回，第二个变量是paramType参数类型，代表返回的参数是哪种参数，关于参数种类请参考actuatordefine.h中的ActuatorAttribute，第三个变量就是该执行此类参数的参数值
+
+```cpp
+void paramFeedback(ActuatorController::UnifiedID uID,uint8_t paramType,double paramValue)
+{
+    switch (paramType) {
+    case Actuator::ACTUAL_CURRENT:
+        cout << "Actuator " << (int)uID.actuatorID << " current is " << paramValue << "A"<<endl;
+        break;
+    case Actuator::ACTUAL_POSITION:
+        cout << "Actuator " << (int)uID.actuatorID << " position is " << paramValue << "R"<<endl;
+        break;
+    case Actuator::ACTUAL_VELOCITY:
+        cout << "Actuator " << (int)uID.actuatorID << " velocity is " << paramValue << "RPM"<<endl;
+        break;
+    default:
+        break;
+    }
+}
+
+```
+
+
+*  第二部分工作是请求执行器参数，requestCVPValue会请求执行器的电流、速度和位置，该函数只发送请求，不等待请求返回。
+```cpp
+//Asynchronous request executor current, velocity, poistion, and when the request returns,
+//the callback function is triggered by a polling callback event. This function does not block.
+pController->requestCVPValue(idArray.at(0));
+
+```
+
+*  第三部分工作是轮询请求返回结果，即调用ActuatorController::processEvents()，该函数会轮询请求返回结果，当请求返回后调用已经注册的回调函数。
+
+```cpp
+//Event polling, polling callback events, event triggering calls to the corresponding callback function
+ActuatorController::processEvents();.
+pController->requestCVPValue(idArray.at(0));
+```
+
+
+
 
 ### windows平台
 
@@ -453,12 +429,12 @@ ActuatorController * pController = ActuatorController::getInstance();
 *   其中源码路径就是目录结构中的`…\example`所在的路径，该目录下包含了CMakeLists.txt文件；构建路径可自行定义，用于生成工程文件两个路径配置完成后点击Generate按钮弹出如下界面
 
 
-<img src="../img/011.png" style="width:600px">
+<img src="../img/sdkv4.0.0/011.png" style="width:600px">
 
 
 *   如果红色框内不是64位生成器，点击下拉三角，选择64位生成器，然后点击Finish按钮，生成成功后就生成了Visual Studio的工程文件，可用Visual Studio打开编译。编译完整个工程，在工程目录下会生成一个bin目录，里面有Debug或者Release文件夹（对应于编译的版本），将目录结构中的`…\sdk\lib\windows_x64\debug`或`…\sdk\lib\windows_x64\release`中的文件复制到对应版本的bin下面的Debug或者Release目录中，双击该目录中的exe就可正常运行示例程序了。
 
-<img src="../img/012.png" style="width:600px">
+<img src="../img/sdkv4.0.0/012.png" style="width:600px">
 
 
 #### 示例程序测试
@@ -474,7 +450,7 @@ ActuatorController * pController = ActuatorController::getInstance();
 ```
 
 
-<img src="../img/013.png" style="width:600px">
+<img src="../img/sdkv4.0.0/013.png" style="width:600px">
 
 
 ##### 监测执行器状态
@@ -486,7 +462,7 @@ ActuatorController * pController = ActuatorController::getInstance();
 ```
 
 
-<img src="../img/014.png" style="width:600px">
+<img src="../img/sdkv4.0.0/014.png" style="width:600px">
 
 
 ##### 控制执行器
@@ -498,18 +474,18 @@ ActuatorController * pController = ActuatorController::getInstance();
 ./operateActuator.exe -e
 ```
 
-<img src="../img/015.png" style="width:600px">
+<img src="../img/sdkv4.0.0/015.png" style="width:600px">
 
 
-表示执行器已经找到，输入命令`l 0`，该命令会启动所有已连接的执行器，如果启动成功，执行器会有绿色指示灯闪烁，表示已经启动成功，cmd窗口如下显示
+表示执行器已经找到，输入命令`l 0`，该命令会使能所有已连接的执行器，如果使能成功，执行器会有绿色指示灯闪烁，表示已经使能成功，cmd窗口如下显示
 
-<img src="../img/016.png" style="width:600px">
+<img src="../img/sdkv4.0.0/016.png" style="width:600px">
 
 
 *   此时可激活执行器对应模式，比如输入 a 6可以激活profile position模式，再输入p 10，执行器会转动到10圈的位置；输入a 7可以激活profile velocity模式，再输入v 500，执行器将以500RPM的速度转动，停止转动输入v 0,；输入a 1可以激活电流模式，再输入c 0.6，执行器将以恒定0.6A的电流转动（如果执行器不动，可用手轻轻转动一下执行器），可以ctrl+c结束程序
 
 
-<img src="../img/017.png" style="width:600px">
+<img src="../img/sdkv4.0.0/017.png" style="width:600px">
 
 
 ##### 执行器器参数调整
@@ -520,9 +496,9 @@ ActuatorController * pController = ActuatorController::getInstance();
 ./tuneActuator.exe -e
 ```
 
-*   此示例程序自动启动执行器并将位置环输出设置为3000RPM,速度环的电流最大输出为16.5A,如果使用`profile position`模式转动执行器，执行器的最大速度不会超过3000RPM;如果使用`profile velocity`模式转动执行器，执行器最大电流不会超过16.5A，可以`ctrl+c`结束程序
+*   此示例程序自动使能执行器并将位置环输出设置为3000RPM,速度环的电流最大输出为16.5A,如果使用`profile position`模式转动执行器，执行器的最大速度不会超过3000RPM;如果使用`profile velocity`模式转动执行器，执行器最大电流不会超过16.5A，可以`ctrl+c`结束程序
 
-<img src="../img/018.png" style="width:600px">
+<img src="../img/sdkv4.0.0/018.png" style="width:600px">
 
 ##### 执行器归零
 
@@ -611,7 +587,7 @@ ActuatorController * pController = ActuatorController::getInstance();
 
 <table style="width:600px">
 <thead><tr class="tableizer-firstrow"><th colspan="2"style=background:PaleTurquoise>操作标识，标识操作完成，可用于判断执行器控制器的指令执行状态[OperationFlags]</th></tr></thead><tbody>
- <tr><td>指令符</td><td>说明</td></tr> <tr><td>Recognize_Finished</td><td>识别完成</td></tr> <tr><td>Launch_Finished</td><td>执行器启动完成（如果连接的是多个执行器，会触发多次启动完成信号）</td></tr> <tr><td>Close_Finished</td><td>执行器关闭完成（如果连接的是多个执行器，会触发多次关闭完成信号）</td></tr> <tr><td>Save_Params_Finished</td><td>执行器参数保存完成（如果连接的是多个执行器，会触发多次参数保存完成信号）</td></tr> <tr><td>Save_Params_Failed</td><td>执行器参数保存失败</td></tr> <tr><td>Attribute_Change_Finished</td><td>暂未实现</td></tr></tbody></table>
+ <tr><td>指令符</td><td>说明</td></tr> <tr><td>Recognize_Finished</td><td>识别完成</td></tr> <tr><td>Launch_Finished</td><td>执行器使能完成（如果连接的是多个执行器，会触发多次使能完成信号）</td></tr> <tr><td>Close_Finished</td><td>执行器关闭完成（如果连接的是多个执行器，会触发多次关闭完成信号）</td></tr> <tr><td>Save_Params_Finished</td><td>执行器参数保存完成（如果连接的是多个执行器，会触发多次参数保存完成信号）</td></tr> <tr><td>Save_Params_Failed</td><td>执行器参数保存失败</td></tr> <tr><td>Attribute_Change_Finished</td><td>暂未实现</td></tr></tbody></table>
 
 <table style="width:600px">
 <thead><tr class="tableizer-firstrow"><th colspan="2"style=background:PaleTurquoise>执行器模式，标识当前执行器的模式[ActuatorMode]</th></tr></thead><tbody>
