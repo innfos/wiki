@@ -599,6 +599,6 @@ pController->requestCVPValue(idArray.at(0));
 
 ## 版本信息
 
-<table style="width:400px"><thead><tr style="background:PaleTurquoise"><th style="width:100px">版本号</th><th style="width:150px">更新时间</th><th style="width:150px">更新内容</th></tr></thead><tbody><tr><td>v4.0.0</td><td>2019.08.05</td><td>全文添加</th></tr></thead><tbody><tr><td><a href="http://innfos.com/wiki/cn/index.html#!pages/QDD-NU80-6_v3_2.md">v3.4.0 </a></td><td>2019.06.06</td><td>全文添加</th></tr></thead></tbody></table>
+<table style="width:400px"><thead><tr style="background:PaleTurquoise"><th style="width:100px">版本号</th><th style="width:150px">更新时间</th><th style="width:150px">更新内容</th></tr></thead><tbody><tr><td>v4.0.0</td><td>2019.08.05</td><td>全文添加</th></tr></thead><tbody><tr><td><a href="http://innfos.com/wiki/cn/index.html#!pages/Ethernet_Communication_SDKv3.4.0.md">v3.4.0 </a></td><td>2019.06.06</td><td>全文添加</th></tr></thead></tbody></table>
 
 
