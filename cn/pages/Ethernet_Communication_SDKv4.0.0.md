@@ -356,7 +356,7 @@ cout << "Actuator postion:" << pos << "R,current:" << cur << "A" <<endl;
 * 打开终端并进入`example/bin`目录，输入命令
 
 ```bash
-$./05a_feedback_sync
+$./05a_feedback_asyc
 ```
 
 *   此示例程序自动使能执行器，使能成功后异步获取执行器的电流和位置，可以使用ctrl-c结束程序。
@@ -439,102 +439,127 @@ pController->requestCVPValue(idArray.at(0));
 
 #### 示例程序测试
 
+
+*   确认执行器正确连接并供电以后，执行器会有黄色指示灯闪烁，此时可以测试示例代码
+
 ##### 查找已连接的执行器
 
-*   确认执行器正确连接并供电以后，执行器会有黄色指示灯闪烁，此时可以测试示例代码。
-
-打开命令行窗口并进入bin目录，输入命令
+*   打开终端并进入bin目录，输入命令
 
 ```bash
-./lookupActuators.exe -e 
+$ 01_lookupActuators.exe
 ```
+*   此窗口会显示当前已连接的执行器数量，示例中连接了一个ID为1的执行器，其通信IP地址为192.168.1.30
 
 
-<img src="../img/sdkv4.0.0/013.png" style="width:600px">
+<img src="../img/sdkv4.0.0/01.png" style="width:600px">
 
 
-##### 监测执行器状态
+
+##### 使能单个执行器
 
 *   打开命令行窗口并进入bin目录，输入命令
 
 ```bash
-./monitorActuator.exe -e
+$ 02a_enableSingleActuator.exe
 ```
 
-
-<img src="../img/sdkv4.0.0/014.png" style="width:600px">
-
-
-##### 控制执行器
-
-*   打开命令行窗口并进入bin目录，输入命令
+*   使能单个执行器，使能后执行器指示灯会变成绿色
 
 
-```bash
-./operateActuator.exe -e
-```
-
-<img src="../img/sdkv4.0.0/015.png" style="width:600px">
+<img src="../img/sdkv4.0.0/032.png" style="width:600px">
 
 
-表示执行器已经找到，输入命令`l 0`，该命令会使能所有已连接的执行器，如果使能成功，执行器会有绿色指示灯闪烁，表示已经使能成功，cmd窗口如下显示
-
-<img src="../img/sdkv4.0.0/016.png" style="width:600px">
-
-
-*   此时可激活执行器对应模式，比如输入 a 6可以激活profile position模式，再输入p 10，执行器会转动到10圈的位置；输入a 7可以激活profile velocity模式，再输入v 500，执行器将以500RPM的速度转动，停止转动输入v 0,；输入a 1可以激活电流模式，再输入c 0.6，执行器将以恒定0.6A的电流转动（如果执行器不动，可用手轻轻转动一下执行器），可以ctrl+c结束程序
-
-
-<img src="../img/sdkv4.0.0/017.png" style="width:600px">
-
-
-##### 执行器器参数调整
+#### 使能多个执行器
 
 *   打开命令行窗口并进入bin目录，输入命令
 
 ```bash
-./tuneActuator.exe -e
+$ 02b_enableActuatorsInBatch.exe 
 ```
 
-*   此示例程序自动使能执行器并将位置环输出设置为3000RPM,速度环的电流最大输出为16.5A,如果使用`profile position`模式转动执行器，执行器的最大速度不会超过3000RPM;如果使用`profile velocity`模式转动执行器，执行器最大电流不会超过16.5A，可以`ctrl+c`结束程序
+<img src="../img/sdkv4.0.0/033.png" style="width:600px">
 
-<img src="../img/sdkv4.0.0/018.png" style="width:600px">
 
-##### 执行器归零
+#### 执行器电流控制
 
 *   打开命令行窗口并进入bin目录，输入命令
 
 ```bash
-./homingActuator.exe -e
+$ 03a_currentControl.exe
 ```
 
-*   如图结果表示已经将执行器当前位置设置为零位，范围是 -9.5R 到 9.5R，并且开启了位置限制，如果 `profile position` 模式下，输入此范围之外的位置，执行器不会转动，可以 `ctrl+c` 结束程序
+*   此示例程序将在电流模式下控制执行器
+   
+<img src="../img/sdkv4.0.0/034.png" style="width:600px">
 
 
-<img src="../img/LongId_w.png" style="width:600px">
-
-
-##### 执行器长短id
+#### 执行器速度控制
 
 *   打开命令行窗口并进入bin目录，输入命令
 
 ```bash
-./longIdAndByteId.exe -e
+$ 03b_velocityControl.exe 
 ```
 
-可以进行长短id的获取以及相互转换，并且可以通过长id获取通信ip地址。
+*   此示例程序自动使能执行器，使能成功后激活执行器的profile velocity模式，然后发送速度指令，执行器将以500RPM的速度转动3s，再以-500RPM的速度转动3s，最后执行器失能
 
-<img src="../img/Feedback_w.png" style="width:600px">
 
-##### 同步响应
+<img src="../img/sdkv4.0.0/035.png" style="width:600px">
+
+
+#### 执行器位置控制
 
 *   打开命令行窗口并进入bin目录，输入命令
 
 ```bash
-./feedback_sync.exe -e
+$ 03c_positionControl.exe
 ```
 
-*   运行`feedback_sync.exe`，关联对应信号，在回调中进行操作属于异步响应，不会阻塞当前程序。同步响应，会阻塞当前程序，直到sdk返回结果，相比较而言，同步响应用法简单但是效率偏低，因为需要等待执行器响应（而且执行器部分操作没有同步响应，比如设置位置、速度、电流等）,如果对效率要求比较高，推荐使用异步响应。
+*   此示例程序自动使能执行器，使能成功后激活执行器的profile position模式，然后发送位置指令，执行器将先转动到10R的位置，4s后再转动到-10R的位置，3s后失能执行器。
+
+<img src="../img/sdkv4.0.0/036.png" style="width:600px">
+
+#### 执行器参数设置
+
+*   打开命令行窗口并进入bin目录，输入命令
+
+```bash
+$ 04_actuatorSetting.exe 
+```
+
+*   此示例程序自动使能执行器，使能成功后激活执行器的profile position模式，然后修改执行器参数，执行器将以不同的速度转动到指定位置。
+
+<img src="../img/sdkv4.0.0/037.png" style="width:600px">
+
+
+
+#### 同步获取执行器参数
+
+* 打打开命令行窗口并进入bin目录，输入命令
+
+```bash
+$ 05a_feedback_sync.exe
+```
+
+*   此示例程序自动使能执行器，使能成功后同步获取执行器的电流和位置。
+
+<img src="../img/sdkv4.0.0/038.png" style="width:600px">
+
+
+
+#### 异步获取执行器参数
+
+* 打打开命令行窗口并进入bin目录，输入命令
+
+```bash
+$ 05b_feedback_asyc.exe
+```
+
+*   此示例程序自动使能执行器，使能成功后异步获取执行器的电流和位置，可以使用ctrl-c结束程序。
+
+<img src="../img/sdkv4.0.0/039.png" style="width:600px">
+
 
 ## SDK使用说明
 
@@ -546,7 +571,7 @@ pController->requestCVPValue(idArray.at(0));
 
 *   本 sdk 遵循 `c++11` 标准，所以在构建项目之前请确认编译选项支持 `c++11`（比如 gcc 中使用 -std=c++11） ;
 *   将 sdk 集成到项目中的基本步骤（最好先参考 example 中的 CMakeLists.txt） :
-*   将 sdk/include、 加入到项目的包含目录，用于关联共享库中的方法 ;
+*   将 sdk/include 加入到项目的包含目录，用于关联共享库中的方法 ;
 *   将库文件目录 sdk/lib/linux_x86_64（windows 目录为 sdk/lib/debug 和 sdk/lib/release），以便可执行文件能链接到共享库，并保证运行时能够关联到共享库；
 *   将必要的元素加入到构建过程中（比如 CMake 中的 target_link_libraries）
 
