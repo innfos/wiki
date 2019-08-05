@@ -1,4 +1,4 @@
-以太网通信SDK(v4.0.0)
+以太网通信SDK
 =========
 
 ## 介绍
@@ -137,7 +137,7 @@ if(pController->enableActuator(idArray.at(0)))
 }
 ```
 
-#### 使能多个个执行器
+#### 使能多个执行器
 
 *   打开终端，进入`example/bin`目录，输入命令
 
