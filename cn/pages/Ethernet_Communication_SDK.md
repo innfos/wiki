@@ -18,7 +18,7 @@ $ git clone https://github.com/innfos/ActuatorController_SDK.git
     
 ## API相关文档
 
-*   注意事项以及相关说明文档请访问[document link](http://innfos.com/doc/index.html)
+*   注意事项以及相关说明文档请访问[document link](http://innfos.com/doc4.0.0/index.html)
 
 ## 执行器连接
 
