@@ -284,11 +284,11 @@ pController->activateActuatorMode(actuatorID,Actuator::Mode_Profile_Pos);
 
 ```cpp
 //change acceleration to 300 RPM/s
-pController->setProfilePosAcceleration(actuatorID,300);
+pController->setProfilePositionAcceleration(actuatorID,300);
 //change deceleration to -300 RPM/s
-pController->setProfilePosDeceleration(actuatorID,-300);
+pController->setProfilePositionDeceleration(actuatorID,-300);
 //change max velocity to 500 RPM
-pController->setProfilePosMaxVelocity(actuatorID,500);
+pController->setProfilePositionMaxVelocity(actuatorID,500);
 cout << "change position in low speed " << endl;
 pController->setPosition(actuatorID,-15);
 this_thread::sleep_for(std::chrono::seconds(5));
@@ -298,11 +298,11 @@ this_thread::sleep_for(std::chrono::seconds(5));
 
 ```cpp
 //change acceleration to 1200 RPM/s
-pController->setProfilePosAcceleration(actuatorID,1200);
+pController->setProfilePositionAcceleration(actuatorID,1200);
 //change deceleration to -1200 RPM/s
-pController->setProfilePosDeceleration(actuatorID,-1200);
-//change max velocity to 3000 RPM/s
-pController->setProfilePosMaxVelocity(actuatorID,3000);
+pController->setProfilePositionDeceleration(actuatorID,-1200);
+//change max velocity to 3000 RPM
+pController->setProfilePositionMaxVelocity(actuatorID,3000);
 cout << "change position in high speed " << endl;
 pController->setPosition(actuatorID,15);
 this_thread::sleep_for(std::chrono::seconds(4));
