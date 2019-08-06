@@ -429,12 +429,12 @@ pController->requestCVPValue(idArray.at(0));
 *   其中源码路径就是目录结构中的`…\example`所在的路径，该目录下包含了CMakeLists.txt文件；构建路径可自行定义，用于生成工程文件两个路径配置完成后点击Generate按钮弹出如下界面
 
 
-<img src="../img/sdkv4.0.0/011.png" style="width:600px">
+<img src="../img/011.png" style="width:600px">
 
 
 *   如果红色框内不是64位生成器，点击下拉三角，选择64位生成器，然后点击Finish按钮，生成成功后就生成了Visual Studio的工程文件，可用Visual Studio打开编译。编译完整个工程，在工程目录下会生成一个bin目录，里面有Debug或者Release文件夹（对应于编译的版本），将目录结构中的`…\sdk\lib\windows_x64\debug`或`…\sdk\lib\windows_x64\release`中的文件复制到对应版本的bin下面的Debug或者Release目录中，双击该目录中的exe就可正常运行示例程序了。
 
-<img src="../img/sdkv4.0.0/012.png" style="width:600px">
+<img src="../img/012.png" style="width:600px">
 
 
 #### 示例程序测试
@@ -452,7 +452,7 @@ $ 01_lookupActuators.exe
 *   此窗口会显示当前已连接的执行器数量，示例中连接了一个ID为1的执行器，其通信IP地址为192.168.1.30
 
 
-<img src="../img/sdkv4.0.0/01.png" style="width:600px">
+<img src="../img/sdkv4.0.0/031.png" style="width:600px">
 
 
 
