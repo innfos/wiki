@@ -9,7 +9,7 @@
 
 
 ## 回馈制动电容：
-执行器母线上并联大容量的制动电容，其目的是吸收电机制过程中的波峰电压，同时，制动电容由于其容量较大还可以提供峰值电流给SCA。
+执行器母线上并联大容量的制动电容，其目的是吸收电机制动过程中的波峰电压，同时，制动电容由于其容量较大还可以提供峰值电流给SCA。
 
 <img src="../img/回馈制动电容_v1_0.png" style="width:600px">
 
@@ -40,11 +40,3 @@ SCA执行器综合线缆为INNFOS专为SCA研发的一款线缆，连接HUB与SC
 **下表简单描述了版本变更记录**
 
 <table style="width:400px"><thead><tr style="background:PaleTurquoise"><th style="width:100px">版本号</th><th style="width:150px">更新时间</th><th style="width:150px">更新内容</th></tr></thead><tbody><tr><td>v1.0.0</td><td>2019.07.30</td><td>全文添加</td></tbody></table>
-
-
-
-
-
-
-
-
