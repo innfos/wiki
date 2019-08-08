@@ -192,9 +192,9 @@ Note:_iq24为INNFOS主要应用.
 
 <table style="width:600px"><thead><tr class="tableizer-firstrow"></tr></thead><tbody><tr><td  colspan="2" style=background:PaleTurquoise>3.3.1.3 发送数据1字节，返回数据5字节</td></tr><tr><td style="width:150px">命令名称</td><td>读取命令</td></tr><tr><td>说明</td><td>此命令类发送数据长度为1，返回数据长度为5，读取执行器参数值，高位在前。数值为真实值的2^24倍。（`一条特殊指令指令表内已特殊标注`）</td></tr><tr><td>指令符</td><td><a href="#!pages/CAN_Communication_Protocol.md#读取指令3:">见读取指令3</a></td></tr><tr><td>数据长度</td><td>1</td></tr><tr><td>数据内容</td><td>无</td></tr><tr><td>指令符（返回值）</td><td><a href="#!pages/CAN_Communication_Protocol.md#读取指令3:">见读取指令3</a></td></tr><tr><td>数据长度 (返回值)</td><td>5</td></tr><tr><td>执行器返回数据</td><td>数据为IQ24格式。(`一条特殊指令指令表内已特殊标注`）</td></tr></tbody></table>
 
-<table style="width:600px"><thead><tr class="tableizer-firstrow"></tr></thead><tbody><tr><td  colspan="2" style=background:PaleTurquoise>3.3.1.4 发送数据1字节，返回数据8字节</td></tr><tr><td style="width:150px">命令名称</td><td>读取命令</td></tr><tr><td>说明</td><td>此命令类发送数据长度为1，返回数据长度为8。</td></tr><tr><td>指令符</td><td><a href="#!pages/CAN_Communication_Protocol.md#读取指令4:">见读取指令4</a></td></tr><tr><td>数据长度</td><td>1</td></tr><tr><td>数据内容</td><td>无</td></tr><tr><td>指令符（返回值）</td><td><a href="#!pages/CAN_Communication_Protocol.md#读取指令4:">见读取指令4</a></td></tr><tr><td>数据长度 (返回值)</td><td>8</td></tr><tr><td>执行器返回数据</td><td>数据为IQ24格式。(`一条特殊指令指令表内已特殊标注`）</td></tr></tbody></table>
+<table style="width:600px"><thead><tr class="tableizer-firstrow"></tr></thead><tbody><tr><td  colspan="2" style=background:PaleTurquoise>3.3.1.4 发送数据1字节，返回数据8字节</td></tr><tr><td style="width:150px">命令名称</td><td>读取命令</td></tr><tr><td>说明</td><td>此命令类发送数据长度为1，返回数据长度为8。</td></tr><tr><td>指令符</td><td><a href="#!pages/CAN_Communication_Protocol.md#读取指令4:">见读取指令4</a></td></tr><tr><td>数据长度</td><td>1</td></tr><tr><td>数据内容</td><td>无</td></tr><tr><td>指令符（返回值）</td><td><a href="#!pages/CAN_Communication_Protocol.md#读取指令4:">见读取指令4</a></td></tr><tr><td>数据长度 (返回值)</td><td>8</td></tr><tr><td>执行器返回数据</td><td>见命令标注</td></tr></tbody></table>
 
-<table style="width:600px"><thead><tr class="tableizer-firstrow"></tr></thead><tbody><tr><td  colspan="2" style=background:PaleTurquoise>3.3.1.5 发送数据1字节，返回数据5字节</td></tr><tr><td style="width:150px">命令名称</td><td>读取命令</td></tr><tr><td>说明</td><td>此命令类返回数据第一字节为指令，后四字节为执行器序列号</td></tr><tr><td>指令符</td><td><a href="#!pages/CAN_Communication_Protocol.md#读取指令5:">见读取指令5</a></td></tr><tr><td>数据长度</td><td>1</td></tr><tr><td>数据内容</td><td>无</td></tr><tr><td>指令符（返回值）</td><td><a href="#!pages/CAN_Communication_Protocol.md#读取指令5:">见读取指令5</a></td></tr><tr><td>数据长度 (返回值)</td><td>5</td></tr><tr><td>执行器返回数据</td><td>无</td></tr></tbody></table>
+<table style="width:600px"><thead><tr class="tableizer-firstrow"></tr></thead><tbody><tr><td  colspan="2" style=background:PaleTurquoise>3.3.1.5 发送数据1字节，返回数据5字节</td></tr><tr><td style="width:150px">命令名称</td><td>读取命令</td></tr><tr><td>说明</td><td>此命令类发送数据1字节，返回数据5字节</td></tr><tr><td>指令符</td><td><a href="#!pages/CAN_Communication_Protocol.md#读取指令5:">见读取指令5</a></td></tr><tr><td>数据长度</td><td>1</td></tr><tr><td>数据内容</td><td>无</td></tr><tr><td>指令符（返回值）</td><td><a href="#!pages/CAN_Communication_Protocol.md#读取指令5:">见读取指令5</a></td></tr><tr><td>数据长度 (返回值)</td><td>5</td></tr><tr><td>执行器返回数据</td><td>无</td></tr></tbody></table>
 
 
 #### 写入命令
@@ -207,7 +207,7 @@ Note:_iq24为INNFOS主要应用.
 
 <table style="width:600px"><thead><tr class="tableizer-firstrow"><th colspan="2"style=background:PaleTurquoise>3.3.2.4 发送数据1字节，返回数据2字节</th></tr></thead><tbody><tr><td style="width:150px">名称</td><td>写入命令</td></tr><tr><td>说明</td><td>此命令类发送数据长度为1，返回数据长度为2</td></tr><tr><td>指令符</td><td><a href="#!pages/CAN_Communication_Protocol.md#写入指令4:">见写入指令4</a></td></tr><tr><td>数据长度</td><td>1</td></tr><tr><td>数据内容</td><td>无</td></tr><tr><td>指令 (返回值)</td><td><a href="#!pages/CAN_Communication_Protocol.md#写入指令4:">见写入指令4</a></td></tr><tr><td>数据长度(返回值)</td><td>2</td></tr><tr><td rowspan="2">执行器返回数据</td><td>0x01：成功</td></tr><tr><td>0x00：失败</td></tr></tbody></table>
 
-<table style="width:600px"><thead><tr class="tableizer-firstrow"></tr></thead><tbody><tr><td  colspan="2" style=background:PaleTurquoise>3.3.2.5 发送数据6字节，返回数据2字节</td></tr><tr><td style="width:150px">命令名称</td><td>读取命令</td></tr><tr><td>说明</td><td>此命令类发送数据长度为6，返回数据长度为2。</td></tr><tr><td>指令符</td><td><a href="#!pages/CAN_Communication_Protocol.md#写入指令3:">见写入指令5</a></td></tr><tr><td>数据长度</td><td>6</td></tr><tr><td>数据内容</td><td>无</td></tr><tr><td>指令符（返回值）</td><td><a href="#!pages/CAN_Communication_Protocol.md#写入指令5:">见写入指令5</a></td></tr><tr><td>数据长度 (返回值)</td><td>2</td></tr><tr><td>执行器返回数据</td><td>数据为IQ24格式。(`一条特殊指令指令表内已特殊标注`）</td></tr></tbody></table>
+<table style="width:600px"><thead><tr class="tableizer-firstrow"></tr></thead><tbody><tr><td  colspan="2" style=background:PaleTurquoise>3.3.2.5 发送数据6字节，返回数据2字节</td></tr><tr><td style="width:150px">命令名称</td><td>读取命令</td></tr><tr><td>说明</td><td>此命令类发送数据长度为6，返回数据长度为2。</td></tr><tr><td>指令符</td><td><a href="#!pages/CAN_Communication_Protocol.md#写入指令3:">见写入指令5</a></td></tr><tr><td>数据长度</td><td>6</td></tr><tr><td>数据内容</td><td>无</td></tr><tr><td>指令符（返回值）</td><td><a href="#!pages/CAN_Communication_Protocol.md#写入指令5:">见写入指令5</a></td></tr><tr><td>数据长度 (返回值)</td><td>2</td></tr><tr><td>无</td></tr></tbody></table>
 
 ----
 
@@ -232,7 +232,7 @@ Note:_iq24为INNFOS主要应用.
 
 #### 读取指令5:
 
-<table style="width:700px"><thead><tr class="tableizer-firstrow"></tr></thead><tbody> <tr><td colspan="3"style=background:PaleTurquoise>A.1.5 读取指令5</td></tr><tr><td style="width:100px">指令符</td><td style="width:200px">定义</td><td style="width:400px">说明</td></tr><tr><td>0x02</td><td>查询执行器序列号</td><td>读取指定ID执行器的序列号。</td></tr></tbody></table>
+<table style="width:700px"><thead><tr class="tableizer-firstrow"></tr></thead><tbody> <tr><td colspan="3"style=background:PaleTurquoise>A.1.5 读取指令5</td></tr><tr><td style="width:100px">指令符</td><td style="width:200px">定义</td><td style="width:400px">说明</td></tr><tr><td>0x02</td><td>查询执行器序列号</td><td>读取指定ID执行器的序列号。返回数据后四字节为执行器序列号。</td></tr></tbody></table>
 
 ### A.2 写入命令编码值定义表
 
@@ -251,6 +251,11 @@ Note:_iq24为INNFOS主要应用.
 #### 写入指令4:
 
 <table style="width:700px"><thead><tr><th colspan="3" style=background:PaleTurquoise>A.2.4写入指令4</th></tr></thead><tbody><tr><td style="width:100px">指令符</td><td style="width:200px">定义</td><td style="width:400px">说明</td></tr><tr><td>0xFE</td><td>消除下位机的报警</td><td>消除下位机的报警动作，<br>接收到命令后，下位机停止报警，<br>否则下位机不可操作</td></tr><tr><td>0x88</td><td>清除Homing数据</td><td>清除Homing数据</td></tr><tr><td>0x0D</td><td>存储参数</td><td>存储参数到EEPROM</td></tr></tbody></table>
+
+
+#### 写入指令5:
+
+<table style="width:700px"><thead><tr><th colspan="3" style=background:PaleTurquoise>A.2.5写入指令5</th></tr></thead><tbody><tr><td style="width:100px">指令符</td><td style="width:200px">定义</td><td style="width:400px">说明</td></tr><tr><td>0x3D</td><td> 修改执行器的ID </td><td>发送数据时，第一字节为指令，中间四字节为执行器的序列号，第六字节为新ID号</td></tr></tbody></table>
 
 ----
 
