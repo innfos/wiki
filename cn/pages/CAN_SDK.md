@@ -1,11 +1,12 @@
 ## 介绍
 
-IAS是一款可视化的INNFOS执行器调试软件，主要功能包括控制、修改执行器ID、可视化图表调节执行器、动作编辑等等。IAS可以直观、方便的修改和控制INNFOS执行器。使用IAS无需编程经验，但是不适合复杂的功能开发。
+INNFOS CAN API STM32版 提供了友好的用户接口，包括了STM32F429单片机与多个INNFOS执行器进行通信的功能，可对多个执行器发送指令或者获取执行器状态和参数信息
 
+建议初次接触API的用户优先阅读工程文件中的 readme 说明文件。
 ----
 
-## 下载IAS
+## 下载 SDK
 
-如果电脑系统为Linux,访问[IAS(Linux)](https://github.com/innfos/INNFOS-Actuator-Studio-linux.git)获取最新版本的IAS(INNFOS Actuator Studio)(Linux),如果电脑系统是Windows请访问 [IAS(Windows)](https://github.com/innfos/INNFOS-Actuator-Studio-windows.git).
+访问[CAN_SDK](https://github.com/innfos/INNFOS-Actuator-Studio-linux.git)获取MDK工程文件
 
 ----
