@@ -6,6 +6,6 @@ INNFOS CAN API STM32版 提供了友好的用户接口，包括了STM32F429单�
 
 ## 下载 SDK
 
-访问[CAN_SDK](http://wiki.innfos.com/wiki/cn/img/SCA_Controller_Public.rar)获取MDK工程文件
+访问[CAN_SDK](http://wiki.innfos.com/wiki/cn/img/SCA_Controller_Public.rar https://github.com/innfos/wiki/blob/master/cn/img/SCA_Controller_Public.rar)获取MDK工程文件
 
 ----
