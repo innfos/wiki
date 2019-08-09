@@ -17,7 +17,7 @@
 ------------
 
   * [INNFOS CAN通信协议](pages/CAN_Communication_Protocol.md)
-  * [INNFOS CAN通信SDK_STM32开发板](pages/CAN_SDK.md)
+  * [INNFOS CAN通信SDK_STM32版](pages/CAN_SDK.md)
   * [以太网配置](pages/Ethernet_Configuration.md)
   * [以太网通信协议](pages/Ethernet_Communication_Protocol.md)
   * [以太网通信SDK](pages/Ethernet_Communication_SDK.md)
