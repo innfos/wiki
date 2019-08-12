@@ -14,6 +14,10 @@
 
 ## 文件结构
 
+<img src="../img/cansdk1.png" style="width:600px">
+
+<div class="md-text" style="text-align: center;"><strong>图1</strong></div>
+
 *  `BSP`：STM32外设底层驱动文件
 *  `CORE`：Cortex-M4 内核控制文件与STM32启动文件
 *  `FWLIB`：STM32标准外设驱动库
@@ -27,6 +31,11 @@
 
 ### SCA文件目录说明
 
+<img src="../img/cansdk2.png" style="width:600px">
+
+<div class="md-text" style="text-align: center;"><strong>图2</strong></div>
+
+
 *  `SCA_Protocol.c/h`：INNFOS CAN 通信协议层，该协议层完成了数据帧封装，解包等步骤，使用CAN1端口进行数据收发；
 *  `SCA_API.c/h`：通信协议层的封装，包含了所有参数的读写API；
 *  `SCA_APP.c/h`：演示程序；
@@ -37,13 +46,35 @@
 
 *  PC安装Keil MDK软件，工程所用版本为V5.21.1.0。所用单片机型号为`STM32F429IGT6`。
 
+<img src="../img/cansdk3.png" style="width:600px">
+
+<div class="md-text" style="text-align: center;"><strong>图3</strong></div>
+
+
 *  打开MDK文件夹下的SCA_Controller.uvprojx文件，出现MDK的使用界面以及main.c代码：
+
+<img src="../img/cansdk4.png" style="width:600px">
+
+<div class="md-text" style="text-align: center;"><strong>图4</strong></div>
 
 *  此DEMO中使用的执行器ID为0x03，在 SCA_APP.c 文件中有多处语句使用了该ID，请根据实际使用的执行器求修改所有对应的ID数值。
 
+<img src="../img/cansdk5.png" style="width:600px">
+
+<div class="md-text" style="text-align: center;"><strong>图5</strong></div>
+
 *  确保单片机通过`ST-LINK`或`J-LINK`等调试工具连接至PC，并能够正常工作。点击全部编译按钮，无错通过后点击下载按钮下载至单片机。
 
+<img src="../img/cansdk6.png" style="width:100px">
+
+<div class="md-text" style="text-align: center;"><strong>图6</strong></div>
+
 *  连接完成后，将单片机的`串口1（PA9 PA10）`通过USB转串口工具连接至PC。打开虚拟串口终端软件，将波特率设为115200，接收数据以ASC码形式显示，以16进制形式发送数据。发送数字6打印帮助信息。
+
+<img src="../img/cansdk7.png" style="width:600px">
+
+<div class="md-text" style="text-align: center;"><strong>图7</strong></div>
+
 
 *  根据提示信息，先初始化执行器，依次发送指令，结合`SCA_APP.c`下的代码观察执行器的动作变化。
 
@@ -65,9 +96,18 @@
 
 *  在使用或移植时，需先配置系统参数，相关宏定义在`SCA_API.h`下。由于本例程采用的是阻塞式的通信方式，移植后需要根据CPU速度调整超时时间，其中开关机时间较长，其他参数返回时间较短。
 
+<img src="../img/cansdk8.png" style="width:600px">
+
+<div class="md-text" style="text-align: center;"><strong>图8</strong></div>
+
+
 ### API调用
 
 *  所有的`API`以`ID`来区分总线上的执行器，如读写位置的函数。写位置时，传入要执行的执行器ID，与实际位置值（±127.0R）；读位置时，只传入要读取的执行器ID即可将当前位置值读进对应的信息句柄中。大部分API带有返回值，返回本次数据通信的结果，当返回`SCA_NoError（0）`时，该指令执行成功，返回其他参见`SCA_Protocol.h`下的错误类型定义。
+
+<img src="../img/cansdk9.png" style="width:600px">
+
+<div class="md-text" style="text-align: center;"><strong>图9</strong></div>
 
 *  所有的信息句柄会以结构体数组的形式进行初始化定义，定义的长度为`SCA_NUM_USE`，与实际使用的SCA数量保持一致。所有以ID区分执行器的API中，会有以ID查找信息句柄的过程，调用 `SCA_Handler_t* getInstance(uint8_t id)`函数。该函数会返回指定ID的信息句柄地址，若ID不存在则返回NULL。用户想要获取每个执行器的参数信息，则定义个一个 `SCA_Handler_t`类型的指针，然后用 `getInstance(uint8_t id)` 函数获取对应ID的地址，用指针查看对应的参数即可。同时，该类型的指针也可以传入`Fast`型函数中，快速的执行指令，进而省略查找信息句柄的过程，当使用的SCA数量较多时，推荐使用此种类型的函数。
 
