@@ -27,7 +27,7 @@
 *  `USER`：存放main.c等
 
 *  `Keilkilll.bat`：清除编译产生的中间文件
-*  readme.txt`：相关说明
+*  `readme.txt`：相关说明
 
 ### SCA文件目录说明
 
