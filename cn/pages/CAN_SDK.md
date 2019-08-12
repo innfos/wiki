@@ -64,7 +64,7 @@
 
 *  确保单片机通过`ST-LINK`或`J-LINK`等调试工具连接至PC，并能够正常工作。点击全部编译按钮，无错通过后点击下载按钮下载至单片机。
 
-<img src="../img/cansdk6.png" style="width:100px">
+<img src="../img/cansdk6.png" style="width:300px">
 
 <div class="md-text" style="text-align: center;"><strong>图6</strong></div>
 
