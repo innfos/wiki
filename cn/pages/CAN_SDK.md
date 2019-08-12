@@ -8,6 +8,6 @@
 
 ## 下载 SDK
 
-访问[INNFOS_CAN_SDK_STM32](https://github.com/innfos/wiki/blob/master/cn/img/SCA_Controller_Public.rar)获取MDK工程文件
+访问[INNFOS_CAN_SDK_STM32](https://github.com/innfos/INNFOS_CAN_SDK_STM32.git)获取MDK工程文件
 
 ----
