@@ -50,14 +50,13 @@
 
 <div class="md-text" style="text-align: center;"><strong>图3</strong></div>
 
-
-*  打开MDK文件夹下的SCA_Controller.uvprojx文件，出现MDK的使用界面以及main.c代码：
+*  打开MDK文件夹下的`SCA_Controller.uvprojx`文件，出现MDK的使用界面以及`main.c`代码：
 
 <img src="../img/cansdk4.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图4</strong></div>
 
-*  此DEMO中使用的执行器ID为0x03，在 SCA_APP.c 文件中有多处语句使用了该ID，请根据实际使用的执行器求修改所有对应的ID数值。
+*  此DEMO中使用的执行器ID为`0x03`，在`SCA_APP.c`文件中有多处语句使用了该ID，请根据实际使用的执行器求修改所有对应的ID数值。
 
 <img src="../img/cansdk5.png" style="width:600px">
 
