@@ -25,7 +25,6 @@
 *  `SCA`：INNFOS CAN 协议驱动文件以及应用实例代码
 *  `SYSTEM`：STM32编程环境常用接口
 *  `USER`：存放main.c等
-
 *  `Keilkilll.bat`：清除编译产生的中间文件
 *  `readme.txt`：相关说明
 
@@ -34,7 +33,6 @@
 <img src="../img/cansdk2.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图2</strong></div>
-
 
 *  `SCA_Protocol.c/h`：INNFOS CAN 通信协议层，该协议层完成了数据帧封装，解包等步骤，使用CAN1端口进行数据收发；
 *  `SCA_API.c/h`：通信协议层的封装，包含了所有参数的读写API；
