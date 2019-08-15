@@ -20,7 +20,7 @@ If there's any questions,please contact us at support@innfos.com.
   * [Ethernet Configuration](pages/Ethernet_Configuration.md)
   * [Ethernet Communication Protocol](pages/Ethernet_Communication_Protocol.md)
   * [Ethernet Communication SDK](pages/Ethernet_Communication_SDK.md)
-  * [ROS Wrapper For Ethernet Communication SDK](/pages/actuatorcontroller_ros.md)
+  * [ROS for SCA](/pages/actuatorcontroller_ros.md)
   * [INNFOS Actuator Studio(IAS) instruction](pages/INNFOS_Actuator_Studio_IAS_instruction.md)
   * [Appendix](pages/appendix.md)
   
