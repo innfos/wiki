@@ -25,7 +25,7 @@
 *  `SCA`：INNFOS CAN 协议驱动文件以及应用实例代码
 *  `SYSTEM`：STM32编程环境常用接口
 *  `USER`：存放main.c等
-*  `Keilkilll.bat`：清除编译产生的中间文件
+*  `Keilkiller.bat`：清除编译产生的中间文件
 *  `readme.txt`：相关说明
 
 ### SCA文件目录说明
