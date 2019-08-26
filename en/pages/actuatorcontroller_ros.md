@@ -29,7 +29,7 @@ Remember that whenever you need to use the node/messages/services in a new termi
 ```
 $ source devel/setup.bash
 ```
-Alternatively, you can source in your `.bachrc` file, which will force the terminal to source every time it boots up.  
+Alternatively, you can source in your `.bashrc` file, which will force the terminal to source every time it boots up.  
 Now you're ready to use the package!
 
 
