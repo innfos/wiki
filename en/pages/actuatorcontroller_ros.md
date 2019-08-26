@@ -13,7 +13,9 @@ If you have not already, follow the instructions on http://wiki.ros.org/ to inst
 ### Install
 This package is tested on an X86 system with Ubuntu 16.04 installed.
 
-Enter your catkin workspace's source directory.
+Enter your catkin workspace's source directory. 
+If you have workspaces that used the C++ `Ethernet Communication SDK`, it is recommended that you do NOT put this package in those workspaces.
+This package uses a modified version of `Ethernet Communication SDK` and will likely cause issues in this and your program.  
 You can clone the package with:
 ```
 $ git clone https://github.com/Rayckey/ActuatorController_ROS.git actuatorcontroller_ros
@@ -22,10 +24,12 @@ Then return to the root of your workspace and build the package
 ```
 $ catkin_make
 ```
-There's a chance that the package may fail on the first time it is built, if that happens, retry it couple times.
+There's a chance that the package may fail on the first time it is built depending on your system, if that happens, retry it couple times.  
+Remember that whenever you need to use the node/messages/services in a new terminal, you must first `source` at the root of workspace:
 ```
 $ source devel/setup.bash
 ```
+Alternatively, you can source in your `.bachrc` file, which will force the terminal to source every time it boots up.  
 Now you're ready to use the package!
 
 
@@ -39,7 +43,7 @@ In a new terminal, start ROS core:
 ```
 $ roscore
 ```
-The most common way to start the ROS node is to use rosrun, open a new terminal and start the node:
+The most common way to start the ROS node is to use `rosrun`, open a new terminal and start the node:
 ```
 $ rosrun actuatorcontroller_ros innfos_actuator
 ```
@@ -93,7 +97,7 @@ TermExplanation:
 That means that we can change the control modes of the actuator to 6 options.  
 To enforce position control to the robot, you should first change its mode:
 ```
-rostopic pub -1 /INNFOS/setControlMode actuatorcontroller_ros/ActuatorModes "JointIDs:
+$ rostopic pub -1 /INNFOS/setControlMode actuatorcontroller_ros/ActuatorModes "JointIDs:
 - 2
 ActuatorMode: 4" 
 ``` 
@@ -138,7 +142,7 @@ $ rostopic pub -1 /INNFOS/setControlMode actuatorcontroller_ros/ActuatorModes "J
 - 2
 ActuatorMode: 6"
 ```
-This will let the actuator enter `Mode_Cur` with an internal flag. If you check the `MODE_ID` now it may return as 1, 'fraid not ,'just go ahead and put the actuator in your desired zero position by hand.  
+This will let the actuator enter `Mode_Cur` with an internal flag. If you check the `MODE_ID` now it may return as 1, 'fraid not ,just go ahead and put the actuator in your desired zero position by hand.  
 When you are finished, keep the actuator steady at that position (or just leave it alone ) and use the service:
 ```
 $ rosservice call /INNFOS/ZeroReset "JointID: 2"
@@ -187,7 +191,7 @@ When this parameter is present, the node will attempt to process the messages at
 $ roslaunch actuatorcontroller_ros innfos_use_cvp.launch
 ```
 This launch file adds the parameter `innfos_use_cvp` in parameter server.
-When this parameter is true, the controller will use a more efficient method when requesting the current states of the actuators. BUT the values will have a slight delay depending on the control rate. This is best used with the "innfos_fixed_rate" parameter.  
+When this parameter is true, the controller will use a more efficient method when requesting the current states of the actuators. BUT the values will have a slight delay depending on the control rate. This is best used with the `innfos_fixed_rate` parameter.  
 
 Beware! These settings will not take effects if the node is already running! (i.e. If you started the node and then added the parameters it will not take effects! These parameters must be present at the start of the node for it to work. Alternatively, you can create your own launch files that combine these parameters.)
 
@@ -199,7 +203,7 @@ The parameters of each actuator are separated into four groups:
 3.Infrequently used modifiable parameters 
 4.Infrequently used unmodifiable parameters 
 The most accessed parameters can be inquired or modified using ROS messages and services, the less used parameters are only accessible through the ROS Parameter server. The unmodifiable information can only be viewed using ROS services
-You can easily see the messages/services typies using:
+You can easily see the messages/services typeis using:
 ```
 $ rostopic type ${TOPIC_NAME}
 $ rosservice type ${SERVICE_NAME}
@@ -218,7 +222,7 @@ Enable the designated actuators, if the input is empty or 0, the node will enabl
 Disable the designated actuators, if the input is empty or 0, the node  will disable all available actuators.  
 
 #### /INNFOS/setControlMode (` ActuatorController_ROS::ActuatorModes`)
-Set the control mode for the designated actuators, you can check the available modes by using the service /INNFOS/Dictionary.  
+Set the control mode for the designated actuators, you can check the available modes by using the service `/INNFOS/Dictionary`.  
 
 #### /INNFOS/setTargetPosition (`ActuatorController_ROS::ActuatorCommand`)
 Set the target position for the designated actuator, will only have effects when the actuator is in the correct mode.  
@@ -255,7 +259,7 @@ Output: Return a list of the infrequently used unmodifiable parameters for the d
 
 #### /INNFOS/Dictionary (`ActuatorController_ROS::AttributeDictionary`)
 Function: Allows user to look up Attribute terms' meanings and usages.  
-Input: The attribute term (i.e. "MODE_ID") in string  
+Input: The attribute term (i.e. `MODE_ID`) in string  
 Output: The explanation and usage of the term or parameter.  
 
 #### /INNFOS/IDChange (`ActuatorController_ROS::IDModify`)
@@ -281,8 +285,8 @@ Since each actuator has a number of modifiable parameters, the parameter names o
 ```
 /INNFOS/Actuator/${ACTUATOR_ID}/${PARAMETER_NAME}
 ```
-You can look up the explanation of the parameter using the service /INNFOS/Dictionary.  
-Note that any changes will need to be saved using the /INNFOS/ParametersSave service for it to take effects in the next boot-up.  
+You can look up the explanation of the parameter using the service `/INNFOS/Dictionary`.  
+Note that any changes will need to be saved using the `/INNFOS/ParametersSave` service for it to take effects in the next boot-up.  
 If the assignment was unsuccessful, the parameter will be reverted on the server.  
 
 
