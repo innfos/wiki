@@ -47,7 +47,7 @@ The most common way to start the ROS node is to use `rosrun`, open a new termina
 ```
 $ rosrun actuatorcontroller_ros innfos_actuator
 ```
-To ensure all the actuators are connected, you should first check the lists of available actuators via the /INNFOS/GeneralQuery service:
+To ensure all the actuators are connected, you should first check the lists of available actuators via the `/INNFOS/GeneralQuery` service:
 ```
 $ rosservice call /INNFOS/GeneralQuery "isQuery: true" 
 ```
@@ -143,7 +143,7 @@ $ rostopic pub -1 /INNFOS/setControlMode actuatorcontroller_ros/ActuatorModes "J
 ActuatorMode: 6"
 ```
 This will let the actuator enter `Mode_Cur` with an internal flag. If you check the `MODE_ID` now it may return as 1, 'fraid not ,just go ahead and put the actuator in your desired zero position by hand.  
-When you are finished, keep the actuator steady at that position (or just leave it alone ) and use the service:
+When you are finished, keep the actuator steady at that position (or just leave it alone) and use the service:
 ```
 $ rosservice call /INNFOS/ZeroReset "JointID: 2"
 ```
@@ -263,7 +263,7 @@ Input: The attribute term (i.e. `MODE_ID`) in string
 Output: The explanation and usage of the term or parameter.  
 
 #### /INNFOS/IDChange (`ActuatorController_ROS::IDModify`)
-Function: Permanently download the user's setting into the actuator, allows it to take effect the next time it is powered up.  
+Function: Change the ID of an actuator  
 Input: The original ID, and the modified ID.  
 Output: Will return a boolean to indicate whether this operation is successful.  
 
@@ -276,11 +276,11 @@ Output: Will return a boolean to indicate whether this operation is successful.
 #### /INNFOS/ZeroReset (`ActuatorController_ROS::ZeroReset`)
 Function: Reset the actuator's absolute zero position to its current position, the actuator has to be in homing mode for it to take effects. (Due to some issues, the actuator may appear to be in current mode even after setting it to homing mode, but it will still have taken effects.)  
 Input: The designated actuator ID.  
-Output: Allows the user to reset the zero position of the actuator. Note that any changes will need to be saved using the `/INNFOS/ParametersSave` for it to take effects in the next boot-up.  
+Output: Will return a boolean to indicate whether this operation is successful.  
 
 
 ### Parameters Server
-This allows the user to modify the infrequently used modifiable parameters. 
+The parameter server allows the user to check or modify the infrequently used modifiable parameters. 
 Since each actuator has a number of modifiable parameters, the parameter names on the server are arranged in the format of :  
 ```
 /INNFOS/Actuator/${ACTUATOR_ID}/${PARAMETER_NAME}
