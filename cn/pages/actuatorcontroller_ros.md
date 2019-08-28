@@ -161,7 +161,49 @@ $ rosservice call /INNFOS/ParametersSave "ActuatorID: 2"
 ```
 isSuccessful: True
 ```
-基本功掌握好了，您可以接着看此ROS节点都能提供什么样的服务
+
+现在尝试一下比较复杂的操作。  
+执行器的状态是以 `joint_states`的消息由`INNFOS/actuator_states`的话题向外发送的。
+如果有需要同时操作多个执行器，推荐用 `joint_states`来把指令打包发送。
+先把另外一个执行器也启用：
+```
+$ rostopic pub -1 /INNFOS/setControlMode actuatorcontroller_ros/ActuatorModes "JointIDs: [2,5]
+ActuatorMode: 4" 
+```
+这个指令把两个执行器都设置成了`Mode_Profile_Pos`, 这样的设置能接受以下的指令：
+```
+$ rostopic pub /INNFOS/actuator_targets sensor_msgs/JointState "header:
+  seq: 0
+  stamp: {secs: 0, nsecs: 0}
+  frame_id: ''
+name: ['2', '5']
+position: [1,1]
+velocity: [0,0]
+effort: [0.0,0]" 
+```
+两个执行器现在都在1.0的位置了。  
+`joint_states` 是ROS生态环境中比较常用的消息，我们推荐用这种方式来与其他的节点交接。
+同一个 `joint_states`消息中也可以控制在不同控制模式的执行器，若把5号执行器的模式更改成`Mode_Profile_Vel`。
+```
+$ rostopic pub -1 /INNFOS/setControlMode actuatorcontroller_ros/ActuatorModes "JointIDs: [5]
+ActuatorMode: 5" 
+```
+再发出这样的指令：
+```
+$ rostopic pub /INNFOS/actuator_targets sensor_msgs/JointState "header:
+  seq: 0
+  stamp: {secs: 0, nsecs: 0}
+  frame_id: ''
+name: ['2', '5']
+position: [2,0]
+velocity: [0,250]
+effort: [0.0,0]"
+```
+5号执行器就会执行速度指令。节点会根据执行器当前的模式挑出`joint_states`消息里的指令。
+如果当前指定的执行器在 `Mode_Cur`模式下，它就不会执行位置或者速度的指令。
+
+
+基本功掌握好了，您可以接着看此ROS节点都能提供什么样的服务。
 
 
 ## 启动节点
@@ -225,13 +267,14 @@ $ rosservice type ${SERVICE_NAME}
 #### /INNFOS/setTargetPosition (`ActuatorController_ROS::ActuatorCommand`)
 给指定的执行器设定目标位置，只有在执行器模式正确时才会生效。
 
-
 #### /INNFOS/setTargetVelocity (`ActuatorController_ROS::ActuatorCommand`)
 给指定的执行器设定目标速度，只有在执行器模式正确时才会生效。
 
-
 #### /INNFOS/setTargetCurrent (`ActuatorController_ROS::ActuatorCommand`)
 给指定的执行器设定目标电流，只有在执行器模式正确时才会生效。 
+
+#### /INNFOS/actuator_targets (`sensor_msgs::JointState`)
+接受打包好的关节指令，可同时给多个执行器设置位置，速度或电流。推荐使用这种消息来控制多个执行器，缓解ROS通信的强度。节点会根须当前执行器的模式筛选指令。
 
 
 ### Services
@@ -290,4 +333,4 @@ Output: 一个Bool告知用户操作是否成功
 
 ## Change logs
 
-<table style="width:500px"><thead><tr style="background:PaleTurquoise"><th style="width:100px">Version number</th><th style="width:150px">Update time</th><th style="width:3800px">Update content</th></tr></thead><tbody><tr><td>v1.0.3</td><td>2019.08.26</td><td> More Examples</td></tr></thead><tbody><tr><td>v1.0.2</td><td>2019.08.21</td><td> Included an example in readme </td></tr></thead><tbody><tr><td>v1.0.1</td><td>2019.08.09</td><td>Added readme</td></tr></thead><tbody><tr><td>v1.0.0</td><td>2019.08.09</td><td>Node tested with actuators on Ubuntu 16.04 with ROS Luna, Stable release</td></tbody></table>
+<table style="width:500px"><thead><tr style="background:PaleTurquoise"><th style="width:100px">Version number</th><th style="width:150px">Update time</th><th style="width:3800px">Update content</th></tr></thead><tbody><tr><td>v1.1.0</td><td>2019.08.27</td><td> Joint states commands added </td></tr></thead><tbody><tr><td>v1.0.3</td><td>2019.08.26</td><td> More Examples</td></tr></thead><tbody><tr><td>v1.0.2</td><td>2019.08.21</td><td> Included an example in readme </td></tr></thead><tbody><tr><td>v1.0.1</td><td>2019.08.09</td><td>Added readme</td></tr></thead><tbody><tr><td>v1.0.0</td><td>2019.08.09</td><td>Node tested with actuators on Ubuntu 16.04 with ROS Luna, Stable release</td></tbody></table>
