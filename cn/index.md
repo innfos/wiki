@@ -49,6 +49,7 @@
   * [QDD-NU80-6](pages/QDD-NU80-6_v3_3.md)  <span style="color:red"> NEW！</span>
   * [QDD Lite-NE30-36](pages/QDD Lite-NE30-36_v1_8.md) <span style="color:red"> NEW！</span>
   * [QDD Lite-PR60-36](pages/QDD Lite-PR60-36_v1_8.md) <span style="color:red"> NEW！</span>
+  * [QDD Lite-EL20-36](pages/QDD Lite-EL20-36_v1_8.md) <span style="color:red"> NEW！</span>
  
   
 
@@ -87,7 +88,7 @@ Note: 以下型号SCA数据正在更新中，更多详情请咨询商务团队�
 ### QDD
   * [QDD-EL20-36](pages/QDD-EL20-36_v2_3.md)
   * [QDD-NU80-36](pages/QDD-NU80-36_v2_2.md)
-  * [QDD Lite-EL20-36](pages/QDD Lite-EL20-36_v1_8.md) 
+   
  
 
  
