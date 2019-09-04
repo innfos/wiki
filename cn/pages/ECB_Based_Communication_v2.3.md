@@ -63,14 +63,24 @@ Note: 必须先断电然后再插拔部件.  否则可能损坏部件.
 
 <img src="../img/connect-EL20.jpg" style="width:600px">
 *   EL20线缆
+
 <img src="../img/txtljx.png" style="width:600px">
 
 *   EL20梯形头
+
 <img src="../img/txt.g" style="width:600px">
 
 *   梯形头连接线
+
 <img src="../img/txtljx.png" style="width:600px">
-*   
+
+*   电池安装位置
+
+*   终端电阻安装位置
+
+*   单台执行器连接
+
+*   多台执行器连接
 
  Note: EL20为非隔离CAN通信，暂时不推荐和其他系列SCA混连。即将推出CAN隔离转不隔离模组，届时即可混连。
 
