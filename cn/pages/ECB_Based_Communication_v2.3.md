@@ -69,7 +69,7 @@ Note: 必须先断电然后再插拔部件.  否则可能损坏部件.
 
 *   EL20梯形头
 
-<img src="../img/txt.jpg" style="width:600px">
+<img src="../img/txt1.jpg" style="width:600px">
 
 *   梯形头连接线
 
