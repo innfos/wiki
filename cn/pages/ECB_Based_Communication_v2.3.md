@@ -62,22 +62,25 @@ Note: 必须先断电然后再插拔部件.  否则可能损坏部件.
 *   EL20系列连接方式
 
 <img src="../img/connect-EL20.jpg" style="width:600px">
+
 *   EL20线缆
 
 <img src="../img/txtljx.png" style="width:600px">
 
 *   EL20梯形头
 
-<img src="../img/txt.g" style="width:600px">
+<img src="../img/txt.jpg" style="width:600px">
 
 *   梯形头连接线
 
 <img src="../img/txtljx.png" style="width:600px">
 
 *   电池安装位置
+
 <img src="../img/dcaz.jpg" style="width:600px">
 
 *   终端电阻安装位置
+
 <img src="../img/dzaz.jpg" style="width:600px">
 
 *   单台执行器连接
