@@ -63,13 +63,14 @@ Note: 必须先断电然后再插拔部件.  否则可能损坏部件.
 
 <img src="../img/connect-EL20.jpg" style="width:600px">
 
-*   EL20线缆
-
-<img src="../img/txtljx.png" style="width:600px">
-
 *   EL20梯形头
 
 <img src="../img/txt1.jpg" style="width:600px">
+
+
+*   EL20线缆
+
+<img src="../img/txtljx.png" style="width:600px">
 
 *   梯形头连接线
 
