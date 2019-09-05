@@ -7,17 +7,7 @@
 ## 桌面级6轴机械臂（QDD Lite-NE30-36版）参数
 
 <table style="width:700px"><thead><tr><th colspan="2" style="background: PaleTurquoise; color: black;">桌面级6轴机械臂（QDD Lite-NE30-36版）参数</th></tr></thead><tbody></tr><tr><td>末端负载</td><td>500g</td></tr>
-<tr><td>自重</td><td>3.7kg（带底座）；2.5kg（不带底座）</td></tr>
-<tr><td>示教器</td><td>0.08 A</td></tr>
-<tr><td>示教器</td><td>0.08 A</td></tr>
-<tr><td>示教器</td><td>0.08 A</td></tr>
-<tr><td>示教器</td><td>0.08 A</td></tr>
-<tr><td>示教器</td><td>0.08 A</td></tr>
-<tr><td>示教器</td><td>0.08 A</td></tr>
-<tr><td>示教器</td><td>0.08 A</td></tr>
-
-
-</td></tbody></table>
+<tr><td>自重</td><td>3.7kg（带底座）；2.5kg（不带底座）</td></tr><tr><td>自由度</td><td>6</td></tr><tr><td>工作半径</td><td>421mm</td></tr><tr><td>关节范围</td><td>‘+/-170°</td></tr><tr><td>工具最大速度</td><td>2m/s</td></tr><tr><td>重复定位精度</td><td>‘+/-0.1mm</td></tr><tr><td>供电电压</td><td>42v</td></tr><tr><td>功耗</td><td>普通功耗约120w</td></tr><tr><td>结构件材料</td><td>铝合金/碳纤维管</td></tr><tr><td>工作环境温度</td><td>10-50°</td></tr><tr><td>工作环境湿度</td><td>5%~95%</td></tr><tr><td>防护等级</td><td>IP54</td></tr><tr><td>通信端口</td><td>通信端口</td></tr><tr><td>示教器</td><td>电脑或者移动终端</td></tr></td></tbody></table>
 
 
 ## 版本变更记录
