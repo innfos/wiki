@@ -1,143 +1,56 @@
 
-以太网通信
-=====
+# SCA其他配件
+主要包括终端电阻、回馈制动、电源、急停开关、执行器综合线缆、EL20系列综合线缆、梯形头、梯形头连接线、EL20系列终端电阻和电池。
+  
+
+## 终端电阻：
+高频信号或长线传输时，信号波长相对传输线较短，信号在传输线终端会形成反射波，干扰原信号，所以需要在传输线末端加终端电阻，使信号到达传输线末端后不反射。对于低频信号或线缆较短时则不用。CAN总线两端必须连接终端电阻才可以正常工作，终端电阻应该与通讯电缆的阻抗相同，典型值为120欧姆。其作用是匹配总线阻抗，提高数据通信的抗干扰性及可靠性。
+
+<img src="../img/终端电阻_v1_0.png" style="width:600px">
 
 
-## 硬件需求与连接
+## 回馈制动电容：
+执行器母线上并联大容量的制动电容，其目的是吸收电机制动过程中的波峰电压，同时，制动电容由于其容量较大还可以提供峰值电流给SCA。
 
-**硬件需求**
-
-<img src="../img/all.jpg" style="width:600px">
-
-从前到后、从左到右依次为：ECB、HUB、终端电阻2个、回馈制动电容、ECB连接线、INNFOS执行器、执行器连接线，急停开关+电源。
-
-**连接电源**
-
-*   连接电源与`HUB`.
-
-<img src="../img/power.jpg" style="width:600px">
-
-Note: 必须先断电然后再插拔部件.  否则可能损坏部件.
+<img src="../img/回馈制动电容_v1_0.png" style="width:600px">
 
 
-**连接ECB**
+## 电源
+### 350W 工业开关电源 
+LRS-350-48 电源是一款350W单组输出封闭型电源供应器，采用115VAC或230VAC输入，DC电压输出可调范围43.2 ~ 52.8V，额定输出电流7.3A，输出侧具备急停开关，可以保证紧急情况下的安全急停。内置长寿命风扇满负载工作于-25℃-70℃。具有极低的功耗。
+接口说明：(XT60接头，图示)
 
-*   连接`HUB`与`ECB`
-
-![ECB-C1.jpg](../img/ECB-C1.jpg "fig:ECB-C1.jpg") ![ECB-C2.jpg](../img/ECB-C2.jpg "fig:ECB-C2.jpg")
-
-*   HUB安插回馈制动电容与终端电阻
-
-![ECB-C3.jpg](../img/ECB-C3.jpg "fig:ECB-C3.jpg") ![ECB-C4.jpg](../img/ECB-C4.jpg)
-
-**连接执行器**
-
-*   用执行器连接线连接`HUB`与执行器
-
-<img src="../img/Actuator-C1.jpg" style="width:600px">
+<img src="../img/LRS-350电源_v1_0.png" style="width:600px">
 
 
-*   末端执行器安插终端电阻
+### 150W 电源适配器
+150W电源适配器采用220VAC输入，DC36V输出，输出电流4A，具有过压、过流、短路、过温等先进安全防护，可防止不定天气因素或非人为意外对设备的伤害。输出侧具备急停开关，可以保证紧急情况下的安全急停。
+接口说明：（图示）
 
-<img src="../img/Actuator-C2.jpg" style="width:600px">
-
-**连接电脑**
-
-*   用网线连接`ECB`与电脑
-
-<img src="../img/pc-c.jpg" style="width:600px">
-
-**开启电源**
-
-*   开启电源. 执行器的供电电压范围为直流24V-45V.
-
-<img src="../img/poweron.jpg" style="width:600px">
-
-*   上电以后，执行器LED状态灯会变成黄色闪烁，启动执行器后，LED会变成绿色闪烁，这时就可以与执行器进行通信了。如果执行器内部出现错误，LED灯会变为红色闪烁，请检查执行器错误代码。
-
-<img src="../img/poweron2.jpg" style="width:600px">
-
-<img src="../img/connect2.png" style="width:600px">
-
-*   EL20系列连接方式
-
-<img src="../img/connect-EL20.jpg" style="width:600px">
+<img src="../img/电源适配器_v1_0.png" style="width:600px">
 
 
+## 执行器综合线缆
+SCA执行器综合线缆为INNFOS专为SCA研发的一款线缆，连接HUB与SCA，其中包含了为SCA供电的功率电源线缆和CAN总线。硅胶线保证电流传输，耐折弯、耐高温。两芯超软双绞屏蔽线，保证信号传输，外加阻燃编织网保证线缆耐磨。
+接口说明：（图示）
 
-*   EL20线缆
+<img src="../img/执行器综合线缆_v1_0.png" style="width:600px">
 
-<img src="../img/txtljx.png" style="width:600px">
+## EL20系列综合线缆
+<img src="../img/20xl.jpg" style="width:600px">
 
-*   EL20梯形头
-
+## 梯形头
 <img src="../img/txt .jpg" style="width:600px">
 
-*   梯形头连接线
-
+## 梯形头连接线
 <img src="../img/txtljx.png" style="width:600px">
 
-*   电池安装位置
+## EL20系列终端电阻
 
-<img src="../img/dcaz.jpg" style="width:600px">
+## 电池
 
-*   终端电阻安装位置
-
-<img src="../img/dzaz.jpg" style="width:600px">
-
-*   单台执行器连接
-<img src="../img/dtlj.jpg" style="width:600px">
-
-*   多台执行器连接
-<img src="../img/3tlj.jpg" style="width:600px">
-
- Note: EL20为非隔离CAN通信，暂时不推荐和其他系列SCA混连。即将推出CAN隔离转不隔离模组，届时即可混连。
-
-## 软件安装与使用
-
-
-**下载IAS**
-
-*   如果电脑系统为Linux,访问[IAS(Linux)](https://github.com/innfos/INNFOS-Actuator-Studio-linux.git)获取最新版本的IAS(INNFOS Actuator Studio)(Linux),如果电脑系统是Windows请访问[IAS(Windows)](https://github.com/innfos/INNFOS-Actuator-Studio-windows.git).
-
-**配置IP地址**
-
-*   配置步骤请参考[以太网通信配置](Ethernet_Configuration.md)
-
-**安装IAS**
-
-*   安装IAS请参考[IAS安装](INNFOS_Actuator_Studio_IAS_instruction.md)
-
-**使用** 
-
-
-<img src="../img/new11.png" style="width:600px"> 
-
-安装成功后，启动`IAS`,单击“确认”按钮启用“下一步”按钮，然后单击“下一步”直到出现如下界面: 
-
-
-<img src="../img/new15.png" style="width:600px"> 
-
-单击“1”或“2”按钮启动执行器，按钮“1”变为绿色表示您已成功启动执行器。单击消息框或单击“详细信息”按钮（位于按钮“1”下方） 进入执行器调试界面。 
-
-<img src="../img/new18.png" style="width:600px"> 
-
-
- **位置控制**
-
-*   单击左侧栏上的`Profile Position Mode`按钮，然后单击右侧的`Activate Profile Position Mode`。之后，您可以在“设置”中输入位置值，单位是R(范围是-127R~127R)。
-
-<img src="../img/new61.png" style="width:600px"> 
-
-<img src="../img/new63.png" style="width:600px"> 
-
-
-### 其他
-
-想了解更多关于`IAS`的信息 , 请访问[INNFOS Actuator Studio(IAS)说明](#!pages/INNFOS_Actuator_Studio_IAS_instruction.md).
 
 ## 版本变更记录
+**下表简单描述了版本变更记录**
 
-<table><thead><tr style=background:PaleTurquoise><th>版本</th><th>更新时间</th><th>更新内容</th></tr></thead><tbody><tr><td>V1.0.0</td><td>2019.04</td><td>第一个版本</td></tr></tbody></table>
-
-
+<table style="width:400px"><thead><tr style="background:PaleTurquoise"><th style="width:100px">版本号</th><th style="width:150px">更新时间</th><th style="width:150px">更新内容</th></tr></thead><tbody><tr><td>v1.0.0</td><td>2019.07.30</td><td>全文添加</td></tbody></table>
