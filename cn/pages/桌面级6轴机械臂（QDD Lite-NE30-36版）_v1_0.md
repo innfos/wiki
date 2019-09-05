@@ -6,7 +6,18 @@
 
 ## 桌面级6轴机械臂（QDD Lite-NE30-36版）参数
 
-<table style="width:700px"><thead><tr><th colspan="2" style="background: PaleTurquoise; color: black;">桌面级6轴机械臂（QDD Lite-NE30-36版）参数</th></tr></thead><tbody></tr><tr><td>示教器</td><td>0.08 A</td></tr><tr><td><tb>电脑或者移动终端</td></tbody></table>
+<table style="width:700px"><thead><tr><th colspan="2" style="background: PaleTurquoise; color: black;">桌面级6轴机械臂（QDD Lite-NE30-36版）参数</th></tr></thead><tbody></tr><tr><td>末端负载</td><td>500g</td></tr>
+<tr><td>自重</td><td>3.7kg（带底座）；2.5kg（不带底座）</td></tr>
+<tr><td>示教器</td><td>0.08 A</td></tr>
+<tr><td>示教器</td><td>0.08 A</td></tr>
+<tr><td>示教器</td><td>0.08 A</td></tr>
+<tr><td>示教器</td><td>0.08 A</td></tr>
+<tr><td>示教器</td><td>0.08 A</td></tr>
+<tr><td>示教器</td><td>0.08 A</td></tr>
+<tr><td>示教器</td><td>0.08 A</td></tr>
+
+
+</td></tbody></table>
 
 
 ## 版本变更记录
