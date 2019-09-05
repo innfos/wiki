@@ -3,7 +3,8 @@
                                                                           
 <img src="../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0.png" style="width:600px">                                                                          
 
-## 桌面级6轴机械臂（QDD Lite-NE30-36版）工程参数图[单位：毫米]
+## 桌面级6轴机械臂（QDD Lite-NE30-36版）工程参数图
+<br>[单位：毫米]
 
 <img src="../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0.md三视图.png" style="width:600px">
 
