@@ -38,18 +38,24 @@ SCA执行器综合线缆为INNFOS专为SCA研发的一款线缆，连接HUB与SC
 <img src="../img/执行器综合线缆_v1_0.png" style="width:600px">
 
 ## EL20系列综合线缆
+
 <img src="../img/20xl.jpg" style="width:600px">
 
 ## 梯形头
+
 <img src="../img/txt .jpg" style="width:600px">
 
 ## 梯形头连接线
+
 <img src="../img/txtljx.png" style="width:600px">
 
 ## EL20系列终端电阻
 
+<img src="../img/dz.jpg" style="width:600px">
+
 ## 电池
 
+<img src="../img/dc.jpg" style="width:600px">
 
 ## 版本变更记录
 **下表简单描述了版本变更记录**
