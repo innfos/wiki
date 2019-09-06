@@ -50,13 +50,19 @@ Note: 必须先断电然后再插拔部件.  否则可能损坏部件.
 
 **连接ECB**
 
-*   连接`HUB`与`ECB`
+**连接电源**
 
-![ECB-C1.jpg](../img/ECB-C1.jpg "fig:ECB-C1.jpg") ![ECB-C2.jpg](../img/ECB-C2.jpg "fig:ECB-C2.jpg")
+*   连接电源与`ECB+HUB`
 
-*   HUB安插回馈制动电容与终端电阻
+<img src="../img/cdy.jpg" style="width:600px">
+<img src="../img/cwdy.jpg" style="width:600px">
 
-![ECB-C3.jpg](../img/ECB-C3.jpg "fig:ECB-C3.jpg") ![ECB-C4.jpg](../img/ECB-C4.jpg)
+**连接执行器及其配件**
+
+*   连接`综合线缆`
+
+<img src="../img/cx.jpg" style="width:600px">
+<img src="../img/cwx.jpg" style="width:600px">
 
 **连接机械臂**
 
