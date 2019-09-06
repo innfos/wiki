@@ -61,7 +61,7 @@
   
 ### 配件
   * [ECB & HUB](pages/ECB&HUB_v2_2.md)
-  * [SCA其他配件](pages/SCA其他配件_v1_0.md) 
+  * [SCA其他配件](pages/SCA其他配件_v1.0.1.md) 
  
   
 ----
