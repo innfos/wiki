@@ -62,7 +62,7 @@ Note: 必须先断电然后再插拔部件.  否则可能损坏部件.
 
 **硬件需求**
 
-从前到后、从左到右依次为：急停开关+电源、JST转MOLEX转接线、EL20系列综合线缆、插好终端电阻和回馈制动电容的ECB+HUB、EL20执行器、梯形三通转换器（JST）、多圈计数编码器电池、终端电阻（JST）。
+从前到后、从左到右依次为：急停开关+电源、JST转MOLEX转接线、EL20系列综合线缆、插好终端电阻和回馈制动电容的ECB+HUB、EL20执行器、T型三通转换器（JST）、多圈计数编码器电池、终端电阻（JST）。
 
 <img src="../img/bzt.jpg" style="width:600px">
 
@@ -80,7 +80,7 @@ Note: 必须先断电然后再插拔部件.  否则可能损坏部件.
 <img src="../img/cx.jpg" style="width:600px">
 <img src="../img/cwx.jpg" style="width:600px">
 
-*   连接`梯形三通转换器（JST）`
+*   连接`T型三通转换器（JST）`
 
 <img src="../img/ctxt.jpg" style="width:600px">
 
