@@ -1,12 +1,12 @@
 # 产品介绍
 所有关节采用QDD Lite系列执行器搭建。其臂长活动范围最大430mm，末端负载1kg。因QDD Lite系列执行器采用了复合材料，大大降低了高端机器人本机研发成本，主要应用于教育领域，学校、实验室、研究所、竞赛等。
                                                                           
-<img src="../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0.png" style="width:600px">                                                                          
+<img src="../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0.png" style="width:720px">                                                                          
 
 ## 桌面级6轴机械臂（QDD Lite-NE30-36版）工程参数图
 <br>[单位：毫米]
 
-<img src="../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0.md三视图.png" style="width:600px">
+<img src="../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0.md三视图.png" style="width:720px">
 
 
 ### 3D 模型
