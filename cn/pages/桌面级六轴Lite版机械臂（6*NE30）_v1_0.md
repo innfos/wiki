@@ -35,7 +35,7 @@
 
 **硬件需求**
 
-<img src="../img/Robot_DOF6/12.jpg" style="width:600px">
+<img src="../img/Robot_DOF6/12.png" style="width:600px">
 
 从前到后、从左到右依次为：HUB、ECB、ECB连接线、终端电阻1个、网线、 机械臂、回馈制动电容、急停开关+电源。
 
