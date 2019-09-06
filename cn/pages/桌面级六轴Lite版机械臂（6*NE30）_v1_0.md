@@ -29,7 +29,7 @@
 
 ## 开箱
 
-<img src="../img/13.jpg" style="width:600px">
+<img src="../img/Robot_DOF6/13.jpg" style="width:600px">
 
 ## 硬件需求与连接
 
