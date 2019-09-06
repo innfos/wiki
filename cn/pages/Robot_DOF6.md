@@ -7,12 +7,13 @@
 *   在使用之前请仔细阅读本说明书内容。
 
 
+
 ## 开箱
 
 <img src="../img/Robot_DOF6/13.jpg" style="width:600px">
 
-## 硬件需求与连接
 
+## 硬件需求与连接
 **硬件需求**
 
 <img src="../img/Robot_DOF6/12.jpg" style="width:600px">
