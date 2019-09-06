@@ -1,5 +1,7 @@
 
 
+
+
 # SCA其他配件
 主要包括终端电阻、回馈制动、电源、急停开关、执行器综合线缆、EL20系列综合线缆、梯形头、梯形头连接线、EL20系列终端电阻和电池。
   
@@ -60,4 +62,4 @@ SCA执行器综合线缆为INNFOS专为SCA研发的一款线缆，连接HUB与SC
 ## 版本变更记录
 **下表简单描述了版本变更记录**
 
-<table style="width:400px"><thead><tr style="background:PaleTurquoise"><th style="width:100px">版本号</th><th style="width:150px">更新时间</th><th style="width:150px">更新内容</th></tr></thead><tbody><tr><td>v1.0.0</td><td>2019.07.30</td><td>全文添加</td></tbody></table>
+<table style="width:400px"><thead><tr style="background:PaleTurquoise"><th style="width:100px">版本号</th><th style="width:150px">更新时间</th><th style="width:150px">更新内容</th></tr></thead><tbody><tr><td>V1.0.1</td><td>2019.09</td><td>增加EL20配件</td></tr><tr><td>V1.0.0</td><td>2019.04</td><td>第一个版本</td></tbody></table>
