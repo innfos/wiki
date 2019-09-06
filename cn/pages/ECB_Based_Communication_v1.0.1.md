@@ -150,7 +150,6 @@ Note: 必须先断电然后再插拔部件.  否则可能损坏部件.
 想了解更多关于`IAS`的信息 , 请访问[INNFOS Actuator Studio(IAS)说明](#!pages/INNFOS_Actuator_Studio_IAS_instruction.md).
 
 ## 版本变更记录
-
-<table style="width:400px"><thead><tr style="background:PaleTurquoise"><th style="width:100px">版本号</th><th style="width:150px">更新时间</th><th style="width:150px">更新内容</th></tr></thead><tbody><tr><td>V1.0.1</td><td>2019.04</td><td>增加EL20连接方式</td></tr><tr><td>V1.0.0</td><td>2019.04</td><td>第一个版本</th></tr></thead><tbody><tr><td>
+<table style="width:400px"><thead><tr style="background:PaleTurquoise"><th style="width:100px">版本号</th><th style="width:150px">更新时间</th><th style="width:150px">更新内容</th></tr></thead><tbody><tr><td>V1.0.1</td><td>2019.09</td><td>增加EL20连接方式</td></tr><tr><td>V1.0.0</td><td>2019.04</td><td>第一个版本</td></tbody></table>
 
 
