@@ -73,7 +73,14 @@ Note: 带图号的要将图号居中对齐，代码格式效果如上：
 - 文档编辑完成后请将index.md中的对应文档链接进行修改，以保证及时更新。操作时若遇到问题请联系张贺凯或韦贝贝。
 
 
-### JS代码格式　
+### 命令行格式
+如下：
+```sh
+$ robotserver
+```
+
+### JS代码格式
+如下：
 ```javascript
 function test(){
 	console.log("Hello world!");
@@ -86,5 +93,5 @@ testBox.add("jQuery").remove("jQuery");
 ## 版本变更记录
 **下表简单描述了版本变更记录**
 
-<table style="width:400px"><thead><tr style="background:PaleTurquoise"><th style="width:100px">版本号</th><th style="width:150px">更新时间</th><th style="width:150px">更新内容</th></tr></thead><tbody><tr><td>v1.0.3</td><td>2019.07.01</td><td>添加内容</td><tr><td>v1.0.2</td><td>2019.05.27</td><td>添加内容</td><tr><td>v1.0.1</td><td>2019.05.22</td><td>添加内容</td><tr><td>v1.0.0</td><td>2019.05.17</td><td>全文添加</td></tbody></table>
+<table style="width:400px"><thead><tr style="background:PaleTurquoise"><th style="width:100px">版本号</th><th style="width:150px">更新时间</th><th style="width:150px">更新内容</th></tr></thead><tbody><tr><td>v1.0.4</td><td>2019.09.09</td><td>添加内容</td><tr><td>v1.0.3</td><td>2019.07.01</td><td>添加内容</td><tr><td>v1.0.2</td><td>2019.05.27</td><td>添加内容</td><tr><td>v1.0.1</td><td>2019.05.22</td><td>添加内容</td><tr><td>v1.0.0</td><td>2019.05.17</td><td>全文添加</td></tbody></table>
 
