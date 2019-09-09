@@ -124,32 +124,34 @@ Note: 此两文件夹需放在同一目录下
 ### 运行模式
 机械臂提供以下运行 mode0,mode1,mode2,mode3,mode4
 <br>cd robot_controller 进入到主目录
-执行命令
-```javascript
-robotserver
+<br>执行命令
+```sh
+$ robotserver
 ```
 <br>根据运行模式 ./robotserver xx
 <br>其中file文件夹用于存储路径文件
 
 * mode0
 此模式的作用是关掉机械臂使能状态
-执行命令 
-```javascript
-./robotserver mode0
+<br>执行命令
+```sh
+$ ./robotserver mode0
 ```
+
 Note: 机械臂断电之前，需执行此命令，然后才能关掉电源
 
 
 * mode1
 此模式的作用是连续记录轨迹
 执行命令 
-```javascript
-./robotserver mode0
+```sh
+$ ./robotserver mode1
 ```
 
+
 此时终端会显示：
-```javascript
-Input 'start' to start...
+```sh
+$ Input 'start' to start...
 ```
 输入“start”开始记录。
 CTRL + C可停止记录，此时轨迹文件存储在file/trajectory.txt里。
