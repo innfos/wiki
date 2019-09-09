@@ -117,6 +117,7 @@ Mode41：以平滑的方式再现单点拖动示教的路径
 ### 下载安装
 通过此链接下载机械臂软件  https://github.com/innfos/robot_controller
 <br>下载 SDK   https://github.com/innfos/INNFOS-Actuator-Studio-linux
+
 Note: 此两文件夹需放在同一目录下
 
 ### 运行模式
