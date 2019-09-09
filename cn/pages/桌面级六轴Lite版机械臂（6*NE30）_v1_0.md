@@ -115,26 +115,45 @@ Mode41：以平滑的方式再现单点拖动示教的路径
 
 
 ### 下载安装
+目前支持linux环境
 通过此链接下载机械臂软件  https://github.com/innfos/robot_controller
-<br>下载 SDK   https://github.com/innfos/INNFOS-Actuator-Studio-linux
+下载 SDK   https://github.com/innfos/INNFOS-Actuator-Studio-linux
 
 Note: 此两文件夹需放在同一目录下
 
 ### 运行模式
-cd robot_controller 进入到主目录
-<br>可执行文件为robotserver 
+机械臂提供以下运行 mode0,mode1,mode2,mode3,mode4
+<br>cd robot_controller 进入到主目录
+执行命令
+```javascript
+robotserver
+```
 <br>根据运行模式 ./robotserver xx
 <br>其中file文件夹用于存储路径文件
 
-#### 运行模式
 * mode0
-执行命令 ./robotserver mode0
 此模式的作用是关掉机械臂使能状态
+执行命令 
+```javascript
+./robotserver mode0
+```
+Note: 机械臂断电之前，需执行此命令，然后才能关掉电源
+
 
 * mode1
-执行命令 ./robotserver mode1
 此模式的作用是连续记录轨迹
-CTRL + C可停止记录
+执行命令 
+```javascript
+./robotserver mode0
+```
+
+此时终端会显示：
+```javascript
+Input 'start' to start...
+```
+输入“start”开始记录。
+CTRL + C可停止记录，此时轨迹文件存储在file/trajectory.txt里。
+
 
 * mode2
 执行命令 ./robotserver mode2
