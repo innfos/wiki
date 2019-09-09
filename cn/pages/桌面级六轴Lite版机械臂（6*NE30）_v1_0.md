@@ -123,12 +123,18 @@ Note: 此两文件夹需放在同一目录下
 
 ### 运行模式
 机械臂提供以下运行 mode0,mode1,mode2,mode3,mode4
-<br>cd robot_controller 进入到主目录
+```shcd robot_controller-master 
+```
+进入到主目录
+
 <br>执行命令
 ```sh
 $ robotserver
 ```
-<br>根据运行模式 ./robotserver xx
+<br>根据运行模式在终端输入： 
+```sh
+$ ./robotserver xx
+```
 <br>其中file文件夹用于存储路径文件
 
 * mode0
@@ -143,56 +149,79 @@ Note: 机械臂断电之前，需执行此命令，然后才能关掉电源
 
 * mode1
 此模式的作用是连续记录轨迹
-执行命令 
+<br>执行命令 
 ```sh
 $ ./robotserver mode1
 ```
 
 
 此时终端会显示：
-```sh
-$ Input 'start' to start...
-```
+<img src="../img/.jpg" style="width:600px">
+
 输入“start”开始记录。
 CTRL + C可停止记录，此时轨迹文件存储在file/trajectory.txt里。
 
 
 * mode2
-执行命令 ./robotserver mode2
-再现模式2生成的轨迹
+再现“mode1”生成的轨迹文件file/trajectory.txt。
 该模式会循环运行
-CTRL + C可停止运行
-此时会提示Input 'end' to end ...
-输入end会使机械臂进入电流模式，请用手扶着机械臂。
+<br>执行命令 
+```sh
+$ ./robotserver mode2
+```
+此时终端会显示：
+<img src="../img/.jpg" style="width:600px">
+该值为再现速度比例，取值范围为0.1-1，即10%-100%，输入正确的值后按Enter键进行下一步。建议第一次运行采用低的再现速度比例，确认路径无误后，可采用较高的再现速度比例。
+CTRL + C可停止运行循环运行，此时终端会提示：
+<img src="../img/.jpg" style="width:600px">
+输入“end”会使机械臂进入电流模式，请用手扶着机械臂。
+
 
 
 * mode3
-此模式下会逐步记录路径点位
-执行命令 ./robotserver mode3
+此模式下会逐步记录路径点位，并存储在文件file/data.txt中。
+<br>执行命令 
+```sh
+$ ./robotserver mode3
+```
 此时终端会提示：
-please insert MOVJ、MOVL or MOVC:
-输入MOVJ 并按enter键，则表示记录下当前点，再现时会以关节插补的形式运动到此点
-输入MOVL 并按enter键，则表示记录下当前点，再现时会以直线插补的形式运动到此	点
-输入MOVC 并按enter键
-此时终端会提示：
-The auxiliary point has been inserted.
-Input 'YES' to insert the target point : 
-表示记录下当前点，此点为圆弧辅助点
-输入YES后则表示记录下当前点，此点为圆弧终点
-再现时会以圆弧插补的形式运动到圆弧终点
-输入其他值则退出示教。
+<img src="../img/.jpg" style="width:600px">
+该选项为选择插补类型，可选择输入“MOVJ”、“MOVL”、“MOVC”，输入其它值则退出程序。
+MOVJ:
+关节插补，末端运动轨迹具有不确定性，仅在关节空间进行规划，终端输入“MOVJ”
+MOVL:
+直线插补，末端运动轨迹为直线，终端输入“MOVL”
+MOVC
+圆弧插补，末端运动轨迹为圆弧，圆弧插补需要记录两个点，一个为辅助点，输入“MOVC”
+后记录下辅助点，终端如下提示，此时输入“YES”记录圆弧终点，输入其他则退出程序。
+<img src="../img/.jpg" style="width:600px">
 
 
 * mode4
-执行命令 ./robotserver mode4
-按模式mode3生成的路径方式运行。
-CTRL + C可停止运行
+按模式“mode3”生成的路径文件file/data.txt进行再现运行。
+<br>执行命令
+```sh
+$ ./robotserver mode4
+```
+此时终端会显示：
+<img src="../img/.jpg" style="width:600px">
+该值为再现速度比例，取值范围为0.1-1，即10%-100%，输入正确的值后按Enter键进行下一步。建议第一次运行采用低的再现速度比例，确认路径无误后，可采用较高的再现速度比例。
+确定再现速度比例后终端会显示：
 
-* mode41
-执行命令 ./robotserver mode41
-按模式mode3生成的路径方式运行，并加入平滑过渡
-注意，此模式下路径会变形。
-CTRL + C可停止运行
+<img src="../img/.jpg" style="width:600px">
+该选项为选择再现运行模式，可选择输入“STEP”、“CYCLE”、“CONTINUOUS”，输入其它值则退出程序。
+STEP:
+单步运行模式，该模式下可输入“FORWARD”运行到下一个点，或者输入“BACKWARD”运行到上一个点，输入其它值则退出程序。
+<img src="../img/.jpg" style="width:600px">
+
+CYCLE:
+单循环运行模式，即只运行程序一遍，此模式下终端会出现以下界面，输入“YES”以平滑的方式再现路径（注意路径会变形），输入其他则按正常运动方式运行（即点到点运动速度降低为零）。
+<img src="../img/.jpg" style="width:600px">
+
+CONTINUOUS:
+连续循环运行模式，连续再现“mode3”示教的路径，此模式下终端会出现以下界面，输入“YES”以平滑的方式再现路径（注意路径会变形），输入其他则按正常运动方式运行（即点到点运动速度降低为零）
+<img src="../img/.jpg" style="width:600px">
+以上模式均可按下CTRL + C终止程序运行
 
 
 ### 注意事项
