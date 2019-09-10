@@ -94,26 +94,6 @@
 * 示教-再现功能
   
 
-## 机械臂提供以下功能
-Mode0: 关闭机械臂使能状态
-<img src="../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0_.jpg" style="width:600px">
-
-Mode1: 连续记录轨迹
-<img src="../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0_.jpg" style="width:600px">
-
-Mode2: 再现记录的轨迹
-<img src="../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0_.jpg" style="width:600px">
-
-Mode3：单点拖动示教模式
-<img src="../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0_.jpg" style="width:600px">
-
-Mode4：再现单点拖动示教的路径
-<img src="../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0_.jpg" style="width:600px">
-
-Mode41：以平滑的方式再现单点拖动示教的路径
-<img src="../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0_.jpg" style="width:600px">
-
-
 ### 下载安装
 目前支持linux环境
 通过此链接下载机械臂软件  https://github.com/innfos/robot_controller
