@@ -103,7 +103,8 @@ Note: 此两文件夹需放在同一目录下
 
 ### 运行模式
 机械臂提供以下运行 mode0,mode1,mode2,mode3,mode4
-```shcd robot_controller-master 
+```sh
+cd robot_controller-master 
 ```
 进入到主目录
 
