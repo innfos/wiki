@@ -104,18 +104,15 @@ Note: 此两文件夹需放在同一目录下
 ### 运行模式
 机械臂提供以下运行 mode0,mode1,mode2,mode3,mode4
 ```sh
-cd robot_controller-master 
+cd robot_controller-master/
 ```
 进入到主目录
-
-<br>执行命令
-```sh
-$ robotserver
-```
+<br>可执行文件为robotserver
 <br>根据运行模式在终端输入： 
 ```sh
 $ ./robotserver xx
 ```
+其中“xx”为mode0,mode1,mode2,mode3,mode4
 <br>其中file文件夹用于存储路径文件
 
 * mode0
