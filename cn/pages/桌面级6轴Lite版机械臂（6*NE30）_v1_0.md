@@ -70,7 +70,7 @@
 
 **连接后整体视图**
 
-<img src="../img/Robot_DOF6/10.jpg" style="width:600px">
+<img src="../img/Robot_DOF6/10.png" style="width:600px">
 
 
 **开启电源**
