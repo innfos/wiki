@@ -44,17 +44,17 @@ Note: 必须先断电然后再插拔部件.  否则可能损坏部件.
 
 *   用网线连接`ECB`与电脑
 
-<img src="../img/pc-c.jpg" style="width:600px">
+<img src="../img/pc-c.png" style="width:600px">
 
 **开启电源**
 
 *   开启电源. 执行器的供电电压范围为直流24V-45V.
 
-<img src="../img/poweron.jpg" style="width:600px">
+<img src="../img/poweron.png" style="width:600px">
 
 *   上电以后，执行器LED状态灯会变成黄色闪烁，启动执行器后，LED会变成绿色闪烁，这时就可以与执行器进行通信了。如果执行器内部出现错误，LED灯会变为红色闪烁，请检查执行器错误代码。
 
-<img src="../img/poweron2.jpg" style="width:600px">
+<img src="../img/poweron2.png" style="width:600px">
 
 <img src="../img/connect2.png" style="width:600px">
 
