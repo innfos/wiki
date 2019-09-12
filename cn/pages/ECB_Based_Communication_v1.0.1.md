@@ -4,36 +4,33 @@
 
 ## 硬件需求与连接
 
+## 硬件需求与连接
+
 **硬件需求**
 
-<img src="../img/all.jpg" style="width:600px">
+<img src="../img/all.png" style="width:600px">
 
 从前到后、从左到右依次为：ECB、HUB、终端电阻2个、回馈制动电容、ECB连接线、INNFOS执行器、执行器连接线，急停开关+电源。
 
 **连接电源**
 
-*   连接电源与`HUB`
+*   连接电源与`ECB+HUB`
 
-<img src="../img/power.jpg" style="width:600px">
+<img src="../img/cdy.jpg" style="width:600px">
+<img src="../img/cwdy.jpg" style="width:600px">
 
-Note: 必须先断电然后再插拔部件.  否则可能损坏部件.
+**连接执行器及其配件**
 
+*   连接`JST转MOLEX转接线`
 
-**连接ECB**
-
-*   连接`HUB`与`ECB`
-
-![ECB-C1.jpg](../img/ECB-C1.jpg "fig:ECB-C1.jpg") ![ECB-C2.jpg](../img/ECB-C2.jpg "fig:ECB-C2.jpg")
-
-*   HUB安插回馈制动电容与终端电阻
-
-![ECB-C3.jpg](../img/ECB-C3.jpg "fig:ECB-C3.jpg") ![ECB-C4.jpg](../img/ECB-C4.jpg)
+<img src="../img/cx.jpg" style="width:600px">
+<img src="../img/cwx.jpg" style="width:600px">
 
 **连接执行器**
 
 *   用执行器连接线连接`HUB`与执行器
 
-<img src="../img/Actuator-C1.jpg" style="width:600px">
+<img src="../img/Actuator-C1.png" style="width:600px">
 
 
 *   末端执行器安插终端电阻
@@ -44,17 +41,17 @@ Note: 必须先断电然后再插拔部件.  否则可能损坏部件.
 
 *   用网线连接`ECB`与电脑
 
-<img src="../img/pc-c.jpg" style="width:600px">
+<img src="../img/pc-c.png" style="width:600px">
 
 **开启电源**
 
 *   开启电源. 执行器的供电电压范围为直流24V-45V.
 
-<img src="../img/poweron.jpg" style="width:600px">
+<img src="../img/poweron.png" style="width:600px">
 
 *   上电以后，执行器LED状态灯会变成黄色闪烁，启动执行器后，LED会变成绿色闪烁，这时就可以与执行器进行通信了。如果执行器内部出现错误，LED灯会变为红色闪烁，请检查执行器错误代码。
 
-<img src="../img/poweron2.jpg" style="width:600px">
+<img src="../img/poweron2.png" style="width:600px">
 
 <img src="../img/connect2.png" style="width:600px">
 
