@@ -12,22 +12,17 @@
 
 **连接电源**
 
-*   连接电源与`HUB`.
+*   连接电源与`ECB+HUB`
 
-<img src="../img/power.jpg" style="width:600px">
+<img src="../img/cdy.jpg" style="width:600px">
+<img src="../img/cwdy.jpg" style="width:600px">
 
-Note: 必须先断电然后再插拔部件.  否则可能损坏部件.
+**连接执行器及其配件**
 
+*   连接`JST转MOLEX转接线`
 
-**连接ECB**
-
-*   连接`HUB`与`ECB`
-
-![ECB-C1.jpg](../img/ECB-C1.jpg "fig:ECB-C1.jpg") ![ECB-C2.jpg](../img/ECB-C2.jpg "fig:ECB-C2.jpg")
-
-*   HUB安插回馈制动电容与终端电阻
-
-![ECB-C3.jpg](../img/ECB-C3.jpg "fig:ECB-C3.jpg") ![ECB-C4.jpg](../img/ECB-C4.jpg)
+<img src="../img/cx.jpg" style="width:600px">
+<img src="../img/cwx.jpg" style="width:600px">
 
 **连接执行器**
 
