@@ -60,17 +60,17 @@
 
 *   用执行器连接线连接`HUB`与执行器
 
-<img src="../img/Robot_DOF6/5.jpg" style="width:600px">
+<img src="../img/Robot_DOF6/5.png" style="width:600px">
 
 **连接电脑**
 
 *   用网线连接`ECB`与电脑
 
-<img src="../img/Robot_DOF6/7.jpg" style="width:600px">
+<img src="../img/Robot_DOF6/7.png" style="width:600px">
 
 **连接后整体视图**
 
-<img src="../img/Robot_DOF6/12.png" style="width:600px">
+<img src="../img/12.png" style="width:600px">
 
 
 **开启电源**
