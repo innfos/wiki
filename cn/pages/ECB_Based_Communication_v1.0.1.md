@@ -10,8 +10,7 @@
 
 <img src="../img/all.png" style="width:600px">
 
-从前到后、从左到右依次为：ECB、HUB、终端电阻2个、回馈制动电容、ECB连接线、INNFOS执行器、执行器连接线，急停开关+电源。
-
+从前到后、从左到右依次为：网线、急停开关+电源、执行器综合线缆、插好终端电阻和回馈制动电容的ECB+HUB、执行器两台。
 **连接电源**
 
 *   连接电源与`ECB+HUB`
@@ -21,14 +20,14 @@
 
 **连接执行器及其配件**
 
-*   连接`JST转MOLEX转接线`
+*   连接`执行器综合线缆`
 
 <img src="../img/cx.jpg" style="width:600px">
 <img src="../img/cwx.jpg" style="width:600px">
 
 **连接执行器**
 
-*   用执行器连接线连接`HUB`与执行器
+*   用执行器综合线缆连接`HUB`与执行器
 
 <img src="../img/Actuator-C1.png" style="width:600px">
 
