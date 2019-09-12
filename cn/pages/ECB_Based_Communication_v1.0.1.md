@@ -11,6 +11,7 @@
 <img src="../img/all.png" style="width:600px">
 
 从前到后、从左到右依次为：网线、急停开关+电源、执行器综合线缆、插好终端电阻和回馈制动电容的ECB+HUB、执行器两台。
+
 **连接电源**
 
 *   连接电源与`ECB+HUB`
@@ -27,12 +28,12 @@
 
 **连接执行器**
 
-*   用执行器综合线缆连接`HUB`与执行器
+*   用`执行器综合线缆`连接`HUB`与执行器
 
 <img src="../img/Actuator-C1.png" style="width:600px">
 
 
-*   末端执行器安插终端电阻
+*   末端执行器安插`终端电阻`
 
 <img src="../img/Actuator-C2.jpg" style="width:600px">
 
