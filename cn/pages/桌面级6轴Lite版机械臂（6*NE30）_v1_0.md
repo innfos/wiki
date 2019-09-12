@@ -70,14 +70,14 @@
 
 **连接后整体视图**
 
-<img src="../img/Robot_DOF6/10.png" style="width:600px">
+<img src="../img/Robot_DOF6/12.png" style="width:600px">
 
 
 **开启电源**
 
 *   开启电源. 执行器的供电电压范围为直流24V-45V.
 
-<img src="../img/poweron.jpg" style="width:600px">
+<img src="../img/poweron.png" style="width:600px">
 
 *   上电以后，执行器LED状态灯会变成黄色闪烁，启动执行器后，LED会变成绿色闪烁，这时就可以与执行器进行通信了。如果执行器内部出现错误，LED灯会变为红色闪烁，请检查执行器错误代码。
 
