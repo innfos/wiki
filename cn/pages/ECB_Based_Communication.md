@@ -6,7 +6,7 @@
 
 **硬件需求**
 
-<img src="../img/all.jpg" style="width:600px">
+<img src="../img/all.png" style="width:600px">
 
 从前到后、从左到右依次为：ECB、HUB、终端电阻2个、回馈制动电容、ECB连接线、INNFOS执行器、执行器连接线，急停开关+电源。
 
@@ -33,7 +33,7 @@ Note: 必须先断电然后再插拔部件.  否则可能损坏部件.
 
 *   用执行器连接线连接`HUB`与执行器
 
-<img src="../img/Actuator-C1.jpg" style="width:600px">
+<img src="../img/Actuator-C1.png" style="width:600px">
 
 
 *   末端执行器安插终端电阻
