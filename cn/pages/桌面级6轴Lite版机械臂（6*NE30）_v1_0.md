@@ -111,10 +111,15 @@ Note: 此两文件夹需放在同一目录下
 
 ### 运行模式
 机械臂提供以下运行 mode0,mode1,mode2,mode3,mode4
+
+进入到主目录
 ```sh
 cd robot_controller-6-NE30-/
 ```
-进入到主目录
+配置环境变量
+```sh
+ . envirment
+```
 <br>可执行文件为robotserver
 <br>根据运行模式在终端输入： 
 ```sh
