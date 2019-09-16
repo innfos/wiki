@@ -55,7 +55,7 @@ Delta 机器人是一种并联机器人，主要可以实现包装、分捡、�
 
 *   连接`执行器综合线缆`
 
-<img src="../img/cx.jpg" style="width:600px">
+<img src="../Delta机器人img/cx.jpg" style="width:600px">
 <img src="../img/cwx.jpg" style="width:600px">
 
 **连接机械臂**
