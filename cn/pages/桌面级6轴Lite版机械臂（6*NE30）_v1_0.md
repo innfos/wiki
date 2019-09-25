@@ -96,7 +96,7 @@
 
 ### 下载安装
 
-目前支持linux环境
+运行环境：linux-x86-64
 
 访问该链接[download link](https://github.com/innfos/robot_controller-6-NE30-.git)下载机械臂软件或者直接执行以下命令
 ```sh
