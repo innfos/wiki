@@ -116,16 +116,23 @@ Note: 此两文件夹需放在同一目录下
 ```sh
 $ cd robot_controller-6-NE30-/
 ```
-配置环境变量
+配置环境变量：
 ```sh
-$ . envirment
+$ . environment
 ```
+Note: 每次打开终端都需执行此命令，如不执行,终端会提示找不到动态库“libActuatorController.so”
+
 <br>可执行文件为robotserver
 <br>根据运行模式在终端输入： 
 ```sh
 $ ./robotserver xx
 ```
 其中“xx”为mode0,mode1,mode2,mode3,mode4
+若执行时提示没有“robotserver”文件，表明该文件没有权限，执行以下命令更改权限：
+```sh
+$ chmod +x robotserver
+```
+
 <br>其中file文件夹用于存储路径文件
 
 * mode0
