@@ -128,6 +128,7 @@ Note: 每次打开终端都需执行此命令，如不执行,终端会提示找�
 $ ./robotserver xx
 ```
 其中“xx”为mode0,mode1,mode2,mode3,mode4
+
 若执行时提示没有“robotserver”文件，表明该文件没有权限，执行以下命令更改权限：
 ```sh
 $ chmod +x robotserver
