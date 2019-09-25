@@ -114,11 +114,11 @@ Note: 此两文件夹需放在同一目录下
 
 进入到主目录
 ```sh
-cd robot_controller-6-NE30-/
+$ cd robot_controller-6-NE30-/
 ```
 配置环境变量
 ```sh
- . envirment
+$ . envirment
 ```
 <br>可执行文件为robotserver
 <br>根据运行模式在终端输入： 
