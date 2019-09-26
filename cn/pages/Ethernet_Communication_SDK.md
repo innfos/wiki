@@ -10,10 +10,10 @@
 
 #### 下载
 
-*   访问该链接[download link](https://github.com/innfos/ActuatorController_SDK.git)下载SDK相关文件或者直接执行以下命令
+*   访问该链接[download link](https://github.com/innfos/innfos-cpp-sdk.git)下载SDK相关文件或者直接执行以下命令
 
 ```sh
-$ git clone https://github.com/innfos/ActuatorController_SDK.git
+$ git clone https://github.com/innfos/innfos-cpp-sdk.git
 ```
     
 ## API相关文档
