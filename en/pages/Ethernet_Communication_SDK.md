@@ -11,11 +11,11 @@ Ethernet Communication SDK
 
 #### download
 
-*   visit the link download link to [download link](https://github.com/innfos/ActuatorController_SDK.git) download the SDK related files or execute the following command directly
+*   visit the link download link to [download link](https://github.com/innfos/innfos-cpp-sdk.git) download the SDK related files or execute the following command directly
 
 
 ```sh
-$ git clone https://github.com/innfos/ActuatorController_SDK.git
+$ git clone https://github.com/innfos/innfos-cpp-sdk.git
 ```
     
 ## API related documentation
