@@ -20,14 +20,14 @@
 
 ### 接插件型号图
 
-<table class="tableizer-table" style="width:700px">
+<table class="tableizer-table" style="width:400px">
 <thead><tr class="tableizer-firstrow"><th colspan="3" style="background: PaleTurquoise; color: black;">接插件型号图</th></tr></thead><tbody><tr><td>标号</td><td>Signal</td><td>颜色</td><tr><td>1</td><td>PVDD</td><td>黑线</td><tr><td>3</td><td>PVDD</td><td>黑线</td></tr><tr><td>5</td><td>PVDD</td><td>黑线</td></tr><tr><td>2</td><td>GND</td><td>黑线</td></tr><tr><td>4</td><td>GND</td><td>黑线</td></tr><tr><td>6</td><td>CAN-GND</td><td>灰线</td></tr><tr><td>7</td><td>CAN-L</td><td>灰线</td></tr><tr><td>8</td><td>CAN-H</td><td>灰线</td></tr></tbody></table>
 </tbody></table>
 
 
 #### 端子引脚功能描述
 
-<img src="../img/配线2-2.png" style="width:450px">
+<img src="../img/配线2-2.png" style="width:700px">
 
 ## 版本变更记录
 **下表简单描述了版本变更记录**
