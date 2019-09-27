@@ -84,9 +84,6 @@ LRS-350-48 电源是一款350W单组输出封闭型电源供应器，采用115VA
 
 <img src="../img/20xl.jpg" style="width:600px">
 
-## T型三通转换器（JST）
-
-<img src="../img/txt .jpg" style="width:600px">
 
 ## EL20系列综合线缆
 
@@ -125,7 +122,8 @@ LRS-350-48 电源是一款350W单组输出封闭型电源供应器，采用115VA
 ## T型三通转换器（JST）
 T型三通转换器（JST）用于连接EL20系列执行器、JST转MOLEX转接线 、EL20系列综合线缆（JST）、终端电阻（JST）和编码器电池。
 
-<img src="../img/T型三通转换器（JST）.jpg" style="width:600px">
+<img src="../img/txt .jpg" style="width:600px">
+
 
 
 ## 版本变更记录
