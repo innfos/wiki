@@ -40,11 +40,6 @@ LRS-350-48 电源是一款350W单组输出封闭型电源供应器，采用115VA
 
 
 
-
-
-
-
-
 ## 执行器综合线缆
 SCA执行器综合线缆为INNFOS专为SCA研发的一款线缆，连接HUB与SCA，其中包含了为SCA供电的功率电源线缆和CAN总线。硅胶线保证电流传输，耐折弯、耐高温。两芯超软双绞屏蔽线，保证信号传输，外加阻燃编织网保证线缆耐磨。
 接口说明：（图示）
@@ -67,11 +62,40 @@ SCA执行器综合线缆为INNFOS专为SCA研发的一款线缆，连接HUB与SC
 
 <img src="../img/dz.jpg" style="width:600px">
 
-## 多圈计数编码器电池
+## 编码器电池
+编码器电池是在执行器掉电的情况下，可以记录执行器的位置，以保证在外因的作用下产生位移后掉电位置可以记录。正常上电工作时，因为系统的电压稍高于电池电压，电池截止输出，也就是保存电池寿命。只有在系统断电时给编码器供电，保持当前编码器数据。INNFOS执行器只有EL20系列的执行器编码器外置，其余型号编码器皆为内置。
+多圈计数编码器电池（CR2032）适用于单台EL20系列执行器使用，多台EL20系列执行器串联使用选用多圈计数编码器电池（CR123A）。
+
+
+### 多圈计数编码器电池（CR2032）
+多圈计数编码器电池（CR2032）为纽扣电池，连接在T型三通转换器（JST）上为EL20系列执行器的编码器进行供电。
 
 <img src="../img/dc.jpg" style="width:600px">
+
+
+
+### 多圈计数编码器电池（CR123A）
+多圈计数编码器电池（CR123A）为普通电池，连接在T型三通转换器（JST）上为EL20系列执行器的编码器进行供电。
+
+<img src="../img/多圈计数编码器电池（CR123A）.jpg" style="width:600px">
+
+
+
+## 六、电源线（香蕉头转XT60）
+电源线（香蕉头转XT60）用于连接电源给HUB供电，公头一端连接在HUB上。
+
+<img src="../img/多圈计数编码器电池（CR123A）.jpg" style="width:600px">
+
+
+
+## 六、电源线（香蕉头转XT60）
+T型三通转换器（JST）用于连接EL20系列执行器、JST转MOLEX转接线 、EL20系列综合线缆（JST）、终端电阻（JST）和编码器电池。
+
+<img src="../img/电源线（香蕉头转XT60）.jpg" style="width:600px">
+
 
 ## 版本变更记录
 **下表简单描述了版本变更记录**
 
-<table style="width:400px"><thead><tr style="background:PaleTurquoise"><th style="width:100px">版本号</th><th style="width:150px">更新时间</th><th style="width:150px">更新内容</th></tr></thead><tbody><tr><td>V1.0.1</td><td>2019.09</td><td>增加EL20配件</td></tr><tr><td>V1.0.0</td><td>2019.04</td><td>第一个版本</td></tbody></table>
+<table style="width:400px"><thead><tr style="background:PaleTurquoise"><th style="width:100px">版本号</th><th style="width:150px">更新时间</th><th style="width:150px">更新内容</th></tr></thead><tbody><tr><td>V1.0.2</td><td>2019.09</td><td>增加表格与内文</td></tr>
+  <tr><td>V1.0.1</td><td>2019.09</td><td>增加EL20配件</td></tr><tr><td>V1.0.0</td><td>2019.04</td><td>第一个版本</td></tbody></table>
