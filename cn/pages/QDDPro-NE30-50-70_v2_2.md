@@ -20,14 +20,15 @@ Note: 编码器计数范围: ±127圈; 电机保护温度可设置范围: 25-120
 
 ### 接插件型号图
 
-<table class="tableizer-table" style="width:350px">
-<thead><tr class="tableizer-firstrow"><th colspan="3" style="background: PaleTurquoise; color: black;">接插件型号图</th></tr></thead><tbody><tr><td>标号</td><td>Signal</td><td>颜色</td><tr><td>1</td><td>PVDD</td><td>黑线</td><tr><td>3</td><td>PVDD</td><td>黑线</td></tr><tr><td>5</td><td>PVDD</td><td>黑线</td></tr><tr><td>2</td><td>GND</td><td>黑线</td></tr><tr><td>4</td><td>GND</td><td>黑线</td></tr><tr><td>6</td><td>CAN-GND</td><td>灰线</td></tr><tr><td>7</td><td>CAN-L</td><td>灰线</td></tr><tr><td>8</td><td>CAN-H</td><td>灰线</td></tr></tbody></table>
-</tbody></table>
-
+<img src="../img/配线2-2.png" style="width:600px">
 
 #### 端子引脚功能描述
 
-<img src="../img/配线2-2.png" style="width:600px">
+*  1 3 5为功率电源（PVDD）。
+*  2 4为电源负极（GND）。
+*  6为CAN通讯信号地线（CAN-GND）。
+*  7为CAN通讯低位数据线（CAN-L）。
+*  8为CAN通讯高位数据线（CAN-H）。
 
 ## 版本变更记录
 **下表简单描述了版本变更记录**
