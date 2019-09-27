@@ -18,16 +18,15 @@
  <tr><td style="width:175px">功率</td><td style="width:175px">200 W</td><td style="width:175px">分辨率</td><td>835584(19bit) Step/turn</td></tr>
  <tr><td>额定电压</td><td>42 VDC</td><td>编码器</td><td>多圈绝对值式编码器</td></tr>
  <tr><td>空载转速</td><td>117.6 RPM</td><td>通信接口</td><td>隔离式CAN</td></tr>
- <tr><td>额定转速</td><td>68.6 RPM</td><td>旋转角度</td><td>> 360.0 °</td></tr><tr><td>额定扭矩</td><td>6.6 Nm</td><td>环境温度范围</td><td>5~55 °C</td></tr><td>峰值扭矩</td><td>29.325 Nm</td><td>噪声</td><td><= 70 dB(A)</td></tr>
- <td colspan="2"><b>机械参数</b></td></tr><td style="width:175px">直径</td><td style="width:175px">70mm</td></tr>  
-<tr><td>转矩系数</td><td>1.7748 Nm/A</td><td>长度</td><td>70.2mm</td></tr>      
-<tr><td>相电流满量程</td><td>16.5A</td><td>重量</td><td>561.7 g</td></tr>
-<tr><td>额定母线电流</td><td>4.8 A</td><td>背隙</td><td><=20 Arc sec</td></tr>
-<tr><td>静态工作母线电流</td><td>0.08 A</td><td>最大轴向载荷</td><td>830N</td></tr>
-<tr><td colspan="2"><b>基本参数</b></td></tr>
-<tr><td>电机类型</td><td>无刷伺服电机</td></tr>
-<tr><td>电压范围</td><td>24~45 VDC</td></tr><td>最大径向载荷</td><td>830N</td></tr>
-<tr><td>减速比</td><td>51:1</td></tr><td>版本号</td><td>v2.2</td></tr>
+ <tr><td>额定转速</td><td>68.6 RPM</td><td>旋转角度</td><td>> 360.0 °</td></tr><tr><td>额定扭矩</td><td>6.6 Nm</td><td>环境温度范围</td><td>5~55 °C</td></tr><td>峰值扭矩</td><td>29.325 Nm</td><td>噪声</td><td><= 70 dB(A)</td></tr><tr><td>转矩系数</td><td>1.7748 Nm/A</td><td colspan="2"><b>机械参数</b></td></tr>
+ <tr><td>相电流满量程</td><td>16.5A</td><td style="width:175px">直径</td><td style="width:175px">70mm</td></tr>
+ <tr><td>额定母线电流</td><td>4.8 A</td><td>长度</td><td>70.2mm</td></tr>
+ <tr><td>静态工作母线电流</td><td>0.08 A</td><td>重量</td><td>561.7 g</td></tr>
+ <tr><td colspan="2"><b>基本参数</b></td><td>背隙</td><td><=20 Arc sec</td></tr>
+ <tr><td>电机类型</td><td>无刷伺服电机</td><td>最大轴向载荷</td><td>830N</td></tr>
+ 
+ <tr><td>电压范围</td><td>24~45 VDC</td><td>最大径向载荷</td><td>830N</td></tr>
+<tr><td>减速比</td><td>51:1</td><td>版本号</td><td>v2.2</td></tr>
 </tbody></table>
 
 
