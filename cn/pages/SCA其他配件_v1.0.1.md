@@ -22,7 +22,8 @@ CAN是多主传输，为了消除短路现象，其CANH和CANL电平性质是不
 
 终端电阻（JST）适配型号为EL20系列执行器，可以连接T型三通转换器（JST）上使用。
 
-<img src="../img/终端电阻（JST）.png" style="width:600px">
+<img src="../img/dz.jpg" style="width:600px">
+
 
 
 
@@ -38,15 +39,14 @@ SCA执行器综合线缆为INNFOS专为SCA研发的一款线缆，连接HUB与SC
 ### EL20系列综合线缆（JST）
 EL20系列综合线缆（JST）用于连接T型三通转换器（JST），实现EL20系列执行器的串联使用。EL20系列执行器的选配件。
 
-<img src="../img/EL20系列综合线缆（JST）.png" style="width:600px">
+<img src="../img/txtljx.png" style="width:600px">
 
 
 
 ### JST转MOLEX转接线
 JST转MOLEX转接线用于连接HUB与T型三通转换器（JST）、T型三通转换器（JST）与非EL20系列SCA的连接，EL20系列执行器的选配件。
 
-<img src="../img/JST转MOLEX转接线.png" style="width:600px">
-
+<img src="../img/20xl.jpg" style="width:600px">
 
 
 ## 回馈制动电容：
@@ -78,20 +78,6 @@ LRS-350-48 电源是一款350W单组输出封闭型电源供应器，采用115VA
 <table class="tableizer-table" style="width:700px"><thead><tr class="tableizer-firstrow"><th colspan="4" style="background: PaleTurquoise; color: black;">2400W 可调直流电源参数</th></tr></thead><tbody><tr><td>2400W可调直流电源尺寸</td><td>长318*宽134*高87mm</td><td>净重</td><td>3.8KG</td></tr><tr><td>输入电压范围</td><td>AC100-240V</td><td>浪涌电流</td><td>〈30A</td></tr><tr><td>额定电压</td><td>230V,AC</td><td>低压功率</td><td>100VAC输入时输出功率1440W</td><tr><td>最大输入电流</td><td>18A</td><td>可调输出电压范围</td><td>0-60V</td></tr><tr><td>频率</td><td>45-65HZ</td><td>可调输出电流范围</td><td>0-40A</td></tr><tr><td>功率因数</td><td>〉0.99（满载情况下）</td><td>输出纹波</td><td>最大与最小电压≤100mV</td></tr><tr><td>AC110V电压输入时输出电流</td><td>0-60V=24A</td><td>电压调整率</td><td>≤0.1%，±6mV</td></tr><tr><td>电流调整率</td><td>≤0.6%，±20mA</td><td>负载调整率</td><td>电流≥18A时，电压不超±1V，<br>电流≤10A时电压不超±0.5V</td></tr>  <tr><td>空耗</td><td>≤90W（满高端输出电压状态）</td><td>耐压</td><td>1.8KV,AC,50Hz</td></tr>    <tr><td>泄露电流</td><td>≤3mA,1.8K V/5S </td><td>绝缘电阻</td><td>≥5MΩ，DC500V/5S</td></tr>    <tr><td>湿度</td> <td><b>≤80%</td><td>存储温度</td><td>-30~70℃ </td></tr></tbody></table>
 
 
-
-
-## JST转MOLEX转接线
-
-<img src="../img/20xl.jpg" style="width:600px">
-
-
-## EL20系列综合线缆
-
-<img src="../img/txtljx.png" style="width:600px">
-
-## 终端电阻(JST)
-
-<img src="../img/dz.jpg" style="width:600px">
 
 ## 编码器电池
 编码器电池是在执行器掉电的情况下，可以记录执行器的位置，以保证在外因的作用下产生位移后掉电位置可以记录。正常上电工作时，因为系统的电压稍高于电池电压，电池截止输出，也就是保存电池寿命。只有在系统断电时给编码器供电，保持当前编码器数据。INNFOS执行器只有EL20系列的执行器编码器外置，其余型号编码器皆为内置。
