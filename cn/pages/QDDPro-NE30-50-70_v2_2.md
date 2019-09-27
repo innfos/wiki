@@ -27,7 +27,7 @@
 
 #### 端子引脚功能描述
 
-<img src="../img/配线2-2.png" style="width:700px">
+<img src="../img/配线2-2.png" style="width:600px">
 
 ## 版本变更记录
 **下表简单描述了版本变更记录**
