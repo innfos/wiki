@@ -7,8 +7,20 @@
 
 ## 终端电阻：
 高频信号或长线传输时，信号波长相对传输线较短，信号在传输线终端会形成反射波，干扰原信号，所以需要在传输线末端加终端电阻，使信号到达传输线末端后不反射。对于低频信号或线缆较短时则不用。CAN总线两端必须连接终端电阻才可以正常工作，终端电阻应该与通讯电缆的阻抗相同，典型值为120欧姆。其作用是匹配总线阻抗，提高数据通信的抗干扰性及可靠性。
+CAN是多主传输，为了消除短路现象，其CANH和CANL电平性质是不一样的，如CANJ的两种逻辑状态为高电平和高阻态，CANL的两种逻辑状态为低电平和高阻，高阻状态其实电平是不确定的，因此在差分传输的CAN总线中，匹配电阻不仅作为匹配用还起到降低CANH和CANL回路中阻抗的作用，使CANH和CAL具有确定的电平，所以需要在CAN两端加匹配电阻。
+
+
+### 终端电阻（MOLEX）
+终端电阻（MOLEX）适配型号为除EL20系列执行器以外全系列执行器，可以连接在执行器端口和ECB_HUB上使用。
 
 <img src="../img/终端电阻_v1_0.png" style="width:600px">
+
+
+### 终端电阻（JST）
+
+终端电阻（JST）适配型号为EL20系列执行器，可以连接T型三通转换器（JST）上使用。
+
+<img src="../img/终端电阻（JST）.png" style="width:600px">
 
 
 ## 回馈制动电容：
@@ -36,7 +48,7 @@ LRS-350-48 电源是一款350W单组输出封闭型电源供应器，采用115VA
 
 <img src="../img/2400W可调直流电源_v1_0.png" style="width:600px">
 
-<table class="tableizer-table" style="width:350px"><thead><tr class="tableizer-firstrow"><th colspan="4" style="background: PaleTurquoise; color: black;">2400W 可调直流电源参数</th></tr></thead><tbody><tr><td>2400W可调直流电源尺寸</td><td>长318*宽134*高87mm</td><td>净重</td><td>3.8KG</td></tr><tr><td>输入电压范围</td><td>AC100-240V</td><td>浪涌电流</td><td>〈30A</td></tr><tr><td>额定电压</td><td>230V,AC</td><td>低压功率</td><td>100VAC输入时输出功率1440W</td><tr><td>最大输入电流</td><td>18A</td><td>可调输出电压范围</td><td>0-60V</td></tr><tr><td>频率</td><td>45-65HZ</td><td>可调输出电流范围</td><td>0-40A</td></tr><tr><td>功率因数</td><td>〉0.99（满载情况下）</td><td>输出纹波</td><td>最大与最小电压≤100mV</td></tr><tr><td>AC110V电压输入时输出电流</td><td>0-60V=24A</td><td>电压调整率</td><td>≤0.1%，±6mV</td></tr><tr><td>电流调整率</td><td>≤0.6%，±20mA</td><td>负载调整率</td><td>电流≥18A时，电压不超±1V，<br>电流≤10A时电压不超±0.5V</td></tr>  <tr><td>空耗</td><td>≤90W（满高端输出电压状态）</td><td>耐压</td><td>1.8KV,AC,50Hz</td></tr>    <tr><td>泄露电流</td><td>≤3mA,1.8K V/5S </td><td>绝缘电阻</td><td>≥5MΩ，DC500V/5S</td></tr>    <tr><td>湿度</td> <td><b>≤80%</td><td>存储温度</td><td>-30~70℃ </td></tr></tbody></table>
+<table class="tableizer-table" style="width:700px"><thead><tr class="tableizer-firstrow"><th colspan="4" style="background: PaleTurquoise; color: black;">2400W 可调直流电源参数</th></tr></thead><tbody><tr><td>2400W可调直流电源尺寸</td><td>长318*宽134*高87mm</td><td>净重</td><td>3.8KG</td></tr><tr><td>输入电压范围</td><td>AC100-240V</td><td>浪涌电流</td><td>〈30A</td></tr><tr><td>额定电压</td><td>230V,AC</td><td>低压功率</td><td>100VAC输入时输出功率1440W</td><tr><td>最大输入电流</td><td>18A</td><td>可调输出电压范围</td><td>0-60V</td></tr><tr><td>频率</td><td>45-65HZ</td><td>可调输出电流范围</td><td>0-40A</td></tr><tr><td>功率因数</td><td>〉0.99（满载情况下）</td><td>输出纹波</td><td>最大与最小电压≤100mV</td></tr><tr><td>AC110V电压输入时输出电流</td><td>0-60V=24A</td><td>电压调整率</td><td>≤0.1%，±6mV</td></tr><tr><td>电流调整率</td><td>≤0.6%，±20mA</td><td>负载调整率</td><td>电流≥18A时，电压不超±1V，<br>电流≤10A时电压不超±0.5V</td></tr>  <tr><td>空耗</td><td>≤90W（满高端输出电压状态）</td><td>耐压</td><td>1.8KV,AC,50Hz</td></tr>    <tr><td>泄露电流</td><td>≤3mA,1.8K V/5S </td><td>绝缘电阻</td><td>≥5MΩ，DC500V/5S</td></tr>    <tr><td>湿度</td> <td><b>≤80%</td><td>存储温度</td><td>-30~70℃ </td></tr></tbody></table>
 
 
 
