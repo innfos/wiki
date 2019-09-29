@@ -187,7 +187,7 @@ Note:如果想执行之前示教好的点,不需要执行mode1,直接执行mode2
 **下表简单描述了版本变更记录**
 
 <table style="width:400px"><thead><tr style="background:PaleTurquoise"><th style="width:100px">版本号</th><th style="width:150px">更新时间</th><th style="width:150px">更新内容</th></tr></thead><tbody><tr><td>v1.0.1</td><td>2019.09.29</td><td>全文内容图片添加</td>
-  <td>v1.0.0</td><td>2019.09.16</td><td>全文添加</td></tbody></table>
+  <tr><td>v1.0.0</td><td>2019.09.16</td><td>全文添加</td></tr></tbody></table>
 
 
 
