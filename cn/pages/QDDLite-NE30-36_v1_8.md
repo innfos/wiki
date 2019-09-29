@@ -15,7 +15,7 @@
 
 ### 接插件型号图
 
-<img src="../img/配线2-2.png" style="left ；width:600px">
+<img src="../img/配线2-2.png" style="；width:600px">
 
 ### 端子引脚功能描述
 
