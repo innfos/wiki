@@ -133,6 +133,7 @@ chmod +x DeltaTest
 $ ./DeltaTest mode1
 ```
 此时终端会显示：
+
 <img src="../img/Delta机器人_v1_0_1.png" style="width:600px">
 
 (2)在终端中执行recorddata(每记录一个点执行一次该命令)
@@ -160,18 +161,22 @@ Note: 打开文件夹下记录数据的文本Data_linearCurve_Joint,文本中记
 $ ./DeltaTest mode2
 ```
 此时终端会显示：
+
 <img src="../img/Delta机器人_v1_0_5.png" style="width:600px">
 
 (2)在终端中执行calculate(末端计算插值点)
 此时终端会显示:
+
 <img src="../img/Delta机器人_v1_0_6.png" style="width:600px">
 
 (3)在终端中执行play(播放示教的轨迹)
 此时终端会显示:
+
 <img src="../img/Delta机器人_v1_0_7.png" style="width:600px">
 
 (4)在终端中执行ctrl+c(结束退出)
 此时终端会显示:
+
 <img src="../img/Delta机器人_v1_0_8.png" style="width:600px">
 
 Note:如果想执行之前示教好的点,不需要执行mode1,直接执行mode2即可.
