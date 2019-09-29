@@ -54,8 +54,7 @@ Delta采用了并联结构,具有刚度大,承载能力强等优点,所有关节
 **连接执行器及其配件**
 
 *   连接`执行器综合线缆`
-
-<img src="../Delta机器人img/cx.jpg" style="width:600px">
+<img src="../img/cx.jpg" style="width:600px">
 <img src="../img/cwx.jpg" style="width:600px">
 
 **连接机械臂**
