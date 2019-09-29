@@ -21,7 +21,9 @@ Note:谐波为柔轮固定方式，因此实际减速比为谐波标称减速比
 
 ### 接插件型号图
 
-<img src="../img/配线2-2.png" style="left ；width:600px">
+### 接插件型号图
+
+<img src="../img/配线2-2.png" style="width:600px">
 
 ### 端子引脚功能描述
 
