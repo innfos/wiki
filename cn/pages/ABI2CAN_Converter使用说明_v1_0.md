@@ -95,11 +95,13 @@ Note: 信号输入接口采用光耦隔离，输入电压范围为3-10V
 Note: 控制器使用的运动程序零点应与执行器的零点相对应
 
 <br>将所有执行器切换至位置模式
+
 <img src="../img/ABI2CAN_Converter使用说明9.png" style="width:600px">
 
 **使能ABI控制**
 <br>保持执行器现有的状态，将IAS关闭（建议）
 <br>在终端中使用telnet命令，连接至192.168.1.30（默认IP）
+
 Note: 若终端提示telnet不是内部或外部命令，则该命令未启用，请先启用该功能。
 
 <img src="../img/ABI2CAN_Converter使用说明10.png" style="width:600px">
