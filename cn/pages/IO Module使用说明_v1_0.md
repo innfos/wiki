@@ -1,8 +1,8 @@
-ABI2CAN_Converter使用说明
+IO Module使用说明
 =====
 
 ## 简介
-ABI2CAN_Converter（ABI转CAN 转接器）的主要功能是实现电机控制信号从ABI格式数据到INNFOS CAN协议数据地转换。INNFOS SCA采用CAN总线进行通信，并拥有一套专用的INNFOS CAN协议。为了使得SCA能够接受标准的ABI控制方式，ABI2CAN_Converter可以接收ABI数据，并将其转换为INNFOS CAN协议数据通过CAN总线发送至SCA，用户无需考虑INNFOS CAN协议的内容，只需要向ABI2CAN_Converter提供标准的ABI信号数据即可实现精准的控制操作。
+IO Module（ABI转CAN 转接器）的主要功能是实现电机控制信号从ABI格式数据到INNFOS CAN协议数据地转换。INNFOS SCA采用CAN总线进行通信，并拥有一套专用的INNFOS CAN协议。为了使得SCA能够接受标准的ABI控制方式，ABI2CAN_Converter可以接收ABI数据，并将其转换为INNFOS CAN协议数据通过CAN总线发送至SCA，用户无需考虑INNFOS CAN协议的内容，只需要向ABI2CAN_Converter提供标准的ABI信号数据即可实现精准的控制操作。
 与此同时，ABI2CAN_Converter保留了所有以太网转CAN的功能，用户可通过此转接板顺利完成上位机的连接或以太网SDK的应用开发。
 
 ## 关于ABI信号
