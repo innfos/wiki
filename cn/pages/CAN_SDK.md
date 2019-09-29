@@ -15,6 +15,7 @@
 ## 文件结构
 
 <img src="../img/cansdk1.png" style="width:600px">
+<br>
 
 <div class="md-text" style="text-align: center;"></div>
 
@@ -27,6 +28,7 @@
 *  `USER`：存放main.c等
 *  `Keilkiller.bat`：清除编译产生的中间文件
 *  `readme.txt`：相关说明
+<br>
 
 ### SCA文件目录说明
 
@@ -37,6 +39,7 @@
 *  `SCA_Protocol.c/h`：INNFOS CAN 通信协议层，该协议层完成了数据帧封装，解包等步骤，使用CAN端口进行数据收发；
 *  `SCA_API.c/h`：通信协议层的封装，包含了所有参数的读写API；
 *  `SCA_APP.c/h`：演示程序；
+<br>
 
 ----
 
@@ -45,37 +48,39 @@
 *  PC安装Keil MDK软件，工程所用版本为V5.21.1.0。所用单片机型号为`STM32F429IGT6`。
 
 <img src="../img/cansdk3.png" style="width:600px">
+<br>
 
 <div class="md-text" style="text-align: center;"></div>
 
 *  打开MDK文件夹下的`SCA_Controller.uvprojx`文件，出现MDK的使用界面以及`main.c`代码：
 
 <img src="../img/cansdk4.png" style="width:600px">
+<br>
 
 <div class="md-text" style="text-align: center;"></div>
 
 *  此DEMO中使用了两台执行器，ID `0x01`连接`CAN1`端口，ID `0x02`连接`CAN2`端口。在`SCA_APP.c`文件中有多处语句使用了该ID，请根据实际使用的执行器求修改所有对应的ID数值。若只使用一台执行器，请注释掉多余的代码，并将`SCA_API.c`文件下的宏定义`SCA_NUM_USE`修改为1。
 
 <img src="../img/cansdk5.png" style="width:600px">
-
+<br>
 <div class="md-text" style="text-align: center;"></div>
 
 *  确保单片机通过`ST-LINK`或`J-LINK`等调试工具连接至PC，并能够正常工作。点击全部编译按钮，无错通过后点击下载按钮下载至单片机。
-
 <img src="../img/cansdk6.png" style="width:300px">
+<br>
 
 <div class="md-text" style="text-align: center;"></div>
 
 *  下载完成后，将单片机的`串口1（PA9 PA10）`通过USB转串口工具连接至PC。打开虚拟串口终端软件，将波特率设为`115200`，接收数据以ASC码形式显示，以16进制形式发送数据。发送数字6打印帮助信息。
 
 <img src="../img/cansdk7.png" style="width:600px">
-
+<br>
 <div class="md-text" style="text-align: center;"></div>
 
 
 *  根据提示信息，先初始化执行器，依次发送指令，结合`SCA_APP.c`下的代码观察执行器的动作变化。
+<br>
 
------
 
 ## 进阶使用
 
