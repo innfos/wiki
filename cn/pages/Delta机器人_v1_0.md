@@ -25,7 +25,7 @@ Delta采用了并联结构,具有刚度大,承载能力强等优点,所有关节
 
 ## 基本参数
 
-<table style="width:500px"><thead><tr><th colspan="2" style="background: PaleTurquoise; color: black;">六足机器人参数</th></tr></thead><tbody></tr><tr><td>末端负载</td><td> 0.5kg </td></tr><tr><td>自重</td><td> 暂无 </td></tr><tr><td>自由度</td><td>3 </td></tr><tr><td>工作范围</td><td>X轴:-195mm - 195mm<br>Y轴:-195mm - 195mm<br>Z轴:-501mm -  -251mm
+<table style="width:500px"><thead><tr><th colspan="2" style="background: PaleTurquoise; color: black;">Delta机器人参数</th></tr></thead><tbody></tr><tr><td>末端负载</td><td> 0.5kg </td></tr><tr><td>自重</td><td> 暂无 </td></tr><tr><td>自由度</td><td>3 </td></tr><tr><td>工作范围</td><td>X轴:-195mm - 195mm<br>Y轴:-195mm - 195mm<br>Z轴:-501mm -  -251mm
 </td></tr><tr><td>关节范围</td><td> -10°-80° </td></tr><tr><td>工具最大速度</td><td>2.0m/s</td></tr><tr><td>重复定位精度</td><td>0.1mm</td></tr><tr><td>供电电压</td><td> 42v</td></tr><tr><td>功耗</td><td>普通功耗约60w</td></tr><tr><td>结构件材料</td><td>铝合金,碳纤维管</td></tr><tr><td>工作环境温度</td><td>10-50°</td></tr><tr><td>工作环境湿度</td><td>5%~95%</td></tr><tr><td>防护等级</td><td>IP54</td></tr><tr><td>通信端口</td><td>CAN/以太网</td></tr><tr><td>示教器</td><td>电脑或者移动终端</td></tr></td></tbody></table>
 
 
@@ -102,7 +102,7 @@ Delta采用了并联结构,具有刚度大,承载能力强等优点,所有关节
 
 访问该链接[download link](https://github.com/innfos/robot_controller-6-NE30-.git)下载SDK相关文件或者直接执行以下命令
 ```sh
-git clone  https://github.com/innfos/innfos-cpp-sdk.git
+$ git clone  https://github.com/innfos/innfos-cpp-sdk.git
 ```
 访问该链接[download link](https://github.com/innfos/ActuatorController_SDK.git)下载Delta 机器人相关文件或者直接执行以下命令
 ```sh
