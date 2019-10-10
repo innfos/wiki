@@ -8,7 +8,7 @@ Installation and use instructions for table-useable 6-axis collaborative arm
 
 <br>All the joints of the collaborative arm are built by INNFOS QDD Lite series actuators. Its arm length is up to 430mm and the load is 500g. QDD Lite series actuators are made of composite materials, greatly reducing research and development cost of high-end robots. The collaborative arm is mainly used in education, schools, laboratories, research institutes, competitions, etc.
                                                                 
-<img src="../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0.png" style="width:720px">                                                                          
+<img src="../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0.png" style="width:720px">                                                                         
 
 ## Engineering parameters diagram
 <br>[单位：毫米]
