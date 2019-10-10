@@ -94,13 +94,13 @@ From front to back, from left to right: HUB, ECB, ECB cable, one terminal resist
 
 ### Downloading and installation
 
-运行环境：linux-x86-64
+Operating environment：linux-x86-64
 
-访问该链接[download link](https://github.com/innfos/robot_controller-6-NE30-.git)下载机械臂软件或者直接执行以下命令
+Visit the link [download link](https://github.com/innfos/robot_controller-6-NE30-.git)to download softwares for collaborative arm or execute the following command directly.
 ```sh
 $ git clone https://github.com/innfos/robot_controller-6-NE30-.git
 ```
-访问该链接[download link](https://github.com/innfos/ActuatorController_SDK.git)下载SDK相关文件或者直接执行以下命令
+Visit the link [download link](https://github.com/innfos/ActuatorController_SDK.git)to download the SDK related files or execute the following command directly.
 ```sh
 $ git clone https://github.com/innfos/ActuatorController_SDK.git
 ```
@@ -120,8 +120,9 @@ $ . environment
 ```
 Note: 每次打开终端都需执行此命令，如不执行,终端会提示找不到动态库“libActuatorController.so”
 
-<br>可执行文件为robotserver
-<br>根据运行模式在终端输入： 
+<br>robotserver  file is executable. 
+<br>
+Enter at the terminal according to the operating mode: 
 ```sh
 $ ./robotserver xx
 ```
@@ -132,7 +133,7 @@ $ ./robotserver xx
 $ chmod +x robotserver
 ```
 
-<br>其中file文件夹用于存储路径文件
+<br>Where the file folder is used to store the path file
 
 * mode0
 •	The function of this mode is to disable the collaborative arm.
