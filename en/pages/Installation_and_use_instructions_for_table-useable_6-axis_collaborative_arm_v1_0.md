@@ -118,7 +118,7 @@ Configure environment variables：
 ```sh
 $ . environment
 ```
-Note: 每次打开终端都需执行此命令，如不执行,终端会提示找不到动态库“libActuatorController.so”
+Note: The command needs to be executed whenever  the terminal is opened. If the command isn't executed, the terminal will remind that the dynamic library “libActuatorController.so”can not be found.
 
 <br>robotserver  file is executable. 
 <br>
@@ -128,7 +128,7 @@ $ ./robotserver xx
 ```
 "xx" represents mode0, mode1, mode2, mode3, mode4 ;
 
-若执行时提示没有“robotserver”文件，表明该文件没有权限，执行以下命令更改权限：
+If there is no "robotserver" file when executing the command, indicating that the file does not have permission, execute the following command to change the permission:
 ```sh
 $ chmod +x robotserver
 ```
