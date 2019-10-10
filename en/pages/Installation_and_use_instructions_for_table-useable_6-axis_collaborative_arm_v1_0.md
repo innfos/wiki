@@ -11,7 +11,7 @@ Installation and use instructions for table-useable 6-axis collaborative arm
 <img src="../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0.png" style="width:720px">                                                                         
 
 ## Engineering parameters diagram
-<br>[单位：毫米]
+<br>[Unit: mm]
 
 <img src="../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0.md三视图.png" style="width:720px">
 
