@@ -1,4 +1,4 @@
-Installation and use instructions for table-useable 6-axis collaborative arm
+Installation and instructions for desktop 6-axis collaborative Robot
 =====
 
 ## Introduction
