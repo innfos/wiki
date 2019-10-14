@@ -28,7 +28,7 @@ Desktop 6-axis robotic arm installation instructions
 
 ## Product real shot renderings
 
-<img src="../img/Robot_DOF6/包装箱.jpg" style="width:600px">
+<img src="../img/包装箱.jpg" style="width:600px">
 
 ## Hardware requirements and connections
 
