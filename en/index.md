@@ -93,8 +93,7 @@ Note: The following SCA data is being updated. Please contact our sales team (sa
 * [XR-1 ](https://www.mdeditor.com/)
 
 Website is under maintenance. Stay tuned for future updates!
-
-* [Installation instructions for collaborative arm with 6 DOF（6*NE30）](pages/Installation_and_instructions_for_desktop_6-axis_collaborative_Robot_v1_0.md)
+The desktop 6-axis Lite version of the robotic arm（6*NE30）](pages/Installation_and_instructions_for_desktop_6-axis_collaborative_Robot_v1_0.md)
 
 Website is under maintenance. Stay tuned for future updates!
 
