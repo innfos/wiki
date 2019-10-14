@@ -261,7 +261,7 @@ On condition that the arm stopped, hold the arm by hand and execute mode0 to tur
 ## Version change record
 **The following table briefly describes the version change record.**
 
-<table style="width:400px"><thead><tr style="background:PaleTurquoise"><th style="width:100px">version</th><th style="width:150px">updated time</th><th style="width:150px">Updated content</th></tr></thead><tbody><tr><td>v1.0.0</td><td>2019.10.10</td><td>Full text</td></tbody></table>
+<table style="width:400px"><thead><tr style="background:PaleTurquoise"><th style="width:100px">Version number</th><th style="width:150px">updated time</th><th style="width:150px">Updated content</th></tr></thead><tbody><tr><td>v1.0.0</td><td>2019.10.10</td><td>Add the full text</td></tbody></table>
 
 
 
