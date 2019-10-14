@@ -1,6 +1,5 @@
 Desktop 6-axis robotic arm installation instructions
 =====
-
 ## Introduction
 
 *  This manual is for the use of the desktop 6-axis robot.
