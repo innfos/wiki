@@ -98,9 +98,9 @@
 
 运行环境：linux-x86-64
 
-访问该链接[download link](https://github.com/innfos/robot_controller-6-NE30-.git)下载机械臂软件或者直接执行以下命令
+访问该链接[download link](https://github.com/innfos/robot_controller-GL-6L3.git)下载机械臂软件或者直接执行以下命令
 ```sh
-$ git clone https://github.com/innfos/robot_controller-6-NE30-.git
+$ git clone https://github.com/innfos/robot_controller-GL-6L3.git
 ```
 
 访问该链接[download link](https://github.com/innfos/innfos-cpp-sdk.git)下载SDK相关文件或者直接执行以下命令
@@ -115,7 +115,7 @@ Note: 此两文件夹需放在同一目录下
 
 进入到主目录
 ```sh
-$ cd robot_controller-6-NE30-/
+$ cd robot_controller-GL-6L3/
 ```
 配置环境变量：
 ```sh
