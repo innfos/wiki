@@ -20,10 +20,13 @@ Note:The actual reduction ratio is the harmonic nomical gear ratio plus 1 becaus
 
 ### Connector Pin Layout
 
-#### Interface specification
-
 <img src="../img/配线2-2.png" style="width:600px">
 
+### Terminal pin function
+
+<table class="tableizer-table" style="width:390px">
+ <thead><tr class="tableizer-firstrow"><th colspan="4" style="background: PaleTurquoise; color: black;">Terminal pin function</th></tr></thead><tbody><tr><td>Label</td><td>Signal</td><td>colour</td><td>Features </td></tr><tr><td>1</td><td>PVDD</td><td>Black</td><td rowspan="3">Positive power supply </td></tr><tr><td>3</td><td>PVDD</td><td>Black</td></tr><tr><td>5</td><td>PVDD</td><td>Black</td></tr><tr><td>2</td><td>GND</td><td>Black</td> <td rowspan="2">Power supply grounding</td></tr><tr><td>4</td><td>GND</td><td>Black</td></tr><tr><td>6</td><td>CAN-GND</td><td>Gray</td><td>CAN communication signal ground</td></tr><tr><td>7</td><td>CAN-L</td><td>Gray</td><td>CAN communication low signal line</td></tr><tr><td>8</td><td>CAN-H</td><td>Gray</td><td>CAN communication high signal line</td></tr></tbody></table>
+ </tbody></table>
 ## Version Updating Records
 
 <table style="width:600px"><thead><tr style="background:PaleTurquoise"><th style="width:100px">Version number</th><th style="width:150px">Update time</th><th style="width:3800px">Update content</th></tr></thead><tbody><tr><td>v2.2.1</td><td>2019.07.03</td><td>Updated the values of rated torque <br>Updated the values of peak torque <br>Updated the values of maximum load <br>Updated installation instructions</th></tr></thead><tbody><tr><td>v2.2.0</td><td>2019.05.09</td><td>Full text added</th></tr></thead><tbody><tr><td>v1.0.0</td><td>2019.04.11</td><td>Full text added</td></tbody></table>
