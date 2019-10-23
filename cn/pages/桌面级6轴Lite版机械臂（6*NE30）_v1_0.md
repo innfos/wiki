@@ -16,6 +16,8 @@
 
 <img src="../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0.md三视图.png" style="width:720px">
 
+### 工作空间
+<img src="../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0.md工作空间.png" style="width:720px">
 
 ### 3D模型
 [模型文件]( ../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0.step.zip )
