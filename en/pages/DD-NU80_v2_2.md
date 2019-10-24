@@ -14,7 +14,7 @@
 
 
 ### Connector Pin Layout
-<
+
 <img src="../img/配线2-2.png" style="width:600px">
 
 ### Terminal pin function
