@@ -31,6 +31,8 @@
 
 <img src="../img/Robot_DOF6/13.jpg" style="width:600px">
 
+Note: 此图仅为系列之一。
+
 ## 硬件需求与连接
 
 **硬件需求**
