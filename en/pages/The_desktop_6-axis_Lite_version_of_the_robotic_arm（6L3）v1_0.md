@@ -22,7 +22,7 @@ Desktop 6-axis robotic arm installation instructions
 
 ## Basic parameters
 
-<table style="width:500px"><thead><tr><th colspan="2" style="background: PaleTurquoise; color: black;">Desktop 6-axis Lite version of the robot arm (6*NE30) parameters</th></tr></thead><tbody></tr><tr><td>End load</td><td>500g</td></tr>
+<table style="width:500px"><thead><tr><th colspan="2" style="background: PaleTurquoise; color: black;">Desktop 6-axis Lite version of the robot arm (6L3) parameters</th></tr></thead><tbody></tr><tr><td>End load</td><td>500g</td></tr>
 <tr><td>weight</td><td>3.7kg(with base）；2.5kg（without base）</td></tr><tr><td>Degree of freedom</td><td>6</td></tr><tr><td>Working radius</td><td>421mm</td></tr><tr><td>Joint range</td><td>+/-170°</td></tr><tr><td>Maximum tool speed</td><td>2m/s</td></tr><tr><td>Repeatability accuracy</td><td>+/-0.1mm</td></tr><tr><td>Supply voltage</td><td>42v</td></tr><tr><td>Power consumption</td><td>Ordinary power consumption is about 120w</td></tr><tr><td>Structural material</td><td>Aluminum alloy/carbon fiber tube</td></tr><tr><td>Working temperature</td><td>10-50°</td></tr><tr><td>Working environment humidity</td><td>5%~95%</td></tr><tr><td>Protection level</td><td>IP54</td></tr><tr><td>Communication port</td><td>CAN/Ethernet</td></tr><tr><td>Teach pendant</td><td>Computer or mobile terminal</td></tr></td></tbody></table>
 
 
