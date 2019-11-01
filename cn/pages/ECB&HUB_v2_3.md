@@ -65,7 +65,7 @@ P2管脚定义
 ## 外形尺寸
 
 
-![ECB_v2_2PCB.png](../img/ECB_v2_2PCB.png) ![ECB_HUB_v2_2PCB.png](../img/ECB_HUB_v2_2PCB.png)
+![ECB_v2_3PCB.png](../img/ECB_v2_3PCB.png) ![ECB_HUB_v2_3PCB.png](../img/ECB_HUB_v2_3PCB.png)
 
  Note: 单位为mm
  
