@@ -18,13 +18,17 @@ ECB的原理图和BOM，以及以太网通讯协议全部开源，用户可以�
 * Flash:512K
 * 以太网通讯：1路，10/100M 自适应速率
 * CAN通讯：2路，速率1Mbps
-* LED 12个：电源指示LED 3个，用户LED 5个，USB收发数据指示LED 2个，以太网连接状态指示LED 1个，以太网速率指示LED 1个
-* 功率信号复合接口 ：6个，单个复合接口同时包含CAN信号和功率信号
+* LED 10个：电源指示LED 3个，用户LED 5个，以太网连接状态指示LED 1个，以太网速率指示LED 1个
+* 惯导模块：1个
+* 急停开关：1个
+* 12V 3A电源输出：1路
+* 5V  3A电源输出：1路
+* 功率信号复合接口 ：4个，单个复合接口同时包含CAN信号和功率信号
 * 扩展接口： 2排2.54mm双排针，包含以下资源：
 * I2C
 * SPI
 * USART
-* 预留主控芯片引脚：29 个，引脚包含复用功能，请参考附件的数据手册
+* 预留主控芯片引脚：28个，引脚包含复用功能，请参考附件的数据手册
 
 
 Note: 
@@ -41,17 +45,24 @@ P1管脚定义
 
 
 P2管脚定义
-<table style="width:450px"><thead><tr class="tableizer-firstrow" style="background: PaleTurquoise; color: black"><th style="width:100px">P1 PIN#</th><th>Name</th><th style="width:100px">P1 PIN#</th><th>Name</th></tr></thead><tbody><tr><td>1</td><td>PA5</td><td>2</td><td>PA3</td></tr><tr><td>3</td><td>PA6</td><td>4</td><td>PA4</td></tr><tr><td>5</td><td>AGND</td><td>6</td><td>PA0</td></tr><tr><td>7</td><td>PB3</td><td>8</td><td>PB4</td></tr><tr><td>9</td><td>PD3</td><td>10</td><td>PB9</td></tr><tr><td>11</td><td>PI2</td><td>12</td><td>PI3</td></tr><tr><td>13</td><td>PA8</td><td>14</td><td>PC9</td></tr><tr><td>15</td><td>PD6</td><td>16</td><td>VCC_5V</td></tr><tr><td>17</td><td>PD5</td><td>18</td><td>PB0</td></tr><tr><td>19</td><td>GND</td><td>20</td><td>PC7</td></tr></tbody></table>
+<table style="width:450px"><thead><tr class="tableizer-firstrow" style="background: PaleTurquoise; color: black"><th style="width:100px">P1 PIN#</th><th>Name</th><th style="width:100px">P1 PIN#</th><th>Name</th></tr></thead><tbody><tr><td>1</td><td>PA5</td><td>2</td><td>PA3</td></tr><tr><td>3</td><td>PA6</td><td>4</td><td>PA4</td></tr><tr><td>5</td><td>AGND</td><td>6</td><td>PA0</td></tr><tr><td>7</td><td>PB3</td><td>8</td><td>PB4</td></tr><tr><td>9</td><td>SPI2_SCK</td><td>10</td><td>SPI2_NSS</td></tr><tr><td>11</td><td>SPI2_MISO</td><td>12</td><td>SPI2_SDA</td></tr><tr><td>13</td><td>I2C3_SCL</td><td>14</td><td>I2C3_SDA</td></tr><tr><td>15</td><td>PD6/USART2_RX</td><td>16</td><td>VCC_5V</td></tr><tr><td>17</td><td>PD5/USART2_TX</td><td>18</td><td>VCC_12V</td></tr><tr><td>19</td><td>GND</td><td>20</td><td>PC7</td></tr></tbody></table>
 
 
 ### 接口规格型号
 电源输入接口：Amass XT60PT-M
 
-功率信号复合接口：Molex 430450827
-
-USB接口：MicroUSB接口，韩荣U-F-M5DD-Y-L
+功率信号复合接口：Molex 430450800
 
 以太网接口：标准RJ45连接器，连大精密L60055-14
+
+急停开关：JST SM02B_GHS_TB(LF)(SN)
+
+启动开关：JST SM02B_GHS_TB(LF)(SN)
+
+12V输出：莫斯电子 A2502_WR02
+
+5V输出： 莫斯电子 A2502_WR02
+
 
 
 ## 外形尺寸
@@ -61,18 +72,9 @@ USB接口：MicroUSB接口，韩荣U-F-M5DD-Y-L
 
  Note: 单位为mm
  
-## ECB 和 ECB_HUB的连接方式
-方式一：
+## ECB的使用方式
 
-<img src="../img/ECB&HUB_v2_2PCBA4.png" style="width:600px">
-
-方式二：
-
-<img src="../img/ECB&HUB_v2_2PCBA5.png" style="width:600px">
-
-
-## 连接多个ECB
-<img src="../img/ECB&HUB_v2_2PCBA6.png" style="width:600px">
+<img src="../img/ECB&HUB_v2_3PCBA4.png" style="width:600px">
 
 
 Note: 多个ECB连接同一电脑,ECB的IP和MAC地址不能有重复，修改ECB的IP和MAC地址请访问[ 修改IP和MAC地址](#!pages/ECB&HUB_v2_2.md#修改IP和MAC地址 "wikilink")
@@ -112,5 +114,5 @@ chmod 777 ipChange
 ## 版本变更记录
 **下表简单描述了版本变更记录**
 
-<table style="width:600px"><thead><tr style="background:PaleTurquoise"><th style="width:80px">版本号</th><th style="width:100px">更新时间</th><th style="width:100px">更改类型</th><th style="width:80px">位置</th><th>更新内容</th></tr></thead><tbody><tr><td>V2.2.4</td><td>2019.07.05</td><td>添加</td><td>资源</td><td>添加ECB_Core原理图</td></tr><tr><td rowspan="2">V2.2.3</td><td rowspan="2">19.05.30</td><td>修改</td><td>ECB 和 ECB_HUB的连接方式</td><td>修改图片</td></tr><tr><td>修改</td><td>连接多个ECB</td><td>修改图片</td></tr><tr><td rowspan="3">V2.2.2</td><td rowspan="3">19.05.29</td><td>修改</td><td>简介</td><td>修改简介图片</td></tr><tr><td>修改</td><td>外形尺寸</td><td>修改图片</td></tr><tr><td>添加</td><td>接口规格型号</td><td>添加接口具体型号</td></tr><tr><td>V2.2.1</td><td>2019.05.28</td><td>删除</td><td>接口说明</td><td>删除Alternate functions</td></tr><tr><td>V2.2.0</td><td>2019.05.02</td><td>添加</td><td>ECB & HUB</td><td>全文添加</td></tbody></table>
+<table style="width:600px"><thead><tr style="background:PaleTurquoise"><th style="width:80px">版本号</th><th style="width:100px">更新时间</th><th style="width:100px">更改类型</th><th style="width:80px">位置</th><th>更新内容</th></tr></thead><tbody><tr><td>V2.3.0</td><td>2019.11.01</td><td>修改</td><td>全文</td><td>更新全文<br>原版本链接：[ECB & HUB](pages/ECB&HUB_v2_2.md)</td></tr><tr><td>V2.2.4</td><td>2019.07.05</td><td>添加</td><td>资源</td><td>添加ECB_Core原理图</td></tr><tr><td rowspan="2">V2.2.3</td><td rowspan="2">19.05.30</td><td>修改</td><td>ECB 和 ECB_HUB的连接方式</td><td>修改图片</td></tr><tr><td>修改</td><td>连接多个ECB</td><td>修改图片</td></tr><tr><td rowspan="3">V2.2.2</td><td rowspan="3">19.05.29</td><td>修改</td><td>简介</td><td>修改简介图片</td></tr><tr><td>修改</td><td>外形尺寸</td><td>修改图片</td></tr><tr><td>添加</td><td>接口规格型号</td><td>添加接口具体型号</td></tr><tr><td>V2.2.1</td><td>2019.05.28</td><td>删除</td><td>接口说明</td><td>删除Alternate functions</td></tr><tr><td>V2.2.0</td><td>2019.05.02</td><td>添加</td><td>ECB & HUB</td><td>全文添加</td></tbody></table>
 
