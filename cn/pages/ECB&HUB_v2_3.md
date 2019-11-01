@@ -24,10 +24,7 @@ ECB的原理图和BOM，以及以太网通讯协议全部开源，用户可以�
 * 12V 3A电源输出：1路
 * 5V  3A电源输出：1路
 * 功率信号复合接口 ：4个，单个复合接口同时包含CAN信号和功率信号
-* 扩展接口： 2排2.54mm双排针，包含以下资源：
-* I2C
-* SPI
-* USART
+* 扩展接口： 2排2.54mm双排针，包含以下资源：'I2C'  'SPI'  'USART'
 * 预留主控芯片引脚：28个，引脚包含复用功能，请参考附件的数据手册
 
 
@@ -115,7 +112,5 @@ chmod 777 ipChange
 **下表简单描述了版本变更记录**
 
 <table style="width:600px"><thead><tr style="background:PaleTurquoise"><th style="width:80px">版本号</th><th style="width:100px">更新时间</th><th style="width:100px">更改类型</th><th style="width:80px">位置</th><th>更新内容</th></tr></thead><tbody><tr><td>V2.3.0</td><td>2019.11.01</td><td>修改</td><td>全文</td><td>更新全文<br>原版本链接：
-<a href="#!pages/ECB&HUB_v2_2.md" class="active">ECB&HUB</a >
-  </td></tr>
-  <tr><td>V2.2.4</td><td>2019.07.05</td><td>添加</td><td>资源</td><td>添加ECB_Core原理图</td></tr><tr><td rowspan="2">V2.2.3</td><td rowspan="2">19.05.30</td><td>修改</td><td>ECB 和 ECB_HUB的连接方式</td><td>修改图片</td></tr><tr><td>修改</td><td>连接多个ECB</td><td>修改图片</td></tr><tr><td rowspan="3">V2.2.2</td><td rowspan="3">19.05.29</td><td>修改</td><td>简介</td><td>修改简介图片</td></tr><tr><td>修改</td><td>外形尺寸</td><td>修改图片</td></tr><tr><td>添加</td><td>接口规格型号</td><td>添加接口具体型号</td></tr><tr><td>V2.2.1</td><td>2019.05.28</td><td>删除</td><td>接口说明</td><td>删除Alternate functions</td></tr><tr><td>V2.2.0</td><td>2019.05.02</td><td>添加</td><td>ECB & HUB</td><td>全文添加</td></tbody></table>
+<a href="#!pages/ECB&HUB_v2_2.md" class="active">ECB&HUB</a ></td></tr><tr><td>V2.2.4</td><td>2019.07.05</td><td>添加</td><td>资源</td><td>添加ECB_Core原理图</td></tr><tr><td rowspan="2">V2.2.3</td><td rowspan="2">19.05.30</td><td>修改</td><td>ECB 和 ECB_HUB的连接方式</td><td>修改图片</td></tr><tr><td>修改</td><td>连接多个ECB</td><td>修改图片</td></tr><tr><td rowspan="3">V2.2.2</td><td rowspan="3">19.05.29</td><td>修改</td><td>简介</td><td>修改简介图片</td></tr><tr><td>修改</td><td>外形尺寸</td><td>修改图片</td></tr><tr><td>添加</td><td>接口规格型号</td><td>添加接口具体型号</td></tr><tr><td>V2.2.1</td><td>2019.05.28</td><td>删除</td><td>接口说明</td><td>删除Alternate functions</td></tr><tr><td>V2.2.0</td><td>2019.05.02</td><td>添加</td><td>ECB & HUB</td><td>全文添加</td></tbody></table>
 
