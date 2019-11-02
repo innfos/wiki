@@ -99,9 +99,9 @@
 
 运行环境：linux-x86-64
 
-访问该链接[download link](https://github.com/innfos/robot_controller-GL-6L3.git)下载机械臂软件或者直接执行以下命令
+访问该链接[download link](https://github.com/innfos/robot-controller-GL-6L3.git)下载机械臂软件或者直接执行以下命令
 ```sh
-$ git clone https://github.com/innfos/robot_controller-GL-6L3.git
+$ git clone https://github.com/innfos/robot-controller-GL-6L3.git
 ```
 
 访问该链接[download link](https://github.com/innfos/innfos-cpp-sdk.git)下载SDK相关文件或者直接执行以下命令
