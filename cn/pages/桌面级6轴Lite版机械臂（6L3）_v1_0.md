@@ -177,12 +177,8 @@ $ ./robotserver mode2
 
 <br>该值为再现速度比例，取值范围为0.1-1，即10%-100%，输入正确的值后按Enter键进行下一步。建议第一次运行采用低的再现速度比例，确认路径无误后，可采用较高的再现速度比例。
 
-CTRL + C可停止运行循环运行，此时终端会提示：
-
-<img src="../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0_21.png" style="width:600px">
-
-<br>输入“end”会使机械臂进入电流模式，请用手扶着机械臂。
-
+CTRL + C可停止运行。
+此时若不再使用机器人，可执行./robotserver mode0使机器人失能，后关闭电源。
 
 
 * mode3
@@ -195,7 +191,7 @@ $ ./robotserver mode3
 
 <img src="../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0_30.png" style="width:600px">
 
-<br>该选项为选择插补类型，可选择输入“MOVJ”、“MOVL”、“MOVC”，输入其它值则退出程序。
+<br>该选项功能为选择插补类型或停止记录，可选择输入字符“MOVJ”、“MOVL”、“MOVC”、“STOP”，改选项大小写不敏感（即可全用小写输入）。
 
 MOVJ:
 关节插补，末端运动轨迹具有不确定性，仅在关节空间进行规划，终端输入“MOVJ”
@@ -209,6 +205,8 @@ MOVC:
 
 <img src="../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0_31.png" style="width:600px">
 
+STOP:
+停止记录，退出程序
 
 * mode4
 按模式“mode3”生成的路径文件file/data.txt进行再现运行。
