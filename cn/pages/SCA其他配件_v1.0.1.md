@@ -27,5 +27,5 @@ Note:多圈计数编码器电池:<br>编码器电池是在执行器掉电的情�
 ## 版本变更记录
 **下表简单描述了版本变更记录**
 
-<table style="width:400px"><thead><tr style="background:PaleTurquoise"><th style="width:100px">版本号</th><th style="width:150px">更新时间</th><th style="width:150px">更新内容</th></tr></thead><tbody><tr><td>V1.0.2</td><td>2019.09</td><td>增加表格与内文</td></tr>
+<table style="width:400px"><thead><tr style="background:PaleTurquoise"><th style="width:100px">版本号</th><th style="width:150px">更新时间</th><th style="width:150px">更新内容</th></tr></thead><tbody><tr><td>V1.0.3</td><td>2019.11</td><td>修改了配图和内文</td></tr><tr><td>V1.0.2</td><td>2019.09</td><td>增加表格与内文</td></tr>
   <tr><td>V1.0.1</td><td>2019.09</td><td>增加EL20配件</td></tr><tr><td>V1.0.0</td><td>2019.04</td><td>第一个版本</td></tbody></table>
