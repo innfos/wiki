@@ -20,7 +20,7 @@
 
 [FAQ](#!pages/question.md)
 
-[INNFOS 官网](http://innfos.com/home)
+[INNFOS 官网](http://innfos.com/pc/home)
 
 [English](http://wiki.innfos.com/wiki/en/index.html#!index.md)
 
