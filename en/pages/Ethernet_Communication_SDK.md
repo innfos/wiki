@@ -40,7 +40,7 @@ Please refer to <a href="#!pages/Ethernet_Configuration.md#linux_platform_enviro
 
 #### Sample code compilation
 
-* open the terminal and go to the`…\example`example directory, which has`CMakeLists.txt`
+* Open the terminal and go to the`…\example`example directory, which has`CMakeLists.txt`
 
 ```bash
 $ cmake CMakeLists.txt
@@ -56,397 +56,362 @@ $ make
 
 ##### find connected actuators
 
-*   open the terminal and enter the bin directory, enter the command
+*   Open the terminal and enter the bin directory, enter the command
 
 ```bash
-$./lookupActuators -e
+$./01_lookupActuators
 ```
-*   this window will display the number of currently connected actuators. You can end the program with`ctrl+c`
+*   This window will display the number of currently connected actuators. A connected actuator with ID 1 is shown in the example whose communication IP address is 192.168.1.30.
 
-<img src="../img/022.png" style="width:600px">
+<img src="../sdkv4.0.0/img/022.png" style="width:600px">
 
 **code description**
 
-*   select different communication methods according to different parameters. The default is ethernet communication.
+*   Initialize actuator controller.
 
 Note:the controller must be initialized before other operations can be performed.
 
 ``` cpp
-//initialize controller
-if(strcmp(argv[1],"-s")==0)
-    ActuatorController::initController(Actuator::Via_Serialport);
-elseif(strcmp(argv[1],"-e")==0)
-    ActuatorController::initController();
+ActuatorController * pController = ActuatorController::initController();
 ```
-*   associate the operation completion signal. After the user operates successfully, the signal will be triggered. According to different operationtype, the corresponding operation will be performed. In this example, the number of identified actuators will be printed after the automatic identification is completed.
+*   An error- in-variable needs to be defined to find connected actuators, which can return the corresponding error code when the actuators are not found. The lookupActuators function can return all UnifiedID arrays of connected actuators.
 
 ``` cpp
-//associated controller operation signal
-int nOperationConnection = pController->m_sOperationFinished->s_Connect([=](uint8_t nDeviceId,uint8_t operationType){
-   switch (operationType) {
-   case Actuator::Recognize_Finished://automatic identification completed
-       if(pController->hasAvailableActuator())
-        {
-            vector<uint8_t> idArray = pController->getActuatorIdArray();
-            cout <<"Number of connected actuators:" << idArray.size() << endl;
-        }
-       break;
-   default:
-       break;
-    }
-});
+//ec Define an error type, ec==0x00 means no error, ec will be passed to pcontroller-> lookupActuators(ec) by reference,
+//when the error occurs, ec value will be modified by SDK to the corresponding error code
+Actuator::ErrorsDefine ec;
+//Find the connected actuators and return the UnifiedID of all actuators found.
+//UnifiedID is a structure composed of the actuator ID (actuatorID) and IP(ipAddress) of ECB(ECU)
+std::vector<ActuatorController::UnifiedID> uIDArray = pController->lookupActuators(ec);
 ```
-*   the complete application must be associated with an error signal in order to receive feedback and respond accordingly when an error occurs inside the actuator. When`nDeviceId`is 0, the error is not specific to the actuator (eg unconnected error)
+*  Output UnifiedID information of all connected actuators; output error code if no actuator is found
 
-```cpp
+``` cpp
 
-//associated error signal
-int nErrorConnection = pController->m_sError->s_Connect([=](uint8_t nDeviceId,uint16_t nErrorType,string errorInfo){
-   if(nDeviceId==0)
-    {
-        cout <<"Error: " << (int)nErrorType <<" " << errorInfo << endl;
-    }
-   else
-    {
-        cout <<"Actuator " << (int)nDeviceId <<" " <<"error " << (int)nErrorType <<" " << errorInfo << endl;
-    }
-});
-
-```
-
-*   after the necessary signals are associated, the next corresponding operation is to identify the connected actuators.
-
-```cpp
-//automatically identify connected actuators
-pController->autoRecoginze();
-```
-
-*   The event loop is a necessary step to ensure the internal communication of SDK. It is necessary to ensure that the event loop is not blocked so that SDK can trigger various signals.
-
-```cpp
-//execution controller event loop
-while (!bExit)
+//If the size of the uIDArray is greater than zero, the connected actuators have been found
+if(uIDArray.size() > 0)
 {
-    ActuatorController::processEvents();
+    for(auto uID : uIDArray)
+    {
+        cout << "Actuator ID: "<<(int)uID.actuatorID << " IP address: " << uID.ipAddress.c_str() << endl;
+    }
 }
-```
-
-*   finally disconnect the signal from all signals before the end of the program
-
-```cpp
-//disconnect the signal
-pController->m_sOperationFinished->s_Disconnect(nOperationConnection);
-pController->m_sError->s_Disconnect(nErrorConnection);
+else
+{
+    //ec=0x803 Communication with ECB(ECU) failed
+    //ec=0x802 Communication with actuator failed
+    cout << "Connected error code:" << hex << ec << endl;
+}
 
 ```
 
-##### monitor actuator status
+##### Enable a single actuator
 
-*   open the terminal, go to the `example/bin` directory, enter the command
+*   Open the terminal, go to the `example/bin` directory, enter the command
 
 ```bash
-$./monitorActuator -e
+$./02a_enableSingleActuator
 ```
 
-*   the actuator id is the `Actuator ID`, the attribute id is the monitored executor `attribute ID`, and the attribute value is the corresponding `attribute value`. You can end the program with `ctrl+c`
+*   Enable a single actuator，and the actuator indicator will turn green after enabled.
 
-<img src="../img/023.png" style="width:600px">
+<img src="../img/sdkv4.0.0/023.png" style="width:600px">
 
 **code description**
 
-*   all actuators are automatically turned on after automatic recognition. After each actuator is successfully turned on, the actuator::launch_finished signal is triggered. When all actuators are turned on, automatic refresh is started and the actuator data is read.
+*   After finding all the connected actuators, actuator ID arrays can be got by using getActuatorIdArray . Unlike UnifiedID, the actuator ID does not contain actuator communication IP address information. If there are no actuators with the same ID under different IP addresses, it is recommended to operate directly with the actuator ID.
 
 ```cpp
-int nLaunchedActuatorCnt =0;
-//associated controller operation signal
-int nOperationConnection = pController->m_sOperationFinished->s_Connect([&amp;](uint8_t nDeviceId,uint8_t operationType){
-   switch (operationType) {
-   case Actuator::Recognize_Finished://automatic identification completed
-       if(pController->hasAvailableActuator())
-        {
-            vector<uint8_t> idArray = pController->getActuatorIdArray();
-        cout <<"Number of connected actuators:" << idArray.size() << endl;
-           for (uint8_t id: idArray) {
-               if(pController->getActuatorAttribute(id,Actuator::ACTUATOR_SWITCH)==Actuator::ACTUATOR_SWITCH_OFF)
-                {//Start the SCA if it is off
-                    pController->launchActuator(id);
-                }
-               else
-                {
-                    ++ nLaunchedActuatorCnt;
-                   if(nLaunchedActuatorCnt == pController->getActuatorIdArray().size())//all actuators have been started
-                    {
-                        autoRefresh();
-                    }
-                }
-            }
-        }
-       break;
-   case Actuator::Launch_Finished:
-       if(++nLaunchedActuatorCnt == pController->getActuatorIdArray().size())//all actuators have been started
-        {
-            autoRefresh();
-        }
-       break;
-   default:
-       break;
-    }
-});
+//Gets an array of all actuator IDs
+vector<uint8_t> idArray = pController->getActuatorIdArray();
 ```
 
-*   In order to monitor the change of the properties of the actuator, the signal`m_sActuatorAttrChanged`is required. When the user requests to read the properties of the actuator, a successful return will trigger the signal.
+*  Enable an actuator, return true if successfully enabled,false otherwise 
 
-    
-	
 ```cpp
-//actuator attribute change signal controlled by the associated controller
-int nAttrConnection =pController->m_sActuatorAttrChanged->s_Connect([=](uint8_t nDeviceId,uint8_t nAttrId,double value){
-    cout <<"Actuator ID: " << (int)nDeviceId << endl;
-    cout <<"atribute ID: " << (int)nAttrId << endl;
-    cout <<"atribute value: " << value << endl;
-    cout <<"----------------------------"<<endl;
-});
+//Enable an actuator
+if(pController->enableActuator(idArray.at(0)))
+{
+    cout << "Enable actuator " << (int)idArray.at(0) << " successfully!" << endl;
+}
 ```
 
-#### control actuator
+#### Enable several actuators
 
-*   open the terminal, go to the `example/bin`directory, enter the command
+*   Open the terminal, go to the `example/bin`directory, enter the command
 
 ```bash
-$./operateActuator -e
+$./02b_enableActuatorsInBatch 
 ```
 
-<img src="../img/024.png" style="width:600px">
-
-
-*   indicate that the actuator has been found. Enter the command  `l 0 ` to start all connected actuators. If the startup is successful, the actuator will flash green, indicating successful startup. The terminal window is displayed as follows.
-
-<img src="../img/025.png" style="width:600px">
-
-*  the corresponding mode of sca can be activated at this time. For example, input ` a 6`can activate the profile position mode, then input `p 5`, the actuator will rotate to 5 positions; input`a 7` can activate the `profile velocity` mode, then enter`v 500`, execute the device will rotate at 500rpm and stop rotating input`v 0`; input `a 1` can activate current mode, then input `c 0.6`, the actuator will rotate at a constant current of 0.6a (if the actuator does not move, you can gently turn it with your hand) actuator), you can `ctrl+c` and then`ctrl+d`to end the program (because there are multiple threads waiting for keyboard input) 
-
-    
-<img src="../img/026.png" style="width:600px">
+<img src="../img/sdkv4.0.0/024.png" style="width:600px">
      
 
 **code description**
 
-*   the actuator can be operated after successfully started. `getActuatorIdArray` can get the short id of all actuators. The user can specify any id and operate. The actuator has multiple modes such as speed, current and position （`Actuator::ActuatorMode`）. The corresponding mode must be activated before the corresponding operation can be performed.
-
+*  Enable all connected actuators，return true if successfully enabled,false otherwise.
 
 ```cpp
- vector<uint8_t> idArray = controllerInst->getActuatorIdArray();
-switch (directive)
+//Enable all connected actuators
+if(pController->enableActuatorInBatch(uIDArray))
 {
-case'a'://Activate actuator specified mode, command format: a mode id (actuator::actuatormode)
-    controllerInst->activeActuatorMode(idArray, Actuator::ActuatorMode((int)value));
-   break;
-case'p'://specify the actuator position, command format: p laps (-127 to 127)
-   for (int i =0; i < idArray.size(); ++i)
-    {
-        controllerInst->setPosition(idArray.at(i), value);
-    }
-   break;
-case'c'://Specify actuator current, command format: c current value（A）
-   for (int i =0; i < idArray.size(); ++i)
-    {
-        controllerInst->setCurrent(idArray.at(i), value);
-    }
-   break;
-case'v'://Specify actuator speed, command format: v speed value（RPM）
-   for (int i =0; i < idArray.size(); ++i)
-    {
-        controllerInst->setVelocity(idArray.at(i), value);
-    }
-   break;
-case'l'://Start the specified executor, the format of the instruction: l executor id (id is 0 to start all actuators)
-   if(uint8_t(value)==0)
-    {
-        controllerInst->launchAllActuators();
-    }
-   else
-    {
-        controllerInst->launchActuator(uint8_t(value));
-    }
-   //cout << "launch"<<endl;
-   break;
-case's'://Close the specified executor, the format of the instruction: l executor id (id is 0 to start all actuators)
-
-   if(uint8_t(value)==0)
-    {
-        controllerInst->closeAllActuators();
-    }
-   else
-    {
-        controllerInst->closeActuator(uint8_t(value));
-    }
-   //cout << "close"<<endl;
-   break;
-default:
-   break;
+    cout << "All actuators have been enabled successfully! " << endl;
 }
+
 ```
 
-#### controller parameter adjustment
+#### Current control
 
-*   open the terminal, go to the`example/bin`directory, enter the command
+*   Open the terminal, go to the`example/bin`directory, enter the command
 
 ```bash
-$./tuneActuator -e
+$./03a_currentControl
 ```
 
-*  this sample program automatically starts the actuator and sets the position loop output to 3000 rpm, and the maximum current output of the speed loop is 16.5a.
+*  The sample program will control the actuator in current mode
 
-If you use the `profile position` mode to rotate the actuator, the maximum speed of the actuator will not exceed 3000rpm; if you use the `profile velocity` mode to rotate the actuator, the maximum current of the actuator will not exceed 16.5a, you can end the program with `ctrl+c`
-
-  
     
-<img src="../img/027.png" style="width:600px"> 
+<img src="../img/sdkv4.0.0/025.png" style="width:600px"> 
     
 **code description**
     
 
-*   ?	This sample program automatically starts the actuator. After successful startup, the actuator properties can be adjusted. The speed loop current output adjusts the actuator torque under the speed loop. The position loop speed output adjusts the speed of the position loop. See the sca quick start instructions for details.
+*  This example program automatically enables the actuator. The actuator current mode will be activated after successful enablement, assigning a current of 0.6A to the actuator first. And it will change to a current of -0.6A after 1s, and finally disable the actuator. `Actuator:Mode_Cur` is refer to `ActuatorMode` in `actuatorDefine.h`.
 
-    
     
 ```cpp
-//Actuator property adjustment, the adjustment is successful, will trigger the actuator property change signal
-
-void tuneActuator()
-{
-    ActuatorController * pController = ActuatorController::getInstance();
-    vector<uint8_t> idArray = pController->getActuatorIdArray();
-   for (uint8_t id: idArray) {
-       //adjust actuator speed loop minimum current output
-        pController->setMinOutputCurrent(id,-10);
-       //adjust actuator speed loop maximum current output
-        pController->setMaxOutputCurrent(id,10);
-       //adjust actuator position loop minimum speed output
-        pController->setMinOutputVelocity(id,-2000);
-       //adjust the maximum speed output of the actuator position loop, the maximum value is greater than the minimum value	
-        pController->setMaxOutputVelocity(id,2000);
-       //mode_profile_pos Mode_Profile_Posadjust the maximum speed（RPM）
-        pController->setActuatorAttribute(id,Actuator::PROFILE_POS_MAX_SPEED,1000);
-    }
-}
+//Enable an actuator,If there are no actuators with the same ID under multiple IP addresses, you can omit the ipAddress parameter
+pController->enableActuator(actuator.actuatorID,actuator.ipAddress);
+//Activate current mode
+pController->activateActuatorMode(actuator.actuatorID,Actuator::Mode_Cur);
+cout << "set current to 0.6A" << endl;
+pController->setCurrent(actuator.actuatorID,0.6);
+std::this_thread::sleep_for(std::chrono::seconds(1));
+cout << "set current to -0.6A" << endl;
+pController->setCurrent(actuator.actuatorID,-0.6);
+std::this_thread::sleep_for(std::chrono::seconds(1));
 ```
 
-#### actuator zero
 
-*   open the terminal, go to the`example/bin`directory, enter the command
+#### Velocity control
+
+*   Open the terminal, go to the`example/bin`directory, enter the command
 
 ```bash
-$./homingActuator -e
+$./03b_velocityControl 
 ```
 
 
-*   indicate that the current position of the actuator has been set to zero, the range is -9.5r to 9.5r, and the position limit is turned on. If the position is outside the range in the `profile position` mode, the actuator will not rotate, `ctrl+c` end program
+*   The sample program automatically enables the actuator. The actuator's profile velocity mode will be activated after successful enablement, and then send speed command. The actuator will rotate at 500RPM for 3s, then rotate at -500RPM for 3s, finally becoming disabled.
  
 
-<img src="../img/028.png" style="width:600px">
+<img src="../img/sdkv4.0.0/026.png" style="width:600px">
 
 **code description**
 
-*   after the autostart is completed, `setHomingPosition` sets the current position `getActuatorAttribute(id,Actuator::ACTUAL_POSITION)` to 0, `setMaxPosLimit` and `setMinPosLimit` sets the maximum and minimum position limits, `setActuatorAttribute(id,Actuator::POS_OFFSET,0.5)` set the limit offset.
+*  For `Actuator::Mode_Profile_Vel` please refer to `ActuatorMode` in `actuatorDefine.h`.
+
 	
 ```cpp
-    //actuator 0 bit and limit adjustment
-void setActuatorLimitation()
-{
-    ActuatorController * pController = ActuatorController::getInstance();
-    vector<uint8_t> idArray = pController->getActuatorIdArray();
-   for (uint8_t id : idArray) {
-       //the current position of the actuator is changed to 0, and the minimum and maximum positions are set to -10, 10, the offset is set to 0.5, and the actuator's range of motion becomes (-9.5, 9.5).
-        pController->setHomingPosition(id,pController->getActuatorAttribute(id,Actuator::ACTUAL_POSITION));
-        pController->setMinPosLimit(id,-10);
-        pController->setMaxPosLimit(id,10);
-        pController->setActuatorAttribute(id,Actuator::POS_OFFSET,0.5);
-    }
-    bSetLimitation =true;
-}
+//Enable an actuator,If there are no actuators with the same ID under multiple IP addresses, you can omit the ipAddress parameter
+pController->enableActuator(actuator.actuatorID,actuator.ipAddress);
+//activate profile velocity mode
+pController->activateActuatorMode(actuator.actuatorID,Actuator::Mode_Profile_Vel);
+
+cout << "set velocity to 500RPM" << endl;
+pController->setVelocity(actuator.actuatorID,500);
+std::this_thread::sleep_for(std::chrono::seconds(3));
+cout << "set velocity to -500RPM" << endl;
+pController->setVelocity(actuator.actuatorID,-500);
+std::this_thread::sleep_for(std::chrono::seconds(3));
 ```
 
-*   the parameter setting is completed and the parameters are saved. Otherwise, the parameter settings will be discarded after shutdown.
+#### Profile position control
 
-```cpp
-pController->saveAllParams(nDeviceId);
-```
-
-#### actuator length id
-
-*   open the terminal and enter the`example/bin`directory, enter the command
+*   Open the terminal and enter the`example/bin`directory, enter the command
 
 ```bash
-$./longIdAndByteId -e
+$./03c_positionControl
 ```
 
-*   it is possible to acquire and convert long and short ids, and to obtain communication ip addresses by long id.
+*   The sample program automatically enables the actuator. The profile position mode of the actuator will be activated after successful enablement, and then send position command. The actuator will first rotate to the 10R position, then rotate to the -10R position after 4s, and finally become disabled after 3s.
+
+<img src="../img/sdkv4.0.0/027.png" style="width:600px">
 
 **code description**
 
-*   the signal variable ends with an l. The signal is associated with the actuator length id and can be communicated with a long id. The difference between the long and short id is that the long id contains the communication address and the short id, and can be converted to each other (if different ip addresses have the same short id executor, the short id conversion long id will randomly convert one long under one ip address id).
+*   For `Actuator::Mode_Profile_Pos` please refer to `ActuatorMode` in `actuatorDefine.h`.
     
 
 ```cpp
-//associated controller's longid operation signal
-int nOperationConnection = pController->m_sOperationFinishedL->s_Connect([&amp;](uint64_t nDeviceId,uint8_t operationType){
-   switch (operationType) {
-   case Actuator::Recognize_Finished://automatic identification completed
-       if(pController->hasAvailableActuator())
-        {
-           //get the longid array get the longid array
-            vector<uint64_t> longIdArray = pController->getActuatorLongIdArray();
-           //get the byteid array
-            vector<uint8_t> idArray = pController->getActuatorIdArray();
-           for (uint64_t id: longIdArray) {
-           //get the communication ip address in the long id
-                cout <<"Communication IP is " << pController->toString(id) << endl;
-               //convert longid to byteid
-                cout <<"Long id " << id <<" convert to byte id " << (int)pController->toByteId(id) << endl;
-            }
-           for(uint8_t id : idArray)
-            {
-               //convert byteid to longid
-                cout <<"Byte id " << (int)id <<" convert to long id " << pController->toLongId(id) << endl;
-            }
-        }
-       break;
-   default:
-       break;
-    }
-});
+//Enable actuator
+pController->enableActuator(actuator.actuatorID,actuator.ipAddress);
+//activate profile position mode
+pController->activateActuatorMode(actuator.actuatorID,Actuator::Mode_Profile_Pos);
+
+cout << "set position to 10 revolutions " << endl;
+pController->setPosition(actuator.actuatorID,10);
+std::this_thread::sleep_for(std::chrono::seconds(4));
+cout << "set position to -10 revolutions " << endl;
+pController->setPosition(actuator.actuatorID,-10);
+std::this_thread::sleep_for(std::chrono::seconds(3));
 ```
 
-#### synchronous response
+#### Actuator parameter setting
 
-* open the terminal and enter the `example/bin`directory, enter the command
+* Open the terminal and enter the `example/bin`directory, enter the command
 
 ```bash
-$./feedback_sync -e
+$./04_actuatorSetting 
 ```
 
-*   getactuatorattributewithack and setactuatorattributewithack are the interfaces of the two synchronous responses provided by SDK. Corresponding to getactuatorattribute and setactuatorattribute, the properties of the executor can be get synchronously. Calling getactuatorattributewithack and setactuatorattributewithack will block the current program until the result is returned (regardless of success or failure).
+* This sample program automatically enables the actuator. The actuator's profile position mode will be activated after successful enablement. Then by modifying the actuator parameters, the actuator will rotate to the specified position at different speeds.
+
+<img src="../img/sdkv4.0.0/028.png" style="width:600px">
 
 **code description**
 
-*   `getActuatorAttributeWithACK` and `setActuatorAttributeWithACK`are the interfaces of the two synchronous responses provided by SDK. Corresponding to`getActuatorAttribute` and `setActuatorAttribute`，you can get or set the properties of the executor synchronously. Calling`getActuatorAttributeWithACK` and `setActuatorAttributeWithACK`will block the current program until the result is returned (regardless of success or failure).
+*  Enable the actuator, the actuator's profile position mode will be activated after successfully enabled. 
 
 ```cpp
+if(pController->enableActuator(actuatorID))
+{
+    cout << "Enable actuator " << (int)actuatorID << " successfully!" << endl;
+}
+//activate profile position mode
+pController->activateActuatorMode(actuatorID,Actuator::Mode_Profile_Pos);
+```
 
-ActuatorController * pController = ActuatorController::getInstance();
-    vector<uint8_t> idArray = pController->getActuatorIdArray();
-   for (uint8_t id: idArray) {
-       bool bSuccess =false;
-       //read current and wait for return if read fails bsuccess is false
-       double current = pController->getActuatorAttributeWithACK(id,Actuator::ACTUAL_CURRENT,&amp;bSuccess);
-       if(bSuccess)
-            cout <<"current is " << current << endl;
-       //Set the maximum current output of the speed loop and wait for the return. If the setting fails, the value of bsuccess is false. (this interface cannot be used to set speed, position, current)
-        bSuccess = pController->setActuatorAttributeWithACK(id,Actuator::VEL_OUTPUT_LIMITATION_MAXIMUM,10);
-       if(bSuccess)
-            cout <<"Set VEL_OUTPUT_LIMITATION_MAXIMUM to 10A" << endl;
+*  Set the acceleration, deceleration, and maximum speed in the actuator profile position mode to 300 RPM/s, -300 RPM/s, 500 RPM, and then rotate the actuator to the -15R position. At this time, the actuator speed is comparatively slower.
+
+```cpp
+//change acceleration to 300 RPM/s
+pController->setProfilePositionAcceleration(actuatorID,300);
+//change deceleration to -300 RPM/s
+pController->setProfilePositionDeceleration(actuatorID,-300);
+//change max velocity to 500 RPM
+pController->setProfilePositionMaxVelocity(actuatorID,500);
+cout << "change position in low speed " << endl;
+pController->setPosition(actuatorID,-15);
+this_thread::sleep_for(std::chrono::seconds(5));
+```
+
+*  Set the acceleration, deceleration, and maximum speed in the actuator profile position mode to 1200 RPM/s, -1200 RPM/s, 3000 RPM, and then rotate the actuator to the 15R position. At this time, the actuator speed is comparatively faster.
+
+```cpp
+//change acceleration to 1200 RPM/s
+pController->setProfilePositionAcceleration(actuatorID,1200);
+//change deceleration to -1200 RPM/s
+pController->setProfilePositionDeceleration(actuatorID,-1200);
+//change max velocity to 3000 RPM
+pController->setProfilePositionMaxVelocity(actuatorID,3000);
+cout << "change position in high speed " << endl;
+pController->setPosition(actuatorID,15);
+this_thread::sleep_for(std::chrono::seconds(4));
+
+```
+
+*  The modified actuator parameters need to be saved in case all parameters will be discarded after the actuator is disabled.
+
+```cpp
+//Save parameters,or you will lose all changes after disable the actuator
+if(pController->saveAllParams(actuatorID))
+{
+    cout << "Save parameters sucessfully!" << endl;
+}
+
+```
+
+#### Synchronous acquisition of actuator parameters
+
+*  Open the terminal and go to the example/bin directory and enter the command
+
+```bash
+$./05a_feedback_sync
+```
+
+*  The sample program automatically enables the actuator. The current and position of the actuator can be synchronously acquired after successful enablement.
+
+<img src="../img/sdkv4.0.0/029.png" style="width:600px">
+
+**Code description**
+
+*  Simultaneously read the position and current of SCA. If the second parameter of getPosition, getCurrent, and getVelocity is true, sdk will read and send the corresponding actuator parameter and wait for the return. The function will block for 1-2ms. If the parameter is False, sdk will return the result of the most recent request (the result may not match the actual parameters of the actuator).
+
+```cpp
+/**
+ * Read the position of the actuator, if the second parameter is true, sdk will send the read position request to the actuator and wait for the return,
+ * otherwise, the result of the last request is returned immediately
+ **/
+double pos = pController->getPosition(actuatorID,true);
+/**
+ * Read the current of the actuator, if the second parameter is true, sdk will send the read current request to the actuator and wait for the return,
+ * otherwise, the result of the last request is returned immediately
+ **/
+double cur = pController->getCurrent(actuatorID,true);
+cout << "Actuator postion:" << pos << "R,current:" << cur << "A" <<endl;
+
+```
+
+#### Asynchronously acquisition of actuator parameters
+
+* Open the terminal, go to the example/bin directory and enter the command
+
+```bash
+$./05a_feedback_asyc
+```
+
+*   This sample program automatically enables the actuator. The current and position of the actuator will be acquired asynchronously after successful enablement. The program can be ended with `ctrl-c`.
+
+<img src="../img/sdkv4.0.0/030.png" style="width:600px">
+
+**Code description**
+
+*   Asynchronous acquisition of actuator parameters requires three parts of work. The first part is registering callbacks. The callbacks will be called when requesting the return value of the parameter. addParaRequestCallback supports the function pointer and std::function to pass the callbacks.
+
+```cpp
+//Add an actuator request parameter callback which will be invoked when the parameter request returns
+pController->addParaRequestCallback(paramFeedback);
+```
+
+*   Asynchronous acquisition of actuator parameters callback function needs three variables. The first variable being `ActuatorController::UnifiedID`, is the actuator uID, which represents the actuator of the ID requesting result to return.
+
+```cpp
+void paramFeedback(ActuatorController::UnifiedID uID,uint8_t paramType,double paramValue)
+{
+    switch (paramType) {
+    case Actuator::ACTUAL_CURRENT:
+        cout << "Actuator " << (int)uID.actuatorID << " current is " << paramValue << "A"<<endl;
+        break;
+    case Actuator::ACTUAL_POSITION:
+        cout << "Actuator " << (int)uID.actuatorID << " position is " << paramValue << "R"<<endl;
+        break;
+    case Actuator::ACTUAL_VELOCITY:
+        cout << "Actuator " << (int)uID.actuatorID << " velocity is " << paramValue << "RPM"<<endl;
+        break;
+    default:
+        break;
     }
+}
+
+```
+
+
+*  The second variable being paramType, is a parameter type, representing which the returned parameter is .For parameter type, please refer to the `ActuatorAttribute` in `actuatordefine.h`.
+
+```cpp
+//Asynchronous request executor current, velocity, poistion, and when the request returns,
+//the callback function is triggered by a polling callback event. This function does not block.
+pController->requestCVPValue(idArray.at(0));
+
+```
+
+*  The third variable is the parameter value for actuating the parameter.
+
+```cpp
+//Event polling, polling callback events, event triggering calls to the corresponding callback function
+ActuatorController::processEvents();.
+pController->requestCVPValue(idArray.at(0));
 ```
 
 ### windows
@@ -454,10 +419,10 @@ ActuatorController * pController = ActuatorController::getInstance();
 #### environment configuration
 
 
-Please refer to the <a href="#!pages/Ethernet_Configuration.md#windows平台环境配置"> windowsenvironment configuration</a>
+Please refer to the <a href="#!pages/Ethernet_Configuration.md#windows"> windows environment configuration</a>
 
 
-#### ?	Sample code compilation
+#### Sample code compilation
 
 *   run cmake-gui to appear as the right interface:
 *   the source path is `…\example` in the directory structure, containing the cmakelists.txt file. The build path can be customized, being used to generate the project file. After the path is configured, click the generate button to pop up the following interface.
@@ -477,103 +442,122 @@ Please refer to the <a href="#!pages/Ethernet_Configuration.md#windows平台环�
 
 *    after confirming that the actuator is properly connected and powered, the actuator will flash yellow and the sample code can be tested.
 
-Open a command line window and go to the bin directory, enter the command ./lookupactuators.exe -e
+Open a command line window and go to the bin directory, enter the command 
 
 
 ```bash
-./lookupActuators.exe -e 
+$ 01_lookupActuators.exe
 ```
 
+*  This window will show the number of currently connected actuators. In the example, an actuator with ID 1 is connected and its communication IP address is `192.168.1.30`.
 
-<img src="../img/013.png" style="width:600px">
-
-
-##### ?	Monitor actuator status
+<img src="../img/sdkv4.0.0/031.png" style="width:600px">
 
 
-*   open a command line window and go to the bin directory and enter the command ./monitoractuator.exe -e
+##### Enable several actuators
+
+*   Open a command line window and go to the bin directory, enter the command
 
 ```bash
-./monitorActuator.exe -e
+$ 02a_enableSingleActuator.exe
 ```
 
-
-<img src="../img/014.png" style="width:600px">
-
-
-##### Control sca
+*   Enable a single actuator, and the actuator indicator will turn green when enabled.
 
 
-*   open a command line window, go to the bin directory and enter the command 
+<img src="../img/sdkv4.0.0/032.png" style="width:600px">
 
+
+#### Enable several actuators
+
+*   Open a command line window and go to the bin directory, enter the command
 
 ```bash
-./operateActuator.exe -e
+$ 02b_enableActuatorsInBatch.exe 
 ```
 
-<img src="../img/015.png" style="width:600px">
+<img src="../img/sdkv4.0.0/033.png" style="width:600px">
 
 
-This indicates that the actuator has been found. Enter the command l 0 to start all connected scas. If startup is successful, the actuator will flash green, the cmd window is displayed as shown below.
+#### Current control
 
-
-<img src="../img/016.png" style="width:600px">
-
-
-*    the corresponding mode of sca can be activated at this time,for example, input a 6 can activate profile position mode, then inputting p 10 will lead to rotate to 10 turns; input a 7 can activate profile velocity mode, then input v 500, sca will rotate at 500rpm and stop rotating input v0; input a 1 can activate current mode, then input c 0.6, the actuator will rotate at a constant current of 0.6a (if the actuator does not move, you can gently turn it with your hand) actuator), the program will be ended with ctrl+c.
-
-
-<img src="../img/017.png" style="width:600px">
-
-
-##### Actuator parameter adjustmen
-
-*   open a command line window, go to the bin directory and enter the command 
+*   Open a command line window and go to the bin directory, enter the command
 
 ```bash
-./tuneActuator.exe -e
+$ 03a_currentControl.exe
 ```
 
-*   this sample program will automatically starts the actuator and sets the position loop output to 3000 rpm. The maximum current output of the speed loop is 16.5 a. If the actuator is rotated using the `profile position` mode, the maximum speed of the actuator will not exceed 3000 rpm; if `profile velocity` is used mode rotation actuator, the maximum current of the actuator will not exceed 16.5a, and the program can be terminated by `ctrl+c`.
+*  This sample program will control the actuator in current mode
+   
+<img src="../img/sdkv4.0.0/034.png" style="width:600px">
 
-<img src="../img/018.png" style="width:600px">
 
-##### Sca zero
+#### Velocity control
 
-*   open a command line window, go to the bin directory and enter the command
+*  Open a command line window and go to the bin directory, enter the command
 
 ```bash
-./homingActuator.exe -e
+$ 03b_velocityControl.exe 
 ```
 
-*   as shown in the figure, the current position of the actuator has been set to zero, the range is -9.5r to 9.5r, and the position limit is turned on if the `profile position` mode, enter a position outside this range, the actuator will not rotate, the program can be ended with`ctrl+c`
+*   The example program automatically enables the actuator. After successful enablement, the actuator's profile velocity mode will be activated, then send the velocity command. The actuator will rotate at 500RPM for 3s, then rotate at -500RPM for 3s, and finally become disabled.
+
+<img src="../img/sdkv4.0.0/035.png" style="width:600px">
 
 
-<img src="../img/LongId_w.png" style="width:600px">
+#### Profile position control
 
-
-##### Sca length id
-
-
-*   open a command line window, go to the bin directory, enter the command
+*   Open a command line window and go to the bin directory, enter the command
 
 ```bash
-./longIdAndByteId.exe -e
+$ 03c_positionControl.exe
 ```
 
-The acquisition of the length id and the mutual conversion can be performed, and the communication ip address can be obtained by the long id.
+*  The sample program automatically enables the actuator. After successful enablement, the profile position mode of the actuator will be activated, then send the position command. The actuator will first rotate to the 10R position, then rotate to the -10R position after 4s, and finally become disable after 3s.
 
-<img src="../img/Feedback_w.png" style="width:600px">
+<img src="../img/sdkv4.0.0/036.png" style="width:600px">
 
-##### 	Synchronous response
+#### Actuator parameter setting
 
-*   open a command line window, go to the bin directory and enter the command
+*   Open a command line window and enter the bin directory, enter the command
 
 ```bash
-./feedback_sync.exe -e
+$ 04_actuatorSetting.exe 
 ```
 
-*   run`feedback_sync.exe`，to associate the corresponding signal. The operation in the callback is an asynchronous response and does not block the current program. Synchronous response will block the current program until SDK returns the result. In comparison, the synchronous response is simple but inefficient because it needs to wait for the actuator response (and the actuator part does not have a synchronous response, such as setting position, speed, current etc.) If the efficiency requirements are high, an asynchronous response is recommended.
+*   The sample program automatically enables the actuator. After successful enablement, the actuator's profile position mode will be activated, then modify the actuator parameters. The actuator will rotate to the specified position at different speeds.
+
+<img src="../img/sdkv4.0.0/037.png" style="width:600px">
+
+
+
+#### Synchronous acquisition of actuator parameter
+
+* Open a command line window and go to the bin directory, enter the command
+
+```bash
+$ 05a_feedback_sync.exe
+```
+
+* The sample program automatically enables the actuator. The current and position of the actuator can be synchronous acquired after successful enablement.
+
+<img src="../img/sdkv4.0.0/038.png" style="width:600px">
+
+
+
+#### Asynchronous acquisition of actuator parameter
+
+* Open a command line window and go to the bin directory, enter the command
+
+```bash
+$ 05b_feedback_asyc.exe
+```
+
+*  The sample program automatically enables the actuator. The current and position of the actuator can be synchronous acquired after successful enablement. The program can be ended with ctrl-c.
+
+<img src="../img/sdkv4.0.0/039.png" style="width:600px">
+
+
 
 ## SDK instructions
 
@@ -640,4 +624,6 @@ The acquisition of the length id and the mutual conversion can be performed, and
  
 
 # Version change records
-<table><thead><tr style="background:PaleTurquoise"><th>Version</th><th>	Update time</th><th>	update contents</th></tr></thead><tbody> <tr><td>V2.0.0</td><td>2019-03-09</td><td>version 2.0</td></tr> <tr><td>V1.0.0</td><td>2018-04-17</td><td>version 1.0</td></tr></tbody></table>
+
+<table style="width:400px"><thead><tr style="background:PaleTurquoise"><th style="width:100px">Version</th><th style="width:150px">Update time</th><th style="width:150px">Update contents</th></tr></thead><tbody><tr><td>v4.0.0</td><td>2019.08.05</td><td>first commit</th></tr></thead><tbody><tr><td><a href="http://innfos.com/wiki/en/index.html#!pages/Ethernet_Communication_SDK_v3_4_0.md">v3.4.0 </a></td><td>2019.06.06</td><td>first commit</th></tr></thead></tbody></table>
+
