@@ -63,7 +63,7 @@ $./01_lookupActuators
 ```
 *   This window will display the number of currently connected actuators. A connected actuator with ID 1 is shown in the example whose communication IP address is 192.168.1.30.
 
-<img src="../sdkv4.0.0/img/022.png" style="width:600px">
+<img src="../img/sdkv4.0.0/022.png" style="width:600px">
 
 **code description**
 
