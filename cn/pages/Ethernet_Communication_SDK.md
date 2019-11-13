@@ -87,6 +87,7 @@ std::vector<ActuatorController::UnifiedID> uIDArray = pController->lookupActuato
 *   输出所有已连接的执行器的`UnifiedID`信息,如果没有找到执行器，输出错误代码
 
 ``` cpp
+
 //If the size of the uIDArray is greater than zero, the connected actuators have been found
 if(uIDArray.size() > 0)
 {
