@@ -23,4 +23,4 @@
 ## Version Updating Records
 
 
-<table style="width:400px"><thead><tr style="background:PaleTurquoise"><th style="width:100px">Version number</th><th style="width:150px">Update time</th><th style="width:150px">Update content</th></tr></thead><tbody><tr><td>v2.3.0</td><td>2019.07.18</td><td>Updated inner structure</th></tr></thead><tbody><tr><td><a href="http://innfos.com/wiki/en/index.html#!pages/DD-EL20_v2_2.md">v2.2.0 </a></td><td>2019.05.09</td><td>Full text added</th></tr></thead><tbody><tr><td>v1.0.0</td><td>2019.04.11</td><td>Full text added</td></tbody></table>
+<table style="width:400px"><thead><tr style="background:PaleTurquoise"><th style="width:100px">Version number</th><th style="width:150px">Update time</th><th style="width:150px">Update content</th></tr></thead><tbody><tr><td>v2.3.0</td><td>2019.07.18</td><td>Updated inner structure</th></tr></thead><tbody><tr><td><a href="http://wiki.innfos.com/wiki/en/index.html#!pages/DD-EL20_v2_2.md">v2.2.0 </a></td><td>2019.05.09</td><td>Full text added</th></tr></thead><tbody><tr><td>v1.0.0</td><td>2019.04.11</td><td>Full text added</td></tbody></table>
