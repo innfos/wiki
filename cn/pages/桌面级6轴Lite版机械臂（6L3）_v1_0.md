@@ -111,6 +111,11 @@ $ git clone https://github.com/innfos/innfos-cpp-sdk.git
 
 Note: 此两文件夹需放在同一目录下
 
+### 使用前检查
+
+Note: 开机使用前请先用IAS软件检查机械臂的零位
+
+
 ### 运行模式
 机械臂提供以下运行 mode0,mode1,mode2,mode3,mode4
 
