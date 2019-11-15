@@ -152,11 +152,11 @@ Description: Parameter content data[3 ~0] The high position is in the front and 
 
 (1) SCA enable, command: 0x2A 01;
 
-(2) Select the usage mode, command: current loop 0x07 01, speed loop 0x07 02, position loop 0X07 03, S-position mode 0X07 06, S-speed mode 0X07 07, HOMING mode 0X07 08;
+(2) Select the usage mode, command: current loop 0x07 01, speed loop 0x07 02, position loop 0x07 03, S-position mode 0x07 06, S-speed mode 0x07 07, HOMING mode 0x07 08;
 
 (3) Set the relevant parameters, the instruction refers to the appendix of the manual. For the current value, speed value, position parameter, it is not 0, then it starts, and if it is 0, it stops;
 
-(4) End of use, SCA disable, command: 0X2A 00. The disable command must be sent before the power is turned off, otherwise the zero position may be lost.
+(4) End of use, SCA disable, command: 0x2A 00. The disable command must be sent before the power is turned off, otherwise the zero position may be lost.
 
 * * *
 
