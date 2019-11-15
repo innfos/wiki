@@ -71,14 +71,14 @@
 
 <div class="md-text" style="text-align: center;"></div>
 
-*  下载完成后，将单片机的`串口1（PA9 PA10）`通过USB转串口工具连接至PC。打开虚拟串口终端软件，将波特率设为`115200`，接收数据以ASC码形式显示，以16进制形式发送数据。发送数字6打印帮助信息。
+*  下载完成后，将单片机的`串口1（PA9 PA10）`通过USB转串口工具连接至PC。打开虚拟串口终端软件，将波特率设为`115200`，接收数据以ASC码形式显示，以16进制形式发送数据。发送数字7打印帮助信息。
 
 <img src="../img/cansdk7.png" style="width:600px">
 <br>
 <div class="md-text" style="text-align: center;"></div>
 
 
-*  根据提示信息，先初始化执行器，依次发送指令，结合`SCA_APP.c`下的代码观察执行器的动作变化。
+*  根据提示信息，初始化执行器，依次发送指令，结合`SCA_APP.c`下的代码观察执行器的动作变化。第一次使用执行器时，可以选择1号功能轮询ID，然后修改例程中的对应ID号。
 <br>
 
 
@@ -136,5 +136,5 @@
 
 ## 版本变更记录
 
-<table class="tableizer-table"><thead><tr class="tableizer-firstrow" style=background:PaleTurquoise><th>版本</th><th>更新时间</th><th>更新内容</th></tr></thead><tbody><tr><td>V1.1.0</td><td>2019.08.21</td><td>SDK更新至1.5.0版本，增加描述内容</td></tr><tr><td>V1.0.0</td><td>2019.08.12</td><td>第一个版本</td></tr></tbody></table>
+<table class="tableizer-table"><thead><tr class="tableizer-firstrow" style=background:PaleTurquoise><th>版本</th><th>更新时间</th><th>更新内容</th></tr></thead><tbody><tr><td>V1.2.0</td><td>2019.11.15</td><td>SDK更新至1.5.3版本，增加描述内容</td></tr><tr><td>V1.1.0</td><td>2019.08.21</td><td>SDK更新至1.5.0版本，增加描述内容</td></tr><tr><td>V1.0.0</td><td>2019.08.12</td><td>第一个版本</td></tr></tbody></table>
 
