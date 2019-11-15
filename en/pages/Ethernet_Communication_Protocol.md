@@ -68,7 +68,7 @@ The user layer defines the command interface for the slave to communicate with t
 
 **End of frame**
 
-* Fixed byte `0XED`, identifying the end of a transmission frame.
+* Fixed byte `0xED`, identifying the end of a transmission frame.
 
 ### **Ethernet communication protocol command application examples**
 
