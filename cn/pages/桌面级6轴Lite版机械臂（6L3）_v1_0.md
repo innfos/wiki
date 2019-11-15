@@ -119,7 +119,7 @@ Note: 此两文件夹需放在同一目录下
 #### 检查零位是否丢失
             将机械臂摆到竖直状态，使用IAS检查每个轴的位置值（如下图），正常状态位置值应该在0到±1之间。
             
-![AJXB.jpg](../img/AJXB.jpg) ![IAS.jpg](../img/IAS.jpg)
+<img src="../img/00A.png" style="width:600px">
         
 Note: 零位若丢失，会导致机械臂运动异常
 
