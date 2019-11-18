@@ -5,7 +5,7 @@ ECB(Ethernet to CAN Bridge)是一款以太网转CAN控制器，该控制器起�
 
 ECB的原理图和BOM，以及以太网通讯协议全部开源，用户可以根据自己的需求，在ECB上直接进行开发，大大提高了新产品的研发效率，从而加快新产品的上市时间。
   
-<img src="../../wiki/img/ECB&HUB_v2_3PCBA1.png" style="width:600px">
+<img src="http://wiki.innfos.com/wiki/img/ECB&HUB_v2_3PCBA1.png" style="width:600px">
 
 ![ECB&HUB_v2_3PCBA2.png](../img/ECB&HUB_v2_3PCBA2.png) ![ECB&HUB_v2_3PCBA3.png](../img/ECB&HUB_v2_3PCBA3.png)
 
