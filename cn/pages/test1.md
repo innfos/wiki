@@ -7,7 +7,7 @@ ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismo
 
 | Tables        | Are           | Cool  |
 | ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
+| col 3 is      | right-aligned | <img src="../img/终端电阻_v1_0.png" style="width:300px"> |
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 | 
 
