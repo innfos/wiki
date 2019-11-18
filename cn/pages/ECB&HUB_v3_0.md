@@ -88,12 +88,12 @@ $ git clone https://github.com/innfos/ipChangeTool.git
 * 进入ipChangeTool目录，修改ipChange的权限：
 
 ```sh
-chmod 777 ipChange
+$ chmod 777 ipChange
 ```
 * 确认有且只有一个ECB或者ECU已经连接到电脑并且上电后，执行命令：
 
 ```sh
-./ipChange -ip=<1~255> -mac=<1~255>
+$ ./ipChange -ip=<1~255> -mac=<1~255>
 ```
 * 请注意只能修改IP或者MAC地址的最后一个数。比如ECB的IP地址是192.168.1.30，只能用该工具将30修改成其他数字。
 ## 以太网IAP固件升级
