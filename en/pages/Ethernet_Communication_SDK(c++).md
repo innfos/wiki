@@ -1,4 +1,4 @@
-Ethernet Communication SDK(c++)
+Ethernet Communication SDK(C++)
 =========
 
 ## Instruction
