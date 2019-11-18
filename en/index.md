@@ -61,7 +61,7 @@ If there's any questions,please contact us at support@innfos.com.
   
 ----  
 
-## the upcoming products
+## The Upcoming Products
 
 Note: The following SCA data is being updated. Please contact our sales team (sales@innfos.com) for more information.
 
