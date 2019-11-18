@@ -19,7 +19,7 @@ If there's any questions,please contact us at support@innfos.com.
   * [CAN Communication Protocol](pages/CAN_Communication_Protocol.md)
   * [Ethernet Configuration](pages/Ethernet_Configuration.md)
   * [Ethernet Communication Protocol](pages/Ethernet_Communication_Protocol.md)
-  * [Ethernet Communication SDK(c++)](pages/Ethernet_Communication_SDK_c++.md)
+  * [Ethernet Communication SDK(c++)](pages/Ethernet_Communication_SDK(c++).md)
   * [ROS for SCA](pages/actuatorcontroller_ros.md)
   * [INNFOS Actuator Studio(IAS) instruction](pages/INNFOS_Actuator_Studio_IAS_instruction.md)
   * [Appendix](pages/appendix.md)
