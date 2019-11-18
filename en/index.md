@@ -57,7 +57,7 @@ If there's any questions,please contact us at support@innfos.com.
 
   
 ### Accessories
-  * [ECB & HUB](pages/ECB&HUB_v2_2.md)
+  * [ECB & HUB](pages/ECB&HUB_v3_0.md)
   
 ----  
 
