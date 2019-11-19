@@ -41,7 +41,7 @@ Note: 在同一标题内容下，表格宽度统一。
 
 Note: 所有页面中的图片格式以本代码为准，特殊情况下除外。如产品系列中的图片格式和页面图片有特殊要求；
 
-<img src="../img/026.png" style="width:600px">
+<img src="../../img/wiring2-13.png" style="width:600px">
 
 <p><div class="md-text" style="text-align: center;"><strong>图3-1</strong></div></p >
 
@@ -90,6 +90,15 @@ function test(){
 var testBox = box();
 testBox.add("jQuery").remove("jQuery");
 ```
+
+### wiki常用转义字符
+小于号为（& lt;）（&后方有一空格，使用时请将其去掉）
+大于号为（& gt;）（&后方有一空格，使用时请将其去掉）
+米号为（& lowast;）（&后方有一空格，使用时请将其去掉）
+小于或等于为（& le;）（&后方有一空格，使用时请将其去掉）
+大于或等于为（& ge;）（&后方有一空格，使用时请将其去掉）
+
+
 
 
 ## 版本变更记录
