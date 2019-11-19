@@ -1,14 +1,14 @@
 # 参数介绍 
 ## QDD Pro-NE30-50-70工程参数图[单位：毫米]
-![QDD Pro-NE30-50](  ../img/Qddpro_NE30_v2_2三视图.png  )
+![QDD Pro-NE30-50](  ../../img/QDD_Pro_NE30-50-70_v2_2三视图.png  )
 
 **使用安装说明**
 
 *  正面固定与反面固定
 
-![Qddpro_NE30_v2_2正面固定.png](../img/Qddpro_NE30_v2_2正面固定.png "fig:Qddpro_NE30_v2_2正面固定.png") ![Qddpro_NE30_v2_2反面固定.png](../img/Qddpro_NE30_v2_2反面固定.png "fig:Qddpro_NE30_v2_2反面固定.png")
+![Qddpro_NE30_v2_2正面固定.png](../../img/QDD_Pro_NE30-50-70_v2_2正面固定.png "fig:Qddpro_NE30_v2_2正面固定.png") ![Qddpro_NE30_v2_2反面固定.png](../../img/QDD_Pro_NE30-50-70_v2_2反面固定.png "fig:Qddpro_NE30_v2_2反面固定.png")
 ### 3D 模型
-[模型文件]( ../img/QDD_Pro-NE30-x-70_v2_2.step.zip )
+[模型文件]( ../../3DModel/QDD_Pro_NE30-50-70_v2_2.step.zip )
 
 ## QDD Pro-NE30-50-70参数
 
