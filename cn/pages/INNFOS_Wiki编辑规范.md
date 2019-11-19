@@ -118,7 +118,7 @@ testBox.add("jQuery").remove("jQuery");
 - 文档中文本修改时直接编辑文案即可，有关标题问题请仔细阅读格式要求中的标题。
 
 - 文档中表格修改时请注意表格合并的编写方式。colspan="X"意为列合并，其中X为合并列数；rowspan="X"意为行合并，其中X为合并行数。有关其他表格问题请仔细阅读格式要求中的格式要求。如图<br>
-<img src="../../img/Wiki编写规范2.png" style="width:600px">
+<img src="../../img/Wiki编写规范3.png" style="width:600px">
 
 
 
