@@ -1,8 +1,8 @@
 # 参数介绍 
 ## DD-EL20工程参数图[单位：毫米]
-![DD-EL20]( ../img/DD_EL20_v2_3三视图.png ) 
+![DD-EL20]( ../../img/DD_EL20_v2_3三视图.png ) 
 ### 3D 模型
-[模型文件]( ../img/DD-EL20_v2_3.step.zip )
+[模型文件]( ../../3DModel/DD_EL20_v2_3.step.zip )
 
 ## DD-EL20参数
 
