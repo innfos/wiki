@@ -106,3 +106,23 @@ testBox.add("jQuery").remove("jQuery");
 
 <table style="width:400px"><thead><tr style="background:PaleTurquoise"><th style="width:100px">版本号</th><th style="width:150px">更新时间</th><th style="width:150px">更新内容</th></tr></thead><tbody><tr><td>v1.0.4</td><td>2019.09.09</td><td>添加内容</td><tr><td>v1.0.3</td><td>2019.07.01</td><td>添加内容</td><tr><td>v1.0.2</td><td>2019.05.27</td><td>添加内容</td><tr><td>v1.0.1</td><td>2019.05.22</td><td>添加内容</td><tr><td>v1.0.0</td><td>2019.05.17</td><td>全文添加</td></tbody></table>
 
+
+
+## 新手指南
+- 在编写wiki界面时请先申请账号（账号申请请找张贺凯），申请后登陆个人账号。中文界面编写时进入点击CN。如图<br>
+<img src="../../img/Wiki编写规范1.png" style="width:600px">
+
+- 进入CN后点击Pages可查看所有现有文档。若只需在原有文档修改内容，请查找所要修改的文档名称直接双击进入修改（注意文档版本不同，内容差距较大，请勿出现文档版本与修改内容不符的错误）；如需添加新文档请点击Create new file添加文档。如图<br>
+<img src="../../img/Wiki编写规范2.png" style="width:600px">
+
+- 文档中文本修改时直接编辑文案即可，有关标题问题请仔细阅读格式要求中的标题。
+
+- 文档中表格修改时请注意表格合并的编写方式。colspan="X"意为列合并，其中X为合并列数；rowspan="X"意为行合并，其中X为合并行数。有关其他表格问题请仔细阅读格式要求中的格式要求。如图<br>
+<img src="../../img/Wiki编写规范2.png" style="width:600px">
+
+
+
+
+
+
+
