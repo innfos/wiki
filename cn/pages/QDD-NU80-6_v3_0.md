@@ -1,8 +1,8 @@
 # 参数介绍 
 ## QDD-NU80-6工程参数图[单位：毫米]
-![QDD-NU80-6_v3_0]( ../img/Qdd_NU80_6三视图_v3_0.png ) 
+![QDD-NU80-6_v3_0]( ../../img/QDD_NU80-6_v3_0三视图.png ) 
 ### 3D 模型
-[模型文件]( ../img/QDD-NU80-6_v3_0.step.zip )
+[模型文件]( ../../3DModel/QDD_NU80-6_v3_0.step.zip )
 
 
 ## QDD-NU80-6参数
