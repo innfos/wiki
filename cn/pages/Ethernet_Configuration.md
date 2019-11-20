@@ -19,7 +19,7 @@ $ ifconfig
 
 * 查看网络配置 
 
-<img src="../img/020.png" style="width:600px">
+<img src="../../img/020.png" style="width:600px">
 
 * 示例中有线网卡的名字是`enp0s25`,输入命令
 
@@ -30,7 +30,7 @@ $ sudo ifconfig enp0s25 static 192.168.1.111
 
 配置完成后输入`ifconfig`，可看到配置成功后的IP地址
 
-<img src="../img/020.png" style="width:600px">
+<img src="../../img/020.png" style="width:600px">
 
 ## Windows平台环境配置
 
@@ -40,7 +40,7 @@ $ sudo ifconfig enp0s25 static 192.168.1.111
 
 在搜索栏中输入cmd,右键单击命令提示符，选择以管理员身份运行，打开命令提示符窗口
 
-<img src="../img/cmd.png" style="width:600px">
+<img src="../../img/cmd.png" style="width:600px">
 
 输入新建入站规则命令
 
@@ -57,7 +57,7 @@ netsh advfirewall firewall delete rule name="Actuator" protocol=UDP dir=in
 IP地址配置:
 在搜索栏中输入cmd,右键单击命令提示符，选择以管理员身份运行，打开命令提示符窗口
 
-<img src="../img/cmd.png" style="width:600px">
+<img src="../../img/cmd.png" style="width:600px">
 
 查看以太网网卡名称
 
@@ -65,14 +65,14 @@ IP地址配置:
 ipconfig
 ```
 
-<img src="../img/ipconfig.jpg" style="width:600px">
+<img src="../../img/ipconfig.jpg" style="width:600px">
 
 上图中以太网网卡名字是Ethernet,修改该网卡的IP地址，输入命令
 
 ```sh
 netsh interface ip set address name="Ethernet" source=static addr=192.168.1.111  mask=255.255.255.0  gateway=192.168.1.1 
 ```
-<img src="../img/staticIP.png" style="width:600px">
+<img src="../../img/staticIP.png" style="width:600px">
 
 其中`addr=192.168.1.111`中的`111`可以修改为其他数值，避免IP地址冲突（建议为100~200）
 
@@ -82,7 +82,7 @@ netsh interface ip set address name="Ethernet" source=static addr=192.168.1.111 
 netsh interface ip set address name="Ethernet" source=dhcp
 ```
 
-<img src="../img/dhcp.png" style="width:600px">
+<img src="../../img/dhcp.png" style="width:600px">
 
 ## 版本变更记录
 
