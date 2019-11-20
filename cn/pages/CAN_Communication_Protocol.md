@@ -20,17 +20,17 @@
 
 ## CAN的硬件连接说明
 
-<table><thead><tr><th colspan="4" style=background:PaleTurquoise>表2通信信号连接器引脚定义</th></tr></thead><tbody><tr><td style="width:80px">针脚号</td><td>定义</td><td>描述</td><td>端子引脚分布</td></tr><tr><td>1</td><td>PVDD</td><td>功率电源</td><td rowspan="9"><img src="../img/配线2-2.png" style="width:450px"></td></tr><tr><td>3</td><td>PVDD</td><td>功率电源</td></tr><tr><td>5</td><td>PVDD</td><td>功率电源</td></tr><tr><td>2</td><td>GND</td><td>功率地</td></tr><tr><td>4</td><td>GND</td><td>功率地</td></tr><tr><td>6</td><td>CGND</td><td>CAN通信地</td></tr><tr><td>7</td><td>CANL</td><td>CAN差分信号</td></tr><tr><td>8</td><td>CANH</td><td>CAN差分信号</td></tr></tbody></table>
+<table><thead><tr><th colspan="4" style=background:PaleTurquoise>表2通信信号连接器引脚定义</th></tr></thead><tbody><tr><td style="width:80px">针脚号</td><td>定义</td><td>描述</td><td>端子引脚分布</td></tr><tr><td>1</td><td>PVDD</td><td>功率电源</td><td rowspan="9"><img src="../../img/配线2-2.png" style="width:450px"></td></tr><tr><td>3</td><td>PVDD</td><td>功率电源</td></tr><tr><td>5</td><td>PVDD</td><td>功率电源</td></tr><tr><td>2</td><td>GND</td><td>功率地</td></tr><tr><td>4</td><td>GND</td><td>功率地</td></tr><tr><td>6</td><td>CGND</td><td>CAN通信地</td></tr><tr><td>7</td><td>CANL</td><td>CAN差分信号</td></tr><tr><td>8</td><td>CANH</td><td>CAN差分信号</td></tr></tbody></table>
 
 ----
 
 ### CAN通信的总线和多节点的连接方式
 
-<img src="../img/wiring2-3.png" style="width:1000px">
+<img src="../../img/wiring2-3.png" style="width:1000px">
 
 <div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
 
-<img src="../img/wiring2-4.png" style="width:1000px">
+<img src="../../img/wiring2-4.png" style="width:1000px">
 
 <div class="md-text" style="text-align: center;"><strong>图2 CAN通信网络的连接示意图</strong></div>
 
@@ -76,7 +76,7 @@ Note: CAN通信是通过CAN_H与CAN_L之间的电压差来传递电平信号的�
 
 #### IQmath简介
 
-<img src="../img/3-1communicationprotocol.png" style="width:1000px">
+<img src="../../img/3-1communicationprotocol.png" style="width:1000px">
 
 <p><div class="md-text" style="text-align: center;"><strong>图4</strong></div></p>
 
@@ -90,9 +90,9 @@ Note:_iq24为INNFOS主要应用.
 
 参考文献：
 
-[C28x_IQmath_Library.pdf](../img/C28x_IQmath_Library.pdf)
+[C28x_IQmath_Library.pdf](../../img/C28x_IQmath_Library.pdf)
 
-[IQ-MATH_Library.pdf](../img/IQ-MATH_Library.pdf)
+[IQ-MATH_Library.pdf](../../img/IQ-MATH_Library.pdf)
 
 定点数=浮点数×2^Q
 
@@ -168,7 +168,7 @@ Note:_iq24为INNFOS主要应用.
 
 * * *
 
-<img src="../img/position.jpg" style="width:600px">
+<img src="../../img/position.jpg" style="width:600px">
 
 <p><div class="md-text" style="text-align: center;"><strong>图5</strong></div></p>
 
