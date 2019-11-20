@@ -5,9 +5,9 @@ ECB（Ethernet to CAN Bridge）is an Ethernet to CAN adapter, the function of th
 
 Our ECB’s principle graph and BOM, along with Ethernet communication protocol are all open sources. Users could develop on ECB by themselves based on their own requirements. In this way, it promotes the efficiency of users’ new product development in order to accelerate their listing timing.
 
-<img src="../img/ECB&HUB_v2_3PCBA1.png" style="width:600px">
+<img src="../../img/ECB&HUB_v2_3PCBA1.png" style="width:600px">
 
-![ECB&HUB_v2_3PCBA2.png](../img/ECB&HUB_v2_3PCBA2.png) ![ECB&HUB_v2_3PCBA3.png](../img/ECB&HUB_v2_3PCBA3.png)
+![ECB&HUB_v2_3PCBA2.png](../../img/ECB&HUB_v2_3PCBA2.png) ![ECB&HUB_v2_3PCBA3.png](../../img/ECB&HUB_v2_3PCBA3.png)
 
 
 
@@ -64,13 +64,13 @@ Startup switch: ：JST SM02B_GHS_TB(LF)(SN)
 ## Shape and size
 
 
-![ECB_v2_3PCB.png](../img/ECB_v2_3PCB.png) ![ECB_HUB_v2_3PCB.png](../img/ECB_HUB_v2_3PCB.png) ![Capacitance_BrarB-V2_3PCB.png](../img/Capacitance_BrarB-V2_3PCB.png)
+![ECB_v2_3PCB.png](../../img/ECB_v2_3PCB.png) ![ECB_HUB_v2_3PCB.png](../../img/ECB_HUB_v2_3PCB.png) ![Capacitance_BrarB-V2_3PCB.png](../../img/Capacitance_BrarB-V2_3PCB.png)
 
  Note: Unit is millimeters
  
 ## Instructions for operating ECB
 
-<img src="../img/ECB&HUB_v2_3PCBA4.png" style="width:600px">
+<img src="../../img/ECB&HUB_v2_3PCBA4.png" style="width:600px">
 
 
 Note: Since there are multiple ECBs connecting with the same computer, IP and MAC addresses cannot be duplicated. Visit “changing IP and MAC address” to change the ECB’s IP and MAC
@@ -109,8 +109,8 @@ chmod 777 ipChange
 
 * ECB firmware upgrade: under the bootloader program, you can upgrade ECB firmware through Ethernet IAP software. See resources below
 ## Resources
-* [ECB_SCH]( ../img/ECB_v2_3.pdf )   [ECB_HUB_SCH]( ../img/ECB_HUB_v2_3.pdf )   [ECB_Core]( ../img/ECB_Core_v2_0.pdf )
-* [STM32F429 data]( ../img/STM32F429VIT6.PDF )
+* [ECB_SCH]( ../../img/ECB_v2_3.pdf )   [ECB_HUB_SCH]( ../../img/ECB_HUB_v2_3.pdf )   [ECB_Core]( ../../img/ECB_Core_v2_0.pdf )
+* [STM32F429 data]( ../../img/STM32F429VIT6.PDF )
 
 
 
