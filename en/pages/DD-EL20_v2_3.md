@@ -1,8 +1,8 @@
 # Parameter introduction 
 ## DD-EL20 Parameter Diagram[mm]
-![DD-EL20]( ../img/DD_EL20_v2_3sanshitu.png ) 
+![DD-EL20]( ../../img/DD_EL20_v2_3三视图.png ) 
 ### 3D model 
-[Model file]( ../img/DD-EL20_v2_3.step.zip )
+[Model file]( ../../3DModel/DD_EL20_v2_3.step.zip )
 
 
 ## DD-EL20 Parameter
