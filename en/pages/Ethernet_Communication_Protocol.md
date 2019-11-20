@@ -10,7 +10,7 @@ Ethernet Communication Protocol
 
 ## Actuator connection
 
-![connect.png](../img/connect2.png "连接拓扑图")
+![connect.png](../../img/connect2.png "连接拓扑图")
 
 Connect the device as shown above and turn it on again.
 
@@ -242,10 +242,10 @@ Note: the commands for setting the speed current position value are not returned
 *   Since it is a fixed-point processor, its efficiency in processing fixed-point numbers, or literally "integers", is much higher than it is in dealing with floating-point types. On fixed-point processors, we use fixed-point integers to represent a floating-point number, and specify integer digits and scales to easily convert fixed-point and floating-point numbers. Taking a 32-bit fixed-point number as an example, suppose the conversion factor is Q, that is, the number of decimal places in 32 bits is Q, and the number of integer digits is 31-Q (in the case of signed numbers), then fixed-point numbers and floating-point numbers Conversion relationship is
 
 
-![see IQ-MATH Library file](../img/3-1通信协议.png "详见 IQ-MATH Library文档") 
+![see IQ-MATH Library file](../../img/3-1通信协议.png "详见 IQ-MATH Library文档") 
 
 
-[IQ-MATH Library file](../img/C28x_IQmath_Library.pdf "详见 IQ-MATH Library文档") 
+[IQ-MATH Library file](../../img/C28x_IQmath_Library.pdf "详见 IQ-MATH Library文档") 
 
 *    Fixed point number = floating point number × 2^Q
 
@@ -258,7 +258,7 @@ Note: the commands for setting the speed current position value are not returned
  <tr><td rowspan="2"style=background:PaleTurquoise>Data Type</td><td colspan="2"style=background:PaleTurquoise>Range</td><td  rowspan="2"style=background:PaleTurquoise>Resolution/Precision</td></tr> <tr><td>Min</td><td>Max</td></tr><tr><td>_iq30</td><td>-2</td><td>1.999 999 999</td><td>0.000 000 001</td></tr><tr><td>_iq29</td><td>-4</td><td>3.999 999 998</td><td>0.000 000 002</td></tr><tr><td>_iq28</td><td>-8</td><td>7.999 999 996</td><td>0.000 000 004</td></tr><tr><td>_iq27</td><td>-16</td><td>15.999 999 993</td><td>0.000 000 007</td></tr><tr><td>_iq26</td><td>-32</td><td>31.999 999 985</td><td>0.000 000 015</td></tr><tr><td>_iq25</td><td>-64</td><td>63.999 999 970</td><td>0.000 000 030</td></tr> <tr><td>_iq24</td><td>-128</td><td>127.999 999 940</td><td>0.000 000 060</td></tr><tr><td>_iq23</td><td>-256</td><td>255.999 999 981</td><td>0.000 000 119</td></tr><tr><td>_iq22</td><td>-512</td><td>511.999 999 762</td><td>0.000 000 238</td></tr> <tr><td>_iq21</td><td>-1024</td><td>1023.999 999 523</td><td>0.000 000 477</td></tr> <tr><td>_iq20</td><td>-2048</td><td>2047.999 999 046</td><td>0.000 000 954</td></tr> <tr><td>_iq19</td><td>-4096</td><td>4095.999 998 093</td><td>0.000 001 907</td></tr> <tr><td>_iq18</td><td>-8192</td><td>8191.999 996 185</td><td>0.000 003 815</td></tr> <tr><td>_iq17</td><td>-16384</td><td>16383.999 992 371</td><td>0.000 007 629</td></tr> <tr><td>_iq16</td><td>-32768</td><td>32767.999 984 741</td><td>0.000 015 259</td></tr> <tr><td>_iq15</td><td>-65536</td><td>65535.999 969 482</td><td>0.000 030 518</td></tr> <tr><td>_iq14</td><td>-131072</td><td>131071.999 938 965</td><td>0.000 061 035</td></tr> <tr><td>_iq13</td><td>-262144</td><td>262143.999 877 930</td><td>0.000 122 070</td></tr> <tr><td>_iq12</td><td>-524288</td><td>524287.999 755 859</td><td>0.000 244 141</td></tr> <tr><td>_iq11</td><td>-1048576</td><td>1048575.999 511 719</td><td>0.000 488 281</td></tr> <tr><td>_iq10</td><td>-2097152</td><td>2097151.999 023 437</td><td>0.000 976 563</td></tr> <tr><td>_iq9</td><td>-4194304</td><td>4194303.998 046 875</td><td>0.001 953 125</td></tr> <tr><td>_iq8</td><td>-8388608</td><td>8388607.996 093 750</td><td>0.003 906 250</td></tr> <tr><td>_iq7</td><td>-16777216</td><td>16777215.992 187 500</td><td>0.007 812 500</td></tr> <tr><td>_iq6</td><td>-33554432</td><td>33554431.984 375 000</td><td>0.015 625 000</td></tr> <tr><td>_iq5</td><td>-67108864</td><td>67108863.968 750 000</td><td>0.031 250 000</td></tr> <tr><td>_iq4</td><td>-134217728</td><td>134217727.937 500 000</td><td>0.062 500 000</td></tr> <tr><td>_iq3</td><td>-268435456</td><td>268435455.875 000 000</td><td>0.125 000 000</td></tr> <tr><td>_iq2</td><td>-536870912</td><td>536870911.750 000 000</td><td>0.250 000 000</td></tr> <tr><td>_iq1</td><td>-1073741824</td><td>1 073741823.500 000 000</td><td>0.500 000 000</td></tr></tbody></table>
 
 
-![3-2通信协议-1.png](../img/3-2通信协议-1.png "3-2通信协议-1.png")
+![3-2通信协议-1.png](../../img/3-2通信协议-1.png "3-2通信协议-1.png")
 
 *   Notes:
 *   The maximum amplitude (Maximum) set by PC is _IQ (1.0), and the minimum amplitude (Minimal) is _IQ (-1.0), which acts as a limiting function (the schematic diagram is shown in Figure 3-2). Example: (Figure: 3-2 uses the output of position loop through the limiter module as the input of the speed loop. Assuming _IQ(0.5), _IQ(-0.5), the maximum speed of the position loop output should be ±0.5x6000=±3000RPM )
