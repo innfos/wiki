@@ -7,7 +7,7 @@ ECB的原理图和BOM，以及以太网通讯协议全部开源，用户可以�
   
 <img src="../../img/ECB&HUB_v2_3PCBA1.png" style="width:600px">
 
-![ECB&HUB_v2_3PCBA2.png](../img/ECB&HUB_v2_3PCBA2.png) ![ECB&HUB_v2_3PCBA3.png](../img/ECB&HUB_v2_3PCBA3.png)
+![ECB&HUB_v2_3PCBA2.png](../../img/ECB&HUB_v2_3PCBA2.png) ![ECB&HUB_v2_3PCBA3.png](../../img/ECB&HUB_v2_3PCBA3.png)
 
 
 
@@ -65,13 +65,13 @@ P2管脚定义
 ## 外形尺寸
 
 
-![ECB_v2_3PCB.png](../img/ECB_v2_3PCB.png) ![ECB_HUB_v2_3PCB.png](../img/ECB_HUB_v2_3PCB.png) ![Capacitance_BrarB-V2_3PCB.png](../img/Capacitance_BrarB-V2_3PCB.png)
+![ECB_v2_3PCB.png](../../img/ECB_v2_3PCB.png) ![ECB_HUB_v2_3PCB.png](../../img/ECB_HUB_v2_3PCB.png) ![Capacitance_BrarB-V2_3PCB.png](../../img/Capacitance_BrarB-V2_3PCB.png)
 
  Note: 单位为mm
  
 ## ECB的使用方式
 
-<img src="../img/ECB&HUB_v2_3PCBA4.png" style="width:600px">
+<img src="../../img/ECB&HUB_v2_3PCBA4.png" style="width:600px">
 
 
 Note: 多个ECB连接同一电脑,ECB的IP和MAC地址不能有重复，修改ECB的IP和MAC地址请访问[ 修改IP和MAC地址](#!pages/ECB&HUB_v2_2.md#修改IP和MAC地址 "wikilink")
@@ -103,8 +103,8 @@ $ ./ipChange -ip=<1~255> -mac=<1~255>
 * 用户程序跳转到bootloader程序：当系统运行在用户程序时，通过以太网IAP软件，可以将系统跳转回bootloader程序中，如果跳转成功，除非系统复位或者成功升级固件，否则系统会一直运行在bootloader程序中。
 * 固件升级：当系统处于bootloader程序中，可以使用以太网IAP软件，对ECB进行固件升级。
 ## 资源
-* [ECB_SCH]( ../img/ECB_v2_3.pdf )   [ECB_HUB_SCH]( ../img/ECB_HUB_v2_3.pdf )   [ECB_Core]( ../img/ECB_Core_v2_0.pdf )
-* [STM32F429 数据表]( ../img/STM32F429VIT6.PDF )
+* [ECB_SCH]( ../../img/ECB_v2_3.pdf )   [ECB_HUB_SCH]( ../../img/ECB_HUB_v2_3.pdf )   [ECB_Core]( ../../img/ECB_Core_v2_0.pdf )
+* [STM32F429 数据表]( ../../img/STM32F429VIT6.PDF )
 
 
 
