@@ -1,8 +1,8 @@
 # Parameter introduction 
 ## DD-NU80 Parameter Diagram[mm]
-![DD-NU80]( ../img/DD_NU80_v2_2sanshitu.png ) 
+![DD-NU80]( ../../img/DD_NU80_v2_2三视图.png ) 
 ### 3D model 
-[Model file]( ../img/DD-NU80_v2_2.step.zip )
+[Model file]( ../../3DModel/DD_NU80_v2_2.STEP.zip )
 
 
 ## DD-NU80 Parameter
