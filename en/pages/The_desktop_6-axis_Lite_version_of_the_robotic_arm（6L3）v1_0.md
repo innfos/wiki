@@ -8,16 +8,16 @@ Desktop 6-axis robotic arm installation instructions
 
 <br>All joints are built by QDD Lite series actuators. Its arm length is up to 430mm and the end load is 500g. The cost of high-end robots R&D is greatly reduced, because composite materials are used in QDD Lite series SCAs. This desktop 6-axis robot mainly used in education, schools, laboratories, research institutes, competitions, etc.
                                                                 
-<img src="../img/涂.png" style="width:720px">                                                                       
+<img src="../../img/涂.png" style="width:720px">                                                                       
 
 ## Engineering parameter map
 <br>[Unit: mm]
 
-<img src="../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0.md三视图.png" style="width:720px">
+<img src="../../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0.md三视图.png" style="width:720px">
 
 
 ### 3D model
-[model file]( ../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0.step.zip )
+[model file]( ../../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0.step.zip )
 
 
 ## Basic parameters
@@ -28,13 +28,13 @@ Desktop 6-axis robotic arm installation instructions
 
 ## Product real shot renderings
 
-<img src="../img/包装箱.jpg" style="width:600px">
+<img src="../../img/13.jpg" style="width:600px">
 
 ## Hardware requirements and connections
 
 **Hardware requirements**
 
-<img src="../img/12.png" style="width:600px">
+<img src="../../img/12.png" style="width:600px">
 
 From front to back, from left to right: one set of six-axis robot, ECB+HUB with terminal resistance and feedback brake capacitor, emergency stop switch + power supply, computer.
 
@@ -45,27 +45,27 @@ From front to back, from left to right: one set of six-axis robot, ECB+HUB with 
 
 *  Connect the power supply with `ECB+HUB`
 
-<img src="../img/cdy.jpg" style="width:600px">
-<img src="../img/cwdy.jpg" style="width:600px">
+<img src="../../img/cdy.jpg" style="width:600px">
+<img src="../../img/cwdy.jpg" style="width:600px">
 
 ** Connect SCAs and their accessories**
 
 *  Connect `INNFOA SCA cable`
 
-<img src="../img/cx.jpg" style="width:600px">
-<img src="../img/cwx.jpg" style="width:600px">
+<img src="../../img/cx.jpg" style="width:600px">
+<img src="../../img/cwx.jpg" style="width:600px">
 
 **Connect the robotic arm**
 
 *  Connect INNFOS SCA Cable with`HUB` 
 
-<img src="../img/5.png" style="width:600px">
+<img src="../../img/5.png" style="width:600px">
 
 **Connect to a computer**
 
 *   Connect`ECB`to the computer with RJ45
 
-<img src="../img/7.png" style="width:600px">
+<img src="../../img/7.png" style="width:600px">
 
 **Overall view after connection**
 
@@ -77,7 +77,7 @@ From front to back, from left to right: one set of six-axis robot, ECB+HUB with 
 *  Turn the power on. The actuator's supply voltage range is DC 24V-45V.
 
 
-<img src="../img/poweron.png" style="width:600px">
+<img src="../../img/poweron.png" style="width:600px">
 
 *  After power-on, the SCA LED status light will flash yellow. When SCA is activated, the LED will flash green and communication with the actuator will be ready. If an error occurs inside SCA, the LED will flash red, please check the actuator error code.
 
@@ -156,7 +156,7 @@ $ ./robotserver mode1
 ```
 At this point the terminal will display：
 
-<img src="../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0_10.png" style="width:600px">
+<img src="../../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0_10.png" style="width:600px">
 
 <br> Enter "start" to start recording.
 <br>CTRL + C stops recording, at which point the trace file is stored in file/trajectory.txt.
@@ -172,13 +172,13 @@ $ ./robotserver mode2
 ```
 At this point the terminal will display:
 
-<img src="../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0_20.png" style="width:600px">
+<img src="../../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0_20.png" style="width:600px">
 
 <br>The value is the reproduction speed ratio, which ranges from 0.1 to 1, equaling to 10% to 100%. After entering the correct value, press Enter to next step. It is recommended that the first run should use a low reproduction speed ratio, and after confirming that the path is correct, a higher reproduction speed ratio can be used.
 
 CTRL + C can stop running the loop, and the terminal will prompt:
 
-<img src="../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0_21.png" style="width:600px">
+<img src="../../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0_21.png" style="width:600px">
 
 <br>Entering "end" will lead the robotic arm to enter the current mode. Hold the robotic arm with your hand.
 
@@ -191,7 +191,7 @@ $ ./robotserver mode3
 ```
 At this point, the terminal will prompt:
 
-<img src="../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0_30.png" style="width:600px">
+<img src="../../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0_30.png" style="width:600px">
 
 <br>This option is to select the interpolation type. Input “MOVJ”, “MOVL”, “MOVC”, and enter other values to exit the program.
 
@@ -210,7 +210,7 @@ Circular interpolation. the end motion track is arc, circular interpolation need
 
 Record the auxiliary point, the terminal prompts as follows, enter “YES” record a the end of the arc, enter other to exit the program.
 
-<img src="../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0_31.png" style="width:600px">
+<img src="../../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0_31.png" style="width:600px">
 
 
 * mode4
@@ -222,13 +222,13 @@ $ ./robotserver mode4
 ```
 At this point the terminal will display:
 
-<img src="../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0_40.png" style="width:600px">
+<img src="../../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0_40.png" style="width:600px">
 
 <br>The value is the reproduction speed ratio, which ranges from 0.1 to 1 equaling to 10% to 100%. After entering the correct value, press Enter to proceed to the next step. It is recommended that the first run use a low reproduction speed ratio, and after confirming that the path is correct, a higher reproduction speed ratio can be used.
 
 After determining the reproduction speed ratio, the terminal will display:
 
-<img src="../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0_41.png" style="width:600px">
+<img src="../../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0_41.png" style="width:600px">
 
 <br> This option is to select the replay mode. Choose to input “STEP”, “CYCLE”, “CONTINUOUS”, and enter other values to exit the program.
 
@@ -236,19 +236,19 @@ STEP:
 
 Single step mode, in which enter "FORWARD" to run to the next point, or enter "BACKWARD" to run to the previous point. Enter other values to exit the program.
 
-<img src="../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0_42.png" style="width:600px">
+<img src="../../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0_42.png" style="width:600px">
 
 CYCLE:
 
 Single-cycle operation mode means only run the program once. In this mode, the following interface will appear on the terminal. Enter “YES” to reproduce the path in a smooth manner (note that the path will be deformed), and input the other to run in the normal motion mode (ie, the speed of point to point movement is reduced to zero).
 
-<img src="../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0_43.png" style="width:600px">
+<img src="../../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0_43.png" style="width:600px">
 
 CONTINUOUS:
 
 Continuous cycle operation mode will continuously reproduce the path of “mode3” teaching. In this mode, the following interface will appear on the terminal. Enter “YES” to reproduce the path in a smooth manner (note that the path will be deformed), and input the other according to the normal movement mode. Run (ie point-to-point motion speed reduced to zero).
 
-<img src="../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0_44.png" style="width:600px">
+<img src="../../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0_44.png" style="width:600px">
 
 <br>The above modes can be terminated by pressing CTRL + C to terminate the program.
 
