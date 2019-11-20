@@ -1,8 +1,8 @@
 # Parameter introduction 
 ## QDD-NU80-6 Parameter Diagram[mm]
-![QDD-NU80-6]( ../img/Qdd_NU80_6三视图.png ) 
+![QDD-NU80-6]( ../../img/QDD_NU80-6_v2_2三视图.png ) 
 ### 3D model 
-[Model file ]( ../img/QDD-NU80-6_v2_0.step.zip )
+[Model file ]( ../img/Qdd_NU80_63D_v2_2.STEP.zip )
 
 
 ## QDD-NU80-6 Parameter `"The model has been discontinued!"`
