@@ -1,14 +1,14 @@
 # Parameter introduction 
 ## QDD Pro-NE30-80-70 Parameter Diagram[mm]
-![QDD Pro-NE30-80](  ../img/Qddpro_NE30-x-70_v2_2sanshitu.png   )
+![QDD Pro-NE30-80](  ../../img/QDD_Pro_NE30-50-70_v2_2三视图.png   )
 
 **Usage and Installation description**
 
 *  Front Fixing and Rear Fixing
 
-![Qddpro_NE30_v2_2zhengmian.png](../img/Qddpro_NE30_v2_2zhengmian.png "fig:Qddpro_NE30_v2_2zhengmian.png") ![Qddpro_NE30_v2_2fanmian.png](../img/Qddpro_NE30_v2_2fanmian.png "fig:Qddpro_NE30_v2_2fanmian.png")
+![Qddpro_NE30_v2_2zhengmian.png](../../img/QDD_Pro_NE30-50-70_v2_2正面固定.png "fig:Qddpro_NE30_v2_2zhengmian.png") ![Qddpro_NE30_v2_2fanmian.png](../../img/QDD_Pro_NE30-50-70_v2_2反面固定.png "fig:Qddpro_NE30_v2_2fanmian.png")
 ### 3D model 
-[Model file]( ../img/QDD_Pro-NE30-x-70_v2_2.step.zip )
+[Model file]( ../../3DModel/QDD_Pro_NE30-50-70_v2_2.step.zip )
 
 
 ## QDD Pro-NE30-80-70 Parameter
