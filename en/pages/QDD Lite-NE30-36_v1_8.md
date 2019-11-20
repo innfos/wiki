@@ -1,8 +1,8 @@
 # Parameter introduction
 ## QDD Lite-NE30-36 Parameter Diagram[mm]
-![QDD Lite-NE30-36]( ../img/Qdd_C_NE30_36_v1_8sanshitu.png )
+![QDD Lite-NE30-36]( ../../img/QDD_Lite_NE30-36_v1_8三视图.png )
 ### 3D model
-[Model file]( ../img/QDD Lite-NE30-36_v1_8.step.zip )
+[Model file]( ../../3DModel/QDD_Lite_NE30-36_v1_8.step.zip )
 
 ## QDD Lite-NE30-36 Parameter
 
