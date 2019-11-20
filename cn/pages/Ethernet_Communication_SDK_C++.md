@@ -22,7 +22,7 @@ $ git clone https://github.com/innfos/innfos-cpp-sdk.git
 
 ## 执行器连接
 
-<img src="../img/connect2.png" style="width:600px">
+<img src="../../img/connect2.png" style="width:600px">
 
 如上动图为INNFOS执行器以太网通信的连接方式。
 
@@ -62,7 +62,7 @@ $./01_lookupActuators
 ```
 *   此窗口会显示当前已连接的执行器数量，示例中连接了一个ID为1的执行器，其通信IP地址为192.168.1.30
 
-<img src="../img/sdkv4.0.0/022.png" style="width:600px">
+<img src="../../img/sdkv4.0.0/022.png" style="width:600px">
 
 **代码说明**
 
@@ -116,7 +116,7 @@ $./02a_enableSingleActuator
 
 *   使能单个执行器，使能后执行器指示灯会变成绿色
 
-<img src="../img/sdkv4.0.0/023.png" style="width:600px">
+<img src="../../img/sdkv4.0.0/023.png" style="width:600px">
 
 **代码说明**
 
@@ -146,7 +146,7 @@ if(pController->enableActuator(idArray.at(0)))
 $./02b_enableActuatorsInBatch 
 ```
 
-<img src="../img/sdkv4.0.0/024.png" style="width:600px">
+<img src="../../img/sdkv4.0.0/024.png" style="width:600px">
 
      
 
@@ -173,7 +173,7 @@ $./03a_currentControl
 
 *   此示例程序将在电流模式下控制执行器
     
-<img src="../img/sdkv4.0.0/025.png" style="width:600px"> 
+<img src="../../img/sdkv4.0.0/025.png" style="width:600px"> 
     
 **代码说明**
     
@@ -204,7 +204,7 @@ $./03b_velocityControl
 
 *   此示例程序自动使能执行器，使能成功后激活执行器的profile velocity模式，然后发送速度指令，执行器将以500RPM的速度转动3s，再以-500RPM的速度转动3s，最后执行器失能
 
-<img src="../img/sdkv4.0.0/026.png" style="width:600px">
+<img src="../../img/sdkv4.0.0/026.png" style="width:600px">
 
 **代码说明**
 
@@ -235,7 +235,7 @@ $./03c_positionControl
 
 *   此示例程序自动使能执行器，使能成功后激活执行器的profile position模式，然后发送位置指令，执行器将先转动到10R的位置，4s后再转动到-10R的位置，3s后失能执行器。
 
-<img src="../img/sdkv4.0.0/027.png" style="width:600px">
+<img src="../../img/sdkv4.0.0/027.png" style="width:600px">
 
 **代码说明**
 
@@ -266,7 +266,7 @@ $./04_actuatorSetting
 
 *   此示例程序自动使能执行器，使能成功后激活执行器的profile position模式，然后修改执行器参数，执行器将以不同的速度转动到指定位置。
 
-<img src="../img/sdkv4.0.0/028.png" style="width:600px">
+<img src="../../img/sdkv4.0.0/028.png" style="width:600px">
 
 **代码说明**
 
@@ -331,7 +331,7 @@ $./05a_feedback_sync
 
 *   此示例程序自动使能执行器，使能成功后同步获取执行器的电流和位置。
 
-<img src="../img/sdkv4.0.0/029.png" style="width:600px">
+<img src="../../img/sdkv4.0.0/029.png" style="width:600px">
 
 **代码说明**
 
@@ -362,7 +362,7 @@ $./05a_feedback_asyc
 
 *   此示例程序自动使能执行器，使能成功后异步获取执行器的电流和位置，可以使用ctrl-c结束程序。
 
-<img src="../img/sdkv4.0.0/030.png" style="width:600px">
+<img src="../../img/sdkv4.0.0/030.png" style="width:600px">
 
 **代码说明**
 
@@ -430,12 +430,12 @@ pController->requestCVPValue(idArray.at(0));
 *   其中源码路径就是目录结构中的`…\example`所在的路径，该目录下包含了CMakeLists.txt文件；构建路径可自行定义，用于生成工程文件两个路径配置完成后点击Generate按钮弹出如下界面
 
 
-<img src="../img/011.png" style="width:600px">
+<img src="../../img/011.png" style="width:600px">
 
 
 *   如果红色框内不是64位生成器，点击下拉三角，选择64位生成器，然后点击Finish按钮，生成成功后就生成了Visual Studio的工程文件，可用Visual Studio打开编译。编译完整个工程，在工程目录下会生成一个bin目录，里面有Debug或者Release文件夹（对应于编译的版本），将目录结构中的`…\sdk\lib\windows_x64\debug`或`…\sdk\lib\windows_x64\release`中的文件复制到对应版本的bin下面的Debug或者Release目录中，双击该目录中的exe就可正常运行示例程序了。
 
-<img src="../img/012.png" style="width:600px">
+<img src="../../img/012.png" style="width:600px">
 
 
 #### 示例程序测试
@@ -453,7 +453,7 @@ $ 01_lookupActuators.exe
 *   此窗口会显示当前已连接的执行器数量，示例中连接了一个ID为1的执行器，其通信IP地址为192.168.1.30
 
 
-<img src="../img/sdkv4.0.0/031.png" style="width:600px">
+<img src="../../img/sdkv4.0.0/031.png" style="width:600px">
 
 
 
@@ -468,7 +468,7 @@ $ 02a_enableSingleActuator.exe
 *   使能单个执行器，使能后执行器指示灯会变成绿色
 
 
-<img src="../img/sdkv4.0.0/032.png" style="width:600px">
+<img src="../../img/sdkv4.0.0/032.png" style="width:600px">
 
 
 #### 使能多个执行器
@@ -479,7 +479,7 @@ $ 02a_enableSingleActuator.exe
 $ 02b_enableActuatorsInBatch.exe 
 ```
 
-<img src="../img/sdkv4.0.0/033.png" style="width:600px">
+<img src="../../img/sdkv4.0.0/033.png" style="width:600px">
 
 
 #### 执行器电流控制
@@ -492,7 +492,7 @@ $ 03a_currentControl.exe
 
 *   此示例程序将在电流模式下控制执行器
    
-<img src="../img/sdkv4.0.0/034.png" style="width:600px">
+<img src="../../img/sdkv4.0.0/034.png" style="width:600px">
 
 
 #### 执行器速度控制
@@ -506,7 +506,7 @@ $ 03b_velocityControl.exe
 *   此示例程序自动使能执行器，使能成功后激活执行器的profile velocity模式，然后发送速度指令，执行器将以500RPM的速度转动3s，再以-500RPM的速度转动3s，最后执行器失能
 
 
-<img src="../img/sdkv4.0.0/035.png" style="width:600px">
+<img src="../../img/sdkv4.0.0/035.png" style="width:600px">
 
 
 #### 执行器位置控制
@@ -519,7 +519,7 @@ $ 03c_positionControl.exe
 
 *   此示例程序自动使能执行器，使能成功后激活执行器的profile position模式，然后发送位置指令，执行器将先转动到10R的位置，4s后再转动到-10R的位置，3s后失能执行器。
 
-<img src="../img/sdkv4.0.0/036.png" style="width:600px">
+<img src="../../img/sdkv4.0.0/036.png" style="width:600px">
 
 #### 执行器参数设置
 
@@ -531,7 +531,7 @@ $ 04_actuatorSetting.exe
 
 *   此示例程序自动使能执行器，使能成功后激活执行器的profile position模式，然后修改执行器参数，执行器将以不同的速度转动到指定位置。
 
-<img src="../img/sdkv4.0.0/037.png" style="width:600px">
+<img src="../../img/sdkv4.0.0/037.png" style="width:600px">
 
 
 
@@ -545,7 +545,7 @@ $ 05a_feedback_sync.exe
 
 *   此示例程序自动使能执行器，使能成功后同步获取执行器的电流和位置。
 
-<img src="../img/sdkv4.0.0/038.png" style="width:600px">
+<img src="../../img/sdkv4.0.0/038.png" style="width:600px">
 
 
 
@@ -559,7 +559,7 @@ $ 05b_feedback_asyc.exe
 
 *   此示例程序自动使能执行器，使能成功后异步获取执行器的电流和位置，可以使用ctrl-c结束程序。
 
-<img src="../img/sdkv4.0.0/039.png" style="width:600px">
+<img src="../../img/sdkv4.0.0/039.png" style="width:600px">
 
 
 ## SDK使用说明
