@@ -2,14 +2,14 @@
 
 INNFOS provides modular robotic building blocks that let you build and program custom robotic systems quickly. We provide Smart Compliant Actuator(SCA), digital and analog interface boards, and the mechanical and electrical hardware to connect these components together (see also [Hardware Configuration](Hardware_Configuration "wikilink")). Just as important as the hardware, INNFOS also provides software tools and APIs to program and control the robotic system created from these physical components(see <a href="#!index.md#Software_&_Development" class="active">Software & Development</a >for more details).It is recommended to use the INNFOS Actuator Studio (IAS) developed by INNFOS for SCA fast and safe debugging.
 
-<img src="../img/shouyesca1.jpeg" width = "600px" div align=center/>
+<img src="../../img/shouyesca1.png" width = "600px" div align=center/>
 
 
 ## INNFOS SCA
 
 INNFOS SCA （Smart Compliant Actuator）is an intelligent, highly integrated and advanced servo system with flexible and safe control. It highly integrates the core components of servo motor, servo drive, reducer and encoder. Its volume is only one tenth of traditional servo system under the same performance. SCA is a revolutionary breakthrough compared to traditional robotic actuation. It effectively solves the structural problems of multiple joint connections for various types of robot and ensures the joint control and safe usage of service robots. This has enabled service robots to work and live with humans, which providing an important core technology for the Fourth Industrial Revolution and the coming era of the intelligent robot.
 
-<img src="../img/shouyesca2.jpeg" style="width:600px">
+<img src="../../img/shouyesca2.jpeg" style="width:600px">
 
 ## Application fields
 
