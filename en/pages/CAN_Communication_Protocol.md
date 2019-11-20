@@ -16,17 +16,17 @@ The baud rate of this communication protocol is 1Mbit/s. For CAN communication, 
 
 ## Hardware connection introduction of CAN
 
-<table><thead><tr><th colspan="4" style=background:PaleTurquoise>Table 2 Communication Signal Connector Pin Definitions</th></tr></thead><tbody><tr><td style="width:80px">Pin number</td><td>definition</td><td>description</td><td>	Terminal pin distribution</td></tr><tr><td>1</td><td>PVDD</td><td>Power supply</td><td rowspan="9"><img src="../img/配线2-2.png" style="width:550px"></td></tr><tr><td>3</td><td>PVDD</td><td>Power supply</td></tr><tr><td>5</td><td>PVDD</td><td>Power supply</td></tr><tr><td>2</td><td>GND</td><td>Power Ground</td></tr><tr><td>4</td><td>GND</td><td>Power Ground</td></tr><tr><td>6</td><td>CGND</td><td>CAN Ground</td></tr><tr><td>7</td><td>CANL</td><td>CAN communication interface</td></tr><tr><td>8</td><td>CANH</td><td>CAN communication interface</td></tr></tbody></table>
+<table><thead><tr><th colspan="4" style=background:PaleTurquoise>Table 2 Communication Signal Connector Pin Definitions</th></tr></thead><tbody><tr><td style="width:80px">Pin number</td><td>definition</td><td>description</td><td>	Terminal pin distribution</td></tr><tr><td>1</td><td>PVDD</td><td>Power supply</td><td rowspan="9"><img src="../../img/配线2-2.png" style="width:550px"></td></tr><tr><td>3</td><td>PVDD</td><td>Power supply</td></tr><tr><td>5</td><td>PVDD</td><td>Power supply</td></tr><tr><td>2</td><td>GND</td><td>Power Ground</td></tr><tr><td>4</td><td>GND</td><td>Power Ground</td></tr><tr><td>6</td><td>CGND</td><td>CAN Ground</td></tr><tr><td>7</td><td>CANL</td><td>CAN communication interface</td></tr><tr><td>8</td><td>CANH</td><td>CAN communication interface</td></tr></tbody></table>
 
 ----
 
 ### CAN communication bus and multi-node connection
 
-<img src="../img/wiring2-3.png" style="width:1000px">
+<img src="../../img/wiring2-3.png" style="width:1000px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig1 Connection diagram of CAN communication</strong></div>
 
-<img src="../img/wiring2-4.png" style="width:1000px">
+<img src="../../img/wiring2-4.png" style="width:1000px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig2 Connection diagram of CAN communication</strong></div>
 
@@ -47,7 +47,7 @@ The SCA (except for special models) is internally designed with CAN isolation ci
 
 ### communication protocol format
 
-<img src="../img/wiring2-13.png" style="width:800px">
+<img src="../../img/wiring2-13.png" style="width:800px">
 
 <p><div class="md-text" style="text-align: center;"><strong>Fig 3</strong></div></p>
 
@@ -69,7 +69,7 @@ The specific parameter content of an instruction whose length is equal to the da
 
 #### IQmath Instruction
 
-<img src="../img/3-1communicationprotocol.png" style="width:600px">
+<img src="../../img/3-1communicationprotocol.png" style="width:600px">
 
 **Fig 4**
 
@@ -84,9 +84,9 @@ Note: _iq24 is INNFOS main application.
 
 references:
 
-[C28x_IQmath_Library.pdf](../img/C28x_IQmath_Library.pdf)
+[C28x_IQmath_Library.pdf](../../img/C28x_IQmath_Library.pdf)
 
-[IQ-MATH_Library.pdf](../img/IQ-MATH_Library.pdf)
+[IQ-MATH_Library.pdf](../../img/IQ-MATH_Library.pdf)
 
 
 Fixed point number = floating point number × 2^Q 
@@ -160,7 +160,7 @@ Description: Parameter content data[3 ~0] The high position is in the front and 
 
 * * *
 
-<img src="../img/position.jpg" style="width:600px">
+<img src="../../img/position.jpg" style="width:600px">
 
 <p><div class="md-text" style="text-align: center;"><strong>图5</strong></div></p>
 
