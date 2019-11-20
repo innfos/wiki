@@ -2,7 +2,7 @@
 
 开机后鼠标选中红色区域，可更改当前执行器ID编号,更改后，进入下图A-1界面后，点击Download保存更改参数。 
 
-<img src="../img/A1.png" style="width:850px">
+<img src="../../img/A1 (2).png" style="width:850px">
 
 <div class="md-text" style="text-align: center;"><strong>图1</strong></div>
 
@@ -29,7 +29,7 @@ RPM/s^2: 对加速度的一阶时间导数，即加加速度（急动度），�
 
 *   ip地址配置，打开控制面板，选择网络和Internet,再选择网络和共享中心，再选择更改适配器设置，右键单击以太网，选择属性,选择TCP/IPv4,然后选择属性，其中ip地址中的192.168.1.119中的119可以替换成100~200之间的任意整数，网关可设为192.168.1.1，DNS无需填写，配置完成点击确定。配置如下图：
 
-<img src="../img/tupian1.png" style="width:400px">
+<img src="../../img/tupian1.png" style="width:400px">
 
 <div class="md-text" style="text-align: center;"><strong>图2</strong></div>
 
@@ -45,7 +45,7 @@ RPM/s^2: 对加速度的一阶时间导数，即加加速度（急动度），�
 *   **Scalar**:放大倍数，放大或者缩小图形的幅值时使用。示波器的Y轴范围为-1~1，当鼠标停留在波形的某个点上时，会显示出当前点的坐标位置，Y轴的坐标乘以放大倍数即为当前点的幅值大小。即幅值 A=Y*Scalar。
 *   **使用提示**：在使用示波器时，先设置好tirg_value和prescalar，等待出现波形时，可以先点击auto让软件自动找到一个offset和scalar的数值，然后再进行手动调节。每次更改完参数后，需要按下回车或切换输入框才能生效。
 
-<img src="../img/XY.png" style="width:400px">
+<img src="../../img/XY.png" style="width:400px">
 
 <div class="md-text" style="text-align: center;"><strong>图3</strong></div>
 
@@ -59,9 +59,9 @@ RPM/s^2: 对加速度的一阶时间导数，即加加速度（急动度），�
 *   下面介绍两个调整S曲线-位置模式的参数，加速度Accelerate和减速度Decelerate。加速度Accelerate即反应的是速度由低到高增加时的变化快慢，Accelerate的值越大，速度增加的就越快；减速度Decelerate即反应的是速度由高到底减少时的变化快慢。Decelerate的值越大，速度减少的就越快。反而反之。Max对应的参数是最大转速，当速度增加到最大值后还没有到达指定位置，则速度不再增加，加速度为0。
 *   以图形为例讲解这个两个参数的作用：为了方便分析图像，我们假设执行器当前位置为0 R，发送指令让其转动至20 R，最大速度设为1 RPM，加速度和减速度均设为0.1 RPM/S。此处的参数值设定仅仅为了理论分析，参数值要根据实际情况进行设定。
 
-![](../img/S.png "曲线图")
+![](../../img/S.png "曲线图")
 
-<img src="../img/S.png" style="width:1000px">
+<img src="../../img/S.png" style="width:1000px">
 
 <div class="md-text" style="text-align: center;"><strong>图4 </strong></div>
 
