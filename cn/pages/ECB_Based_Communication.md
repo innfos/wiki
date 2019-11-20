@@ -6,7 +6,7 @@
 
 **硬件需求**
 
-<img src="../img/all.png" style="width:600px">
+<img src="../../img/all.png" style="width:600px">
 
 从前到后、从左到右依次为：ECB、HUB、终端电阻2个、回馈制动电容、ECB连接线、INNFOS执行器、执行器连接线，急停开关+电源。
 
@@ -14,48 +14,48 @@
 
 *   连接电源与`ECB+HUB`
 
-<img src="../img/cdy.jpg" style="width:600px">
-<img src="../img/cwdy.jpg" style="width:600px">
+<img src="../../img/cdy.jpg" style="width:600px">
+<img src="../../img/cwdy.jpg" style="width:600px">
 
 **连接执行器及其配件**
 
 *   连接`JST转MOLEX转接线`
 
-<img src="../img/cx.jpg" style="width:600px">
-<img src="../img/cwx.jpg" style="width:600px">
+<img src="../../img/cx.jpg" style="width:600px">
+<img src="../../img/cwx.jpg" style="width:600px">
 
 **连接执行器**
 
 *   用执行器连接线连接`HUB`与执行器
 
-<img src="../img/Actuator-C1.png" style="width:600px">
+<img src="../../img/Actuator-C1.png" style="width:600px">
 
 
 *   末端执行器安插终端电阻
 
-<img src="../img/Actuator-C2.jpg" style="width:600px">
+<img src="../../img/Actuator-C2.jpg" style="width:600px">
 
 **连接电脑**
 
 *   用网线连接`ECB`与电脑
 
-<img src="../img/pc-c.png" style="width:600px">
+<img src="../../img/pc-c.png" style="width:600px">
 
 **开启电源**
 
 *   开启电源. 执行器的供电电压范围为直流24V-45V.
 
-<img src="../img/poweron.png" style="width:600px">
+<img src="../../img/poweron.png" style="width:600px">
 
 *   上电以后，执行器LED状态灯会变成黄色闪烁，启动执行器后，LED会变成绿色闪烁，这时就可以与执行器进行通信了。如果执行器内部出现错误，LED灯会变为红色闪烁，请检查执行器错误代码。
 
-<img src="../img/poweron2.png" style="width:600px">
+<img src="../../img/poweron2.png" style="width:600px">
 
-<img src="../img/connect2.png" style="width:600px">
+<img src="../../img/connect2.png" style="width:600px">
 
 *   EL20系列连接方式
 
-<img src="../img/connect-EL20.jpg" style="width:600px">
+<img src="../../img/connect-EL20.jpg" style="width:600px">
 
  Note: EL20为非隔离CAN通信，暂时不推荐和其他系列SCA混连。即将推出CAN隔离转不隔离模组，届时即可混连。
 
@@ -77,25 +77,25 @@
 **使用** 
 
 
-<img src="../img/new11.png" style="width:600px"> 
+<img src="../../img/new11.png" style="width:600px"> 
 
 安装成功后，启动`IAS`,单击“确认”按钮启用“下一步”按钮，然后单击“下一步”直到出现如下界面: 
 
 
-<img src="../img/new15.png" style="width:600px"> 
+<img src="../../img/new15.png" style="width:600px"> 
 
 单击“1”或“2”按钮启动执行器，按钮“1”变为绿色表示您已成功启动执行器。单击消息框或单击“详细信息”按钮（位于按钮“1”下方） 进入执行器调试界面。 
 
-<img src="../img/new18.png" style="width:600px"> 
+<img src="../../img/new18.png" style="width:600px"> 
 
 
  **位置控制**
 
 *   单击左侧栏上的`Profile Position Mode`按钮，然后单击右侧的`Activate Profile Position Mode`。之后，您可以在“设置”中输入位置值，单位是R(范围是-127R~127R)。
 
-<img src="../img/new61.png" style="width:600px"> 
+<img src="../../img/new61.png" style="width:600px"> 
 
-<img src="../img/new63.png" style="width:600px"> 
+<img src="../../img/new63.png" style="width:600px"> 
 
 
 ### 其他
