@@ -21,7 +21,7 @@ Note:The actual reduction ratio is the harmonic nomical gear ratio plus 1 becaus
  Note: Encoder counter range: ±127turns; Motor protection temperature settable range: 25-120 °C; Inverter protection temperature settable range: 25-120 °C
 ### Connector Pin Layout
 
-<img src="../img/配线2-2.png" style="width:600px">
+<img src="../../img/配线2-2.png" style="width:600px">
 
 ### Terminal pin function
 
