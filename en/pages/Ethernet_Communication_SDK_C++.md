@@ -24,7 +24,7 @@ $ git clone https://github.com/innfos/innfos-cpp-sdk.git
 
 ## SCA connection
 
-<img src="../img/connect2.png" style="width:600px">
+<img src="../../img/connect2.png" style="width:600px">
 
 Connect the device as shown above and turn it on again. 
 Warning: do not plug or unplug all cables with electricity, otherwise the device may be damaged.
@@ -63,7 +63,7 @@ $./01_lookupActuators
 ```
 *   This window will display the number of currently connected actuators. A connected actuator with ID 1 is shown in the example whose communication IP address is 192.168.1.30.
 
-<img src="../img/sdkv4.0.0/022.png" style="width:600px">
+<img src="../../img/022.png" style="width:600px">
 
 **code description**
 
@@ -115,7 +115,7 @@ $./02a_enableSingleActuator
 
 *   Enable a single actuator，and the actuator indicator will turn green after enabled.
 
-<img src="../img/sdkv4.0.0/023.png" style="width:600px">
+<img src="../../img/023.png" style="width:600px">
 
 **code description**
 
@@ -144,7 +144,7 @@ if(pController->enableActuator(idArray.at(0)))
 $./02b_enableActuatorsInBatch 
 ```
 
-<img src="../img/sdkv4.0.0/024.png" style="width:600px">
+<img src="../../img/024.png" style="width:600px">
      
 
 **code description**
@@ -171,7 +171,7 @@ $./03a_currentControl
 *  The sample program will control the actuator in current mode
 
     
-<img src="../img/sdkv4.0.0/025.png" style="width:600px"> 
+<img src="../../img/025.png" style="width:600px"> 
     
 **code description**
     
@@ -205,7 +205,7 @@ $./03b_velocityControl
 *   The sample program automatically enables the actuator. The actuator's profile velocity mode will be activated after successful enablement, and then send speed command. The actuator will rotate at 500RPM for 3s, then rotate at -500RPM for 3s, finally becoming disabled.
  
 
-<img src="../img/sdkv4.0.0/026.png" style="width:600px">
+<img src="../../img/026.png" style="width:600px">
 
 **code description**
 
@@ -236,7 +236,7 @@ $./03c_positionControl
 
 *   The sample program automatically enables the actuator. The profile position mode of the actuator will be activated after successful enablement, and then send position command. The actuator will first rotate to the 10R position, then rotate to the -10R position after 4s, and finally become disabled after 3s.
 
-<img src="../img/sdkv4.0.0/027.png" style="width:600px">
+<img src="../../img/sdkv4.0.0/027.png" style="width:600px">
 
 **code description**
 
@@ -267,7 +267,7 @@ $./04_actuatorSetting
 
 * This sample program automatically enables the actuator. The actuator's profile position mode will be activated after successful enablement. Then by modifying the actuator parameters, the actuator will rotate to the specified position at different speeds.
 
-<img src="../img/sdkv4.0.0/028.png" style="width:600px">
+<img src="../../img/sdkv4.0.0/028.png" style="width:600px">
 
 **code description**
 
@@ -332,7 +332,7 @@ $./05a_feedback_sync
 
 *  The sample program automatically enables the actuator. The current and position of the actuator can be synchronously acquired after successful enablement.
 
-<img src="../img/sdkv4.0.0/029.png" style="width:600px">
+<img src="../../img/sdkv4.0.0/029.png" style="width:600px">
 
 **Code description**
 
@@ -363,7 +363,7 @@ $./05a_feedback_asyc
 
 *   This sample program automatically enables the actuator. The current and position of the actuator will be acquired asynchronously after successful enablement. The program can be ended with `ctrl-c`.
 
-<img src="../img/sdkv4.0.0/030.png" style="width:600px">
+<img src="../../img/sdkv4.0.0/030.png" style="width:600px">
 
 **Code description**
 
@@ -427,12 +427,12 @@ Please refer to the <a href="#!pages/Ethernet_Configuration.md#windows"> windows
 *   run cmake-gui to appear as the right interface:
 *   the source path is `…\example` in the directory structure, containing the cmakelists.txt file. The build path can be customized, being used to generate the project file. After the path is configured, click the generate button to pop up the following interface.
 
-<img src="../img/011.png" style="width:600px">
+<img src="../../img/011.png" style="width:600px">
 
 
 *   if the red box is not a 64-bit generator, click on the drop-down triangle, select the 64-bit generator, and then click the finish button. Once successful, the visual studio project file will be formed and can be compiled with visual studio. Compiling the complete project to generate a bin directory, there is a debug or release folder (corresponding to the compiled version), the file in the directory structure `…\SDK\lib\windows_x64\debug`or`…\SDK\lib\windows_x64\release` is copied to the debug or release directory under the bin of the corresponding version. Double-clicking the exe in the directory will run the sample program normally.
 
-<img src="../img/012.png" style="width:600px">
+<img src="../../img/012.png" style="width:600px">
 
 
 #### Sample program test
@@ -451,7 +451,7 @@ $ 01_lookupActuators.exe
 
 *  This window will show the number of currently connected actuators. In the example, an actuator with ID 1 is connected and its communication IP address is `192.168.1.30`.
 
-<img src="../img/sdkv4.0.0/031.png" style="width:600px">
+<img src="../../img/sdkv4.0.0/031.png" style="width:600px">
 
 
 ##### Enable several actuators
@@ -465,7 +465,7 @@ $ 02a_enableSingleActuator.exe
 *   Enable a single actuator, and the actuator indicator will turn green when enabled.
 
 
-<img src="../img/sdkv4.0.0/032.png" style="width:600px">
+<img src="../../img/sdkv4.0.0/032.png" style="width:600px">
 
 
 #### Enable several actuators
@@ -476,7 +476,7 @@ $ 02a_enableSingleActuator.exe
 $ 02b_enableActuatorsInBatch.exe 
 ```
 
-<img src="../img/sdkv4.0.0/033.png" style="width:600px">
+<img src="../../img/sdkv4.0.0/033.png" style="width:600px">
 
 
 #### Current control
@@ -489,7 +489,7 @@ $ 03a_currentControl.exe
 
 *  This sample program will control the actuator in current mode
    
-<img src="../img/sdkv4.0.0/034.png" style="width:600px">
+<img src="../../img/sdkv4.0.0/034.png" style="width:600px">
 
 
 #### Velocity control
@@ -502,7 +502,7 @@ $ 03b_velocityControl.exe
 
 *   The example program automatically enables the actuator. After successful enablement, the actuator's profile velocity mode will be activated, then send the velocity command. The actuator will rotate at 500RPM for 3s, then rotate at -500RPM for 3s, and finally become disabled.
 
-<img src="../img/sdkv4.0.0/035.png" style="width:600px">
+<img src="../../img/sdkv4.0.0/035.png" style="width:600px">
 
 
 #### Profile position control
@@ -515,7 +515,7 @@ $ 03c_positionControl.exe
 
 *  The sample program automatically enables the actuator. After successful enablement, the profile position mode of the actuator will be activated, then send the position command. The actuator will first rotate to the 10R position, then rotate to the -10R position after 4s, and finally become disable after 3s.
 
-<img src="../img/sdkv4.0.0/036.png" style="width:600px">
+<img src="../../img/sdkv4.0.0/036.png" style="width:600px">
 
 #### Actuator parameter setting
 
@@ -527,7 +527,7 @@ $ 04_actuatorSetting.exe
 
 *   The sample program automatically enables the actuator. After successful enablement, the actuator's profile position mode will be activated, then modify the actuator parameters. The actuator will rotate to the specified position at different speeds.
 
-<img src="../img/sdkv4.0.0/037.png" style="width:600px">
+<img src="../../img/sdkv4.0.0/037.png" style="width:600px">
 
 
 
@@ -541,7 +541,7 @@ $ 05a_feedback_sync.exe
 
 * The sample program automatically enables the actuator. The current and position of the actuator can be synchronous acquired after successful enablement.
 
-<img src="../img/sdkv4.0.0/038.png" style="width:600px">
+<img src="../../img/sdkv4.0.0/038.png" style="width:600px">
 
 
 
@@ -555,7 +555,7 @@ $ 05b_feedback_asyc.exe
 
 *  The sample program automatically enables the actuator. The current and position of the actuator can be synchronous acquired after successful enablement. The program can be ended with ctrl-c.
 
-<img src="../img/sdkv4.0.0/039.png" style="width:600px">
+<img src="../../img/sdkv4.0.0/039.png" style="width:600px">
 
 
 
