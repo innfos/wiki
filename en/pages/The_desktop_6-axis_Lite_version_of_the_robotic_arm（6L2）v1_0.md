@@ -8,16 +8,16 @@ Desktop 6-axis robotic arm installation instructions
 
 <br>All joints are built by QDD Lite series actuators. Its arm length is up to    mm and the end load is   g. The cost of high-end robots R&D is greatly reduced, because composite materials are used in QDD Lite series SCAs. This desktop 6-axis robot mainly used in education, schools, laboratories, research institutes, competitions, etc.
                                                                 
-<img src="../img/涂.png" style="width:720px">                                                                       
+<img src="../../img/涂.png" style="width:720px">                                                                       
 
 ## Engineering parameter map
 <br>[Unit: mm]
 
-<img src="../img/桌面级6轴机械臂（6L2）_v1_0.md三视图.png" style="width:720px">
+<img src="../../img/桌面级6轴机械臂（6L2）_v1_0.md三视图.png" style="width:720px">
 
 ### 3D model
 
-[model file]( ../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0.step.zip )
+[model file]( ../../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0.step.zip )
 
 
 ## Basic parameters
