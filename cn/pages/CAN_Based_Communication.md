@@ -18,15 +18,15 @@
 
 ## CAN的硬件连接说明
 
-<table><thead><tr><th colspan="4" style=background:PaleTurquoise>表2通信信号连接器引脚定义</th></tr></thead><tbody><tr><td style="width:80px">针脚号</td><td>定义</td><td>描述</td><td>端子引脚分布</td></tr><tr><td>1</td><td>PVDD</td><td>功率电源</td><td rowspan="9"><img src="../img/配线2-2.png" style="width:450px"></td></tr><tr><td>3</td><td>PVDD</td><td>功率电源</td></tr><tr><td>5</td><td>PVDD</td><td>功率电源</td></tr><tr><td>2</td><td>GND</td><td>功率地</td></tr><tr><td>4</td><td>GND</td><td>功率地</td></tr><tr><td>6</td><td>CGND</td><td>CAN通信地</td></tr><tr><td>7</td><td>CANL</td><td>CAN差分信号</td></tr><tr><td>8</td><td>CANH</td><td>CAN差分信号</td></tr></tbody></table>
+<table><thead><tr><th colspan="4" style=background:PaleTurquoise>表2通信信号连接器引脚定义</th></tr></thead><tbody><tr><td style="width:80px">针脚号</td><td>定义</td><td>描述</td><td>端子引脚分布</td></tr><tr><td>1</td><td>PVDD</td><td>功率电源</td><td rowspan="9"><img src="../../img/配线2-2.png" style="width:450px"></td></tr><tr><td>3</td><td>PVDD</td><td>功率电源</td></tr><tr><td>5</td><td>PVDD</td><td>功率电源</td></tr><tr><td>2</td><td>GND</td><td>功率地</td></tr><tr><td>4</td><td>GND</td><td>功率地</td></tr><tr><td>6</td><td>CGND</td><td>CAN通信地</td></tr><tr><td>7</td><td>CANL</td><td>CAN差分信号</td></tr><tr><td>8</td><td>CANH</td><td>CAN差分信号</td></tr></tbody></table>
 
 ### CAN通信的总线和多节点的连接方式
 
-<img src="../img/wiring2-3.png" style="width:870px">
+<img src="../../img/wiring2-3.png" style="width:870px">
 
 <div class="md-text" style="text-align: center;"><strong>图1 CAN通信网络的连接框图</strong></div>
 
-<img src="../img/wiring2-4.png" style="width:870px">
+<img src="../../img/wiring2-4.png" style="width:870px">
 
 <div class="md-text" style="text-align: center;"><strong>图2 CAN通信网络的连接示意图</strong></div>
 
@@ -52,7 +52,7 @@ Note: CAN通信是通过CAN_H与CAN_L之间的电压差来传递电平信号的�
 
 **硬件需求**
 
-<img src="../img/01can.jpg" style="width:600px">
+<img src="../../img/01can.jpg" style="width:600px">
 
 *   从左到右依次为：INNFOS 执行器、ST开发板（需自备）、终端电阻、执行器综合线缆，直流稳压电源
 *   您可以使用自己的ST开发板实现与执行器间的CAN通信及控制
@@ -66,43 +66,43 @@ Note: 必须先断电然后再插拔部件.  否则可能损坏部件.</br>请�
 
 *   取出执行器综合线缆
 
-<img src="../img/02can.jpg" style="width:600px"> 
+<img src="../../img/02can.jpg" style="width:600px"> 
 
 *   将执行器综合线缆的一端剪开
 红色粗线为电源正极线,黑色粗线为电源负极线;
 将双绞屏蔽线剪开，其中红色细线为 CAN_H;黑色细线为 CAN_L; 银色细线为CAN_GND。
 
-<img src="../img/03can.jpg" style="width:600px"> 
+<img src="../../img/03can.jpg" style="width:600px"> 
 
 *    将红色细线 CAN_H，黑色细线 CAN_L分别接入 ST开发板的对应位置。
 
-<img src="../img/04can.jpg" style="width:600px"> 
+<img src="../../img/04can.jpg" style="width:600px"> 
 
 *    将红色电源正极线与黑色电源负极线按图所示接入电源正负极。
 
-<img src="../img/05can.jpg" style="width:600px"> 
+<img src="../../img/05can.jpg" style="width:600px"> 
 
 
 **连接执行器**
 
 *    将执行器综合线缆另一端连接执行器。
 
-<img src="../img/06can.jpg" style="width:600px"> 
+<img src="../../img/06can.jpg" style="width:600px"> 
 
 *    末端执行器安插终端电阻
 
-<img src="../img/Actuator-C2.jpg" style="width:600px">
+<img src="../../img/Actuator-C2.jpg" style="width:600px">
 
 *    完成连接，即可接通电源，进行后续调试
 
-<img src="../img/07can.jpg" style="width:600px"> 
+<img src="../../img/07can.jpg" style="width:600px"> 
 
 
 ### 基于Arduino开发板的连接
 
 **硬件需求**
 
-<img src="../img/08can.jpg" style="width:600px">
+<img src="../../img/08can.jpg" style="width:600px">
 
 *   从左到右依次为：INNFOS 执行器、Arduino开发板（需自备）、终端电阻、ECB连接线、执行器综合线缆，直流稳压电源
 *   您可以使用自己的Arduino开发板实现与执行器间的CAN通信及控制
@@ -115,23 +115,23 @@ Note: 必须先断电然后再插拔部件.  否则可能损坏部件.</br>请�
 
 *   取出执行器综合线缆和ECB连接线。
 
-<img src="../img/09can.jpg" style="width:600px"> 
+<img src="../../img/09can.jpg" style="width:600px"> 
 
 *   将执行器综合线缆的一端剪开。
 红色粗线为电源正极线；黑色粗线为电源负极线，将双绞屏蔽线剪开，其中红色细线为 CAN_H;黑色细线为 CAN_L; 银色细线为CAN_GND。
 
-<img src="../img/03can.jpg" style="width:600px"> 
+<img src="../../img/03can.jpg" style="width:600px"> 
 
 *    将ECB连接线小心剪开，并与剪开综合线缆的红色细线 CAN_H，黑色细线 CAN_L; 银色细线为CAN_GND
 如图所示找好对应引脚进行连接，焊接牢固 ，并用热缩管或绝缘胶带包好以防止短路。
 
-<img src="../img/10can.jpg" style="width:600px"> 
+<img src="../../img/10can.jpg" style="width:600px"> 
 
-<img src="../img/11can.jpg" style="width:600px">
+<img src="../../img/11can.jpg" style="width:600px">
 
 *    将红色电源正极线与黑色电源负极线按图所示接入电源正负极。
 
-<img src="../img/05can.jpg" style="width:600px"> 
+<img src="../../img/05can.jpg" style="width:600px"> 
 
 *    将ECB连接线的另一端插入Arduino开发板，完成连接。
 
@@ -140,16 +140,16 @@ Note: 必须先断电然后再插拔部件.  否则可能损坏部件.</br>请�
 
 *    将执行器综合线缆另一端连接执行器。
 
-<img src="../img/06can.jpg" style="width:600px"> 
+<img src="../../img/06can.jpg" style="width:600px"> 
 
 *    末端执行器安插终端电阻
 
-<img src="../img/Actuator-C2.jpg" style="width:600px">
+<img src="../../img/Actuator-C2.jpg" style="width:600px">
 
 
 *    完成连接，即可接通电源，进行后续调试
 
-<img src="../img/12can.jpg" style="width:600px"> 
+<img src="../../img/12can.jpg" style="width:600px"> 
 
 
 
@@ -171,25 +171,25 @@ Note: 必须先断电然后再插拔部件.  否则可能损坏部件.</br>请�
 **使用** 
 
 
-<img src="../img/new11.png" style="width:600px"> 
+<img src="../../img/new11.png" style="width:600px"> 
 
 安装成功后，启动`IAS`,单击“确认”按钮启用“下一步”按钮，然后单击“下一步”直到出现如下界面: 
 
 
-<img src="../img/new15.png" style="width:600px"> 
+<img src="../../img/new15.png" style="width:600px"> 
 
 单击“1”或“2”按钮启动执行器，按钮“1”变为绿色表示您已成功启动执行器。单击消息框或单击“详细信息”按钮（位于按钮“1”下方） 进入执行器调试界面。 
 
-<img src="../img/new18.png" style="width:600px"> 
+<img src="../../img/new18.png" style="width:600px"> 
 
 
  **位置控制**
 
 *   单击左侧栏上的`Profile Position Mode`按钮，然后单击右侧的`Activate Profile Position Mode`。之后，您可以在“设置”中输入位置值，单位是R(范围是-127R~127R)。
 
-<img src="../img/new51.png" style="width:600px"> 
+<img src="../../img/new51.png" style="width:600px"> 
 
-<img src="../img/new53.png" style="width:600px"> 
+<img src="../../img/new53.png" style="width:600px"> 
 
 
 ### 其他
