@@ -42,7 +42,7 @@ P1管脚定义
 
 
 P2管脚定义
-<table style="width:450px"><thead><tr class="tableizer-firstrow" style="background: PaleTurquoise; color: black"><th style="width:100px">P1 PIN#</th><th>Name</th><th style="width:100px">P1 PIN#</th><th>Name</th></tr></thead><tbody><tr><td>1</td><td>PA5</td><td>2</td><td>PA3</td></tr><tr><td>3</td><td>PA6</td><td>4</td><td>PA4</td></tr><tr><td>5</td><td>AGND</td><td>6</td><td>PA0</td></tr><tr><td>7</td><td>PB3</td><td>8</td><td>PB4</td></tr><tr><td>9</td><td>SPI2_SCK</td><td>10</td><td>SPI2_NSS</td></tr><tr><td>11</td><td>SPI2_MISO</td><td>12</td><td>SPI2_MOSI</td></tr><tr><td>13</td><td>I2C3_SCL</td><td>14</td><td>I2C3_SDA</td></tr><tr><td>15</td><td>PD6/USART2_RX</td><td>16</td><td>VCC_5V</td></tr><tr><td>17</td><td>PD5/USART2_TX</td><td>18</td><td>VCC_12V</td></tr><tr><td>19</td><td>GND</td><td>20</td><td>PC7</td></tr></tbody></table>
+<table style="width:450px"><thead><tr class="tableizer-firstrow" style="background: PaleTurquoise; color: black"><th style="width:100px">P2 PIN#</th><th>Name</th><th style="width:100px">P2 PIN#</th><th>Name</th></tr></thead><tbody><tr><td>1</td><td>PA5</td><td>2</td><td>PA3</td></tr><tr><td>3</td><td>PA6</td><td>4</td><td>PA4</td></tr><tr><td>5</td><td>AGND</td><td>6</td><td>PA0</td></tr><tr><td>7</td><td>PB3</td><td>8</td><td>PB4</td></tr><tr><td>9</td><td>SPI2_SCK</td><td>10</td><td>SPI2_NSS</td></tr><tr><td>11</td><td>SPI2_MISO</td><td>12</td><td>SPI2_MOSI</td></tr><tr><td>13</td><td>I2C3_SCL</td><td>14</td><td>I2C3_SDA</td></tr><tr><td>15</td><td>PD6/USART2_RX</td><td>16</td><td>VCC_5V</td></tr><tr><td>17</td><td>PD5/USART2_TX</td><td>18</td><td>VCC_12V</td></tr><tr><td>19</td><td>GND</td><td>20</td><td>PC7</td></tr></tbody></table>
 
 
 ### 接口规格型号
