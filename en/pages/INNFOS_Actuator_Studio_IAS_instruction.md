@@ -26,37 +26,37 @@ $ ./INNFOS\ Actuator\ Studio
 
 1.Double-click the installation software`Setup.exe`
 
-<img src="../img/new000.png" style="width:100px">
+<img src="../../img/new000.png" style="width:100px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 1-1</strong></div>
 
 2.After entering the installation interface, click`Next`
 
-<img src="../img/new01.png" style="width:600px">
+<img src="../../img/new01.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 1-2</strong></div>
 
 3.Click `I Agree`
 
-<img src="../img/new02.png" style="width:600px">
+<img src="../../img/new02.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 1-3</strong></div>
 
 4.Select the installation location and click`Install`
 
-<img src="../img/new03.png" style="width:600px">
+<img src="../../img/new03.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 1-4</strong></div>
 
 5.Wait for the completion of the installation;
 
-<img src="../img/new04.png" style="width:600px">
+<img src="../../img/new04.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 1-5</strong></div>
 
 6.Click`Finish`to complete the software installation.
 
-<img src="../img/new05.png" style="width:600px">
+<img src="../../img/new05.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 1-6</strong></div>
 
@@ -66,7 +66,7 @@ $ ./INNFOS\ Actuator\ Studio
 
 1、Double-click to run the software and enter the user interface.
 
-<img src="../img/new001.png" style="width:100px">
+<img src="../../img/new001.png" style="width:100px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 2-1</strong></div>
 
@@ -74,13 +74,13 @@ $ ./INNFOS\ Actuator\ Studio
 
 Note:Please click“show the document!” to read the software instructions when use the product for the first time.
 
-<img src="../img/new11.png" style="width:600px">
+<img src="../../img/new11.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 2-2</strong></div>
 
 3.Select the actuator communication mode (The default setting is Ethernet communication), then click `next`
 
-<img src="../img/new12.png" style="width:600px">
+<img src="../../img/new12.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 2-3</strong></div>
 
@@ -89,37 +89,37 @@ Note: Please confirm that the static IP is correctly configured before start usi
 
 *    When the USB to CAN is not connected or connected abnormally, an error message will appear.
 
-<img src="../img/new14.png" style="width:600px">
+<img src="../../img/new14.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 2-4</strong></div>
 
 *    When the external actuator is not connected or connected abnormally, an error message will appear.
 
-<img src="../img/new13.png" style="width:600px">
+<img src="../../img/new13.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 2-5</strong></div>
 
 *    When the external system is connected correctly, it enters running interface of the actuator. The red area is OFF. As shown in figure 2-6, OFF at mark 1 is a single actuator switch, ON at mark 2 is a main switch, when the actuators are connected at the same time, click on mark 2 to control all actuators.
 
-<img src="../img/new15.png" style="width:600px">
+<img src="../../img/new15.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 2-6</strong></div>
 
 *   After clicking `OFF`, the messages in the red area showed in figure 2-7 will pop up.
 
-<img src="../img/new16.png" style="width:600px">
+<img src="../../img/new16.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 2-7</strong></div>
 
 *   In about three seconds, as shown in figure 2-8, mark 1 for the actuator ID number, mark 2 is the error clear key, mark 3 for the enter operation interface key, and mark 4 for the actuator's information display area.
 
-<img src="../img/new17.png" style="width:600px">
+<img src="../../img/new17.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 2-8</strong></div>
 
 4.Click on message box or click `Detail` to enter the current loop mode.
 
-<img src="../img/new18.png" style="width:600px">
+<img src="../../img/new18.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 2-9</strong></div>
 
@@ -129,7 +129,7 @@ Note: Please confirm that the static IP is correctly configured before start usi
 
 Logic block diagram of the INNFOS actuator system:
 
-<img src="../img/current.jpg" style="width:600px">
+<img src="../../img/current.jpg" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 3-1 Logic block diagram of the INNFOS SCA system</strong></div>
 
@@ -158,7 +158,7 @@ Description: after the mixed practice of the current setting value and current f
 
 （9）Oscilloscope switch
 
-<img src="../img/new21.png" style="width:600px">
+<img src="../../img/new21.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 3-2</strong></div>
 
@@ -183,7 +183,7 @@ Enter the current value in Phase Current (1 in the figure), click Enter or Set C
 
 
 
-<img src="../img/new22.png" style="width:600px">
+<img src="../../img/new22.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 3-3</strong></div>
 
@@ -191,7 +191,7 @@ Enter the current value in Phase Current (1 in the figure), click Enter or Set C
 
 1.Click on“Active Current Mode”to activate the current current loop mode.
 
-<img src="../img/new23.png" style="width:600px">
+<img src="../../img/new23.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 3-4</strong></div>
 
@@ -203,13 +203,13 @@ Enter the current value in Phase Current (1 in the figure), click Enter or Set C
 *   The maximum current value can be set in the `Limit` parameter.
 
 
-<img src="../img/new24.png" style="width:600px">
+<img src="../../img/new24.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 3-5</strong></div>
 
 3.Click on "View Graph" to open the oscilloscope
 
-<img src="../img/new25.png" style="width:600px">
+<img src="../../img/new25.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 3-6</strong></div>
 
@@ -221,7 +221,7 @@ Enter the current value in Phase Current (1 in the figure), click Enter or Set C
 *    `channel3` is the offset and magnification of the INNFOS actuator speed (Mark 6);
 *    `channel4` is the offset and magnification of the INNFOS actuator position (Mark 7).
 
-<img src="../img/new26.png" style="width:600px">
+<img src="../../img/new26.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 3-7</strong></div>
 
@@ -236,20 +236,20 @@ Note:The free channel offset is set to 0,  zoomed to 1, or directly click OFF to
 
 *   Select `Start`(Mark 4), and the square wave generator will press the set time ( `Interval` value), continuously validate Value1 and Value2 to the specified position until the button is closed.
 
-<img src="../img/new28.png" style="width:600px">
+<img src="../../img/new28.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 3-8</strong></div>
 
 6.Click`View Graph`to open the oscilloscope window, you can view the given（ `Channel 1` square wave generator）、 current（ `Channel 2` ）、velocity（ `Channel 3` ）、position（ `Channel 4` ）four-channel parameter waveform, as shown on the right.
 
 
-<img src="../img/new29.png" style="width:600px">
+<img src="../../img/new29.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 3-9</strong></div>
 
 7.Click the `Stop` button to stop the square wave generator.
 
-<img src="../img/new30.png" style="width:600px">
+<img src="../../img/new30.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 3-10</strong></div>
 
@@ -259,7 +259,7 @@ Note:The free channel offset is set to 0,  zoomed to 1, or directly click OFF to
 
 Logic block diagram of the INNFOS actuator system:
 
-<img src="../img/velocity.jpg" style="width:600px">
+<img src="../../img/velocity.jpg" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 4-1 Logic block diagram of the INNFOS SCA system</strong></div>
 
@@ -267,7 +267,7 @@ Description: After the speed value setting and the speed feedback value are adde
 
 ### Click on "Velocity Mode" to enter speed mode
 
-<img src="../img/new31.png" style="width:600px">
+<img src="../../img/new31.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 4-2</strong></div>
 
@@ -292,7 +292,7 @@ Description: After the speed value setting and the speed feedback value are adde
 (8)Oscilloscope switch 
 
 
-<img src="../img/new32.png" style="width:600px">
+<img src="../../img/new32.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 4-3</strong></div>
 
@@ -300,7 +300,7 @@ Description: After the speed value setting and the speed feedback value are adde
 
 1.Click on "Active Velocity Mode" to activate the current Speed Mode.
 
-<img src="../img/new33.png" style="width:600px">
+<img src="../../img/new33.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 4-4</strong></div>
 
@@ -314,13 +314,13 @@ Description: After the speed value setting and the speed feedback value are adde
 for example, current up to 33A（Model 6010 is 33A and Model 3510 is 16.5A. See Appendix D of the CAN Bus Communication Protocol for details.）, input value is 0.5；When the INNFOS actuator current is increased to 33*0.5, the current value will be limited without increasing.
 *   Press the `Halt` button to stop the rotation of the INNFOS actuator.
 
-<img src="../img/new34.png" style="width:600px">
+<img src="../../img/new34.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 4-5</strong></div>
 
 3.Click on `View Graph` to open the oscilloscope
 
-<img src="../img/new35.png" style="width:600px">
+<img src="../../img/new35.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 4-6</strong></div>
 
@@ -335,7 +335,7 @@ for example, current up to 33A（Model 6010 is 33A and Model 3510 is 16.5A. See 
 *   Select `Start` to turn the INNFOS actuator on.
 
 
-<img src="../img/new36.png" style="width:600px">
+<img src="../../img/new36.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 4-7</strong></div>
 
@@ -345,7 +345,7 @@ Note:The free channel offset is set to 0,  zoomed to 1, or directly click OFF to
 
 6.Click `Stop` to stop the square-wave generator.
 
-<img src="../img/new38.png" style="width:600px">
+<img src="../../img/new38.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 4-9</strong></div>
 
@@ -355,7 +355,7 @@ Note:The free channel offset is set to 0,  zoomed to 1, or directly click OFF to
 
 Logic block diagram of the INNFOS actuator system：
 
-<img src="../img/position.jpg" style="width:600px">
+<img src="../../img/position.jpg" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 5-1 Logic block diagram of the INNFOS SCA system</strong></div>
 
@@ -365,7 +365,7 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 ### Click “Position Mode” to enter the position mode
 
-<img src="../img/new41.png" style="width:600px">
+<img src="../../img/new41.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 5-2</strong></div>
 
@@ -388,7 +388,7 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 (7) INNFOS actuator connection status
 
 (8) Oscilloscope switch
-<img src="../img/new42.png" style="width:600px">
+<img src="../../img/new42.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 5-3</strong></div>
 
@@ -396,7 +396,7 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 1.Click on “Active Position Mode” to activate the current position mode. 
 
-<img src="../img/new43.png" style="width:600px">
+<img src="../../img/new43.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 5-4</strong></div>
 
@@ -408,13 +408,13 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 *    The Mininal box and Maximum box (Mark. 3)are the speed limit of the speed loop for the position loop, for example, speed is up to 6000RPM, input value is 0.5, then the maximum speed of the INNFOS actuator rise to 6000*0.5=3000R/min, the speed value will be limited and will not increase.
 
 
-<img src="../img/new44.png" style="width:600px">
+<img src="../../img/new44.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 5-5</strong></div>
 
 3. Click “View Graph” to open the oscilloscope. The parameter introduction is the same with the above
 
-<img src="../img/new45.png" style="width:600px">
+<img src="../../img/new45.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 5-6</strong></div>
 
@@ -429,13 +429,13 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 *    Select `Start` to turn the INNFOS actuator on.
 
 
-<img src="../img/new48.png" style="width:600px">
+<img src="../../img/new48.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 5-7</strong></div>
 
 5.Click `Stop` to stop the square-wave generator.
 
-<img src="../img/new46.png" style="width:600px">
+<img src="../../img/new46.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 5-8</strong></div>
 
@@ -447,7 +447,7 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 *    After rotating,  the parameters of the current INNFOS SCA  can be seen in the status value bar .
 
 
-<img src="../img/new47.png" style="width:600px">
+<img src="../../img/new47.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 5-9</strong></div>
 
@@ -458,7 +458,7 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 ### Click on "Profile Position Mode" to enter Profile Position Mode⚓
 
-<img src="../img/new51.png" style="width:600px">
+<img src="../../img/new51.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 6-1</strong></div>
 
@@ -478,7 +478,7 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
  (6) INNFOS actuator current connection status
 
-<img src="../img/new52.png" style="width:600px">
+<img src="../../img/new52.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 6-2</strong></div>
 
@@ -486,7 +486,7 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 1.Click on “Active Profile Velocity Mode” to activate Profile Position Mode
 
-<img src="../img/new53.png" style="width:600px">
+<img src="../../img/new53.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 6-3</strong></div>
 
@@ -496,7 +496,7 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 *   `Max` limits the maximum speed of the INNFOS actuator and increases as the value increases. As shown in the three figures on the right, the current maximum speed is 1000 RPM.
 
-<img src="../img/new54.png" style="width:600px">
+<img src="../../img/new54.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 6-4</strong></div>
 
@@ -507,7 +507,7 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 *   After the INNFOS actuator rotating, the values of the current INNFOS actuator can be seen in the status value column(right in Figure 4).
 
-<img src="../img/new55.png" style="width:600px">
+<img src="../../img/new55.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 6-5</strong></div>
 
@@ -515,7 +515,7 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 3. Click `View Graph` to open the oscilloscope. The parameter introduction is the same with the above:
 
 
-<img src="../img/new60.png" style="width:600px">
+<img src="../../img/new60.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 6-6</strong></div>
 
@@ -527,14 +527,14 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 *    Enter the time (unit: ms) in “Interval”, the input parameter is of the rotating for one time (for example, Value1 is 2, Value2 is -2, and Interval is 1000. After startup, INNFOS Actuator first goes to position 2, 1000mS and then goes to position-2.Go to position 2 again after 1000ms, and then run it repeatedly until the user clicks "Stop").
 *    Click the "Start" button to turn on the INNFOS actuator.
 
-<img src="../img/new57.png" style="width:600px">
+<img src="../../img/new57.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 6-7</strong></div>
 
 
 5.Click the “Stop” to stop the square wave generator.
 
-<img src="../img/new59.png" style="width:600px">
+<img src="../../img/new59.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 6-9</strong></div>
 
@@ -544,7 +544,7 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 *   Enter the position of rotation (unit: R) in box X, or click the keyboard direction button to set. Clicking on the keyboard defaults to have an increase of 1.
 
-<img src="../img/new55.png" style="width:600px">
+<img src="../../img/new55.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 6-10</strong></div>
 
@@ -552,7 +552,7 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 *    After rotating, the parameters of the current INNFOS SCA can be seen in the status value bar .
 
 
-<img src="../img/new56.png" style="width:600px">
+<img src="../../img/new56.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 6-11</strong></div>
 
@@ -562,7 +562,7 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 ### Click on "Profile Velocity Mode" to enter the Profile Velocity Mode
 
-<img src="../img/new61.png" style="width:600px">
+<img src="../../img/new61.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 7-1</strong></div>
 
@@ -583,7 +583,7 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 (6) INNFOS actuator current connection status
 
 
-<img src="../img/new62.png" style="width:600px">
+<img src="../../img/new62.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 7-2</strong></div>
 
@@ -591,7 +591,7 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 1. Click on `Active Profile Velocity Mode` to activate the Velocity loop S-mode 
 
-<img src="../img/new63.png" style="width:600px">
+<img src="../../img/new63.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 7-3</strong></div>
 
@@ -602,7 +602,7 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 *    The `Accelerate`, `Decelerate` and `Max` items at 2 in the right figure are the rectified parameters of the S curve.
 
 
-<img src="../img/new64.png" style="width:600px">
+<img src="../../img/new64.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 7-4</strong></div>
 
@@ -612,7 +612,7 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 ### Click on "Homing Mode" to enter the homing mode
 
-<img src="../img/new78.png" style="width:600px">
+<img src="../../img/new78.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 8-1</strong></div>
 
@@ -622,26 +622,26 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 1.Click on the red box position "Active Homing Mode" on the right to enter the homing mode.
 
-<img src="../img/new71.png" style="width:600px">
+<img src="../../img/new71.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 8-2</strong></div>
 
 2. Click the `Clear` and `Homing` buttons one after the other, and to clear the current left and right limits using this operation twice. Until the data in the red box 1 on the right is changed to the large value (this is the upper and lower limits of the software limit). Then adjust the right picture 2 to the following large value (this is the current limit, such as the need for a larger current when the load is increased, and the current limit needs to be released).
 
-<img src="../img/new79.png" style="width:600px">
+<img src="../../img/new79.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 8-3</strong></div>
 
 3.Manually adjust the joint to the left mechanical limit and click on `Max_Set`, at which point the value at the `Max Pos` will change.
 
 
-<img src="../img/new74.png" style="width:600px">
+<img src="../../img/new74.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 8-4</strong></div>
 
 4.Manually adjust the joint to the right mechanical limit and click on `Min_Set`. The value of the `Min Pos` column will change.
 
-<img src="../img/new75.png" style="width:600px">
+<img src="../../img/new75.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>图8-5</strong></div>
 
@@ -649,19 +649,19 @@ Note: When in the  position mode, pay attention to the current limit range. If t
 
 5.When only set the zero point,manually adjust the joint to zero point, click `homing`, and then 1 will become 0.
 
-<img src="../img/new80.png" style="width:600px">
+<img src="../../img/new80.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 8-6</strong></div>
 
 6.Set the left and right limit offset
 
-<img src="../img/new76.png" style="width:600px">
+<img src="../../img/new76.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 8-7</strong></div>
 
 7.Click the "Download" button to save the current parameters. 
 
-<img src="../img/new77.png" style="width:600px">
+<img src="../../img/new77.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 8-8</strong></div>
 
@@ -691,19 +691,19 @@ Note: The set protection temperature needs to be 5 °C higher than the recovery 
 
 1. Notification will be sent if new version updates is avaliable
 
-<img src="../img/new82.png" style="width:600px">
+<img src="../../img/new82.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 9-1</strong></div>
 
 2. The updating content and button will be listed
 
-<img src="../img/new81.png" style="width:600px">
+<img src="../../img/new81.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 9-2</strong></div>
 
 3. Click update to finish the updating
 
-<img src="../img/new83.png" style="width:600px">
+<img src="../../img/new83.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 9-3</strong></div>
 
@@ -715,7 +715,7 @@ Note: The set protection temperature needs to be 5 °C higher than the recovery 
 
 As shown in the figure, an error message is displayed.
 
-<img src="../img/new91.png" style="width:600px">
+<img src="../../img/new91.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 10-1</strong></div>
 
@@ -725,7 +725,7 @@ Note: If you use the latest version of the host computer software, the alarm wil
 
 Click "OK" and "Clear Errors" to solve the problem. After clearing, the INNFOS actuator enters current loop mode.
 
-<img src="../img/new92.png" style="width:600px">
+<img src="../../img/new92.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"><strong>Fig 10-2</strong></div>
 
