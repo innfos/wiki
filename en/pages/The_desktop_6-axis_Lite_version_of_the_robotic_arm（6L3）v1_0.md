@@ -17,7 +17,7 @@ Desktop 6-axis robotic arm installation instructions
 
 
 ### 3D model
-[model file]( ../../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0.step.zip )
+[model file]( ../../3DModel/桌面级6轴机械臂（6L3）_v1_0.zip )
 
 
 ## Basic parameters
