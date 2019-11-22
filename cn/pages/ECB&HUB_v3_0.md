@@ -7,8 +7,6 @@ ECB的原理图和BOM，以及以太网通讯协议全部开源，用户可以�
 
 <img src="../../img/ECB&HUB_v2_3PCBA0.jpg" style="width:600px">
 
-<img src="../../img/ECB&HUB_v2_3PCBA1.png" style="width:600px">
-
 ![ECB&HUB_v2_3PCBA2.png](../../img/ECB&HUB_v2_3PCBA2.png) ![ECB&HUB_v2_3PCBA3.png](../../img/ECB&HUB_v2_3PCBA3.png)
 
 
