@@ -6,7 +6,7 @@ Ethernet communication
 
 **Hardware requirements**
 
-<img src="../../img/all.jpg" style="width:600px">
+<img src="../../img/all.png" style="width:600px">
 
 From front to back, from left to right: `ECB`, `HUB`, 2 `terminal resistors`, `regenerative brake capacitor`, `ECB cable`, `INNFOS SCA`, `SCA cable`, `emergency stop switch` + `power supply`.
 
