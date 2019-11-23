@@ -14,7 +14,7 @@ From front to back, from left to right: `ECB`, `HUB`, 2 `terminal resistors`, `r
 
 *   Connect the power supply to the `HUB`.
 
-<img src="../img/power.jpg" style="width:600px">
+<img src="../../img/power.jpg" style="width:600px">
 
 Note: The unit must be powered off and then plugged in. Otherwise the accessories may be damaged.
 
