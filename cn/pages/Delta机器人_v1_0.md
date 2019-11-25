@@ -10,17 +10,17 @@ Delta采用了并联结构,具有刚度大,承载能力强等优点,所有关节
 参考 SCA 型号:QDD Lite-PR60
 参考 SCA 型号:[QDD Lite-PR60](QDDLite-PR60-36_v1_8.md) *3
                                                                           
-<img src="../img/Delta机器人_v1_0.png" style="width:720px">                                                                          
+<img src="../../img/Delta机器人_v1_0.png" style="width:720px">                                                                          
 
 
 ## 工程参数图
 <br>[单位：毫米]
 
-<img src="../img/Delta机器人_v1_0.md三视图.png" style="width:720px">
+<img src="../../img/Delta机器人_v1_0.md三视图.png" style="width:720px">
 
 
 ### 3D模型
-[模型文件]( ../img/Delta机器人_v1_0.step.zip )
+[模型文件]( ../../img/Delta机器人_v1_0.step.zip )
 
 
 ## 基本参数
@@ -31,13 +31,13 @@ Delta采用了并联结构,具有刚度大,承载能力强等优点,所有关节
 
 ## 产品实拍效果图
 
-<img src="../img/Delta机器人13.png" style="width:600px">
+<img src="../../img/Delta机器人13.png" style="width:600px">
 
 ## 硬件需求与连接
 
 **硬件需求**
 
-<img src="../img/Delta机器人12.png" style="width:600px">
+<img src="../../img/Delta机器人12.png" style="width:600px">
 
 从前到后、从左到右依次为：六轴机械臂一台、插好终端电阻和回馈制动电容的ECB+HUB、急停开关+电源、电脑。
 
@@ -48,37 +48,37 @@ Delta采用了并联结构,具有刚度大,承载能力强等优点,所有关节
 
 *   连接电源与`ECB+HUB`
 
-<img src="../img/cdy.jpg" style="width:600px">
-<img src="../img/cwdy.jpg" style="width:600px">
+<img src="../../img/cdy.jpg" style="width:600px">
+<img src="../../img/cwdy.jpg" style="width:600px">
 
 **连接执行器及其配件**
 
 *   连接`执行器综合线缆`
-<img src="../img/cx.jpg" style="width:600px">
-<img src="../img/cwx.jpg" style="width:600px">
+<img src="../../img/cx.jpg" style="width:600px">
+<img src="../../img/cwx.jpg" style="width:600px">
 
 **连接机械臂**
 
 *   用执行器连接线连接`HUB`与执行器
 
-<img src="../img/5.png" style="width:600px">
+<img src="../../img/5.png" style="width:600px">
 
 **连接电脑**
 
 *   用网线连接`ECB`与电脑
 
-<img src="../img/7.png" style="width:600px">
+<img src="../../img/7.png" style="width:600px">
 
 **连接后整体视图**
 
-<img src="../img/Delta机器人12.png" style="width:600px">
+<img src="../../img/Delta机器人12.png" style="width:600px">
 
 
 **开启电源**
 
 *   开启电源. 执行器的供电电压范围为直流24V-45V.
 
-<img src="../img/poweron.png" style="width:600px">
+<img src="../../img/poweron.png" style="width:600px">
 
 *   上电以后，执行器LED状态灯会变成黄色闪烁，启动执行器后，LED会变成绿色闪烁，这时就可以与执行器进行通信了。如果执行器内部出现错误，LED灯会变为红色闪烁，请检查执行器错误代码。
 
@@ -133,23 +133,23 @@ $ ./DeltaTest mode1
 ```
 此时终端会显示：
 
-<img src="../img/Delta机器人_v1_0_1.png" style="width:600px">
+<img src="../../img/Delta机器人_v1_0_1.png" style="width:600px">
 
 (2)在终端中执行recorddata(每记录一个点执行一次该命令)
 <br>此时终端会显示：
 
-<img src="../img/Delta机器人_v1_0_2.png" style="width:600px">
+<img src="../../img/Delta机器人_v1_0_2.png" style="width:600px">
 
 (3)在终端中执行writedata(记录完所有的点后保存记录的点,只需执行一次)
 <br>此时终端会显示：
 
-<img src="../img/Delta机器人_v1_0_3.png" style="width:600px">
+<img src="../../img/Delta机器人_v1_0_3.png" style="width:600px">
 
 
 (4)在终端中执行exit(退出mode1)
 <br>此时终端会显示：
 
-<img src="../img/Delta机器人_v1_0_4.png" style="width:600px">
+<img src="../../img/Delta机器人_v1_0_4.png" style="width:600px">
 
 Note: 打开文件夹下记录数据的文本Data_linearCurve_Joint,文本中记录的为所有示教的点,这时候需要把第一行的数据复制到结尾,这样可以形成循环播放.
 
@@ -161,22 +161,22 @@ $ ./DeltaTest mode2
 ```
 此时终端会显示：
 
-<img src="../img/Delta机器人_v1_0_5.png" style="width:600px">
+<img src="../../img/Delta机器人_v1_0_5.png" style="width:600px">
 
 (2)在终端中执行calculate(末端计算插值点)
 此时终端会显示:
 
-<img src="../img/Delta机器人_v1_0_6.png" style="width:600px">
+<img src="../../img/Delta机器人_v1_0_6.png" style="width:600px">
 
 (3)在终端中执行play(播放示教的轨迹)
 此时终端会显示:
 
-<img src="../img/Delta机器人_v1_0_7.png" style="width:600px">
+<img src="../../img/Delta机器人_v1_0_7.png" style="width:600px">
 
 (4)在终端中执行ctrl+c(结束退出)
 此时终端会显示:
 
-<img src="../img/Delta机器人_v1_0_8.png" style="width:600px">
+<img src="../../img/Delta机器人_v1_0_8.png" style="width:600px">
 
 Note:如果想执行之前示教好的点,不需要执行mode1,直接执行mode2即可.
 
