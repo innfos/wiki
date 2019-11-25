@@ -30,8 +30,7 @@
 
 产品系列
 -----------------
-![sca](../../img/sca-type_190722.png "sca")
-
+![sca](../../img/sca-type_190722.png)
 
 ### QDD Pro
   * [QDD Pro-NE30-50-70](pages/QDDPro-NE30-50-70_v2_2.md)
