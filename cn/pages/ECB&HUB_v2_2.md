@@ -5,9 +5,9 @@ ECB(Ethernet to CAN Bridge)是一款以太网转CAN控制器，该控制器起�
 
 ECB的原理图和BOM，以及以太网通讯协议全部开源，用户可以根据自己的需求，在ECB上直接进行开发，大大提高了新产品的研发效率，从而加快新产品的上市时间。
   
-<img src="../img/ECB&HUB_v2_2PCBA1.png" style="width:600px">
+<img src="../../img/ECB&HUB_v2_2PCBA1.png" style="width:600px">
 
-![ECB&HUB_v2_2PCBA2.png](../img/ECB&HUB_v2_2PCBA2.png) ![ECB&HUB_v2_2PCBA3.png](../img/ECB&HUB_v2_2PCBA3.png)
+![ECB&HUB_v2_2PCBA2.png](../../img/ECB&HUB_v2_2PCBA2.png) ![ECB&HUB_v2_2PCBA3.png](../../img/ECB&HUB_v2_2PCBA3.png)
 
 
 
@@ -57,22 +57,22 @@ USB接口：MicroUSB接口，韩荣U-F-M5DD-Y-L
 ## 外形尺寸
 
 
-![ECB_v2_2PCB.png](../img/ECB_v2_2PCB.png) ![ECB_HUB_v2_2PCB.png](../img/ECB_HUB_v2_2PCB.png)
+![ECB_v2_2PCB.png](../../img/ECB_v2_2PCB.png) ![ECB_HUB_v2_2PCB.png](../../img/ECB_HUB_v2_2PCB.png)
 
  Note: 单位为mm
  
 ## ECB 和 ECB_HUB的连接方式
 方式一：
 
-<img src="../img/ECB&HUB_v2_2PCBA4.png" style="width:600px">
+<img src="../../img/ECB&HUB_v2_2PCBA4.png" style="width:600px">
 
 方式二：
 
-<img src="../img/ECB&HUB_v2_2PCBA5.png" style="width:600px">
+<img src="../../img/ECB&HUB_v2_2PCBA5.png" style="width:600px">
 
 
 ## 连接多个ECB
-<img src="../img/ECB&HUB_v2_2PCBA6.png" style="width:600px">
+<img src="../../img/ECB&HUB_v2_2PCBA6.png" style="width:600px">
 
 
 Note: 多个ECB连接同一电脑,ECB的IP和MAC地址不能有重复，修改ECB的IP和MAC地址请访问[ 修改IP和MAC地址](#!pages/ECB&HUB_v2_2.md#修改IP和MAC地址 "wikilink")
@@ -104,8 +104,8 @@ chmod 777 ipChange
 * 用户程序跳转到bootloader程序：当系统运行在用户程序时，通过以太网IAP软件，可以将系统跳转回bootloader程序中，如果跳转成功，除非系统复位或者成功升级固件，否则系统会一直运行在bootloader程序中。
 * 固件升级：当系统处于bootloader程序中，可以使用以太网IAP软件，对ECB进行固件升级。
 ## 资源
-* [ECB_SCH]( ../img/ECB_v2_2.pdf )   [ECB_HUB_SCH]( ../img/ECB_HUB_v2_2.pdf )   [ECB_Core]( ../img/ECB_Core_v2_0.pdf )
-* [STM32F429 数据表]( ../img/STM32F429VIT6.PDF )
+* [ECB_SCH]( ../../img/ECB_v2_2.pdf )   [ECB_HUB_SCH]( ../../img/ECB_HUB_v2_2.pdf )   [ECB_Core]( ../../img/ECB_Core_v2_0.pdf )
+* [STM32F429 数据表]( ../../img/STM32F429VIT6.PDF )
 
 
 
