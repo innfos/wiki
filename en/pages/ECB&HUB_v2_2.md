@@ -5,9 +5,9 @@ ECB is an Ethernet to CAN controller that acts as a bridge between Ethernet and 
 
 ECB's schematic, BOM and Ethernet communication protocols are all open source and can be directly developed on the ECB according to users’ needs, greatly saving new products R&D time, thereby accelerating the time to go to the market.
 
-<img src="../img/ECB&HUB_v2_2PCBA1.png" style="width:600px">
+<img src="../../img/ECB&HUB_v2_2PCBA1.png" style="width:600px">
 
-![ECB&HUB_v2_2PCBA2.png](../img/ECB&HUB_v2_2PCBA2.png) ![ECB&HUB_v2_2PCBA3.png](../img/ECB&HUB_v2_2PCBA3.png)
+![ECB&HUB_v2_2PCBA2.png](../../img/ECB&HUB_v2_2PCBA2.png) ![ECB&HUB_v2_2PCBA3.png](../../img/ECB&HUB_v2_2PCBA3.png)
 
 
 
@@ -54,23 +54,23 @@ Network port LIANDA_L60055-14: connect the host computer
 
 ## Dimensions
 
-![ECB_v2_2PCB.png](../img/ECB_v2_2PCB.png) ![ECB_HUB_v2_2PCB.png](../img/ECB_HUB_v2_2PCB.png)
+![ECB_v2_2PCB.png](../../img/ECB_v2_2PCB.png) ![ECB_HUB_v2_2PCB.png](../../img/ECB_HUB_v2_2PCB.png)
 
 
 ## How to connect ECB and ECB_HUB
 
 Method 1:
 
-<img src="../img/ECB&HUB_v2_2PCBA4.png" style="width:600px">
+<img src="../../img/ECB&HUB_v2_2PCBA4.png" style="width:600px">
 
 Method 2:
 
-<img src="../img/ECB&HUB_v2_2PCBA5.png" style="width:600px">
+<img src="../../img/ECB&HUB_v2_2PCBA5.png" style="width:600px">
 
 
 ## Connect multiple ECBs
 
-<img src="../img/ECB&HUB_v2_2PCBA6.png" style="width:600px">
+<img src="../../img/ECB&HUB_v2_2PCBA6.png" style="width:600px">
 
 
 Note: When multiple ECBs are connected to the same computer, the IP and MAC addresses of the ECB cannot be duplicated. Modify the IP and MAC addresses of the ECB,please [modify the IP and MAC addresses](#!pages/ECB&HUB_v2_2.md#Modify_IP_and_MAC_address "wikilink").
@@ -98,8 +98,8 @@ chmod 777 ipChange
 *   Please note that only the last number of IP or MAC addresses can be modified, for example, the IP address of the ECB is 192.168.1.30, and only 30 can be modified to other number.
 
 ## Resource
-* [ECB_SCH]( ../img/ECB_v2_2.pdf ) [ECB_HUB_SCH]( ../img/ECB_HUB_v2_2.pdf ) [ECB_Core]( ../img/ECB_Core_v2_0.pdf )
-* [STM32F429 data sheet]( ../img/STM32F429VIT6.PDF )
+* [ECB_SCH]( ../../img/ECB_v2_2.pdf ) [ECB_HUB_SCH]( ../../img/ECB_HUB_v2_2.pdf ) [ECB_Core]( ../../img/ECB_Core_v2_0.pdf )
+* [STM32F429 data sheet]( ../../img/STM32F429VIT6.PDF )
 
 
 
