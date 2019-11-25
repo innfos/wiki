@@ -12,13 +12,13 @@ IO Module（ABI转CAN 转接器）的主要功能是实现电机控制信号从A
 <br>方向步模式：A-步进脉冲，B-旋转方向，I(Z)-零点信号。
 <br>此种信号格式需要三根数据线，其中，AB两相表示脉冲和方向，脉冲记录了旋转轴转过了多少个编码器单位的距离，方向用高低电平表示旋转轴是正转还是反转。I(Z)表示零点信号，当旋转轴转至0点时，此相信号会产生一个脉冲通知控制器当前位置已达零点。在ABI信号作为输入控制信号时，由于只需要传入方向信号和位置信号，所以一般没有I(Z)相。
 
-<img src="../img/ABI2CAN_Converter使用说明1.png" style="width:720px"> 
+<img src="../../img/ABI2CAN_Converter使用说明1.png" style="width:720px"> 
 
 ### 正交模式
 <br>正交模式：AB两相相差90°，I(Z)-零点信号。
 <br>在此种信号格式中，控制依然通过脉冲计数的方式获取位置数据，但方向数据的获取从AB两相的相位差中获取，顺时针转动时A相超前B相90°，反之为逆时针转动。I(Z)相功能与上述相同。
 
-<img src="../img/ABI2CAN_Converter使用说明2.png" style="width:720px"> 
+<img src="../../img/ABI2CAN_Converter使用说明2.png" style="width:720px"> 
 
 <br>ABI2CAN_Converter将ABI信号作为输入信号，采用的是第一种信号格式，支持方向信号和脉冲信号的输入，其脉冲信号满足以下比例：
 <br>脉冲数 ：实际转动圈数 = 5000 ：1
@@ -43,17 +43,17 @@ Note: 产品供电严禁超过最大输入电压；产品应该放置在干燥�
 **连接电源**
 * 连接电源与ABI2CAN_Converter+HUB
   
-<img src="../img/ABI2CAN_Converter使用说明3.png" style="width:720px">
+<img src="../../img/ABI2CAN_Converter使用说明3.png" style="width:720px">
 
 **连接执行器及其配件**
 *   连接`执行器综合线缆`
-<img src="../img/ABI2CAN_Converter使用说明4.png" style="width:600px">
-<img src="../img/ABI2CAN_Converter使用说明5.png" style="width:600px">
+<img src="../../img/ABI2CAN_Converter使用说明4.png" style="width:600px">
+<img src="../../img/ABI2CAN_Converter使用说明5.png" style="width:600px">
 
 **连接电脑**
 *  用网线连接ABI2CAN_Converter与电脑
 
-<img src="../img/ABI2CAN_Converter使用说明6.png" style="width:600px">
+<img src="../../img/ABI2CAN_Converter使用说明6.png" style="width:600px">
 
 **连接ABI信号线**
 
@@ -65,7 +65,7 @@ Note: 信号输入接口采用光耦隔离，输入电压范围为3-10V
 *   开启电源. 执行器的供电电压范围为直流24V-45V.
 *   上电以后，执行器LED状态灯会变成黄色闪烁，启动执行器后，LED会变成绿色闪烁，这时就可以与执行器进行通信了。如果执行器内部出现错误，LED灯会变为红色闪烁，请检查执行器错误代码。
 
-<img src="../img/ABI2CAN_Converter使用说明7.png" style="width:600px">
+<img src="../../img/ABI2CAN_Converter使用说明7.png" style="width:600px">
 
 Note: 信号输入接口采用光耦隔离，输入电压范围为3-10V
 
@@ -88,7 +88,7 @@ Note: 信号输入接口采用光耦隔离，输入电压范围为3-10V
 **配置执行器参数**
 根据产品的机械限位调整执行器的内部限位数据与零点位置
 
-<img src="../img/ABI2CAN_Converter使用说明8.png" style="width:600px">
+<img src="../../img/ABI2CAN_Converter使用说明8.png" style="width:600px">
 
 利用梯形位置模式，将执行器调整至零点位置
 
@@ -96,7 +96,7 @@ Note: 控制器使用的运动程序零点应与执行器的零点相对应
 
 <br>将所有执行器切换至位置模式
 
-<img src="../img/ABI2CAN_Converter使用说明9.png" style="width:600px">
+<img src="../../img/ABI2CAN_Converter使用说明9.png" style="width:600px">
 
 **使能ABI控制**
 <br>保持执行器现有的状态，将IAS关闭（建议）
@@ -104,24 +104,24 @@ Note: 控制器使用的运动程序零点应与执行器的零点相对应
 
 Note: 若终端提示telnet不是内部或外部命令，则该命令未启用，请先启用该功能。
 
-<img src="../img/ABI2CAN_Converter使用说明10.png" style="width:600px">
+<img src="../../img/ABI2CAN_Converter使用说明10.png" style="width:600px">
 
 
 
 敲击回车后进入终端模式
 
-<img src="../img/ABI2CAN_Converter使用说明11.png" style="width:600px">
+<img src="../../img/ABI2CAN_Converter使用说明11.png" style="width:600px">
 
 
 
 输入字符 ‘?’，回车获取相关命令
 
-<img src="../img/ABI2CAN_Converter使用说明12.png" style="width:600px">
+<img src="../../img/ABI2CAN_Converter使用说明12.png" style="width:600px">
 
 
 输入abidev enable，并回车
 
-<img src="../img/ABI2CAN_Converter使用说明13.png" style="width:600px">
+<img src="../../img/ABI2CAN_Converter使用说明13.png" style="width:600px">
 
 提示 ABI Control Enable ，至此设备使能完毕，其他命令请参考帮助信息。
 
