@@ -221,7 +221,7 @@ $ rosrun actuatorcontroller_ros innfos_actuator
 $ roslaunch actuatorcontroller_ros innfos_no_param.launch
 ```
 此 launch 文件 在ROS的参数空间中加入了 `innfos_no_param` 参数.
-此参数会阻止节点把执行器的参数放在参数空间中，若不想在空间中出现太多参数，或者不想让别人更改执行器的参数，您可以使用此选项
+此参数会阻止节点把执行器的参数放在参数空间中，若不想在空间中出现太多参数，或者不想让别人更改执行器的参数，再或者想实现高频控制，您可以使用此选项
 ```
 $ roslaunch actuatorcontroller_ros innfos_fixed_100hz.launch
 ```
