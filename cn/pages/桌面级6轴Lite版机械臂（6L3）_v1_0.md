@@ -97,19 +97,20 @@
 
 ### 下载安装
 
-运行环境：linux-x86-64
+目前支持linux-x86-64版本和linux-树莓派版本
 
+x86-64版本：
+推荐使用64位ubuntu16.04、ubuntu18.04等系统
 访问该链接[download link](https://github.com/innfos/robot-controller-GL-6L3.git)下载机械臂软件或者直接执行以下命令
 ```sh
 $ git clone https://github.com/innfos/robot-controller-GL-6L3.git
 ```
-
-访问该链接[download link](https://github.com/innfos/innfos-cpp-sdk.git)下载SDK相关文件或者直接执行以下命令
+树莓派版本：
+适用于Raspberry Pi 3 Model B 和 Raspberry Pi 3 Model B+
+访问该链接[download link](https://github.com/innfos/robot-controller-GL-6L3-raspi.git)下载机械臂软件或者直接执行以下命令
 ```sh
-$ git clone https://github.com/innfos/innfos-cpp-sdk.git
+$ git clone https://github.com/innfos/robot-controller-GL-6L3-raspi.git
 ```
-
-Note: 此两文件夹需放在同一目录下
 
 ### 使用前检查
 
