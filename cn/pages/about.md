@@ -11,12 +11,6 @@ INNFOS自主研发的SCA智能柔性执行器系列，核心技术已经达到�
 <img src="../../img/About 1.png" >
 
 
-<img src="../../img/About 02.png">
-
-
-<img src="../../img/About 03.png">
-
-
 ### 联系方式
 
 <table><thead><tr style="background:PaleTurquoise">
