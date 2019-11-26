@@ -61,9 +61,30 @@
 
 *  此DEMO中使用了两台执行器，ID `0x01`连接`CAN1`端口，ID `0x02`连接`CAN2`端口。在`SCA_APP.c`文件中有多处语句使用了该ID，请根据实际使用的执行器求修改所有对应的ID数值。若只使用一台执行器，请注释掉多余的代码，并将`SCA_API.c`文件下的宏定义`SCA_NUM_USE`修改为1。
 
-<img src="../../img/cansdk5.png" style="width:600px">
-<br>
-<div class="md-text" style="text-align: center;"></div>
+```sh
+void SCA_Init()
+{
+	/* Initialize CAN port */
+	CAN_Port1.CanPort = 1;			//Mark the port number
+	CAN_Port1.Retry = 2;			//Number of retries
+	CAN_Port1.Send = CAN1_Send_Msg;	//CAN1 send function
+	
+	CAN_Port2.CanPort = 2;			
+	CAN_Port2.Retry = 2;			
+	CAN_Port2.Send = CAN2_Send_Msg;	//CAN2 send function
+	
+	/* Set up SCA with ID and CAN port */
+	setupActuators( 1, &CAN_Port1);	//ID1 bind CAN1 port
+	setupActuators( 2, &CAN_Port2);	//ID2 bind CAN2 port
+	
+	/* Get the parameter pointer */
+	pSCA_ID1 = getInstance(1);
+	pSCA_ID2 = getInstance(2);
+	
+	/* Enable all SCA */
+	enableAllActuators();
+}
+```
 
 *  确保单片机通过`ST-LINK`或`J-LINK`等调试工具连接至PC，并能够正常工作。点击全部编译按钮，无错通过后点击下载按钮下载至单片机。
 <img src="../../img/cansdk6.png" style="width:300px">
@@ -71,7 +92,7 @@
 
 <div class="md-text" style="text-align: center;"></div>
 
-*  下载完成后，将单片机的`串口1（PA9 PA10）`通过USB转串口工具连接至PC。打开虚拟串口终端软件，将波特率设为`115200`，接收数据以ASC码形式显示，以16进制形式发送数据。发送数字7打印帮助信息。
+*  下载完成后，将单片机的`串口1（PA9 PA10）`通过USB转串口工具连接至PC。打开虚拟串口终端软件，将波特率设为`115200`，1停止位，8数据位，0校验位，接收数据以ASC码形式显示，以16进制形式发送数据。发送数字7打印帮助信息。
 
 <img src="../../img/cansdk7.png" style="width:600px">
 <br>
@@ -100,9 +121,28 @@
 
 *  在开发项目时，需先配置系统参数，相关宏定义在`SCA_API.h`下。由于本例程支持阻塞式的通信方式，需要根据CPU速度调整阻塞超时时间，其中开关机时间较长，其他参数返回时间较短。在非阻塞执行程序时，为了防止总线过载，加入了保护延时，`SCA_Delay`为延时函数的接口，`SendInterval`为延时大小，默认每次非阻塞发送后延时`200us`。
 
-<img src="../../img/cansdk8.png" style="width:600px">
+```sh
+/* Configuration */
+#define SCA_NUM_USE		2			//The number of SCA used in this project
+#define SCA_DEBUGER		1			//Enable the debug function
+#define CanOvertime		0xFFFF		//Timeout of data (180Mhz)
+#define CanPowertime	0xFFFFFF	//Timeout of power switch (180Mhz)
+#define SendInterval	200			//Interval in unblock mode
+#define SCA_Delay(x)	delay_us(x)	//Delay function
 
-<div class="md-text" style="text-align: center;"></div>
+#ifndef SCA_NUM_USE
+	#define SCA_NUM_USE	1	//Use 1 SCA in default
+#endif
+
+/* Debug port */
+#if (SCA_DEBUGER == 1)
+#define SCA_Debug(s,...)	/
+printf("FILE: "__FILE__", LINE: %d: "s"", __LINE__, ##__VA_ARGS__)
+
+#else
+#define SCA_Debug(s,...)
+#endif
+```
 
 *  当`SCA_DEBUGER`宏定义为1时，会开启调试信息接口，默认调用`printf`打印错误数据，可用于调试软件。
 
@@ -136,5 +176,5 @@
 
 ## 版本变更记录
 
-<table class="tableizer-table"><thead><tr class="tableizer-firstrow" style=background:PaleTurquoise><th>版本</th><th>更新时间</th><th>更新内容</th></tr></thead><tbody><tr><td>V1.2.0</td><td>2019.11.15</td><td>SDK更新至1.5.3版本，增加描述内容</td></tr><tr><td>V1.1.0</td><td>2019.08.21</td><td>SDK更新至1.5.0版本，增加描述内容</td></tr><tr><td>V1.0.0</td><td>2019.08.12</td><td>第一个版本</td></tr></tbody></table>
+<table class="tableizer-table"><thead><tr class="tableizer-firstrow" style=background:PaleTurquoise><th>版本</th><th>更新时间</th><th>更新内容</th></tr></thead><tbody><tr><td>V1.2.1</td><td>2019.11.26</td><td>修改图片，插入代码段</td></tr><tr><td>V1.2.0</td><td>2019.11.15</td><td>SDK更新至1.5.3版本，增加描述内容</td></tr><tr><td>V1.1.0</td><td>2019.08.21</td><td>SDK更新至1.5.0版本，增加描述内容</td></tr><tr><td>V1.0.0</td><td>2019.08.12</td><td>第一个版本</td></tr></tbody></table>
 
