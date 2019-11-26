@@ -67,15 +67,15 @@ void SCA_Init()
 	/* Initialize CAN port */
 	CAN_Port1.CanPort = 1;			//Mark the port number
 	CAN_Port1.Retry = 2;			//Number of retries
-	CAN_Port1.Send = CAN1_Send_Msg;	//CAN1 send function
+	CAN_Port1.Send = CAN1_Send_Msg;		//CAN1 send function
 	
 	CAN_Port2.CanPort = 2;			
 	CAN_Port2.Retry = 2;			
-	CAN_Port2.Send = CAN2_Send_Msg;	//CAN2 send function
+	CAN_Port2.Send = CAN2_Send_Msg;		//CAN2 send function
 	
 	/* Set up SCA with ID and CAN port */
-	setupActuators( 1, &CAN_Port1);	//ID1 bind CAN1 port
-	setupActuators( 2, &CAN_Port2);	//ID2 bind CAN2 port
+	setupActuators( 1, &CAN_Port1);		//ID1 bind CAN1 port
+	setupActuators( 2, &CAN_Port2);		//ID2 bind CAN2 port
 	
 	/* Get the parameter pointer */
 	pSCA_ID1 = getInstance(1);
@@ -123,22 +123,20 @@ void SCA_Init()
 
 ```sh
 /* Configuration */
-#define SCA_NUM_USE		2			//The number of SCA used in this project
-#define SCA_DEBUGER		1			//Enable the debug function
+#define SCA_NUM_USE		2		//The number of SCA used in this project
+#define SCA_DEBUGER		1		//Enable the debug function
 #define CanOvertime		0xFFFF		//Timeout of data (180Mhz)
-#define CanPowertime	0xFFFFFF	//Timeout of power switch (180Mhz)
-#define SendInterval	200			//Interval in unblock mode
-#define SCA_Delay(x)	delay_us(x)	//Delay function
+#define CanPowertime		0xFFFFFF	//Timeout of power switch (180Mhz)
+#define SendInterval		200		//Interval in unblock mode
+#define SCA_Delay(x)		delay_us(x)	//Delay function
 
 #ifndef SCA_NUM_USE
-	#define SCA_NUM_USE	1	//Use 1 SCA in default
+	#define SCA_NUM_USE	1		//Use 1 SCA in default
 #endif
 
 /* Debug port */
 #if (SCA_DEBUGER == 1)
-#define SCA_Debug(s,...)	/
-printf("FILE: "__FILE__", LINE: %d: "s"", __LINE__, ##__VA_ARGS__)
-
+#define SCA_Debug(s,...)	printf("FILE: "__FILE__", LINE: %d: "s"", __LINE__, ##__VA_ARGS__)
 #else
 #define SCA_Debug(s,...)
 #endif
