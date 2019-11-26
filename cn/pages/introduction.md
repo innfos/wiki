@@ -12,6 +12,10 @@ INNFOS SCA（Smart Compliant Actuator）是一种智能，高度集成和先进�
 
 <img src="../../img/shouyesca2_画板 1.png" style="width:720px">
 
+### QDD基本介绍
+QDD是英文全称是Quasi-Direct Drive，即半直驱驱动器，也称之为本体驱动器（Proprioceptive Actuator）。它是应用于机器人关节的柔性执行器，具有高反驱性、高扭矩密度、高力矩控制带宽的功能。
+
+
 ## 应用领域
 
 INNFOS SCA包括使用谐波减速器的QDD Pro，使用行星减速器的QDD和不带减速器的DD。SCA可应用于多个场景，最小型号的SCA可应用于云台、无人机等，最大型号的SCA可应用于机器人、机械臂等。市场上常见的比如电动工具、CNC、3D打印机、AGV等，SCA都可以应用于此。
