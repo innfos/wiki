@@ -85,11 +85,6 @@
 
 ## 软件安装与使用
 
-
-**IAS软件的使用**
-
-* `IAS`(INNFOS Actuator Studio)的为配置机械臂的上位机软件 , 请访问[INNFOS Actuator Studio(IAS)说明](#!pages/INNFOS_Actuator_Studio_IAS_instruction.md).
-
 **运动功能使用**
 
 * 示教-再现功能
