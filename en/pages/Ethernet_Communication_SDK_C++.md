@@ -20,7 +20,7 @@ $ git clone https://github.com/innfos/innfos-cpp-sdk.git
     
 ## API related documentation
 
-*   notes and related documentation please go to [document link](http://innfos.com/doc/index.html)
+*   notes and related documentation please go to [document link](https://innfos.com/doc/index.html)
 
 ## SCA connection
 
