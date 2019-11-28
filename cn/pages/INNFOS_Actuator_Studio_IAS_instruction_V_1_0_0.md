@@ -476,7 +476,7 @@ INNFOS执行器系统的逻辑框图：
 
 7.勾选Limit，选中后，在速度模式和电流模式下都会受到位置极限的限制。
 
-<img src="../img/0limit.png" style="width:600px">
+<img src="../../img/0limit.png" style="width:600px">
 
 8.点击&quot;Download&quot;按钮即可保存当前参数 
 
