@@ -230,7 +230,7 @@ $ ./robotserver mode4
 <br>该值为再现速度比例，取值范围为0.1-1，即10%-100%，输入正确的值后按Enter键进行下一步。建议第一次运行采用低的再现速度比例，确认路径无误后，可采用较高的再现速度比例。
 <br>确定再现速度比例后终端会显示：
 
-<img src="../../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0_41.png" style="width:600px">
+<img src="../../img/1a.png" style="width:600px">
 
 <br>该选项为选择再现运行模式，可选择输入“STEP”、“CYCLE”、“CONTINUOUS”，输入其它值则退出程序。
 
