@@ -167,7 +167,7 @@ $ ./robotserver mode1
 
 此时终端会显示：
 
-<img src="../../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0_10.png" style="width:600px">
+<img src="../../img/MODE1.png" style="width:600px">
 
 <br>输入“start”开始记录。
 <br>CTRL + C可停止记录，此时轨迹文件存储在file/trajectory.txt里。
@@ -182,7 +182,7 @@ $ ./robotserver mode2
 ```
 此时终端会显示：
 
-<img src="../../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0_20.png" style="width:600px">
+<img src="../../img/MODE2.png" style="width:600px">
 
 <br>该值为再现速度比例，取值范围为0.1-1，即10%-100%，输入正确的值后按Enter键进行下一步。建议第一次运行采用低的再现速度比例，确认路径无误后，可采用较高的再现速度比例。
 
@@ -198,7 +198,7 @@ $ ./robotserver mode3
 ```
 此时终端会提示：
 
-<img src="../../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0_30.png" style="width:600px">
+<img src="../../img/MODE3.png" style="width:600px">
 
 <br>该选项功能为选择插补类型或停止记录，可选择输入字符“MOVJ”、“MOVL”、“MOVC”、“STOP”，改选项大小写不敏感（即可全用小写输入）。
 
@@ -212,7 +212,7 @@ MOVC:
 圆弧插补，末端运动轨迹为圆弧，圆弧插补需要记录两个点，一个为辅助点，输入“MOVC”
 <br>后记录下辅助点，终端如下提示，此时输入“YES”记录圆弧终点，输入其他则退出程序。
 
-<img src="../../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0_31.png" style="width:600px">
+<img src="../../img/MOVC.png" style="width:600px">
 
 STOP:
 停止记录，退出程序
@@ -225,7 +225,7 @@ $ ./robotserver mode4
 ```
 此时终端会显示：
 
-<img src="../../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0_40.png" style="width:600px">
+<img src="../../img/MODE4.png" style="width:600px">
 
 <br>该值为再现速度比例，取值范围为0.1-1，即10%-100%，输入正确的值后按Enter键进行下一步。建议第一次运行采用低的再现速度比例，确认路径无误后，可采用较高的再现速度比例。
 <br>确定再现速度比例后终端会显示：
@@ -237,17 +237,17 @@ $ ./robotserver mode4
 STEP:
 单步运行模式，该模式下可输入“FORWARD”运行到下一个点，或者输入“BACKWARD”运行到上一个点，输入其它值则退出程序。
 
-<img src="../../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0_42.png" style="width:600px">
+<img src="../../img/STEP.png" style="width:600px">
 
 CYCLE:
 单循环运行模式，即只运行程序一遍，此模式下终端会出现以下界面，输入“YES”以平滑的方式再现路径（注意路径会变形），输入其他则按正常运动方式运行（即点到点运动速度降低为零）。
 
-<img src="../../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0_43.png" style="width:600px">
+<img src="../../img/CYCLE.png" style="width:600px">
 
 CONTINUOUS:
 连续循环运行模式，连续再现“mode3”示教的路径，此模式下终端会出现以下界面，输入“YES”以平滑的方式再现路径（注意路径会变形），输入其他则按正常运动方式运行（即点到点运动速度降低为零）
 
-<img src="../../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0_44.png" style="width:600px">
+<img src="../../img/CONTINUOUS.png" style="width:600px">
 
 <br>以上模式均可按下CTRL + C终止程序运行
 
