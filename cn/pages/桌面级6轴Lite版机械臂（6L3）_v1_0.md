@@ -167,7 +167,6 @@ $ ./tutorials
 
 Note: 请注意一定要先扶住机械臂再按enter
 
-
 <br>根据运行模式在终端输入： 
 ```sh
 $ ./robotserver xx
