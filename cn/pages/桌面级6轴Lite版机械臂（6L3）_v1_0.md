@@ -121,7 +121,7 @@ Attention: 零位若丢失，会导致机械臂运动异常
 
 
 ### 运行模式
-机械臂提供以下运行 mode0,mode1,mode2,mode3,mode4
+机械臂提供以下运行 tutorials，mode0,mode1,mode2,mode3,mode4
 
 进入到主目录
 ```sh
@@ -133,7 +133,37 @@ $ . environment
 ```
 Note: 每次打开终端都需执行此命令，如不执行,终端会提示找不到动态库“libActuatorController.so”
 
-<br>可执行文件为robotserver
+<br>可执行文件为tutorials 和robotserver
+
+<br>根据运行模式在终端输入： 
+
+```sh
+$ ./tutorials
+```
+若执行时提示没有“tutorials”文件，表明该文件没有权限，执行以下命令更改权限：
+```sh
+$ chmod +x tutorials
+```
+<br>tutorials模式可以按照引导使机械臂按照预先设定动作运动
+
+<br>执行命令
+```sh
+$ ./tutorials
+```
+<br>机械臂会运动到到原点位置
+
+<br>此时终端会显示：
+
+<img src="../../img/tutro.png" style="width:600px">
+
+<br>1、2、3、4为4套预设动作，输入其中任意数字即可让机械臂运动，播放完动作自动停止
+
+<br>输入stop会退出引导程序，此时终端会显示：
+<img src="../../img/STOP.png" style="width:600px">
+
+<br>扶住机械臂，按enter键后执行器失能，引导程序结束
+
+
 <br>根据运行模式在终端输入： 
 ```sh
 $ ./robotserver xx
