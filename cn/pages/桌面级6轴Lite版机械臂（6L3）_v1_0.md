@@ -163,7 +163,8 @@ $ ./tutorials
 <img src="../../img/STOP.png" style="width:600px">
 
 <br>扶住机械臂，按enter键后执行器失能，引导程序结束
-<br>Note:请注意一定要先扶住机械臂再按enter
+
+Note: 请注意一定要先扶住机械臂再按enter
 
 <br>根据运行模式在终端输入： 
 ```sh
