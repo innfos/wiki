@@ -13,7 +13,6 @@
 ## QDD Pro-NE30-50-70参数
 
  Note:谐波为柔轮固定方式，因此实际减速比为谐波标称减速比加1.
-
 <table style="width:650px"><thead><tr><th colspan="4" style="background: PaleTurquoise; color: black;">QDD Pro-NE30-50-70参数表</th></tr></thead><tbody><tr><td colspan="2"><b>额定电压工作参数</b></td><td colspan="2"><b>基本参数</b></td></tr><tr><td style="width:175px">功率</td><td style="width:135px">200 W</td><td style="width:130px">分辨率</td><td style="width:220px">835584(19bit) Step/turn</td></tr><tr><td>额定电压</td><td>42 VDC</td><td>编码器</td><td>多圈绝对值式编码器</td></tr><tr><td>空载转速</td><td>117.6 RPM</td><td>通信接口</td><td>隔离式CAN</td></tr><tr><td>额定转速</td><td>68.6 RPM</td><td>旋转角度</td><td>> 360.0 °</td></tr>
  <tr><td>额定扭矩</td><td>6.6 Nm</td><td>环境温度范围</td><td>5~55 °C</td></tr>
  <td>峰值扭矩</td><td>33 Nm</td><td colspan="2"><b>机械参数</b></td>
