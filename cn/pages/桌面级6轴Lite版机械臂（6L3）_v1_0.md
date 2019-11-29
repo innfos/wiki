@@ -162,7 +162,7 @@ $ ./tutorials
 
 <img src="../../img/STOP.png" style="width:600px">
 
-扶住机械臂，按enter键后执行器失能，引导程序结束
+扶住机械臂，按enter键后执行器失能，引导程序结束<br>
 
 
 Note: 请注意一定要先扶住机械臂再按enter
