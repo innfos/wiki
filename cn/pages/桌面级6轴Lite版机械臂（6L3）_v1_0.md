@@ -130,8 +130,6 @@ ls命令可查看文件组成，其中"robotserver"为可执行二进制文件�
 <br>tutorials模式可以按照引导使机械臂按照预先设定动作运动
 <br>执行该模式后，此时终端会显示：
 
-此时终端会显示：
-
 <img src="../../img/tutro.png" style="width:600px">
 
 <br>1、2、3、4为4套预设动作，输入其中任意数字即可让机械臂运动，播放完该动作自动后，可重新选择动作模式
@@ -240,13 +238,16 @@ CONTINUOUS:
 <img src="../../img/00A.png">
         
 Attention: 零位若丢失，会导致机械臂运动异常
-#### 录制-播放功能实现
+#### 功能实现
+
+##### 录制-播放功能实现
 ```sh
 $ . environment
 $ ./robotserver mode1
 ```
 按照的"mode1"的使用说明录制动作
 其中"environment"用于设置动态库环境变量
+
 Note: 每次打开终端都需执行此命令，如不执行,终端会提示找不到动态库,或将此写入开机启动脚本，则只需要配置一次即可
 
 ```sh
@@ -259,7 +260,7 @@ $ ./robotserver mode2
 $ chmod +x robotserver
 ```
 
-#### 单点示教-再现功能实现
+##### 单点示教-再现功能实现
 ```sh
 $ . environment
 $ ./robotserver mode3
@@ -271,14 +272,14 @@ $ ./robotserver mode4
 ```
 按照的"mode4"的使用说明再现动作
 
-#### 向导功能实现
+##### 向导功能实现
 ```sh
 $ . environment
 $ ./tutorials
 ```
 按照的"tutorials"的使用说明即可
 
-#### 关机功能实现
+#### 关机
 
 ```sh
 $ . environment
