@@ -113,10 +113,22 @@ ls命令可查看文件组成，其中"robotserver"为可执行二进制文件�
 "robotserver"提供五种运行模式，分别为：calibrate,tutorials,mode0,mode1,mode2,mode3,mode4
 
 使用方法为：
-./robotserver xx
+```sh
+$ . environment
+$ ./robotserver xx
+```
 其中"xx"可以是五种运行模式的任意一种,例如：
-./robotserver calibrate
+```sh
+$ ./robotserver xx
+```
+"environment"用于设置动态库环境变量
 
+Note: 每次打开终端都需执行此命令，如不执行,终端会提示找不到动态库,或将此写入开机启动脚本，则只需要配置一次即可
+
+若执行时提示没有“robotserver”文件，表明该文件没有权限，执行以下命令更改权限：
+```sh
+$ chmod +x robotserver
+```
 
 ### 运行模式使用说明
 
@@ -253,9 +265,6 @@ CONTINUOUS:
     $ ./robotserver calibrate
     ```
     按照"calibrate"的使用说明即可
-    其中"environment"用于设置动态库环境变量
-
-    Note: 每次打开终端都需执行此命令，如不执行,终端会提示找不到动态库,或将此写入开机启动脚本，则只需要配置一次即可
     
 #### 功能实现
 
@@ -272,11 +281,6 @@ $ ./robotserver mode1
 $ ./robotserver mode2
 ```
 按照"mode2"的使用说明播放动作
-
-若执行时提示没有“robotserver”文件，表明该文件没有权限，执行以下命令更改权限：
-```sh
-$ chmod +x robotserver
-```
 
 * 单点示教-再现功能实现
 执行命令：
