@@ -128,9 +128,6 @@ ls命令可查看文件组成，其中"robotserver"为可执行二进制文件�
 
 将机械臂移动到零点位置，如下图所示：
 
-<img src="../../img/robot-controller/home-position-1.jpg" style="width:100px">
-
-
 <br>移动到零点位置后，执行该模式，此时终端周期性打印机械臂的当前角度值，按下CTRL+C结束打印：
 
 <img src="../../img/robot-controller/home-position-0.png" style="width:600px">
