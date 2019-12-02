@@ -269,6 +269,7 @@ CONTINUOUS:
 #### 功能实现
 
 * 录制-播放功能实现
+
 执行命令：
 ```sh
 $ . environment
@@ -283,6 +284,7 @@ $ ./robotserver mode2
 按照"mode2"的使用说明播放动作
 
 * 单点示教-再现功能实现
+
 执行命令：
 ```sh
 $ . environment
@@ -297,6 +299,7 @@ $ ./robotserver mode4
 按照"mode4"的使用说明再现动作
 
 * 向导功能实现
+
 执行命令：
 ```sh
 $ . environment
@@ -311,6 +314,7 @@ $ . environment
 $ ./robotserver mode0
 ```
 机械臂断电之前，需执行此命令，然后才能关掉电源
+
 Attention: 请用手托住机械臂，然后再执行"mode0"关闭电机使能,若不扶住机械臂，机械臂会有因为重力而砸下来的风险
 
 
