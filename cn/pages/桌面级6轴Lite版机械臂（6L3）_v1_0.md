@@ -155,7 +155,7 @@ Attention: 零位若丢失，会导致机械臂运动异常
 <br>tutorials模式可以按照引导使机械臂按照预先设定动作运动
 <br>执行该模式后，此时终端会显示：
 
-<img src="../../img/tutro.png" style="width:600px">
+<img src="../../img/tutorials-0.png" style="width:600px">
 
 <br>1、2、3、4为4套预设动作，输入其中任意数字即可让机械臂运动，播放完该动作自动后，可重新选择动作模式
 
