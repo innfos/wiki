@@ -110,7 +110,7 @@ $ git clone https://github.com/innfos/robot-controller-GL-6L3-raspi.git
 $ cd robot_controller-GL-6L3/
 ```
 ls命令可查看文件组成，其中"robotserver"为可执行二进制文件，file文件夹用于存储动作文件，主要为trajectory.txt和data.txt
-"robotserver"提供五种运行模式，分别为：calibrate,tutorials,mode0,mode1,mode2,mode3,mode4
+"robotserver"提供七种运行模式，分别为：calibrate,tutorials,mode0,mode1,mode2,mode3,mode4
 
 使用方法为：
 ```sh
@@ -132,7 +132,7 @@ $ chmod +x robotserver
 
 ### 运行模式使用说明
 
-目前"robotserver"提供五种运行模式，分别为：calibrate,tutorials,mode0,mode1,mode2,mode3,mode4，具体使用方法介绍如下：
+目前"robotserver"提供七种运行模式，分别为：calibrate,tutorials,mode0,mode1,mode2,mode3,mode4，具体使用方法介绍如下：
 
 * calibrate
 
