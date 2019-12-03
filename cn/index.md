@@ -100,9 +100,13 @@ Note: 以下型号SCA数据正在更新中，更多详情请咨询商务团队�
   * [XR-1 ](https://www.mdeditor.com/)
 <br>网站正在维护中。请继续关注未来的更新！
 
-  * [GLUON-6L3<br>桌面级6轴Lite版机械臂](pages/GLUON-6L3桌面级6轴Lite版机械臂_v1_0.md)
-  * [桌面级6轴Lite版机械臂（2L6-4L3）](pages/桌面级6轴Lite版机械臂（2L6-4L3）_v1_0.md) 
-<br>网站正在维护中。请继续关注未来的更新！
+  * [GLUON-6L3](pages/GLUON-6L3桌面级6轴Lite版机械臂_v1_0.md)
+  桌面级6轴Lite版机械臂
+  * [GLUON-2L6-4L3](pages/GLUON-2L6-4L3桌面级6轴Lite版机械臂_v1_0.md)
+  <br>桌面级6轴Lite版机械臂
+  * [GLUON-2L6-4L3](pages/GLUON-2L6-4L3桌面级6轴Lite版机械臂_v1_0.md)
+  桌面级6轴Lite版机械臂
+
 
 - - - -
 
