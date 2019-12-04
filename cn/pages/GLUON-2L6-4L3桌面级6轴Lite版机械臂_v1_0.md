@@ -21,25 +21,25 @@ GLUON-2L6-4L3安装使用说明书
 ### 3D模型
 [装配体]( ../../3DModel/桌面级6轴机械臂（2L6-4L3）_v1_8_1.step.zip )
 ## 零件图
-[NE30输出连接件]( ../../3DModel/NE30输出连接件v1.8.1.zip )
+[NE30输出连接件]( ../../3DModel/NE30_Flange_coupling_v1.8.1.zip )
 
-[NE30执行器固定架]( ../../3DModel/NE30执行器固定架v1.8.1.zip )
+[NE30执行器固定架]( ../../3DModel/NE30_SCA_connector_v1.8.1.zip )
 
-[NE30连接法兰]( ../../3DModel/NE30连接法兰v1.8.1.zip )
+[NE30连接法兰]( ../../3DModel/NE30_Flange_v1.8.1.zip )
 
-[NE30碳管连接件]( ../../3DModel/NE30碳管连接件v1.8.1.zip )
+[NE30碳管连接件]( ../../3DModel/NE30_Carbon_tube_connector_v1.8.1.zip )
 
-[NE30碳管垫片]( ../../3DModel/NE30碳管垫片v1.8.1.zip )
+[NE30碳管垫片]( ../../3DModel/NE30_Gasket_v1.8.1.zip )
 
-[3060六轴碳管固定件]( ../../3DModel/3060六轴碳管固定件v1.8.1.zip )
+[3060六轴碳管固定件]( ../../3DModel/3060_Carbon_tube_connector_v1.8.1.zip )
 
-[PR60输出连接件]( ../../3DModel/PR60输出连接件v1.8.1.zip )
+[PR60输出连接件]( ../../3DModel/PR60_Flange_coupling_v1.8.1.zip )
 
-[PR60连接法兰]( ../../3DModel/PR60连接法兰v1.8.1.zip )
+[PR60连接法兰]( ../../3DModel/PR60_Flange_v1.8.1.zip )
 
-[PR60执行器固定架]( ../../3DModel/PR60执行器固定架v1.8.1.zip )
+[PR60执行器固定架]( ../../3DModel/PR60_SCA_connector_v1.8.1.zip )
 
-[PR60机械臂底座]( ../../3DModel/PR60机械臂底座v1.8.1.zip )
+[PR60机械臂底座]( ../../3DModel/PR60_SCA_connector_v1.8.1.zip )
 
 ## 基本参数
 
