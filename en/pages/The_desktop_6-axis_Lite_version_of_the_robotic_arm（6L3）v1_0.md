@@ -17,7 +17,20 @@ Desktop 6-axis robotic arm installation instructions
 
 
 ### 3D model
-[model file]( ../../3DModel/桌面级6轴机械臂（6L3）_v1_0.zip )
+[Assembly Drawing]( ../../3DModel/桌面级6轴机械臂（6L3）_v1_8_1.zip )
+
+### Parts Drawing
+[NE30 Flange coupling]( ../../3DModel/NE30_Flange_coupling_v1.8.1.zip )
+
+[NE30 SCA connector ]( ../../3DModel/NE30_SCA_connector_v1.8.1.zip )
+
+[NE30 Flange]( ../../3DModel/NE30_Flange_v1.8.1.zip )
+
+[NE30 Carbon tube connector]( ../../3DModel/NE30_Carbon_tube_connector_v1.8.1.zip )
+
+[NE30 Gasket]( ../../3DModel/NE30_Gasket_v1.8.1.zip )
+
+[NE30 Gluon base]( ../../3DModel/NE30_Gluon_base_v1.8.1.zip )
 
 
 ## Basic parameters
