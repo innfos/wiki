@@ -32,7 +32,7 @@ GLUON-6L3安装使用说明书
 
 [NE30碳管垫片]( ../../3DModel/NE30_Gasket_v1.8.1.zip )
 
-[NE30机械臂底座]( ../../3DModel/NE30_SCA_connector_v1.8.1.zip )
+[NE30机械臂底座]( ../../3DModel/NE30_Gluon_base_v1.8.1.zip )
 
 
 ## 基本参数
