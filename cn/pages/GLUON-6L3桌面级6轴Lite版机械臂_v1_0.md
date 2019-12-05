@@ -23,7 +23,7 @@ GLUON-6L3安装使用说明书
 
 ### 零件图
 <div style="width:100%;text-align:center"><div style="width:30%;display:inline-block">
-<img src="../../img/NE30_Flange_coupling.png" style="width:100%;height:auto"><a href="../../3DModel/NE30_Flange_coupling_v1.8.1.zip">NE30输出连接件</a ></div><div style="width:30%;display:inline-block"><img src="../../img/NE30_SCA_connector.png" style="width:100%;height:auto"><a href="../../3DModel/NE30_Flange_coupling_v1.8.1.zip">NE30执行器固定架</a ></div><div style="width:30%;display:inline-block"><img src="../../img/NE30_Flange.png" style="width:100%;height:auto"><a href="../../3DModel/NE30_Flange_v1.8.1.zip">NE30连接法兰</a ></div></div>
+<img src="../../img/NE30_Flange_coupling.png" style="width:100%;height:auto"><a href="../../3DModel/NE30_Flange_coupling_v1.8.1.zip">NE30输出连接件</a ></div><div style="width:30%;display:inline-block"><img src="../../img/NE30_SCA_connector.png" style="width:100%;height:auto"><a href="../../3DModel/NE30_SCA_connector_v1.8.1.zip">NE30执行器固定架</a ></div><div style="width:30%;display:inline-block"><img src="../../img/NE30_Flange.png" style="width:100%;height:auto"><a href="../../3DModel/NE30_Flange_v1.8.1.zip">NE30连接法兰</a ></div></div>
 
 <div style="width:100%;text-align:center"><div style="width:30%;display:inline-block">
 <img src="../../img/NE30_Carbon_tube_connector.png" style="width:100%;height:auto">
