@@ -19,29 +19,13 @@ GLUON-6L3安装使用说明书
 <img src="../../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0.md工作空间.jpg" style="width:720px">
 
 ### 3D模型
-[装配体]( ../../3DModel/桌面级6轴机械臂（6L3）_v1_8_1.zip )
+[装配体]( ../../3DModel/Robotic_arm_6L3_v1_8_1.zip )
 
 ### 零件图
-<div style="width:100%;text-align:center"><div style="width:30%;display:inline-block"><img src="../../img/NE30输出连接件.jpg" style="width:100%;height:auto"><a href="../../3DModel/3DModel/NE30_Flange_coupling_v1.8.1.zip">NE30输出连接件</a ></div><div style="width:30%;display:inline-block"><img src="../../img/NE30执行器固定架.jpg" style="width:100%;height:auto"><a href="../../3DModel/3DModel/NE30_Flange_coupling_v1.8.1.zip">NE30执行器固定架</a ></div><div style="width:30%;display:inline-block"><img src="../../img/NE30连接法兰.jpg" style="width:100%;height:auto"><a href="../../3DModel/NE30_Flange_v1.8.1.zip">NE30连接法兰</a ></div></div>
+<div style="width:100%;text-align:center"><div style="width:30%;display:inline-block"><img src="../../img/NE30_Flange_coupling.png" style="width:100%;height:auto"><a href="../../3DModel/3DModel/NE30_Flange_coupling_v1.8.1.zip">NE30输出连接件</a ></div><div style="width:30%;display:inline-block"><img src="../../img/NE30_SCA_connector.png" style="width:100%;height:auto"><a href="../../3DModel/3DModel/NE30_Flange_coupling_v1.8.1.zip">NE30执行器固定架</a ></div><div style="width:30%;display:inline-block"><img src="../../img/NE30_Flange.png" style="width:100%;height:auto"><a href="../../3DModel/NE30_Flange_v1.8.1.zip">NE30连接法兰</a ></div></div><img src="../../img/NE30_Carbon_tube_connector.png" style="width:100%;height:auto">
+<ahref="../../3DModel/3DModel/NE30_Carbon_tube_connector_v1.8.1.zip">NE30碳管连接件</a ></div><div style="width:30%;display:inline-block"><img src="../../img/NE30_Gasket.png" style="width:100%;height:auto">
+  <ahref="../../3DModel/3DModel/NE30_Gasket_v1.8.1.zip">NE30碳管垫片</a ></div><div style="width:30%;display:inline-block"><img src="../../img/NE30_Gluon_base.png" style="width:100%;height:auto"><a href="../../3DModel/NE30_Gluon_base_v1.8.1.zip">NE30机械臂底座</a ></div></div>
 
-
-[NE30输出连接件]( ../../3DModel/NE30_Flange_coupling_v1.8.1.zip )
-
-[NE30执行器固定架]( ../../3DModel/NE30_SCA_connector_v1.8.1.zip )
-
-[NE30连接法兰]( ../../3DModel/NE30_Flange_v1.8.1.zip )
-
-
-
-
-
-
-
-[NE30碳管连接件]( ../../3DModel/NE30_Carbon_tube_connector_v1.8.1.zip )
-
-[NE30碳管垫片]( ../../3DModel/NE30_Gasket_v1.8.1.zip )
-
-[NE30机械臂底座]( ../../3DModel/NE30_Gluon_base_v1.8.1.zip )
 
 
 ## 基本参数
