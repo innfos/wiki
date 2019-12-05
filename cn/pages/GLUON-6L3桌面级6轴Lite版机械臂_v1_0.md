@@ -18,8 +18,7 @@ GLUON-6L3安装使用说明书
 ### 工作空间
 <img src="../../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0.md工作空间.jpg" style="width:720px">
 
-### 3D模型
-[装配体](  )
+
 
 ### 零件图
 <div style="width:100%;text-align:center"><div style="width:30%;display:inline-block">
