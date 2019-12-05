@@ -17,7 +17,7 @@ Desktop 6-axis robotic arm installation instructions
 
 
 ### 3D model
-[Assembly Drawing]( ../../3DModel/Robotic_arm_6L3_v1_8_1.zip )
+[Assembly Drawing]( )
 
 ### Parts Drawing
 <div style="width:100%;text-align:center"><div style="width:30%;display:inline-block">
