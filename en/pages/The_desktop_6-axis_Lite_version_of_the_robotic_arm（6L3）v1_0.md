@@ -17,7 +17,7 @@ Desktop 6-axis robotic arm installation instructions
 
 
 ### 3D model
-[Assembly Drawing]( ../../3DModel/桌面级6轴机械臂（6L3）_v1_8_1.zip )
+[Assembly Drawing]( ../../3DModel/Robotic_arm_6L3_v1_8_1.zip )
 
 ### Parts Drawing
 [NE30 Flange coupling]( ../../3DModel/NE30_Flange_coupling_v1.8.1.zip )
