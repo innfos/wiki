@@ -19,7 +19,7 @@ GLUON-2L6-4L3安装使用说明书
 <img src="../../img/桌面级6轴机械臂（2L6-4L3）_v1_8_1.md工作空间.jpg" style="width:720px">
 
 ### 3D模型
-[装配体]( ../../3DModel/Robotic_arm_2L6-4L3_v1_8_1.zip )
+[装配体]( )
 ## 零件图
 
 <div style="width:100%;text-align:center"><div style="width:20%;display:inline-block">
