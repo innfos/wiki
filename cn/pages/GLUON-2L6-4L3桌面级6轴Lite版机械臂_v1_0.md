@@ -21,15 +21,11 @@ GLUON-2L6-4L3安装使用说明书
 ### 3D模型
 [装配体]( ../../3DModel/Robotic_arm_2L6-4L3_v1_8_1.zip )
 ## 零件图
-[NE30输出连接件]( ../../3DModel/NE30_Flange_coupling_v1.8.1.zip )
 
-[NE30执行器固定架]( ../../3DModel/NE30_SCA_connector_v1.8.1.zip )
+<div style="width:100%;text-align:center"><div style="width:20%;display:inline-block">
+<img src="../../img/NE30_Flange_coupling.png" style="width:100%;height:auto"><a href="../../3DModel/NE30_Flange_coupling_v1.8.1.zip">NE30 Flange coupling </a ></div><div style="width:20%;display:inline-block"><img src="../../img/NE30_SCA_connector.png" style="width:100%;height:auto"><a href="../../3DModel/NE30_SCA_connector_v1.8.1.zip">NE30 SCA connector </a ></div><div style="width:20%;display:inline-block"><img src="../../img/NE30_Flange.png" style="width:100%;height:auto"><a href="../../3DModel/NE30_Flange_v1.8.1.zip">NE30 Flange</a ></div></div><img src="../../img/NE30_Carbon_tube_connector.png" style="width:100%;height:auto">
+<a href="../../3DModel/NE30_Carbon_tube_connector_v1.8.1.zip">NE30 Carbon tube connector</a ></div><div style="width:20%;display:inline-block"><img src="../../img/NE30_Gasket.png" style="width:100%;height:auto"><a href="../../3DModel/NE30_Gasket_v1.8.1.zip">NE30 Gasket </a ></div><div style="width:20%;display:inline-block">
 
-[NE30连接法兰]( ../../3DModel/NE30_Flange_v1.8.1.zip )
-
-[NE30碳管连接件]( ../../3DModel/NE30_Carbon_tube_connector_v1.8.1.zip )
-
-[NE30碳管垫片]( ../../3DModel/NE30_Gasket_v1.8.1.zip )
 
 [3060六轴碳管固定件]( ../../3DModel/3060_Carbon_tube_connector_v1.8.1.zip )
 
