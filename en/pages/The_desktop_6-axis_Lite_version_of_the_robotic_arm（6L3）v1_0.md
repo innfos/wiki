@@ -20,17 +20,12 @@ Desktop 6-axis robotic arm installation instructions
 [Assembly Drawing]( ../../3DModel/Robotic_arm_6L3_v1_8_1.zip )
 
 ### Parts Drawing
-[NE30 Flange coupling]( ../../3DModel/NE30_Flange_coupling_v1.8.1.zip )
+<div style="width:100%;text-align:center"><div style="width:30%;display:inline-block">
+<img src="../../img/NE30_Flange_coupling.png" style="width:100%;height:auto"><a href="../../3DModel/NE30_Flange_coupling_v1.8.1.zip">NE30 Flange coupling </a ></div><div style="width:30%;display:inline-block"><img src="../../img/NE30_SCA_connector.png" style="width:100%;height:auto"><a href="../../3DModel/NE30_SCA_connector_v1.8.1.zip">NE30 SCA connector </a ></div><div style="width:30%;display:inline-block"><img src="../../img/NE30_Flange.png" style="width:100%;height:auto"><a href="../../3DModel/NE30_Flange_v1.8.1.zip">NE30 Flange</a ></div></div>
 
-[NE30 SCA connector ]( ../../3DModel/NE30_SCA_connector_v1.8.1.zip )
-
-[NE30 Flange]( ../../3DModel/NE30_Flange_v1.8.1.zip )
-
-[NE30 Carbon tube connector]( ../../3DModel/NE30_Carbon_tube_connector_v1.8.1.zip )
-
-[NE30 Gasket]( ../../3DModel/NE30_Gasket_v1.8.1.zip )
-
-[NE30 Gluon base]( ../../3DModel/NE30_Gluon_base_v1.8.1.zip )
+<div style="width:100%;text-align:center"><div style="width:30%;display:inline-block">
+<img src="../../img/NE30_Carbon_tube_connector.png" style="width:100%;height:auto">
+<a href="../../3DModel/NE30_Carbon_tube_connector_v1.8.1.zip">NE30 Carbon tube connector</a ></div><div style="width:30%;display:inline-block"><img src="../../img/NE30_Gasket.png" style="width:100%;height:auto"><a href="../../3DModel/NE30_Gasket_v1.8.1.zip">NE30 Gasket </a ></div><div style="width:30%;display:inline-block"><img src="../../img/NE30_Gluon_base.png" style="width:100%;height:auto"><a href="../../3DModel/NE30_Gluon_base_v1.8.1.zip">NE30 Gluon base</a ></div></div>
 
 
 ## Basic parameters
