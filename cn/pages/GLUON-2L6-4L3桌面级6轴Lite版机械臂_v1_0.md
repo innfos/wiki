@@ -27,16 +27,20 @@ GLUON-2L6-4L3安装使用说明书
 <img src="../../img/NE30_Carbon_tube_connector.png" style="width:100%;height:auto">
 <a href="../../3DModel/NE30_Carbon_tube_connector_v1.8.1.zip">NE30 Carbon tube connector</a ></div><div style="width:20%;display:inline-block"><img src="../../img/NE30_Gasket.png" style="width:100%;height:auto"><a href="../../3DModel/NE30_Gasket_v1.8.1.zip">NE30 Gasket </a ></div></div>
 
+<div style="width:100%;text-align:center"><div style="width:20%;display:inline-block">
+<img src="../../img/3060_Carbon_tube_connector.png" style="width:100%;height:auto"><a href=../../3DModel/3060_Carbon_tube_connector_v1.8.1.zip">3060 Carbon tube connector </a ></div>
+  
+  <div style="width:20%;display:inline-block"><img src="../../img/PR60_Flange_coupling.png" style="width:100%;height:auto"><a href="../../3DModel/PR60_Flange_coupling_v1.8.1.zip">PR60 Flange coupling </a ></div>
+  
+  <div style="width:20%;display:inline-block"><img src="../../img/PR60_Flange.png" style="width:100%;height:auto"><a href="../../3DModel/PR60_Flange_v1.8.1.zip">PR60 Flange </a ></div>
+  
+  <div style="width:20%;display:inline-block"><img src="../../img/PR60_SCA_connector.png" style="width:100%;height:auto">
+<a href="../../3DModel/PR60_SCA_connector_v1.8.1.zip">NPR60 SCA connector</a ></div>
+  
+  <div style="width:20%;display:inline-block"><img src="../../img/PR60_Gluon_base.png" style="width:100%;height:auto"><a href="../../3DModel/PR60_Gluon_base_v1.8.1.zip">PR60 Gluon base </a ></div></div>
 
-[3060六轴碳管固定件]( ../../3DModel/3060_Carbon_tube_connector_v1.8.1.zip )
 
-[PR60输出连接件]( ../../3DModel/PR60_Flange_coupling_v1.8.1.zip )
 
-[PR60连接法兰]( ../../3DModel/PR60_Flange_v1.8.1.zip )
-
-[PR60执行器固定架]( ../../3DModel/PR60_SCA_connector_v1.8.1.zip )
-
-[PR60机械臂底座]( ../../3DModel/PR60_SCA_connector_v1.8.1.zip )
 
 ## 基本参数
 
