@@ -19,7 +19,7 @@ GLUON-2L6-4L3安装使用说明书
 <img src="../../img/桌面级6轴机械臂（2L6-4L3）_v1_8_1.md工作空间.jpg" style="width:720px">
 
 ### 3D模型
-[装配体]( ../../3DModel/桌面级6轴机械臂（2L6-4L3）_v1_8_1.step.zip )
+[装配体]( ../../3DModel/Robotic_arm_2L6-4L3_v1_8_1.zip )
 ## 零件图
 [NE30输出连接件]( ../../3DModel/NE30_Flange_coupling_v1.8.1.zip )
 
