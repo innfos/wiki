@@ -18,6 +18,10 @@ GLUON-6L3安装使用说明书
 ### 工作空间
 <img src="../../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0.md工作空间.jpg" style="width:720px">
 
+### 3D模型
+
+[模型文件]( ../../3DModel/Robotic_arm_6L3_v1_8_1.zip )
+
 ### 零件图
 <div style="width:100%;text-align:center"><div style="width:30%;display:inline-block">
 <img src="../../img/NE30_Flange_coupling.png" style="width:100%;height:auto"><a href="../../3DModel/NE30_Flange_coupling_v1.8.1.zip">SCA Output Adapter </a ></div><div style="width:30%;display:inline-block"><img src="../../img/NE30_SCA_connector.png" style="width:100%;height:auto"><a href="../../3DModel/NE30_SCA_connector_v1.8.1.zip">SCA Bracket </a ></div><div style="width:30%;display:inline-block"><img src="../../img/NE30_Flange.png" style="width:100%;height:auto"><a href="../../3DModel/NE30_Flange_v1.8.1.zip">SCA Wheel Adapter</a ></div></div>
