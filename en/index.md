@@ -1,6 +1,7 @@
 Main Page
 =====
 
+<span style="color:red"> We recommend you to refer to Google translation of our Chinese wiki, since our English version is still updating.</span>
 
 ##  Getting Started
 --------
