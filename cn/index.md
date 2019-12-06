@@ -103,7 +103,7 @@ Note: 以下型号SCA数据正在更新中，更多详情请咨询商务团队�
 
   * [GLUON-6L3](pages/GLUON-6L3_v1_0_cn.md)<br>桌面级6轴Lite版机械臂
   * [GLUON-2L6-4L3](pages/GLUON-2L6-4L3_v1_0_cn.md)<br>桌面级6轴Lite版机械臂
-  * [GLUON使用说明书](pages/GLUON-2L6-4L3_v1_0_cn.md)
+  * [GLUON使用说明书](pages/GLUON Operation Instruction_v1_0_cn.md)
 
 - - - -
 
