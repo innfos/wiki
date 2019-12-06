@@ -1,7 +1,7 @@
 Main Page
 =====
 
-<span style="color:red;font-size:26px"> We recommend you to refer to Google translation of our Chinese wiki, since our English version is still updating.</span>
+<span style="color:red;font-size:23px"> We recommend you to refer to Google translation of our Chinese wiki, since our English version is still updating.</span>
 
 ##  Getting Started
 --------
