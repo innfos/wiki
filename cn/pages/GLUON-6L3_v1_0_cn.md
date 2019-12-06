@@ -334,7 +334,7 @@ Attention: 请用手托住机械臂，然后再执行"mode0"关闭电机使能,�
 ## 版本变更记录
 **下表简单描述了版本变更记录**
 
-<table style="width:400px"><thead><tr style="background:PaleTurquoise"><th style="width:100px">版本号</th><th style="width:150px">更新时间</th><th style="width:150px">更新内容</th></tr></thead><tbody>
+<table style="width:500px"><thead><tr style="background:PaleTurquoise"><th style="width:100px">版本号</th><th style="width:150px">更新时间</th><th style="width:150px">更新内容</th></tr></thead><tbody>
   <tr><td>v1.0.1</td><td>2019.12.06</td><td>添加了机械臂零件图纸</td>
   <tr><td>v1.0.1</td><td>2019.10.23</td><td>参数表格修改</td>
   <tr><td>v1.0.0</td><td>2019.09.05</td><td>全文添加</td></tbody></table>
