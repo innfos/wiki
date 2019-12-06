@@ -1,8 +1,8 @@
-Desktop 6-axis robotic arm installation instructions
+GLUON-6L3 installation instructions
 =====
 ## Introduction
 
-*  This manual is for the use of the desktop 6-axis robot.
+*  This manual is for the use of theGLUON-6L3.
 *  Please read this manual carefully before use.
 
 
@@ -16,12 +16,19 @@ Desktop 6-axis robotic arm installation instructions
 <img src="../../img/桌面级6轴机械臂（QDD Lite-NE30-36版）_v1_0.md三视图.png" style="width:720px">
 
 
+### 3D model
+[Assembly Drawing]( ../../3DModel/Robotic_arm_6L3_v1_8_1.zip )
 
-
+### Parts Drawing
+<div style="width:100%;text-align:center"><div style="width:30%;display:inline-block">
+<img src="../../img/NE30_Flange_coupling.png" style="width:100%;height:auto"><a href="../../3DModel/NE30_Flange_coupling_v1.8.1.zip">SCA Output Adapter（NE30）</a ></div><div style="width:30%;display:inline-block"><img src="../../img/NE30_SCA_connector.png" style="width:100%;height:auto"><a href="../../3DModel/NE30_SCA_connector_v1.8.1.zip">SCA Bracket （NE30）</a ></div><div style="width:30%;display:inline-block"><img src="../../img/NE30_Flange.png" style="width:100%;height:auto"><a href="../../3DModel/NE30_Flange_v1.8.1.zip">SCA Wheel Adapter（NE30）</a ></div></div>
+<div style="width:100%;text-align:center"><div style="width:30%;display:inline-block">
+<img src="../../img/NE30_Carbon_tube_connector.png" style="width:100%;height:auto">
+<a href="../../3DModel/NE30_Carbon_tube_connector_v1.8.1.zip">Carbon Tube Adapter（NE30）</a ></div><div style="width:30%;display:inline-block"><img src="../../img/NE30_Gasket.png" style="width:100%;height:auto"><a href="../../3DModel/NE30_Gasket_v1.8.1.zip">Gasket </a ></div><div style="width:30%;display:inline-block"><img src="../../img/NE30_Gluon_base.png" style="width:100%;height:auto"><a href="../../3DModel/NE30_Gluon_base_v1.8.1.zip">Gluon Base（NE30）</a ></div></div>
 
 ## Basic parameters
 
-<table style="width:500px"><thead><tr><th colspan="2" style="background: PaleTurquoise; color: black;">Desktop 6-axis Lite version of the robot arm (6L3) parameters</th></tr></thead><tbody></tr><tr><td>End load</td><td>500g</td></tr>
+<table style="width:500px"><thead><tr><th colspan="2" style="background: PaleTurquoise; color: black;">GLUON-6L3 parameters</th></tr></thead><tbody></tr><tr><td>End load</td><td>500g</td></tr>
 <tr><td>weight</td><td>3.7kg(with base）；2.5kg（without base）</td></tr><tr><td>Degree of freedom</td><td>6</td></tr><tr><td>Working radius</td><td>421mm</td></tr><tr><td>Joint range</td><td>+/-170°</td></tr><tr><td>Maximum tool speed</td><td>2m/s</td></tr><tr><td>Repeatability accuracy</td><td>+/-0.1mm</td></tr><tr><td>Supply voltage</td><td>42v</td></tr><tr><td>Power consumption</td><td>Ordinary power consumption is about 120w</td></tr><tr><td>Structural material</td><td>Aluminum alloy/carbon fiber tube</td></tr><tr><td>Working temperature</td><td>10-50°</td></tr><tr><td>Working environment humidity</td><td>5%~95%</td></tr><tr><td>Protection level</td><td>IP54</td></tr><tr><td>Communication port</td><td>CAN/Ethernet</td></tr><tr><td>Teach pendant</td><td>Computer or mobile terminal</td></tr></td></tbody></table>
 
 
