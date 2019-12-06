@@ -1,9 +1,9 @@
-6轴谐波版协作机械臂安装使用说明书
+GLUON-8P2-6P1-3P3安装使用说明书
 =====
 
 ## 介绍
 
-*   本说明书是针对桌面级6轴机械臂的使用说明。
+*   本说明书是针对GLUON-8P2-6P1-3P3的使用说明。
 *   在使用之前请仔细阅读本说明书内容。
 
 <br>所有关节均采用QDD Pro谐波减速器系列执行器搭建，臂长活动范围最大830mm，占地面积142m㎡，额定负载6kg，极限负载12kg。
@@ -29,7 +29,7 @@ Note: 以上型号均为参考型号，可根据具体情况查看所需SCA执�
 
 ## 6轴谐波版协作机械臂参数
 
-<table style="width:500px"><thead><tr><th colspan="2" style="background: PaleTurquoise; color: black;">6轴谐波版协作机械臂参数</th></tr></thead><tbody></tr><tr><td>末端负载</td><td>6kg</td></tr>
+<table style="width:500px"><thead><tr><th colspan="2" style="background: PaleTurquoise; color: black;">GLUON-8P2-6P1-3P3参数</th></tr></thead><tbody></tr><tr><td>末端负载</td><td>6kg</td></tr>
 <tr><td>自重</td><td>13.5kg</td></tr><tr><td>自由度</td><td>6</td></tr><tr><td>工作半径</td><td>832mm</td></tr><tr><td>关节范围</td><td>+/-170°</td></tr><tr><td>工具最大速度</td><td>2.5m/s</td></tr><tr><td>重复定位精度</td><td>+/-0.05mm</td></tr><tr><td>供电电压</td><td>42v</td></tr><tr><td>功耗</td><td>普通功耗约300w</td></tr><tr><td>结构件材料</td><td>铝合金/碳纤维管</td></tr><tr><td>工作环境温度</td><td>0-50°</td></tr><tr><td>工作环境湿度</td><td>5%~95%</td></tr><tr><td>防护等级</td><td>IP54</td></tr><tr><td>通信端口</td><td>CAN/以太网</td></tr><tr><td>示教器</td><td>电脑或者移动终端</td></tr></td></tbody></table>
 
 
