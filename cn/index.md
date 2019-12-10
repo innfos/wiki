@@ -99,7 +99,7 @@ Note: 以下型号SCA数据正在更新中，更多详情请咨询商务团队�
 
 ## 胶子系列
 
-  * [胶子系列使用说明书](pages/GLUON Operation Instruction_v1_0_cn.md)
+  * [胶子系列使用说明书](pages/GLUON_Operation_Instruction_v1_0_cn.md)
 
   * [胶子系列c++软件开发工具包](pages/gluon_cpp_sdk_cn.md)
   * [GLUON-6L3 ](pages/GLUON-6L3_v1_0_cn.md)<br>桌面级6轴Lite版机械臂
