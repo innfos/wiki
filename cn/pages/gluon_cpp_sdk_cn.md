@@ -8,13 +8,13 @@
 
 x86-64版本：
 推荐使用64位ubuntu16.04、ubuntu18.04等系统
-访问该链接[download link](https://github.com/innfos/innfos-gluon-cpp-sdk.git)下载机械臂软件或者直接执行以下命令
+访问[下载链接](https://github.com/innfos/innfos-gluon-cpp-sdk.git)下载机械臂软件或者直接执行以下命令
 ```sh
 $ git clone https://github.com/innfos/innfos-gluon-cpp-sdk.git
 ```
 树莓派版本：
 适用于Raspberry Pi 3 Model B 和 Raspberry Pi 3 Model B+
-访问该链接[download link](https://github.com/innfos/innfos-gluon-cpp-sdk-raspi.git)下载机械臂软件或者直接执行以下命令
+访问[下载链接](https://github.com/innfos/innfos-gluon-cpp-sdk-raspi.git)下载机械臂软件或者直接执行以下命令
 ```sh
 $ git clone https://github.com/innfos/innfos-gluon-cpp-sdk-raspi.git
 ```
