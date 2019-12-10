@@ -3,7 +3,7 @@
 
 ## 介绍
 
-*   本说明书是针对桌面级6轴机械臂的使用说明。
+*   本说明书是针对GLUON-3L6-3L3的使用说明。
 *   在使用之前请仔细阅读本说明书内容。
 
 <br>所有关节采用QDD Lite系列执行器搭建。其臂长活动范围最大536mm，末端负载2Kg。因QDD Lite系列执行器采用了复合材料，大大降低了高端机器人本机研发成本，主要应用于教育领域，学校、实验室、研究所、竞赛等。
@@ -24,7 +24,7 @@
 
 ## 基本参数
 
-<table style="width:500px"><thead><tr><th colspan="3" style="background: PaleTurquoise; color: black;">桌面级6轴Lite版机械臂（3L6-3L3）参数</th></tr></thead><tbody></tr><td rowspan="8">规格</td></tr><tr><td>末端负载</td><td>2Kg</td></tr><tr><td>自重</td><td>5.5Kg</td></tr><tr><td>自由度</td><td>6</td></tr>
+<table style="width:500px"><thead><tr><th colspan="3" style="background: PaleTurquoise; color: black;">GLUON-3L6-3L3参数</th></tr></thead><tbody></tr><td rowspan="8">规格</td></tr><tr><td>末端负载</td><td>2Kg</td></tr><tr><td>自重</td><td>5.5Kg</td></tr><tr><td>自由度</td><td>6</td></tr>
 <tr><td>长宽高</td><td>219.36 ̽ 120 ̽685.95mm</td></tr><tr><td>安装方式</td><td>桌面/框架/倒置/倾斜</td></tr><tr><td>防护等级</td><td>IP54</td></tr><tr><td>结构件材料</td><td>铝合金/碳纤维</td></tr></tr><td rowspan="7">工作范围</td></tr>
 <td>第1轴</td><td>-160°~160°</td></tr><td>第2轴</td><td>-90°~90°</td></tr><td>第3轴</td><td>-150°~150°</td></tr><td>第4轴</td><td>-150°~150°</td></tr><td>第5轴</td><td>-150°~150°</td></tr><td>第6轴</td><td>-360°~360°</td></tr></tr><td rowspan="7">最大速度</td></tr>
 <td>第1轴</td><td>226°/s</td></tr><td>第2轴</td><td>226°/s</td></tr><td>第3轴</td><td>226°/s</td></tr><td>第4轴</td><td>302°/s</td></tr><td>第5轴</td><td>302°/s</td></tr><td>第6轴</td><td>902°/s</td></tr><td>重复定位精度</td><td colspan="3" >2mm</td></tr></tr><td rowspan="6">工作环境</td></tr><td>电压</td><td>42V</td></tr><td>功耗</td><td>普通工况约150W</td></tr><td>工作温度</td><td>10°~50°</td></tr><td>工作环境湿度</td><td>5%~95%</td></tr><td>通信端口</td><td>CAN/以太网</td></tr></tbody></table>
