@@ -62,15 +62,15 @@
 
 x86-64版本：
 推荐使用64位ubuntu16.04、ubuntu18.04等系统
-访问该链接[download link](https://github.com/innfos/robot-controller-GL-6L3.git)下载机械臂软件或者直接执行以下命令
+访问[下载链接](https://github.com/innfos/innfos-gluon-controller.git)下载机械臂软件或者直接执行以下命令
 ```sh
-$ git clone https://github.com/innfos/robot-controller-GL-6L3.git
+$ git clone https://github.com/innfos/innfos-gluon-controller.git
 ```
 树莓派版本：
 适用于Raspberry Pi 3 Model B 和 Raspberry Pi 3 Model B+
-访问该链接[download link](https://github.com/innfos/robot-controller-GL-6L3-raspi.git)下载机械臂软件或者直接执行以下命令
+访问[下载链接](https://github.com/innfos/innfos-gluon-controller-raspi.git)下载机械臂软件或者直接执行以下命令
 ```sh
-$ git clone https://github.com/innfos/robot-controller-GL-6L3-raspi.git
+$ git clone https://github.com/innfos/innfos-gluon-controller-raspi.git
 ```
 
 
@@ -80,7 +80,7 @@ $ git clone https://github.com/innfos/robot-controller-GL-6L3-raspi.git
 ```sh
 $ cd robot_controller-GL-6L3/
 ```
-ls命令可查看文件组成，其中"robotserver"为可执行二进制文件，file文件夹用于存储动作文件，主要为trajectory.txt和data.txt
+ls命令可查看文件组成，其中"robotserver"和"setrobot"为可执行二进制文件，file文件夹用于存储动作文件，主要为trajectory.txt和data.txt
 "robotserver"提供七种运行模式，分别为：calibrate,tutorials,mode0,mode1,mode2,mode3,mode4
 
 使用方法为：
@@ -100,6 +100,16 @@ Note: 每次打开终端都需执行此命令，如不执行,终端会提示找�
 ```sh
 $ chmod +x robotserver
 ```
+"setrobot"主要用于设置机器人的各项参数，目前能设置的参数为机械臂类型,目前本软件支持两种胶子类型：GL_6L3和GL_2L6_4L3,默认类型为GL_6L3
+
+如设置成GL_2L6_4L3,执行命令:
+
+```sh
+$ ./setrobot t GL_2L6_4L3
+```
+
+Attention: 请先确认自己的机械臂型号，若不是默认类型(GL_6L3),需执行上述命令设置相应的类型
+
 
 ### 运行模式使用说明
 
@@ -227,6 +237,8 @@ CONTINUOUS:
 通过上述几种模式，可实现不同的功能,具体使用步骤如下：
 
 #### 使用前检查
+
+*   检查机械臂类型，若不是默认类型(GL_6L3),需用./setrobot设置成相应的类型
 
 *   检查执行器指示灯是否正常，若执行器指示灯绿色或黄色为正常，若不亮或者其他颜色则表示异常
 
