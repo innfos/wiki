@@ -8,6 +8,7 @@
 
 ## 产品实拍效果图
 以GL_6L3为例:
+
 <img src="../../img/13.jpg" style="width:600px">
 
 ## 硬件需求与连接
