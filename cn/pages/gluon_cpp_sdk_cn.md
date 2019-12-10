@@ -24,7 +24,9 @@ $ git clone https://github.com/innfos/innfos-gluon-cpp-sdk-raspi.git
 软件开发工具包中包含示例程序,用户可先编译示例程序了解使用方法，具体函数介绍可移步至[函数说明](https://innfos.com/instructions/html/index.html)
 
 在编译之前请务必先查看example/src下的basic和advanced下的cpp文件，并配合函数说明文档，待了解每个函数作用后，开始编译示例程序
+
 进入下载目录，执行：
+
 ```sh
 $ cd innfos-gluon-cpp-sdk/example
 $ mkdir build
@@ -35,21 +37,39 @@ $ make
 basic文件夹中含有shutdown和startup两个可执行文件，分别用于开机使能和关机失能
 advanced文件夹中有一个motion可执行文件，该命令执行的逻辑为：
 关节运动到指定点
+
 关节增量正方向移动
+
 关节增量负方向移动
+
 直线移动到指定点
+
 沿x轴负方向平移
+
 沿x轴正方向平移
+
 沿y轴负方向平移
+
 沿y轴正方向平移
+
 沿z轴负方向平移
+
 沿z轴正方向平移
+
 绕x轴负方向旋转
+
 绕x轴正方向旋转
+
 绕y轴负方向旋转
+
 绕y轴正方向旋转
+
 绕z轴负方向旋转
+
 绕z轴正方向旋转
+
 圆弧运动至指定点
+
 关节运动回原点
+
 选择是否关机
