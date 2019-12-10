@@ -33,9 +33,13 @@ $ mkdir build
 $ cmake ..
 $ make 
 ```
+
 此时在example/bin 文件夹下会产生两个文件夹basic和advanced
+
 basic文件夹中含有shutdown和startup两个可执行文件，分别用于开机使能和关机失能
+
 advanced文件夹中有一个motion可执行文件，该命令执行的逻辑为：
+
 关节运动到指定点
 
 关节增量正方向移动
