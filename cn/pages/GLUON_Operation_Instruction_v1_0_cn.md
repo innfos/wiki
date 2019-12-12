@@ -88,7 +88,7 @@ $ git clone https://github.com/innfos/innfos-gluon-controller-raspi.git
 
 通过git下载后进入到主目录
 ```sh
-$ cd robot_controller-GL-6L3/
+$ cd innfos-gluon-controller/
 ```
 ls命令可查看文件组成，其中"robotserver"和"setrobot"为可执行二进制文件，file文件夹用于存储动作文件，主要为trajectory.txt和data.txt
 "robotserver"提供七种运行模式，分别为：calibrate,tutorials,mode0,mode1,mode2,mode3,mode4
