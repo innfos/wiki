@@ -2,8 +2,8 @@ IO Module使用说明
 =====
 
 ## 简介
-IO Module（ABI转CAN 转接器）的主要功能是实现电机控制信号从ABI格式数据到INNFOS CAN协议数据地转换。INNFOS SCA采用CAN总线进行通信，并拥有一套专用的INNFOS CAN协议。为了使得SCA能够接受标准的ABI控制方式，ABI2CAN_Converter可以接收ABI数据，并将其转换为INNFOS CAN协议数据通过CAN总线发送至SCA，用户无需考虑INNFOS CAN协议的内容，只需要向ABI2CAN_Converter提供标准的ABI信号数据即可实现精准的控制操作。
-与此同时，ABI2CAN_Converter保留了所有以太网转CAN的功能，用户可通过此转接板顺利完成上位机的连接或以太网SDK的应用开发。
+Step/Dir to CAN（ABI转CAN 转接器）的主要功能是实现电机控制信号从ABI格式数据到INNFOS CAN协议数据地转换。INNFOS SCA采用CAN总线进行通信，并拥有一套专用的INNFOS CAN协议。为了使得SCA能够接受标准的ABI控制方式，SD2CAN可以接收ABI数据，并将其转换为INNFOS CAN协议数据通过CAN总线发送至SCA，用户无需考虑INNFOS CAN协议的内容，只需要向SD2CAN提供标准的ABI信号数据即可实现精准的控制操作。
+与此同时，SD2CAN保留了所有以太网转CAN的功能，用户可通过此转接板顺利完成上位机的连接或以太网SDK的应用开发。
 
 ## 关于ABI信号
 在电机控制领域中的ABI信号是增量式编码器输出的一种数据格式，现在也多用于电机的输入控制信号当中。当电机旋转轴转动时编码器会输出位置的增量信息，其信号格式一般有两种：
@@ -20,7 +20,7 @@ IO Module（ABI转CAN 转接器）的主要功能是实现电机控制信号从A
 
 <img src="../../img/ABI2CAN_Converter使用说明2.png" style="width:720px"> 
 
-<br>ABI2CAN_Converter将ABI信号作为输入信号，采用的是第一种信号格式，支持方向信号和脉冲信号的输入，其脉冲信号满足以下比例：
+<br>SD2CAN将ABI信号作为输入信号，采用的是第一种信号格式，支持方向信号和脉冲信号的输入，其脉冲信号满足以下比例：
 <br>脉冲数 ：实际转动圈数 = 5000 ：1
 <br>对于方向信号，高电平为顺时针转动，低电平为逆时针转动。
 
@@ -41,7 +41,7 @@ Note: 产品供电严禁超过最大输入电压；产品应该放置在干燥�
 
 ## 硬件连接
 **连接电源**
-* 连接电源与ABI2CAN_Converter+HUB
+* 连接电源与SD2CAN+HUB
   
 <img src="../../img/ABI2CAN_Converter使用说明3.png" style="width:720px">
 
@@ -51,7 +51,7 @@ Note: 产品供电严禁超过最大输入电压；产品应该放置在干燥�
 <img src="../../img/ABI2CAN_Converter使用说明5.png" style="width:600px">
 
 **连接电脑**
-*  用网线连接ABI2CAN_Converter与电脑
+*  用网线连接SD2CAN与电脑
 
 <img src="../../img/ABI2CAN_Converter使用说明6.png" style="width:600px">
 
