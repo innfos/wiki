@@ -33,6 +33,7 @@ $ git clone https://github.com/innfos/innfos-gluon-cpp-sdk-raspi.git
 ```sh
 $ cd innfos-gluon-cpp-sdk/example
 $ mkdir build
+$ cd build
 $ cmake ..
 $ make 
 ```
