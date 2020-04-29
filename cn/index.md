@@ -35,9 +35,11 @@
 
 ### QDD Pro
   * [QDD Pro-NE30-50-70](pages/QDDPro-NE30-50-70_v2_2.md)
+  <!--
   * [QDD Pro-NE30-80-70](pages/QDDPro-NE30-80-70_v2_2.md)
-  * [QDD Pro-PR60-50-90](pages/QDDPro-PR60-50-90_v2_2.md)
   * [QDD Pro-PR60-80-90](pages/QDDPro-PR60-80-90_v2_2.md)
+  -->
+  * [QDD Pro-PR60-50-90](pages/QDDPro-PR60-50-90_v2_2.md)
   * [QDD Pro-PR60-100-90](pages/QDDPro-PR60-100-90_v2_2.md)
 
 
@@ -74,8 +76,10 @@ Note: 以下型号SCA数据正在更新中，更多详情请咨询商务团队�
 
 ### QDD Pro
   * [QDD Pro-NE30-100-70](pages/QDDPro-NE30-100-70_v2_2.md)
+  <!--
   * [QDD Pro-PR60-50-80](pages/QDDPro-PR60-50-80_v2_2.md)
   * [QDD Pro-PR60-80-80](pages/QDDPro-PR60-80-80_v2_2.md)
+-->
   * [QDD Pro-PR60-100-80](pages/QDDPro-PR60-100-80_v2_2.md)
   * [QDD Pro-PR60-120-90](pages/QDDPro-PR60-120-90_v2_2.md)
   * [QDD Pro-NU80-50-110](pages/QDDPro-NU80-50-110_v2_2.md)
