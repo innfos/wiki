@@ -47,7 +47,7 @@ If there's any questions,please contact us at support@innfos.com.
   * [QDD-NU80-6](pages/QDD-NU80-6_v3_3.md)   <span style="color:red"> NEW！</span>
   * [QDD Lite-NE30-36](pages/QDD Lite-NE30-36_v1_8.md) <span style="color:red"> NEW！</span>
   * [QDD Lite-PR60-36](pages/QDD Lite-PR60-36_v1_8.md) <span style="color:red"> NEW！</span>
-  * [QDD Lite-EL20-36](pages/QDD Lite-EL20-36_v1_8.md) <span style="color:red"> NEW！</span>
+
 
 ### DD
   * [DD-NE30](pages/DD-NE30_v2_2.md)
@@ -58,24 +58,28 @@ If there's any questions,please contact us at support@innfos.com.
 ### Accessories
   * [ECB & HUB](pages/ECB&HUB_v3_0.md)
   
+### QDD Pro
+  * [QDD Pro-NE30-100-70](pages/QDDPro-NE30-100-70_v2_2.md)
+  * [QDD Pro-PR60-100-80](pages/QDDPro-PR60-100-80_v2_2.md)
+  * [QDD Pro-NU80-100-110](pages/QDDPro-NU80-100-110_v2_2.md)
+
+### Robots
+  * [The desktop 6-axis Lite version of the robotic arm（6L3）](pages/The_desktop_6-axis_Lite_version_of_the_robotic_arm（6L3）v1_0.md)
+
 ----  
 
 ## The Upcoming Products
 
 Note: The following SCA data is being updated. Please contact our sales team (sales@innfos.com) for more information.
 
-### QDD Pro
-  * [QDD Pro-NE30-100-70](pages/QDDPro-NE30-100-70_v2_2.md)
-  * [QDD Pro-PR60-100-80](pages/QDDPro-PR60-100-80_v2_2.md)
-  * [QDD Pro-NU80-100-110](pages/QDDPro-NU80-100-110_v2_2.md)
+
 
 
 ### QDD
   * [QDD-EL20-36](pages/QDD-EL20-36_v2_3.md)
   * [QDD-NU80-36](pages/QDD-NU80-36_v2_2.md)
   * [QDD-AT100-6](pages/QDD-AT100-6_v1_0.md)
-  
-
+  * [QDD Lite-EL20-36](pages/QDD Lite-EL20-36_v1_8.md) 
 
 ### DD
   * [DD-EL20](pages/DD-EL20_v2_3.md)
