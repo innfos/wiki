@@ -61,6 +61,19 @@
   * [ECB & HUB](pages/ECB&HUB_v3_0.md) <span style="color:red"> NEW！</span>
   * [SCA其他配件](pages/SCA其他配件_v1.0.1.md) 
  
+
+### QDD Pro
+  * [QDD Pro-NE30-100-70](pages/QDDPro-NE30-100-70_v2_2.md)
+  * [QDD Pro-PR60-100-80](pages/QDDPro-PR60-100-80_v2_2.md)
+  * [QDD Pro-NU80-100-110](pages/QDDPro-NU80-100-110_v2_2.md)
+  
+  
+## 胶子系列
+
+  * [胶子系列使用说明书](pages/GLUON_Operation_Instruction_v1_0_cn.md)
+  * [胶子系列C++软件开发工具包](pages/gluon_cpp_sdk_cn.md)
+  * [GLUON-6L3  本体参数手册](pages/GLUON-6L3_v1_0_cn.md)
+  
   
 ----
 
@@ -70,10 +83,6 @@
 
 Note: 以下型号SCA数据正在更新中，更多详情请咨询商务团队（sales@innfos.com）
 
-### QDD Pro
-  * [QDD Pro-NE30-100-70](pages/QDDPro-NE30-100-70_v2_2.md)
-  * [QDD Pro-PR60-100-80](pages/QDDPro-PR60-100-80_v2_2.md)
-  * [QDD Pro-NU80-100-110](pages/QDDPro-NU80-100-110_v2_2.md)
 
 
 ### QDD
@@ -88,12 +97,7 @@ Note: 以下型号SCA数据正在更新中，更多详情请咨询商务团队�
   * [DD-EL20](pages/DD-EL20_v2_3.md)
   * [DD-NU80](pages/DD-NU80_v2_2.md)
 
-## 胶子系列
 
-  * [胶子系列使用说明书](pages/GLUON_Operation_Instruction_v1_0_cn.md)
-  * [胶子系列C++软件开发工具包](pages/gluon_cpp_sdk_cn.md)
-  * [GLUON-6L3  本体参数手册](pages/GLUON-6L3_v1_0_cn.md)
-  * [GLUON-2L6-4L3 本体参数手册](pages/GLUON-2L6-4L3_v1_0_cn.md)
   
 
 - - - -
