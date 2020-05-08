@@ -49,7 +49,7 @@
   * [QDD-NU80-6](pages/QDD-NU80-6_v3_3.md)  <span style="color:red"> NEW！</span>
   * [QDD Lite-NE30-36](pages/QDDLite-NE30-36_v1_8.md) <span style="color:red"> NEW！</span>
   * [QDD Lite-PR60-36](pages/QDDLite-PR60-36_v1_8.md) <span style="color:red"> NEW！</span>
-  * [QDD Lite-EL20-36](pages/QDDLite-EL20-36_v1_8.md) <span style="color:red"> NEW！</span>
+
  
   
 
@@ -72,7 +72,7 @@
   * [胶子系列使用说明书](pages/GLUON_Operation_Instruction_v1_0_cn.md)
   * [胶子系列C++软件开发工具包](pages/gluon_cpp_sdk_cn.md)
   * [GLUON-6L3  本体参数手册](pages/GLUON-6L3_v1_0_cn.md)
-  
+  * [GLUON-2L6-4L3 本体参数手册](pages/GLUON-2L6-4L3_v1_0_cn.md)
   
 ----
 
@@ -88,7 +88,7 @@ Note: 以下型号SCA数据正在更新中，更多详情请咨询商务团队�
   * [QDD-EL20-36](pages/QDD-EL20-36_v2_3.md)
   * [QDD-NU80-36](pages/QDD-NU80-36_v3_3.md)
   * [QDD-AT100-6](pages/QDD-AT100-6_v1_0.md)
- 
+  * [QDD Lite-EL20-36](pages/QDDLite-EL20-36_v1_8.md)
 
  
 
