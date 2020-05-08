@@ -37,7 +37,9 @@ If there's any questions,please contact us at support@innfos.com.
   * [QDD Pro-NE30-50-70](pages/QDDPro-NE30-50-70_v2_2.md)
   * [QDD Pro-PR60-50-90](pages/QDDPro-PR60-50-90_v2_2.md)
   * [QDD Pro-PR60-100-90](pages/QDDPro-PR60-100-90_v2_2.md)
-
+  * [QDD Pro-NE30-100-70](pages/QDDPro-NE30-100-70_v2_2.md)
+  * [QDD Pro-PR60-100-80](pages/QDDPro-PR60-100-80_v2_2.md)
+  * [QDD Pro-NU80-100-110](pages/QDDPro-NU80-100-110_v2_2.md)
 
 
 
@@ -58,10 +60,6 @@ If there's any questions,please contact us at support@innfos.com.
 ### Accessories
   * [ECB & HUB](pages/ECB&HUB_v3_0.md)
   
-### QDD Pro
-  * [QDD Pro-NE30-100-70](pages/QDDPro-NE30-100-70_v2_2.md)
-  * [QDD Pro-PR60-100-80](pages/QDDPro-PR60-100-80_v2_2.md)
-  * [QDD Pro-NU80-100-110](pages/QDDPro-NU80-100-110_v2_2.md)
 
 ### Robots
   * [The desktop 6-axis Lite version of the robotic arm（6L3）](pages/The_desktop_6-axis_Lite_version_of_the_robotic_arm（6L3）v1_0.md)
