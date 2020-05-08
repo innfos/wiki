@@ -88,9 +88,7 @@ Note: The following SCA data is being updated. Please contact our sales team (sa
 
 Website is under maintenance. Stay tuned for future updates!
 
-* [The desktop 6-axis Lite version of the robotic arm（6L3）](pages/The_desktop_6-axis_Lite_version_of_the_robotic_arm（6L3）v1_0.md)
 
-Website is under maintenance. Stay tuned for future updates!
 
 - - - -
 
