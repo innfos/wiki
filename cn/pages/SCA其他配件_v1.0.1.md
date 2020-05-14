@@ -21,12 +21,11 @@ SCA执行器综合线缆为INNFOS专为SCA研发的一款线缆，连接HUB与SC
 多圈计数编码器电池（CR2032）适用于单台EL20系列执行器使用，多台EL20系列执行器串联使用选用多圈计数编码器电池（CR123A）。
 
 
-## 2400W可调直流电源:
-<table class="tableizer-table"style="width:847px"><thead><tr class="tableizer-firstrow"><th colspan="4"style="background: PaleTurquoise; color: black;">2400W可调直流电源参数</th></tr></thead><tbody><tr><td>2400W可调直流电源尺寸</td><td>长318&lowast;宽134&lowast;高87mm</td><td>净重</td><td>3.8KG</td></tr><tr><td>输入电压范围</td><td>AC110-240V</td><td>浪涌电流</td><td><30A</td></tr><tr><td>额定电压</td><td>230V,AC</td><td>低压功率</td><td>100VAC输入时输出功率1440W</td><tr><td>最大输入电流</td><td>18A</td><td>可调输出电压范围</td><td>0-60V（110VAC~220VAC）</td></tr><tr><td>频率</td><td>45-65HZ</td><td>可调输出电流范围</td><td>0-20A(110VAC) 0-40A(220VAC)</td></tr><tr><td rowspan="2">功率因数</td rowspan="2"><td rowspan="2">&gt;0.99（满载情况下）</td rowspan="2"><td>输出纹波</td><td>最大与最小电压≤100mV</td></tr><tr><td>电压调整率</td><td>&le;0.1%，±6mV</td></tr><tr><td>电流调整率</td><td>&le;0.6%，±20mA</td><td>负载调整率</td><td>电流&ge;18A时，电压不超±1V，<br>电流&le;10A时电压不超±0.5V</td></tr><tr><td>空耗</td><td>&le;90W(满高端输出电压状态）</td><td>耐压</td><td>1.8KV,AC,50Hz</td></tr><tr><td>泄露电流</td><td>&le;3mA,1.8K V/5S</td><td>绝缘电阻</td><td>&ge;5MΩ，DC500V/5S</td></tr><tr><td>湿度</td><td>&le;80%</td><td>存储温度</td><td>-30~70℃</td></tr></tbody></table>
+
 
 
 ## 版本变更记录
 **下表简单描述了版本变更记录**
 
-<table style="width:400px"><thead><tr style="background:PaleTurquoise"><th style="width:100px">版本号</th><th style="width:150px">更新时间</th><th style="width:150px">更新内容</th></tr></thead><tbody><tr><td>V1.0.3</td><td>2019.11</td><td>修改了配图和内文</td></tr><tr><td>V1.0.2</td><td>2019.09</td><td>增加表格与内文</td></tr>
+<table style="width:400px"><thead><tr style="background:PaleTurquoise"><th style="width:100px">版本号</th><th style="width:150px">更新时间</th><th style="width:150px">更新内容</th></tr></thead><tbody><tr><td>V1.0.4</td><td>2020.05</td><td>删除可调电源</td></tr><tr><td>V1.0.2</td><td>2019.09</td><td>增加表格与内文</td></tr><tr><td>V1.0.3</td><td>2019.11</td><td>修改了配图和内文</td></tr><tr><td>V1.0.2</td><td>2019.09</td><td>增加表格与内文</td></tr>
   <tr><td>V1.0.1</td><td>2019.09</td><td>增加EL20配件</td></tr><tr><td>V1.0.0</td><td>2019.04</td><td>第一个版本</td></tbody></table>
