@@ -1,33 +1,33 @@
-## 介绍
+## Introduction
 
-*    INNFOS CAN SDK STM32版 提供了友好的用户接口，包括了STM32F429单片机与多个INNFOS执行器进行通信的功能，可对多个执行器发送指令或者获取执行器状态和参数信息。本工程文件开放所有源代码，可根据项目需求定制或修改。
+*   INNFOS CAN SDK STM32 version provides user-friendly interfaces, including the function of communication between the STM32F429 single-chip microcomputer and INNFOS SCA, that can send commands to multiple actuators or retrieve actuator status and parameters. The project files are open source and could be customed and modified.
 
-*    建议初次接触API的用户优先阅读工程文件中的 `readme.txt` 说明文件。
-
-----
-
-## 下载 SDK
-
-访问[Download Link](https://github.com/innfos/INNFOS_CAN_SDK_STM32.git)获取MDK工程文件
+*    First runner of this API is highly recommended to read the readme.txt description file in the project folder.
 
 ----
 
-## 文件结构
+## Download SDK
+
+Visit [Download Link](https://github.com/innfos/INNFOS_CAN_SDK_STM32.git)to acquire the MDK project files.
+
+----
+
+## File structure
 
 <img src="../../img/cansdk1.png" style="width:600px">
 <br>
 
 <div class="md-text" style="text-align: center;"></div>
 
-*  `BSP`：STM32外设底层驱动文件
-*  `CORE`：Cortex-M4 内核控制文件与STM32启动文件
-*  `FWLIB`：STM32标准外设驱动库
-*  `MDK`：MDK工程文件
-*  `SCA`：INNFOS CAN 协议驱动文件以及应用实例代码
-*  `SYSTEM`：STM32编程环境常用接口
-*  `USER`：存放main.c等
-*  `Keilkiller.bat`：清除编译产生的中间文件
-*  `readme.txt`：相关说明
+*  `BSP`：STM 32 Peripheral Underlying driver files.
+*  `CORE`：Cortex-M4 Kernel control file and STM32 startup file.
+*  `FWLIB`：STM32 standard Peripheral driver library 
+*  `MDK`：MDK project files
+*  `SCA`：INNFOS CAN protocol driver files and codes for application examples.
+*  `SYSTEM`：Common interfaces for the STM32 programming environment. 
+*  `USER`：Storage for main.c. etc.
+*  `Keilkiller.bat`：erase intermediate files during compiling
+*  `readme.txt`：relevant descriptions
 <br>
 
 ### SCA文件目录说明
@@ -36,30 +36,30 @@
 
 <div class="md-text" style="text-align: center;"></div>
 
-*  `SCA_Protocol.c/h`：INNFOS CAN 通信协议层，该协议层完成了数据帧封装，解包等步骤，使用CAN端口进行数据收发；
-*  `SCA_API.c/h`：通信协议层的封装，包含了所有参数的读写API；
-*  `SCA_APP.c/h`：演示程序；
+*  `SCA_Protocol.c/h`： INNFOS CAN communication protocol layer. This layer completes procedures like data frame packing and unpacking, using CAN interface to send and receive data.
+*  `SCA_API.c/h`：Communication protocol layer package, including API reading and writing for all parameters.
+*  `SCA_APP.c/h`：Demo program.
 <br>
 
 ----
 
-## 示例代码编译运行
+## Example of compiling and running codes
 
-*  PC安装Keil MDK软件，工程所用版本为V5.21.1.0。所用单片机型号为`STM32F429IGT6`。
+*  Keil MDK on your PC, project version V5.21.1.0. Single-chip microcomputer model `STM32F429IGT6`。
 
 <img src="../../img/cansdk3.png" style="width:600px">
 <br>
 
 <div class="md-text" style="text-align: center;"></div>
 
-*  打开MDK文件夹下的`SCA_Controller.uvprojx`文件，出现MDK的使用界面以及`main.c`代码：
-
+*  Open file `SCA_Controller.uvprojx`under MDK folder, it will show user interface and `main.c` code of MDK.  
 <img src="../../img/cansdk4.png" style="width:600px">
 <br>
 
 <div class="md-text" style="text-align: center;"></div>
 
-*  此DEMO中使用了两台执行器，ID `0x01`连接`CAN1`端口，ID `0x02`连接`CAN2`端口。在`SCA_APP.c`文件中有多处语句使用了该ID，请根据实际使用的执行器求修改所有对应的ID数值。若只使用一台执行器，请注释掉多余的代码，并将`SCA_API.c`文件下的宏定义`SCA_NUM_USE`修改为1。
+*  2 actuators are adopted in this demo, actuator 1 (ID `0x01`) connects to `CAN1`, actuator 2 (ID `0x02`) connects `CAN2`. There are multiple sentences in `SCA_APP.c` that adopted these IDs. Please adjust the ID number according to the actuator(s) you are using. If only 1 actuator is connected, please put the surplus codes into comments and adjust macro definition of `SCA_NUM_USE` under `SCA_API.c` to 1.
+
 
 ```sh
 void SCA_Init()
@@ -86,28 +86,28 @@ void SCA_Init()
 }
 ```
 
-*  确保单片机通过`ST-LINK`或`J-LINK`等调试工具连接至PC，并能够正常工作。点击全部编译按钮，无错通过后点击下载按钮下载至单片机。
+*  Make sure to connect the single-chip microcomputer to the PC via debugging tools like ST-LINK or J- LINK and confirm the microcomputer is in working order. Click compile all, if no error occurs, then click download to load to your single-chip microcomputer.
 <img src="../../img/cansdk6.png" style="width:300px">
 <br>
 
 <div class="md-text" style="text-align: center;"></div>
 
-*  下载完成后，将单片机的`串口1（PA9 PA10）`通过USB转串口工具连接至PC。打开虚拟串口终端软件，将波特率设为`115200`，1停止位，8数据位，0校验位，接收数据以ASC码形式显示，以16进制形式发送数据。发送数字7打印帮助信息。
+*  After downloading is completed, connect serial port 1 (PA9 PA10) of the microcomputer to the PC via a USB to serial adapter. Open the virtual serial port terminal software, set the Baud rate to 115200. Data received will show as ASC codes. Data sent will show as Hex. Send number 7 to print out help information.
 
 <img src="../../img/cansdk7.png" style="width:600px">
 <br>
 <div class="md-text" style="text-align: center;"></div>
 
 
-*  根据提示信息，初始化执行器，依次发送指令，结合`SCA_APP.c`下的代码观察执行器的动作变化。第一次使用执行器时，可以选择1号功能轮询ID，然后修改例程中的对应ID号。
+*  Initialize the actuator(s) based on the prompt message, send commands in sequence. Observe the actuator’s movement and changes combine with codes under SCA_APP.c. When running the actuators for the first time, you can select function 1 to poll IDs, and adjust the ID number in the routine accordingly. 
 <br>
 
 
-## 进阶使用
+## Advanced application
 
-### 驱动架构
+### Driver structure
 
-* INNFOS CAN SDK STM32版将驱动程序进行了分层处理。
+* INNFOS CAN SDK STM32 splits the driver program into different layers.。
 
 *  `SCA_Protocol.c/h`为协议层，调用了STM32 CAN控制器收发数据的接口，提供了5类写入命令与读取命令的软件接口。这些接口会被API层的函数调用，针对不同命令对收发的数据进行打包或解包。头文件中包含了所有指令的宏定义，通信错误类型，以及用来保存每个执行器参数信息的信息句柄结构体定义。为了实现多CAN端口的支持，在协议层中加入了对CAN端口的描述句柄，可使用此句柄定义多个收发端口，需要在初始化程序中对每个端口的发送函数和重试次数进行定义，然后绑定到每个SCA的信息句柄中。另外，为方便移植，协议层提供了统一的数据接收接口`canDispatch(CanRxMsg* RxMsg)`，此接口需要在有新的CAN数据包接收时进行调用并将数据传入。用户可用轮询或者中断的方式来调用此函数，本例程采用中断调用。
 
