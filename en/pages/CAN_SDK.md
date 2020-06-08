@@ -141,37 +141,38 @@ void SCA_Init()
 #endif
 ```
 
-*  ●When `SCA_DEBUGER` macro Define is 1, a debugging information interface will open. Default function is to call `printf` to output error code. It is suitable for debugging softwares.
+*  When `SCA_DEBUGER` macro Define is 1, a debugging information interface will open. Default function is to call `printf` to output error code. It is suitable for debugging softwares.
 
 ### Calling API
 
 *  Before calling `API` you will need to initialize the controller, you can refer to the `SCA_Init()` function under the application layer. First define the description handle of CAN interfaces based on their numbers, then assign values for those interfaces in the initialization function. Among them, `Retry`(times for resending if fails) and `Send`(sending function) must be defined, `Canport`(interface number) could be used for marking the interface number. After all CAN interface description handles are initialized, you will need to bind each ID and the CAN interface it calls with `setupActuators()` function. For each actuator, you only need to run this function once at every initialization, make sure that times of calling this function should not exceed the number defined in `SCA_NUM_USE`.
 
-*  完成初始化并开机后，可正常使用接口的层所有函数。所有的`API`以`ID`来区分总线上的执行器，如读写位置的函数。写位置时，传入要操作的执行器ID，与实际位置值（±125.0R）；读位置时，只需传入要读取的执行器ID即可将当前位置值读入对应的信息句柄中。大部分API带有返回值，返回本次数据通信的结果，当返回`SCA_NoError（0）`时，该指令执行成功，返回其他参见`SCA_Protocol.h`下的错误类型定义。
+*  After initialization and switching on, you can use all functions in this layer of the interfaces normally. All `APIs` use `ID` to distinguish the actuators connected to the bus line, like the functions for reading and writing the position. When writing the position, input the ID of the actuator that need to be manipulated and its actual position value(+-125.0R); When reading the position, you only need to input the ID of the SCA you need to inquire, then the current position will be transferred to the corresponding information handle. Most of the APIs have a return value to return the result of current data communication. If returns `SCA_NoError(0)`, this this procession is successful, but if returns other result, please refer to the definition of error types under `SCA_Protocol.h`. 
 
 <img src="../../img/cansdk9.png" style="width:600px">
 
 <div class="md-text" style="text-align: center;"></div>
 
-*  所有的信息句柄会以结构体数组的形式进行初始化定义，定义的长度为`SCA_NUM_USE`，与实际使用的SCA数量保持一致。所有以ID区分执行器的API中，会有以ID查找信息句柄的过程，调用 `getInstance()`函数。该函数会返回指定ID的信息句柄地址，若ID不存在则返回NULL。用户想要获取每个执行器的参数信息，则定义个一个 `SCA_Handler_t`类型的指针，然后用 `getInstance()` 函数获取对应ID的地址，用指针查看对应的参数即可。同时，该类型的指针也可以传入`Fast`型函数中，快速的执行指令，进而省略查找信息句柄的过程，当使用的SCA数量较多时，推荐使用此种类型的函数。
+*  Most of the information handle defines initialization in the form of structure arrays, definition length is `SCA_NUM_USE`, this should be consistent with the actual SCA number used. In every API that distinguishes SCAs by their IDs, there will be a procession of finding the information handle through ID, which calls function `getInstance()`. This function will return the address of the Information handle of the targeted ID, if the ID does not exist then it returns NULL. If you wish to acquire the parameter for every actuator, then you should define a pointer called `SCA_Handler_t`. Use function `getInstance()` to acquire the address of the corresponding ID, you can check the corresponding parameter by this pointer. Meanwhile, this type of pointer can be transferred to function type `Fast`, to proceed orders real quick. Moreover, it will skip the procedure of finding the information handle, when the number of SCA connected is pretty big, we recommend you use this type of function. 
+
 
 *  当修改完执行器的参数时，需要使用`saveAllParams()`函数将参数永久保存，否则下次开机后执行器内依然为未修改的参数。
 
 
-### 移植相关
-*  当需要将驱动程序移植到其他平台时，需要将工程文件夹下的SCA文件夹拷贝至目标工程内，并实现相应的软件接口。
+### Software Porting
+* If you need to port this driver software to other platforms, you will need to copy the SCA folder to the targeted project, and realize corresponding software interfaces. 
 
-*  `1.`平台实现CAN底层驱动，提供发送函数，并将函数封装为Send_t定义的格式（在协议层头文件中描述）。
+*  `1.` The platform supports CAN Low-Level-Driver, provides sending functions and pack the functions in Send_t form(Describe it in the head file of the protocol layer)。
 
-*  `2.`在数据接收的接口中调用协议层内`canDispatch(CanRxMsg* RxMsg)`函数来解析数据，其中`CanRxMsg` 为CAN数据包的接收类型结构体。移植时，请自行根据平台定义`CanRxMsg`结构类型，此处默认使用STM32标准库函数中的接收结构。
+*  `2.` Call `canDispatch(CanRxMsg*RxMsg)` function in the data receiving interface, to analyse data. `CanRxMsg` is a receiving structure for the CAN data package. When porting, please refer to your platform and define the structure type of `CanRxMsg`, the default structure is STM32 standard function.  
 
-*  `3.`在接口层中，替换延时函数的宏定义，此处需要实现微秒级延时，若以毫秒为单位延时可能会造成指令执行效率低下的现象。若开启了调试接口功能，还需要实现相应的信息打印函数，默认使用`printf`。根据CPU速率修改阻塞超时时间，若该值太小可能会造成数据正常接收但函数返回错误的现象。
+*  `3.` In the interface layer, to replace the macro definition for delay functions, you will need to realize Microsecond-level delay, if you choose millisecond as the unit, the processing of orders could be very unproductive. If you enabled debugging, you will also need to have the corresponding output function, default is `printf`. Based on CPU speed you can adjust the overtime value, if this value is too small, it could result in correctly receiving data, but the function will return as error.
 
-*  `4.`替换相关的头文件，参考例程使用。
+*  `4.`Replace the corresponding head files, you can refer to the sample program.
 
 ----
 
-## 版本变更记录
+## Versions History
 
-<table class="tableizer-table"><thead><tr class="tableizer-firstrow" style=background:PaleTurquoise><th>版本</th><th>更新时间</th><th>更新内容</th></tr></thead><tbody><tr><td>V1.2.1</td><td>2019.11.26</td><td>修改图片，插入代码段</td></tr><tr><td>V1.2.0</td><td>2019.11.15</td><td>SDK更新至1.5.3版本，增加描述内容</td></tr><tr><td>V1.1.0</td><td>2019.08.21</td><td>SDK更新至1.5.0版本，增加描述内容</td></tr><tr><td>V1.0.0</td><td>2019.08.12</td><td>第一个版本</td></tr></tbody></table>
+<table class="tableizer-table"><thead><tr class="tableizer-firstrow" style=background:PaleTurquoise><th>Version</th><th>Update time</th><th>Content</th></tr></thead><tbody><tr><td>V1.2.0</td><td>2019.11.15</td><td>SDK version 1.5.3, More description added</td></tr><tr><td>V1.1.0</td><td>2019.08.21</td><td>SDK version 1.5.3, More description added</td></tr><tr><td>V1.0.0</td><td>2019.08.12</td><td>The first version</td></tr></tbody></table>
 
