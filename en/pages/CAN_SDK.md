@@ -109,18 +109,17 @@ void SCA_Init()
 
 * INNFOS CAN SDK STM32 splits the driver program into different layers.。
 
-*  `SCA_Protocol.c/h`为协议层，调用了STM32 CAN控制器收发数据的接口，提供了5类写入命令与读取命令的软件接口。这些接口会被API层的函数调用，针对不同命令对收发的数据进行打包或解包。头文件中包含了所有指令的宏定义，通信错误类型，以及用来保存每个执行器参数信息的信息句柄结构体定义。为了实现多CAN端口的支持，在协议层中加入了对CAN端口的描述句柄，可使用此句柄定义多个收发端口，需要在初始化程序中对每个端口的发送函数和重试次数进行定义，然后绑定到每个SCA的信息句柄中。另外，为方便移植，协议层提供了统一的数据接收接口`canDispatch(CanRxMsg* RxMsg)`，此接口需要在有新的CAN数据包接收时进行调用并将数据传入。用户可用轮询或者中断的方式来调用此函数，本例程采用中断调用。
+*  `SCA_Protocol.c/h` is the protocol layer that calls the interface of the STM32 CAN controller for sending and receiving data. It provides 5 types of software interfaces for reading and writing commands. Those interfaces will be called by functions in the API layer and packing/unpacking data according to the command. The head file includes macro definition for all commands, communication error type, and storage every actuator’s struct typedef handle of its parameter information. To support multiple CAN interfaces, we added a descriptive handle for CAN interface in this protocol layer. You can use this handle to define multiple interfaces for sending and receiving. Also you will need to define the sending function and retry times for each interface in the initialization program then bind to each SCA’s information handle. Moreover, this protocol layer provides unified data sending/receiving interface `canDispatch(CanRxMsg* RxMsg)` to make porting easier. This interface will be called and send date in when there is new CAN data pack received.  
 
-*  `SCA_API.c/h`为接口层，提供了所有参数的读写功能，用户可直接调用该层的API。该层代码将指令与收发数据进行组合，并调用相应的读写API实现数据收发。大部分API都带有返回值，返回该次通信的结果，返回`SCA_NoError`为操作成功。详细定义在`SCA_Protocol.h`下。头文件中包含了执行器6种操作模式和2种状态的宏定义，以及参数配置的宏定义。
+*  `SCA_API.c/h` is the interface layer and provides reading and writing functions for all parameters. Users can directly call the API in this layer. Codes in this layer combine command & data, also call the corresponding API for data sending and receiving. Most of the APIs include return value that returns to the result of current communication if returned to `SCA_NoError` then the operation is successful. Detailed definition is under `SCA_Protocol.h`. The head file includes macro definition for six operating modes and 2 statuses of the actuator, as well as parameter configuration.
 
-*  `SCA_APP.c/h`为应用层，提供了基本的示例程序与驱动的初始化方式。此处用户需要关注初始化程序`SCA_Init()`，其中包含了对CAN端口的配置，对SCA信息句柄的绑定以及获取参数的指针使用方式。
+*  `SCA_APP.c/h` is the application layer, provides basic sample program and driver initialization. Users should focus on initialization program `SCA_Init()`, which includes configuration of CAN interface, binding SCA message handle and acquiring using of parameter pointers. 
 
-*  为了对执行器进行更高阶的控制，本例程采实现了阻塞和非阻塞可选的执行方式。带有参数`isBlock`的API可将此参数设为`Block（阻塞）`或`Unblock（非阻塞）`来控制其执行方式。阻塞执行时，命令发出后会等待执行器的返回数据，若超时则返回响应的错误代码，适用于比较重要的参数（如切换操作模式）。非阻塞执行时，命令发出后会自动延时`200us`，以防止CAN总线负载过高而导致数据出错，适用于参数刷新等操作。
+*  To perform higher level control of the actuator, this routine enables switching of execution methods between `Block` and `Unblock`. API with parameter `isBlock` could modify this parameter to Block or Unblock to control the execution methods. When Block is executed, the command will wait for return of the actuator after it was sent. If overtime occurs, it will return an error code, which applies to lethal parameters(like switching operation mode). When unBlock is executed, the command will auto delay for 200us after it was sent, to avoid error in case of CAN bus line overload, this applies operations like parameter refreshing.
 
 ### 参数配置
 
-*  在开发项目时，需先配置系统参数，相关宏定义在`SCA_API.h`下。由于本例程支持阻塞式的通信方式，需要根据CPU速度调整阻塞超时时间，其中开关机时间较长，其他参数返回时间较短。在非阻塞执行程序时，为了防止总线过载，加入了保护延时，`SCA_Delay`为延时函数的接口，`SendInterval`为延时大小，默认每次非阻塞发送后延时`200us`。
-
+*  During your project development, you will need to configure system parameters, relevant macro definition is under `SCA_API.h`. Due to this routine supports communication methods like Block, it will require adjusting Block overtime based on CPU speed. The time of switching on and off is a bit long, while other parameters have a very short return time. When executing programs under Unblock, a protective delay will be added in order to prevent busline overload. `SCA_Delay` is the interface of the delay function. `SendInterval` is the value of the delay time, default setting is `200us` after every Unblock sent.
 ```sh
 /* Configuration */
 #define SCA_NUM_USE		2		//The number of SCA used in this project
@@ -142,11 +141,11 @@ void SCA_Init()
 #endif
 ```
 
-*  当`SCA_DEBUGER`宏定义为1时，会开启调试信息接口，默认调用`printf`打印错误数据，可用于调试软件。
+*  ●When `SCA_DEBUGER` macro Define is 1, a debugging information interface will open. Default function is to call `printf` to output error code. It is suitable for debugging softwares.
 
-### API调用
+### Calling API
 
-*  在调用`API`前需要对控制器进行初始化，具体方法参照应用层下的`SCA_Init()`函数。先根据所要使用的CAN端口数量定义CAN端口描述句柄，然后在初始化函数中为这些端口进行赋值操作，其中`Retry`（失败重发次数）和`Send`（发送函数）是必须定义的，`CanPort`（端口号）可用于标识端口号。完成所有CAN端口描述句柄的初始化后，需要使用`setupActuators()`函数将每个ID和其使用的CAN端口进行绑定，每个执行器只需要在初始化时执行一次该函数，注意此函数的调用次数不应超过`SCA_NUM_USE`定义的大小。
+*  Before calling `API` you will need to initialize the controller, you can refer to the `SCA_Init()` function under the application layer. First define the description handle of CAN interfaces based on their numbers, then assign values for those interfaces in the initialization function. Among them, `Retry`(times for resending if fails) and `Send`(sending function) must be defined, `Canport`(interface number) could be used for marking the interface number. After all CAN interface description handles are initialized, you will need to bind each ID and the CAN interface it calls with `setupActuators()` function. For each actuator, you only need to run this function once at every initialization, make sure that times of calling this function should not exceed the number defined in `SCA_NUM_USE`.
 
 *  完成初始化并开机后，可正常使用接口的层所有函数。所有的`API`以`ID`来区分总线上的执行器，如读写位置的函数。写位置时，传入要操作的执行器ID，与实际位置值（±125.0R）；读位置时，只需传入要读取的执行器ID即可将当前位置值读入对应的信息句柄中。大部分API带有返回值，返回本次数据通信的结果，当返回`SCA_NoError（0）`时，该指令执行成功，返回其他参见`SCA_Protocol.h`下的错误类型定义。
 
