@@ -30,7 +30,7 @@ Visit [Download Link](https://github.com/innfos/INNFOS_CAN_SDK_STM32.git)to acqu
 *  `readme.txt`：relevant descriptions
 <br>
 
-### SCA文件目录说明
+### SCA file directory description
 
 <img src="../../img/cansdk2.png" style="width:600px">
 
@@ -117,7 +117,7 @@ void SCA_Init()
 
 *  To perform higher level control of the actuator, this routine enables switching of execution methods between `Block` and `Unblock`. API with parameter `isBlock` could modify this parameter to Block or Unblock to control the execution methods. When Block is executed, the command will wait for return of the actuator after it was sent. If overtime occurs, it will return an error code, which applies to lethal parameters(like switching operation mode). When unBlock is executed, the command will auto delay for 200us after it was sent, to avoid error in case of CAN bus line overload, this applies operations like parameter refreshing.
 
-### 参数配置
+### Parameter configuration
 
 *  During your project development, you will need to configure system parameters, relevant macro definition is under `SCA_API.h`. Due to this routine supports communication methods like Block, it will require adjusting Block overtime based on CPU speed. The time of switching on and off is a bit long, while other parameters have a very short return time. When executing programs under Unblock, a protective delay will be added in order to prevent busline overload. `SCA_Delay` is the interface of the delay function. `SendInterval` is the value of the delay time, default setting is `200us` after every Unblock sent.
 ```sh
@@ -156,7 +156,7 @@ void SCA_Init()
 *  Most of the information handle defines initialization in the form of structure arrays, definition length is `SCA_NUM_USE`, this should be consistent with the actual SCA number used. In every API that distinguishes SCAs by their IDs, there will be a procession of finding the information handle through ID, which calls function `getInstance()`. This function will return the address of the Information handle of the targeted ID, if the ID does not exist then it returns NULL. If you wish to acquire the parameter for every actuator, then you should define a pointer called `SCA_Handler_t`. Use function `getInstance()` to acquire the address of the corresponding ID, you can check the corresponding parameter by this pointer. Meanwhile, this type of pointer can be transferred to function type `Fast`, to proceed orders real quick. Moreover, it will skip the procedure of finding the information handle, when the number of SCA connected is pretty big, we recommend you use this type of function. 
 
 
-*  当修改完执行器的参数时，需要使用`saveAllParams()`函数将参数永久保存，否则下次开机后执行器内依然为未修改的参数。
+*  When modifying the actuator parameters, you need to use the `saveAllParams()` function to permanently save the parameters, otherwise the actuator will remain unmodified parameters after the next boot.
 
 
 ### Software Porting
