@@ -18,6 +18,7 @@ If there's any questions,please contact us at support@innfos.com.
 ------------
 
   * [CAN Communication Protocol](pages/CAN_Communication_Protocol.md)
+  * [INNFOS CAN Communication SDK (STM32)](pages/CAN_SDK.md)
   * [Ethernet Configuration](pages/Ethernet_Configuration.md)
   * [Ethernet Communication Protocol](pages/Ethernet_Communication_Protocol.md)
   * [Ethernet Communication SDK(C++)](pages/Ethernet_Communication_SDK_C++.md)
