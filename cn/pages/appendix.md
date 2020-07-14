@@ -77,6 +77,7 @@ RPM/s^2: 对加速度的一阶时间导数，即加加速度（急动度），�
 
 ### SCA多圈计数功能使用注意事项
 Note: SCA全系列执行器都有多圈计数功能，以下是多圈计数功能使用注意事项
+
 *   首次拿到SCA需要连接好产品，上电，打开上位机，点击开机，如图示点击Awake LPH 按钮至开。此操作为打开多圈计数功能，如有错误请点击清除。
 <img src="../../img/awake-open.png" style="width:400px">
 
@@ -87,7 +88,7 @@ Note: SCA全系列执行器都有多圈计数功能，以下是多圈计数功�
 <img src="../../img/awake-close.png" style="width:400px">
 
 <div class="md-text" style="text-align: center;"><strong>图6</strong></div>
-*   4、出现电压过低请连接电源关机充电。（注：上电就是充电状态，正常经常使用的SCA不需要单独充电）。
+*  出现电压过低请连接电源关机充电。（注：上电就是充电状态，正常经常使用的SCA不需要单独充电）。
 
 
 ## 版本变更记录
