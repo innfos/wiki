@@ -72,8 +72,26 @@ RPM/s^2: 对加速度的一阶时间导数，即加加速度（急动度），�
 
 ----
 
+
+## 附录E
+
+### SCA多圈计数功能使用注意事项
+Note: SCA全系列执行器都有多圈计数功能，以下是多圈计数功能使用注意事项
+*   首次拿到SCA需要连接好产品，上电，打开上位机，点击开机，如图示点击Awake LPH 按钮至开。此操作为打开多圈计数功能，如有错误请点击清除。
+<img src="../../img/awake-open.png" style="width:400px">
+
+<div class="md-text" style="text-align: center;"><strong>图4</strong></div>
+
+*   在打开多圈功能模式下功能正常可以使用3周。在关闭多圈计数功能下，可以在存储3个月后上电开机电池有电。LPH Voltage 为内置电池电压，高于2.5V 多圈功能都能正常使用。
+*   在需要存储或运输时建议关闭多圈功能。如上所示开机点击Awake LPH至关。
+<img src="../../img/awake-close.png" style="width:400px">
+
+<div class="md-text" style="text-align: center;"><strong>图5</strong></div>
+*   4、出现电压过低请连接电源关机充电。（注：上电就是充电状态，正常经常使用的SCA不需要单独充电）。
+
+
 ## 版本变更记录
 
 下表简单描述了版本变更记录
 
-<table><thead><tr style="background:PaleTurquoise"><th>版本号</th><th>更新时间</th><th>更新内容</th></tr></thead><tbody><tr><td>V1.0.2</td><td>18.12.07</td><td>增加了示波器和S曲线模式的使用说明</td></tr><tr><td>V1.0.1</td><td>18.04.28</td><td>全文更新配图</td></tr><tr><td rowspan=4>V1.0.0</td><td>18.03.14</td><td>更新了全章节的配图</td></tr><tr><td>18.03.12</td><td>修改了开机错误提示，更新了3.1章节3.2章节的部分配图</td></tr><tr><td>18.01.15</td><td>增加了如何修改执行器编号</td></tr><tr><td>18.01.04</td><td>添加了开机按钮</td></tr></tbody></table>
+<table><thead><tr style="background:PaleTurquoise"><th>版本号</th><th>更新时间</th><th>更新内容</th></tr></thead><tbody><tr><td>V1.0.3</td><td>20.07.09</td><td>增加了多圈计数功能使用注意事项</td></tr><tr><td>V1.0.2</td><td>18.12.07</td><td>增加了示波器和S曲线模式的使用说明</td></tr><tr><td>V1.0.1</td><td>18.04.28</td><td>全文更新配图</td></tr><tr><td rowspan=4>V1.0.0</td><td>18.03.14</td><td>更新了全章节的配图</td></tr><tr><td>18.03.12</td><td>修改了开机错误提示，更新了3.1章节3.2章节的部分配图</td></tr><tr><td>18.01.15</td><td>增加了如何修改执行器编号</td></tr><tr><td>18.01.04</td><td>添加了开机按钮</td></tr></tbody></table>
