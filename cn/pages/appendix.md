@@ -88,6 +88,7 @@ Note: SCA全系列执行器都有多圈计数功能，以下是多圈计数功�
 <img src="../../img/awake-close.png" style="width:400px">
 
 <div class="md-text" style="text-align: center;"><strong>图6</strong></div>
+
 *  出现电压过低请连接电源关机充电。（注：上电就是充电状态，正常经常使用的SCA不需要单独充电）。
 
 
