@@ -183,8 +183,8 @@ Note: 参数内容data\[0\~3\]高位在前，低位在后。为_IQ24格式。_IQ
 数据06为梯形位置模式,参见[模式表](#!pages/Ethernet_Communication_Protocol.md#附录B:模式表 "wikilink")，`3F 42`为[CRC校验码](#!pages/Ethernet_Communication_Protocol.md#CRC校验码计算方法 "wikilink")，激活成功后会收到返回：
 `EE 06 07 00 01 01 ED`
 这时可以发送位置指令：
-`EE 06 0A 00 04 00 01 00 00 01 D8 ED`
-其中0A位设置位置值的指令，`00 01 00 00`位设置的位置值，该值是设置目标位置`1R`,通过公式：`目标位置*（2^24）`计算取整获得的IQ24值，关于IQ24的介绍请参考[ IQmath简介](#!pages/Ethernet_Communication_Protocol.md#IQmath简介 "wikilink")。
+`EE 06 0A 00 04 01 00 00 00 01 D8 ED`
+其中0A位设置位置值的指令，`01 00 00 00`位设置的位置值，该值是设置目标位置`1R`,通过公式：`目标位置*（2^24）`计算取整获得的IQ24值，关于IQ24的介绍请参考[ IQmath简介](#!pages/Ethernet_Communication_Protocol.md#IQmath简介 "wikilink")。
 
 ### 其他
 
