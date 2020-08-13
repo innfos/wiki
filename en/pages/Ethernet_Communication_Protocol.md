@@ -197,8 +197,8 @@ Send command to activate Ladder Position Mode:
 Data `0x06` is in trapezoidal position mode [see mode table](#!pages/Ethernet_Communication_Protocol.md#Appendix_B:mode_commands "wikilink")，`0x3F 0x42` is [CRC Check code](#!pages/Ethernet_Communication_Protocol.md#CRC_check_code_calculation_method "wikilink")  that will receive a return after successful activation:
 `0xEE 0x06 0x07 0x00 0x01 0x01 0xED`
 At this point a speed command can be sent:
-`0xEE 0x06 0x0A 0x00 0x04 0x00 0x01 0x00 0x00 0x01 0xD8 0xED`
-The `0x0A` bit sets the speed value command and the `0x00 0x01 0x00 0x00` bit sets the position value. The value is the set target position 1R. Calculate the IQ24 value obtained by the formula: target position /128*(2^24), IQ24 Please refer to the introduction of [ IQmath for an introduction](#!pages/Ethernet_Communication_Protocol.md#IQmath_Introduction "wikilink")。
+`0xEE 0x06 0x0A 0x00 0x04 0x01 0x00 0x00 0x00 0x01 0xD8 0xED`
+The `0x0A` bit sets the speed value command and the `0x01 0x00 0x00 0x00` bit sets the position value. The value is the set target position 1R. Calculate the IQ24 value obtained by the formula: target position /128*(2^24), IQ24 Please refer to the introduction of [ IQmath for an introduction](#!pages/Ethernet_Communication_Protocol.md#IQmath_Introduction "wikilink")。
 
 
 Note: the commands for setting the speed current position value are not returned, and other commands are returned. For more communication instructions, please refer to [Ethernet communication protocol command reference](#!pages/Ethernet_Communication_Protocol.md#Ethernet_Communication_Protocol_Command_Reference "wikilink")。
