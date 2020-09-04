@@ -64,7 +64,7 @@ If there's any questions,please contact us at support@innfos.com.
 
 ### Robots
   * [The desktop 6-axis Lite version of the robotic arm（6L3）](pages/The_desktop_6-axis_Lite_version_of_the_robotic_arm（6L3）v1_0.md)
-  * [The desktop 6-axis Lite for ros）](pages/ros_gluon.md)
+  * [The desktop 6-axis Lite for ros](pages/ros_gluon.md)
 
 ----  
 
