@@ -20,7 +20,7 @@ $ catkin_make
 ## Set up enviroment
 Source all setup.bash files to set up your enviroment.
 
-# System configure ROS environment variables automatically every time you open a ternimal
+## System configure ROS environment variables automatically every time you open a ternimal
 ```sh
 echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
 echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
