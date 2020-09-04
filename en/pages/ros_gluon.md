@@ -34,8 +34,9 @@ If you are using a virtual machine running Linux, turn off graphics hardware acc
 
 ### Rviz Control Mode:
 Show the urdf model of gluon in rviz, then drag the scroll bar of each axis in rviz to control the movement of the manipulator.
-
+```sh
 roslaunch gluon display.launch
+```
 
 ### Moveit+Rviz Control Mode:
 Display the gluon model in rviz, then use the rviz interface of moveit to drag the manipulator for motion planning, click the "execute" button in moveit, and control the gluon to move with the virtual manipulator.
