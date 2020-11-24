@@ -68,10 +68,7 @@
   
   
 ## 胶子系列
-
-
   * [ROS for GLUON](pages/ros_gluon.md)
-  * [胶子系列C++软件开发工具包](pages/gluon_cpp_sdk_cn.md)
   * [GLUON-6L3  本体参数手册](pages/GLUON-6L3_v1_0_cn.md)
   * [GLUON-2L6-4L3 本体参数手册](pages/GLUON-2L6-4L3_v1_0_cn.md)
   
