@@ -1,7 +1,69 @@
 Gluon ROS软件包
 =====
 
-这些软件包支持Moveit！，RViz和与Gluon的LAN通信。
+## 介绍
+
+*   本说明书是针对胶子系列的使用说明。
+*   在使用之前请仔细阅读本说明书内容。
+
+## 产品实拍效果图
+
+以GL_6L3为例:
+
+<img src="../../img/13.jpg" style="width:600px">
+
+## 硬件需求与连接
+
+**硬件需求**
+
+<img src="../../img/12.png" style="width:600px">
+
+从前到后、从左到右依次为：六轴机械臂一台、插好终端电阻和回馈制动电容的ECB+HUB、急停开关+电源、电脑。
+
+
+**连接ECB**
+
+**连接电源**
+
+*   连接电源与`ECB+HUB`
+
+<img src="../../img/cdy.jpg" style="width:600px">
+<img src="../../img/cwdy.jpg" style="width:600px">
+
+**连接执行器及其配件**
+
+*   连接`执行器综合线缆`
+
+<img src="../../img/cx.jpg" style="width:600px">
+<img src="../../img/cwx.jpg" style="width:600px">
+
+**连接机械臂**
+
+*   用执行器连接线连接`HUB`与执行器
+
+<img src="../../img/5.png" style="width:600px">
+
+**连接电脑**
+
+*   用网线连接`ECB`与电脑
+
+<img src="../../img/7.png" style="width:600px">
+
+**连接后整体视图**
+
+<img src="../../img/12.png" style="width:600px">
+
+
+**开启电源**
+
+*   开启电源. 执行器的供电电压范围为直流24V-45V.
+
+<img src="../../img/poweron.png" style="width:600px">
+
+*   上电以后，执行器LED状态灯会变成黄色闪烁，启动执行器后，LED会变成绿色闪烁，这时就可以与执行器进行通信了。如果执行器内部出现错误，LED灯会变为红色闪烁，请检查执行器错误代码。
+
+
+
 
 ## 下载并安装
 [下载](https://github.com/innfos/ros_gluon.git) ros 软件包
