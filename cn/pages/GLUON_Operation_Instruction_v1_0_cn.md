@@ -10,15 +10,18 @@
 
 以GL_6L3为例:
 
-<img src="../../img/13.jpg" style="width:600px">
+<img src="../../img/gloun.jpg" style="width:600px">
+<img src="../../img/gloun1.jpg" style="width:600px">
+<img src="../../img/gloun3.jpg" style="width:600px">
+<img src="../../img/gloun2.jpg" style="width:600px">
 
 ## 硬件需求与连接
 
 **硬件需求**
 
-<img src="../../img/12.png" style="width:600px">
+<img src="../../img/gloun15.jpg" style="width:600px">
 
-从前到后、从左到右依次为：六轴机械臂一台、插好终端电阻和回馈制动电容的ECB+HUB、急停开关+电源、电脑。
+从前到后、从左到右依次为：六轴机械臂一台、插好终端电阻和回馈制动电容的ECU、急停开关+电源、电脑。
 
 
 **连接ECB**
@@ -27,31 +30,32 @@
 
 *   连接电源与`ECB+HUB`
 
-<img src="../../img/cdy.jpg" style="width:600px">
-<img src="../../img/cwdy.jpg" style="width:600px">
+<img src="../../img/gloun4.jpg" style="width:600px">
+<img src="../../img/gloun5.jpg" style="width:600px">
 
 **连接执行器及其配件**
 
 *   连接`执行器综合线缆`
 
-<img src="../../img/cx.jpg" style="width:600px">
-<img src="../../img/cwx.jpg" style="width:600px">
+<img src="../../img/gloun8.jpg" style="width:600px">
+<img src="../../img/gloun9.jpg" style="width:600px">
 
 **连接机械臂**
 
-*   用执行器连接线连接`HUB`与执行器
+*   用执行器连接线连接`ECU`与执行器
 
-<img src="../../img/5.png" style="width:600px">
+<img src="../../img/gloun10.jpg" style="width:600px">
+<img src="../../img/gloun11.jpg" style="width:600px">
 
 **连接电脑**
 
-*   用网线连接`ECB`与电脑
+*   用网线连接`ECU`与电脑
 
-<img src="../../img/7.png" style="width:600px">
+<img src="../../img/gloun14.jpg" style="width:600px">
 
 **连接后整体视图**
 
-<img src="../../img/12.png" style="width:600px">
+<img src="../../img/gloun17.jpg" style="width:600px">
 
 
 **开启电源**
@@ -61,6 +65,9 @@
 <img src="../../img/poweron.png" style="width:600px">
 
 *   上电以后，执行器LED状态灯会变成黄色闪烁，启动执行器后，LED会变成绿色闪烁，这时就可以与执行器进行通信了。如果执行器内部出现错误，LED灯会变为红色闪烁，请检查执行器错误代码。
+
+
+
 
 
 ## 机械臂操作使用说明
