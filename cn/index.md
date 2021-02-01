@@ -68,6 +68,7 @@
   
   
 ## 胶子系列
+  * [胶子系列使用说明书](pages/GLUON_Operation_Instruction_v1_0_cn.md)
   * [ROS for GLUON](pages/ros_gluon.md)
   * [GLUON-6L3  本体参数手册](pages/GLUON-6L3_v1_0_cn.md)
   * [GLUON-2L6-4L3 本体参数手册](pages/GLUON-2L6-4L3_v1_0_cn.md)
