@@ -21,14 +21,14 @@ ROS For Gluon
 
 <img src="../../img/gloun15.jpg" style="width:600px">
 
-从前到后、从左到右依次为：六轴机械臂一台、插好终端电阻和回馈制动电容的ECU、急停开关+电源、电脑。
+从前到后、从左到右依次为：六轴机械臂一台、插好终端电阻和回馈制动电容的ECB、急停开关+电源、电脑。
 
 
 **连接ECB**
 
 **连接电源**
 
-*   连接电源与`ECB+HUB`
+*   连接电源与`ECB`
 
 <img src="../../img/gloun4.jpg" style="width:600px">
 <img src="../../img/gloun5.jpg" style="width:600px">
@@ -42,14 +42,14 @@ ROS For Gluon
 
 **连接机械臂**
 
-*   用执行器连接线连接`ECU`与执行器
+*   用执行器连接线连接`ECB`与执行器
 
 <img src="../../img/gloun10.jpg" style="width:600px">
 <img src="../../img/gloun11.jpg" style="width:600px">
 
 **连接电脑**
 
-*   用网线连接`ECU`与电脑
+*   用网线连接`ECB`与电脑
 
 <img src="../../img/gloun14.jpg" style="width:600px">
 
@@ -65,6 +65,7 @@ ROS For Gluon
 <img src="../../img/poweron.png" style="width:600px">
 
 *   上电以后，执行器LED状态灯会变成黄色闪烁，启动执行器后，LED会变成绿色闪烁，这时就可以与执行器进行通信了。如果执行器内部出现错误，LED灯会变为红色闪烁，请检查执行器错误代码。
+
 
 
 
