@@ -17,7 +17,7 @@
 此软件包使用的是以太网通信SDK已修改版本，可能会导致软件链接错误。 
 第一步，先下载软件包:
 ```
-$ git clone https://github.com/Rayckey/ActuatorController_ROS.git actuatorcontroller_ros
+$ git clone https://github.com/innfos/ActuatorController_ROS.git actuatorcontroller_ros
 ```
 返回工作空间目录下进行编译：
 ```
