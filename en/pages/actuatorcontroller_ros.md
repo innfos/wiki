@@ -18,7 +18,7 @@ If you have workspaces that used the C++ `Ethernet Communication SDK`, it is rec
 This package uses a modified version of `Ethernet Communication SDK` and will likely cause issues in this and your program.  
 You can clone the package with:
 ```
-$ git clone https://github.com/Rayckey/ActuatorController_ROS.git actuatorcontroller_ros
+$ git clone https://github.com/innfos/ActuatorController_ROS.git actuatorcontroller_ros
 ```
 Then return to the root of your workspace and build the package
 ```
