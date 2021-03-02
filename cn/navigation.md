@@ -4,9 +4,9 @@
 
 [入门](index.html#!index.md#入门)
 
-[INNFOS 学院](gimmicks1.md)
+[MINTASCA 学院](gimmicks1.md)
 
-[关于INNFOS](#!pages/about.md)
+[关于MINTASCA](#!pages/about.md)
 
 [联系我们](index.html#!pages/about.md#联系方式)
 
@@ -20,7 +20,7 @@
 
 [FAQ](#!pages/question.md)
 
-[INNFOS 官网](http://innfos.com/pc/home)
+[MINTASCA 官网](http://innfos.com/pc/home)
 
 [English](http://wiki.innfos.com/wiki/en/index.html#!index.md)
 
