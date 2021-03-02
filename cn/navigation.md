@@ -1,4 +1,4 @@
-# INNFOS Wiki
+# MINTASCA Wiki
 
 [主页](index.md)
 
