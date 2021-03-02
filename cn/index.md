@@ -6,7 +6,7 @@
 入门
 --------
 如果您不熟悉MINTASCA执行器，以下说明旨在帮助您快速启动和运行。
-如果有任何疑问，请通过support@innfos.com与我们联系。
+如果有任何疑问，请通过support@mintasca.com与我们联系。
 
   * [基本介绍](pages/introduction.md)
   * [基于CAN总线的通信方式](pages/CAN_Based_Communication.md)
