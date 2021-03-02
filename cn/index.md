@@ -5,7 +5,7 @@
 
 入门
 --------
-如果您不熟悉INNFOS执行器，以下说明旨在帮助您快速启动和运行。
+如果您不熟悉MINTASCA执行器，以下说明旨在帮助您快速启动和运行。
 如果有任何疑问，请通过support@innfos.com与我们联系。
 
   * [基本介绍](pages/introduction.md)
@@ -17,13 +17,13 @@
 软件开发
 ------------
 
-  * [INNFOS CAN通信协议](pages/CAN_Communication_Protocol.md)
-  * [INNFOS CAN通信SDK STM32版](pages/CAN_SDK.md)
+  * [MINTASCA CAN通信协议](pages/CAN_Communication_Protocol.md)
+  * [MINTASCA CAN通信SDK STM32版](pages/CAN_SDK.md)
   * [以太网配置](pages/Ethernet_Configuration.md)
   * [以太网通信协议](pages/Ethernet_Communication_Protocol.md)
   * [以太网通信SDK(C++)](pages/Ethernet_Communication_SDK_C++.md)
   * [ROS for SCA](pages/actuatorcontroller_ros.md)
-  * [INNFOS Actuator Studio(IAS) 说明](pages/INNFOS_Actuator_Studio_IAS_instruction.md)
+  * [MINTASCA Actuator Studio(IAS) 说明](pages/INNFOS_Actuator_Studio_IAS_instruction.md)
   * [附录](pages/appendix.md)
   
  
@@ -79,7 +79,7 @@
 即将推出的产品系列
 -----------------
 
-Note: 以下型号SCA数据正在更新中，更多详情请咨询商务团队（sales@innfos.com）
+Note: 以下型号SCA数据正在更新中，更多详情请咨询商务团队（sales@mintasca.com）
 
 ### QDD Pro
   * [QDD Pro-PR60-50-80](pages/QDDPro-PR60-50-80_v2_2.md)
