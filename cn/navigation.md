@@ -22,8 +22,6 @@
 
 [MINTASCA 官网](http://innfos.com/pc/home)
 
-[English](http://wiki.innfos.com/wiki/en/index.html#!index.md)
-
 
 
 <!-- counter pixel for counting visitors -->
