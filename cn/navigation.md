@@ -2,14 +2,6 @@
 
 [主页](index.md)
 
-[入门](index.html#!index.md#入门)
-
-[MINTASCA 学院](gimmicks1.md)
-
-[关于MINTASCA](#!pages/about.md)
-
-[联系我们](index.html#!pages/about.md#联系方式)
-
 [产品]()
 
   * [QDD Pro](index.html#!index.md#产品系列)
