@@ -10,6 +10,7 @@
   * [XR-Robot](index.html#!index.md#XR-Robot)
   * [ECB & HUB](index.html#!index.md#ECB_&_HUB)
 
+[FAQ](#!pages/question.md)
 [MINTASCA 官网](http://innfos.com/pc/home)
 
 
