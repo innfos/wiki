@@ -25,15 +25,15 @@ The baud rate of this communication protocol is 1Mbit/s. For CAN communication, 
 
 ### Connection based on ST development board
 
-*    The INNFOS SCA can communicate directly with the CAN interface of the embedded control board.
-*   INNFOS SCA can be controlled by connecting your own embedded control board
+*    The MINTASCA SCA can communicate directly with the CAN interface of the embedded control board.
+*   MINTASCA SCA can be controlled by connecting your own embedded control board
 *    Two common connection examples for embedded development boards are provided as follows.
 
 **Hardware requirements**
 
 <img src="../../img/01can.jpg" style="width:600px">
 
-*   From left to right: `INNFOS SCA`, `ST development board (self-provided)`, `terminating resistor`, `actuator cable`, `DC stabilized voltage supply`
+*   From left to right: `MINTASCA SCA`, `ST development board (self-provided)`, `terminating resistor`, `actuator cable`, `DC stabilized voltage supply`
 *   You can use your own ST development board to implement CAN communication and control with the actuator
 *   Optional emergency stop switch depending on usage
 
@@ -83,7 +83,7 @@ The red thick line is the positive; the black thick one is the negative line. Cu
 
 <img src="../../img/08can.jpg" style="width:600px">
 
-*   From left to right: `INNFOS SCA`, `Arduino development board (self-provided)`, `terminating resistor`, `ECB cable`, `actuator  cable`, `DC stabilized power supply`
+*   From left to right: `MINTASCA SCA`, `Arduino development board (self-provided)`, `terminating resistor`, `ECB cable`, `actuator  cable`, `DC stabilized power supply`
 *   You can use your own Arduino development board to communicate and control CAN with the actuator
 *  Optional emergency stop switch depending on usage
 
@@ -133,7 +133,7 @@ The red thick line is the positive; the black thick one is the negative line. Cu
 
 **Download IAS**
 
-*   If the computer system is linux, please visit [IAS(linux)](https://github.com/innfos/INNFOS-Actuator-Studio-linux.git) to get the latest version of IAS(INNFOS Actuator Studio)(Linux),If the system is window, please visit [IAS(windows)](https://github.com/innfos/INNFOS-Actuator-Studio-windows.git).
+*   If the computer system is linux, please visit [IAS(linux)](https://github.com/mintasca/INNFOS-Actuator-Studio-linux.git) to get the latest version of IAS(MINTASCA Actuator Studio)(Linux),If the system is window, please visit [IAS(windows)](https://github.com/mintasca/INNFOS-Actuator-Studio-windows.git).
 
 **Configure IP address**
 
@@ -166,7 +166,7 @@ Click the "1" or "2" button to start the actuator, and the button "1" is green m
 <img src="../../img/new53.png" style="width:600px"> 
 
 
-For more information on IAS, please visit the[INNFOS Actuator Studio(IAS)instructions](#!pages/INNFOS_Actuator_Studio_IAS_instruction.md).
+For more information on IAS, please visit the[MINTASCA Actuator Studio(IAS)instructions](#!pages/INNFOS_Actuator_Studio_IAS_instruction.md).
 
 # Version Information
 

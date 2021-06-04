@@ -43,8 +43,8 @@ Note: CAN通信是通过CAN_H与CAN_L之间的电压差来传递电平信号的�
 
 ## 硬件需求与连接
 
-*    INNFOS执行器可与嵌入式控制板的CAN接口直接相连进行通信。
-*    您可以根据需要连接自己的嵌入式控制板实现对INNFOS执行器的控制。
+*    MINTASCA执行器可与嵌入式控制板的CAN接口直接相连进行通信。
+*    您可以根据需要连接自己的嵌入式控制板实现对MINTASCA执行器的控制。
 *    此处提供两种常见嵌入式开发板的连接实例供参考。
 
 ### 基于ST开发板的连接
@@ -54,7 +54,7 @@ Note: CAN通信是通过CAN_H与CAN_L之间的电压差来传递电平信号的�
 
 <img src="../../img/01can.jpg" style="width:600px">
 
-*   从左到右依次为：INNFOS 执行器、ST开发板（需自备）、终端电阻、执行器综合线缆，直流稳压电源
+*   从左到右依次为：MINTASCA 执行器、ST开发板（需自备）、终端电阻、执行器综合线缆，直流稳压电源
 *   您可以使用自己的ST开发板实现与执行器间的CAN通信及控制
 *   根据使用情况自行选配急停开关
 
@@ -104,7 +104,7 @@ Note: 必须先断电然后再插拔部件.  否则可能损坏部件.</br>请�
 
 <img src="../../img/08can.jpg" style="width:600px">
 
-*   从左到右依次为：INNFOS 执行器、Arduino开发板（需自备）、终端电阻、ECB连接线、执行器综合线缆，直流稳压电源
+*   从左到右依次为：MINTASCA 执行器、Arduino开发板（需自备）、终端电阻、ECB连接线、执行器综合线缆，直流稳压电源
 *   您可以使用自己的Arduino开发板实现与执行器间的CAN通信及控制
 *   根据使用情况自行选配急停开关
 
@@ -158,7 +158,7 @@ Note: 必须先断电然后再插拔部件.  否则可能损坏部件.</br>请�
 
 **下载IAS**
 
-*   如果电脑系统为linux,访问[IAS(linux)](https://github.com/innfos/INNFOS-Actuator-Studio-linux.git)获取最新版本的IAS(INNFOS Actuator Studio)(Linux),如果电脑系统是window请访问[IAS(windows)](https://github.com/innfos/INNFOS-Actuator-Studio-windows.git).
+*   如果电脑系统为linux,访问[IAS(linux)](https://github.com/mintasca/INNFOS-Actuator-Studio-linux.git)获取最新版本的IAS(MINTASCA Actuator Studio)(Linux),如果电脑系统是window请访问[IAS(windows)](https://github.com/mintasca/INNFOS-Actuator-Studio-windows.git).
 
 **配置IP地址**
 
@@ -194,7 +194,7 @@ Note: 必须先断电然后再插拔部件.  否则可能损坏部件.</br>请�
 
 ### 其他
 
-想了解更多关于`IAS`的信息 , 请访问[INNFOS Actuator Studio(IAS)说明](#!pages/INNFOS_Actuator_Studio_IAS_instruction.md).
+想了解更多关于`IAS`的信息 , 请访问[MINTASCA Actuator Studio(IAS)说明](#!pages/INNFOS_Actuator_Studio_IAS_instruction.md).
 
 ## 版本变更记录
 

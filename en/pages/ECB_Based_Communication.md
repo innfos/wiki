@@ -8,7 +8,7 @@ Ethernet communication
 
 <img src="../../img/all.png" style="width:600px">
 
-From front to back, from left to right: `ECB`, `HUB`, 2 `terminal resistors`, `regenerative brake capacitor`, `ECB cable`, `INNFOS SCA`, `SCA cable`, `emergency stop switch` + `power supply`.
+From front to back, from left to right: `ECB`, `HUB`, 2 `terminal resistors`, `regenerative brake capacitor`, `ECB cable`, `MINTASCA SCA`, `SCA cable`, `emergency stop switch` + `power supply`.
 
 **Connect the power supply**
 
@@ -61,7 +61,7 @@ Note: The unit must be powered off and then plugged in. Otherwise the accessorie
 
 **Download IAS**
 
-*   If the computer system is linux, please visit [IAS(linux)](https://github.com/innfos/INNFOS-Actuator-Studio-linux.git) to get the latest version of IAS(INNFOS Actuator Studio)(Linux),If the system is window, please visit [IAS(windows)](https://github.com/innfos/INNFOS-Actuator-Studio-windows.git).
+*   If the computer system is linux, please visit [IAS(linux)](https://github.com/mintasca/INNFOS-Actuator-Studio-linux.git) to get the latest version of IAS(MINTASCA Actuator Studio)(Linux),If the system is window, please visit [IAS(windows)](https://github.com/mintasca/INNFOS-Actuator-Studio-windows.git).
 
 **Configure IP address**
 
@@ -94,7 +94,7 @@ Click the "1" or "2" button to start the actuator, and the button "1" is green m
 
 <img src="../img/new52.png" style="width:600px"> 
 
-For more information on IAS, please visit the[INNFOS Actuator Studio(IAS)instructions](#!pages/INNFOS_Actuator_Studio_IAS_instruction.md).
+For more information on IAS, please visit the[MINTASCA Actuator Studio(IAS)instructions](#!pages/INNFOS_Actuator_Studio_IAS_instruction.md).
 
 # Version change record
 <table class="tableizer-table"><thead><tr class="tableizer-firstrow" style="background: PaleTurquoise; color: black;width:500px"><th >version</td><td>date</td><td>Modify content</td></tr>

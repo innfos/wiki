@@ -1,13 +1,13 @@
-INNFOS Actuator Studio(IAS)
+MINTASCA Actuator Studio(IAS)
 =======
 
 ## 介绍
 
-IAS是一款可视化的INNFOS执行器调试软件，主要功能包括控制、修改执行器ID、可视化图表调节执行器、动作编辑等等。IAS可以直观、方便的修改和控制INNFOS执行器。使用IAS无需编程经验，但是不适合复杂的功能开发。
+IAS是一款可视化的MINTASCA执行器调试软件，主要功能包括控制、修改执行器ID、可视化图表调节执行器、动作编辑等等。IAS可以直观、方便的修改和控制MINTASCA执行器。使用IAS无需编程经验，但是不适合复杂的功能开发。
 
 ## 下载IAS
 
-如果电脑系统为Linux,访问[IAS(Linux)](https://github.com/innfos/INNFOS-Actuator-Studio-linux.git)获取最新版本的IAS(INNFOS Actuator Studio)(Linux),如果电脑系统是Windows请访问 [IAS(Windows)](https://github.com/innfos/INNFOS-Actuator-Studio-windows.git).
+如果电脑系统为Linux,访问[IAS(Linux)](https://github.com/mintasca/INNFOS-Actuator-Studio-linux.git)获取最新版本的IAS(MINTASCA Actuator Studio)(Linux),如果电脑系统是Windows请访问 [IAS(Windows)](https://github.com/mintasca/INNFOS-Actuator-Studio-windows.git).
 
 ## 软件的安装
 
@@ -15,7 +15,7 @@ IAS是一款可视化的INNFOS执行器调试软件，主要功能包括控制�
 
 1. 解压下载好的压缩包
 2. 进入IAS目录
-3. 双击INNFOS Actuator Studio图标或者使用下面命令启动IAS：
+3. 双击MINTASCA Actuator Studio图标或者使用下面命令启动IAS：
 
 ```sh
 $ ./INNFOS\ Actuator\ Studio
@@ -92,7 +92,7 @@ $ ./INNFOS\ Actuator\ Studio
 
 ## 电流环模式
 
-INNFOS执行器系统的逻辑框图：
+MINTASCA执行器系统的逻辑框图：
 
 ![current.jpg](../../img/current.jpg)
 
@@ -110,13 +110,13 @@ INNFOS执行器系统的逻辑框图：
 
 （4）参数设置
 
-（5）INNFOS执行器状态参数值
+（5）MINTASCA执行器状态参数值
 
 （6）错误警告
 
 （7）方波发生器参数值设定
 
-（8）INNFOS执行器当前连接状态
+（8）MINTASCA执行器当前连接状态
 
 （9）示波器开关
 
@@ -150,9 +150,9 @@ INNFOS执行器系统的逻辑框图：
 
 2.参数设置：应用方式
 
-*   在“Iq Setting”中输入电流值大小（右图中1处），按回车键或”Set Current”键，INNFOS执行器开始输出相应扭矩。若负载不够大，INNFOS执行器会高速运转。
-*   INNFOS执行器开始转动后，在状态值栏可以看到当前INNFOS执行器的各项参数值。(如右图中3处)
-*   按“Halt”键可停止INNFOS执行器的转动。（右图中2处）
+*   在“Iq Setting”中输入电流值大小（右图中1处），按回车键或”Set Current”键，MINTASCA执行器开始输出相应扭矩。若负载不够大，MINTASCA执行器会高速运转。
+*   MINTASCA执行器开始转动后，在状态值栏可以看到当前MINTASCA执行器的各项参数值。(如右图中3处)
+*   按“Halt”键可停止MINTASCA执行器的转动。（右图中2处）
 *   Limit参数栏中可以设置最大电流值。
 
 <img src="../../img/Fig3-5.png" style="width:600px">
@@ -164,10 +164,10 @@ INNFOS执行器系统的逻辑框图：
 4.示波器各项功能描述
 
 *   右图中“prescalar”可设置波形的预分频系数（图1处），“trig_value”可设置触发数值（图2处），图 3处设置参数的保存、暂停、自动缩放；
-*   channel1为INNFOS执行器给定波形的偏置和放大倍数（图4处）；
-*   channel2为INNFOS执行器电流波形的偏置和放大倍数（图5处）；
-*   channel3为INNFOS执行器速度波形的偏置和放大倍数（图6处）；
-*   channel4为INNFOS执行器位置波形的偏置和放大倍数（图7处）。
+*   channel1为MINTASCA执行器给定波形的偏置和放大倍数（图4处）；
+*   channel2为MINTASCA执行器电流波形的偏置和放大倍数（图5处）；
+*   channel3为MINTASCA执行器速度波形的偏置和放大倍数（图6处）；
+*   channel4为MINTASCA执行器位置波形的偏置和放大倍数（图7处）。
 *   示波器的详细使用说明请见附录C。
 
 <img src="../../img/Fig3-7.png" style="width:600px">
@@ -200,7 +200,7 @@ INNFOS执行器系统的逻辑框图：
 
 ## 速度环模式
 
-INNFOS执行器系统的逻辑框图：
+MINTASCA执行器系统的逻辑框图：
 
 ![velocity.jpg](../../img/velocity.jpg)
 
@@ -222,13 +222,13 @@ INNFOS执行器系统的逻辑框图：
 
 （3）基本参数设置
 
-（4）INNFOS执行器状态参数值
+（4）MINTASCA执行器状态参数值
 
 （5）错误警告
 
 （6）方波发生器参数值设定
 
-（7）INNFOS执行器连接状态
+（7）MINTASCA执行器连接状态
 
 （8）示波器开关 
 
@@ -242,11 +242,11 @@ INNFOS执行器系统的逻辑框图：
 
 2.速度环基本参数设置：
 
-*   右图1处“Setting”框中输入转速值大小（单位：RPM），按回车键或点击右图4处的”Set Velocity”键，INNFOS执行器开始转动。若转速值为负值则反向转动。
-*   INNFOS执行器开始转动后，右图5处的状态值栏可以看到当前INNFOS执行器的各项参数值。
+*   右图1处“Setting”框中输入转速值大小（单位：RPM），按回车键或点击右图4处的”Set Velocity”键，MINTASCA执行器开始转动。若转速值为负值则反向转动。
+*   MINTASCA执行器开始转动后，右图5处的状态值栏可以看到当前MINTASCA执行器的各项参数值。
 *   调节Proportional框和Integral框可调节PI值，右图2处。
-*   右图3处的Mininal框和Maximum框为速度环输出限幅（后接电流环的输入），例如：电流最大值为33A（6010型为33A，3510型为16.5A，具体参见各型号SCA参数表相电流满量程值。输入值为0.5，那么INNFOS执行器电流增加到33×0.5的时候，电流值将受限，不再增加。
-*   按“Halt”键可停止INNFOS执行器的转动。
+*   右图3处的Mininal框和Maximum框为速度环输出限幅（后接电流环的输入），例如：电流最大值为33A（6010型为33A，3510型为16.5A，具体参见各型号SCA参数表相电流满量程值。输入值为0.5，那么MINTASCA执行器电流增加到33×0.5的时候，电流值将受限，不再增加。
+*   按“Halt”键可停止MINTASCA执行器的转动。
 
 <img src="../../img/Fig4-5.png" style="width:600px">
 
@@ -258,12 +258,12 @@ INNFOS执行器系统的逻辑框图：
 
 *   在Value1中输入转速1。(单位:RPM)
 *   在Value2中输入转速2。(单位:RPM)
-*   在Interval内输入单位时间（单位：ms），可设置INNFOS执行器方波发生器的参数。
-*   选择点击“Start”键，开启INNFOS执行器转动。
+*   在Interval内输入单位时间（单位：ms），可设置MINTASCA执行器方波发生器的参数。
+*   选择点击“Start”键，开启MINTASCA执行器转动。
 
 <img src="../../img/Fig4-8.png" style="width:600px">
 
-5.设置“View Graph”视图里的参数，可以更好的查看当前INNFOS执行器 各项参数波形，调节INNFOS执行器Proportional和Integral（PI） 的数值，其性能会在示波器中以波形方式反应出来。
+5.设置“View Graph”视图里的参数，可以更好的查看当前MINTASCA执行器 各项参数波形，调节MINTASCA执行器Proportional和Integral（PI） 的数值，其性能会在示波器中以波形方式反应出来。
 
 <span style="color: red">注：不用的通道偏置设置为0，放大设置为1（右图中channel2和channel4），或者直接点击OFF关闭其显示</span>
 
@@ -271,7 +271,7 @@ INNFOS执行器系统的逻辑框图：
 
 ## 位置环模式
 
-INNFOS执行器系统的逻辑框图：
+MINTASCA执行器系统的逻辑框图：
 
 ![position.jpg](../../img/position.jpg)
 
@@ -291,13 +291,13 @@ INNFOS执行器系统的逻辑框图：
 
 （3）基本参数设置
 
-（4）INNFOS执行器状态参数值
+（4）MINTASCA执行器状态参数值
 
 （5）错误警告
 
 （6）方波发生器参数值设定
 
-（7）INNFOS执行器连接状态
+（7）MINTASCA执行器连接状态
 
 （8）示波器开关 
 
@@ -311,10 +311,10 @@ INNFOS执行器系统的逻辑框图：
 
 2.位置环基本参数设置：
 
-*   右图1处“Setting”框中输入位置值大小（单位：R），在右图4处按&quot;Set Position”键，INNFOS执行器开始转动，INNFOS执行器转到输入位置后，停止。
-*   INNFOS执行器开始转动后，右图5处状态值栏可以看到当前INNFOS执行器的各项参数值。
+*   右图1处“Setting”框中输入位置值大小（单位：R），在右图4处按&quot;Set Position”键，MINTASCA执行器开始转动，MINTASCA执行器转到输入位置后，停止。
+*   MINTASCA执行器开始转动后，右图5处状态值栏可以看到当前MINTASCA执行器的各项参数值。
 *   调节Proportional框可调节比例值，如右图2处。
-*   右图的3处的Mininal框和Maximum框为位置环输出给速度环的速度限制。执行器速度最大为6000RPM，例如输入值为0.5，那么INNFOS执行器最大速度增加到6000*0.5=3000R/分钟的时候，速度值将受限，不再增加。
+*   右图的3处的Mininal框和Maximum框为位置环输出给速度环的速度限制。执行器速度最大为6000RPM，例如输入值为0.5，那么MINTASCA执行器最大速度增加到6000*0.5=3000R/分钟的时候，速度值将受限，不再增加。
 
 <img src="../../img/Fig5-5.png" style="width:600px">
 
@@ -326,8 +326,8 @@ INNFOS执行器系统的逻辑框图：
 
 *   在Value1中输入位置值1(单位:R)
 *   在Value2中输入位置值2(单位:R)
-*   在Interval内输入时间（单位：ms），输入参数为转动一次的时间。（例：Value1为2，Value2为-2，Interval为1000，启动后，INNFOS执行器先转到位置2，1000mS后转到位置-2，在过1000ms再次转到位置2，如此反复运行直至用户点击“Stop”)。
-*   点击“Start”键，开启INNFOS执行器转动。
+*   在Interval内输入时间（单位：ms），输入参数为转动一次的时间。（例：Value1为2，Value2为-2，Interval为1000，启动后，MINTASCA执行器先转到位置2，1000mS后转到位置-2，在过1000ms再次转到位置2，如此反复运行直至用户点击“Stop”)。
+*   点击“Start”键，开启MINTASCA执行器转动。
 
 <img src="../../img/Fig5-8.png" style="width:600px">
 
@@ -359,11 +359,11 @@ INNFOS执行器系统的逻辑框图：
 
 （3）基本参数设置
 
-（4）INNFOS执行器状态参数值
+（4）MINTASCA执行器状态参数值
 
 （5）错误警告
 
-（6）INNFOS执行器当前连接状态 
+（6）MINTASCA执行器当前连接状态 
 
 <img src="../../img/Fig6-2.png" style="width:600px">
 
@@ -375,10 +375,10 @@ INNFOS执行器系统的逻辑框图：
 
 2.位置环S曲线模式基本参数设置：
 
-*   在“Target”框中输入转动的位置（单位：R），INNFOS执行器开始转动到指定位置。
-*   INNFOS执行器开始转动后，在状态值栏可以看到当前INNFOS执行器的各项参数值，右图4处。
-*   右图2处的Accelerate框和Decelerate框为S曲线模式下的速度上升和下降的平缓度，例如：Accelerate值越大，INNFOS执行器达到最大速度的时间越短，Accelerate值越小，INNFOS执行器达到最大转速的时间越长。Decelerate值越大，INNFOS执行器从最大速度降低到零的时间越短，Decelerate值越小，INNFOS执行器从最大速度降低到零的时间越长。
-*   “Max”限制了INNFOS执行器的最大转速，随数值增加而增加，如右图的3处，当前最大转速为1000RPM。
+*   在“Target”框中输入转动的位置（单位：R），MINTASCA执行器开始转动到指定位置。
+*   MINTASCA执行器开始转动后，在状态值栏可以看到当前MINTASCA执行器的各项参数值，右图4处。
+*   右图2处的Accelerate框和Decelerate框为S曲线模式下的速度上升和下降的平缓度，例如：Accelerate值越大，MINTASCA执行器达到最大速度的时间越短，Accelerate值越小，MINTASCA执行器达到最大转速的时间越长。Decelerate值越大，MINTASCA执行器从最大速度降低到零的时间越短，Decelerate值越小，MINTASCA执行器从最大速度降低到零的时间越长。
+*   “Max”限制了MINTASCA执行器的最大转速，随数值增加而增加，如右图的3处，当前最大转速为1000RPM。
 *   关于位置环S曲线模式的原理分析参见附录D。
 
 <img src="../../img/Fig6-4.png" style="width:600px">
@@ -397,11 +397,11 @@ INNFOS执行器系统的逻辑框图：
 
 （3）基本参数设置
 
-（4）INNFOS执行器状态参数值
+（4）MINTASCA执行器状态参数值
 
 （5）错误警告
 
-（6）INNFOS执行器当前连接状态 
+（6）MINTASCA执行器当前连接状态 
 
 <img src="../../img/Fig7-2.png" style="width:600px">
 
@@ -413,8 +413,8 @@ INNFOS执行器系统的逻辑框图：
 
 2.速度环S曲线模式基本参数设置：
 
-*   在“Target”框中输入INNFOS执行器的速度值（单位：RPM），INNFOS执行器开始转动，直至达到输入值。
-*   INNFOS执行器开始转动后，在状态值栏可以看到当前INNFOS执行器的各项参数值，右图3处。
+*   在“Target”框中输入MINTASCA执行器的速度值（单位：RPM），MINTASCA执行器开始转动，直至达到输入值。
+*   MINTASCA执行器开始转动后，在状态值栏可以看到当前MINTASCA执行器的各项参数值，右图3处。
 *   右图中2处的Accelerate、Decelerate和Max项为S曲线的调整参数。
 
 <img src="../../img/Fig7-4.png" style="width:600px">
@@ -435,11 +435,11 @@ INNFOS执行器系统的逻辑框图：
 
 1.自动校准左右极限
 
-*   先后点击Clear和Homing按键，重复两次清除当前左右极限，直到右图8-1图1处数据变为如下大数值（这是软件限位的上下限）。然后将右图8-1图2处调为如下大数值（这是限流，比如加大负载时需要较大电流，需要放开电流限制）。然后点击Auto按钮，INNFOS执行器就会自动顺时针转动，直到触碰机械左极限（这里定义顺时针碰的机械限位为左极限，逆时针的为右极限），然后自动逆时针转动直到触碰机械右极限停止。
+*   先后点击Clear和Homing按键，重复两次清除当前左右极限，直到右图8-1图1处数据变为如下大数值（这是软件限位的上下限）。然后将右图8-1图2处调为如下大数值（这是限流，比如加大负载时需要较大电流，需要放开电流限制）。然后点击Auto按钮，MINTASCA执行器就会自动顺时针转动，直到触碰机械左极限（这里定义顺时针碰的机械限位为左极限，逆时针的为右极限），然后自动逆时针转动直到触碰机械右极限停止。
 
 <img src="../../img/Fig8-3.png" style="width:600px">
 
-*   此时会返回左右极限的值到图8-1的1处。然后手动控制转动INNFOS执行器到想要的零点（例如图8-2中左侧图的2处），最后点击Homing按键，则当前位置变为零点（如图8-2中右侧图03的2处），图8-2中右侧图的1处的左右极限会根据点击Homing前的位置进行偏移（对比图8-2中两侧图）。这样就保证了软件限位和机械限位的一致性。
+*   此时会返回左右极限的值到图8-1的1处。然后手动控制转动MINTASCA执行器到想要的零点（例如图8-2中左侧图的2处），最后点击Homing按键，则当前位置变为零点（如图8-2中右侧图03的2处），图8-2中右侧图的1处的左右极限会根据点击Homing前的位置进行偏移（对比图8-2中两侧图）。这样就保证了软件限位和机械限位的一致性。
 
 <img src="../../img/Fig8-4.png" style="width:600px">
 
@@ -494,7 +494,7 @@ INNFOS执行器系统的逻辑框图：
 
 ### 错误处理方式
 
-点击“OK”，再点击“Clear Errors”可清除错误，清除错误后，INNFOS执行器进入电流环模式。
+点击“OK”，再点击“Clear Errors”可清除错误，清除错误后，MINTASCA执行器进入电流环模式。
 
 <img src="../../img/File9-2.png" style="width:600px">
 

@@ -2,7 +2,7 @@ IO Module使用说明
 =====
 
 ## 简介
-Step/Dir to CAN（ABI转CAN 转接器）的主要功能是实现电机控制信号从ABI格式数据到INNFOS CAN协议数据地转换。INNFOS SCA采用CAN总线进行通信，并拥有一套专用的INNFOS CAN协议。为了使得SCA能够接受标准的ABI控制方式，SD2CAN可以接收ABI数据，并将其转换为INNFOS CAN协议数据通过CAN总线发送至SCA，用户无需考虑INNFOS CAN协议的内容，只需要向SD2CAN提供标准的ABI信号数据即可实现精准的控制操作。
+Step/Dir to CAN（ABI转CAN 转接器）的主要功能是实现电机控制信号从ABI格式数据到MINTASCA CAN协议数据地转换。MINTASCA SCA采用CAN总线进行通信，并拥有一套专用的MINTASCA CAN协议。为了使得SCA能够接受标准的ABI控制方式，SD2CAN可以接收ABI数据，并将其转换为MINTASCA CAN协议数据通过CAN总线发送至SCA，用户无需考虑MINTASCA CAN协议的内容，只需要向SD2CAN提供标准的ABI信号数据即可实现精准的控制操作。
 与此同时，SD2CAN保留了所有以太网转CAN的功能，用户可通过此转接板顺利完成上位机的连接或以太网SDK的应用开发。
 
 ## 关于ABI信号
@@ -72,7 +72,7 @@ Note: 信号输入接口采用光耦隔离，输入电压范围为3-10V
 ## 软件安装与使用
 **下载IAS**
 
-* 如果电脑系统为Linux,访问IAS(Linux)获取最新版本的[INNFOS Actuator Studio(Linux)说明](#!pages/INNFOS_Actuator_Studio_Linux_instruction.md).如果电脑系统是Windows请访问IAS(Windows).
+* 如果电脑系统为Linux,访问IAS(Linux)获取最新版本的[MINTASCA Actuator Studio(Linux)说明](#!pages/INNFOS_Actuator_Studio_Linux_instruction.md).如果电脑系统是Windows请访问IAS(Windows).
 
 **配置IP地址**
 * 配置步骤请参考以太网通信配置

@@ -5,10 +5,10 @@ Gluon ROS packages
 These packages support Moveit!, RViz and LAN communication with Gluon.
 
 ## Download and install
-[Download](https://github.com/innfos/ros_gluon.git) ros packages for gluon
+[Download](https://github.com/mintasca/ros_gluon.git) ros packages for gluon
 
 ```sh
-$ git clone https://github.com/innfos/ros_gluon.git
+$ git clone https://github.com/mintasca/ros_gluon.git
 ```
 then manually copy package folders gluon gluon_control gluon_moveit_config and cm_moveit into a catkin_ws/src.
 

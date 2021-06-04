@@ -1,6 +1,6 @@
 ## Introduction
 
-*   INNFOS CAN SDK STM32 version provides user-friendly interfaces, including the function of communication between the STM32F429 single-chip microcomputer and INNFOS SCA, that can send commands to multiple actuators or retrieve actuator status and parameters. The project files are open source and could be customed and modified.
+*   MINTASCA CAN SDK STM32 version provides user-friendly interfaces, including the function of communication between the STM32F429 single-chip microcomputer and MINTASCA SCA, that can send commands to multiple actuators or retrieve actuator status and parameters. The project files are open source and could be customed and modified.
 
 *    First runner of this API is highly recommended to read the readme.txt description file in the project folder.
 
@@ -8,7 +8,7 @@
 
 ## Download SDK
 
-Visit [Download Link](https://github.com/innfos/INNFOS_CAN_SDK_STM32.git)to acquire the MDK project files.
+Visit [Download Link](https://github.com/mintasca/INNFOS_CAN_SDK_STM32.git)to acquire the MDK project files.
 
 ----
 
@@ -23,7 +23,7 @@ Visit [Download Link](https://github.com/innfos/INNFOS_CAN_SDK_STM32.git)to acqu
 *  `CORE`：Cortex-M4 Kernel control file and STM32 startup file.
 *  `FWLIB`：STM32 standard Peripheral driver library 
 *  `MDK`：MDK project files
-*  `SCA`：INNFOS CAN protocol driver files and codes for application examples.
+*  `SCA`：MINTASCA CAN protocol driver files and codes for application examples.
 *  `SYSTEM`：Common interfaces for the STM32 programming environment. 
 *  `USER`：Storage for main.c. etc.
 *  `Keilkiller.bat`：erase intermediate files during compiling
@@ -36,7 +36,7 @@ Visit [Download Link](https://github.com/innfos/INNFOS_CAN_SDK_STM32.git)to acqu
 
 <div class="md-text" style="text-align: center;"></div>
 
-*  `SCA_Protocol.c/h`： INNFOS CAN communication protocol layer. This layer completes procedures like data frame packing and unpacking, using CAN interface to send and receive data.
+*  `SCA_Protocol.c/h`： MINTASCA CAN communication protocol layer. This layer completes procedures like data frame packing and unpacking, using CAN interface to send and receive data.
 *  `SCA_API.c/h`：Communication protocol layer package, including API reading and writing for all parameters.
 *  `SCA_APP.c/h`：Demo program.
 <br>
@@ -107,7 +107,7 @@ void SCA_Init()
 
 ### Driver structure
 
-* INNFOS CAN SDK STM32 splits the driver program into different layers.。
+* MINTASCA CAN SDK STM32 splits the driver program into different layers.。
 
 *  `SCA_Protocol.c/h` is the protocol layer that calls the interface of the STM32 CAN controller for sending and receiving data. It provides 5 types of software interfaces for reading and writing commands. Those interfaces will be called by functions in the API layer and packing/unpacking data according to the command. The head file includes macro definition for all commands, communication error type, and storage every actuator’s struct typedef handle of its parameter information. To support multiple CAN interfaces, we added a descriptive handle for CAN interface in this protocol layer. You can use this handle to define multiple interfaces for sending and receiving. Also you will need to define the sending function and retry times for each interface in the initialization program then bind to each SCA’s information handle. Moreover, this protocol layer provides unified data sending/receiving interface `canDispatch(CanRxMsg* RxMsg)` to make porting easier. This interface will be called and send date in when there is new CAN data pack received.  
 

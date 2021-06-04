@@ -11,16 +11,16 @@ Ethernet Communication SDK
 
 #### download
 
-*   visit the link download link to [download link](https://github.com/innfos/innfos-cpp-sdk.git) download the SDK related files or execute the following command directly
+*   visit the link download link to [download link](https://github.com/mintasca/innfos-cpp-sdk.git) download the SDK related files or execute the following command directly
 
 
 ```sh
-$ git clone https://github.com/innfos/innfos-cpp-sdk.git
+$ git clone https://github.com/mintasca/innfos-cpp-sdk.git
 ```
     
 ## API related documentation
 
-*   notes and related documentation please go to [document link](http://innfos.com/doc/index.html)
+*   notes and related documentation please go to [document link](https://mintasca.com/doc/index.html)
 
 ## SCA connection
 

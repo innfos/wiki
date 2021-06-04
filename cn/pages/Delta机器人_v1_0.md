@@ -88,7 +88,7 @@ Delta采用了并联结构,具有刚度大,承载能力强等优点,所有关节
 
 **IAS软件的使用**
 
-* `IAS`(INNFOS Actuator Studio)的为配置机械臂的上位机软件 , 请访问[INNFOS Actuator Studio(IAS)说明](#!pages/INNFOS_Actuator_Studio_IAS_instruction.md).
+* `IAS`(MINTASCA Actuator Studio)的为配置机械臂的上位机软件 , 请访问[MINTASCA Actuator Studio(IAS)说明](#!pages/INNFOS_Actuator_Studio_IAS_instruction.md).
 
 **运动功能使用**
 
@@ -100,13 +100,13 @@ Delta采用了并联结构,具有刚度大,承载能力强等优点,所有关节
 运行环境：linux-x86-64
 访问该链接下载机械臂软件或者直接执行以下命令
 
-访问该链接[download link](https://github.com/innfos/robot_controller-6-NE30-.git)下载SDK相关文件或者直接执行以下命令
+访问该链接[download link](https://github.com/mintasca/robot_controller-6-NE30-.git)下载SDK相关文件或者直接执行以下命令
 ```sh
-$ git clone  https://github.com/innfos/innfos-cpp-sdk.git
+$ git clone  https://github.com/mintasca/innfos-cpp-sdk.git
 ```
-访问该链接[download link](https://github.com/innfos/ActuatorController_SDK.git)下载Delta 机器人相关文件或者直接执行以下命令
+访问该链接[download link](https://github.com/mintasca/ActuatorController_SDK.git)下载Delta 机器人相关文件或者直接执行以下命令
 ```sh
-$ git clone https://github.com/innfos/innfos-delta-robot-controller
+$ git clone https://github.com/mintasca/innfos-delta-robot-controller
 ```
 
 

@@ -107,7 +107,7 @@
 
 **下载IAS**
 
-*   如果电脑系统为Linux,访问[IAS(Linux)](https://github.com/innfos/INNFOS-Actuator-Studio-linux.git)获取最新版本的IAS(INNFOS Actuator Studio)(Linux),如果电脑系统是Windows请访问[IAS(Windows)](https://github.com/innfos/INNFOS-Actuator-Studio-windows.git).
+*   如果电脑系统为Linux,访问[IAS(Linux)](https://github.com/mintasca/INNFOS-Actuator-Studio-linux.git)获取最新版本的IAS(MINTASCA Actuator Studio)(Linux),如果电脑系统是Windows请访问[IAS(Windows)](https://github.com/mintasca/INNFOS-Actuator-Studio-windows.git).
 
 **配置IP地址**
 
@@ -143,7 +143,7 @@
 
 ### 其他
 
-想了解更多关于`IAS`的信息 , 请访问[INNFOS Actuator Studio(IAS)说明](#!pages/INNFOS_Actuator_Studio_IAS_instruction.md).
+想了解更多关于`IAS`的信息 , 请访问[MINTASCA Actuator Studio(IAS)说明](#!pages/INNFOS_Actuator_Studio_IAS_instruction.md).
 
 ## 版本变更记录
 <table style="width:400px"><thead><tr style="background:PaleTurquoise"><th style="width:100px">版本号</th><th style="width:150px">更新时间</th><th style="width:150px">更新内容</th></tr></thead><tbody><tr><td>V1.0.1</td><td>2019.09</td><td>增加EL20连接方式</td></tr><tr><td>V1.0.0</td><td>2019.04</td><td>第一个版本</td></tbody></table>

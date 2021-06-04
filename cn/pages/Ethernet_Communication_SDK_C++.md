@@ -3,28 +3,28 @@
 
 ## 介绍
 
-*   API提供了友好的用户接口，包括了与多个INNFOS执行器进行以太网通信功能，可同时对多个执行器发送指令或者获取执行器状态和参数信息
+*   API提供了友好的用户接口，包括了与多个MINTASCA执行器进行以太网通信功能，可同时对多个执行器发送指令或者获取执行器状态和参数信息
 *   建议初次接触API的用户优先阅读SDK中的examples。
 
 ## SDK下载及目录说明
 
 #### 下载
 
-*   访问该链接[download link](https://github.com/innfos/innfos-cpp-sdk.git)下载SDK相关文件或者直接执行以下命令
+*   访问该链接[download link](https://github.com/mintasca/innfos-cpp-sdk.git)下载SDK相关文件或者直接执行以下命令
 
 ```sh
-$ git clone https://github.com/innfos/innfos-cpp-sdk.git
+$ git clone https://github.com/mintasca/innfos-cpp-sdk.git
 ```
     
 ## API相关文档
 
-*   注意事项以及相关说明文档请访问[document link](https://innfos.com/doc4.0.0/index.html)
+*   注意事项以及相关说明文档请访问[document link](https://mintasca.com/doc4.0.0/index.html)
 
 ## 执行器连接
 
 <img src="../../img/connect2.png" style="width:600px">
 
-如上动图为INNFOS执行器以太网通信的连接方式。
+如上动图为MINTASCA执行器以太网通信的连接方式。
 
 警告：所有线缆拔插严禁带电操作，否则容易损坏设备。
 
@@ -625,6 +625,6 @@ $ 05b_feedback_asyc.exe
 
 ## 版本信息
 
-<table style="width:400px"><thead><tr style="background:PaleTurquoise"><th style="width:100px">版本号</th><th style="width:150px">更新时间</th><th style="width:150px">更新内容</th></tr></thead><tbody><tr><td>v4.0.0</td><td>2019.08.05</td><td>全文添加</th></tr></thead><tbody><tr><td><a href="http://innfos.com/wiki/cn/index.html#!pages/Ethernet_Communication_SDK_v3_4_0.md">v3.4.0 </a></td><td>2019.06.06</td><td>全文添加</th></tr></thead></tbody></table>
+<table style="width:400px"><thead><tr style="background:PaleTurquoise"><th style="width:100px">版本号</th><th style="width:150px">更新时间</th><th style="width:150px">更新内容</th></tr></thead><tbody><tr><td>v4.0.0</td><td>2019.08.05</td><td>全文添加</th></tr></thead><tbody><tr><td><a href="http://mintasca.com/wiki/cn/index.html#!pages/Ethernet_Communication_SDK_v3_4_0.md">v3.4.0 </a></td><td>2019.06.06</td><td>全文添加</th></tr></thead></tbody></table>
 
 

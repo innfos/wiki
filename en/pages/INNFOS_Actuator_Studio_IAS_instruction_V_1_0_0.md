@@ -1,5 +1,5 @@
 
-# INNFOS Actuator Studio(IAS)
+# MINTASCA Actuator Studio(IAS)
 
 ## Overview
 
@@ -9,18 +9,18 @@ IAS is a visual debug control software for INNFOS actuator, the main functions o
 
 ### Linux platform
 
-Visit this link [download link](https://github.com/innfos/INNFOS-Actuator-Studio-linux.git) or you can use command blow:
+Visit this link [download link](https://github.com/mintasca/INNFOS-Actuator-Studio-linux.git) or you can use command blow:
 
 ```sh
-$ git clone https://github.com/innfos/INNFOS-Actuator-Studio-linux.git
+$ git clone https://github.com/mintasca/INNFOS-Actuator-Studio-linux.git
 ```
 
 ### Windows platform
 
- Visit this link [download link](https://github.com/innfos/INNFOS-Actuator-Studio-windows.git) to download Setup.exe file or you can use command blow:
+ Visit this link [download link](https://github.com/mintasca/INNFOS-Actuator-Studio-windows.git) to download Setup.exe file or you can use command blow:
  
 ```sh
-$ git clone https://github.com/innfos/INNFOS-Actuator-Studio-windows.git
+$ git clone https://github.com/mintasca/INNFOS-Actuator-Studio-windows.git
 ```
 
 ## IAS installation
@@ -29,7 +29,7 @@ $ git clone https://github.com/innfos/INNFOS-Actuator-Studio-windows.git
 
 1. Unzip the IAS to your desired location
 2. Enter the IAS folder
-3. Launch the program by either double clicking the INNFOS Actuator Studio icon or using the command
+3. Launch the program by either double clicking the MINTASCA Actuator Studio icon or using the command
 
 ```sh
 $ ./INNFOS\ Actuator\ Studio
@@ -127,7 +127,7 @@ Description: after the mixed practice of the current setting value and current f
 
 （4）parameter settings
 
-（5）INNFOS SCA status parameter values
+（5）MINTASCA SCA status parameter values
 
 （6）Error warning
 
@@ -245,7 +245,7 @@ Description: After the speed value setting and the speed feedback value are adde
 
 (3)Basic parameter settings
 
-(4)INNFOS SCA parameter values
+(4)MINTASCA SCA parameter values
 
 (5)Error warning
 
@@ -256,7 +256,7 @@ Description: After the speed value setting and the speed feedback value are adde
 (8)Oscilloscope switch
 
 ![Fig4-3.png](../../img/Fig4-3.png)
-[![](https://github.com/innfos/wiki/blob/master/cn/img/Fig4-3.png)](https://github.com/innfos/wiki/blob/master/cn/img/Fig4-3.png)
+[![](https://github.com/mintasca/wiki/blob/master/cn/img/Fig4-3.png)](https://github.com/mintasca/wiki/blob/master/cn/img/Fig4-3.png)
 
 ### Speed loop usage
 
@@ -266,8 +266,8 @@ Description: After the speed value setting and the speed feedback value are adde
 
 2.Speed loop basic parameter settings:
 
-*   Enter the speed value (unit: RPM) in the "Setting" box. Press Enter or click on "Set Velocity" on the right, then INNFOS SCA starts to rotate.
-*   After rotating, the status value column, as shown in the figure, can be seen as the parameter values of different INNFOS SCA.
+*   Enter the speed value (unit: RPM) in the "Setting" box. Press Enter or click on "Set Velocity" on the right, then MINTASCA SCA starts to rotate.
+*   After rotating, the status value column, as shown in the figure, can be seen as the parameter values of different MINTASCA SCA.
 *   Adjust the Proportional box and the Integral box to adjust the PI value(Mark 2).
 *   The Mininal box and Maximum box shows the output limit for speed loop (followed by Current loop input),
 
@@ -301,7 +301,7 @@ Description: After the speed value setting and the speed feedback value are adde
 
 ![Fig4-8.png](../../img/Fig4-8.png)
 
-6.Set the parameters in the "View Graph" view to better check the current INNFOS SCA different parameter waveforms, adjusting the value of Proportional and Integral (PI), so that the performance will be reflected in the form of waveform in the oscilloscope.
+6.Set the parameters in the "View Graph" view to better check the current MINTASCA SCA different parameter waveforms, adjusting the value of Proportional and Integral (PI), so that the performance will be reflected in the form of waveform in the oscilloscope.
 
 <span style="color: red">Note: The unused channel offset is set to 0 and the amplification is set to 1 (channel2 and channel4 in the figure) or click the OFF to shut it down.</span> 
 

@@ -3,28 +3,28 @@
 
 ## 介绍
 
-*   API提供了友好的用户接口，包括了与多个INNFOS执行器进行串口或者以太网通信（推荐）功能，可同时对多个执行器发送指令或者获取执行器状态和参数信息
+*   API提供了友好的用户接口，包括了与多个MINTASCA执行器进行串口或者以太网通信（推荐）功能，可同时对多个执行器发送指令或者获取执行器状态和参数信息
 *   建议初次接触API的用户优先阅读SDK中的examples。
 
 ## SDK下载及目录说明
 
 #### 下载
 
-*   访问该链接[download link](https://github.com/innfos/ActuatorController_SDK.git)下载SDK相关文件或者直接执行以下命令
+*   访问该链接[download link](https://github.com/mintasca/ActuatorController_SDK.git)下载SDK相关文件或者直接执行以下命令
 
 ```sh
-$ git clone https://github.com/innfos/ActuatorController_SDK.git
+$ git clone https://github.com/mintasca/ActuatorController_SDK.git
 ```
     
 ## API相关文档
 
-*   注意事项以及相关说明文档请访问[document link](http://innfos.com/doc/index.html)
+*   注意事项以及相关说明文档请访问[document link](http://mintasca.com/doc/index.html)
 
 ## 执行器连接
 
 <img src="../../img/connect2.png" style="width:600px">
 
-如上动图为INNFOS执行器以太网通信的连接方式。
+如上动图为MINTASCA执行器以太网通信的连接方式。
 
 警告：所有线缆拔插严禁带电操作，否则容易损坏设备。
 

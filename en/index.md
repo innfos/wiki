@@ -6,7 +6,7 @@ Main Page
 ##  Getting Started
 --------
 The following instructions are meant to get you up and running quickly if you are new to INNFOS actuators. 
-If there's any questions,please contact us at support@innfos.com.
+If there's any questions,please contact us at support@mintasca.com.
 
   * [Introduction](pages/introduction.md)
   * [CAN-Based Communication](pages/CAN_Based_Connection.md)
@@ -18,16 +18,16 @@ If there's any questions,please contact us at support@innfos.com.
 ------------
 
   * [CAN Communication Protocol](pages/CAN_Communication_Protocol.md)
-  * [INNFOS CAN Communication SDK (STM32)](pages/CAN_SDK.md)
+  * [MINTASCA CAN Communication SDK (STM32)](pages/CAN_SDK.md)
   * [Ethernet Configuration](pages/Ethernet_Configuration.md)
   * [Ethernet Communication Protocol](pages/Ethernet_Communication_Protocol.md)
   * [Ethernet Communication SDK(C++)](pages/Ethernet_Communication_SDK_C++.md)
   * [ROS for SCA](pages/actuatorcontroller_ros.md)
-  * [INNFOS Actuator Studio(IAS) instruction](pages/INNFOS_Actuator_Studio_IAS_instruction.md)
+  * [MINTASCA Actuator Studio(IAS) instruction](pages/INNFOS_Actuator_Studio_IAS_instruction.md)
   * [Appendix](pages/appendix.md)
   
  
-  [ipChanged]: <https://github.com/innfos/ipChangeTool/blob/master/README.md>
+  [ipChanged]: <https://github.com/mintasca/ipChangeTool/blob/master/README.md>
 
 ##  Products
 -----------------
@@ -70,7 +70,7 @@ If there's any questions,please contact us at support@innfos.com.
 
 ## The Upcoming Products
 
-Note: The following SCA data is being updated. Please contact our sales team (sales@innfos.com) for more information.
+Note: The following SCA data is being updated. Please contact our sales team (sales@mintasca.com) for more information.
 
 ### QDD Pro
   * [QDD Pro-PR60-50-80](pages/QDDPro-PR60-50-80_v2_2.md)

@@ -85,7 +85,7 @@
 
 ## 软件安装与使用
 ### 介绍
-IRS是一款INNFOS机械臂调试软件，主要功能包括位置校准功能、示例动作播放功能、示教-再现功能，用户不需要太多编程经验就可控制机械臂完成基本动作。
+IRS是一款MINTASCA机械臂调试软件，主要功能包括位置校准功能、示例动作播放功能、示教-再现功能，用户不需要太多编程经验就可控制机械臂完成基本动作。
 
 **运动功能使用**
 
@@ -98,15 +98,15 @@ IRS是一款INNFOS机械臂调试软件，主要功能包括位置校准功能�
 
 x86-64版本：
 推荐使用64位ubuntu16.04、ubuntu18.04等系统
-访问该链接[download link](https://github.com/innfos/robot-controller-GL-6L3.git)下载机械臂软件或者直接执行以下命令
+访问该链接[download link](https://github.com/mintasca/robot-controller-GL-6L3.git)下载机械臂软件或者直接执行以下命令
 ```sh
-$ git clone https://github.com/innfos/robot-controller-GL-6L3.git
+$ git clone https://github.com/mintasca/robot-controller-GL-6L3.git
 ```
 树莓派版本：
 适用于Raspberry Pi 3 Model B 和 Raspberry Pi 3 Model B+
-访问该链接[download link](https://github.com/innfos/robot-controller-GL-6L3-raspi.git)下载机械臂软件或者直接执行以下命令
+访问该链接[download link](https://github.com/mintasca/robot-controller-GL-6L3-raspi.git)下载机械臂软件或者直接执行以下命令
 ```sh
-$ git clone https://github.com/innfos/robot-controller-GL-6L3-raspi.git
+$ git clone https://github.com/mintasca/robot-controller-GL-6L3-raspi.git
 ```
 
 ### 使用前检查

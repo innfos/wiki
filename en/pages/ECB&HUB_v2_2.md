@@ -79,10 +79,10 @@ Note: When multiple ECBs are connected to the same computer, the IP and MAC addr
 #### download
 
 
-*   Visit the link[download link](https://github.com/innfos/ipChangeTool .git)o download the SDK related files or execute the following command directly
+*   Visit the link[download link](https://github.com/mintasca/ipChangeTool .git)o download the SDK related files or execute the following command directly
 
 ```sh
-$ git clone https://github.com/innfos/ipChangeTool.git
+$ git clone https://github.com/mintasca/ipChangeTool.git
 ```
     
 2.  Enter the ipChangeTool directory and modify the permissions of ipChange:

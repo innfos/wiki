@@ -20,9 +20,9 @@
 
 [FAQ](pages/question.md)
 
-[INNFOS Website](http://innfos.com)
+[INNFOS Website](https://mintasca.com)
 
-[中文](http://wiki.innfos.com/wiki/cn/index.html#!index.md)
+[中文](http://wiki.mintasca.com/wiki/cn/index.html#!index.md)
 
 
 <!-- counter pixel for counting visitors -->

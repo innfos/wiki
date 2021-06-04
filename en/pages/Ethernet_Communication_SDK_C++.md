@@ -11,16 +11,16 @@ Ethernet Communication SDK(C++)
 
 #### download
 
-*   visit the link download link to [download link](https://github.com/innfos/innfos-cpp-sdk.git) download the SDK related files or execute the following command directly
+*   visit the link download link to [download link](https://github.com/mintasca/innfos-cpp-sdk.git) download the SDK related files or execute the following command directly
 
 
 ```sh
-$ git clone https://github.com/innfos/innfos-cpp-sdk.git
+$ git clone https://github.com/mintasca/innfos-cpp-sdk.git
 ```
     
 ## API related documentation
 
-*   notes and related documentation please go to [document link](https://innfos.com/doc/index.html)
+*   notes and related documentation please go to [document link](https://mintasca.com/doc/index.html)
 
 ## SCA connection
 
@@ -625,5 +625,5 @@ $ 05b_feedback_asyc.exe
 
 # Version change records
 
-<table style="width:400px"><thead><tr style="background:PaleTurquoise"><th style="width:100px">Version</th><th style="width:150px">Update time</th><th style="width:150px">Update contents</th></tr></thead><tbody><tr><td>v4.0.0</td><td>2019.08.05</td><td>first commit</th></tr></thead><tbody><tr><td><a href="http://innfos.com/wiki/en/index.html#!pages/Ethernet_Communication_SDK_v3_4_0.md">v3.4.0 </a></td><td>2019.06.06</td><td>first commit</th></tr></thead></tbody></table>
+<table style="width:400px"><thead><tr style="background:PaleTurquoise"><th style="width:100px">Version</th><th style="width:150px">Update time</th><th style="width:150px">Update contents</th></tr></thead><tbody><tr><td>v4.0.0</td><td>2019.08.05</td><td>first commit</th></tr></thead><tbody><tr><td><a href="https://mintasca.com/wiki/en/index.html#!pages/Ethernet_Communication_SDK_v3_4_0.md">v3.4.0 </a></td><td>2019.06.06</td><td>first commit</th></tr></thead></tbody></table>
 

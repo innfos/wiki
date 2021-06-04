@@ -78,11 +78,11 @@ Note: Since there are multiple ECBs connecting with the same computer, IP and MA
 ## Changing IP and MAC addresses
 #### Download
 
-* Visit this link [download link](https://github.com/innfos/ipChangeTool .git)to download SDK and relevant documents, or directly run the codes below.
+* Visit this link [download link](https://github.com/mintasca/ipChangeTool .git)to download SDK and relevant documents, or directly run the codes below.
 
 
 ```sh
-$ git clone https://github.com/innfos/ipChangeTool.git
+$ git clone https://github.com/mintasca/ipChangeTool.git
 ```
     
 * Go to ipChangeTool menu, and modify the administration authority:
@@ -117,7 +117,7 @@ chmod 777 ipChange
 ## Versions
 **See older versions and modifications below**
 
-<table style="width:600px"><thead><tr style="background:PaleTurquoise"><th style="width:80px">Version</th><th style="width:100px">update date</th><th style="width:100px">type</th><th style="width:80px">location</th><th>content</th></tr></thead><tbody><tr><td>V3.0.0</td><td>2019.11.01</td><td>modify</td><td>全文</td><td>full-text</td></tr><tr><td><a href="http://wiki.innfos.com/wiki/cn/index.html#!pages/ECB&HUB_v2_2.md"> V2.2.4 </a></td><td>2019.07.05</td><td>addon</td><td>resources</td><td>add ECB_core principle graph</td></tr><tr><td rowspan="2">V2.2.3</td><td rowspan="2">19.05.30</td><td>modify</td><td>ECB and ECB_HUB connection</td><td>modify graphs
+<table style="width:600px"><thead><tr style="background:PaleTurquoise"><th style="width:80px">Version</th><th style="width:100px">update date</th><th style="width:100px">type</th><th style="width:80px">location</th><th>content</th></tr></thead><tbody><tr><td>V3.0.0</td><td>2019.11.01</td><td>modify</td><td>全文</td><td>full-text</td></tr><tr><td><a href="http://wiki.mintasca.com/wiki/cn/index.html#!pages/ECB&HUB_v2_2.md"> V2.2.4 </a></td><td>2019.07.05</td><td>addon</td><td>resources</td><td>add ECB_core principle graph</td></tr><tr><td rowspan="2">V2.2.3</td><td rowspan="2">19.05.30</td><td>modify</td><td>ECB and ECB_HUB connection</td><td>modify graphs
 </td></tr><tr><td>modify</td><td>Multiple ECB connection</td><td>modify graphs
 </td></tr><tr><td rowspan="3">V2.2.2</td><td rowspan="3">19.05.29</td><td>modify</td><td>overview</td><td>modify the overview graphs
 </td></tr><tr><td>modify</td><td>Shape and size</td><td>modify graphs

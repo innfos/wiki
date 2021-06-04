@@ -3,7 +3,7 @@
 
 ## 简介
 
-本软件开发工具包应用于Innfos胶子系列，用于实现机械臂的二次开发，提供运动功能接口，目前支持类型GL_6L3
+本软件开发工具包应用于MINTASCA胶子系列，用于实现机械臂的二次开发，提供运动功能接口，目前支持类型GL_6L3
 
 ## 下载
 
@@ -11,20 +11,20 @@
 
 x86-64版本：
 推荐使用64位ubuntu16.04、ubuntu18.04等系统
-访问[下载链接](https://github.com/innfos/innfos-gluon-cpp-sdk.git)下载机械臂软件或者直接执行以下命令
+访问[下载链接](https://github.com/mintasca/innfos-gluon-cpp-sdk.git)下载机械臂软件或者直接执行以下命令
 ```sh
-$ git clone https://github.com/innfos/innfos-gluon-cpp-sdk.git
+$ git clone https://github.com/mintasca/innfos-gluon-cpp-sdk.git
 ```
 树莓派版本：
 适用于Raspberry Pi 3 Model B 和 Raspberry Pi 3 Model B+
-访问[下载链接](https://github.com/innfos/innfos-gluon-cpp-sdk-raspi.git)下载机械臂软件或者直接执行以下命令
+访问[下载链接](https://github.com/mintasca/innfos-gluon-cpp-sdk-raspi.git)下载机械臂软件或者直接执行以下命令
 ```sh
-$ git clone https://github.com/innfos/innfos-gluon-cpp-sdk-raspi.git
+$ git clone https://github.com/mintasca/innfos-gluon-cpp-sdk-raspi.git
 ```
 
 ## 使用
 
-软件开发工具包中包含示例程序,用户可先编译示例程序了解使用方法，具体函数介绍可移步至[函数说明](https://innfos.com/instructions/html/index.html)
+软件开发工具包中包含示例程序,用户可先编译示例程序了解使用方法，具体函数介绍可移步至[函数说明](https://mintasca.com/instructions/html/index.html)
 
 在编译之前请务必先查看example/src下的basic和advanced下的cpp文件，并配合函数说明文档，待了解每个函数作用后，开始编译示例程序
 

@@ -1,5 +1,5 @@
 # ActuatorController_ROS
-独立的ROS包，只限用于INNFOS执行器。
+独立的ROS包，只限用于MINTASCA执行器。
 
 
 
@@ -17,7 +17,7 @@
 此软件包使用的是以太网通信SDK已修改版本，可能会导致软件链接错误。 
 第一步，先下载软件包:
 ```
-$ git clone https://github.com/innfos/ActuatorController_ROS.git actuatorcontroller_ros
+$ git clone https://github.com/mintasca/ActuatorController_ROS.git actuatorcontroller_ros
 ```
 返回工作空间目录下进行编译：
 ```
@@ -35,7 +35,7 @@ $ source devel/setup.bash
 
 
 ## 示例
-如果您是第一次使用INNFOS的产品, 建议您先阅读INNFOS的wiki百科网站： https://innfos.github.io/wiki/en/#!index.md  
+如果您是第一次使用MINTASCA的产品, 建议您先阅读MINTASCA的wiki百科网站： http://wiki.mintasca.cloudminds.com/wiki/cn/index.html#!index.md  
 确保您的机器与ECB之间的连接没有问题之后，就可以运行节点了！
 
 新开一个终端，启动 ROS core:

@@ -6,7 +6,7 @@ IAS is a visual debug control software for INNFOS actuator, the main functions o
 
 ## Download
 
-If the computer system is Linux,visit [IAS(Linux)](https://github.com/innfos/INNFOS-Actuator-Studio-linux.git)to get the latest version of IAS (INNFOS Actuator Studio) (Linux)visit, if it is Windows, please visit[IAS(Windows)](https://github.com/innfos/INNFOS-Actuator-Studio-windows.git).
+If the computer system is Linux,visit [IAS(Linux)](https://github.com/mintasca/INNFOS-Actuator-Studio-linux.git)to get the latest version of IAS (MINTASCA Actuator Studio) (Linux)visit, if it is Windows, please visit[IAS(Windows)](https://github.com/mintasca/INNFOS-Actuator-Studio-windows.git).
 
 ----
 
@@ -16,7 +16,7 @@ If the computer system is Linux,visit [IAS(Linux)](https://github.com/innfos/INN
 
 1. Unzip the IAS to your desired location
 2. Enter the IAS folder
-3. Launch the program by either double clicking the INNFOS Actuator Studio icon or using the command
+3. Launch the program by either double clicking the MINTASCA Actuator Studio icon or using the command
 
 ```sh
 $ ./INNFOS\ Actuator\ Studio
@@ -131,7 +131,7 @@ Logic block diagram of the INNFOS actuator system:
 
 <img src="../../img/current.jpg" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>Fig 3-1 Logic block diagram of the INNFOS SCA system</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 3-1 Logic block diagram of the MINTASCA SCA system</strong></div>
 
 Description: after the mixed practice of the current setting value and current feedback value, passing through the PI module, the optional filter and the limiting module to drive the motor, the motor feeds back the current parameter to the system to form a closed loop.
 
@@ -148,7 +148,7 @@ Description: after the mixed practice of the current setting value and current f
 
 （4）parameter settings
 
-（5）INNFOS SCA status parameter values
+（5）MINTASCA SCA status parameter values
 
 （6）Error warning
 
@@ -179,7 +179,7 @@ Description: after the mixed practice of the current setting value and current f
 
 <span style="color: red">[In current loop mode, the proportional setting and integral setting have been preset according to the actuator model, there is no need to change; the minimum current setting is -0.82, the maximum current setting is 0.82, and the preset has been made without modification.]</span> 
 
-Enter the current value in Phase Current (1 in the figure), click Enter or Set Current, and INNFOS SCA starts to output the corresponding torque. If the load is not large enough, the INNFOS  SCA will run at high speed.
+Enter the current value in Phase Current (1 in the figure), click Enter or Set Current, and MINTASCA SCA starts to output the corresponding torque. If the load is not large enough, the INNFOS  SCA will run at high speed.
 
 
 
@@ -231,7 +231,7 @@ Note:The free channel offset is set to 0,  zoomed to 1, or directly click OFF to
 
 *   Enter the current value 1 in `Value 1`(Mark 1)
 *   Enter the current value 2 in `Value 2` (Mark 2)
-*   Enter the time (in ms) in `Interval` (Figure 3) (e.g.: `Value 1` is 0.1, `Value 2` is 0, `Interval` is 1000. After startup, the phase current of INNFOS SCA is -0.001A. After a period of 1000ms, the given phase current is 0.5A, and the phase current is again given to -0.001A after another 1000ms . Iteratively run this operation until the user clicks "stop").
+*   Enter the time (in ms) in `Interval` (Figure 3) (e.g.: `Value 1` is 0.1, `Value 2` is 0, `Interval` is 1000. After startup, the phase current of MINTASCA SCA is -0.001A. After a period of 1000ms, the given phase current is 0.5A, and the phase current is again given to -0.001A after another 1000ms . Iteratively run this operation until the user clicks "stop").
 
 
 *   Select `Start`(Mark 4), and the square wave generator will press the set time ( `Interval` value), continuously validate Value1 and Value2 to the specified position until the button is closed.
@@ -261,7 +261,7 @@ Logic block diagram of the INNFOS actuator system:
 
 <img src="../../img/velocity.jpg" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>Fig 4-1 Logic block diagram of the INNFOS SCA system</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 4-1 Logic block diagram of the MINTASCA SCA system</strong></div>
 
 Description: After the speed value setting and the speed feedback value are added and subtracted, the PI module is passed through the optional filter and then the module outputs the current to the current loop. When the current loop mode is ensured to operate correctly, the motor is driven by the current loop. The encoder feeds the speed parameter back to the system to form a closed loop.
 
@@ -281,7 +281,7 @@ Description: After the speed value setting and the speed feedback value are adde
 
 (3)Basic parameter settings
 
-(4)INNFOS SCA parameter values
+(4)MINTASCA SCA parameter values
 
 (5)Error warning
 
@@ -306,9 +306,9 @@ Description: After the speed value setting and the speed feedback value are adde
 
 2.Speed loop basic parameter settings:
 
-*   Enter the speed value (unit: RPM) in the `Setting` box. Press Enter or click on `Set Velocity` on the right, then INNFOS SCA starts to rotate.
-*   After rotating, the status value column, as shown in the figure, can be seen as the parameter values of different INNFOS SCA.
-*   After rotating, the status value column, as shown in the figure, can be seen as the parameter values of different INNFOS SCA.
+*   Enter the speed value (unit: RPM) in the `Setting` box. Press Enter or click on `Set Velocity` on the right, then MINTASCA SCA starts to rotate.
+*   After rotating, the status value column, as shown in the figure, can be seen as the parameter values of different MINTASCA SCA.
+*   After rotating, the status value column, as shown in the figure, can be seen as the parameter values of different MINTASCA SCA.
 *   Adjust the `Proportional` box and the `Integral` box to adjust the PI value(Mark 2).
 *   The Mininal box and Maximum box shows the output limit for speed loop (followed by Current loop input),
 for example, current up to 33A（Model 6010 is 33A and Model 3510 is 16.5A. See Appendix D of the CAN Bus Communication Protocol for details.）, input value is 0.5；When the INNFOS actuator current is increased to 33*0.5, the current value will be limited without increasing.
@@ -326,7 +326,7 @@ for example, current up to 33A（Model 6010 is 33A and Model 3510 is 16.5A. See 
 
 4.Introduction to Speed Loop Oscilloscope
 
-*   Enter the time (in ms) in `Interval` (Figure 3) to set the parameters of square wave generator. (e.g.: `Value 1` is 0.1, `Value 2` is 0, `Interval` is 1000. After startup, the  speed of INNFOS SCA is -0.001RPM. After a period of 1000ms, its speed is 300 RPM, and the speed will go back to -0.001A after another 1000ms . Iteratively run this operation until the user clicks "stop").
+*   Enter the time (in ms) in `Interval` (Figure 3) to set the parameters of square wave generator. (e.g.: `Value 1` is 0.1, `Value 2` is 0, `Interval` is 1000. After startup, the  speed of MINTASCA SCA is -0.001RPM. After a period of 1000ms, its speed is 300 RPM, and the speed will go back to -0.001A after another 1000ms . Iteratively run this operation until the user clicks "stop").
 
 
 *   Enter the number of revolutions in `Value1`. (Unit: RPM)
@@ -339,7 +339,7 @@ for example, current up to 33A（Model 6010 is 33A and Model 3510 is 16.5A. See 
 
 <div class="md-text" style="text-align: center;"><strong>Fig 4-7</strong></div>
 
-5.Set the parameters in the`View Graph`to have a better view of the parameter waveforms of the current INNFOS SCA.
+5.Set the parameters in the`View Graph`to have a better view of the parameter waveforms of the current MINTASCA SCA.
 
 Note:The free channel offset is set to 0,  zoomed to 1, or directly click OFF to turn off!
 
@@ -357,7 +357,7 @@ Logic block diagram of the INNFOS actuator system：
 
 <img src="../../img/position.jpg" style="width:600px">
 
-<div class="md-text" style="text-align: center;"><strong>Fig 5-1 Logic block diagram of the INNFOS SCA system</strong></div>
+<div class="md-text" style="text-align: center;"><strong>Fig 5-1 Logic block diagram of the MINTASCA SCA system</strong></div>
 
 Introduction of the block diagram:
 
@@ -420,7 +420,7 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 4.Setting of Square-wave Gnerator Prameter Value
 
-*   Enter the time (ms) in `Interval` (Figure 3) to enter parameter which is the time of one round. (e.g.: `Value 1` is 0.1, `Value 2` is 0, `Interval` is 1000. After startup, the position of INNFOS SCA is 0.1. After a period of 1000ms, its position is 0, and the position is 2 after another 1000ms . Iteratively run this operation until the user clicks "stop").
+*   Enter the time (ms) in `Interval` (Figure 3) to enter parameter which is the time of one round. (e.g.: `Value 1` is 0.1, `Value 2` is 0, `Interval` is 1000. After startup, the position of MINTASCA SCA is 0.1. After a period of 1000ms, its position is 0, and the position is 2 after another 1000ms . Iteratively run this operation until the user clicks "stop").
 
 
 *    Enter the number of revolutions in `Value1`. (Unit: RPM)
@@ -444,7 +444,7 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 
 *    Enter the position of rotation (unit: R) in box X, or click the keyboard direction button to set. Clicking on the keyboard defaults to have an increase of 0.1.
 *    Enter the value in box X, press `step add` and `step minus` to let SCA rotate the corresponding position. One click makes SCA rotate forward or reverse once.
-*    After rotating,  the parameters of the current INNFOS SCA  can be seen in the status value bar .
+*    After rotating,  the parameters of the current MINTASCA SCA  can be seen in the status value bar .
 
 
 <img src="../../img/new47.png" style="width:600px">
@@ -549,7 +549,7 @@ In the case of ensuring the accuracy of the current loop and the speed loop, the
 <div class="md-text" style="text-align: center;"><strong>Fig 6-10</strong></div>
 
 *    Enter the value in box X, press `step add` and `step minus` to let SCA rotate the corresponding position. One click makes SCA rotate forward or reverse once.
-*    After rotating, the parameters of the current INNFOS SCA can be seen in the status value bar .
+*    After rotating, the parameters of the current MINTASCA SCA can be seen in the status value bar .
 
 
 <img src="../../img/new56.png" style="width:600px">
@@ -733,4 +733,4 @@ Click "OK" and "Clear Errors" to solve the problem. After clearing, the INNFOS a
 
 ## Version Change Records
 
-<table class="tableizer-table"><thead><tr class="tableizer-firstrow" style=background:PaleTurquoise><th>Version number</th><th>Update time</th><th>Update content</th></tr></thead><tbody><tr><td>V1.1.0</td><td>2019-07</td><td>Second Version</td></tr><tr><td><a href="http://innfos.com/wiki/en/index.html#!pages/INNFOS_Actuator_Studio_IAS_instruction_V_1_0_0.md">V1.0.0</td><td>2019-04</td><td>First Verison</td></tr></tbody></table>
+<table class="tableizer-table"><thead><tr class="tableizer-firstrow" style=background:PaleTurquoise><th>Version number</th><th>Update time</th><th>Update content</th></tr></thead><tbody><tr><td>V1.1.0</td><td>2019-07</td><td>Second Version</td></tr><tr><td><a href="https://mintasca.com/wiki/en/index.html#!pages/INNFOS_Actuator_Studio_IAS_instruction_V_1_0_0.md">V1.0.0</td><td>2019-04</td><td>First Verison</td></tr></tbody></table>

@@ -8,7 +8,7 @@
 
 <img src="../../img/all.png" style="width:600px">
 
-从前到后、从左到右依次为：ECB、HUB、终端电阻2个、回馈制动电容、ECB连接线、INNFOS执行器、执行器连接线，急停开关+电源。
+从前到后、从左到右依次为：ECB、HUB、终端电阻2个、回馈制动电容、ECB连接线、MINTASCA执行器、执行器连接线，急停开关+电源。
 
 **连接电源**
 
@@ -64,7 +64,7 @@
 
 **下载IAS**
 
-*   如果电脑系统为Linux,访问[IAS(Linux)](https://github.com/innfos/INNFOS-Actuator-Studio-linux.git)获取最新版本的IAS(INNFOS Actuator Studio)(Linux),如果电脑系统是Windows请访问[IAS(Windows)](https://github.com/innfos/INNFOS-Actuator-Studio-windows.git).
+*   如果电脑系统为Linux,访问[IAS(Linux)](https://github.com/mintasca/INNFOS-Actuator-Studio-linux.git)获取最新版本的IAS(MINTASCA Actuator Studio)(Linux),如果电脑系统是Windows请访问[IAS(Windows)](https://github.com/mintasca/INNFOS-Actuator-Studio-windows.git).
 
 **配置IP地址**
 
@@ -100,7 +100,7 @@
 
 ### 其他
 
-想了解更多关于`IAS`的信息 , 请访问[INNFOS Actuator Studio(IAS)说明](#!pages/INNFOS_Actuator_Studio_IAS_instruction.md).
+想了解更多关于`IAS`的信息 , 请访问[MINTASCA Actuator Studio(IAS)说明](#!pages/INNFOS_Actuator_Studio_IAS_instruction.md).
 
 ## 版本变更记录
 

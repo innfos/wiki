@@ -1,6 +1,6 @@
 ## 介绍
 
-*    INNFOS CAN SDK STM32版 提供了友好的用户接口，包括了STM32F429单片机与多个INNFOS执行器进行通信的功能，可对多个执行器发送指令或者获取执行器状态和参数信息。本工程文件开放所有源代码，可根据项目需求定制或修改。
+*    MINTASCA CAN SDK STM32版 提供了友好的用户接口，包括了STM32F429单片机与多个MINTASCA执行器进行通信的功能，可对多个执行器发送指令或者获取执行器状态和参数信息。本工程文件开放所有源代码，可根据项目需求定制或修改。
 
 *    建议初次接触API的用户优先阅读工程文件中的 `readme.txt` 说明文件。
 
@@ -8,7 +8,7 @@
 
 ## 下载 SDK
 
-访问[Download Link](https://github.com/innfos/INNFOS_CAN_SDK_STM32.git)获取MDK工程文件
+访问[Download Link](https://github.com/mintasca/INNFOS_CAN_SDK_STM32.git)获取MDK工程文件
 
 ----
 
@@ -23,7 +23,7 @@
 *  `CORE`：Cortex-M4 内核控制文件与STM32启动文件
 *  `FWLIB`：STM32标准外设驱动库
 *  `MDK`：MDK工程文件
-*  `SCA`：INNFOS CAN 协议驱动文件以及应用实例代码
+*  `SCA`：MINTASCA CAN 协议驱动文件以及应用实例代码
 *  `SYSTEM`：STM32编程环境常用接口
 *  `USER`：存放main.c等
 *  `Keilkiller.bat`：清除编译产生的中间文件
@@ -36,7 +36,7 @@
 
 <div class="md-text" style="text-align: center;"></div>
 
-*  `SCA_Protocol.c/h`：INNFOS CAN 通信协议层，该协议层完成了数据帧封装，解包等步骤，使用CAN端口进行数据收发；
+*  `SCA_Protocol.c/h`：MINTASCA CAN 通信协议层，该协议层完成了数据帧封装，解包等步骤，使用CAN端口进行数据收发；
 *  `SCA_API.c/h`：通信协议层的封装，包含了所有参数的读写API；
 *  `SCA_APP.c/h`：演示程序；
 <br>
@@ -107,7 +107,7 @@ void SCA_Init()
 
 ### 驱动架构
 
-* INNFOS CAN SDK STM32版将驱动程序进行了分层处理。
+* MINTASCA CAN SDK STM32版将驱动程序进行了分层处理。
 
 *  `SCA_Protocol.c/h`为协议层，调用了STM32 CAN控制器收发数据的接口，提供了5类写入命令与读取命令的软件接口。这些接口会被API层的函数调用，针对不同命令对收发的数据进行打包或解包。头文件中包含了所有指令的宏定义，通信错误类型，以及用来保存每个执行器参数信息的信息句柄结构体定义。为了实现多CAN端口的支持，在协议层中加入了对CAN端口的描述句柄，可使用此句柄定义多个收发端口，需要在初始化程序中对每个端口的发送函数和重试次数进行定义，然后绑定到每个SCA的信息句柄中。另外，为方便移植，协议层提供了统一的数据接收接口`canDispatch(CanRxMsg* RxMsg)`，此接口需要在有新的CAN数据包接收时进行调用并将数据传入。用户可用轮询或者中断的方式来调用此函数，本例程采用中断调用。
 

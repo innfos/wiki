@@ -63,7 +63,7 @@ From front to back, from left to right: one set of six-axis robot, ECB+HUB with 
 
 **Connect the robotic arm**
 
-*  Connect INNFOS SCA Cable with`HUB` 
+*  Connect MINTASCA SCA Cable with`HUB` 
 
 <img src="../../img/5.png" style="width:600px">
 
@@ -93,7 +93,7 @@ From front to back, from left to right: one set of six-axis robot, ECB+HUB with 
 
 **Use of IAS**
 
-* `IAS`(INNFOS Actuator Studio)is the PC software to configure the robotic arm, please visit the[INNFOS Actuator Studio(IAS)instructions](#!pages/INNFOS_Actuator_Studio_IAS_instruction.md).
+* `IAS`(MINTASCA Actuator Studio)is the PC software to configure the robotic arm, please visit the[MINTASCA Actuator Studio(IAS)instructions](#!pages/INNFOS_Actuator_Studio_IAS_instruction.md).
 
 **Sports function use**
 
@@ -104,13 +104,13 @@ From front to back, from left to right: one set of six-axis robot, ECB+HUB with 
 
 Operating environment: linux-x86-64
 
-Visit the link [download link](https://github.com/innfos/robot_controller-6-NE30-.git)tdownload the software or directly execute the following command
+Visit the link [download link](https://github.com/mintasca/robot_controller-6-NE30-.git)tdownload the software or directly execute the following command
 ```sh
-$ git clone https://github.com/innfos/robot_controller-6-NE30-.git
+$ git clone https://github.com/mintasca/robot_controller-6-NE30-.git
 ```
-Visit the link [download link](https://github.com/innfos/ActuatorController_SDK.git)download the SDK files or execute the following command directly.
+Visit the link [download link](https://github.com/mintasca/ActuatorController_SDK.git)download the SDK files or execute the following command directly.
 ```sh
-$ git clone https://github.com/innfos/ActuatorController_SDK.git
+$ git clone https://github.com/mintasca/ActuatorController_SDK.git
 ```
 
 Note: These two folders need to be placed in the same directory.

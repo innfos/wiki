@@ -71,10 +71,10 @@ ROS For Gluon
 
 
 ## 下载并安装
-[下载](https://github.com/innfos/ros_gluon.git) ros 软件包
+[下载](https://github.com/mintasca/ros_gluon.git) ros 软件包
 
 ```sh
-$ git clone https://github.com/innfos/ros_gluon.git
+$ git clone https://github.com/mintasca/ros_gluon.git
 ```
 然后手动将软件包文件夹gluon gluon_control、gluon_moveit_config和cm_moveit复制到catkin_ws / src中。
 

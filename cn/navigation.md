@@ -12,7 +12,7 @@
 
 [FAQ](#!pages/question.md)
 
-[MINTASCA 官网](http://innfos.com/pc/home)
+[MINTASCA 官网](http://mintasca.com/pc/home)
 
 
 
