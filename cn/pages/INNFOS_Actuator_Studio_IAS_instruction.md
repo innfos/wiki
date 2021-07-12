@@ -6,7 +6,7 @@ IAS是一款可视化的MINTASCA执行器调试软件，主要功能包括控制
 
 ## 下载IAS
 
-如果电脑系统为Linux,访问[IAS(Linux)](https://github.com/mintasca/INNFOS-Actuator-Studio-linux.git)获取最新版本的IAS(MINTASCA Actuator Studio)(Linux),如果电脑系统是Windows请访问 [IAS(Windows)](https://github.com/mintasca/INNFOS-Actuator-Studio-windows.git).
+如果电脑系统为Linux,访问[IAS(Linux)](https://github.com/mintasca/Minta-Actuator-Studio-linux.git)获取最新版本的IAS(MINTASCA Actuator Studio)(Linux),如果电脑系统是Windows请访问 [IAS(Windows)](https://github.com/mintasca/Minta-Actuator-Studio-windows.git).
 
 ----
 
